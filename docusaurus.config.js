@@ -43,32 +43,35 @@ const config = {
     locales: ['en', 'zh-CN'],
   },
   themeConfig:
+  
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
+        style: 'dark',
+
         title: 'IvorySQL',
         logo: {
           alt: 'IvorySQL Logo',
-          src: 'img/logo.svg',
+          src: 'img/ivory.png',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
+            position: 'right',
             label: 'Docs',
           },
           {
             label: 'Community',
             to: '/community-page',
-            position: 'left',
+            position: 'right',
           },
           {
             label: 'Download',
             href: 'https://github.com/IvorySQL/IvorySQL/releases',
-            position: 'left',
+            position: 'right',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/IvorySQL/IvorySQL',
             label: 'GitHub',
@@ -125,10 +128,20 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} IvorySQL Foundation.`,
       },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+        switchConfig: {
+          darkIcon: '🌙',
+          darkIconStyle: {
+            marginLeft: '2px',
+          }}},
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      
     }),
 };
 

@@ -4,20 +4,89 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.heroBanner_2 {
+  padding: 4rem 4rem;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
+.heroBGImage {
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+    background-blend-mode: darken;
+  width: 100%;
+
+}
+
+.heroCenterImage {
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+  width: 50%;
+}
+
+.heroLeftImage {
+  padding: 4rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: url("@site/static/img/undraw_information.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25%;
+}
+.heroRightImage {
+  padding: 4rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  background: url("@site/static/img/hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25%;
+}
+@media screen and (min-width: 997px) {
+  /* Show inline table of contents on mobile only */
+  div[class^='tableOfContentsInline'] {
+    display: none;
+  }
+  div[class^='heroCenterImage'] {
+    width: 50%;
   }
 }
 
+@media screen and (max-width: 997px) {
+  div[class^='heroRightImage'] {
+    display: none;
+  }
+  div[class^='heroLeftImage'] {
+    display: none;
+  }
+  div[class^='heroCenterImage'] {
+    width: 100%;
+  }
+}
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+

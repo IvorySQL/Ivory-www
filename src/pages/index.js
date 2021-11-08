@@ -12,7 +12,12 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+        <div class="row">
+          <div className={styles.heroLeftImage}>
+          </div>
+
+          <div className={styles.heroCenterImage}>
+          <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
@@ -20,6 +25,11 @@ function HomepageHeader() {
             to="https://github.com/IvorySQL/IvorySQL/blob/main/README.md">
             <Translate>Learn More</Translate>
           </Link>
+        </div>
+
+          </div>
+          <div className={styles.heroRightImage}>
+          </div>
         </div>
       </div>
     </header>
