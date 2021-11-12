@@ -20,7 +20,7 @@ Create a markdown file at `docs/hello.md`:
 This is my **first Docusaurus document**!
 ```
 
-A new document is now available at `http://localhost:3000/docs/hello`.
+Once committed the new document will be available at `http://ivorySQL.org/docs/hello`.
 
 ## Configure the Sidebar
 
@@ -36,7 +36,7 @@ sidebar_position: 3
 
 # Hello
 
-This is my **first Docusaurus document**!
+This is my **first ivorySQL document contribution**!
 ```
 
 It is also possible to create your sidebar explicitly in `sidebars.js`:
