@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Welcome to ivorySQL Documentation
+# Welcome to IvorySQL Documentation
 
-**ivorySQL** is the only Oracle compitable open source PostgreSQL.
+**IvorySQL** is the only Oracle compitable open source PostgreSQL.
 
 ## Getting Started
 
