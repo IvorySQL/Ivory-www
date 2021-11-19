@@ -2,34 +2,12 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro Chinese Version
+# 欢迎
 
-Let's discover **Docusaurus in less than 25 minutes**.
+# Welcome to IvorySQL
 
-## Getting Started Ne Hao
+**IvorySQL** is the only Oracle compitable open source PostgreSQL.
 
-Get started by **creating a new site**.
+## Getting Started
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npm init docusaurus@latest my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and displays your changes.
+Get started by **Downloading the code from Github**.

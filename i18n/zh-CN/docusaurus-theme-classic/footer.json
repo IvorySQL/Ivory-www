@@ -15,28 +15,28 @@
     "message": "Docs",
     "description": "The label of footer link with label=Docs linking to /docs/intro"
   },
-  "link.item.label.Stack Overflow": {
-    "message": "Stack Overflow",
-    "description": "The label of footer link with label=Stack Overflow linking to https://stackoverflow.com/questions/tagged/docusaurus"
-  },
-  "link.item.label.Discord": {
-    "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discordapp.com/invite/docusaurus"
-  },
   "link.item.label.Twitter": {
     "message": "Twitter",
-    "description": "The label of footer link with label=Twitter linking to https://twitter.com/docusaurus"
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/IvorySQL"
   },
-  "link.item.label.Blog": {
-    "message": "Blog",
-    "description": "The label of footer link with label=Blog linking to /blog"
+  "link.item.label.Hackers mailing list": {
+    "message": "Hackers mailing list",
+    "description": "The label of footer link with label=Hackers mailing list linking to https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/"
   },
-  "link.item.label.GitHub": {
-    "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/IvorySQL/IvorySQL"
+  "link.item.label.Users mailing list": {
+    "message": "Users mailing list",
+    "description": "The label of footer link with label=Users mailing list linking to https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/"
+  },
+  "link.item.label.Website GitHub": {
+    "message": "Website GitHub",
+    "description": "The label of footer link with label=Website GitHub linking to https://github.com/IvorySQL/Ivory-www"
+  },
+  "link.item.label.IvorySQL GitHub": {
+    "message": "IvorySQL GitHub",
+    "description": "The label of footer link with label=IvorySQL GitHub linking to https://github.com/IvorySQL/IvorySQL"
   },
   "copyright": {
-    "message": "Copyright © 2021 IvorySQL Foundation.",
+    "message": "Copyright © 2021 IvorySQL.",
     "description": "The footer copyright"
   }
 }

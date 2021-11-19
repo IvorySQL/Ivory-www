@@ -47,7 +47,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: url("@site/static/img/undraw_information.svg");
+  background: url("@site/static/img/fp_left_header.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 25%;
@@ -58,7 +58,7 @@
   position: relative;
   overflow: hidden;
 
-  background: url("@site/static/img/hero.svg");
+  background: url("@site/static/img/fp_right_header.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 25%;

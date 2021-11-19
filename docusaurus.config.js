@@ -23,14 +23,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-//          editUrl: 'https://github.com/IvorySQL/ivory-www-wip/tree/master/docs',
+//          editUrl: 'https://github.com/IvorySQL/Ivory-www/tree/main/docs',
           editCurrentVersion: false,
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-//          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -71,7 +65,6 @@ const config = {
             href: 'https://github.com/IvorySQL/IvorySQL/releases',
             position: 'right',
           },
-          {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/IvorySQL/IvorySQL',
             label: 'GitHub',
@@ -99,16 +92,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Hackers mailing list',
+                href: 'https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Users mailing list',
+                href: 'https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/IvorySQL',
               },
             ],
           },
@@ -116,17 +109,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Website GitHub',
+                href: 'https://github.com/IvorySQL/Ivory-www',
               },
               {
-                label: 'GitHub',
+                label: 'IvorySQL GitHub',
                 href: 'https://github.com/IvorySQL/IvorySQL',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} IvorySQL Foundation.`,
+        copyright: `Copyright © ${new Date().getFullYear()} IvorySQL.`,
       },
       colorMode: {
         defaultMode: 'light',

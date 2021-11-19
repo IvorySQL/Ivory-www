@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Open Source',
-    Svg: require('../../static/img/undraw_open_source_-1-qxw.svg').default,
+    Svg: require('../../static/img/fp_open_source.svg').default,
     description: (
       <>
         No Vendor Lock-In
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Backed by HighGo',
-    Svg: require('../../static/img/undraw_partying_re_at7f.svg').default,
+    Svg: require('../../static/img/fp_backed_by_highgo.svg').default,
     description: (
       <>
         Supported by <code>HighGo</code>, The leading provider of PostgreSQL database.
@@ -32,7 +32,7 @@ const FeatureList = [
   },
   {
     title: 'Oracle Compatible',
-    Svg: require('../../static/img/undraw_feeling_proud_qne1.svg').default,
+    Svg: require('../../static/img/fp_ora_compitable.svg').default,
     description: (
       <>
         Migrate your Oracle DB to ivorySQLL.
@@ -41,7 +41,7 @@ const FeatureList = [
   },
   {
     title: 'Customization',
-    Svg: require('../../static/img/undraw_advanced_customization_58j6.svg').default,
+    Svg: require('../../static/img/fp_advanced_customization.svg').default,
     description: (
       <>
         Just download the code and make it as you like.

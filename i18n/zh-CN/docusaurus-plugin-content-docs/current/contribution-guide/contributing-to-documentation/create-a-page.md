@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # Documentation location
-visit `https://github.com/IvorySQL/ivory-www-wip/tree/master/docs`
+visit https://github.com/IvorySQL/Ivory-www/tree/main/docs
 
 Documentation supports **Markdown** syntax:
 

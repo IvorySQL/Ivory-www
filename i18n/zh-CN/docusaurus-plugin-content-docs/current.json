@@ -3,12 +3,24 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "Tutorial - Basics",
-    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.IvorySQL Documentation": {
+    "message": "IvorySQL Documentation",
+    "description": "The label for category IvorySQL Documentation in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
-    "message": "Tutorial - Extras",
-    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Contributing to the Project": {
+    "message": "Contributing to the Project",
+    "description": "The label for category Contributing to the Project in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contributing to IvorySQL source": {
+    "message": "Contributing to IvorySQL source",
+    "description": "The label for category Contributing to IvorySQL source in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contributing to Translations": {
+    "message": "Contributing to Translations",
+    "description": "The label for category Contributing to Translations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contributing to IvorySQL documentation": {
+    "message": "Contributing to IvorySQL documentation",
+    "description": "The label for category Contributing to IvorySQL documentation in sidebar tutorialSidebar"
   }
 }

@@ -4,7 +4,7 @@ title: ivorySQL Community
 
 # Welcome to ivorySQL
 
-The ivorySQL community includes people from around the globe who are developing and using the open source database. We welcome and encourage participation by everyone.
+The IvorySQL community includes people from around the globe who are developing and using the open source database. We welcome and encourage participation by everyone.
 
 # We Attempt To:
 Be open, welcoming, friendly, and patient. Be collaborative. Be inquisitive. Be careful in the words we choose. Be concise. Step down considerately.
@@ -22,5 +22,5 @@ Read our **contribution guidelines**
 ## Conversations
 Join the conversations about IvorySQL through these mailing lists
 
-- Join IvorySQL users mailing list
-- Join IvorySQL hackers mailing list
+- [IvorySQL Users](https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/)
+- [IvorySQL Hackers](https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/)
