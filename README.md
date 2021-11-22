@@ -1,6 +1,8 @@
 # Website
 
-This is WIP website for IvorySQL and built using [Docusaurus 2](https://docusaurus.io/)
+Website for IvorySQL
+
+Built using [Docusaurus 2](https://docusaurus.io/)
 
 ## Run on local system
 
