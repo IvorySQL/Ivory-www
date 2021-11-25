@@ -1,8 +1,8 @@
 ---
-title: ivorySQL Community
+title: IvorySQL Community
 ---
 
-# Welcome to ivorySQL
+# Welcome to IvorySQL
 
 The IvorySQL community includes people from around the globe who are developing and using the open source database. We welcome and encourage participation by everyone.
 
