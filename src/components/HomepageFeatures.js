@@ -1,50 +1,51 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
+import Translate, {translate} from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: 'Open Source',
+    title: <Translate>'Open Source'</Translate>,
     Svg: require('../../static/img/fp_open_source.svg').default,
     description: (
       <>
-        No Vendor Lock-In
+        <Translate>No Vendor Lock-In</Translate>
       </>
     ),
   },
   {
-    title: 'Powered by PostgrSQL',
+    title: <Translate>'Powered by PostgrSQL'</Translate>,
     Svg: require('../../static/img/postgresql-icon.svg').default,
     description: (
       <>
-        Based on the <code>PostgreSQL</code>, with full SQL, rock-solid reliability, and a massive ecosystem.
+        <Translate>Based on the PostgreSQL, with full SQL, rock-solid reliability, and a massive ecosystem.</Translate>
       </>
     ),
   },
   {
-    title: 'Backed by HighGo',
+    title: <Translate>'Backed by HighGo'</Translate>,
     Svg: require('../../static/img/fp_backed_by_highgo.svg').default,
     description: (
       <>
-        Supported by <code>HighGo</code>, The leading provider of PostgreSQL database.
+        <Translate>Supported by HighGo, The leading provider of PostgreSQL database.</Translate>
       </>
     ),
   },
   {
-    title: 'Oracle Compatible',
+    title: <Translate>'Oracle Compatible'</Translate>,
     Svg: require('../../static/img/fp_ora_compitable.svg').default,
     description: (
       <>
-        Migrate your Oracle DB to ivorySQLL.
+        <Translate>Migrate your Oracle DB to IvorySQL.</Translate>
       </>
     ),
   },
   {
-    title: 'Customization',
+    title: <Translate>'Customization'</Translate>,
     Svg: require('../../static/img/fp_advanced_customization.svg').default,
     description: (
       <>
-        Just download the code and make it as you like.
+        <Translate>Just download the code and make it as you like.</Translate>
       </>
     ),
   },

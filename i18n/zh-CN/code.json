@@ -185,5 +185,35 @@
   },
   "Learn More": {
     "message": "Learn More"
+  },
+  "'Open Source'": {
+    "message": "'Open Source'"
+  },
+  "No Vendor Lock-In": {
+    "message": "No Vendor Lock-In"
+  },
+  "'Powered by PostgrSQL'": {
+    "message": "'Powered by PostgrSQL'"
+  },
+  "Based on the PostgreSQL, with full SQL, rock-solid reliability, and a massive ecosystem.": {
+    "message": "Based on the PostgreSQL, with full SQL, rock-solid reliability, and a massive ecosystem."
+  },
+  "'Backed by HighGo'": {
+    "message": "'Backed by HighGo'"
+  },
+  "Supported by HighGo, The leading provider of PostgreSQL database.": {
+    "message": "Supported by HighGo, The leading provider of PostgreSQL database."
+  },
+  "'Oracle Compatible'": {
+    "message": "'Oracle Compatible'"
+  },
+  "Migrate your Oracle DB to IvorySQL.": {
+    "message": "Migrate your Oracle DB to IvorySQL."
+  },
+  "'Customization'": {
+    "message": "'Customization'"
+  },
+  "Just download the code and make it as you like.": {
+    "message": "Just download the code and make it as you like."
   }
 }

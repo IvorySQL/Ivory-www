@@ -22,5 +22,13 @@
   "sidebar.tutorialSidebar.category.Contributing to IvorySQL documentation": {
     "message": "Contributing to IvorySQL documentation",
     "description": "The label for category Contributing to IvorySQL documentation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.current": {
+    "message": "current",
+    "description": "The label for category current in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Compatibility Features": {
+    "message": "Compatibility Features",
+    "description": "The label for category Compatibility Features in sidebar tutorialSidebar"
   }
 }
