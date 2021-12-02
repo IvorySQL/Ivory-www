@@ -1,26 +1,26 @@
 ---
-title: IvorySQL 社区
+标题: IvorySQL 社区
 ---
 
 # 欢迎来到 IvorySQL 社区
 
-The ivorySQL community includes people from around the globe who are developing and using the open source database. We welcome and encourage participation by everyone.
+IvorySQL社区包括来自世界各地的开发和使用开源数据库的人员。我们欢迎并鼓励大家参与。
 
-# We Attempt To:
-Be open, welcoming, friendly, and patient. Be collaborative. Be inquisitive. Be careful in the words we choose. Be concise. Step down considerately.
-
----
-
-Read our **contribution guidelines**
+# 我们试图:
+保持开放、热情、友好和耐心。保持协作，保持好奇。对说的每句话都要谨慎，简明扼要，深思熟虑。
 
 ---
 
-## Contribution
-- [Report a Bug](https://github.com/IvorySQL/IvorySQL/issues)
-- [Submit a pull request](https://github.com/IvorySQL/IvorySQL/pulls)
+阅读 **贡献准则**
 
-## Conversations
-Join the conversations about IvorySQL through these mailing lists
+---
 
-- Join IvorySQL users mailing list
-- Join IvorySQL hackers mailing list
+## 贡献
+- [提交bug](https://github.com/IvorySQL/IvorySQL/issues)
+- [提交拉取请求](https://github.com/IvorySQL/IvorySQL/pulls)
+
+## 对话
+通过这些邮件列表加入关于IvorySQL的对话
+
+- 加入IvorySQL用户邮件列表
+- 加入IvorySQL Hackers邮件列表
