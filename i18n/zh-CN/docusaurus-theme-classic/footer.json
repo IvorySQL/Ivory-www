@@ -1,18 +1,18 @@
 {
   "link.title.Docs": {
-    "message": "Docs",
+    "message": "文档",
     "description": "The title of the footer links column with title=Docs in the footer"
   },
   "link.title.Community": {
-    "message": "Community",
+    "message": "社区",
     "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
-    "message": "More",
+    "message": "更多",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Docs": {
-    "message": "Docs",
+    "message": "文档",
     "description": "The label of footer link with label=Docs linking to /docs/intro"
   },
   "link.item.label.Twitter": {
@@ -20,11 +20,11 @@
     "description": "The label of footer link with label=Twitter linking to https://twitter.com/IvorySQL"
   },
   "link.item.label.Hackers mailing list": {
-    "message": "Hackers mailing list",
+    "message": "Hackers邮件列表",
     "description": "The label of footer link with label=Hackers mailing list linking to https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/"
   },
   "link.item.label.Users mailing list": {
-    "message": "Users mailing list",
+    "message": "用户邮件列表",
     "description": "The label of footer link with label=Users mailing list linking to https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/"
   },
   "link.item.label.Website GitHub": {
