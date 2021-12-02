@@ -4,10 +4,11 @@ sidebar_position: 1
 
 # 欢迎
 
-# Welcome to IvorySQL
+# 欢迎来到IvorySQL文档库
 
-**IvorySQL** is the only Oracle compitable open source PostgreSQL.
+**IvorySQL** 是目前唯一一个兼容Oracle的开源PostgreSQL。
 
-## Getting Started
 
-Get started by **Downloading the code from Github**.
+## 快速开始
+
+从 **Github下载代码** 快速开始。
