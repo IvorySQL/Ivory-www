@@ -1,7 +1,7 @@
 ![License: CC0-1.0](https://img.shields.io/github/license/IvorySQL/Ivory-www)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://IvorySQL.org)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
-[![GitHub contributors](https://badgen.net/github/contributors/Naereen/Strapdown.js)](https://GitHub.com/Naereen/Strapdown.js/graphs/contributors/)
+[![GitHub contributors](https://badgen.net/github/contributors/IvorySQL/Ivory-www)](https://GitHub.com/IvorySQL/Ivory-www/graphs/contributors/)
  <a href="https://www.npmjs.com/package/@docusaurus/core"><img src="https://img.shields.io/npm/v/@docusaurus/core.svg?style=flat" alt="npm version"></a>
  <a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
  <a href="https://app.netlify.com/sites/ivorysql/deploys"><img src="https://api.netlify.com/api/v1/badges/628fb623-1be0-4206-adfa-70e66a4cd3f2/deploy-status" alt="Netlify Status"></a>
