@@ -4,31 +4,31 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.IvorySQL Documentation": {
-    "message": "IvorySQL Documentation",
+    "message": "IvorySQL文档",
     "description": "The label for category IvorySQL Documentation in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Contributing to the Project": {
-    "message": "Contributing to the Project",
+    "message": "贡献项目",
     "description": "The label for category Contributing to the Project in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Contributing to IvorySQL source": {
-    "message": "Contributing to IvorySQL source",
+    "message": "贡献IvorySQL源码",
     "description": "The label for category Contributing to IvorySQL source in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Contributing to Translations": {
-    "message": "Contributing to Translations",
+    "message": "贡献翻译",
     "description": "The label for category Contributing to Translations in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Contributing to IvorySQL documentation": {
-    "message": "Contributing to IvorySQL documentation",
+    "message": "贡献IvorySQL文档库",
     "description": "The label for category Contributing to IvorySQL documentation in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.current": {
-    "message": "current",
+    "message": "现在的",
     "description": "The label for category current in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Compatibility Features": {
-    "message": "Compatibility Features",
+    "message": "兼容性特征",
     "description": "The label for category Compatibility Features in sidebar tutorialSidebar"
   }
 }
