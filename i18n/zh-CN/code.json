@@ -187,33 +187,33 @@
     "message": "了解更多"
   },
   "'Open Source'": {
-    "message": "'开源'"
+    "message": "开源"
   },
   "No Vendor Lock-In": {
-    "message": "没有厂商的限制"
+    "message": "没有厂商的限制。"
   },
   "'Powered by PostgrSQL'": {
-    "message": "'Powered by PostgrSQL'"
+    "message": "基于PostgrSQL"
   },
   "Based on the PostgreSQL, with full SQL, rock-solid reliability, and a massive ecosystem.": {
     "message": "基于PostgreSQL，具有完整的SQL、坚如磐石的可靠性和庞大的生态系统。"
   },
   "'Backed by HighGo'": {
-    "message": "'瀚高支持'"
+    "message": "瀚高支持"
   },
   "Supported by HighGo, The leading provider of PostgreSQL database.": {
     "message": "由领先的PostgreSQL数据库提供商瀚高软件提供支持。"
   },
   "'Oracle Compatible'": {
-    "message": "'兼容Oracle'"
+    "message": "兼容Oracle"
   },
   "Migrate your Oracle DB to IvorySQL.": {
-    "message": "将Oracle数据库迁移到IvorySQL."
+    "message": "将Oracle数据库迁移到IvorySQL。"
   },
   "'Customization'": {
-    "message": "'定制化'"
+    "message": "可定制化"
   },
   "Just download the code and make it as you like.": {
-    "message": "只需下载代码，按照你的想法自定义."
+    "message": "只需下载代码，并按照你的想法自定义。"
   }
 }
