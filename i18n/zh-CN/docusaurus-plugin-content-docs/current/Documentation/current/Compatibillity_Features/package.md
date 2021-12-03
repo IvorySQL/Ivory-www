@@ -1,24 +1,15 @@
 ---
-sidebar_label: 'Packages'
+sidebar_label: '软件包'
 sidebar_position: 1
 ---
 
-# Package Overview
+# 软件包概述
 
-This section journeys into the “Oracle Style Package” for PostgreSQL. A
-package by very definition is an object or a group of objects packed
-together. In terms of databases, this translates into a named schema
-object that packages within itself a logically grouped collection of
-procedures, functions, variables, cursors, user-defined record types,
-and reference records. It is expected that users are familiar with
-PostgreSQL and has a good understanding of SQL language to better
-appreciate the packages and use these more efficiently.
+本节将介绍PostgreSQL的“Oracle风格包”。根据定义，包是一个对象或一组对象打包在一起。就数据库而言，这将转换为一个命名的模式对象，该对象将过程、函数、变量、游标、用户定义的记录类型和引用记录的逻辑分组集合打包在自己内部。希望用户熟悉PostgreSQL，并且对SQL语言有很好的理解，以便更好地理解这些包并更有效地使用它们。
 
-## The Need for Packages
+## 对软件包的需求
 
-Like similar constructs in various other programming languages, there
-are good reasons for using packages with SQL. In this section we are
-going to cover a few.
+与其他各种编程语言中的类似构造一样，将包与SQL一起使用有很多好处。在本节中，我们将要讲几个。
 
 1. Reliability and Reusability of Code
    Packages provide you the ability to create modular objects that
