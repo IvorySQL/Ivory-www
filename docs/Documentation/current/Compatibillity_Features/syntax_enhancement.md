@@ -288,9 +288,9 @@ select null union select null union select 1.2;
 (2 rows)
 ```
 
-# q' feature
+# "q'" feature
 ## Overview
-Use q' to escape special characters. q' escape character is usually used after! [] {} () <> and other escape symbols, you can also use \, you can also use letters, numbers, =, +, -, *, &, $, %, #, etc. , Spaces are not allowed.
+Use "q'" to escape special characters. "q'" escape character is usually used after! [] {} () <> and other escape symbols, you can also use \, you can also use letters, numbers, =, +, -, *, &, $, %, #, etc. , Spaces are not allowed.
 
 ## Using
 ```
