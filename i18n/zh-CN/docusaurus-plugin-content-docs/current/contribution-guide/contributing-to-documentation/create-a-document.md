@@ -2,17 +2,17 @@
 sidebar_position: 2
 ---
 
-# Create a Document
+# 创建一个文档
 
-Documents are **groups of pages** connected through:
+文档是通过以下方式串联起来的**页面组** :
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+- **侧边栏**
+- **上一页/下一页导航**
+- **版本管理**
 
-## Create your first Doc
+## 创建你的第一个文档
 
-Create a markdown file at `docs/hello.md`:
+在这个目录 `docs/hello.md`下创建一个markdown文件:
 
 ```md title="docs/hello.md"
 # Hello
@@ -20,13 +20,13 @@ Create a markdown file at `docs/hello.md`:
 This is my **first Docusaurus document**!
 ```
 
-Once committed the new document will be available at `http://ivorySQL.org/docs/hello`.
+一旦提交，新文档将出现在 `http://ivorySQL.org/docs/hello`.
 
-## Configure the Sidebar
+## 配置侧边栏
 
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
+Docusaurus会自动**从“docs”文件夹创建一个侧栏**。
 
-Add metadatas to customize the sidebar label and position:
+添加元数据以自定义侧栏标签和位置：
 
 ```md title="docs/hello.md" {1-4}
 ---
@@ -39,7 +39,7 @@ sidebar_position: 3
 This is my **first ivorySQL document contribution**!
 ```
 
-It is also possible to create your sidebar explicitly in `sidebars.js`:
+也可以在“sidebars.js”中显式创建边栏：
 
 ```diff title="sidebars.js"
 module.exports = {
