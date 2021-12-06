@@ -11,50 +11,29 @@ sidebar_position: 1
 
 与其他各种编程语言中的类似构造一样，将包与SQL一起使用有很多好处。在本节中，我们将要讲几个。
 
-1. Reliability and Reusability of Code
-   Packages provide you the ability to create modular objects that
-   encapsulate code. This makes the overall design and implementation
-   simpler. With the ability to encapsulate variables and related types,
-   stored procedures / functions, and cursors, it allows you to
-   essentially create a self-contained module that is simple and easy to
-   understand, maintain and use. Encapsulation comes into play through
-   exposure of a package interface, rather than its implementation
-   details, i.e. package body. This, therefore, benefits in many ways.
-   It allows applications and users to refer to a consistent interface
-   and not worry about the contents of its body. Also, it prevents users
-   from making any decisions based on code implementation as that’s
-   never exposed to them.
-2. Ease of Use
-   The ability to create a consistent functional interface in PostgreSQL
-   helps simplify application development by allowing compilation of
-   packages without their bodies. Beyond the development phase, the
-   package allows a user to manage access control on the entire package
-   rather than individual objects. This is rather valuable especially if
-   the package contains lots of schema objects.
-3. Performance
-   Packages are loaded into memory for maintenance and therefore
-   utilizing minimal I/O resources. Recompilation is simple and only
-   limited to object(s) changed; dependent objects are not recompiled.
-4. Additional Features
-   In addition to performance and ease of use, packages offer
-   session-wide persistence for variables and cursors. This means
-   variables and cursors have the same lifetime as a database session
-   and are destroyed when the session is destroyed.
+1. 代码包的可靠性和可复用性
 
-## Package Components
+   Packages使您能够创建封装代码的模块化对象。这使得总体设计和实现更加简单。通过封装变量和相关类型、存储过程/函数以及游标，它允许您创建一个简单、易于理解、易于维护和使用的独立的模块。封装通过公开包接口而不是包体的实现细节发挥作用。因此，这在许多方面都有好处。它允许应用程序和用户引用一致的界面，而不必担心其主体的内容。此外，它还防止用户根据代码实现做出任何决策，因为代码实现从来没有向他们公开过。
 
-In earlier sections, we briefly mention that a package has an interface
-and a body, which are the major components that make up a package.
+2. 易用性
 
-1. Package Specification
-   Any object within the package that is to be used from the outside is
-   specified in the package specification section. This is the publicly
-   accessible interface we have been referring to in earlier sections.
-   It does not contain the definition or implementation of them, i.e.
-   the functions and the procedures. It only has their headers defined
-   without the body definitions. The variables can be initialized. The
-   following is the list of objects that can be listed in the
-   specification:
+   在PostgreSQL中创建一致的功能接口的能力有助于简化应用程序开发，因为它允许在没有主体的情况下编译包。在开发阶段之后，包允许用户管理整个包的访问控制，而不是单个对象。这非常有价值，尤其是当包包含许多模式对象时。
+
+3. 性能
+
+  包是加载到内存中进行维护，因此使用的I/O资源最少。重新编译很简单，仅限于更改的对象；不重新编译从属对象。
+
+4. 附加功能
+
+   除了性能和易用性之外，软件包还为变量和游标提供了会话范围的持久性。这意味着变量和游标与数据库会话具有相同的生存期，并在会话被销毁时被销毁。
+
+## 包组件
+
+包有一个接口和一个主体，这是组成包的主要组件。
+
+1. 包规格
+
+   包规格指定了包内从外部使用的任何对象。这指的是可公开访问的接口。它不包含它们的定义或实现，即功能和程序。它只定义了标题，而没有正文定义。可以初始化变量。以下是可在规范中列出的对象列表：
    - Functions
    - Procedures
    - Cursors
@@ -64,36 +43,22 @@ and a body, which are the major components that make up a package.
    - Record types
 
 
-2. Package Body
-   The body contains all the implementation code of a package, including
-   the public interfaces and the private objects. A package body is
-   optional if the specification does not contain any subprogram or
-   cursor.
+2. 包体
 
-   It must contain the definition of the subprograms declared in
-   specification and the corresponding definitions must match. 
+   包体包含包的所有实现代码，包括公共接口和私有对象。如果规范不包含任何子程序或游标，则包体是可选的。
 
-   A package body can contain its own subprogram and type declarations
-   of any internal objects not specified in the specifications. These
-   objects are then considered private. Private objects cannot be
-   accessed outside the package. 
+   它必须包含规范中声明的子程序的定义，并且相应的定义必须匹配。
 
-   In addition to subprogram definitions, it can optionally contain a
-   initializer block that initializes the variables declared in
-   specification and is executed only once when the first call to the
-   package is made in a session.
+   包体可以包含其自己的子程序和规范中未指定的任何内部对象的类型声明。这些对象被认为是私有的。无法在包外部访问私有对象。 
 
-
+   除了子程序定义外，它还可以选择性地包含一个初始化程序块，用于初始化规范中声明的变量，并且在会话中首次调用包时仅执行一次。
 
 <br />
 
 ---
-**NOTE**
+**注意**
 
-Package body gets invalidated if the specification changes Care must be
-taken when identifying the public interfaces and the private ones to
-avoid exposing critical functions and variables outside the package
-unexpected.
+如果规范更改，则包体将失效。在标识公共接口和私有接口时，必须小心，以避免将关键函数和变量暴露在包之外。
 
 ---
 
@@ -101,9 +66,9 @@ unexpected.
 <br />
 
 
-# Package Syntax
+# 包语法
 
-## Package Specification Syntax
+## 包规范语法
 
 ```SQL
 CREATE [ OR REPLACE ] PACKAGE [schema.] *package_name* [invoker_rights_clause] [IS | AS] 
@@ -167,7 +132,7 @@ parameter_declaration:
 <br />
 
 
-## Package Body Syntax
+## 包体语法
 
 
 ```SQL
@@ -221,83 +186,64 @@ statement:
 
 <br />
 
-### **Description**
+### **描述**
 
-CREATE PACKAGE defines a new package. CREATE OR REPLACE PACKAGE will
-either create a new package, or replace an existing definition.
+创建包定义一个新包。创建或替换包将创建新包或替换现有定义。
 
-If a schema name is included, then the package is created in the
-specified schema. Otherwise it is created in the current schema. The
-name of the new package must be unique within the schema.
+如果包含架构名称，则在指定架构中创建包。否则，它将在当前架构中创建。新包的名称在架构中必须是唯一的。
 
-When CREATE OR REPLACE PACKAGE is used to replace an existing package,
-the ownership and permissions of the package do not change. All other
-package properties are assigned the values specified or implied in the
-command. You must own the package to replace it (this includes being a
-member of the owning role).
+使用“创建或替换包”替换现有包时，包的所有权和权限不会更改。所有其他包属性都被指定为命令中指定或隐含的值。您必须拥有该包才能替换它（这包括作为所属角色的成员）。
 
-The user that creates the package becomes the owner of the package.
+创建包的用户成为包的所有者。
 
 
 <br />
 
-### **Parameters**
+### **参数**
 
 ```package_name```
-	The name (optionally schema-qualified) of the package to create.
+   要创建的包的名称（可选架构限定）。
 
 ```invoker_rights_clause```
-    Invoker rights define the access privileges for the package to the
-    database objects. The options are available are:
+   调用方权限定义包对数据库对象的访问权限。可供选择的选项有：
 	
 - *CURRENT_USER*
-  Indicates that the access privileges for the current user executing
-  the package will be used.
+  将使用执行包的当前用户的访问权限。
+
 - *DEFINER*
-Indicates that access privileges for the package creator will be used.
+  将使用包创建者的访问权限。
 
 ```item_list```
-This is the list of item that can be part of a package.
+这是可以作为包的一部分的项目列表。
 
 ```procedure_declaration```
-Specifies a procedure name followed by its list of arguments. It's only
-a declaration and will not define the procedure. 
+指定过程名称及其参数列表。这只是一个声明，不会定义过程。
 
-When this declaration is part of package package specification, it's a
-public procedure and it's definition must be added to package body. 
+当此声明是包规范的一部分时，它是一个公共过程，必须将其定义添加到包体中。
 
-When it's part of package body, it act's as forward declaration and is a
-private procedure which is only accessible to package elements.
+当它是包体的一部分时，它充当转发声明，是一个只有包元素才能访问的私有过程。
 
 ```procedure_definition```
-The procedures are defined in the package body. This defines the
-procedure that was declared earlier. It can also also define a procedure
-without any earlier declaration which will make it a private procedure.
+程序在包体中定义。这定义了先前声明的过程。它还可以定义一个过程，而不需要任何先前的声明，这将使它成为一个私有过程。
 
 ```function_declaration```
-Defines a function name, its arguments and its return type. It's only a
-declaration and will not define the function. 
+定义函数名、参数及其返回类型。它只是一个声明，不会定义函数。
 
-When this declaration is part of package package specification, it's a
-public function and it's definition must be added to package body. 
+当此声明是包规范的一部分时，它是一个公共函数，必须将其定义添加到包体中。
 
-When it's part of package body, it act's as forward declaration and is a
-private function which is only accessible to package elements.
+当它是包体的一部分时，它充当转发声明，是一个只有包元素才能访问的私有函数。
 
 ```function_definition```
-The functions are defined in the package body. This defines the
-functions that was declared earlier. It can also also define a function
-without any earlier declaration which will make it a private function.
+这些函数在包体中定义。这定义了前面声明的函数。它还可以定义一个函数，而不需要任何先前的声明，这将使它成为一个私有函数。
 
 ```type_definition```
-Suggests that you can define either a record, or cursor type.
+建议您可以定义记录或光标类型。
 
 ```cursor_declaration```
-Defines that cursor declaration must include its arguments and return
-type as the desired rowtype.
+定义游标声明必须包括其参数和返回类型作为所需的行类型。
 
 ```item_declaration```
-Allows declaration of:
+允许声明:
 - Cursors
 - Cursor variables
 - Record variables
@@ -305,87 +251,61 @@ Allows declaration of:
   
 
 ```parameter_declaration```
-Defines the syntax for declaring a parameter. The keyword “IN” if
-specified indicates that this is an input parameter. The DEFAULT keyword
-followed by expression (or value) may only be specific for an input
-parameter.
+定义用于声明参数的语法。如果指定了关键字“IN”，则表示这是一个输入参数。后跟表达式（或值）的默认关键字只能特定于输入参数。
 
 ```declare_section```
-This contains all the elements that are local to the function or
-procedure and can be referenced within it's body.
+它包含函数或过程本地的所有元素，并且可以在其主体中引用。
 
 ```body```
-The body consists of the SQL statements or PL control structures that
-are supported by PL/iSQL language.
-
-
+主体由PL/iSQL语言支持的SQL语句或PL控制结构组成。
 
 <br />
 
-# Creating and Accessing Packages
+# 创建和访问包
 
-## Creating Packages
+## 创建包
 
-In the previous sections, we have gone through the syntax that dictates
-the structure of a package. In this section, we are going to take this a
-step further by understanding the construction process of a package and
-how we can access its public elements.
+在本节中，我们将进一步了解包的构造过程以及如何访问其公共元素。
 
-As a package is created, PostgreSQL will compile it and report any
-issues it may find. Once the package is successfully compiled, it is
-ready to use.
+创建包时，PostgreSQL将编译并报告任何它可能发现的问题。一旦成功编译包，它将被删除随时可用。
 
-## Accessing Package Elements
+## 访问包元素
 
-A package is instantiated and initialized when it’s referenced in a
-session for the first time. The following actions are executed during
-this process:
+当包第一次在会话中被引用时，它将被实例化和初始化。以下操作在过程中执行这个过程：
+- 将初始值分配给公共常量和变量
+- 执行包的初始值设定项块
 
-- Assignment of initial values to public constants and variables
-- Execution of the initializer block of the package
+有几种方法可以访问包元素：
 
-There are several ways to access package elements:
-
-- package functions can be utilized just as any other function in a
-  SELECT statement or from other PL blocks
-- package procedure can be invoked directly using CALL or from other PL
-  blocks
-- package variables can be directly read and written using the package
-  name qualification in a PL block or from an SQL prompt.
-- Direct Access Using Dot Notation:
-   In the dot notation, elements can be accessed in the following
-   manner:
+- 包函数可以像SELECT语句或其他PL块中的任何其他函数一样使用
+- 包过程可以使用CALL直接调用，也可以从其他PL块调用
+- 包变量可以使用PL块中的包名称限定或从SQL提示符直接读取和写入。
+- 使用点符号直接访问：
+   在点表示法中，可以通过以下方式访问元素：
   - package_name.func('foo');
   - package_name.proc('foo');
   - package_name.variable;
   - package_name.constant;
   - package_name.other_package.func('foo');
   
-   These statements can be used from inside of PL block or in a SELECT
-   statement if the element is not a type declaration or a procedure.
+   这些语句可以从PL块内部使用，如果元素不是类型声明或过程，则可以在SELECT语句中使用。
 
-- SQL Call Statement:
-  Another way is to use the CALL statement. The CALL statement executes
-  a standalone procedure, or a function defined in a type or package.
+- SQL调用语句:
+  另一种方法是使用CALL语句。CALL语句执行独立过程，或在类型或包中定义的函数。
 
   - CALL package_name.func('foo'); 
   - CALL package_name.proc('foo');
 
 
-## Understanding Scope of Visibility
+## 了解可见性的范围
 
-The scope of variables declared in a PL/SQL block is limited to that
-block. If it has nested blocks, then it will be a global variable to the
-nested blocks.
+PL/SQL块中声明的变量范围仅限于该块。如果它有嵌套块，则它将是嵌套块的全局变量。
 
-Similarly, if both blocks declare the same name variable, then inside of
-the nested block, its own declared variable is visible and the parent
-one is invisible. To access the parent variable, that variable must be
-fully qualified. 
+类似地，如果两个块都声明了相同的名称变量，那么在嵌套块内部，它自己声明的变量是可见的，父变量是不可见的。要访问父变量，该变量必须完全限定。
 
-Consider the following code snippet.
+考虑下面的代码片段。
 
-**Example: Visibility and Qualifying Variable Names**
+**示例：可见性和限定变量名**
 ```SQL
 <<blk_1>>
 DECLARE
@@ -405,23 +325,18 @@ BEGIN
 END;
 ```
 
-The above example shows how you must fully qualify a variable name in
-case a nested package contains a variable with the same name. 
+上面的示例显示了当嵌套包包含同名变量时，必须如何完全限定变量名。
 
-Variable name qualification helps in resolving possible confusion that
-gets introduced by scope precedence in the following scenarios:
+变量名限定有助于解决在以下情况下由作用域优先级引入的可能混淆：
 
-- Package and nested packages variables: without qualification, nested
-  takes precedence
-- Package variable and column names: without qualification, column name
-  takes precedence
-- Function or procedure variable and package variable: without
-  qualification, package variable takes precedence.
+- 包和嵌套包变量：如果没有限定，嵌套的优先
+- 包变量和列名：如果没有限定，列名优先
+- 功能或程序变量和包变量：如果没有限定，包变量优先。
 
-The fields or methods in the following types need to be type qualified.
-- Record Type
+以下类型中的字段或方法需要进行类型限定。
+- 记录类型
 
-**Example: Record Type Visibility and Access**
+**示例：记录类型可见性和访问权限**
 ```SQL
 DECLARE
      x INT;
@@ -436,9 +351,9 @@ END;
 
 <br />
 
-# Package Examples
+# 包示例
 
-## Package Specification
+## 包规格
 
 ```SQL
 DROP TABLE log;
@@ -472,7 +387,7 @@ CREATE OR REPLACE PACKAGE emp_admin AUTHID DEFINER AS
 END emp_admin;
 ```
 
-## Package Body
+## 包体
 
 ```SQL
 -- Package body:
@@ -530,8 +445,5 @@ END emp_admin;
 
 <br />
 
-# Limitations
-Record types are supported as package variables, however they can only
-be used within package elements i.e., Package function/procedure can
-utilize them. They can not be accessed outside the package, this
-limitation will be addressed in the next update of HG-PSQL 2. x.
+# 局限性
+记录类型支持作为包变量，但是它们只能在包元素中使用，即包函数/过程可以使用它们。它们不能在包外访问，这一限制将在HG-PSQL 2的下一次更新中解决。
