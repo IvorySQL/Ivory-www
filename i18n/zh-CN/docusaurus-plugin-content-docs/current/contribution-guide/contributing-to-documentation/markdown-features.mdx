@@ -2,13 +2,13 @@
 sidebar_position: 3
 ---
 
-# Markdown Features
+# Markdown的特征
 
-Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
+Docusaurus支持 **[Markdown](https://daringfireball.net/projects/markdown/syntax)** 和一些 **additional features**.
 
 ## Front Matter
 
-Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/):
+Markdown文档的顶部有元数据称为 [Front Matter](https://jekyllrb.com/docs/front-matter/):
 
 ```text title="my-doc.md"
 // highlight-start
@@ -27,7 +27,7 @@ Markdown text with [links](./hello.md)
 
 ## Links
 
-Regular Markdown links are supported, using url paths or relative file paths.
+常规的Markdown链接支持使用url路径或相对文件路径。
 
 ```md
 Let's see how to [Create a page](/create-a-page).
@@ -37,23 +37,23 @@ Let's see how to [Create a page](/create-a-page).
 Let's see how to [Create a page](./create-a-page.md).
 ```
 
-**Result:** Let's see how to [Create a page](./create-a-page.md).
+**结果:** 让我们看看如何 [Create a page](./create-a-page.md).
 
 ## Images
 
-Regular Markdown images are supported.
+支持常规Markdown图片。
 
-Add an image at `static/img/docusaurus.png` and display it in Markdown:
+在该目录`static/img/docusaurus.png`下添加一个图片然后显示在Markdown:
 
 ```md
-![Docusaurus logo](/img/docusaurus.png)
+![IvorySQL logo](/img/IvorySQL-black.png)
 ```
 
-![Docusaurus logo](/img/docusaurus.png)
+![IvorySQL logo](/img/IvorySQL-black.png.png)
 
-## Code Blocks
+## 代码块
 
-Markdown code blocks are supported with Syntax highlighting.
+Markdown代码块支持语法突出显示。
 
     ```jsx title="src/components/HelloDocusaurus.js"
     function HelloDocusaurus() {
@@ -63,15 +63,15 @@ Markdown code blocks are supported with Syntax highlighting.
     }
     ```
 
-```jsx title="src/components/HelloDocusaurus.js"
-function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
+```jsx title="src/components/HelloIvorySQL.js"
+function HelloIvorySQL() {
+  return <h1>Hello, IvorySQL!</h1>;
 }
 ```
 
-## Admonitions
+## 警告
 
-Docusaurus has a special syntax to create admonitions and callouts:
+Docusaurus有一种特殊的语法来创建警告和标注：
 
     :::tip My tip
 
@@ -97,9 +97,9 @@ This action is dangerous
 
 :::
 
-## MDX and React Components
+## MDX和React组件
 
-[MDX](https://mdxjs.com/) can make your documentation more **interactive** and allows using any **React components inside Markdown**:
+[MDX](https://mdxjs.com/) 可以使您的文档更具**交互性**，并允许在Markdown中使用**任何React组件**：
 
 ```jsx
 export const Highlight = ({children, color}) => (
