@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Documentation location
-visit https://github.com/IvorySQL/Ivory-www/tree/main/docs
+# 文档位置
+请访问 https://github.com/IvorySQL/Ivory-www/tree/main/docs
 
-Documentation supports **Markdown** syntax:
+文档支持 **Markdown** 语法:
 
-If you see an improvement can be made to documentation, Please submit a pull request
+如果您认为可以对文档进行改进，请提交请求。
