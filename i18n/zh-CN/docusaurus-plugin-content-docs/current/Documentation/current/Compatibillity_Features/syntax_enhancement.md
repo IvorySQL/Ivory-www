@@ -104,7 +104,7 @@ alter table tb_test3 drop column(id);
 
 # 删除表格
 ## 概述
-Use oracle syntax to delete table.
+使用oracle语法删除表。
 
 ## 语法
 ```
@@ -149,7 +149,7 @@ table tb_test4;
 
 # 更新表格
 ## 概述
-When update table, can use table name or alias to reference column.
+更新表时，可以使用表名或别名引用列。
 
 ## 语法
 ```
@@ -204,7 +204,8 @@ Id  |    flg
 
 # IS关键字
 ## 概述
-When create function, can use IS keyword.
+创建函数时，可以使用IS关键字。
+
 ## 使用
 ```
 create function test2(n1 int, n2 int) returns int
@@ -292,8 +293,6 @@ select null union select null union select 1.2;
 # q\' feature
 ## 概述
 使用 q\' 转义特殊字符。q\' 转义字符通常在\! \[\] \{\} \(\) \<\> 和其他转义字符之后使用, 您也可以使用 \\, 也可以使用字母, 数字, \=, \+, \-, \*, \&, \$, \%, \#, 等, 不允许使用空格。
-
-q\' escape character is usually used after\! \[\] \{\} \(\) \<\> and other escape symbols, you can also use \\, you can also use letters, numbers, \=, \+, \-, \*, \&, \$, \%, \#, etc. , Spaces are not allowed.
 
 ## 使用
 ```
