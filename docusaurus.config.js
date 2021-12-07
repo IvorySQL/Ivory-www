@@ -50,20 +50,41 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'right',
-            label: 'Docs',
-          },
-          {
-            label: 'Community',
-            to: '/community-page',
-            position: 'right',
-          },
-          {
-            label: 'Download',
-            href: 'https://github.com/IvorySQL/IvorySQL/releases',
-            position: 'right',
+            type: 'dropdown',
+            position: 'left',
+            label: 'Resources',
+            items: [
+              {
+                label: 'Docs',
+                type: 'doc',
+                docId: 'intro',
+              },
+              {
+                label: 'Community',
+                to: '/community-page',
+              },
+              {
+                label: 'Downloads',
+                href: 'https://github.com/IvorySQL/IvorySQL/releases',
+              },
+              {
+                label: 'Contribution Guidelines',
+                to: '/contribution-guidelines',
+              },
+              {
+                label: 'IvorySQL GitHub',
+                href: 'https://github.com/IvorySQL/IvorySQL',
+              },
+              {
+                label: 'Mailing Lists',
+                href: 'https://lists.IvorySQL.org',
+              },
+              {
+                label: 'Report an issue',
+                href: 'https://github.com/IvorySQL/IvorySQL/issues/new',
+              },
+
+            ]
           },
           {
             href: 'https://github.com/IvorySQL/IvorySQL',

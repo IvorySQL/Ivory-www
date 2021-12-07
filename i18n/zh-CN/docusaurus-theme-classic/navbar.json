@@ -18,5 +18,29 @@
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
+  },
+  "item.label.Resources": {
+    "message": "Resources",
+    "description": "Navbar item with label Resources"
+  },
+  "item.label.Contribution Guidelines": {
+    "message": "Contribution Guidelines",
+    "description": "Navbar item with label Contribution Guidelines"
+  },
+  "item.label.Report an issue": {
+    "message": "Report an issue",
+    "description": "Navbar item with label Report an issue"
+  },
+  "item.label.IvorySQL GitHub": {
+    "message": "IvorySQL GitHub",
+    "description": "Navbar item with label IvorySQL GitHub"
+  },
+  "item.label.Mailing Lists": {
+    "message": "Mailing Lists",
+    "description": "Navbar item with label Mailing Lists"
+  },
+  "item.label.Downloads": {
+    "message": "下载",
+    "description": "Navbar item with label Downloads"
   }
 }
