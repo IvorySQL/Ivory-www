@@ -1,14 +1,16 @@
 ---
 sidebar_label: '语法增强'
-sidebar_position: 1
+title: 语法增强
+Tags:
+ - Alter table
 ---
 
-# 更改表格
+## 更改表格
 
-## 概述
+### 概述
 使用oracle语法更改表。
 
-## 语法
+### 语法
 
 ```
 ALTER TABLE [ IF EXISTS ] [ ONLY ] name [ * ]
@@ -29,7 +31,7 @@ alter_using:
     USING expression
 ```
 
-### **语法**
+#### **语法**
 
 ```name```
 	Table name.  
@@ -48,7 +50,7 @@ alter_using:
 ```USING keyword```
 	Modify value for column.  
       
-## 使用
+### 使用
 
 ```
 ADD:
@@ -102,11 +104,11 @@ alter table tb_test3 drop column(id);
  flg6   | character(15) |           |          | 
 ```
 
-# 删除表格
-## 概述
+## 删除表格
+### 概述
 使用oracle语法删除表。
 
-## 语法
+### 语法
 ```
 [ WITH [ RECURSIVE ] with_query [, ...] ]
 DELETE [ FROM ] [ ONLY ] table_name [ * ] [ [ AS ] alias ]
@@ -114,7 +116,7 @@ DELETE [ FROM ] [ ONLY ] table_name [ * ] [ [ AS ] alias ]
     [ WHERE condition | WHERE CURRENT OF cursor_name ]
     [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]
  ```
-### **参数**
+#### **参数**
 ```table_name```
 	Table name.  
 ```alias```
@@ -130,7 +132,7 @@ DELETE [ FROM ] [ ONLY ] table_name [ * ] [ [ AS ] alias ]
 ```output_name```
 	The name of the column being returned.  
 
-## 使用
+### 使用
 ```
 reate table tb_test4(id int, flg char(10));
 
@@ -147,11 +149,11 @@ table tb_test4;
 (1 row)
 ```
 
-# 更新表格
-## 概述
+## 更新表格
+### 概述
 更新表时，可以使用表名或别名引用列。
 
-## 语法
+### 语法
 ```
 [ WITH [ RECURSIVE ] with_query [, ...] ]
 UPDATE [ ONLY ] table_name [ * ] [ [ AS ] alias ]
@@ -164,7 +166,7 @@ UPDATE [ ONLY ] table_name [ * ] [ [ AS ] alias ]
     [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]
 ```
 
-### **参数**
+#### **参数**
 ```table_name```
 	Table name.  
 ```alias```
@@ -185,7 +187,7 @@ UPDATE [ ONLY ] table_name [ * ] [ [ AS ] alias ]
 	After each row is deleted, it will be calculated and returned by DELETE.  
 ```output_name```
 	The name of the column being returned.  
-## 使用
+### 使用
 ```
 create table tb_test5(id int, flg char(10));
 
@@ -202,11 +204,11 @@ Id  |    flg
 (3 rows)
 ```
 
-# IS关键字
-## 概述
+## IS关键字
+### 概述
 创建函数时，可以使用IS关键字。
 
-## 使用
+### 使用
 ```
 create function test2(n1 int, n2 int) returns int
 is '
@@ -221,18 +223,18 @@ select test2(3,4);
 (1 row)
 ```
 
-# 序列
-## 概述
+## 序列
+### 概述
 可以使用列引用调用nextval或currval。
 
-## 语法
+### 语法
 ```
 SELECT [ database {schema} | schema ] sequence {nextval | currval};
 ```
-### **参数**
+#### **参数**
 ```sequence```
 	Sequence name.  
-## Using
+### Using
 ```
 create sequence sq;
 
@@ -249,16 +251,16 @@ select sq.currval;
 (1 row)
 ```
 
-# MINUS
-## 概述
+## MINUS
+### 概述
 计算在左SELECT语句结果中但不在右SELECT语句结果中的行集。
 
-## 语法
+### 语法
 ```
 select_statement MINUS [ ALL | DISTINCT ] select_statement;
 ```
 
-### **参数**
+#### **参数**
 ```select_statement```
 	Any SELECT statement without ORDER BY, LIMIT, FOR NO KEY UPDATE, FOR UPDATE, FOR SHARE and FOR KEY SHARE clauses.  
 ```ALL keyword```
@@ -266,7 +268,7 @@ select_statement MINUS [ ALL | DISTINCT ] select_statement;
 ```DISTINCT keyword```
 	Eliminate duplicate rows  
 
-## 使用
+### 使用
 ```
 select * from generate_series(1, 3) g(i) MINUS select * from generate_series(1, 3) g(i) where i = 1;
  i 
@@ -276,11 +278,11 @@ select * from generate_series(1, 3) g(i) MINUS select * from generate_series(1, 
 (2 rows)
 ```
 
-# UNION
-## 概述
+## UNION
+### 概述
 在两个以上的union子句中支持连续使用null。我们将把null的类型转换为最近右边的非null值类型。
 
-## 使用
+### 使用
 ```
 select null union select null union select 1.2;
  ?column?
@@ -290,11 +292,11 @@ select null union select null union select 1.2;
 (2 rows)
 ```
 
-# q\' feature
-## 概述
+## q\' feature
+### 概述
 使用 q\' 转义特殊字符。q\' 转义字符通常在\! \[\] \{\} \(\) \<\> 和其他转义字符之后使用, 您也可以使用 \\, 也可以使用字母, 数字, \=, \+, \-, \*, \&, \$, \%, \#, 等, 不允许使用空格。
 
-## 使用
+### 使用
 ```
 select q''' is goog '';
   ?column?
@@ -303,11 +305,11 @@ select q''' is goog '';
 (1 row)
 ```
 
-# GROUP BY
-## 概述
+## GROUP BY
+### 概述
 当compatible_模式为oracle时，即使group by子句中有主键列，目标列也必须存在于group by子句中。
 
-## 使用
+### 使用
 ```
 set compatible_mode to oracle;
 

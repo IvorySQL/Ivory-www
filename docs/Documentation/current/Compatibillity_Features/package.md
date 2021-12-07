@@ -1,9 +1,11 @@
 ---
 sidebar_label: 'Packages'
-sidebar_position: 1
+title: Packages
+tags:
+  - Oracle Style Packages
 ---
 
-# Package Overview
+## Package Overview
 
 This section journeys into the “Oracle Style Package” for PostgreSQL. A
 package by very definition is an object or a group of objects packed
@@ -14,7 +16,7 @@ and reference records. It is expected that users are familiar with
 PostgreSQL and has a good understanding of SQL language to better
 appreciate the packages and use these more efficiently.
 
-## The Need for Packages
+### The Need for Packages
 
 Like similar constructs in various other programming languages, there
 are good reasons for using packages with SQL. In this section we are
@@ -50,7 +52,7 @@ going to cover a few.
    variables and cursors have the same lifetime as a database session
    and are destroyed when the session is destroyed.
 
-## Package Components
+### Package Components
 
 In earlier sections, we briefly mention that a package has an interface
 and a body, which are the major components that make up a package.
@@ -110,9 +112,9 @@ unexpected.
 <br />
 
 
-# Package Syntax
+## Package Syntax
 
-## Package Specification Syntax
+### Package Specification Syntax
 
 ```SQL
 CREATE [ OR REPLACE ] PACKAGE [schema.] *package_name* [invoker_rights_clause] [IS | AS] 
@@ -176,7 +178,7 @@ parameter_declaration:
 <br />
 
 
-## Package Body Syntax
+### Package Body Syntax
 
 
 ```SQL
@@ -230,7 +232,7 @@ statement:
 
 <br />
 
-### **Description**
+#### **Description**
 
 CREATE PACKAGE defines a new package. CREATE OR REPLACE PACKAGE will
 either create a new package, or replace an existing definition.
@@ -250,7 +252,7 @@ The user that creates the package becomes the owner of the package.
 
 <br />
 
-### **Parameters**
+#### **Parameters**
 
 ```package_name```
 	The name (optionally schema-qualified) of the package to create.
@@ -331,9 +333,9 @@ are supported by PL/iSQL language.
 
 <br />
 
-# Creating and Accessing Packages
+## Creating and Accessing Packages
 
-## Creating Packages
+### Creating Packages
 
 In the previous sections, we have gone through the syntax that dictates
 the structure of a package. In this section, we are going to take this a
@@ -344,7 +346,7 @@ As a package is created, PostgreSQL will compile it and report any
 issues it may find. Once the package is successfully compiled, it is
 ready to use.
 
-## Accessing Package Elements
+### Accessing Package Elements
 
 A package is instantiated and initialized when it’s referenced in a
 session for the first time. The following actions are executed during
@@ -381,7 +383,7 @@ There are several ways to access package elements:
   - CALL package_name.proc('foo');
 
 
-## Understanding Scope of Visibility
+### Understanding Scope of Visibility
 
 The scope of variables declared in a PL/SQL block is limited to that
 block. If it has nested blocks, then it will be a global variable to the
@@ -445,9 +447,9 @@ END;
 
 <br />
 
-# Package Examples
+## Package Examples
 
-## Package Specification
+### Package Specification
 
 ```SQL
 DROP TABLE log;
@@ -481,7 +483,7 @@ CREATE OR REPLACE PACKAGE emp_admin AUTHID DEFINER AS
 END emp_admin;
 ```
 
-## Package Body
+### Package Body
 
 ```SQL
 -- Package body:
@@ -539,7 +541,7 @@ END emp_admin;
 
 <br />
 
-# Limitations
+## Limitations
 Record types are supported as package variables, however they can only
 be used within package elements i.e., Package function/procedure can
 utilize them. They can not be accessed outside the package, this

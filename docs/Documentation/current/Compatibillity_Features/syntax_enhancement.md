@@ -1,14 +1,16 @@
 ---
 sidebar_label: 'Syntax enhancement'
-sidebar_position: 1
+title: Syntax Enhancements
+Tags:
+ - Alter table
 ---
 
-# Alter Table
+## Alter Table
 
-## Overview
+### Overview
 Use oracle syntax to alter table.
 
-## syntax
+### syntax
 
 ```
 ALTER TABLE [ IF EXISTS ] [ ONLY ] name [ * ]
@@ -29,7 +31,7 @@ alter_using:
     USING expression
 ```
 
-### **Parameters**
+#### **Parameters**
 
 ```name```
 	Table name.  
@@ -48,7 +50,7 @@ alter_using:
 ```USING keyword```
 	Modify value for column.  
       
-## Using
+### Using
 
 ```
 ADD:
@@ -102,11 +104,11 @@ alter table tb_test3 drop column(id);
  flg6   | character(15) |           |          | 
 ```
 
-# Delete Table
-## Overview
+## Delete Table
+### Overview
 Use oracle syntax to delete table.
 
-## syntax
+### syntax
 ```
 [ WITH [ RECURSIVE ] with_query [, ...] ]
 DELETE [ FROM ] [ ONLY ] table_name [ * ] [ [ AS ] alias ]
@@ -114,7 +116,7 @@ DELETE [ FROM ] [ ONLY ] table_name [ * ] [ [ AS ] alias ]
     [ WHERE condition | WHERE CURRENT OF cursor_name ]
     [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]
  ```
-### **Parameters**
+#### **Parameters**
 ```table_name```
 	Table name.  
 ```alias```
@@ -130,7 +132,7 @@ DELETE [ FROM ] [ ONLY ] table_name [ * ] [ [ AS ] alias ]
 ```output_name```
 	The name of the column being returned.  
 
-## Using
+### Using
 ```
 reate table tb_test4(id int, flg char(10));
 
@@ -147,11 +149,11 @@ table tb_test4;
 (1 row)
 ```
 
-# Update Table
-## Overview
+## Update Table
+### Overview
 When update table, can use table name or alias to reference column.
 
-## Syntax
+### Syntax
 ```
 [ WITH [ RECURSIVE ] with_query [, ...] ]
 UPDATE [ ONLY ] table_name [ * ] [ [ AS ] alias ]
@@ -164,7 +166,7 @@ UPDATE [ ONLY ] table_name [ * ] [ [ AS ] alias ]
     [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]
 ```
 
-### **Parameters**
+#### **Parameters**
 ```table_name```
 	Table name.  
 ```alias```
@@ -185,7 +187,7 @@ UPDATE [ ONLY ] table_name [ * ] [ [ AS ] alias ]
 	After each row is deleted, it will be calculated and returned by DELETE.  
 ```output_name```
 	The name of the column being returned.  
-## Using
+### Using
 ```
 create table tb_test5(id int, flg char(10));
 
@@ -202,10 +204,10 @@ Id  |    flg
 (3 rows)
 ```
 
-# IS keyword
-## Overview
+## IS keyword
+### Overview
 When create function, can use IS keyword.
-## Using
+### Using
 ```
 create function test2(n1 int, n2 int) returns int
 is '
@@ -220,17 +222,17 @@ select test2(3,4);
 (1 row)
 ```
 
-# Sequence
-## Overview
+## Sequence
+### Overview
 Can use column reference to call nextval or currval.
-## Syntax
+### Syntax
 ```
 SELECT [ database {schema} | schema ] sequence {nextval | currval};
 ```
-### **Parameters**
+#### **Parameters**
 ```sequence```
 	Sequence name.  
-## Using
+### Using
 ```
 create sequence sq;
 
@@ -247,16 +249,16 @@ select sq.currval;
 (1 row)
 ```
 
-# MINUS
-## Overview
+## MINUS
+### Overview
 Calculate the set of rows that are in the result of the left SELECT statement but not in the result of the right SELECT statement.
 
-## Syntax
+### Syntax
 ```
 select_statement MINUS [ ALL | DISTINCT ] select_statement;
 ```
 
-### **Parameters**
+#### **Parameters**
 ```select_statement```
 	Any SELECT statement without ORDER BY, LIMIT, FOR NO KEY UPDATE, FOR UPDATE, FOR SHARE and FOR KEY SHARE clauses.  
 ```ALL keyword```
@@ -264,7 +266,7 @@ select_statement MINUS [ ALL | DISTINCT ] select_statement;
 ```DISTINCT keyword```
 	Eliminate duplicate rows  
 
-## Using
+### Using
 ```
 select * from generate_series(1, 3) g(i) MINUS select * from generate_series(1, 3) g(i) where i = 1;
  i 
@@ -274,11 +276,11 @@ select * from generate_series(1, 3) g(i) MINUS select * from generate_series(1, 
 (2 rows)
 ```
 
-# UNION
-## Overview
+## UNION
+### Overview
 Support continuous use null in more than two union clauses. we will transform null’s type to the type on the nearest right that is not null value.
 
-## Using
+### Using
 ```
 select null union select null union select 1.2;
  ?column?
@@ -288,11 +290,11 @@ select null union select null union select 1.2;
 (2 rows)
 ```
 
-# q\' feature
-## Overview
+## q\' feature
+### Overview
 Use q\' to escape special characters. q\' escape character is usually used after\! \[\] \{\} \(\) \<\> and other escape symbols, you can also use \\, you can also use letters, numbers, \=, \+, \-, \*, \&, \$, \%, \#, etc. , Spaces are not allowed.
 
-## Using
+### Using
 ```
 select q''' is goog '';
   ?column?
@@ -301,11 +303,11 @@ select q''' is goog '';
 (1 row)
 ```
 
-# GROUP BY
-## Overview
+## GROUP BY
+### Overview
 When compatible_mode is oracle, even though have primary key column in group by clause, target column must exists in group by clause.
 
-## Using
+### Using
 ```
 set compatible_mode to oracle;
 
