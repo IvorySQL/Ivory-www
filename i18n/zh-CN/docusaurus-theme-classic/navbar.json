@@ -24,11 +24,11 @@
     "description": "Navbar item with label Resources"
   },
   "item.label.Contribution Guidelines": {
-    "message": "Contribution Guidelines",
+    "message": "贡献准则",
     "description": "Navbar item with label Contribution Guidelines"
   },
   "item.label.Report an issue": {
-    "message": "Report an issue",
+    "message": "提交问题",
     "description": "Navbar item with label Report an issue"
   },
   "item.label.IvorySQL GitHub": {
@@ -36,7 +36,7 @@
     "description": "Navbar item with label IvorySQL GitHub"
   },
   "item.label.Mailing Lists": {
-    "message": "Mailing Lists",
+    "message": "邮件列表",
     "description": "Navbar item with label Mailing Lists"
   },
   "item.label.Downloads": {
