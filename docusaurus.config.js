@@ -26,6 +26,12 @@ const config = {
 //          editUrl: 'https://github.com/IvorySQL/Ivory-www/tree/main/docs',
           editCurrentVersion: false,
         },
+        blog: {
+          showReadingTime: true,
+          blogSidebarTitle: 'IvorySQL Blogs',
+          // Please change this to your repo.
+//          editUrl: 'https://github.com/IvorySQL/Ivory-www/tree/main/blog/',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -48,43 +54,64 @@ const config = {
           alt: 'IvorySQL Logo',
           src: 'img/ivory.png',
         },
+        
         items: [
+          {
+            label: 'Docs',
+            type: 'doc',
+            docId: 'intro',
+            position: 'left'
+          },
+          {
+            to: '/blog',
+            label: 'Blog',
+            position: 'left'
+          },
+          {
+            label: 'Downloads',
+            href: 'https://github.com/IvorySQL/IvorySQL/releases',
+            position: 'left'
+          },
+          {
+            label: 'Releases',
+            to: '/releases-page',
+            position: 'left'
+          },
+
           {
             type: 'dropdown',
             position: 'left',
             label: 'Resources',
             items: [
               {
-                label: 'Docs',
-                type: 'doc',
-                docId: 'intro',
+                label: 'Webinars',
+                to: '/webinars-page',
               },
               {
-                label: 'Community',
-                to: '/community-page',
+                label: 'Partners',
+                to: '/partners-page',
               },
               {
-                label: 'Downloads',
-                href: 'https://github.com/IvorySQL/IvorySQL/releases',
+                label: 'Customer Stories',
+                href: 'customer-stories-page',
               },
               {
                 label: 'Contribution Guidelines',
                 to: '/contribution-guidelines',
               },
-              {
-                label: 'IvorySQL GitHub',
-                href: 'https://github.com/IvorySQL/IvorySQL',
-              },
-              {
-                label: 'Mailing Lists',
-                href: 'https://lists.IvorySQL.org',
-              },
-              {
-                label: 'Report an issue',
-                href: 'https://github.com/IvorySQL/IvorySQL/issues/new',
-              },
-
             ]
+          },
+
+          //Right Side Items
+          {
+            label: 'Community',
+            to: '/community-page',
+            position: 'right'
+          },
+          {
+            href: 'https://gitee.com/IvorySQL/',
+            label: 'Gitee',
+            position: 'right',
           },
           {
             href: 'https://github.com/IvorySQL/IvorySQL',
@@ -121,6 +148,10 @@ const config = {
                 href: 'https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/',
               },
               {
+                label: 'Mailing Lists',
+                href: 'https://lists.IvorySQL.org',
+              },
+              {
                 label: 'Twitter',
                 href: 'https://twitter.com/IvorySQL',
               },
@@ -130,12 +161,16 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Website GitHub',
-                href: 'https://github.com/IvorySQL/Ivory-www',
-              },
-              {
                 label: 'IvorySQL GitHub',
                 href: 'https://github.com/IvorySQL/IvorySQL',
+              },
+              {
+                label: 'IvorySQL Gitee',
+                href: 'https://gitee.com/IvorySQL/',
+              },
+              {
+                label: 'Report an issue',
+                href: 'https://github.com/IvorySQL/IvorySQL/issues/new',
               },
             ],
           },
