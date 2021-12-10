@@ -545,4 +545,4 @@ END emp_admin;
 Record types are supported as package variables, however they can only
 be used within package elements i.e., Package function/procedure can
 utilize them. They can not be accessed outside the package, this
-limitation will be addressed in the next update of HG-PSQL 2. x.
+limitation will be addressed in the next update of IvorySQL.
