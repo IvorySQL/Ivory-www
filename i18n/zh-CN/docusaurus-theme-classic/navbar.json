@@ -42,5 +42,29 @@
   "item.label.Downloads": {
     "message": "下载",
     "description": "Navbar item with label Downloads"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Releases": {
+    "message": "Releases",
+    "description": "Navbar item with label Releases"
+  },
+  "item.label.Gitee": {
+    "message": "Gitee",
+    "description": "Navbar item with label Gitee"
+  },
+  "item.label.Webinars": {
+    "message": "Webinars",
+    "description": "Navbar item with label Webinars"
+  },
+  "item.label.Partners": {
+    "message": "Partners",
+    "description": "Navbar item with label Partners"
+  },
+  "item.label.Customer Stories": {
+    "message": "Customer Stories",
+    "description": "Navbar item with label Customer Stories"
   }
 }

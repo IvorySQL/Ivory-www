@@ -38,5 +38,17 @@
   "copyright": {
     "message": "Copyright © 2021 IvorySQL.",
     "description": "The footer copyright"
+  },
+  "link.item.label.Mailing Lists": {
+    "message": "Mailing Lists",
+    "description": "The label of footer link with label=Mailing Lists linking to https://lists.IvorySQL.org"
+  },
+  "link.item.label.IvorySQL Gitee": {
+    "message": "IvorySQL Gitee",
+    "description": "The label of footer link with label=IvorySQL Gitee linking to https://gitee.com/IvorySQL/"
+  },
+  "link.item.label.Report an issue": {
+    "message": "Report an issue",
+    "description": "The label of footer link with label=Report an issue linking to https://github.com/IvorySQL/IvorySQL/issues/new"
   }
 }
