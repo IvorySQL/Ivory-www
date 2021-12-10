@@ -1,6 +1,3 @@
----
-sidebar_position: 1
----
 
 # Documentation location
 visit https://github.com/IvorySQL/Ivory-www/tree/main/docs

@@ -1,6 +1,10 @@
 ---
+sidebar_position: 1
 sidebar_label: '软件包'
 title: 软件包
+tags:
+  - Oracle Style Packages
+  - 软件包
 ---
 
 ## 软件包概述
