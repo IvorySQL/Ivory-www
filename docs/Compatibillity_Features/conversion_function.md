@@ -1,6 +1,7 @@
 ---
 sidebar_label: 'Compatible Conversion and Comparision and NULL-Related functions'
-sidebar_position: 1
+sidebar_position: 12
+title: Compatible Conversion and Comparision and NULL-Related functions
 ---
 
 # Conversion function
