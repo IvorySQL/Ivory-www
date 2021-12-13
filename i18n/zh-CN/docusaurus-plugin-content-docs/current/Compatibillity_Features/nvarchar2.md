@@ -1,4 +1,5 @@
-idebar_position: 3
+---
+sidebar_position: 14
 sidebar_label: 'NVARCHAR2(size)'
 title: NVARCHAR2(size)类型
 Tags:

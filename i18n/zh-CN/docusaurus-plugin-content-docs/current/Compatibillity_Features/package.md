@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
-sidebar_label: '软件包'
-title: 软件包
+sidebar_label: '包'
+title: 包
 tags:
   - Oracle Style Packages
-  - 软件包
+  - 包
 ---
 
 ## 软件包概述
@@ -450,4 +450,4 @@ END emp_admin;
 <br />
 
 ## 局限性
-记录类型支持作为包变量，但是它们只能在包元素中使用，即包函数/过程可以使用它们。它们不能在包外访问，这一限制将在HG-PSQL 2的下一次更新中解决。
+记录类型支持作为包变量，但是它们只能在包元素中使用，即包函数/过程可以使用它们。它们不能在包外访问，这一限制将在IvorySQL 的下一次更新中解决。

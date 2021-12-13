@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 13
 sidebar_label: 'NLS_LENGTH_SEMANTICS'
 title: NLS_LENGTH_SEMANTICS
 Tags:

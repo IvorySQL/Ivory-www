@@ -1,4 +1,5 @@
-idebar_position: 2
+---
+sidebar_position: 15
 sidebar_label: 'VARCHAR2(size)类型'
 title: VARCHAR2(size)类型
 Tags:
