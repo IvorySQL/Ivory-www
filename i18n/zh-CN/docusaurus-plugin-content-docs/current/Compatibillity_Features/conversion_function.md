@@ -1,6 +1,6 @@
 ---
 sidebar_label: 兼容转换和比较以及与 NULL 相关的函数
-sidebar_position: 1
+sidebar_position: 12
 ---
 
 # 转换函数
