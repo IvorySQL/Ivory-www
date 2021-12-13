@@ -1,6 +1,10 @@
 ---
 sidebar_label: 'Compatible with date and time function'
-sidebar_position: 1
+sidebar_position: 11
+title: Compatible with date and time function
+Tags:
+ - date function
+ - time function
 ---
 
 # Compatible with date and time function Overview
