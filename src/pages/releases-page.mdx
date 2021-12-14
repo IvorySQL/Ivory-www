@@ -3,9 +3,21 @@ id: IvorySQL-Releases
 title: IvorySQL Releases
 ---
 
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
 
 <table>
-<caption><h1>IvorySQL Releases</h1></caption>
+<caption><h2>IvorySQL Releases</h2></caption>
   <tr>
     <th>Date</th>
     <th>Version</th>
@@ -20,3 +32,24 @@ title: IvorySQL Releases
   </tr>
 </table>
 
+
+
+<table>
+<caption><h2>Packages</h2></caption>
+  <tr>
+    <th>Maintainer</th>
+    <th>link</th>
+  </tr>
+  <tr>
+    <td>
+        <a href="http://www.highgo.ca">HIGHGO</a>
+    </td>
+    <td>
+        <a href="https://yum.highgo.ca/ivorysql.html">HIGHGO YUM REPOSITORY</a>
+    </td>
+  </tr>
+</table>
+
+
+
+**<Highlight color="#25c2a0">To provide IvorySQL packages contact support@ivorysql.org</Highlight>**

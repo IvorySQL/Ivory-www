@@ -177,6 +177,10 @@ const config = {
                 href: 'https://gitee.com/IvorySQL/',
               },
               {
+                label: 'IvorySQL YUM',
+                href: 'https://yum.highgo.ca/ivorysql.html',
+              },
+              {
                 label: 'Report an issue',
                 href: 'https://github.com/IvorySQL/IvorySQL/issues/new/choose',
               },
