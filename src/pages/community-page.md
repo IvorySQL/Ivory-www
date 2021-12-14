@@ -16,7 +16,7 @@ Read our **contribution guidelines**
 ---
 
 ## Contribution
-- [Report a Bug](https://github.com/IvorySQL/IvorySQL/issues)
+- [Report a Bug](https://github.com/IvorySQL/IvorySQL/issues/new/choose)
 - [Submit a pull request](https://github.com/IvorySQL/IvorySQL/pulls)
 
 ## Conversations

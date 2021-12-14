@@ -16,7 +16,7 @@ IvorySQL社区包括来自世界各地的开发和使用开源数据库的人员
 ---
 
 ## 贡献
-- [提交bug](https://github.com/IvorySQL/IvorySQL/issues)
+- [提交bug](https://github.com/IvorySQL/IvorySQL/issues/new/choose)
 - [提交拉取请求](https://github.com/IvorySQL/IvorySQL/pulls)
 
 ## 对话

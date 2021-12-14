@@ -49,6 +49,6 @@
   },
   "link.item.label.Report an issue": {
     "message": "Report an issue",
-    "description": "The label of footer link with label=Report an issue linking to https://github.com/IvorySQL/IvorySQL/issues/new"
+    "description": "The label of footer link with label=Report an issue linking to https://github.com/IvorySQL/IvorySQL/issues/new/choose"
   }
 }

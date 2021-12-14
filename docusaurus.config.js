@@ -170,7 +170,7 @@ const config = {
               },
               {
                 label: 'Report an issue',
-                href: 'https://github.com/IvorySQL/IvorySQL/issues/new',
+                href: 'https://github.com/IvorySQL/IvorySQL/issues/new/choose',
               },
             ],
           },
