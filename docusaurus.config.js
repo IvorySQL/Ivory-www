@@ -22,6 +22,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          versions: {
+            current: {label: 'Devel',},
+          },
           sidebarPath: require.resolve('./sidebars.js'),
 //          editUrl: 'https://github.com/IvorySQL/Ivory-www/tree/main/docs',
           editCurrentVersion: false,
@@ -103,6 +106,11 @@ const config = {
           },
 
           //Right Side Items
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            nextVersionLabel: 'Devel',
+          },
           {
             label: 'Community',
             to: '/community-page',
