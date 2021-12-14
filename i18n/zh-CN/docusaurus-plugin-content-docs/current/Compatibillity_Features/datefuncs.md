@@ -1,6 +1,11 @@
 ---
 sidebar_label: '兼容时间和日期函数'
-sidebar_position: 1
+sidebar_position: 11
+title: 兼容时间和日期函数
+Tags:
+ - 兼容时间和日期函数
+ - date function
+ - time function
 ---
 
 # 兼容时间和日期函数
