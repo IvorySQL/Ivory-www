@@ -10,7 +10,7 @@ Tags:
 ## 概述
 当compatible_模式为oracle时，即使group by子句中有主键列，目标列也必须存在于group by子句中。
 
-## 使用
+## 示例
 ```
 set compatible_mode to oracle;
 

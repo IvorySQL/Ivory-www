@@ -18,13 +18,13 @@ select_statement MINUS [ ALL | DISTINCT ] select_statement;
 
 #### **参数**
 ```select_statement```
-	Any SELECT statement without ORDER BY, LIMIT, FOR NO KEY UPDATE, FOR UPDATE, FOR SHARE and FOR KEY SHARE clauses.  
+	任何没有ORDER BY、LIMIT、 FOR NO KEY UPDATE、FOR UPDATE、 FOR SHARE和FOR KEY SHARE子句的 SELECT语句.  
 ```ALL keyword```
-	The result will contain duplicate rows.  
+	包含重复行结果.  
 ```DISTINCT keyword```
-	Eliminate duplicate rows  
+	显示的消除重复行.  
 
-### 使用
+### 示例
 ```
 select * from generate_series(1, 3) g(i) MINUS select * from generate_series(1, 3) g(i) where i = 1;
  i 

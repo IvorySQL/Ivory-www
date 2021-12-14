@@ -1,10 +1,10 @@
 ---
 sidebar_position: 2
-sidebar_label: '更改表格'
-title: 更改表格
+sidebar_label: '更改表'
+title: 更改表
 Tags:
  - Alter table
- - 更改表格
+ - 更改表
 ---
 
 
@@ -32,26 +32,26 @@ alter_using:
     USING expression
 ```
 
-### **语法**
+### **参数**
 
 ```name```
-	Table name.  
+	表名.  
 ```cloumn_name```
-	Table column.  
+	列名.  
 ```data_type```
-	Column type.  
+	列类型.  
 ```expression```
-	Value expression.  
+	值表达式.  
 ```ADD keyword```
-	Add column for table, can add one column or add multiple column.  
+	增加表的列, 可以增加一个列或多个列.  
 ```MODIFY keyword```
-	Modify column for table , can modify one column or modiify multiple column.  
+	修改表的列, 可以修改一个列或多个列.  
 ```DROP keyword```
-	Drop column for table, can drop one column or drop multiple column.  
+	删除表的列, 可以删除一个列或多个列.  
 ```USING keyword```
-	Modify value for column.  
+	修改列的值.  
       
-## 使用
+## 示例
 
 ```
 ADD:
