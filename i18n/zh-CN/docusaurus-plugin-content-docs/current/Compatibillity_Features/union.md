@@ -11,7 +11,7 @@ Tags:
 ### 概述
 在两个以上的union子句中支持连续使用null。我们将把null的类型转换为最近右边的非null值类型。
 
-### 使用
+### 示例
 ```
 select null union select null union select 1.2;
  ?column?

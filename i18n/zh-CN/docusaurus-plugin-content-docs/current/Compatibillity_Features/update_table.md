@@ -1,10 +1,10 @@
 ---
 sidebar_position: 4
-sidebar_label: '更新表格'
-title: 更新表格
+sidebar_label: '更新表'
+title: 更新表
 Tags:
  - Update table
- - 更新表格
+ - 更新表
 ---
 
 
@@ -26,26 +26,26 @@ UPDATE [ ONLY ] table_name [ * ] [ [ AS ] alias ]
 
 ### **参数**
 ```table_name```
-	Table name.  
+	表名.  
 ```alias```
-	Table alias.  
+	表别名.  
 ```column_name```
-	Table column.  
+	列名.  
 ```expression```
-	Value expression.  
+	值表达式.  
 ```sub-SELECT```
-	Select sub query.  
+	select子句.  
 ```from_list```
-	Table expression.  
+	表表达式.  
 ```condition```
-	A expression which return boolean value.  
+	一个返回boolean类型值的表达式.  
 ```cursor_name```
-	The name of the cursor to be used in the WHERE CURRENT OF situation.  
+	要在WHERE CURRENT OF情况中使用的游标 的名称.  
 ```output_expression```
-	After each row is deleted, it will be calculated and returned by DELETE.  
+	在每一行被删除后，会被DELETE计算并且返回的表达式.  
 ```output_name```
-	The name of the column being returned.  
-## 使用
+	被返回列的名称.  
+## 示例
 ```
 create table tb_test5(id int, flg char(10));
 

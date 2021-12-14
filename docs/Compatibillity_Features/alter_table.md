@@ -43,7 +43,7 @@ alter_using:
 ```ADD keyword```
 	Add column for table, can add one column or add multiple column.  
 ```MODIFY keyword```
-	Modify column for table , can modify one column or modiify multiple column.  
+	Modify column for table , can modify one column or modify multiple column.  
 ```DROP keyword```
 	Drop column for table, can drop one column or drop multiple column.  
 ```USING keyword```

@@ -17,8 +17,8 @@ SELECT [ database {schema} | schema ] sequence {nextval | currval};
 ```
 #### **参数**
 ```sequence```
-	Sequence name.  
-### Using
+	序列名.  
+### 示例
 ```
 create sequence sq;
 
