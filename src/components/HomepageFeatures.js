@@ -14,11 +14,11 @@ const FeatureList = [
     ),
   },
   {
-    title: <Translate>'Powered by PostgrSQL'</Translate>,
+    title: <Translate>'Powered by PostgreSQL'</Translate>,
     Svg: require('../../static/img/postgresql-icon.svg').default,
     description: (
       <>
-        <Translate>Based on the PostgreSQL, with full SQL, rock-solid reliability, and a massive ecosystem.</Translate>
+        <Translate>Based on PostgreSQL, with full SQL, rock-solid reliability, and a massive ecosystem.</Translate>
       </>
     ),
   },
