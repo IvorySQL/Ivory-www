@@ -44,11 +44,11 @@
     "description": "Navbar item with label Downloads"
   },
   "item.label.Blog": {
-    "message": "Blog",
+    "message": "博客",
     "description": "Navbar item with label Blog"
   },
   "item.label.Releases": {
-    "message": "Releases",
+    "message": "发布",
     "description": "Navbar item with label Releases"
   },
   "item.label.Gitee": {
@@ -56,15 +56,15 @@
     "description": "Navbar item with label Gitee"
   },
   "item.label.Webinars": {
-    "message": "Webinars",
+    "message": "网络研讨会",
     "description": "Navbar item with label Webinars"
   },
   "item.label.Partners": {
-    "message": "Partners",
+    "message": "合作伙伴",
     "description": "Navbar item with label Partners"
   },
   "item.label.Customer Stories": {
-    "message": "Customer Stories",
+    "message": "客户故事",
     "description": "Navbar item with label Customer Stories"
   }
 }
