@@ -1,4 +1,5 @@
-idebar_position: 4
+---
+sidebar_position: 16
 sidebar_label: 'NUMBER [ (p [, s]) ]'
 title: NUMBER [ (p [, s]) ]
 Tags:
