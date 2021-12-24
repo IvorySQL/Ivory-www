@@ -46,3 +46,9 @@ The website is automatically deployed to [netlify](https://www.netlify.com/) eac
 - ### Contributing to Translation
   - If you want to add a support for a new language. You can follow the [docusaurus tutorial](https://docusaurus.io/docs/i18n/tutorial)
   - Currently the website is localized for **English** and **Chinese** languages. You can contribute by submitting the translation updates for documents located at https://github.com/IvorySQL/Ivory-www/tree/main/i18n/zh-CN/docusaurus-plugin-content-docs/current
+  - Details on the IvorySQL documentation directory structure and file location see [Locating a file for IvorySQL documentation](https://github.com/IvorySQL/Ivory-www/wiki/Locating-a-file-for-IvorySQL-documentation)
+
+## Mailing lists
+
+- [IvorySQL website mailing list](https://lists.ivorysql.org/postorius/lists/ivorysql-www.ivorysql.org/)
+- [IvorySQL documentation mailing list](https://lists.ivorysql.org/postorius/lists/ivorysql-docs.ivorysql.org/)
