@@ -5,7 +5,7 @@ import Translate, {translate} from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: <Translate>'Open Source'</Translate>,
+    title: <Translate>Open Source</Translate>,
     Svg: require('../../static/img/fp_open_source.svg').default,
     description: (
       <>
@@ -14,7 +14,7 @@ const FeatureList = [
     ),
   },
   {
-    title: <Translate>'Powered by PostgreSQL'</Translate>,
+    title: <Translate>Powered by PostgreSQL</Translate>,
     Svg: require('../../static/img/postgresql-icon.svg').default,
     description: (
       <>
@@ -23,7 +23,7 @@ const FeatureList = [
     ),
   },
   {
-    title: <Translate>'Backed by HighGo'</Translate>,
+    title: <Translate>Backed by HighGo</Translate>,
     Svg: require('../../static/img/fp_backed_by_highgo.svg').default,
     description: (
       <>
@@ -32,7 +32,7 @@ const FeatureList = [
     ),
   },
   {
-    title: <Translate>'Oracle Compatible'</Translate>,
+    title: <Translate>Oracle Compatible</Translate>,
     Svg: require('../../static/img/fp_ora_compitable.svg').default,
     description: (
       <>
@@ -41,7 +41,7 @@ const FeatureList = [
     ),
   },
   {
-    title: <Translate>'Customization'</Translate>,
+    title: <Translate>Customization</Translate>,
     Svg: require('../../static/img/fp_advanced_customization.svg').default,
     description: (
       <>

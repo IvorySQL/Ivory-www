@@ -1,11 +1,11 @@
 {
   "theme.NotFound.title": {
     "message": "没有发现页面",
-    "description": "错误 - 404"
+    "description": "The title of the 404 page (错误 - 404)"
   },
   "theme.NotFound.p1": {
     "message": "我们找不到您要找的页面",
-    "description": "我们找不到您要找的页面"
+    "description": "The first paragraph of the 404 page (我们找不到您要找的页面)"
   },
   "theme.NotFound.p2": {
     "message": "请联系将您链接到原始 URL 的站点的所有者，并让他们知道他们的链接已损坏。",
@@ -186,7 +186,7 @@
   "Learn More": {
     "message": "了解更多"
   },
-  "'Open Source'": {
+  "Open Source": {
     "message": "开源"
   },
   "No Vendor Lock-In": {
@@ -198,22 +198,34 @@
   "Based on the PostgreSQL, with full SQL, rock-solid reliability, and a massive ecosystem.": {
     "message": "基于PostgreSQL，具有完整的SQL、坚如磐石的可靠性和庞大的生态系统。"
   },
-  "'Backed by HighGo'": {
+  "Backed by HighGo": {
     "message": "瀚高支持"
   },
   "Supported by HighGo, The leading provider of PostgreSQL database.": {
     "message": "由领先的PostgreSQL数据库提供商瀚高软件提供支持。"
   },
-  "'Oracle Compatible'": {
+  "Oracle Compatible": {
     "message": "兼容Oracle"
   },
   "Migrate your Oracle DB to IvorySQL.": {
     "message": "将Oracle数据库迁移到IvorySQL。"
   },
-  "'Customization'": {
+  "Customization": {
     "message": "可定制化"
   },
   "Just download the code and make it as you like.": {
     "message": "只需下载代码，并按照你的想法自定义。"
+  },
+  "Powered by PostgreSQL": {
+    "message": "基于PostgreSQL"
+  },
+  "Based on PostgreSQL, with full SQL, rock-solid reliability, and a massive ecosystem.": {
+    "message": "基于PostgreSQL，具有完整的SQL、坚如磐石的可靠性和庞大的生态系统."
+  },
+  "IvorySQL": {
+    "message": "IvorySQL"
+  },
+  "Open Source Oracle compitable PostgreSQL": {
+    "message": "Open Source Oracle compitable PostgreSQL"
   }
 }
