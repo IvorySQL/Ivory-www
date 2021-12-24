@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'IvorySQL',
-  tagline: 'Open Source Oracle compitable PostgreSQL',
+  tagline: 'Open Source Oracle compatible PostgreSQL',
   url: 'https://ivorySQL.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',

@@ -18,7 +18,7 @@ function HomepageHeader() {
 
           <div className={styles.heroCenterImage}>
           <h1 className="hero__title"><Translate>IvorySQL</Translate></h1>
-        <p className="hero__subtitle"><Translate>Open Source Oracle compitable PostgreSQL</Translate></p>
+        <p className="hero__subtitle"><Translate>Open Source Oracle compatible PostgreSQL</Translate></p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Open Source Oracle Compitable PostgreSQL">
+      description="Open Source Oracle compatible PostgreSQL">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
