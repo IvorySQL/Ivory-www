@@ -22,7 +22,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://github.com/IvorySQL/IvorySQL/blob/master/README">
+            to="https://github.com/IvorySQL/IvorySQL/blob/master/README.md">
             <Translate>Learn More</Translate>
           </Link>
         </div>
