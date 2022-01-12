@@ -36,7 +36,7 @@
     "description": "The label of footer link with label=IvorySQL GitHub linking to https://github.com/IvorySQL/IvorySQL"
   },
   "copyright": {
-    "message": "Copyright © 2021 IvorySQL.",
+    "message": "Copyright © 2022 IvorySQL.",
     "description": "The footer copyright"
   },
   "link.item.label.Mailing Lists": {
