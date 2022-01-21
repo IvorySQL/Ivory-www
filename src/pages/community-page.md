@@ -11,7 +11,7 @@ Be open, welcoming, friendly, and patient. Be collaborative. Be inquisitive. Be 
 
 ---
 
-Read our **contribution guidelines**
+Read our [**contribution guidelines**](https://github.com/IvorySQL/IvorySQL/blob/master/CONTRIBUTING.md)
 
 ---
 
