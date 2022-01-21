@@ -360,90 +360,75 @@ END;
 ### 包规格
 
 ```SQL
-DROP TABLE log;
-
-CREATE TABLE log( date_of_action DATE,
-     user_id VARCHAR2(20),
-     package_name VARCHAR2(30) );
+CREATE TABLE test(x INT, y VARCHAR2(100));
+INSERT INTO test VALUES (1, 'One');
+INSERT INTO test VALUES (2, 'Two');
+INSERT INTO test VALUES (3, 'Three');
 
 -- Package specification:
-CREATE OR REPLACE PACKAGE emp_admin AUTHID DEFINER AS
+CREATE OR REPLACE PACKAGE example AUTHID DEFINER AS
    -- Declare public type, cursor, and exception:
-   TYPE EmpRecTyp IS RECORD (emp_id NUMBER, sal NUMBER); CURSOR desc_salary RETURN EmpRecTyp;
-
-     -- Declare public subprograms:
-     FUNCTION hire_employee (
-           last_name
-           first_name
-           email
-           phone_number VARCHAR2,
-           job_id VARCHAR2,
-           salary NUMBER,
-           commission_pct NUMBER,
-           manager_id NUMBER,
-           department_id NUMBER
-     ) RETURN NUMBER;
-
+   TYPE rectype IS RECORD (a INT, b VARCHAR2(100));
+   CURSOR curtype RETURN rectype%rowtype;
+ 
+   rec rectype;
+ 
+   -- Declare public subprograms:
+   FUNCTION somefunc (
+         last_name VARCHAR2,
+         first_name VARCHAR2,
+         email VARCHAR2
+   ) RETURN NUMBER;
+ 
    -- Overload preceding public subprogram:
-   -- PROCEDURE fire_employee (emp_id NUMBER);
-   PROCEDURE fire_employee (emp_email VARCHAR2);
-   PROCEDURE raise_salary (emp_id NUMBER, amount NUMBER); FUNCTION nth_highest_salary (n NUMBER) RETURN EmpRecTyp;
-END emp_admin;
+   PROCEDURE xfunc (emp_id NUMBER);
+   PROCEDURE xfunc (emp_email VARCHAR2);
+END example;
+/
 ```
 
 ### 包体
 
 ```SQL
 -- Package body:
-CREATE OR REPLACE PACKAGE BODY emp_admin AS
-   number_hired NUMBER; -- private variable, visible only in this package
+CREATE OR REPLACE PACKAGE BODY example AS
+   nelems NUMBER; -- private variable, visible only in this package
+
    -- Define cursor declared in package specification:
-   CURSOR desc_salary RETURN EmpRecTyp IS SELECT employee_id, salary
-           FROM employees
-           ORDER BY salary DESC;
+   CURSOR curtype RETURN rectype%rowtype IS SELECT x, y
+           FROM test
+           ORDER BY x;
    -- Define subprograms declared in package specification: 
-   FUNCTION hire_employee (
+   FUNCTION somefunc (
            last_name VARCHAR2,
            first_name VARCHAR2,
-           email VARCHAR2,
-           phone_number VARCHAR2,
-           job_id VARCHAR2,
-           salary NUMBER,
-           commission_pct NUMBER,
-           manager_id NUMBER,
-           department_id NUMBER
+           email VARCHAR2
      ) RETURN NUMBER IS
-         new_emp_id NUMBER;
+         id NUMBER := 0;
      BEGIN
-         RETURN new_emp_id;
-     END hire_employee;
-
-     PROCEDURE fire_employee (emp_id NUMBER) IS
-      BEGIN
-         NULL;
-     END fire_employee;
-
-   PROCEDURE fire_employee (emp_email VARCHAR2) IS
-   BEGIN 
-      NULL;
-   END fire_employee;
-
-   -- Define private function, available only inside package: 
-   FUNCTION sal_ok (
-           jobid VARCHAR2,
-           sal NUMBER
-           ) RETURN BOOLEAN IS
-      min_sal NUMBER;
-      max_sal NUMBER;
+         OPEN curtype;
+         LOOP
+            FETCH curtype INTO rec;
+            EXIT WHEN NOT FOUND;
+         END LOOP;
+         RETURN rec.a;
+     END;
+ 
+   PROCEDURE xfunc (emp_id NUMBER) IS
    BEGIN
-      RETURN true;
-   END sal_ok;
+      NULL;
+   END;
+ 
+   PROCEDURE xfunc (emp_email VARCHAR2) IS
+   BEGIN
+      NULL;
+   END;
 
 BEGIN -- initialization part of package body
-   INSERT INTO log (date_of_action, user_id, package_name)
-            VALUES (SYSDATE, USER, 'EMP_ADMIN');
-   number_hired := 0;
-END emp_admin;
+   nelems := 0;
+END example;
+/
+SELECT example.somefunc('Joe', 'M.', 'email@example.com');
 ```
 
 
