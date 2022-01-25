@@ -1,6 +1,6 @@
 ---
 sidebar_label: '字符串函数'
-sidebar_position: 15
+sidebar_position: 17
 title: 兼容字符串函数
 ---
 
@@ -19,7 +19,7 @@ ASCII(str)返回字符串首个字符在数据库字符集中的编码的十进�
 	输入参数包括以下数据类型(varchar2，int，numeric，float，date，timestamp，interval)，可以隐式转换为上述类型。  
 
 ### 示例
-```
+```SQL
 SELECT ascii(201912::int4) "ascii";
  ascii 
 -------
@@ -37,7 +37,7 @@ VSIZE(str)返回入参字符串的内部表示的字节数。
 	输入参数包括任意数据类型。  
 
 ### 示例
-```
+```SQL
 SELECT vsize('I 8O lIKE AlPH: a b c') "vsize";
  vsize 
 -------
@@ -61,7 +61,7 @@ INSTRB(str, [substr], [start], [nth])返回源字符串str中子串substr的字�
 	出现第nth次。  
 
 ### 示例
-```
+```SQL
 SELECT instrb(20121209,12) "instrb";
  instrb 
 --------
@@ -89,7 +89,7 @@ SUBSTR(str, start, [len])返回str从start位置开始的子串。
 	子串长度。  
 
 ### 示例
-```
+```SQL
 SELECT substr(21212, 2) "substr";
  substr 
 --------
@@ -117,7 +117,7 @@ SUBSTRB(str, start, [len])返回str从start位置开始的子串，如果获取�
 	子串长度。  
 
 ### 示例
-```
+```SQL
 SELECT substrb('201912', '2', '4') "substrb";
  substrb 
 ---------
@@ -137,7 +137,7 @@ STRPOSB(str, substr)返回子串substr在str中第一次出现的位置。
 	输入参数，匹配字符串。  
 
 ### 示例
-```
+```SQL
 SELECT strposb(123456, 345) "pos in str";
  pos in str 
 ------------
@@ -159,7 +159,7 @@ LPAD(str, len, [lpad_str])从左边对str用lpad_str进行填充，使最终的�
 	填充字符串  
 
 ### 示列
-```
+```SQL
 SELECT lpad('123', '20');
          lpad         
 ----------------------
@@ -187,7 +187,8 @@ RPAD(str, len, [rpad_str])从右边对str用rpad_str进行填充，使最终的�
 	填充字符串  
 
 ### Examples
-```SELECT rpad('123', '20');
+```SQL
+SELECT rpad('123', '20');
          rpad         
 ----------------------
  123                 
@@ -212,7 +213,7 @@ RTRIM(str, [set])支持输入参数str从右边第一个字符开始，删除输
 	输入参数,匹配字符串。  
 
 ### 示列
-```
+```SQL
 SELECT rtrim(1231232112, 21) "RTRIM Example";
  RTRIM Example 
 ---------------
@@ -238,7 +239,7 @@ LTRIM(str, [set])支持输入参数str从左边第一个字符开始，删除输
 	输入参数,匹配字符串。  
 
 ### 示例
-```
+```SQL
 SELECT ltrim(121232112, 21) "LTRIM Example";
  LTRIM Example 
 ---------------
@@ -276,7 +277,7 @@ LTRIM(str, [set])支持从输入参数str的两边删除输入匹配参数集中
 	输入参数，匹配字符串。  
 
 ### 示例
-```
+```SQL
 SELECT btrim(121232112, 21) "BTRIM Example";
  BTRIM Example 
 ---------------
@@ -314,7 +315,7 @@ LENGTH(str, [src_encoding_name])计算输入参数str的字符长度，也将计
 	输入参数，获取指定的编码。  
 
 ### 示例
-```
+```SQL
 SELECT length(192);
  length 
 --------
@@ -344,7 +345,7 @@ LENGTHB(str)计算输入参数str的字节长度，开头和结尾的空格也�
 	输入参数包含以下类型(integer, float, numeric, date, text, character, timestamp, timestamptz, interval)，可以隐式转换为以上类型。  
 
 ### 示例
-```
+```SQL
 SELECT lengthb(192);
  lengthb 
 ---------
@@ -375,26 +376,26 @@ BITAND(str1, str2)输入参数str1和str2是按位与，如果有任何参数为
 ```str2```
 	输入参数(numeric, integer等，必须可转换为 bigint 类型)。  
 ### 示例
-```
-select bitand(6, 3);
+```SQL
+SELECT bitand(6, 3);
  bitand 
 --------
       2
 (1 row)
 
-select bitand(6.1, 4.1);
+SELECT bitand(6.1, 4.1);
  bitand 
 --------
       4
 (1 row)
 
-select bitand(NULL, NULL);
+SELECT bitand(NULL, NULL);
  bitand 
 --------
        
 (1 row)
 
-select bitand(NULL, '4.1');
+SELECT bitand(NULL, '4.1');
  bitand 
 --------
        
@@ -413,7 +414,7 @@ LISTAGG(str1, [str2])支持将多行记录聚合为一条记录。str2可以省�
 	输入参数(text)，可以转换为文本类型，连接字符或字符串。  
 	
 ### 示例
-```
+```SQL
 SELECT listagg(i::text) from generate_series(1, 3) g(i);
  listagg 
 ---------
