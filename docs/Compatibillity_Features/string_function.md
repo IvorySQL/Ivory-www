@@ -1,13 +1,14 @@
 ---
 sidebar_label: 'string functions'
-sidebar_position: 16
+sidebar_position: 17
 title: Compatible string functions
 ---
 
 # String function
 
 ## Overview
-Support oracle string functions, All functions be created in oracle schema, when call these functions, should add oracle schema into SEARCH_PATH or explicitly use oracle schema.
+Oracle compatible string functions that help you manipulate character strings more effectively.
+To use these functions you have to set the ```compatible_mode TO oracle```
 
 ## ASCII
 
@@ -19,7 +20,7 @@ ASCII(str) returns the decimal form of the encoding of the first character of th
 	Input parameter including the following data types(varchar2, int, numeric, float, date, timestamp, interval), can be implicitly converted to the above types.  
 
 ### Examples
-```
+```SQL
 SELECT ascii(201912::int4) "ascii";
  ascii 
 -------
@@ -37,7 +38,7 @@ VSIZE(str) returns the number of bytes in the internal of the input parameter st
 	Input parameter including any data types.  
 
 ### Examples
-```
+```SQL
 SELECT vsize('I 8O lIKE AlPH: a b c') "vsize";
  vsize 
 -------
@@ -61,7 +62,7 @@ INSTRB(str, [substr], [start], [nth]) returns the byte position of the substring
 	Nth position.  
 
 ### Examples
-```
+```SQL
 SELECT instrb(20121209,12) "instrb";
  instrb 
 --------
@@ -89,7 +90,7 @@ SUBSTR(str, start, [len]) returns the substring from start position in the sourc
 	Length of substring.  
 
 ### Examples
-```
+```SQL
 SELECT substr(21212, 2) "substr";
  substr 
 --------
@@ -117,7 +118,7 @@ SUBSTRB(str, start, [len]) returns the substring from start position in the sour
 	Length of substring.  
 
 ### Examples
-```
+```SQL
 SELECT substrb('201912', '2', '4') "substrb";
  substrb 
 ---------
@@ -137,7 +138,7 @@ STRPOSB(str, substr) returns the position of the first occurrence of substring i
 	Input parameter, matched substring.  
 
 ### Examples
-```
+```SQL
 SELECT strposb(123456, 345) "pos in str";
  pos in str 
 ------------
@@ -159,7 +160,7 @@ LPAD(str, len, [lpad_str]) fill the string with lpad_str from the left to make t
 	Fill string.  
 
 ### Examples
-```
+```SQL
 SELECT lpad('123', '20');
          lpad         
 ----------------------
@@ -187,7 +188,8 @@ RPAD(str, len, [rpad_str]) fill the string with rpad_str from the right to make 
 	Fill string.  
 
 ### Examples
-```SELECT rpad('123', '20');
+```SQL
+SELECT rpad('123', '20');
          rpad         
 ----------------------
  123                 
@@ -212,7 +214,7 @@ RTRIM(str, [set]) support the input parameter str starting from the first charac
 	Input parameter,match string.  
 
 ### Examples
-```
+```SQL
 SELECT rtrim(1231232112, 21) "RTRIM Example";
  RTRIM Example 
 ---------------
@@ -238,7 +240,7 @@ LTRIM(str, [set]) support the input parameter str starting from the first charac
 	Input parameter,match string.  
 
 ### Examples
-```
+```SQL
 SELECT ltrim(121232112, 21) "LTRIM Example";
  LTRIM Example 
 ---------------
@@ -276,7 +278,7 @@ LTRIM(str, [set]) support deleting the characters in the input matching paramete
 	Input parameter,match string.  
 
 ### Examples
-```
+```SQL
 SELECT btrim(121232112, 21) "BTRIM Example";
  BTRIM Example 
 ---------------
@@ -314,7 +316,7 @@ LENGTH(str, [src_encoding_name]) calculate the character length of the input par
 	Input parameter,get the specified encoding.  
 
 ### Examples
-```
+```SQL
 SELECT length(192);
  length 
 --------
@@ -344,7 +346,7 @@ LENGTHB(str) calculate the byte length of the input parameter str, and the space
 	Input parameter including the following data types(integer, float, numeric, date, text, character, timestamp, timestamptz, interval), can be implicitly converted to the above type.  
 
 ### Examples
-```
+```SQL
 SELECT lengthb(192);
  lengthb 
 ---------
@@ -376,26 +378,26 @@ BITAND(str1, str2) the input parameters str1 and str2 are bitwise AND, if any pa
 	Input parameter(numeric, integer, etc) must be convertible to bigint type.  
 
 ### Examples
-```
-select bitand(6, 3);
+```SQL
+SELECT bitand(6, 3);
  bitand 
 --------
       2
 (1 row)
 
-select bitand(6.1, 4.1);
+SELECT bitand(6.1, 4.1);
  bitand 
 --------
       4
 (1 row)
 
-select bitand(NULL, NULL);
+SELECT bitand(NULL, NULL);
  bitand 
 --------
        
 (1 row)
 
-select bitand(NULL, '4.1');
+SELECT bitand(NULL, '4.1');
  bitand 
 --------
        
@@ -414,7 +416,7 @@ LISTAGG(str1, [str2])supports aggregating multiple rows of records into one reco
 	Input parameter(text) can be convertible to text type, concatenating characters or strings.  
 	
 ### Examples
-```
+```SQL
 SELECT listagg(i::text) from generate_series(1, 3) g(i);
  listagg 
 ---------
