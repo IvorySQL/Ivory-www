@@ -3,29 +3,28 @@ id: IvorySQL-Release-1-0
 title: IvorySQL Release - 1.0
 ---
 
-# IvorySQL Release - 1.0
-[**Latest Stable**]
+# IvorySQL 版本 1.0
 
-## [**Downolad**](https://github.com/IvorySQL/IvorySQL/releases/tag/Ivory_REL_1_0)
+## [**下载**](https://github.com/IvorySQL/IvorySQL/releases/tag/Ivory_REL_1_0)
 
 
-## Release Notes
-[**Release Date: December 15, 2021**]
-### Overview
-IvorySQL 1.0 is based on PostgreSQL 14 and mainly adds Oracle compatibility features on top of PostgreSQL.
-The release ensures that it is 100% compatible with PostgreSQL 14 and you can refer to the Official PostgreSQL 14 documentation
-and release notes for detailed lists of PostgreSQL features and functions.
+## 发行说明
+[**发行日期: 2021年12月15日**]
+### 概述
+IvorySQL 1.0 基于 PostgreSQL 14，主要在 PostgreSQL 之上增加了 Oracle 兼容特性。
+该版本确保它与 PostgreSQL 14 100% 兼容，您可以参考 PostgreSQL 14 官方文档和发行说明
+以获取 PostgreSQL 特性和功能的详细列表。
 
-### What's Changed
-- Oracle Compatible Data Types
+### 改动列表
+- Oracle 兼容的数据类型
     - DATE 
     - VARCHAR2 
     - NVARCHAR2 
-- Various Oracle Compatible Functions
+- 各种 Oracle 兼容函数
     - NANVL 
     - GREATEST 
     - LEAST 
-**date time functions**
+**日期时间函数**
     - TO_DATE 
     - ADD_MONTHS AND MONTHS_BETWEEN 
     - TRUNC AND ROUND 
@@ -43,7 +42,7 @@ and release notes for detailed lists of PostgreSQL features and functions.
     - NUMTODSINTERVAL 
     - NUMTOYMINTER 
     - FROM_TZ 
-- Conversion Functions
+- 转换函数
     - TO_MULTI_BYTE 
     - TO_SINGLE_BYTE
     - TO_YMINTERVAL
@@ -58,39 +57,37 @@ and release notes for detailed lists of PostgreSQL features and functions.
     - BIN_TO_NUM
     - TO_CHAR
 
-- Oracle Compatible Syntax Support for various DDL and DML
+- 对各种 DDL 和 DML 的 Oracle 兼容语法支持
     - ALTER TABLE using Oracle Syntax 
     - DELETE FROM TABLE using Oracle Syntax 
     - UPDATE TABLE using Oracle Syntax 
     - NEXTVAL and CURRVAL keywords support for sequences 
 
-- Oracle Compatible Operator support
+- Oracle 兼容运算符支持
     - MINUS 
     - UNION 
     - q'' Escape operator 
 
-- Support Oracle behavior for GROUPBY
+- 支持Oracle方式的GROUPBY
 
-- Support for Oracle style Packages
+- 支持 Oracle 风格的包
 
-- PL/iSQL procedural language to support PL/SQL
+- 支持 PL/SQL 的 PL/SQL 过程语言
 
-- Oracle Compatible CREATE FUNCTION support
+- Oracle 兼容的 CREATE FUNCTION 支持
 
-- compatibility_mode GUC to switch between Oracle and PostgreSQL compatible output for function that behaves differently
- on Oracle and PostgreSQL
+- compatible_mode GUC 用于Oracle兼容和PostgreSQL之间切换，以便使用Oracle和PostgreSQL的不同功能
  
-- compatible-mode switch to initdb to select between Oracle andPostgreSQL compatibility modes right from start
+- initdb 时使用compatible-mode在 Oracle 和 PostgreSQL 兼容模式之间进行切换
 
-- Support for NLS_LENGTH_SEMANTICS for VARCHAR2 andNVARCHAR2 types
+- 支持 VARCHAR2 和 NVARCHAR2 类型的 NLS_LENGTH_SEMANTICS
 
-- Builtin Oraface package support
+- 内置 Oraface 包支持
 
 ## Contributors
-The following individuals have contributed to this release as patch authors,
-committers, reviewers, testers, or reporters of issues.
+以下个人作为补丁作者、提交者、审阅者、测试者或问题报告者为本版本做出了贡献。
 
 - Asif Rehman
 - Bing Ao
 
-**[Complete Changelog](https://github.com/IvorySQL/IvorySQL/commits/Ivory_REL_1_0)**
+**[完整的变更日志](https://github.com/IvorySQL/IvorySQL/commits/Ivory_REL_1_0)**
