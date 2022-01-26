@@ -3,76 +3,73 @@ id: IvorySQL-Release-1-1
 title: IvorySQL Release - 1.1
 ---
 
-# IvorySQL Release - 1.1
-[**Latest Stable**]
+# IvorySQL 版本 1.1
+[**最新稳定版本**]
 
-## [**Downolad**](https://github.com/IvorySQL/IvorySQL/releases/tag/Ivory_REL_1_1)
+## [**下载**](https://github.com/IvorySQL/IvorySQL/releases/tag/Ivory_REL_1_1)
 
-## Release Notes
-[**Release Date: January 25, 2022**]
+## 发行说明
+[**发行日期: 2022年1月25日**]
 ### Overview
-IvorySQL 1.1 is based on PostgreSQL 14.1 and contains a variety of fixes from 1.0.
-For information about new features in major release 1.0, see [IvorySQL 1.0 release notes](ivorysql-v1-0-release-page).
+IvorySQL 1.1 基于 PostgreSQL 14.1 并包含从 IvorySQL 1.0 开始的各种修复。
+有关主要版本 1.0 中的新功能的信息，请参阅 [IvorySQL 1.0 发行说明](ivorysql-v1-0-release-page).
 
-For updates and bug fixes in PostgreSQL 14.1 please refer to Official PostgreSQL release
-notes of [14.1](https://www.postgresql.org/docs/release/14.1/).
+有关 PostgreSQL 14.1 中的更新和错误修复，请参阅官方 [PostgreSQL 14.1 发行说明](https://www.postgresql.org/docs/release/14.1/).
 
-### Enhancements
+### 增强功能
 
-- Automatically load Orafce at initdb
-    Orafce extension gets installed automatically with IvorySQL server, So All
-    Oracle compatible objects and types works out of box. 
+- 在 initdb 自动加载 Orafce
+    Orafce 扩展随 IvorySQL 服务器自动安装，所以全部
+    Oracle 兼容的对象和类型开箱即用。 
 
-- Support Oracle Compatible Number(p,s) type
-    Add support for Oracle compatible Number data type with configurable precision and
-    scale NUMBER[(precision , scale)
+- 支持 Oracle Compatible Number(p,s) 类型
+    添加对具有可配置精度和比例的 Oracle 兼容数字数据类型的支持 NUMBER[(precision , scale)]
 
-- Allow Oracle compatible objects without schema qualification.
-    [Details](https://github.com/IvorySQL/IvorySQL/issues/30)
+- 允许没有schema限定的 Oracle 兼容对象。
+    [查看细节](https://github.com/IvorySQL/IvorySQL/issues/30)
 
-- Add DROP PACKAGE BODY support
-  Add a support for dropping the package body without dropping the complete package.
-    [Details](https://github.com/IvorySQL/IvorySQL/issues/29)
+- 添加 DROP PACKAGE BODY 支持
+   添加对删除包主体而不删除完整包的支持。
+    [查看细节](https://github.com/IvorySQL/IvorySQL/issues/29)
 
-- ### Bug fixes
+- ### 问题修复
 
-- Fixed Oracle compatible documentation
-    [issue details](https://github.com/IvorySQL/IvorySQL/issues/23)
+- 修复了 Oracle 兼容文档
+    [问题细节](https://github.com/IvorySQL/IvorySQL/issues/23)
 
-- SELECT sysdate FROM dual not working out of the box
-    [issue details](https://github.com/IvorySQL/IvorySQL/issues/24)
+- SELECT sysdate FROM dual 无法工作
+    [问题细节](https://github.com/IvorySQL/IvorySQL/issues/24)
 
-- Fixed handling of CHAR, VARCHAR, VARCHAR2, and NVARCHAR2 data types
-    issue details:
+- 修复了 CHAR、VARCHAR、VARCHAR2 和 NVARCHAR2 数据类型的处理
+    问题细节:
     [1](https://github.com/IvorySQL/IvorySQL/issues/33)
     [2](https://github.com/IvorySQL/IvorySQL/issues/46)
 
-- Allow log collector to collect PACKAGE DDL statements.
-    [issue details](https://github.com/IvorySQL/IvorySQL/issues/21)
+- 允许日志收集器收集 PACKAGE DDL 语句。
+    [问题细节](https://github.com/IvorySQL/IvorySQL/issues/21)
 
-- Fixed issue with VARCHAR2 comparison operator.
-    [issue details](https://github.com/IvorySQL/IvorySQL/issues/25)
+- 修复了 VARCHAR2 比较运算符的问题。
+    [问题细节](https://github.com/IvorySQL/IvorySQL/issues/25)
 
-- Fixed regression issue with make check-world
-    [issue details](https://github.com/IvorySQL/IvorySQL/issues/39)
+- 修复了 make check-world 的回归问题
+    [问题细节](https://github.com/IvorySQL/IvorySQL/issues/39)
 
-- Fixed issue with Cursors defined in Package Body were not getting closed when Package body was dropped.
-    [issue details](https://github.com/IvorySQL/IvorySQL/issues/54)
+- 修复了包主体中定义的游标在丢弃包主体时没有关闭的问题
+    [问题细节](https://github.com/IvorySQL/IvorySQL/issues/54)
 
-## Contributors
-The following individuals have contributed to this release as patch authors,
-committers, reviewers, testers, or reporters of issues.
+## 贡献者
+以下个人作为补丁作者、提交者、审阅者、测试者或问题报告者为本版本做出了贡献。
 
 - Asif Rehman
 - Andy Qinshy
-- Bing Ad
+- Bing Ao
 - Denis Lussier
 - Grant Zhou
 - Haruka Takatsuka 
 - Huajianjin
 - Japin Li
-- Jacklan
+- Jack Lan
 - Shengbin Zhao
 - Muhammad Usama
 
-**[Complete Changelog](https://github.com/IvorySQL/IvorySQL/commits/Ivory_REL_1_1)**
+**[完整的变更日志](https://github.com/IvorySQL/IvorySQL/commits/Ivory_REL_1_1)**
