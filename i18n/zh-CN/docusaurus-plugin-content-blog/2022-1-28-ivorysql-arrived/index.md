@@ -12,7 +12,7 @@ tags: [IvorySQL, Welcome, Database, Oracle Compatible, PostgreSQL, Join Us]
 
 ## IvorySQL概览
 
-IvorySQL是**Apache 2.0**许可的开源Oracle兼容PostgreSQL。IvorySQL的第一个版本源自PostgreSQL 14，它坚定地承诺始终保持100%的兼容性，并减少了对最新PostgreSQL的替换。 
+IvorySQL是**Apache 2.0**许可的开源Oracle兼容PostgreSQL。IvorySQL的第一个版本源自PostgreSQL 14，它坚定地承诺始终保持100%的PostgreSQL兼容性，并可以直接替换PostgreSQL的最新版本。 
 
 IvorySQL在现有标准PostgreSQL配置参数的基础上添加了一个兼容的_db GUC。 ```compatible_db``` 是一个切换开关，用于在Oracle和PostgreSQL兼容模式之间切换。IvorySQL的第二大亮点是 ```PL/iSQL``` 支持oracle PL/SQL语法的过程语言。这两个新增功能在不破坏标准PostgreSQL兼容性的情况下，是IvorySQL的Oracle兼容性的核心。```compatible_db``` 切换在Oracle和PostgreSQL中存在的函数和对象的行为，并以不同的方式运行，而```PL/iSQL``` 为在最小的更改上运行IORYSQL的Oracle代码奠定了基础。 
 
