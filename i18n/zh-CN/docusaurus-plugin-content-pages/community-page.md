@@ -11,7 +11,7 @@ IvorySQL社区包括来自世界各地的开发和使用开源数据库的人员
 
 ---
 
-阅读 [**贡献准则**](https://github.com/IvorySQL/IvorySQL/blob/master/CONTRIBUTING.md)
+阅读 [**贡献准则**](https://www.ivorysql.org/zh-CN/contribution-guidelines)
 
 ---
 
@@ -22,5 +22,5 @@ IvorySQL社区包括来自世界各地的开发和使用开源数据库的人员
 ## 对话
 通过这些邮件列表加入关于IvorySQL的对话
 
-- 加入IvorySQL用户邮件列表
-- 加入IvorySQL Hackers邮件列表
+- [加入IvorySQL用户邮件列表](https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/)
+- [加入IvorySQL Hackers邮件列表](https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/)

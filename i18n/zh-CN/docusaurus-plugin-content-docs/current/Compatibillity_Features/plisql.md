@@ -264,4 +264,4 @@ statement:
 
 ```
 
-Refer to [**IvorySQL packages**](package.md) documentation for more details.
+有关更多详细信息，请参阅 [**IvorySQL packages**](package.md) 
