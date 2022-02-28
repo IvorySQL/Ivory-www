@@ -20,6 +20,9 @@ IvorySQL社区包括来自世界各地的开发和使用开源数据库的人员
 - [提交拉取请求](https://github.com/IvorySQL/IvorySQL/pulls)
 
 ## 对话
+Hey everybody!
+ 中国IvorySQL开源数据库社区已经成立啦！如果想要加入IvorySQL中国技术交流群，可添加象牙小助理微信：R-jiaoo
+
 通过这些邮件列表加入关于IvorySQL的对话
 
 - [加入IvorySQL用户邮件列表](https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/)
