@@ -1,37 +1,36 @@
 ---
 slug: IvorySQL
-title: IvorySQL Has Arrived
+title: PostgresWorld网络研讨会|IvorySQL的深度探讨
 authors: [official]
 authorTwitter: IvorySql
-tags: [IvorySQL, Welcome, Database, Oracle Compatible, PostgreSQL, Join Us]
+tags: [IvorySQL, PostgresWorld, Database, Oracle Compatible, PostgreSQL, Join Us]
 ---
 
-![Hello](Hello-banner.png)  
+ Hi~各位朋友们，我们的PostgresWorld Webinars又回来啦！
 
-Just when the world was packing the bags for the holiday season and getting ready to welcome the New year we were hard at work and were giving the final touches to the project that our team was working on since the start of 2021. And it was the 15th of December just before the day end we got all green lights and silently released the very first version of IvorySQL before cleaning up the desk for that day.
+PostgreSQL在国内数据库的发展过程中承担了非常重要的角色，全球众多数据库产品选择PostgreSQL作为技术发展路线。但是**应用程序从Oracle迁移到开源Postgres的问题成为了最大的阻碍**，因此我们创建了IvorySQL开源项目，它是基于最新的PostgreSQL 14并具有强大Oracle兼容性的数据库。
+然而我们为什么一定要做IvorySQL开源项目？它和Postgres、Oracle技术上有什么区别？本次网络研讨会邀您一起探讨。
 
-## IvorySQL at Glance
+本期网络研讨会由Grant Zhou带来《IvorySQL - 一个基于PostgreSQL的兼容Oracle的开源数据库》为主题的分享，共同探讨基于PG并兼容Oracle的开源数据库。
 
-IvorySQL is **Apache 2.0** licensed Open Source Oracle compatible PostgreSQL. The very first release of IvorySQL is derived from PostgreSQL 14 with a firm commitment to always remain 100% compatible and a Drop-in replacement of the latest PostgreSQL.  
+## 嘉宾介绍
 
-IvorySQL adds a compatible_db GUC on top of existing standard PostgreSQL configuration parameters. The ```compatible_db``` is a toggle switch to switch between Oracle and PostgreSQL compatibility modes. The second major highlight of IvorySQL is ```PL/iSQL``` procedural language that supports oracle’s PL/SQL syntax. These two additions sit at the core of Oracle compatibility of IvorySQL without breaking the standard PostgreSQL compatibility. The ```compatible_db``` switches the behavior of functions and objects that exist in both Oracle and PostgreSQL and acts differently, while ```PL/iSQL``` builds the foundation for running the oracle code on IvorySQL with minimal changes.  
+**Grant Zhou**目前居住在加拿大，他是瀚高北美研究院的负责人，并领导PostgreSQL公司开发团队，团队成员来自加拿大，中国和巴基斯坦。他同时担任PostgreSQL中国分会国际顾问委员会的秘书长，也很自豪能成为PostgresConf的组织者和亚洲联络人。他在阿尔卡特朗讯（诺基亚）公司工作了十多年，在高可用性、实时电信系统、数据库技术和Unix/Linux编程方面拥有丰富的经验。
+2021年12月，该团队宣布了IvorySQL数据库的第一个可用版本，**这是目前唯一一款基于PostgreSQL、兼容Oracle的开源数据库**。2022年2月28日，基于PostgreSQL 14.2发布了IvorySQL 1.2。
 
-IvorySQL comes with numerous Oracle compatibility features including Oracle style  **PACKAGES**, **DATA Types**, and **Conversion Functions**. For details of Oracle compatibility features in IvorySQL refer to *[IvorySQL documentation](https://www.ivorysql.org/docs/intro)*   
+## 研讨会要点介绍
 
-## We are committed to following the principles of open source way
+有许多用户需要将他们的应用程序从Oracle迁移到开源Postgres，但是为了支持新的数据库，用户经常需要重新开发应用程序，这很不方便。如果有一个基于Postgres的数据库，并且与大多数Oracle语法和函数兼容，那么对于客户来说就太方便了。
+但是，官方的Postgres项目不会接受这种代码提交。毕竟，Postgres是Postgres，Oracle是Oracle。
+因此，我们创建了一个具有Oracle兼容功能的开源数据库项目。
+本次演讲将介绍**如何基于PG实现与Oracle语法兼容的数据库，详细介绍IvorySQL项目的研发过程**。
 
-IvorySQL is committed to abiding by the principles of ***[open-source ways](https://opensource.com/open-source-way)*** and we strongly believe in building a healthy and inclusive community. We maintain that good ideas can come from anywhere, and the best ideas should win. Only by including diverse perspectives, we can reach to the best decision. While the first version of IvorySQL is mainly focused on Oracle Compatibility features, going forward the future road map and feature set will be determined by the community in an open-source way.
+## 时间与链接
 
-## Contributing to the IvorySQL
-
-There are plenty of ways to contribute to IvorySQL. You can contribute by providing the documentation updates, by providing the translations for the documentation. If you have design skills you can contribute to the IvorySQL website project.  
-Testing the IvorySQL and reporting issues, by issuing pull requests for bug fixes or new features or answering the questions on mailing lists are some ways to contribute to the IvorySQL project and all types of contributions are welcomed and appreciated by the IvorySQL community.  
-
-## Getting Started
-
-All IvorySQL related projects including database server, website, and documentation are hosted and managed through Github. You can download the source code or released packages and track the current issues, pull requests, and discussions through the IvorySQL [Github page](https://github.com/IvorySQL/).  
-
-Visit http://www.ivorysql.org and read the project documentation and contribution guidelines.  
+ - 活动时间：**美国太平洋时间（PDT）3月31日 下午1点-2点 (北京时间凌晨4：00-5：00）进行**，敬请关注。
+- 参与注册网址：https://postgresconf.org/accounts/sign_up
+- 观看链接：https://postgresconf.org/conferences/PostgresWorld-Webinars-2022/program/proposals/ivorysql-an-open-source-oracle-compatible-database-based-on-postgresql
+- 也可添加小助理微信：R-jiaoo，立即报名参与！
 
 ---
 
