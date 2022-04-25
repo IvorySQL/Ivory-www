@@ -1,6 +1,6 @@
 ---
 slug: IvorySQL-sv
-title: IvorySQL is available in PostgresConf SV 2022 
+title: IvorySQL at PostgresConf SV 2022 
 authors: [official]
 authorTwitter: IvorySql
 tags: [IvorySQL,PostgresConf SV , Database, Oracle Compatible, PostgreSQL, Join Us]
