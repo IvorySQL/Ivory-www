@@ -1,14 +1,13 @@
 ---
 slug: IvorySQL-Linux
-title: Linux environment source code compiler install IvorySQL
+title: Compiling and Installing IvorySQL on Linux
 authors: [official]
 authorTwitter: IvorySql
 tags: [IvorySQL, Welcome,Linux, PostgreSQL, Join Us]
 ---
 
  
-
-# Linux environment source code compiler install IvorySQL
+# Compiling and Installing IvorySQL on Linux
 
 IvorySQL can be built on Linux, OSX, Unix, and Windows platforms, and is basically the same as PostgreSQL compiled and installed. This article describes the steps for compiling source code on a Linux-based system.
 
@@ -46,9 +45,9 @@ The source version used in this article is also IvorySQL 1.2.
 
 
 
-### 1.2 Installing dependency packages
+### 1.2 Installing the dependency packages
 
-To compile IvorySQL from source, you must ensure that a prerequisite package is available on your system.
+To compile IvorySQL from source, you must ensure that a prerequisite packages are available on your system.
 
 Run the following command to install related packages:
 
@@ -77,21 +76,19 @@ Run the following command as the Root user:
 ./configure
 ```
 
-**Note: Since --prefix is not provided, /usr/local/pgSQL is installed by default.**
+**Note: Since --prefix is not provided, /usr/local/pgSQL will be used as default installation path.**
 
 
 
-Specify the installation path, such as "/ usr/local/ivorysql/ivorysql - 1.2" :
+To use a different installation path, such as "/ usr/local/ivorysql/ivorysql - 1.2" :
 
 ```
 ./configure --prefix=/usr/local/ivorysql/ivorysql-1.2
 ```
 
-**Note: We need to remember the specified directory, because the system cannot find where the compiled and installed programs are.**
 
 
-
-For more configure parameters, go to./configure --help. Also check out the PostgreSQL manual.
+For more configure parameters, try ./configure --help. Also check out the PostgreSQL manual.
 
  
 
@@ -151,13 +148,13 @@ mkdir -p /ivorysql/1.2/data
 chown -R ivorysql.ivorysql /ivorysql/1.2/
 ```
 
-**Note: there is no press RPM installation place data directory to "/ var/lib/ivorysql/ivorysql - 1 / data".**
+**Note: The data directory is not placed in "/var/lib/ivorysql/ivorysql-1/data" when you do installation using the RPMs.
 
  
 
 ### 3.3 Environment Variables
 
-Switch to user ivorysQL, modify the /home/ivorysqL/. bash_profile file, and configure environment variables:
+Switch to ivorysql user, modify the /home/ivorysqL/. bash_profile file, and configure environment variables:
 
 ```
 umask 022
@@ -187,13 +184,13 @@ firewall-cmd --zone=public --add-port=5333/tcp --permanent
 firewall-cmd --reload
 ```
 
-**Note: The default port is 5333. If this port is disabled, external clients fail to connect to the IP address.**
+**Note: The default port is 5333. If this port is disabled, external clients will not be able to connect to the IP address.**
 
  
 
 ### 3.5 the initialization
 
-In user ivorysQL, simply execute initdb to complete initialization:
+In user ivorysql, simply execute initdb to complete the initialization:
 
 ```
 initdb
@@ -269,7 +266,7 @@ Modify listening address:
 alter system set listen_addresses = '*';
 ```
 
-**Note: the default is listening on 127.0.0.1, the host is not connected to the service.**
+**Note: By default the server does not allow connections from external hosts.**
 
 
 
@@ -346,7 +343,7 @@ systemctl reload ivorysql.service			--可以满足部分数据库配置修改完
 
 
 
-## The client connects to the database
+## Database Client
 
 The IvorySQL client is the same as the PostgreSQL client.
 
@@ -354,7 +351,7 @@ The IvorySQL client is the same as the PostgreSQL client.
 
 ### 5.1 PSQL connection
 
-Operating system user IvorysQL session connection:
+Connecting from ivorysql OS user:
 
 ```
 [ivorysql@Node02 ~]$ psql
@@ -374,7 +371,7 @@ DBeaver is a powerful open source tool with the following connectivity configura
 
 
 
-### 5.3 HighGo Developer Connection
+### 5.3 Connect using HighGo Developer
 
 HighGo Developer is a tool independently developed by Highgo, which supports not only Highgo database, but also PostgreSQL and IvorySQL database. The connection configuration is as follows:
 
@@ -384,15 +381,14 @@ HighGo Developer is a tool independently developed by Highgo, which supports not
 
 
 
-## Unloading
+## Uninstall
 
-Compile-install is compile-uninstall.
-
+If required IvorySQL can be uninstalled by compiling and uninstalling.
 
 
 ### 6.1 Backing Up Data
 
-The data directory is under "/ ivorysQL /1.2/data", so we can protect the directory well, it is best to stop the database service after backup.
+The data directory is under "/ ivorysQL /1.2/data", so we can protect the directory, It is recomended to stop the database service and make a backup.
 
 
 
@@ -410,14 +406,14 @@ make clean
 Delete residual directories and files:
 
 ```
-systemctl disable ivorysql.servicemake					--禁用服务
-mv /usr/lib/systemd/system/ivorysql.service /tmp/		--服务文件移到/tmp，删除也可以
-rm -fr /usr/local/pgsql									--删除残留安装目录
+systemctl disable ivorysql.servicemake					--Disable the service
+mv /usr/lib/systemd/system/ivorysql.service /tmp/		--delete or move the service file to /tmp
+rm -fr /usr/local/pgsql									--Remove the installed files
 ```
 
-The ivORysQL user and the corresponding environment variables can be cleared according to the situation.
+The ivorysql user and the corresponding environment variables can be cleared according to the situation.
 
-The rest is the data directory "/ ivorysQL /1.2/data", please be sure to do a good backup before processing.
+The rest is the data directory "/ ivorysQL /1.2/data", please be sure to take a backup before processing.
 
 There are installed dependency packages, you can decide whether to uninstall according to the situation.
 
