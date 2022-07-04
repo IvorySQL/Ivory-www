@@ -1,6 +1,6 @@
 ---
 sidebar_label: '字符串函数'
-sidebar_position: 17
+sidebar_position: 19
 title: 兼容字符串函数
 ---
 

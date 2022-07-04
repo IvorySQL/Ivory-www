@@ -1,7 +1,7 @@
 ---
-sidebar_label: 'string functions'
-sidebar_position: 17
-title: Compatible string functions
+sidebar_label: 'String Functions'
+sidebar_position: 19
+title: Compatible String Functions
 ---
 
 # String function
