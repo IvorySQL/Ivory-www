@@ -8,7 +8,7 @@ Tags:
 ---
 
 ## 概述
-当compatible_模式为oracle时，即使group by子句中有主键列，目标列也必须存在于group by子句中。
+当compatible_mode为oracle时，即使group by子句中有主键列，目标列也必须存在于group by子句中。
 
 ## 示例
 ```

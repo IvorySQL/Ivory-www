@@ -1,15 +1,17 @@
 ---
-sidebar_position: 2
-sidebar_label: 'Alter Table'
-title: Alter Table
+sidebar_position: 3
+sidebar_label: '更改表'
+title: 更改表
 Tags:
  - Alter table
+ - 更改表
 ---
 
-## Overview
-Support of Oracle syntax for altering the table.
 
-## syntax
+## 概述
+使用oracle语法更改表。
+
+## 语法
 
 ```
 ALTER TABLE [ IF EXISTS ] [ ONLY ] name [ * ]
@@ -30,29 +32,29 @@ alter_using:
     USING expression
 ```
 
-### **Parameters**
+### **参数**
 
 ```name```
-	Table name.  
+	表名.  
 ```cloumn_name```
-	Table column.  
+	列名.  
 ```data_type```
-	Column type.  
+	列类型.  
 ```expression```
-	Value expression.  
+	值表达式.  
 ```ADD keyword```
-	Add column for table, can add one column or add multiple column.  
+	增加表的列, 可以增加一个列或多个列.  
 ```MODIFY keyword```
-	Modify column for table , can modify one column or modify multiple column.  
+	修改表的列, 可以修改一个列或多个列.  
 ```DROP keyword```
-	Drop column for table, can drop one column or drop multiple column.  
+	删除表的列, 可以删除一个列或多个列.  
 ```USING keyword```
-	Modify value for column.  
+	修改列的值.  
       
-## Examples
+## 示例
 
-### ADD:
 ```
+ADD:
 create table tb_test1(id int, flg char(10));
 
 alter table tb_test1 add (name varchar);
@@ -69,10 +71,8 @@ alter table tb_test1 add (adress varchar, num int, flg1 char);
  adress | character varying |           |          | 
  num    | integer           |           |          | 
  flg1   | character(1)      |           |          | 
-```
 
-### MODIFY:
-```
+MODIFY:
 create table tb_test2(id int, flg char(10), num varchar);
 
 insert into tb_test2 values('1', 2, '3');
@@ -86,10 +86,8 @@ alter table tb_test2 modify(id char);
  id     | character(1)      |           |          | 
  flg    | character(10)     |           |          | 
  num    | character varying |           |          | 
-```
 
-### DROP:
-```
+DROP:
 create table tb_test3(id int, flg1 char(10), flg2 char(11), flg3 char(12), flg4 char(13),
 						flg5 char(14), flg6 char(15));
 
@@ -106,3 +104,4 @@ alter table tb_test3 drop column(id);
  flg5   | character(14) |           |          | 
  flg6   | character(15) |           |          | 
 ```
+

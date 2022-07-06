@@ -1,17 +1,15 @@
 ---
-sidebar_position: 4
-sidebar_label: '更新表'
-title: 更新表
+sidebar_position: 5
+sidebar_label: 'Update Table'
+title: Update Table
 Tags:
  - Update table
- - 更新表
 ---
 
+## Overview
+Update table statement supports table name or alias to reference column.
 
-## 概述
-更新表时，可以使用表名或别名引用列。
-
-## 语法
+## Syntax
 ```
 [ WITH [ RECURSIVE ] with_query [, ...] ]
 UPDATE [ ONLY ] table_name [ * ] [ [ AS ] alias ]
@@ -24,28 +22,29 @@ UPDATE [ ONLY ] table_name [ * ] [ [ AS ] alias ]
     [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]
 ```
 
-### **参数**
+### **Parameters**
 ```table_name```
-	表名.  
+	Table name.  
 ```alias```
-	表别名.  
+	Table alias.  
 ```column_name```
-	列名.  
+	Table column.  
 ```expression```
-	值表达式.  
+	Value expression.  
 ```sub-SELECT```
-	select子句.  
+	Select sub query.  
 ```from_list```
-	表表达式.  
+	Table expression.  
 ```condition```
-	一个返回boolean类型值的表达式.  
+	A expression which return boolean value.  
 ```cursor_name```
-	要在WHERE CURRENT OF情况中使用的游标 的名称.  
+	The name of the cursor to be used in the WHERE CURRENT OF situation.  
 ```output_expression```
-	在每一行被删除后，会被DELETE计算并且返回的表达式.  
+	After each row is deleted, it will be calculated and returned by DELETE.  
 ```output_name```
-	被返回列的名称.  
-## 示例
+	The name of the column being returned.  
+
+## Example
 ```
 create table tb_test5(id int, flg char(10));
 
@@ -61,3 +60,4 @@ Id  |    flg
  33 | 4
 (3 rows)
 ```
+
