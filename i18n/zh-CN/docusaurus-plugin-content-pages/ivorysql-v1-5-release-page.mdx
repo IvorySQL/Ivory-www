@@ -1,0 +1,42 @@
+---
+id: IvorySQL-Release-1-5
+title: IvorySQL 版本 - 1.5
+---
+
+# IvorySQL Release - 1.5
+[**最新稳定版本**]
+
+## [**Downolad**](https://github.com/IvorySQL/IvorySQL/releases/tag/Ivory_REL_1_5)
+
+## 发行说明
+[**发布日期：2022年9月9日**]
+
+### 概述
+
+IvorySQL 1.5 基于 PostgreSQL 14.5 并包含 IvorySQL 1.4 之后的各种修复和新功能。
+
+此版本与 IvorySQL 1.4 兼容，并且不需要为运行 IvorySQL 1.X 的用户进行转储/恢复。
+
+它包含从 14.4 开始的各种修复，特别修复了 [扩展脚本会替换不属于该扩展的对象](https://www.postgresql.org/support/security/CVE-2022-2625/) 可能导致的问题以受害者角色（可能是超级用户）运行任意代码。更多详细信息可以在 [14.5 版本](https://www.postgresql.org/docs/release/14.5/) 中找到
+
+另外，此版本包括以下重要的修复：
+- 修复在备用服务器上重做CREATE DATABASE WAL日志的问题
+- 支持“In-Place”表空间
+- 修复 CREATE INDEX 中的权限检查
+
+有关 PostgreSQL 14.5 中的更新和错误修复，请参阅官方 PostgreSQL [14.5 发行说明](https://www.postgresql.org/docs/release/14.5/)。
+
+
+### Bug修复
+- 修复了包变量以允许常量类型的数据和不允许伪类型变量的数据。 [详情](https://github.com/IvorySQL/IvorySQL/pull/162)
+- 包中的Tab键自动完成。 [详情](https://github.com/IvorySQL/IvorySQL/pull/101)
+
+
+### 贡献
+以下个人作为补丁作者、提交者、审阅者、测试者或问题报告者为本版本做出了贡献。
+- Asif Rehman
+- Grant Zhou
+- Shengbin Zhao
+- Muhammad Usama
+
+**[完整更新日志](https://github.com/IvorySQL/IvorySQL/commits/Ivory_REL_1_5)**

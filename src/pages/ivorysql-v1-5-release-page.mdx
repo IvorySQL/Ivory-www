@@ -1,0 +1,40 @@
+---
+id: IvorySQL-Release-1-5
+title: IvorySQL Release - 1.5
+---
+
+# IvorySQL Release - 1.5
+
+## [**Downolad**](https://github.com/IvorySQL/IvorySQL/releases/tag/Ivory_REL_1_5)
+
+## Release Notes
+[**Release Date: Sep 09, 2022**]
+### Overview
+
+IvorySQL 1.5 is based on PostgreSQL 14.5 and contains a variety of fixes and new feature since IvorySQL 1.4.
+
+This release is compatible with IvorySQL 1.4 and does not require a dump/restore for those running IvorySQL 1.X. 
+
+It contains a variety of fixes from 14.4, specifically fixes an issue with [Extension scripts replace objects not belonging to the extension](https://www.postgresql.org/support/security/CVE-2022-2625/) that could cause to run arbitrary code as the victim role, which may be a superuser. More details can be found at [14.5 release](https://www.postgresql.org/docs/release/14.5/)
+
+Similarly, there are some important fix included:
+- Fix replay of CREATE DATABASE WAL records on standby servers
+- Support “in place” tablespaces
+- Fix permissions checks in CREATE INDEX
+
+For updates and bug fixes in PostgreSQL 14.5 please refer to the official PostgreSQL [14.5 release notes](https://www.postgresql.org/docs/release/14.5/).
+
+
+### Bug Fixes
+- Fixed package variables to allow constants and disallow pseudo type variables. [Details](https://github.com/IvorySQL/IvorySQL/pull/162)
+- Package tab complete. [Details](https://github.com/IvorySQL/IvorySQL/pull/101)
+
+
+### Contributions
+The following individuals have contributed to this release as patch authors, committers, reviewers, testers, or reporters of issues.
+- Asif Rehman
+- Grant Zhou
+- Shengbin Zhao
+- Muhammad Usama
+
+**[Complete Changelog](https://github.com/IvorySQL/IvorySQL/commits/Ivory_REL_1_5)**
