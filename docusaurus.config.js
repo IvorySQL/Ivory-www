@@ -193,11 +193,12 @@ const config = {
         defaultMode: 'light',
         disableSwitch: true,
         respectPrefersColorScheme: false,
-        switchConfig: {
-          darkIcon: '🌙',
-          darkIconStyle: {
-            marginLeft: '2px',
-          }}},
+        // ColorModeToggle: {
+        //   darkIcon: '🌙',
+        //   darkIconStyle: {
+        //     marginLeft: '2px',
+        //   }}
+        },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
