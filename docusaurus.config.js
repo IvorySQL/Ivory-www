@@ -31,6 +31,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          blogSidebarCount: 'ALL',
           blogSidebarTitle: 'IvorySQL Blogs',
           // Please change this to your repo.
 //          editUrl: 'https://github.com/IvorySQL/Ivory-www/tree/main/blog/',
@@ -114,8 +115,8 @@ const config = {
           {
             label: 'Community',
             to: '/community-page',
-            position: 'right'
-          },
+            position: 'left'
+          },  
           {
             href: 'https://gitee.com/IvorySQL/',
             label: 'Gitee',
