@@ -1,0 +1,339 @@
+
+.release{   
+    width: 98.776vw;
+    /* min-width: 480px; */
+    height: 700px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.release-left{
+    width: 80%;
+    height: 500px;
+    position: relative;
+    left: 10%;
+    top: 20px;
+}
+.release-left-uppertitle{
+    width: 100px;
+    height: 10px;
+    display: flex;
+}
+.colorblock{
+    width: 6px;
+    height: 14px;
+    background: #FFD673;
+}
+.uppertile-font{
+    width: 85px;
+    height: 14px;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #333333;
+    line-height: 14px;
+    position: relative;
+    left: 10px;
+}
+.release-left-timeline{
+    width: 60%;
+    height: 200px;
+    position: relative;
+    top: 20px;
+    display: flex;
+}
+.release-left-years{
+    width: 70px;
+    height: 26px;
+    background: #FFD673;
+    border-radius: 13px;
+}
+.release-left-years span{
+    position: relative;
+    left: 18px;
+    top: -1px;
+}
+#release-left-years-2021{
+    position: relative;
+    top: 40px;
+}
+.release-left-years span{
+    width: 28px;
+    height: 9px;
+    font-size: 12px;
+    font-family: Gilroy;
+    font-weight: 800;
+    color: #333333;
+    line-height: 14px;
+}
+.release-left-timeline{
+    position: relative;
+    left: 120px;
+}
+.timeline-line .spot{
+    width: 5px;
+    height: 5px;
+    background: #F9BB30;
+    border-radius: 50%;
+    position: relative;
+    left: 70px;
+    top: 20px;
+}
+#last-spot{
+    position: relative;
+    top: 60px;
+}
+.timeline-line .line{
+    width: 1px;
+    height: 31px;
+    background: #E5E5E5;
+    position: relative;
+    left: 72.5px;
+    top: 20px;
+}
+.upimg{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+    left: 10px;
+}
+.alltimeline{
+    width: 40%;
+    position: relative;
+    left: 30px;
+    top: 16px;
+}
+.alltimeline .timeline-date{
+    width: 35px;
+    height: 12px;
+    font-size: 12px;
+    font-family: Gilroy;
+    font-weight: 300;
+    color: #666666;
+    line-height: 14px;
+}
+.alltimeline .timeline-edition{
+    width: 100px;
+    height: 11px;
+    font-size: 10px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #333333;
+    line-height: 14px;
+    position: relative;
+    left: 20px;
+}
+.alltimeline .timeline-edition:hover{
+    color: #F9BB30;
+}
+.timeline-15{
+    width: 160%;
+    position: relative;
+    top: 20px;
+    /* display: flex;
+    flex-wrap: nowrap; */
+}
+.timeline-new{
+    width: 40px;
+    height: 19px;
+    background: #FFD673;
+    border-radius: 9px;
+    position: relative;
+    left: 30px;
+    font-size: 7px;
+    font-family: Gilroy;
+    font-weight: 800;
+    color: #252424;
+    /* line-height: 14px; */
+}
+.timeline-new span{
+    width: 20px;
+    height: 7px;
+
+}
+.timeline-14{
+    width: 100%;
+    position: relative;
+    top: 28px;
+}
+.timeline-13{
+    width: 100%;
+    position: relative;
+    top: 38px;
+}
+.timeline-12{
+    width: 100%;
+    position: relative;
+    top: 48px;
+}
+.timeline-11{
+    width: 100%;
+    position: relative;
+    top: 55px;
+}
+.timeline-10{
+    width: 100%;
+    position: relative;
+    top: 102px;
+}
+.reelase-left-hr{
+    width: 488px;
+    height: 1px;
+    background: #DCDCDC;
+    position: relative;
+    top: 120px;
+}
+.release-left-lowcontent{
+    width: 400px;
+    height: 300px;
+}
+.content-title{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    top: 160px;
+}
+.content-title-font{
+    width: 67px;
+    height: 9px;
+    font-size: 9px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #333333;
+    line-height: 14px;
+    position: relative;
+    left: 30px;
+}
+.content-highgo{
+    width: 262px;
+    height: 81px;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    display: flex;
+    position: relative;
+    left: 120px;
+    top: 180px;
+}
+.release-left-img{
+    width: 96px;
+    height: 18px;
+    position: relative;
+    left: 25px;
+    top: 30px;
+}
+.content-highgo-line{
+    width: 1px;
+    height: 30px;
+    background-color: #D2D2D2;
+    position: relative;
+    top: 26px;
+    left: 45px;
+}
+.YUM{
+    width: 86px;
+    height: 9px;
+    font-size: 9px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #333333;
+    line-height: 14px;
+    position: relative;
+    top: 35px;
+    left: 65px;
+}
+.content-font{
+    position: relative;
+    left: 120px;
+    top: 200px;
+    width: 390px;
+    height: 9px;
+    font-size: 8px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #333333;
+    line-height: 14px;
+}
+.release-right-img{
+    width: 284px;
+    height: 221px;
+    position: relative;
+    right: 20%; 
+    top: 110px;
+}
+@media screen and (max-width: 997px) {
+    .release{
+        width: 98%;
+        height: 120vh;
+    }
+    .release-right-img{
+        display: none;
+    }
+    .content-font{
+        width: 80%;
+    }
+    .release-left-timeline{
+        width: 100%;
+        height: 50vh;
+        position: relative;
+        left: -1%;
+    }
+    .content-highgo{
+        position: relative;
+        left: -1%;
+    }
+    .content-font{
+        width: 100%;
+        position: relative;
+        left: -1%;
+    }
+    .release-left-lowcontent{
+        width: 70%;
+        height: 60vh;
+    }
+    .release-left-content{
+        width: 70%;
+        height: 40vh;
+    }
+    .reelase-left-hr{
+        width: 90%;
+        position: relative;
+        left: -20%;
+    }
+}
+@media screen and (max-width: 476px) {
+    .timeline-line .line{
+        width: 1px;
+        height: 51px;
+        background: #E5E5E5;
+        position: relative;
+        left: 72.5px;
+        top: 20px;
+    }
+    #last-spot{
+        position: relative;
+        top: 85px;
+    }
+}
+@media screen and (max-width: 361px) {
+    .release{
+        width: 98%;
+        height: 130vh;
+    }
+    .release-left-timeline{
+        width: 100%;
+        height: 52vh;
+    }
+    .timeline-line .line{
+        width: 1px;
+        height:57px;
+        background: #E5E5E5;
+        position: relative;
+        left: 72.5px;
+        top: 20px;
+    }
+    #last-spot{
+        position: relative;
+        top: 88px;
+    }
+}

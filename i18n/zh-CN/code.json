@@ -11,7 +11,7 @@
     "message": "请联系将您链接到原始 URL 的站点的所有者，并让他们知道他们的链接已损坏",
     "description": "The 2nd paragraph of the 404 page"
   },
-  "theme.blog.archive.title": {
+  "theme.blog.archive.title": { 
     "message": "归档",
     "description": "The page & hero title of the blog archive page"
   },

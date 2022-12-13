@@ -7,21 +7,29 @@
     "message": "文档",
     "description": "Navbar item with label Docs"
   },
-  "item.label.Community": {
-    "message": "社区",
-    "description": "Navbar item with label Community"
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
   },
   "item.label.Download": {
     "message": "下载",
     "description": "Navbar item with label Download"
   },
-  "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Navbar item with label GitHub"
+  "item.label.Releases": {
+    "message": "发布",
+    "description": "Navbar item with label Releases"
   },
   "item.label.Resources": {
     "message": "资源",
     "description": "Navbar item with label Resources"
+  },
+  "item.label.Community": {
+    "message": "社区",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
   },
   "item.label.Contribution Guidelines": {
     "message": "贡献准则",
@@ -38,18 +46,6 @@
   "item.label.Mailing Lists": {
     "message": "邮件列表",
     "description": "Navbar item with label Mailing Lists"
-  },
-  "item.label.Downloads": {
-    "message": "下载",
-    "description": "Navbar item with label Downloads"
-  },
-  "item.label.Blog": {
-    "message": "博客",
-    "description": "Navbar item with label Blog"
-  },
-  "item.label.Releases": {
-    "message": "发布",
-    "description": "Navbar item with label Releases"
   },
   "item.label.Gitee": {
     "message": "Gitee",
