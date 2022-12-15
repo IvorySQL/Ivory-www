@@ -13,7 +13,12 @@ title: IvorySQL Release - 2.1
 
 IvorySQL 2.1 is based on PostgreSQL 15.1 and contains a variety of fixes from Postgres community and new feature since IvorySQL 1.5.
 
-New feature: Global unique index
+This release is compatible with IvorySQL 1.5 and does not require a dump/restore for those running IvorySQL 1.X. 
+
+IvorySQL 2.1 contains a variety of fixes from PostgreSQL 15.0 and 15.1, including improved sort Performance and Compression, logging and configuration enhancement, more fine-tuned logical replication options, etc. For more detailed updates and bug fixes in PostgreSQL 15 and 15.1, please refer to the official [PostgreSQL 15.0 release notes](https://www.postgresql.org/docs/release/15.0/) and [PostgreSQL 15.1 release notes](https://www.postgresql.org/docs/release/15.1/).
+
+### New feature
+[**Global unique index**]
 
 “Global unique index” is a unique index on a partitioned table that can ensure cross-partition uniqueness using a non-partition key. This feature can be used in Postgres and Oracle compatibility modes.
 
@@ -22,7 +27,6 @@ This work is inspired by this email thread, “Proposal: Global Index” started
 CREATE UNIQUE INDEX global_index ON idxpart(bid) GLOBAL;
 
 With a global unqiue index created, cross partition uniqueness can be guaranteed with INSERT, UPDATE, ATTACH and DETACH operations.
-
 
 ### Contributions
 The following individuals have contributed to this release as patch authors, committers, reviewers, testers, or reporters of issues.
