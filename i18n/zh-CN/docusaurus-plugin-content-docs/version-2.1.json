@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "2.1",
+    "description": "The label for version 2.1"
+  },
+  "sidebar.tutorialSidebar.category.Compatibility Features": {
+    "message": "Oracle 兼容功能",
+    "description": "The label for category Compatibility Features in sidebar"
+  },
+  "sidebar.tutorialSidebar.category.Global Unique Index": {
+    "message": "全局唯一索引",
+    "description": "The label for category Global Unique Index in sidebar"
+  }
+}

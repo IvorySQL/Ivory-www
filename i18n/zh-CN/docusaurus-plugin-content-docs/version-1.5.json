@@ -4,7 +4,7 @@
     "description": "The label for version 1.5"
   },
   "sidebar.tutorialSidebar.category.Compatibility Features": {
-    "message": "兼容性特征",
+    "message": "Oracle 兼容功能",
     "description": "The label for category Compatibility Features in sidebar tutorialSidebar"
   }
 }
