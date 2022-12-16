@@ -17,7 +17,7 @@ CREATE UNIQUE INDEX [IF NOT EXISTS] name ON table_name [USING method] (columns) 
 
 ```
 
-## 样例
+## 示例
 
 ```
 CREATE UNIQUE INDEX myglobalindex on mytable(bid) GLOBAL;
