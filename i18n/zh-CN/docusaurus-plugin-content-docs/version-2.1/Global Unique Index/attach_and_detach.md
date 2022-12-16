@@ -13,8 +13,9 @@ tags:
 
 附加需要所有现有分区上的共享锁（sharedlock）。 如果其中一个分区正在进行并发 INSERT，则附加将等待它先完成。 这可以在未来的版本中改进
 
-## 样例
+## 示例
 
+**运行命令**
 ```
 create table gidxpart (a int, b int, c text) partition by range (a);
 create table gidxpart1 partition of gidxpart for values from (0) to (100000);
@@ -24,7 +25,10 @@ create table gidxpart2 (a int, b int, c text);
 insert into gidxpart2 (a, b, c) values (150000, 572814, 'dup inserted on gidxpart2');
 
 alter table gidxpart attach partition gidxpart2 for values from (100000) to (199999); 
+```
+
+**输出**
+```
 ERROR:  could not create unique index "gidxpart1_b_idx"
 DETAIL:  Key (b)=(572814) is duplicated.
-
 ```

@@ -11,7 +11,8 @@ tags:
 在全局唯一索引创建过程中，系统会对所有现有分区执行索引扫描，如果在其他分区而不是当前分区中发现重复项，则会引发错误。
 
 
-## 样例
+## 示例
+**命令**
 ```
 create table gidx_part (a int, b int, c text) partition by range (a);
 create table gidxpart (a int, b int, c text) partition by range (a);
@@ -22,6 +23,11 @@ create unique index gidx_u on gidxpart using btree(b) global;
 insert into gidxpart values (1, 1, 'first');
 insert into gidxpart values (11, 11, 'eleventh');
 insert into gidxpart values (2, 11, 'duplicated (b)=(11) on other partition');
+
+```
+
+**输出**
+```
 ERROR:  duplicate key value violates unique constraint "gidxpart2_b_idx"
 DETAIL:  Key (b)=(11) already exists.
-
+```
