@@ -11,4 +11,4 @@ sidebar_position: 1
 
 ## 快速开始
 
-从 **Github下载代码** 快速开始。
+从 [**Github下载代码**](https://github.com/IvorySQL/IvorySQL) 快速开始。
