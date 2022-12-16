@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: 'Compatibility Parameters'
+sidebar_label: '配置参数'
 title: 兼容配置参数
 tags:
   - Compatibility Parameters
