@@ -1,0 +1,38 @@
+---
+id: IvorySQL-Release-2-1
+title: IvorySQL 版本 - 2.1
+---
+
+# IvorySQL Release - 2.1
+[**最新稳定版本**]
+
+## [**下载**](https://github.com/IvorySQL/IvorySQL/releases/tag/Ivory_REL_2_1)
+
+## 发行说明
+[**发布日期：2022年12月14日**]
+
+### 概述
+
+IvorySQL 2.1 基于 PostgreSQL 15.1 并包含 IvorySQL 1.5 之后的各种修复和新功能。
+
+此版本与 IvorySQL 1.5 兼容，并且不需要为运行 IvorySQL 1.X 的用户进行转储/恢复。
+
+IvorySQL 2.1 包含来自 PostgreSQL 15.0 和 15.1 的各种修复，包括改进的排序性能和压缩、日志记录和配置增强、更微调的逻辑复制选项等。有关 PostgreSQL 15 和 15.1 中更详细的更新和错误修复，请参阅 官方 [PostgreSQL 15.0 发行说明](https://www.postgresql.org/docs/release/15.0/) 和 [PostgreSQL 15.1 发行说明](https://www.postgresql.org/docs/release/15.1/).
+
+### 新功能
+[**全局唯一索引**]
+
+“**全局唯一索引**” 是分区表上的唯一索引，可以使用非分区键确保跨分区唯一性。
+此功能可用于IvorySQL的 Postgres模式 和 Oracle 兼容模式。
+
+可以在针对分区表运行的“CREATE INDEX”语句中使用“GLOBAL”和“UNIQUE”子句创建全局唯一索引。
+
+有关详细信息，请参阅 IvorySQL 用户文档。
+
+### 贡献
+以下个人作为补丁作者、提交者、审阅者、测试者或问题报告者为本版本做出了贡献。
+- Cary Huang
+- David Zhang
+- Grant Zhou
+
+**[完整更新日志](https://github.com/IvorySQL/IvorySQL/commits/Ivory_REL_2_1)**
