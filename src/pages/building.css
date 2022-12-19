@@ -1,0 +1,28 @@
+
+.building-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.building{
+    width: 400px;
+    height: 500px;
+}
+.building img{
+    width: 352px;
+    height: 274px;
+    position: relative;
+    top: 100px;
+}
+.b-building{
+    width: 200px;
+    height: 1px;
+    font-size: 15px;
+    font-family: Microsoft YaHei;
+    font-weight: 600;
+    color: #333333;
+    line-height: 14px;
+    position: relative;
+    top: 180px;
+    right: 100px;
+}

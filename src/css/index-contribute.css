@@ -1,0 +1,172 @@
+
+.contribute{
+    width: 98.776vw;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../../svg/bg-started.jpg);
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position: 0 89px;
+}
+/* .contribute .contribute-girl{
+    width: 400px;   
+    height: 400px;
+    position: relative;
+    top: 120px;
+    left: -5.5%;
+}
+.contribute .contribute-leaf{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 84.5px;
+    left: 5.4%;
+} */
+.contribute .four-right{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 112px;
+    left: 720px;
+}
+.contribute-middle-content{
+    position: relative;
+    right: 80px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.contribute-title{
+    width: 250px;
+    height: 19px;
+    font-size: 25px;
+    font-family: Gilroy;
+    font-weight: 800;
+    color: #333333;
+    line-height: 14px;
+    position: relative;
+    top: 84px;
+    left: 175px;
+}
+.contribute-font{
+    width: 386px;
+    height: 32px;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    font-weight: 550;
+    color: #333333;
+    line-height: 19px;
+    text-align: center;
+    position: relative;
+    left: 105px;
+}
+#contribute-link{
+    width: 117px;
+    height: 35px;
+    background: #FFD673;
+    border-radius: 3px;
+    position: relative;
+    top: -90px;
+    left: 230px;
+}
+#contribute-link:hover{
+    background: #F9BB30;
+}
+#contribute-span{
+    width: 72px;
+    height: 9px;
+    font-size: 12px;
+    font-family: Gilroy;
+    font-weight: 800;
+    color: #333333;
+    line-height: 14px;
+}
+@media screen and (max-width: 997px) {
+   .contribute{
+    background-color: white;
+    background-image: none;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+   }
+   .contribute-girl{
+    display: none;
+   }
+   #contribute-middle-content{
+    width: 60%;
+    position: relative;
+    left: 11vw;
+    display: grid;
+    justify-content: center;
+   }
+   .contribute-title{
+    width: 100%;
+    position: relative;
+    left: 6vw;
+    font-size: 20px;
+    font-family: Gilroy;
+    font-weight: 800;
+   }
+   .contribute-font{
+    text-align: center;
+    width: 110%;
+    position: relative;
+    left: -1vw;
+    font-size: 1px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+   }
+   #contribute-link{
+    text-align: center;
+    position: relative;
+    left: 10vw;
+    top: -40%;
+   }
+}
+@media screen and (max-width: 800px) {
+    #contribute-middle-content{
+        width: 60%;
+        position: relative;
+        left: 15vw;
+        display: grid;
+        justify-content: center;
+    }
+    #contribute-link{
+        text-align: center;
+        position: relative;
+        left: 15vw;
+        top: -40%;
+    }
+    .contribute-title{
+        width: 100%;
+        position: relative;
+        left: 8vw;
+        font-size: 20px;
+        font-family: Gilroy;
+        font-weight: 800;
+       }
+}
+@media screen and (max-width: 600px) {
+    #contribute-middle-content{
+        width: 60%;
+        position: relative;
+        left: 17vw;
+        display: grid;
+        justify-content: center;
+    }
+    .contribute-title{
+        width: 100%;
+        position: relative;
+        left: 8vw;
+        font-size: 20px;
+        font-family: Gilroy;
+        font-weight: 800;
+       }
+    #contribute-link{
+        text-align: center;
+        position: relative;
+        left: 16vw;
+        top: -40%;
+    }
+}
