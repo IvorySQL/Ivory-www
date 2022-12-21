@@ -33,15 +33,9 @@ export default class IndexActivity extends Component {
                             <div class="activity-content-title-small">12.09-11 / 济南喜来登酒店</div>
                             <p>由中国PG分会主办的“2022中国PG生态大会”,将以“协同共进”为主题,邀请专家学者、厂商和用户代表,就PG在行业和区域的推广与应用进行深入探讨</p>
                             <Link 
-<<<<<<< HEAD
                                 className="button"
                                 id="link-oneday"
                                 to="/docs/Compatibillity_Features/oneday-page">
-=======
-                                className="button" 
-                                id="link-oneday"
-                                to="/docs/activit/oneday-page">
->>>>>>> 821d707dc4815ecb07f8dbb767ea603a1e21ea99
                                   <span>+</span>
                                   <div>More</div>
                             </Link>

@@ -67,7 +67,6 @@ const config = {
         logo: {
           alt: 'IvorySQL Logo',
           src: 'img/logo-black.svg',
-          className: 'title-logo',
         },
         items: [
           // {
