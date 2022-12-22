@@ -1,0 +1,74 @@
+{
+    "title": {
+      "message": "IvorySQL",
+      "description": "The title in the navbar"
+    },
+    "item.label.Docs": {
+      "message": "文档",
+      "description": "Navbar item with label Docs"
+    },
+    "item.label.Blog": {
+      "message": "博客",
+      "description": "Navbar item with label Blog"
+    },
+    "item.label.Download": {
+      "message": "下载",
+      "description": "Navbar item with label Download"
+    },
+    "item.label.Releases": {
+      "message": "发布",
+      "description": "Navbar item with label Releases"
+    },
+    "item.label.Resources": {
+      "message": "资源",
+      "description": "Navbar item with label Resources"
+    },
+    "item.label.Community": {
+      "message": "社区",
+      "description": "Navbar item with label Community"
+    },
+    "item.label.Webinars": {
+        "message": "网络研讨会",
+        "description": "Navbar item with label Webinars"
+      },
+    "item.label.Partners": {
+      "message": "合作伙伴",
+      "description": "Navbar item with label Partners"
+    },
+    "item.label.Customer Story": {
+      "message": "客户故事",
+      "description": "Navbar item with label Customer Stories"
+    },
+    "item.label.Cases Studies": {
+      "message": "成功案例",
+      "description": "Navbar item with label Success Cases"
+    },
+    "item.label.More Activity": {
+      "message": "更多活动",
+      "description": "Navbar item with label More Activities"
+    },
+    "item.label.Code Of Conduct": {
+      "message": "行为准则",
+      "description": "Navbar item with label Contribution Guidelines"
+    },
+    "item.label.Mail list": {
+      "message": "邮箱列表",
+      "description": "Navbar item with label Contribution Guidelines"
+    },
+    "item.label.Contribute": {
+      "message": "贡献-Github", 
+      "description": "Navbar item with label Contribution Guidelines"
+    },
+    "item.label.Shareing": {
+      "message": "共享",
+      "description": "Navbar item with label Contribution Guidelines"
+    },
+    "item.label.Slack/Twitter": {
+      "message": "讨论",
+      "description": "Navbar item with label Contribution Guidelines"
+    },
+    "item.label.Subscribe": {
+      "message": "订阅",
+      "description": "Navbar item with label Contribution Guidelines"
+    }
+  }
