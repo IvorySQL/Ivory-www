@@ -79,14 +79,14 @@ main{
   height: 20%;
 }
 #TtyForFree{
-  width: 10vw;
+  width: 8vw;
   height: 5vh;
   background: #FFD673;
   border-radius: 3px;
   font-size: 0.85vw;
   font-family: Gilroy;
   font-weight:bolder;
-  padding: 0.3vh 0 0 1.2vw;
+  padding: 0.3vh 0 0 2.1vh;
   position: relative;
   right: 8%;
 }
