@@ -58,6 +58,7 @@ main{
 }
 .navbar .navbar__items {
   border: white;
+  width: 32%;
 }
 .navbar__inner{
   position: absolute;
@@ -66,7 +67,7 @@ main{
 }
 .navbar__link{
   width: auto;
-  font-size: 1px;
+  font-size: 1.9vh;
   font-family: Microsoft YaHei;
   font-weight: 520;
   color: #333333;
@@ -78,16 +79,16 @@ main{
   height: 20%;
 }
 #TtyForFree{
-  width: 60%;
-  height: 80%;
+  width: 10vw;
+  height: 5vh;
   background: #FFD673;
   border-radius: 3px;
-  font-size: 12px;
+  font-size: 0.85vw;
   font-family: Gilroy;
   font-weight:bolder;
-  padding: 4px 1px 1px 9px;
+  padding: 0.3vh 0 0 1.2vw;
   position: relative;
-  right: 10%;
+  right: 8%;
 }
 #TtyForFree:hover{
   color: black;
@@ -136,7 +137,7 @@ main{
 }
 .footer__link-item{ 
   color: #FFFFFF;
-  font-size: 5px;
+  font-size: 1.5vh;
 }
 .navbar__item .navbar__link .Try-for-Free :hover{
   color: black;
@@ -191,7 +192,7 @@ main{
 .other-footer-font-left{
   width: 138px;
   height: 8px;
-  font-size: 7px;
+  font-size: 1.5vh;
   font-family: Microsoft YaHei;
   font-weight: 400;
   color: #E4E4E4;
@@ -200,7 +201,7 @@ main{
 .other-footer-font-right{
   width: 138px;
   height: 8px;
-  font-size: 7px;
+  font-size: 1.5vh;
   font-family: Microsoft YaHei;
   font-weight: 800;
   color: #E4E4E4;
@@ -264,7 +265,7 @@ main{
 .footer__copyright{
   width: 160px;
   height: 7px;
-  font-size: 7px;
+  font-size: 1.5vh;
   font-family: Gilroy;
   font-weight: 300;
   color: #E4E4E4;

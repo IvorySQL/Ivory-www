@@ -28,7 +28,7 @@
     color: #333333;
     line-height: 14px;
     position: relative;
-    left: 15%;
+    left: 2.5vw;
     top: -40px;
 }
 .hr-action{
@@ -40,7 +40,7 @@
     color: #333333;
     line-height: 14px;
     position: relative;
-    left: 29%; 
+    left: 4vw; 
     top: -70px;
 }
 .activity-content{
@@ -94,7 +94,7 @@
 .activity-content-title-small{
     width: 163px;
     height: 9px;
-    font-size: 1px;
+    font-size: 1.6vh;
     font-family: Microsoft YaHei;
     font-weight: 400;
     color: #333333;
@@ -106,7 +106,7 @@
 .activity-content p{
     width: 355px;
     height: 22px;
-    font-size: 0.1px;
+    font-size: 1.5vh;
     font-family: Microsoft YaHei;
     font-weight: 100;
     color: #999999;
@@ -143,7 +143,7 @@
     display: inline;
     width: 22px;
     height: 7px;
-    font-size: 9px;
+    font-size: 1.6vh;
     font-family: Gilroy;
     font-weight: 800;
     color: #252424;
@@ -156,13 +156,14 @@
     display: inline;
     width: 22px;
     height: 7px;
-    font-size: 9px;
+    font-size: 1.6vh;
     font-family: Gilroy;
     font-weight: 800;
     color: #252424;
     line-height: 14px;
     position: relative;
     top: -30%;
+    right: 20%;
 }
 #link-pgconf:hover{
     background-color: #F9BB30;
@@ -183,7 +184,7 @@
     display: inline;
     width: 22px;
     height: 7px;
-    font-size: 9px;
+    font-size: 1.6vh;
     font-family: Gilroy;
     font-weight: 800;
     color: #252424;
@@ -196,13 +197,14 @@
     display: inline;
     width: 22px;
     height: 7px;
-    font-size: 9px;
+    font-size: 1.6vh;
     font-family: Gilroy;
     font-weight: 800;
     color: #252424;
     line-height: 14px;
     position: relative;
     top: -30%;
+    right: 20%;
 }
 #link-oneday:hover{
     background-color: #F9BB30;

@@ -106,7 +106,7 @@
     line-height: 14px;
 }
 .introduce-content{
-    font-size: 1px;
+    font-size: 1.5vh;
     font-family: Microsoft YaHei;
     font-weight: 100;
     color: #333333;
@@ -183,7 +183,7 @@
     display: inline;
     width: 22px;
     height: 7px;
-    font-size: 9px;
+    font-size: 2vh;
     font-family: Gilroy;
     font-weight: 800;
     color: #252424;
@@ -196,13 +196,14 @@
     display: inline;
     width: 22px;
     height: 7px;
-    font-size: 9px;
+    font-size: 1.6vh;
     font-family: Gilroy;
     font-weight: 800;
     color: #252424;
     line-height: 14px;
     position: relative;
     top: -30%;
+    right: 20%;
 }
 #link-hgcom:hover{
     background-color: #F9BB30;

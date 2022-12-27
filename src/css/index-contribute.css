@@ -9,20 +9,6 @@
     background-repeat: no-repeat;
     background-position: 0 89px;
 }
-/* .contribute .contribute-girl{
-    width: 400px;   
-    height: 400px;
-    position: relative;
-    top: 120px;
-    left: -5.5%;
-}
-.contribute .contribute-leaf{
-    width: 400px;
-    height: 400px;
-    position: relative;
-    top: 84.5px;
-    left: 5.4%;
-} */
 .contribute .four-right{
     width: 400px;
     height: 400px;
@@ -52,7 +38,7 @@
 .contribute-font{
     width: 386px;
     height: 32px;
-    font-size: 12px;
+    font-size: 2vh;
     font-family: Microsoft YaHei;
     font-weight: 550;
     color: #333333;
@@ -101,7 +87,7 @@
     justify-content: center;
    }
    .contribute-title{
-    width: 100%;
+    width: 30vw;
     position: relative;
     left: 6vw;
     font-size: 20px;
@@ -113,7 +99,7 @@
     width: 110%;
     position: relative;
     left: -1vw;
-    font-size: 1px;
+    font-size: 2vh;
     font-family: Microsoft YaHei;
     font-weight: 400;
    }
