@@ -89,7 +89,7 @@
    .contribute-title{
     width: 30vw;
     position: relative;
-    left: 6vw;
+    left: 10vw;
     font-size: 20px;
     font-family: Gilroy;
     font-weight: 800;
@@ -98,7 +98,7 @@
     text-align: center;
     width: 110%;
     position: relative;
-    left: -1vw;
+    left: 2vw;
     font-size: 2vh;
     font-family: Microsoft YaHei;
     font-weight: 400;
@@ -106,7 +106,7 @@
    #contribute-link{
     text-align: center;
     position: relative;
-    left: 10vw;
+    left: 14.5vw;
     top: -40%;
    }
 }
@@ -144,7 +144,7 @@
     .contribute-title{
         width: 100%;
         position: relative;
-        left: 8vw;
+        left: 11vw;
         font-size: 20px;
         font-family: Gilroy;
         font-weight: 800;
@@ -152,7 +152,7 @@
     #contribute-link{
         text-align: center;
         position: relative;
-        left: 16vw;
+        left: 20vw;
         top: -40%;
     }
 }
