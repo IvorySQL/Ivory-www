@@ -281,14 +281,59 @@ main{
     width: 100%;
   }
   #TtyForFree{
-    width: 32%;
-    height: 100%;
+    width: 20vw;
+    height: 50%;
     background: #FFD673;
     border-radius: 3px;
-    font-size: 2px;
+    font-size: 2vh;
     font-family: Gilroy;
     font-weight: bolder;
-    padding: 2% 0% 2% 8vw;
+    padding: 2% 0% 2% 6vw;
+    position: relative;
+    top: -20px;
+    left: 4%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #TtyForFree{
+    width: 20vw;
+    height: 50%;
+    background: #FFD673;
+    border-radius: 3px;
+    font-size: 2vh;
+    font-family: Gilroy;
+    font-weight: bolder;
+    padding: 2% 0% 2% 5.2vw;
+    position: relative;
+    top: -20px;
+    left: 4%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #TtyForFree{
+    width: 20vw;
+    height: 50%;
+    background: #FFD673;
+    border-radius: 3px;
+    font-size: 2vh;
+    font-family: Gilroy;
+    font-weight: bolder;
+    padding: 2% 0% 2% 4.8vw;
+    position: relative;
+    top: -20px;
+    left: 4%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #TtyForFree{
+    width: 20vw;
+    height: 50%;
+    background: #FFD673;
+    border-radius: 3px;
+    font-size: 2vh;
+    font-family: Gilroy;
+    font-weight: bolder;
+    padding: 2% 0% 2% 4.5vw;
     position: relative;
     top: -20px;
     left: 4%;
@@ -296,14 +341,29 @@ main{
 }
 @media screen and (max-width: 550px) {
   #TtyForFree{
-    width: 32%;
+    width: 20vw;
     height: 100%;
     background: #FFD673;
     border-radius: 3px;
-    font-size: 2px;
+    font-size: 2vh;
     font-family: Gilroy;
     font-weight: bolder;
-    padding: 2% 0% 2% 7vw;
+    padding: 2% 0% 2% 3.5vw;
+    position: relative;
+    top: -20px;
+    left: 4%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #TtyForFree{
+    width: 20vw;
+    height: 100%;
+    background: #FFD673;
+    border-radius: 3px;
+    font-size: 2vh;
+    font-family: Gilroy;
+    font-weight: bolder;
+    padding: 2% 0% 2% 2.5vw;
     position: relative;
     top: -20px;
     left: 4%;
@@ -311,14 +371,14 @@ main{
 }
 @media screen and (max-width: 465px) {
   #TtyForFree{
-    width: 32%;
+    width: 20vw;
     height: 100%;
     background: #FFD673;
     border-radius: 3px;
-    font-size: 2px;
+    font-size: 2vh;
     font-family: Gilroy;
     font-weight: bolder;
-    padding: 2% 0% 2% 4vw;
+    padding: 2% 0% 2% 3.8vw;
     position: relative;
     top: -20px;
     left: 4%;
