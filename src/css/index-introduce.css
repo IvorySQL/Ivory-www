@@ -177,7 +177,7 @@
     border-radius: 3px;
     border: 1px;
     position: relative;
-    left: 43%;
+    left: 40%;
 }
 #link-hgcom span{
     display: inline;
@@ -203,7 +203,7 @@
     line-height: 14px;
     position: relative;
     top: -30%;
-    right: 20%;
+    right: 1%;
 }
 #link-hgcom:hover{
     background-color: #F9BB30;
