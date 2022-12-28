@@ -14,7 +14,7 @@
     top: 50px;
 } 
 .svg-Balloon{
-    width: 28px;
+    width: 35px;
     height: 38px;
     position: relative;
     left: 50%;
@@ -28,7 +28,7 @@
     color: #333333;
     line-height: 14px;
     position: relative;
-    left: 2.5vw;
+    left: 20%;
     top: -40px;
 }
 .hr-action{
@@ -40,7 +40,7 @@
     color: #333333;
     line-height: 14px;
     position: relative;
-    left: 4vw; 
+    left: 30%; 
     top: -70px;
 }
 .activity-content{
