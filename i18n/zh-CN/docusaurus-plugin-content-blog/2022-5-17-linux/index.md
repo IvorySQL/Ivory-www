@@ -446,7 +446,7 @@ rm -fr /usr/local/pgsql									--删除残留安装目录
 
 IvorySQL项目是一个具有广泛生态基础和中国特色的PG开源衍生项目，是瀚高公司设计研发的一款具备强大Oracle兼容能力的开源数据库。具备高兼容性和高可用性，并致力于遵守open-source ways。
 
-**社区仓库**：github.com/IvorySQL/IvorySQL
+**社区仓库**：[github.com/IvorySQL/IvorySQL](https://github.com/IvorySQL/IvorySQL)
 
 **CSDN**: IvorySQL
 
@@ -454,10 +454,11 @@ IvorySQL项目是一个具有广泛生态基础和中国特色的PG开源衍生�
 
 **墨天轮**：IvorySQL
 
+---
 
-通过订阅邮件列表加入IvorySQL社区： 
-- **[Hackers List](https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/)**  
-- **[Users List](https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/)**  
-- **官方微信公众号：IvorySQL开源数据库社区**
-
-***还有，别忘了在[Github](https://github.com/IvorySQL/IvorySQL)给我们一个 :star: ***
+>通过订阅邮件列表加入IvorySQL社区： 
+>- **[Hackers List](https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/)**  
+>- **[Users List](https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/)**  
+>- **官方微信公众号：IvorySQL开源数据库社区**
+>
+>***还有，别忘了在[Github](https://github.com/IvorySQL/IvorySQL)给我们一个 :star: ***
