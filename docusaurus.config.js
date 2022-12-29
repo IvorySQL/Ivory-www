@@ -290,9 +290,9 @@ const config = {
                  html: `
                   <div class="other-footer">
                     <div class="other-footer-title">Subscribe to Our Newsletter</div>
-                    <a href="https://lists.ivorysql.org/postorius/lists" id="other-footer-link">
-                        <span class="other-footer-linkspan">Subscribe</span>
-                    </a>
+                      <a href="https://lists.ivorysql.org/postorius/lists" id="other-footer-link">
+                          <span class="other-footer-linkspan">Subscribe</span>
+                      </a>
                     <div class="other-footer-font">
                       <span class="other-footer-font-left">提交即表示您同意</span>
                       <span class="other-footer-font-right">IvorySQL的隐私政策</span>

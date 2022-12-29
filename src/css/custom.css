@@ -67,7 +67,7 @@ main{
 }
 .navbar__link{
   width: auto;
-  font-size: 1.9vh;
+  font-size: 0.6em;
   font-family: Microsoft YaHei;
   font-weight: 520;
   color: #333333;
@@ -79,14 +79,14 @@ main{
   height: 20%;
 }
 #TtyForFree{
-  width: 8vw;
-  height: 5vh;
+  width: 12em;
+  height: 3em;
   background: #FFD673;
   border-radius: 3px;
-  font-size: 0.85vw;
+  font-size: 0.7em;
   font-family: Gilroy;
-  font-weight:bolder;
-  padding: 0.3vh 0 0 2.1vh;
+  font-weight: bolder;
+  padding: 0.3em 0 0 2em;
   position: relative;
   right: 8%;
 }
@@ -137,7 +137,7 @@ main{
 }
 .footer__link-item{ 
   color: #FFFFFF;
-  font-size: 1.5vh;
+  font-size: 0.7em;
 }
 .navbar__item .navbar__link .Try-for-Free :hover{
   color: black;
@@ -164,8 +164,8 @@ main{
 }
 #other-footer-link{
   display: block;
-  width: 90px;
-  height: 30px;
+  width: 5.5em;
+  height: 2em;
   background: #FFD673;
   border-radius: 3px;
   position: relative;
@@ -176,15 +176,15 @@ main{
   background: #F9BB30;
 }
 .other-footer-linkspan{
-  width: 500px;
-  height: 15px;
-  font-size: 2.3vh;
+  width: 2em;
+  height: 2em;
+  font-size: 0.8em;
   font-family: Gilroy;
   font-weight: 800;
   color: #333333;
   line-height: 14px;
   text-align: center;
-  margin: 0 0 0 13%;
+  margin: 0 0 0 1.1em;
 }
 .other-footer-font{
   position: relative;
@@ -226,42 +226,48 @@ main{
 }
 .other-footer-svg div{
   position: relative;
-  left: 22%;
-  top: 20%;
+  left: 0.35em;
+  top: 0.3em;
 }
 .other-footer-svg:hover{
   background-color: #F9BB30;
 }
 .backgruond-github{
-  width: 20px;
-  height: 20px;
+  width: 2em;
+  height: 1.6em;
   background-image: url(../../svg/icon-github.svg);
+  background-repeat: no-repeat;
 }
 .backgruond-twitter{
-  width: 20px;
-  height: 20px;
+  width: 2em;
+  height: 1.6em;
   background-image: url(../../svg/icon-twitter.svg);
+  background-repeat: no-repeat;
 }
 .backgruond-slack{
-  width: 20px;
-  height: 20px;
+  width: 2em;
+  height: 1.6em;
   background-image: url(../../svg/icon-slack.svg);
+  background-repeat: no-repeat;
 }
 
 .backgruond-lingying{
-  width: 20px;
-  height: 20px;
+  width: 2em;
+  height: 1.5em;
   background-image: url(../../svg/icon-linkin.svg);
+  background-repeat: no-repeat;
 }
 .backgruond-weixin{
-  width: 20px;
-  height: 20px;
+  width: 2em;
+  height: 1.6em;
   background-image: url(../../svg/icon-wechat.svg);
+  background-repeat: no-repeat;
 }
 .backgruond-bilibili{
-  width: 20px;
-  height: 20px;
+  width: 2em;
+  height: 1.6em;
   background-image: url(../../svg/icon-bilibili.svg);
+  background-repeat: no-repeat;
 }
 .footer__copyright{
   width: 160px;
@@ -273,6 +279,11 @@ main{
   line-height: 14px;
   position: relative;
   bottom: 100px;
+}
+@media screen and (max-width: 1250px) {
+  #TtyForFree{
+    padding: 0.3em 0 0 1em;
+  }
 }
 @media screen and (max-width: 997px) {
   .air {
