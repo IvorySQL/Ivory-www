@@ -332,7 +332,7 @@ const config = {
                   </div>
                   <div class="footer__copyright">Copyright © ${new Date().getFullYear()} IvorySQL.</div>
                   `
-                },  
+              },  
             ]
           },
         ],
