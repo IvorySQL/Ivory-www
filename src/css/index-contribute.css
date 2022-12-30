@@ -21,7 +21,7 @@
     right: 80px;
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-items: center ;
 }
 .contribute-title{
     width: 250px;
@@ -36,7 +36,7 @@
     left: 175px;
 }
 .contribute-font{
-    width: 386px;
+    width: 456px;
     height: 32px;
     font-size: 2vh;
     font-family: Microsoft YaHei;
@@ -45,7 +45,7 @@
     line-height: 19px;
     text-align: center;
     position: relative;
-    left: 105px;
+    left: 65px;
 }
 #contribute-link{
     width: 117px;
@@ -53,7 +53,7 @@
     background: #FFD673;
     border-radius: 3px;
     position: relative;
-    top: -90px;
+    top: -30px;
     left: 230px;
 }
 #contribute-link:hover{
