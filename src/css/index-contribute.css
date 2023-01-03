@@ -18,7 +18,7 @@
 }
 .contribute-middle-content{
     position: relative;
-    right: 80px;
+    right: 3em;
     display: grid;
     justify-content: center;
     align-items: center ;
@@ -42,7 +42,7 @@
     font-family: Microsoft YaHei;
     font-weight: 550;
     color: #333333;
-    line-height: 19px;
+    line-height: 30px;
     text-align: center;
     position: relative;
     left: 65px;
@@ -87,9 +87,9 @@
     justify-content: center;
    }
    .contribute-title{
-    width: 30vw;
+    width: 50%;
     position: relative;
-    left: 10vw;
+    left: 10em;
     font-size: 20px;
     font-family: Gilroy;
     font-weight: 800;
@@ -106,7 +106,7 @@
    #contribute-link{
     text-align: center;
     position: relative;
-    left: 14.5vw;
+    left: 17em;
     top: -40%;
    }
 }
@@ -114,37 +114,37 @@
     #contribute-middle-content{
         width: 60%;
         position: relative;
-        left: 15vw;
+        left: 15%;
         display: grid;
         justify-content: center;
     }
     #contribute-link{
         text-align: center;
         position: relative;
-        left: 15vw;
+        left: 14em;
         top: -40%;
     }
     .contribute-title{
         width: 100%;
         position: relative;
-        left: 8vw;
+        left: 8em;
         font-size: 20px;
         font-family: Gilroy;
         font-weight: 800;
        }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
     #contribute-middle-content{
         width: 60%;
         position: relative;
-        left: 17vw;
+        left: 17%;
         display: grid;
         justify-content: center;
     }
     .contribute-title{
         width: 100%;
         position: relative;
-        left: 11vw;
+        left: 6em;
         font-size: 20px;
         font-family: Gilroy;
         font-weight: 800;
@@ -152,7 +152,71 @@
     #contribute-link{
         text-align: center;
         position: relative;
-        left: 20vw;
-        top: -40%;
+        left: 11em;
+        top: -30%;
+    }
+}
+@media screen and (max-width: 590px) {
+    .contribute-title{
+        width: 100%;
+        position: relative;
+        left: 5em;
+        font-size: 20px;
+        font-family: Gilroy;
+        font-weight: 800;
+       }
+    #contribute-link{
+        text-align: center;
+        position: relative;
+        left: 10em;
+        top: -30%;
+    }
+}
+@media screen and (max-width: 520px) {
+    .contribute-title{
+        width: 100%;
+        position: relative;
+        left: 3.8em;
+        font-size: 20px;
+        font-family: Gilroy;
+        font-weight: 800;
+       }
+    #contribute-link{
+        text-align: center;
+        position: relative;
+        left: 8.5em;
+        top: -30%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contribute-title{
+        width: 100%;
+        position: relative;
+        left: 2.5em;
+        font-size: 20px;
+        font-family: Gilroy;
+        font-weight: 800;
+       }
+    #contribute-link{
+        text-align: center;
+        position: relative;
+        left: 7em;
+        top: -30%;
+    }
+}
+@media screen and (max-width: 435px) {
+    .contribute-title{
+        width: 100%;
+        position: relative;
+        left: 2em;
+        font-size: 20px;
+        font-family: Gilroy;
+        font-weight: 800;
+       }
+    #contribute-link{
+        text-align: center;
+        position: relative;
+        left: 6em;
+        top: -10%;
     }
 }

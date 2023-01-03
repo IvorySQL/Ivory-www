@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #FFD673;
+  --ifm-color-primary: #ffb300;
 
   --ifm-color-primary-dark: #31343a;
   --ifm-color-primary-darker: #333538;
@@ -16,7 +16,7 @@
   --ifm-color-primary-lightest: #464b55;
   --ifm-code-font-size: 110%;
   --ifm-background-surface-color: #f4f4f5;
-  --ifm-link-color: #FFD673;
+  --ifm-link-color: #f7b009;
 
   /*
   --ifm-font-color-base: hsl(263, 48%, 87%);
@@ -79,16 +79,14 @@ main{
   height: 20%;
 }
 #TtyForFree{
-  width: 12em;
+  width: 11.5em;
   height: 3em;
   background: #FFD673;
   border-radius: 3px;
   font-size: 0.7em;
-  font-family: Gilroy;
+  /* font-family: Gilroy; */
   font-weight: bolder;
-  padding: 0.3em 0 0 2em;
-  position: relative;
-  right: 8%;
+  padding: 0.3em 0 0 2.6em;
 }
 #TtyForFree:hover{
   color: black;
@@ -280,9 +278,43 @@ main{
   position: relative;
   bottom: 100px;
 }
+.navbar__item.dropdown.dropdown--hoverable.dropdown--right{
+  width: 10em;
+}
+
+@media screen and (min-width: 1800px) {
+  .navbar__link{
+    width: auto;
+    font-size: 1.2em;
+    font-family: Microsoft YaHei;
+    font-weight: 520;
+    color: #333333;
+    line-height: 26px;
+  }
+}
 @media screen and (max-width: 1250px) {
   #TtyForFree{
+    padding: 0.3em 0 0 2em;
+  }
+}
+@media screen and (max-width: 1170px) {
+  #TtyForFree{
+    padding: 0.3em 0 0 1.7em;
+  }
+}
+@media screen and (max-width: 1120px) {
+  #TtyForFree{
     padding: 0.3em 0 0 1em;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #TtyForFree{
+    padding: 0.3em 0 0 0.8em;
+  }
+}
+@media screen and (max-width: 1020px) {
+  #TtyForFree{
+    padding: 0.3em 0 0 0.7em;
   }
 }
 @media screen and (max-width: 997px) {

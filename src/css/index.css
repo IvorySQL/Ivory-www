@@ -2,7 +2,7 @@
 .homepage-header{
   width: 98.776vw;
   min-width: 350px;
-  height: 70vh;
+  height: 28em;
   background-image: url(../../svg/banner/banner-christmas-web.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 }
 .header-font{
   width: 55%;
-  height: 1vh;
+  height: 1em;
   position: relative;
   top: 122px;
   left: 250px;
@@ -89,18 +89,83 @@
   top: 10%;
   right: 18%;
 }
+@media screen and (min-width: 2150px) {
+  #id-homepage-header{
+    background-image: url(../../svg/banner/phone.png);
+    background-size: 100% 100%;
+    height: 67em;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .homepage-header{
+    background-image: url(../../svg/banner/phone.png);
+    background-size: 100% 100%;
+    height: 50em;
+  }
+  .header-title{
+    width: 75%;
+    font-size: 45px;
+    font-family: Gilroy;
+    font-weight: 800;
+    color: #ffffff;;
+    line-height: 55px;
+  }
+  .header-content{
+    width: 75%;
+    height: 104px;
+    font-size: 26px;
+    font-family: Alibaba PuHuiTi;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 14px;
+    width: 500px;
+    position: relative;
+    top: 39px;
+  }
+  #header-link-getstart{
+    width: 167px;
+    height: 50px;
+    background: #FFD673;
+    border-radius: 3px;
+    border: 1px;
+  }
+  .button-font-getstart{
+    width: 72px;
+    height: 9px;
+    font-size: 23px;
+    font-weight: 900;
+    position: relative;
+    top: 9.5px;
+    left: -13px;
+  }
+  #header-link-viewmore{
+    width: 167px;
+    height: 50px;
+    position: relative;
+    left:45px;
+  }
+  .button-font-viewmore{
+    width: 72px;
+    height: 9px;
+    font-size: 23px;
+    font-weight: 900;
+    position: relative;
+    top: 9px;
+    left: -11px;
+  }
+}
 @media screen and (max-width: 1100px) {
   #id-homepage-header{
     background-image: url(../../svg/banner/banner-christmas-web.png);
     background-size: 100% 100%;
-    height: 65vh;
+    height: 25em;
   }
 }
 @media screen and (max-width: 997px) {
   #id-homepage-header {
     background-image: url(../../svg/banner/banner-christmas-mobile.png);
     background-size: 100% 100%;
-    height: 65vh;
+    height: 30em;
   }
   .header-font{
     left: 20%;
@@ -139,7 +204,7 @@
   #id-homepage-header{
     background-image: url(../../svg/banner/banner-christmas-mobile.png);
     background-size: 100% 100%;
-    height: 47vh;
+    height: 20em;
   }
   .header-font{
     position: relative;
@@ -148,7 +213,7 @@
 }
 @media screen and (max-width: 753px) {
   #id-homepage-header{
-    height: 45vh;
+    height: 20em;
   }
   .header-title{
     font-size: 10px;
@@ -167,8 +232,8 @@
 @media screen and (max-width: 660px) {
   #id-homepage-header{
     background-image: url(../../svg/banner/phone.png);
-    background-size: 120% 100%;
-    height: 49vh;
+    background-size: 100% 100%;
+    height: 22em;
   }
   .header-font{
     position: relative;
@@ -178,10 +243,17 @@
 @media screen and (max-width: 480px) {
   #id-homepage-header{
     background-image: url(../../svg/banner/phone.png);
-    background-size: 124% 100%;
-    height: 40vh;
+    background-size: 100% 100%;
+    height: 18em;
   }
+}
+@media screen and (max-width: 430px) {
+  #id-homepage-header{
+    background-image: url(../../svg/banner/phone.png);
+    background-size: 100% 100%;
+    height: 18em;
   }
+}
 /* @media screen and (max-width: 660px) {
   #id-homepage-header{
     background-image: url(../../svg/banner/phone.png);

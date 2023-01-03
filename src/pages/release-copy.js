@@ -64,7 +64,7 @@ function Release() {
                                 <img src={require('../../svg/logo-hg.jpg').default} class="release-left-img" alt="" />
                             </div>
                             <div class="content-highgo-line"></div>
-                            <div class="YUM">Link</div>
+                            <a href='https://yum.highgo.ca/ivorysql.html'><div class="YUM">Link</div></a>
                         </div>
                         <div class="content-font">
                             <span>To provide IvorySQL packages contact</span><span>support@ivorysql.org</span>

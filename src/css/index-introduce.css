@@ -20,7 +20,7 @@
 }
 .svg-hg{
     width: 100%;
-    height: 3vh;
+    height: 1.5em;
     position: relative;
     left: 15px;
     top: 60%;
@@ -106,7 +106,7 @@
     line-height: 14px;
 }
 .introduce-content{
-    font-size: 1.5vh;
+    font-size: 0.5em;
     font-family: Microsoft YaHei;
     font-weight: 100;
     color: #333333;

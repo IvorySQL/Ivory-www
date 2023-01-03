@@ -116,7 +116,7 @@
 .alltimeline .timeline-edition{
     width: 100px;
     height: 11px;
-    font-size: 10px;
+    font-size: 1em;
     font-family: Microsoft YaHei;
     font-weight: bold;
     color: #333333;
@@ -126,6 +126,7 @@
 }
 .alltimeline .timeline-edition:hover{
     color: #F9BB30;
+    text-decoration: none;
 }
 .timeline-15{
     width: 160%;
@@ -233,14 +234,14 @@
 .YUM{
     width: 86px;
     height: 9px;
-    font-size: 9px;
+    font-size: 1em;
     font-family: Microsoft YaHei;
     font-weight: bold;
     color: #333333;
     line-height: 14px;
     position: relative;
     top: 35px;
-    left: 65px;
+    left: 85px;
 }
 .content-font{
     position: relative;

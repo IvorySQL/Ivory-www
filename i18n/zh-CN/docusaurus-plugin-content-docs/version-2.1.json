@@ -1,7 +1,7 @@
 {
   "version.label": {
-    "message": "文档",
-    "description": "The label for version current"
+    "message": "2.1",
+    "description": "The label for version 2.1"
   },
   "sidebar.tutorialSidebar.category.Compatibility Features": {
     "message": "Compatibility Features",

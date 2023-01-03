@@ -15,7 +15,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'IvorySQL', // Usually your GitHub org/user name.
-  projectName: 'ivory-www', // Usually your repo name.
+  // projectName: 'ivory-www', // Usually your repo name.
 
   presets: [
     [
@@ -42,18 +42,6 @@ const config = {
         },
       }),
     ],
-    // [
-    //   'content-docs',
-    //   /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    //   ({
-    //     id: 'community',
-    //     path: 'community',
-    //     routeBasePath: 'community',
-    //     editCurrentVersion: true,
-    //     showLastUpdateAuthor: true,
-    //     showLastUpdateTime: true,
-    //   }),
-    // ],
   ],
   i18n: {
     defaultLocale: 'en',
@@ -181,6 +169,7 @@ const config = {
             type: 'localeDropdown',
             position: 'right',
             dropdownActiveClassDisabled: true,
+            id: 'localeDropdown',
           },
           // {
           //   label: '版本',
