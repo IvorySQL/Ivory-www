@@ -24,7 +24,7 @@ const config = {
       ({
         docs: {
           versions: {
-            current: {label: '文档',},
+            current: {label: 'Docs',},
           },
           sidebarPath: require.resolve('./sidebars.js'),
 //          editUrl: 'https://github.com/IvorySQL/Ivory-www/tree/main/docs',

@@ -306,6 +306,14 @@ main{
   #TtyForFree{
     padding: 0.3em 0 0 1em;
   }
+  .navbar__item .navbar__link{
+    width: 3rem;
+    font-size: 0.2em;
+    font-family: Microsoft YaHei;
+    font-weight: 520;
+    color: #333333;
+    line-height: 16px;
+  }
 }
 @media screen and (max-width: 1050px) {
   #TtyForFree{
@@ -337,6 +345,23 @@ main{
     top: -20px;
     left: 4%;
   }
+  .github{
+    background-image: url(../../svg/icon-github.svg);
+    width: 24px;
+    height: 24px;
+    position: relative;
+    right: 40px;
+  }
+  .earth{
+    background-image: url(../../svg/icon-earth.svg);
+    width: 24px;
+    height: 24px;
+    position: relative;
+    right: 42px;
+  }
+  /* .navbar-sidebar__brand div{
+    display: none;
+  } */
 }
 @media screen and (max-width: 700px) {
   #TtyForFree{

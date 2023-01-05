@@ -1,4 +1,8 @@
 {
+  "item.label.文档": {
+    "message": "Docs",
+    "description": "Navbar item with label 文档"
+  },
   "item.label.博客": {
     "message": "Blog",
     "description": "Navbar item with label 博客"
@@ -38,10 +42,6 @@
   "item.label.成功案例": {
     "message": "Cases Studies",
     "description": "Navbar item with label 成功案例"
-  },
-  "item.label.文档": {
-    "message": "Docs",
-    "description": "Navbar item with label 文档"
   },
   "item.label.行为准则": {
     "message": "Code Of Conduct",
