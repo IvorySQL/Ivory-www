@@ -291,6 +291,9 @@ main{
   position: relative;
   top: -10%;
 }
+.dropdown--right{
+  width: 13em;
+}
 @media screen and (min-width: 1800px) {
   .navbar__link{
     width: auto;
@@ -354,7 +357,7 @@ main{
     font-size: 2vh;
     font-family: Gilroy;
     font-weight: bolder;
-    padding: 2% 0% 2% 6vw;
+    padding: 2% 0% 2% 2.8em;
     position: relative;
     top: -20px;
     left: 4%;
@@ -376,91 +379,31 @@ main{
 }
 @media screen and (max-width: 700px) {
   #TtyForFree{
-    width: 20vw;
-    height: 50%;
-    background: #FFD673;
-    border-radius: 3px;
-    font-size: 2vh;
-    font-family: Gilroy;
-    font-weight: bolder;
-    padding: 2% 0% 2% 5.2vw;
-    position: relative;
-    top: -20px;
-    left: 4%;
+    padding: 2% 0% 2% 2em;
   }
 }
 @media screen and (max-width: 650px) {
   #TtyForFree{
-    width: 20vw;
-    height: 50%;
-    background: #FFD673;
-    border-radius: 3px;
-    font-size: 2vh;
-    font-family: Gilroy;
-    font-weight: bolder;
-    padding: 2% 0% 2% 4.8vw;
-    position: relative;
-    top: -20px;
-    left: 4%;
+    padding: 2% 0% 2% 1.7em;
   }
 }
 @media screen and (max-width: 600px) {
   #TtyForFree{
-    width: 20vw;
-    height: 50%;
-    background: #FFD673;
-    border-radius: 3px;
-    font-size: 2vh;
-    font-family: Gilroy;
-    font-weight: bolder;
-    padding: 2% 0% 2% 4.5vw;
-    position: relative;
-    top: -20px;
-    left: 4%;
+    padding: 2% 0% 2% 1.5em;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 580px) {
   #TtyForFree{
-    width: 20vw;
-    height: 100%;
-    background: #FFD673;
-    border-radius: 3px;
-    font-size: 2vh;
-    font-family: Gilroy;
-    font-weight: bolder;
-    padding: 2% 0% 2% 3.5vw;
-    position: relative;
-    top: -20px;
-    left: 4%;
+    padding: 2% 0% 2% 1.2em;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
   #TtyForFree{
-    width: 20vw;
-    height: 100%;
-    background: #FFD673;
-    border-radius: 3px;
-    font-size: 2vh;
-    font-family: Gilroy;
-    font-weight: bolder;
     padding: 2% 0% 2% 2.5vw;
-    position: relative;
-    top: -20px;
-    left: 4%;
   }
 }
 @media screen and (max-width: 465px) {
   #TtyForFree{
-    width: 20vw;
-    height: 100%;
-    background: #FFD673;
-    border-radius: 3px;
-    font-size: 2vh;
-    font-family: Gilroy;
-    font-weight: bolder;
     padding: 2% 0% 2% 3.8vw;
-    position: relative;
-    top: -20px;
-    left: 4%;
   }
 }
