@@ -354,10 +354,10 @@ main{
     height: 50%;
     background: #FFD673;
     border-radius: 3px;
-    font-size: 2vh;
+    font-size: 1.5vh;
     font-family: Gilroy;
     font-weight: bolder;
-    padding: 2% 0% 2% 2.8em;
+    padding: 2% 0% 2% 3em;
     position: relative;
     top: -20px;
     left: 4%;
@@ -377,33 +377,38 @@ main{
     right: 42px;
   }
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 950px) {
   #TtyForFree{
-    padding: 2% 0% 2% 2em;
+    padding: 2% 0% 2% 6%;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 780px) {
   #TtyForFree{
-    padding: 2% 0% 2% 1.7em;
+    padding: 2% 0% 2% 5%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   #TtyForFree{
-    padding: 2% 0% 2% 1.5em;
+    padding: 2% 0% 2% 4%;
+  }
+}
+@media screen and (max-width: 640px) {
+  #TtyForFree{
+    padding: 2% 0% 2% 3.5%;
   }
 }
 @media screen and (max-width: 580px) {
   #TtyForFree{
-    padding: 2% 0% 2% 1.2em;
+    padding: 2% 0% 2% 3%;
   }
 }
 @media screen and (max-width: 535px) {
   #TtyForFree{
-    padding: 2% 0% 2% 2.5vw;
+    padding: 2% 0% 2% 2.8%;
   }
 }
 @media screen and (max-width: 465px) {
   #TtyForFree{
-    padding: 2% 0% 2% 3.8vw;
+    padding: 2% 0% 2% 2.5%;
   }
 }
