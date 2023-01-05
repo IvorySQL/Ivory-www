@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "文档",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Compatibility Features": {
+    "message": "Compatibility Features",
+    "description": "The label for category Compatibility Features in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Global Unique Index": {
+    "message": "Global Unique Index",
+    "description": "The label for category Global Unique Index in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.全局唯一索引": {
+    "message": "全局唯一索引",
+    "description": "The label for category 全局唯一索引 in sidebar tutorialSidebar"
+  }
+}

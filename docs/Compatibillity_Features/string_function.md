@@ -1,25 +1,24 @@
 ---
-sidebar_label: 'String Functions'
+sidebar_label: '字符串函数'
 sidebar_position: 19
-title: Compatible String Functions
+title: 兼容字符串函数
 ---
 
-# String function
+# 字符串函数
 
-## Overview
-Oracle compatible string functions that help you manipulate character strings more effectively.
-To use these functions you have to set the ```compatible_mode TO oracle```
+## 概述
+支持oracle字符串函数，所有函数被创建再oracle模式下，调用这些函数时，应该把oracle模式加入SEARCH_PATH或显示的使用oracle模式。
 
 ## ASCII
 
-### Purpose
-ASCII(str) returns the decimal form of the encoding of the first character of the string in the database character set.
+### 目的
+ASCII(str)返回字符串首个字符在数据库字符集中的编码的十进制形式。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including the following data types(varchar2, int, numeric, float, date, timestamp, interval), can be implicitly converted to the above types.  
+	输入参数包括以下数据类型(varchar2，int，numeric，float，date，timestamp，interval)，可以隐式转换为上述类型。  
 
-### Examples
+### 示例
 ```SQL
 SELECT ascii(201912::int4) "ascii";
  ascii 
@@ -30,14 +29,14 @@ SELECT ascii(201912::int4) "ascii";
 
 ## VSIZE
 
-### Purpose
-VSIZE(str) returns the number of bytes in the internal of the input parameter string.
+### 目的
+VSIZE(str)返回入参字符串的内部表示的字节数。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including any data types.  
+	输入参数包括任意数据类型。  
 
-### Examples
+### 示例
 ```SQL
 SELECT vsize('I 8O lIKE AlPH: a b c') "vsize";
  vsize 
@@ -48,20 +47,20 @@ SELECT vsize('I 8O lIKE AlPH: a b c') "vsize";
 
 ## INSTRB
 
-### Purpose
-INSTRB(str, [substr], [start], [nth]) returns the byte position of the substring in the source string.
+### 目的
+INSTRB(str, [substr], [start], [nth])返回源字符串str中子串substr的字节位置。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including the following data types(int, numeric, float, char, text, date, timestamp, interval), can be implicitly converted to the above types.  
+	输入参数包括以下数据类型(int，numeric，float，char，text，date，timestamp，interval)，可以隐式转换为上述类型。  
 ```substr```
-	Input parameter, matched substring.  
+	输入参数，匹配字符串。  
 ```start```
-	Start position.  
+	开始位置。  
 ```nth```
-	Nth position.  
+	出现第nth次。  
 
-### Examples
+### 示例
 ```SQL
 SELECT instrb(20121209,12) "instrb";
  instrb 
@@ -78,18 +77,18 @@ SELECT instrb(20121209,12, 1) "instrb";
 
 ## SUBSTR
 
-### Purpose
-SUBSTR(str, start, [len]) returns the substring from start position in the source string.
+### 目的
+SUBSTR(str, start, [len])返回str从start位置开始的子串。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including the following data types(text, numeric, float, date, timestamp, interval), can be implicitly converted to the above types.  
+	输入参数包括以下数据类型(text, numeric, float, date, timestamp, interval)，可以隐式转换为上述类型。  
 ```start```
-	Start position of substring.  
+	子串开始位置。  
 ```len```
-	Length of substring.  
+	子串长度。  
 
-### Examples
+### 示例
 ```SQL
 SELECT substr(21212, 2) "substr";
  substr 
@@ -106,18 +105,18 @@ SELECT substr('201912', '2', '2') "substr";
 
 ## SUBSTRB
 
-### Purpose
-SUBSTRB(str, start, [len]) returns the substring from start position in the source string, if the number of bytes obtained is less than the number of character bytes, we will not to fill space.
+### 目的
+SUBSTRB(str, start, [len])返回str从start位置开始的子串，如果获取的字节数小于字符字节数，我们将不填充空格。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including the following data types(text, char, numeric, float, date, timestamp, interval), can be implicitly converted to the above types.  
+	输入参数包括以下数据类型(text, char, numeric, float, date, timestamp, interval)，可以隐式转换为上述类型。  
 ```start```
-	Start position of substring.  
+	子串开始位置。  
 ```len```
-	Length of substring.  
+	子串长度。  
 
-### Examples
+### 示例
 ```SQL
 SELECT substrb('201912', '2', '4') "substrb";
  substrb 
@@ -128,16 +127,16 @@ SELECT substrb('201912', '2', '4') "substrb";
 
 ## STRPOSB
 
-### Purpose
-STRPOSB(str, substr) returns the position of the first occurrence of substring in the source string.
+### 目的
+STRPOSB(str, substr)返回子串substr在str中第一次出现的位置。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including the following data types(text, char, numeric, float, date, timestamp, interval), can be implicitly converted to the above types.  
+	输入参数包括以下数据类型(text, char, numeric, float, date, timestamp, interval)，可以隐式转换为上述类型。  
 ```substr```
-	Input parameter, matched substring.  
+	输入参数，匹配字符串。  
 
-### Examples
+### 示例
 ```SQL
 SELECT strposb(123456, 345) "pos in str";
  pos in str 
@@ -148,18 +147,18 @@ SELECT strposb(123456, 345) "pos in str";
 
 ## LPAD
 
-### Purpose
-LPAD(str, len, [lpad_str]) fill the string with lpad_str from the left to make the final length is len.
+### 目的
+LPAD(str, len, [lpad_str])从左边对str用lpad_str进行填充，使最终的长度为len。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including the following data types(char, text, numeric, float, date, timestamp, interval), can be implicitly converted to the above types.  
+	输入参数包括以下数据类型(char, text, numeric, float, date, timestamp, interval)，可以隐式转换为上述类型。  
 ```len```
-	String length.  
+	字符串长度。  
 ```lpad_str```
-	Fill string.  
+	填充字符串  
 
-### Examples
+### 示列
 ```SQL
 SELECT lpad('123', '20');
          lpad         
@@ -176,16 +175,16 @@ SELECT lpad(123, 20, 0);
 
 ## RPAD
 
-### Purpose
-RPAD(str, len, [rpad_str]) fill the string with rpad_str from the right to make the final length is len.
+### 目的
+RPAD(str, len, [rpad_str])从右边对str用rpad_str进行填充，使最终的长度为len。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including the following data types(text, numeric, float, date, timestamp, interval), can be implicitly converted to the above types.  
+	输入参数包括以下数据类型(text, numeric, float, date, timestamp, interval)，可以隐式转换为上述类型。  
 ```len```
-	String length.  
+	字符串长度。  
 ```rpad_str```
-	Fill string.  
+	填充字符串  
 
 ### Examples
 ```SQL
@@ -204,16 +203,16 @@ SELECT rpad(123, 20, 0);
 
 ## RTRIM
 
-### Purpose
-RTRIM(str, [set]) support the input parameter str starting from the first character from the right, delete the characters in the input parameter set, until the end of the first unmatched character, and return the remaining characters. if set is omitted, it defaults to a single space. 
+### 目的
+RTRIM(str, [set])支持输入参数str从右边第一个字符开始，删除输入参数集中的字符，直到第一个不匹配的字符结束，返回剩余的字符。如果省略 set，则默认为单个空格。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including any data types.  
+	输入参数包括任意数据类型。  
 ```set```
-	Input parameter,match string.  
+	输入参数,匹配字符串。  
 
-### Examples
+### 示列
 ```SQL
 SELECT rtrim(1231232112, 21) "RTRIM Example";
  RTRIM Example 
@@ -230,16 +229,16 @@ SELECT rtrim('<=====>BROWNING<=====>', '<>=') "RTRIM Example";
 
 ## LTRIM
 
-### Purpose
-LTRIM(str, [set]) support the input parameter str starting from the first character from the left, delete the characters in the input parameter set, until the end of the first unmatched character, and return the remaining characters. if set is omitted, it defaults to a single space. 
+### 目的
+LTRIM(str, [set])支持输入参数str从左边第一个字符开始，删除输入参数集中的字符，直到第一个不匹配的字符结束，返回剩余的字符。如果省略 set，则默认为单个空格。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including any data types.  
+	输入参数包括任意数据类型。  
 ```set```
-	Input parameter,match string.  
+	输入参数,匹配字符串。  
 
-### Examples
+### 示例
 ```SQL
 SELECT ltrim(121232112, 21) "LTRIM Example";
  LTRIM Example 
@@ -268,16 +267,16 @@ SELECT ltrim(null,null);
 
 ## BTRIM
 
-### Purpose
-LTRIM(str, [set]) support deleting the characters in the input matching parameter set from both sides of the input parameter str (delete one by one), until the end of the first unmatched value, the function returns the remaining characters. if set is omitted, set defaults to a single space.
+### 目的
+LTRIM(str, [set])支持从输入参数str的两边删除输入匹配参数集中的字符（一一删除），直到第一个不匹配的值结束，函数返回剩余的字符。 如果省略 set，则将默认设置为单个空格。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including any data types.  
+	 输入参数包括任意数据类型。  
 ```set```
-	Input parameter,match string.  
+	输入参数，匹配字符串。  
 
-### Examples
+### 示例
 ```SQL
 SELECT btrim(121232112, 21) "BTRIM Example";
  BTRIM Example 
@@ -306,16 +305,16 @@ SELECT btrim(null,null);
 
 ## LENGTH
 
-### Purpose
-LENGTH(str, [src_encoding_name]) calculate the character length of the input parameter str, and the spaces at the beginning and end will be counted.
+### 目的
+LENGTH(str, [src_encoding_name])计算输入参数str的字符长度，也将计算开头和结尾的空格。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including the following data types(integer, float, numeric, date, text, character, timestamp, timestamptz, interval), can be implicitly converted to the above types.  
+	输入参数包括以下数据类型(integer, float, numeric, date, text, character, timestamp, timestamptz, interval)，或可隐式转换为上述类型。  
 ```src_encoding_name```
-	Input parameter,get the specified encoding.  
+	输入参数，获取指定的编码。  
 
-### Examples
+### 示例
 ```SQL
 SELECT length(192);
  length 
@@ -338,14 +337,14 @@ SELECT length(null);
 	
 ## LENGTHB
 
-### Purpose
-LENGTHB(str) calculate the byte length of the input parameter str, and the spaces at the beginning and end will also be counted.
+### 目的
+LENGTHB(str)计算输入参数str的字节长度，开头和结尾的空格也会计算在内。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including the following data types(integer, float, numeric, date, text, character, timestamp, timestamptz, interval), can be implicitly converted to the above type.  
+	输入参数包含以下类型(integer, float, numeric, date, text, character, timestamp, timestamptz, interval)，可以隐式转换为以上类型。  
 
-### Examples
+### 示例
 ```SQL
 SELECT lengthb(192);
  lengthb 
@@ -368,16 +367,15 @@ SELECT lengthb(null);
 
 ## BITAND
 
-### Purpose
-BITAND(str1, str2) the input parameters str1 and str2 are bitwise AND, if any parameter is NULL, the function returns NULL, if the input parameters cannot be converted to bigint type or out of the range, the function returns an error.
+### 目的
+BITAND(str1, str2)输入参数str1和str2是按位与，如果有任何参数为NULL，函数返回NULL，如果输入参数不能转换为bigint类型或超出范围，函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str1```
-	Input parameter(numeric, integer, etc) must be convertible to bigint type.  
+	输入参数(numeric, integer等，必须可转换为 bigint 类型)。  
 ```str2```
-	Input parameter(numeric, integer, etc) must be convertible to bigint type.  
-
-### Examples
+	输入参数(numeric, integer等，必须可转换为 bigint 类型)。  
+### 示例
 ```SQL
 SELECT bitand(6, 3);
  bitand 
@@ -406,16 +404,16 @@ SELECT bitand(NULL, '4.1');
 
 ## LISTAGG
 
-### Purpose
-LISTAGG(str1, [str2])supports aggregating multiple rows of records into one record. str2 can be omitted, if the input parameter type cannot be converted to text type, the function returns an error.
+### 目的
+LISTAGG(str1, [str2])支持将多行记录聚合为一条记录。str2可以省略，如果输入参数类型无法转换为文本类型，则函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str1```
-	Input parameter(text) can be convertible to text type.  
+	输入参数(text)，可以转换为文本类型。  
 ```str2```
-	Input parameter(text) can be convertible to text type, concatenating characters or strings.  
+	输入参数(text)，可以转换为文本类型，连接字符或字符串。  
 	
-### Examples
+### 示例
 ```SQL
 SELECT listagg(i::text) from generate_series(1, 3) g(i);
  listagg 

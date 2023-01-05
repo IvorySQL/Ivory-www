@@ -44,8 +44,8 @@ const config = {
     ],
   ],
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh-CN'],
+    defaultLocale: 'zh-CN',
+    locales: ['zh-CN', 'en'],
   },
   themeConfig:
   
@@ -80,7 +80,7 @@ const config = {
           },
           {
             label: '发布',
-            to: '/release-copy',
+            to: '/release',
             position: 'left'
           }, 
           {

@@ -1,24 +1,24 @@
 ---
 sidebar_position: 14
 sidebar_label: 'NVARCHAR2(size)'
-title: NVARCHAR2(size)
+title: NVARCHAR2(size)类型
 Tags:
- - NVARCHAR2(size)
+ - NVARCHAR2(size)类型
 ---
 
 # NVARCHAR2(size)
 
-## Overview
+## 概述
 
-Variable-length Unicode character string having maximum length size characters. You must specify size for NVARCHAR2. The number of bytes can be up to two times size for AL16UTF16 encoding and three times size for UTF8 encoding.
+具有最大长度大小字符的可变长度 Unicode 字符串。 您必须为 NVARCHAR2 指定大小。 AL16UTF16 编码的字节数最多为 2 倍，UTF8 编码的字节数最多为 3 倍。
 
-## Syntax
+## 语法
 
 ```
 NVARCHAR2(size)
 ```
 
-## Example
+## 用例
 
 ```
 create table test(a nvarchar2(5));

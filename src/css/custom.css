@@ -54,7 +54,7 @@ main{
 .navbar{
   background-color: white;
   width: 98.776vw;
-  min-width: 1vw;
+  min-width: 350px;
 }
 .navbar .navbar__items {
   border: white;
@@ -113,14 +113,14 @@ main{
   width: 24px;
   height: 24px;
   position: relative;
-  right:65px;
+  right:20px;
 }
 .earth{
   background-image: url(../../svg/icon-earth.svg);
   width: 24px;
   height: 24px;
   position: relative;
-  right:52px;
+  right:12px;
 }
 .footer{
   /* width: 100vm;

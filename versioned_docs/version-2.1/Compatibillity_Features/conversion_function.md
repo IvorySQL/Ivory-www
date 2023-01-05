@@ -1,23 +1,22 @@
 ---
-sidebar_label: 'Compatible Conversion and Comparision and NULL-Related functions'
+sidebar_label: 兼容转换和比较以及与 NULL 相关的函数
 sidebar_position: 12
-title: Compatible Conversion and Comparision and NULL-Related functions
 ---
 
-# Conversion function
+# 转换函数
 
 ## TO_CHAR
 
-### Purpose
-TO_CHAR(str,[fmt]) convert input parameter to a value of TEXT data type according to the given format. if you omit fmt, then data will be converted to a TEXT value in the system default format. if str is null,then the function returns null.
+### 目的
+TO_CHAR（str,[fmt]） 根据给定的格式将输入参数转换为 TEXT 数据类型的值。 如果省略 fmt，则数据将转换为系统默认格式的 TEXT 值。 如果 str 为 null，则该函数返回 null。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter (any type).  
+	输入参数 （任意类型）。  
 ```fmt```
-	Input format pararmeter,see format attachment for details(fmt).  
+	输入格式参数,详见格式fmt。  
 
-### Examples
+### 示例
 ```
 select to_char(interval '3 2:20:05' );
      to_char     
@@ -46,16 +45,16 @@ select to_char(123,'xx');
 
 ## TO_NUMBER
 
-### Purpose
-TO_NUMBER(str,[fmt1]) convert input parameter str to a value of NUMREIC data type according to the given format. if you omit fmt1, then data will be converted to a NUMERIC value in the system default format. if str is NUMERIC, then the function returns str.if str evaluates to null, then the function returns null. if it connot converted to NUMERIC data type, the function returns an error.
+### 目的
+TO_NUMBER(str,[fmt1]) 根据给定的格式将输入参数 str 转换为 NUMREIC 数据类型的值。 如果省略 fmt1，则数据将转换为系统默认格式的 NUMERIC 值。 如果 str 是 NUMERIC，则该函数返回 str。如果 str 计算结果为 null，则该函数返回 null。 如果它不能转换为 NUMERIC 数据类型，则该函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter including the following data types(double precision, numeric, text, integer, etc.but it must be implicitly converted to the a numberic type).  
+	输入参数包括以下数据类型（double precision，numeric，text，integer等，但必须隐式转换为numeric）。  
 ```fmt1```
-	Input format pararmeter,see format attachment for details(fmt1).  
+	输入格式参数，详见格式fmt1。  
 
-### Examples
+### 示例
 ```
 select to_number('19f','xxx');
  to_number 
@@ -84,14 +83,14 @@ select to_number('123'::text);
 
 ## HEX_TO_DECIMAL
 
-### Purpose
-HEX_TO_DECIMAL(str) convert hexadecimal to decimal, if the converted value exceeds the range of the return type bigint, the function returns an error.
+### 目的
+HEX_TO_DECIMAL(str) 十六进制转十进制，如果转换的值超出返回类型bigint的范围，函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameters(hexadecimal).  
+	输入参数（十六进制）。  
 
-## Examples
+## 示例
 ```
 select hex_to_decimal('ffff'); 
  hex_to_decimal 
@@ -108,14 +107,14 @@ select hex_to_decimal('0x7fffffffffffffff');
 
 ## TO_BINARY_DOUBLE
 
-### Purpose
-TO_BINARY_DOUBLE(str) convert input parameter str to a value of double-precision floating-point number. if str evaluates to null, then the function returns null. if it be connot converted to double-precision floating-point data type or exceeds the range of a double-precision floating-point number, the function returns an error.
+### 目的
+TO_BINARY_DOUBLE(str) 将输入参数 str 转换为双精度浮点数的值。 如果 str 的计算结果为 null，则该函数返回 null。 如果不能转换为双精度浮点数据类型或超出双精度浮点数的范围，则函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameters(any type, but need to be implicitly converted to a double-precision floating-point number type).  
+	输入参数（任意类型，但需要隐式转换为双精度浮点数类型）。  
 
-### Examples
+### 示例
 ```
 select to_binary_double('1.2');
  to_binary_double 
@@ -150,14 +149,14 @@ select to_binary_double(NULL);
 
 ## TO_BINRAY_FLOAT
 
-### Purpose
-TO_BINARY_FLOAT(str) converts the input parameter str into a single-precision floating point number. if the result of str calculation is null, the function returns null. if it cannot be converted to a single-precision floating-point data type or exceeds the range of a single-precision floating-point number, the function returns an error.
+### 目的
+TO_BINARY_FLOAT(str) 将输入参数 str 转换为单精度浮点数。 如果str计算结果为null，则函数返回null。 如果无法转换为单精度浮点数据类型或超出单精度浮点数的范围，则函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameters(any type, but need to be implicitly converted to single-precision floating-point number type).  
+	输入参数（任意类型，但需要隐式转换为单精度浮点数类型）。  
 
-### Examples
+### 示例
 ```
 select to_binary_float(2.5555::float8);
  to_binary_float 
@@ -186,14 +185,14 @@ select to_binary_float(NULL);
 
 ## BIN_TO_NUM
 
-### Purpose
-BIN_TO_NUM(str) Convert binary numbers to decimal. if str cannot be calculated as a binary number, the function returns an error.
+### 目的
+BIN_TO_NUM(str) 将二进制数转换为十进制数。 如果 str 不能计算为二进制数，则函数返回错误。
 
-### **Parameter**
+### **参数**
 ```str```
-	Input parameters(any type, but it must be convertible or calculated as a binary number type).  
+	输入参数（任意类型，但必须可转换或计算为二进制数类型）。  
 
-### Examples
+### 示例
 ```
 select bin_to_num('1.3'::text, '1.2'::name);
  bin_to_num 
@@ -222,14 +221,14 @@ select bin_to_num(NULL, NULL, NULL);
 
 ## TO_MULTI_BYTE
 
-### Purpose
-TO_MULTI_BYTE(str) convert single-byte characters in the input parameter str into corresponding multi-byte characters. if str cannot be converted text type, the function returns an error.
+### 目的
+TO_MULTI_BYTE(str) 将输入参数 str 中的单字节字符转换为相应的多字节字符。 如果 str 无法转换为文本类型，则函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter(text, or can be implicitly converted to text type).  
+	输入参数（text，或可隐式转换为文本类型）。  
 
-### Examples
+### 示例
 ```
 select to_multi_byte('abc'::text);
  to_multi_byte 
@@ -246,14 +245,14 @@ select to_multi_byte(NULL);
 
 ## TO_SINGLE_BYTE
 
-### Purpose
-TO_SINGLE_BYTE(str) convert multi-byte characters in the input parameter str into corresponding single-byte characters. if str cannot be converted text type, the function returns an error.
+### 目的
+TO_SINGLE_BYTE(str) 将输入参数 str 中的多字节字符转换为相应的单字节字符。 如果 str 无法转换为文本类型，则函数返回错误。
 
-### **Parameters**
+### **参数** 
 ```str```
-	Input parameter(text, or can be implicitly converted to text type).  
+	输入参数（text，或可隐式转换为文本类型）。  
 
-### Examples
+### 示例
 ```
 select to_single_byte('ａｂｃ');
  to_single_byte 
@@ -270,16 +269,16 @@ select to_single_byte('１．２');
 
 ## TO_DATE
 
-### Purpose
-TO_date(str,[fmt]) convert input parameter str to a value of date data type according to the given format. if you omit fmt, then data will be converted to a date value in the system default format. if str is null, then the function returns null. if fmt is J, for Julian, then char must be an integer. if cannot be converted to DATE, then the function returns an error.
+### 目的
+TO_DATE(str,[fmt]) 根据给定的格式将输入参数 str 转换为日期数据类型的值。 如果省略 fmt，则数据将转换为系统默认格式的日期值。 如果 str 为 null，则该函数返回 null。 如果 fmt 是 J，对于 Julian，则 char 必须是整数。 如果无法转换为 DATE，则该函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter(integer, text, and can be implicitly converted to the above types, a string conforming to the date).  
+	输入参数（integer，text，可以隐式转换为上述类型，符合日期格式的字符串）。  
 ```fmt```
-	Input format pararmeter,see format attachment for details(fmt).  
+	输入格式参数，详见格式fmt。  
 
-### Examples
+### 示例
 ```
 select to_date('50-11-28 ','RR-MM-dd ');
        to_date       
@@ -338,16 +337,16 @@ select to_date('-4712-07-23 14:31:23', 'syyyy-mm-dd hh24:mi:ss');
 
 ## TO_TIMESTAMP
 
-### Purpose
-TO_TIMESTAMP(str,[fmt]) convert input parameter str to a value of timstamp without time zone data type according to the given format. if you omit fmt, then data will be converted to a timstamp without time zone value in the system default format. if str is null, then the function returns null. if cannot be converted to timstamp without time zone , then the function returns an error.
+### 目的
+TO_TIMESTAMP(str,[fmt]) 根据给定的格式将输入参数 str 转换为不带时区的时间戳。 如果省略 fmt，则数据将转换为系统默认格式中不带时区值的时间戳。 如果 str 为 null，则该函数返回 null。 如果无法转换为不带时区的时间戳，则该函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter(double precision, text, can be implicitly converted to the above type).  
+	输入参数（double precision,text，可以隐式转换为上述类型）。  
 ```fmt```
-	Input format pararmeter,see format attachment for details(fmt).  
+	输入格式参数，详见格式fmt。  
 
-### Examples
+### 示例
 ```
 select to_timestamp(1212121212.55::numeric);
        to_timestamp        
@@ -370,14 +369,14 @@ select to_timestamp(NULL,NULL);
 
 ##  INTERVAL_TO_SECONDS
 
-### Purpose
-INTERVAL_TO_SECONDS(str) convert the input parameter str time interval into seconds.the input parameter include: day, hour, minute, second, and microsecond.  if it is year and month, the function returns an error.
+### 目的
+INTERVAL_TO_SECONDS(str) 将输入参数str时间间隔转换为秒。输入参数包括：日、时、分、秒和微秒。 如果是年和月，则函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter(interval, but it include: day, hour, minute, second, and microsecond).  
+	输入参数（interval，但包括：日、时、分、秒、微秒）。  
 
-### Examples
+### 示例
 ```
 select interval_to_seconds('3day 3 hours 3second ');
  interval_to_seconds 
@@ -393,16 +392,16 @@ select interval_to_seconds('3day 3 hour 3.3555555555second ');
 ```
 ## TO_YMINTERVAL
 
-### Purpose
-TO_YMINTERVAL(str) convert the input parameter str time interval to a time interval in the range of year to month. only the year and month are processed, and the other parts are omitted. if input parameter is NULL, the function return NULL, if the input parameter format is wrong, the function returns an error.
+### 目的
+TO_YMINTERVAL(str) 将输入参数 str 时间间隔转换为年到月范围内的时间间隔。 只处理年月，其他部分省略。 如果输入参数为NULL，函数返回NULL，如果输入参数格式错误，函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter(text, and can be implicitly converted to text type, must be in time interval format.
-	SQL interval format compatible with SQL standards,
-	ISO duration format compatible with ISO 8601:2004 standard).  
+	输入参数（text，可以隐式转换为文本类型，必须是时间间隔格式。
+	兼容 SQL 标准的 SQL 间隔格式，
+	ISO 持续时间格式与 ISO 8601:2004 标准兼容）。  
 
-### Examples
+### 示例
 ```
 select to_yminterval('P1Y-2M2D');
  to_yminterval 
@@ -437,16 +436,16 @@ select to_yminterval('-01-02');
 
 ## TO_DSINTERVAL
 
-### Purpose
-TO_DSINTERVAL(str) converts the time interval of the input parameter str into a time interval in the range of day to second. input parameters include: day, hour, minute, second and microsecond. if input parameter is NULL, the function return NULL, if the input parameter contains the year and month or the format is wrong, the function returns an error.
+### 目的
+TO_DSINTERVAL(str) 将输入参数 str 的时间间隔转换为天到秒范围内的时间间隔。 输入参数包括：日、时、分、秒和微秒。 如果输入参数为NULL，函数返回NULL，如果输入参数包含年月或格式错误，函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter(text,and can be implicitly converted to text type,must be in time interval format.
-	SQL interval format compatible with SQL standards,
-	ISO duration format compatible with ISO 8601:2004 standard).  
+	输入参数（text，可以隐式转换为文本类型，必须是时间间隔格式。
+	兼容 SQL 标准的 SQL 间隔格式，
+	ISO 持续时间格式与 ISO 8601:2004 标准兼容）。  
 
-### Examples
+### 示例
 ```
 select to_dsinterval('100 00 :02 :00');
    to_dsinterval   
@@ -487,16 +486,16 @@ select to_dsinterval('-P100DT20S');
 
 ## TO_TIMESTAMP_TZ
 
-### Purpose
-TO_TIMESTAMP_TZ(str,[fmt]) convert input parameter str to a value of timstamp with time zone data type according to the given format. if you omit fmt, then data will be converted to a timstamp with time zone value in the system default format. if str is null, then the function returns null. if cannot be converted to timstamp with time zone , then the function returns an error.
+### 目的
+TO_TIMESTAMP_TZ(str,[fmt]) 根据给定的格式将输入参数 str 转换为带时区的时间戳。 如果省略 fmt，则数据将转换为具有系统默认格式带时区值的时间戳。 如果 str 为 null，则该函数返回 null。 如果无法转换为带时区的时间戳，则该函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str```
-	Input parameter(text, can be implicitly converted to the text type).  
+	输入参数（text，可以隐式转换为文本类型）。  
 ```fmt```
-	Input format pararmeter,see format attachment for details(fmt).  
+	输入格式参数，详见格式fmt。  
 
-### Examples
+### 示例
 ```
 select to_timestamp_tz('2019','yyyy');
     to_timestamp_tz     
@@ -529,21 +528,21 @@ select to_timestamp_tz(NULL);
 (1 row)
 ```
 
-# General Comparison Functions
+# 比较函数
 
 ## GREATEST
 
-### Purpose
-GREATEST(expr1,expr2,...) get the maximum value in the input list of one or more expressions. if any expr evaluates to NULL, the function returns NULL.
+### 目的
+GREATEST(expr1,expr2,...) 获取一个或多个表达式的输入列表中的最大值。 如果任何 expr 的计算结果为 NULL，则该函数返回 NULL。
 
-### **Parameters**
+### **参数**
 ```expr1```
-	Input parameter(any type).  
+	输入参数（任意类型）。  
 ```expr2```
-	Input parameter(any type).  
+	输入参数（任意类型）。  
 ```...```
 
-### Examples
+### 示例
 ```
 select greatest('a','b','A','B');
  greatest 
@@ -586,21 +585,22 @@ SELECT greatest('A', 6, 7, 5000, 'E', 'F','G') A;
 ---
  G
 (1 row)
+
 ```
 
 ## LEAST
 
-### Purpose
-LEAST(expr1,expr2,...) get the minimum value in the input list of one or more expressions. if any expr evaluates to NULL, the function returns NULL.
+### 目的
+LEAST(expr1,expr2,...) 获取一个或多个表达式的输入列表中的最小值。 如果任何 expr 的计算结果为 NULL，则该函数返回 NULL。
 
-### **Parameters**
+### **参数**
 ```expr1```
-	Input parameter(any type).  
+	输入参数（任意类型）。  
 ```expr2```
-	Input parameter(any type).  
+	输入参数（任意类型）。  
 ```...```
 
-### Examples
+### 示例
 ```
 SELECT least(1,' 2', '3' );
  least 
@@ -651,20 +651,20 @@ SELECT least('HARRY', 'HARRIOT', NULL);
 (1 row)
 ```
 
-# NULL-Related Functions
+# 与 NULL 相关的函数
 
 ## NANVL
 
-### Purpose
-NANVl(str1, str2) When str2 is NaN, it returns an alternative value str1 (when str2 and str1 are both NaN, NaN is returned; when str2 or str1 is null, null is returned). if the input parameter is not converted to real or float type, the function returns an error.
+### 目的
+NANVl(str1, str2) 当str2为NaN时，返回一个替代值str1（当str2和str1都为NaN时，返回NaN；当str2或str1为null时，返回null）。 如果输入参数不能转换为real或float8类型，则函数返回错误。
 
-### **Parameters**
+### **参数**
 ```str1```
-	Input parameter(real, float8,can be implicitly converted to the above types).  
+	输入参数（real，float8，可以隐式转换为上述类型）。  
 ```str2```
-	Input parameter(float8, real,can be implicitly converted to the above types).  
+	输入参数（float8，real，可以隐式转换为上述类型）。  
 
-### Examples
+### 示例
 ```
 SELECT nanvl('NaN', 'NaN');
  nanvl 
@@ -691,84 +691,75 @@ SELECT nanvl('12345', 'asdf');
 (1 row)
 ```
 
-### **fmt(Template Patterns for Date/Time Formatting)**
-|Pattern|  Description																					 |
-|:------|:-----------------------------------------------------------------------------------------------|
-|HH		|hour of day (01–12)                                                                             |
-|HH12	|hour of day (01–12)                                                                             |
-|HH24	|hour of day (00–23)                                                                             |
-|MI		|minute (00–59)                                                                                  |
-|SS		|second (00–59)                                                                                  |
-|MS		|millisecond (000–999)                                                                           |
-|US		|microsecond (000000–999999)                                                                     |
-|FF1	|	tenth of second (0–9)                                                                        |
-|FF2	|	hundredth of second (00–99)                                                                  |
-|FF3	|	millisecond (000–999)                                                                        |
-|FF4	|	tenth of a millisecond (0000–9999)                                                           |
-|FF5	|	hundredth of a millisecond (00000–99999)                                                     |
-|FF6	|	microsecond (000000–999999)                                                                  |
-|SSSS, SSSSS				|seconds past midnight (0–86399)                                             |
-|AM, am, PM or pm			|meridiem indicator (without periods)                                        |
-|A.M., a.m., P.M. or p.m.	|meridiem indicator (with periods)                                           |
-|Y,YYY	|year (4 or more digits) with comma                                                              |
-|YYYY	|year (4 or more digits)                                                                         |
-|YYY	|last 3 digits of year                                                                           |
-|YY		|last 2 digits of year                                                                           |
-|Y		|last digit of year                                                                              |
-|IYYY	|ISO 8601 week-numbering year (4 or more digits)                                                 |
-|IYY	|last 3 digits of ISO 8601 week-numbering year                                                   |
-|IY		|last 2 digits of ISO 8601 week-numbering year                                                   |
-|I		|last digit of ISO 8601 week-numbering year                                                      |
-|BC, bc, AD or ad			|era indicator (without periods)                                             |
-|B.C., b.c., A.D. or a.d.	|era indicator (with periods)                                                |
-|MONTH	|full upper case month name (blank-padded to 9 chars)                                            |
-|Month	|full capitalized month name (blank-padded to 9 chars)                                           |
-|month	|full lower case month name (blank-padded to 9 chars)                                            |
-|MON	|abbreviated upper case month name (3 chars in English, localized lengths vary)                  |
-|Mon	|abbreviated capitalized month name (3 chars in English, localized lengths vary)                 |
-|mon	|abbreviated lower case month name (3 chars in English, localized lengths vary)                  |
-|MM		|month number (01–12)                                                                            |
-|DAY	|full upper case day name (blank-padded to 9 chars)                                              |
-|Day	|full capitalized day name (blank-padded to 9 chars)                                             |
-|day	|full lower case day name (blank-padded to 9 chars)                                              |
-|DY		|abbreviated upper case day name (3 chars in English, localized lengths vary)                    |
-|Dy		|abbreviated capitalized day name (3 chars in English, localized lengths vary)                   |
-|dy		|abbreviated lower case day name (3 chars in English, localized lengths vary)                    |
-|DDD	|day of year (001–366)                                                                           |
-|IDDD	|day of ISO 8601 week-numbering year (001–371; day 1 of the year is Monday of the first ISO week)|
-|DD		|day of month (01–31)                                                                            |
-|D		|day of the week, Sunday (1) to Saturday (7)                                                     |
-|ID		|ISO 8601 day of the week, Monday (1) to Sunday (7)                                              |
-|W		|week of month (1–5) (the first week starts on the first day of the month)                       |
-|WW		|week number of year (1–53) (the first week starts on the first day of the year)                 |
-|IW		|week number of ISO 8601 week-numbering year (01–53; the first Thursday of the year is in week 1)|
-|CC		|century (2 digits) (the twenty-first century starts on 2001-01-01)                              |
-|J		|Julian Date (integer days since November 24, 4714 BC at local midnight; see Section B.7)        |
-|Q		|quarter                                                                                         |
-|RM		|month in upper case Roman numerals (I–XII; I=January)                                           |
-|rm		|month in lower case Roman numerals (i–xii; i=January)                                           |
-|TZ		|upper case time-zone abbreviation (only supported in to_char)                                   |
-|tz		|lower case time-zone abbreviation (only supported in to_char)                                   |
-|TZH	|time-zone hours                                                                                 |
-|TZM	|time-zone minutes                                                                               |
-|OF		|time-zone offset from UTC (only supported in to_char)                                           |
-
-### **fmt1(Template Patterns for Numeric Formatting)**
-|Pattern	|Description                                                |
-|:----------|:----------------------------------------------------------|
-|9			|digit position (can be dropped if insignificant)           |
-|0			|digit position (will not be dropped, even if insignificant)|
-|. (period)	|decimal point                                              |
-|, (comma)	|group (thousands) separator                                |
-|PR			|negative value in angle brackets                           |
-|S			|sign anchored to number (uses locale)                      |
-|L			|currency symbol (uses locale)                              |
-|D			|decimal point (uses locale)                                |
-|G			|group separator (uses locale)                              |
-|MI			|minus sign in specified position (if number < 0)           |
-|PL			|plus sign in specified position (if number > 0)            |
-|SG			|plus/minus sign in specified position                      |
-|RN			|Roman numeral (input between 1 and 3999)                   |
-|TH or th	|ordinal number suffix                                      |
-|V			|shift specified number of digits (see notes)               |
-|EEEE		|exponent for scientific notation                           |
+### **fmt（日期/时间格式的模板模式）**
+|模式    |描述                                                                     |
+|:------|:-------------------------------------------------------------------------|
+|HH	    |一天中的小时 （01-12）                                                    |
+|HH12   |一天中的小时 （01-12）                                                    |
+|HH24   |一天中的小时 （00-23）                                                    |
+|MI		|分钟 （00-59）minute (00-59)                                              |
+|SS		|秒（00-59）                                                               |
+|MS		|毫秒（000-999）                                                           |
+|US		|微秒（000000-999999）                                                     |
+|SSSS	|午夜后的秒（0-86399）                                                     |
+|AM, am, PM or pm		|	正午指示器（不带句号）                                 |
+|A.M., a.m., P.M. or p.m.|	正午指示器（带句号）                                   |
+|Y,YYY	|带逗号的年（4 位或者更多位）                                              |
+|YYYY	|年（4 位或者更多位）                                                      |
+|YYY	|年的后三位                                                                |
+|YY		|年的后两位                                                                |
+|Y		|年的最后一位                                                              |
+|IYYY	|ISO 8601 周编号方式的年（4 位或更多位）                                   |
+|IYY	|ISO 8601 周编号方式的年的最后 3 位                                        |
+|IY		|ISO 8601 周编号方式的年的最后 2 位                                        |
+|I		|ISO 8601 周编号方式的年的最后一位                                          |
+|BC, bc, AD或者ad		|	纪元指示器（不带句号）                                 |
+|B.C., b.c., A.D.或者a.d.|	纪元指示器（带句号）                                   |
+|MONTH|全大写形式的月名（空格补齐到 9 字符）                                       |
+|Month|全首字母大写形式的月名（空格补齐到 9 字符）                                 |
+|month|全小写形式的月名（空格补齐到 9 字符）                                       |
+|MON	|简写的大写形式的月名（英文 3 字符，本地化长度可变）                       |
+|Mon	|简写的首字母大写形式的月名（英文 3 字符，本地化长度可变）                 |
+|mon	|简写的小写形式的月名（英文 3 字符，本地化长度可变）                       |
+|MM		|月编号（01-12）                                                           |
+|DAY	|全大写形式的日名（空格补齐到 9 字符）                                     |
+|Day	|全首字母大写形式的日名（空格补齐到 9 字符）                               |
+|day	|全小写形式的日名（空格补齐到 9 字符）                                     |
+|DY		|简写的大写形式的日名（英语 3 字符，本地化长度可变）                       |
+|Dy		|简写的首字母大写形式的日名（英语 3 字符，本地化长度可变）                 |
+|dy		|简写的小写形式的日名（英语 3 字符，本地化长度可变）                       |
+|DDD	|一年中的日（001-366）                                                     |
+|IDDD	|ISO 8601 周编号方式的年中的日（001-371，年的第 1 日时第一个 ISO 周的周一）|
+|DD		|月中的日（01-31）                                                         |
+|D		|周中的日，周日（1）到周六（7）                                            |
+|ID		|周中的 ISO 8601 日，周一（1）到周日（7）                                  |
+|W		|月中的周（1-5）（第一周从该月的第一天开始）                               |
+|WW		|年中的周数（1-53）（第一周从该年的第一天开始）                            |
+|IW		|ISO 8601 周编号方式的年中的周数（01 - 53；新的一年的第一个周四在第一周）  |
+|CC		|世纪（2 位数）（21 世纪开始于 2001-01-01）                                |
+|J		|儒略日（从午夜 UTC 的公元前 4714 年 11 月 24 日开始的整数日数）           |
+|Q		|季度（to_date和to_timestamp会忽略）                                       |
+|RM		|大写形式的罗马计数法的月（I-XII；I 是 一月）                              |
+|rm		|小写形式的罗马计数法的月（i-xii；i 是 一月）                              |
+|TZ		|大写形式的时区名称                                                        |
+|tz		|小写形式的时区名称                                                        |
+|OF		|时区偏移量                                                                |
+### **fmt1（数字格式的模板模式）**
+|模式		|描述                             |
+|:----------|:--------------------------------|
+|9			|带有指定位数的值                 |
+|0			|带前导零的值                     |
+|. (period)	|小数点                           |
+|, (comma)	|分组（千）分隔符                 |
+|PR			|尖括号内的负值                   |
+|S			|带符号的数字（使用区域）         |
+|L			|货币符号（使用区域）             |
+|D			|小数点（使用区域）               |
+|G			|分组分隔符（使用区域）           |
+|MI			|在指定位置的负号（如果数字 < 0） |
+|PL			|在指定位置的正号（如果数字 > 0） |
+|SG			|在指定位置的正/负号              |
+|RN			|罗马数字（输入在 1 和 3999 之间）|
+|TH or th	|序数后缀                         |
+|V			|移动指定位数（参阅注解）         |
+|EEEE		|科学记数的指数                   |

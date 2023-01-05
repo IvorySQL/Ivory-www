@@ -8,19 +8,19 @@ Tags:
 ---
 
 
-PL/iSQL is IvorySQL’s procedural language for writing custom Functions,
-Procedures, and Packages for IvorySQL. PL/iSQL is derived from
-PostgreSQL’s PL/pgsql with additional functionality while in the
-syntaxial terms PL/iSQL is more close to Oracle’s PL/SQL.
-This document describes the basic structure and constructs of PL/iSQL programs.
+PL/iSQL 是 IvorySQL 的过程语言，用于为 IvorySQL 编写自定义函数、过程和包。 
+PL/iSQL 派生自 PostgreSQL 的 PL/pgsql，并增加了一些功能，但在语法上
+PL/iSQL 更接近 Oracle 的 PL/SQL。
+本文档描述了 PL/iSQL 程序的基本结构和构造。
 
-## Structure of PL/iSQL Programs
 
-iSQL is a procedural, block-structured language that supports four different
-types of programs, i.e. **PACKAGES**, **PROCEDURES**, **FUNCTIONS**, and  **TRIGGERS**.
-iSQL uses the same block structure for each type of supported program.
-A block consists of up to three sections. Declaration section, executable,
-and exception sections. While declaration and exception sections are optional.
+## PL/iSQL 程序的结构
+
+iSQL 是一种程序化的块结构语言，支持四种不同的
+程序类型，即 **PACKAGES**、**PROCEDURES**、**FUNCTIONS** 和 **TRIGGERS**。
+iSQL 对每种类型的受支持程序使用相同的块结构。
+一个块最多由三个部分组成：声明部分，可执行文件，和异常部分。
+而声明和异常部分是可选的。
 
 ```SQL
 [DECLARE
@@ -33,8 +33,8 @@ and exception sections. While declaration and exception sections are optional.
     END;
 ```
 
-At very minimal, a block can consist of just an executable section that
-contains one or more iSQL statements within the **BEGIN** and **END** keywords.
+一个块至少可以由一个可执行部分组成
+在 **BEGIN** 和 **END** 关键字中包含一个或多个 iSQL 语句。
 
 ```SQL
 CREATE OR REPLACE FUNCTION null_func() RETURN VOID AS
@@ -44,11 +44,10 @@ END;
 /
 ```
 
-All keywords are case-insensitive. Identifiers are implicitly converted to lower case
-unless double-quoted, just as they are in ordinary SQL commands.
-The declaration section can be used to declare variables and cursors and depending
-upon the context of where the block is used, the declaration section may
-begin with the keyword **DECLARE**.
+所有关键字都不区分大小写。 标识符被隐式转换为小写，除非双引号，
+就像它们在普通 SQL 命令中一样。
+声明部分可用于声明变量和游标，并取决于使用块的上下文，
+声明部分可以以关键字 **DECLARE** 开头。
 
 ```SQL
 CREATE OR REPLACE FUNCTION null_func() RETURN VOID AS
@@ -63,12 +62,9 @@ end;
 /
 ```
 
-The optional exception section can also be included within the **BEGIN - END** block.
-The exception section begins with the keyword, **EXCEPTION**, and continues until
-the end of the block in which it appears. If an exception is thrown by a statement
-within the block, program control goes to the exception section where the
-thrown exception may or may not be handled depending upon the exception and
-the contents of the exception section.
+可选的异常部分也可以包含在 **BEGIN - END** 块中。
+异常部分以关键字 **EXCEPTION** 开始，一直持续到它出现的块的末尾。 
+如果块内的语句抛出异常，程序控制转到异常部分，根据异常和异常部分的内容，可能会或不会处理抛出的异常。
 
 ```SQL
 CREATE OR REPLACE FUNCTION reraise_test() RETURN void AS
@@ -96,16 +92,15 @@ END;
 
 :::info NOTE
 
-Similar to PL/pgSQL, PL/iSQL uses **BEGIN/END** for grouping statements,
-and they are not to be confused with the similarly-named SQL commands for
-transaction control. PL/iSQL's BEGIN/END are only for grouping;
-they do not start or end a transaction
+与 PL/pgSQL 类似，PL/iSQL 使用 **BEGIN/END** 对语句进行分组，
+并且不要将它们与用于事务控制的同名 SQL 命令混淆。 PL/iSQL 的 BEGIN/END 仅用于分组；
+他们不开始或结束事务
+
 :::
 
-## **psql** support for PL/iSQL programs
+## **psql** 对 PL/iSQL 程序的支持
 
-For creating the PL/iSQL programs from psql client you can
-either use the dollar quote syntax similar to PL/pgSQL
+要从 psql 客户端创建 PL/iSQL 程序，您可以使用类似于 PL/pgSQL 的**$$**语法
 
 ```SQL
 CREATE FUNCTION func() RETURNS void as
@@ -113,10 +108,9 @@ $$
 ..
 end$$ language plisql;
 ```
-
-Alternatively, you can use Oracle compatible syntax without **$$**
-quote and language specification and end the program definition using **/ (forward slash)**.
-The / (forward slash) has to be on newline
+或者，您可以使用不带 **$$** 的 Oracle 兼容语法的引用和语言规范，
+并使用 **/（正斜杠）** 结束程序定义。
+/（正斜杠）必须在换行符上
 
 ```SQL
 CREATE FUNCTION func() RETURN void AS
@@ -126,7 +120,7 @@ END;
 
 ```
 
-## PL/iSQL programs syntax
+## PL/iSQL 程序语法
 
 ### PROCEDURES
 
@@ -270,4 +264,4 @@ statement:
 
 ```
 
-Refer to [**IvorySQL packages**](package.md) documentation for more details.
+有关更多详细信息，请参阅 [**IvorySQL packages**](package.md) 

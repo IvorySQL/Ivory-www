@@ -1,24 +1,24 @@
 ---
 sidebar_position: 15
-sidebar_label: 'VARCHAR2(size)'
-title: VARCHAR2(size)
+sidebar_label: 'VARCHAR2(size)类型'
+title: VARCHAR2(size)类型
 Tags:
- - VARCHAR2(size)
+ - VARCHAR2(size)类型
 ---
 
 # VARCHAR2(size)
 
-## Overview
+## 概述
 
-Variable-length character string having maximum length size bytes or characters. You must specify size for VARCHAR2. Minimum size is 1 byte or 1 character.
+具有最大长度大小字节或字符的可变长度字符串。 您必须为 VARCHAR2 指定大小。 最小大小为 1 个字节或 1 个字符。
 
-## Syntax
+## 语法
 
 ```
 VARCHAR2(size)
 ```
 
-## Example
+## 用例
 
 ```
 create table test(a varchar2(5));

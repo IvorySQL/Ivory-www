@@ -64,7 +64,7 @@ function Release() {
                                 <img src={require('../../svg/logo-hg.jpg').default} class="release-left-img" alt="" />
                             </div>
                             <div class="content-highgo-line"></div>
-                            <div class="YUM">瀚高YUM库  →</div>
+                            <a href='https://yum.highgo.ca/ivorysql.html'><div class="YUM">瀚高YUM库  →</div></a>
                         </div>
                         <div class="content-font">
                             <span>有意提供IvorySQL下载服务的公司或个人,请联系</span><span>support@ivorysql.org</span>

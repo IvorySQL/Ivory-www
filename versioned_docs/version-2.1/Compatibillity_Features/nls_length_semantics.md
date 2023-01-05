@@ -1,33 +1,33 @@
 ---
 sidebar_position: 13
-sidebar_label: 'NLS_LENGTH_SEMANTICS'
-title: NLS_LENGTH_SEMANTICS
+sidebar_label: 'NLS_LENGTH_SEMANTICS参数'
+title: NLS_LENGTH_SEMANTICS参数
 Tags:
- - NLS_LENGTH_SEMANTICS
+ - NLS_LENGTH_SEMANTICS参数
 ---
 
 # NLS_LENGTH_SEMANTICS
 
-## Overview
+## 概述
 
-NLS_LENGTH_SEMANTICS enables you to create CHAR and VARCHAR2 columns using either byte or character length semantics. Existing columns are not affected. in which case the default semantics is BYTE.
+NLS_LENGTH_SEMANTICS 使您能够使用字节或字符长度语义创建 CHAR 和 VARCHAR2 列。 现有列不受影响。 在这种情况下，默认语义是 BYTE。
 
-## Syntax
+## 语法
 
 ```
 SET NLS_LENGTH_SEMANTICS TO [NONE | BYTE | CHAR];
 ```
-### **Range of values**
+### **取值范围说明**
 
 ```
-BYTE:Data is stored in bytes
-CHAR:Data is stored in characters
-NONE:PostgreSQL native storage method
+BYTE:数据以字节长度来存储。
+CHAR:数据以字符长度来存储。
+NONE:数据使用原生PostgreSQL存储方式。
 ```
 
-## Example
+## 用例
 
-### --test for CHAR
+### --测试“CHAR”
 
 ```
 create table test(a varchar2(5));
@@ -46,7 +46,7 @@ insert into test values ('李老师您好');
 INSERT 0 1
 ```
 
-### --test for BYTE
+### --测试“BYTE”
 
 ```
 SET NLS_LENGTH_SEMANTICS TO BYTE;

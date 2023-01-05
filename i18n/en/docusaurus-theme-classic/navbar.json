@@ -1,0 +1,70 @@
+{
+  "item.label.博客": {
+    "message": "Blog",
+    "description": "Navbar item with label 博客"
+  },
+  "item.label.下载": {
+    "message": "Download",
+    "description": "Navbar item with label 下载"
+  },
+  "item.label.发布": {
+    "message": "Releases",
+    "description": "Navbar item with label 发布"
+  },
+  "item.label.资源": {
+    "message": "Resources",
+    "description": "Navbar item with label 资源"
+  },
+  "item.label.社区": {
+    "message": "Community",
+    "description": "Navbar item with label 社区"
+  },
+  "item.label.Try for Free": {
+    "message": "Try for Free",
+    "description": "Navbar item with label Try for Free"
+  },
+  "item.label.网络研讨会": {
+    "message": "Webinars",
+    "description": "Navbar item with label 网络研讨会"
+  },
+  "item.label.合作伙伴": {
+    "message": "Partners",
+    "description": "Navbar item with label 合作伙伴"
+  },
+  "item.label.客户故事": {
+    "message": "Customer Story",
+    "description": "Navbar item with label 客户故事"
+  },
+  "item.label.成功案例": {
+    "message": "Cases Studies",
+    "description": "Navbar item with label 成功案例"
+  },
+  "item.label.文档": {
+    "message": "Docs",
+    "description": "Navbar item with label 文档"
+  },
+  "item.label.行为准则": {
+    "message": "Code Of Conduct",
+    "description": "Navbar item with label 行为准则"
+  },
+  "item.label.邮箱列表": {
+    "message": "Mail list",
+    "description": "Navbar item with label 邮箱列表"
+  },
+  "item.label.贡献-Github": {
+    "message": "Contribute",
+    "description": "Navbar item with label 贡献-Github"
+  },
+  "item.label.共享": {
+    "message": "Shareing",
+    "description": "Navbar item with label 共享"
+  },
+  "item.label.讨论": {
+    "message": "讨论",
+    "description": "Navbar item with label 讨论"
+  },
+  "item.label.订阅": {
+    "message": "Subscribe",
+    "description": "Navbar item with label 订阅"
+  }
+}

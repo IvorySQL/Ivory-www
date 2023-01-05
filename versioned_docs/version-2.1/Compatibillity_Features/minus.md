@@ -8,23 +8,23 @@ Tags:
 ---
 
 ## MINUS
-### Overview
-Calculate the set of rows that are in the result of the left SELECT statement but not in the result of the right SELECT statement.
+### 概述
+计算在左SELECT语句结果中但不在右SELECT语句结果中的行集。
 
-### Syntax
+### 语法
 ```
 select_statement MINUS [ ALL | DISTINCT ] select_statement;
 ```
 
-#### **Parameters**
+#### **参数**
 ```select_statement```
-	Any SELECT statement without ORDER BY, LIMIT, FOR NO KEY UPDATE, FOR UPDATE, FOR SHARE and FOR KEY SHARE clauses.  
+	任何没有ORDER BY、LIMIT、 FOR NO KEY UPDATE、FOR UPDATE、 FOR SHARE和FOR KEY SHARE子句的 SELECT语句.  
 ```ALL keyword```
-	The result will contain duplicate rows.  
+	包含重复行结果.  
 ```DISTINCT keyword```
-	Eliminate duplicate rows  
+	显示的消除重复行.  
 
-### Example
+### 示例
 ```
 select * from generate_series(1, 3) g(i) MINUS select * from generate_series(1, 3) g(i) where i = 1;
  i 
@@ -33,4 +33,5 @@ select * from generate_series(1, 3) g(i) MINUS select * from generate_series(1, 
  3
 (2 rows)
 ```
+
 

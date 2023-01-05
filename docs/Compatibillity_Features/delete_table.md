@@ -1,15 +1,16 @@
 ---
 sidebar_position: 4
-sidebar_label: 'Delete Table'
-title: Delete Table
+sidebar_label: '删除表'
+title: 删除表
 Tags:
  - Delete table
+ - 删除表
 ---
 
-## Overview
-Support of Oracle syntax for deleting the table.
+## 概述
+使用oracle语法删除表。
 
-## syntax
+## 语法
 ```
 [ WITH [ RECURSIVE ] with_query [, ...] ]
 DELETE [ FROM ] [ ONLY ] table_name [ * ] [ [ AS ] alias ]
@@ -17,23 +18,23 @@ DELETE [ FROM ] [ ONLY ] table_name [ * ] [ [ AS ] alias ]
     [ WHERE condition | WHERE CURRENT OF cursor_name ]
     [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]
  ```
-### **Parameters**
+### **参数**
 ```table_name```
-	Table name.  
+	表名.  
 ```alias```
-	Table alias.  
+	表别名.  
 ```using_list```
-	A list of table expressions that allow columns from other tables to appear in the WHERE condition.  
+	一个表表达式的列表，它允许在WHERE条件中出现 来自其他表的列.  
 ```condition```
-	A expression which return boolean value.  
+	一个返回boolean类型值的表达式.  
 ```cursor_name```
-	The name of the cursor to be used in the WHERE CURRENT OF situation.  
+	要在WHERE CURRENT OF情况中使用的游标的名称.  
 ```output_expression```
-	After each row is deleted, it will be calculated and returned by DELETE.  
+	在每一行被删除后，会被DELETE计算并且返回的表达式.  
 ```output_name```
-	The name of the column being returned.  
+	被返回列的名称.  
 
-## Example
+## 使用
 ```
 create table tb_test4(id int, flg char(10));
 
@@ -49,3 +50,4 @@ table tb_test4;
  5  | 6         
 (1 row)
 ```
+
