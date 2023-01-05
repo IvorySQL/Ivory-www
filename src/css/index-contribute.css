@@ -87,9 +87,9 @@
     justify-content: center;
    }
    .contribute-title{
-    width: 50%;
+    width: 100%;
     position: relative;
-    left: 10em;
+    left: 6em;
     font-size: 20px;
     font-family: Gilroy;
     font-weight: 800;
@@ -106,7 +106,7 @@
    #contribute-link{
     text-align: center;
     position: relative;
-    left: 17em;
+    left: 11em;
     top: -40%;
    }
 }
@@ -118,16 +118,10 @@
         display: grid;
         justify-content: center;
     }
-    #contribute-link{
-        text-align: center;
-        position: relative;
-        left: 14em;
-        top: -40%;
-    }
     .contribute-title{
         width: 100%;
         position: relative;
-        left: 8em;
+        left: 6em;
         font-size: 20px;
         font-family: Gilroy;
         font-weight: 800;
