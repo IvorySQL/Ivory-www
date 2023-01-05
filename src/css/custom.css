@@ -51,6 +51,10 @@ main{
   width: 98.776vw;
   min-width: 1vw;
 }
+.navbar-sidebar__backdrop{
+  width: 98.776vw;
+  min-width: 1vw;
+}
 .navbar{
   background-color: white;
   width: 98.776vw;
@@ -58,12 +62,10 @@ main{
 }
 .navbar .navbar__items {
   border: white;
-  width: 32%;
+  width: 30%;
 }
 .navbar__inner{
-  position: absolute;
-  left: 10%;
-  width: 85%;
+  width: 101%;
 }
 .navbar__link{
   width: auto;
@@ -87,13 +89,17 @@ main{
   /* font-family: Gilroy; */
   font-weight: bolder;
   padding: 0.3em 0 0 2.6em;
+  position: relative;
+  right: 10%;
 }
 #TtyForFree:hover{
   color: black;
   background-color: #F9BB30;
 }
 .dropdown--right{
-  width: 60%;
+  width: 30%;
+  position: relative;
+  right: 10%;
 }
 .navbar__logo{
   width: 120px;
@@ -113,14 +119,14 @@ main{
   width: 24px;
   height: 24px;
   position: relative;
-  right:20px;
+  right: 15%;
 }
 .earth{
   background-image: url(../../svg/icon-earth.svg);
   width: 24px;
   height: 24px;
   position: relative;
-  right:12px;
+  right: 13%;
 }
 .footer{
   /* width: 100vm;
@@ -278,10 +284,13 @@ main{
   position: relative;
   bottom: 100px;
 }
-.navbar__item.dropdown.dropdown--hoverable.dropdown--right{
-  width: 10em;
+.navbar__item.dropdown.dropdown--hoverable.dropdown--right svg{
+  display: none;
 }
-
+.navbar__item .dropdown .dropdown--hoverable{
+  position: relative;
+  top: -10%;
+}
 @media screen and (min-width: 1800px) {
   .navbar__link{
     width: auto;
@@ -292,23 +301,28 @@ main{
     line-height: 26px;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1660px) {
   #TtyForFree{
     padding: 0.3em 0 0 2em;
   }
 }
+@media screen and (max-width: 1250px) {
+  #TtyForFree{
+    padding: 0.3em 0 0 2.5em;
+  }
+}
 @media screen and (max-width: 1170px) {
   #TtyForFree{
-    padding: 0.3em 0 0 1.7em;
+    padding: 0.3em 0 0 2em;
   }
 }
 @media screen and (max-width: 1120px) {
   #TtyForFree{
-    padding: 0.3em 0 0 1em;
+    padding: 0.3em 0 0 2.5em;
   }
   .navbar__item .navbar__link{
     width: 3rem;
-    font-size: 0.2em;
+    font-size: 0.6em;
     font-family: Microsoft YaHei;
     font-weight: 520;
     color: #333333;
@@ -317,12 +331,12 @@ main{
 }
 @media screen and (max-width: 1050px) {
   #TtyForFree{
-    padding: 0.3em 0 0 0.8em;
+    padding: 0.3em 0 0 2em;
   }
 }
 @media screen and (max-width: 1020px) {
   #TtyForFree{
-    padding: 0.3em 0 0 0.7em;
+    padding: 0.3em 0 0 2em;
   }
 }
 @media screen and (max-width: 997px) {
@@ -359,9 +373,6 @@ main{
     position: relative;
     right: 42px;
   }
-  /* .navbar-sidebar__brand div{
-    display: none;
-  } */
 }
 @media screen and (max-width: 700px) {
   #TtyForFree{

@@ -87,6 +87,7 @@ const config = {
             type: 'dropdown',
             position: 'left',
             label: '资源',
+            id: 'ss',
             items: [
               {
                 label: '网络研讨会',
@@ -98,7 +99,7 @@ const config = {
               },
               {
                 label: '客户故事',
-                href: 'customer-stories-page',
+                href: '/customer-stories-page',
               },
               {
                 label: '成功案例',
@@ -111,7 +112,7 @@ const config = {
               // },
               {
                 label: '文档',
-                to: '/contribution-guidelines',
+                to: '/Docs',
               },
             ]
           },
