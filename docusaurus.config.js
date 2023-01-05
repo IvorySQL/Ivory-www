@@ -87,7 +87,6 @@ const config = {
             type: 'dropdown',
             position: 'left',
             label: '资源',
-            id: 'ss',
             items: [
               {
                 label: '网络研讨会',
@@ -112,7 +111,7 @@ const config = {
               // },
               {
                 label: '文档',
-                to: '/Docs',
+                to: '/release',
               },
             ]
           },

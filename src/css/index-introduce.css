@@ -208,6 +208,32 @@
 #link-hgcom:hover{
     background-color: #F9BB30;
 }
+@media screen and (min-width: 1800px) {
+    .index-introduce{
+        height: 600px;
+    }
+    .introduce-title{
+        font-size: 1.2em;
+    }
+    .introduce-content{
+        font-size: 1em;
+    }
+    .top-opensource{ 
+        height: 220px;
+    }
+    .top-pgsql{ 
+        height: 220px;
+    }
+    .top-oracle{ 
+        height: 220px;
+    }
+    .buttom-customize{
+        height: 282px;
+    }
+    .buttom-Highgo{
+        height: 282px;
+    }
+}
 @media screen and (max-width: 997px) {
     .index-introduce{
       height: 1200px;

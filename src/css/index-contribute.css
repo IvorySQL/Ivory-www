@@ -89,7 +89,7 @@
    .contribute-title{
     width: 100%;
     position: relative;
-    left: 6em;
+    left: 11em;
     font-size: 20px;
     font-family: Gilroy;
     font-weight: 800;
@@ -106,7 +106,7 @@
    #contribute-link{
     text-align: center;
     position: relative;
-    left: 11em;
+    left: 18em;
     top: -40%;
    }
 }
