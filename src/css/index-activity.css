@@ -43,7 +43,7 @@
     top: -70px;
 }
 .activity-content{
-    width: 85vw;
+    width: 85%;
     height: 70%;
     display: flex;
     justify-content: center;
@@ -315,7 +315,7 @@
 @media screen and (max-width: 862px) {
    #activity-title{
        position: relative;
-       left: -25px;
+       left: -30px;
    }
 }
 @media screen and (max-width: 607px) {

@@ -306,12 +306,12 @@ main{
 }
 @media screen and (max-width: 1660px) {
   #TtyForFree{
-    padding: 0.3em 0 0 2em;
+    padding: 0.3em 0 0 2.3em;
   }
 }
 @media screen and (max-width: 1250px) {
   #TtyForFree{
-    padding: 0.3em 0 0 2.5em;
+    padding: 0.3em 0 0 2.2em;
   }
 }
 @media screen and (max-width: 1170px) {
@@ -332,14 +332,14 @@ main{
     line-height: 16px;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1122px) {
   #TtyForFree{
-    padding: 0.3em 0 0 2em;
+    padding: 0.3em 0 0 1.5em;
   }
 }
 @media screen and (max-width: 1020px) {
   #TtyForFree{
-    padding: 0.3em 0 0 2em;
+    padding: 0.3em 0 0 1.2em;
   }
 }
 @media screen and (max-width: 997px) {
