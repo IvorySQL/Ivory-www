@@ -312,6 +312,12 @@
         right: 40px;
     }
 }
+@media screen and (max-width: 862px) {
+   #activity-title{
+       position: relative;
+       left: -25px;
+   }
+}
 @media screen and (max-width: 607px) {
     .content-pgconf{
         position: relative;
