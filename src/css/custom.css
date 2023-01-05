@@ -377,7 +377,7 @@ main{
     right: 42px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 740px) {
   #TtyForFree{
     padding: 2% 0% 2% 2em;
   }
@@ -397,7 +397,7 @@ main{
     padding: 2% 0% 2% 1.2em;
   }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 535px) {
   #TtyForFree{
     padding: 2% 0% 2% 2.5vw;
   }
