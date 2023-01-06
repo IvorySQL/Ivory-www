@@ -69,9 +69,9 @@ main{
 }
 .navbar__link{
   width: auto;
-  font-size: 0.6em;
+  font-size: 0.8em;
   font-family: Microsoft YaHei;
-  font-weight: 520;
+  font-weight: 400;
   color: #333333;
   line-height: 26px;
 }
