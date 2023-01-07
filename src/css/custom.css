@@ -129,12 +129,9 @@ main{
   right: 13%;
 }
 .footer{
-  /* width: 100vm;
-  min-width: none; */
   width: 98.776vw;
   min-width: 1vw;
   background: #363131;
-  /* display: table-column; */
 }
 .footer__title{
   color:#FFD673;
@@ -254,7 +251,6 @@ main{
   background-image: url(../../svg/icon-slack.svg);
   background-repeat: no-repeat;
 }
-
 .backgruond-lingying{
   width: 2em;
   height: 1.5em;
@@ -325,9 +321,9 @@ main{
   }
   .navbar__item .navbar__link{
     width: 3rem;
-    font-size: 0.6em;
+    font-size: 0.8em;
     font-family: Microsoft YaHei;
-    font-weight: 520;
+    font-weight: 400;
     color: #333333;
     line-height: 16px;
   }
