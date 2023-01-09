@@ -21,7 +21,7 @@ function HomepageHeader() {
             </p>
             <p class="header-content">基于PostgreSQL兼容Oracle的开源数据库</p>
         <div id="Link" class="Link">
-            <Link 
+            <Link
               className="button button--secondary button--lg" 
               id="header-link-getstart"
               to="https://github.com/IvorySQL/IvorySQL">
