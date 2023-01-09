@@ -1,0 +1,39 @@
+{
+  "version.label": {
+    "message": "开发者版",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.IvorySQL Documentation": {
+    "message": "IvorySQL文档",
+    "description": "The label for category IvorySQL Documentation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contributing to the Project": {
+    "message": "贡献项目",
+    "description": "The label for category Contributing to the Project in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contributing to IvorySQL source": {
+    "message": "贡献IvorySQL源码",
+    "description": "The label for category Contributing to IvorySQL source in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contributing to Translations": {
+    "message": "贡献翻译",
+    "description": "The label for category Contributing to Translations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contributing to IvorySQL documentation": {
+    "message": "贡献IvorySQL文档库",
+    "description": "The label for category Contributing to IvorySQL documentation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.current": {
+    "message": "现在的",
+    "description": "The label for category current in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Compatibility Features": {
+    "message": "Oracle 兼容功能",
+    "description": "The label for category Compatibility Features in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Global Unique Index": {
+    "message": "全局唯一索引",
+    "description": "The label for category Global Unique Index in sidebar"
+  }
+
+}

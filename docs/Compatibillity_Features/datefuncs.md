@@ -1,29 +1,28 @@
 ---
-sidebar_label: '兼容时间和日期函数'
+sidebar_label: 'Compatible with date and time function'
 sidebar_position: 11
-title: 兼容时间和日期函数
+title: Compatible with date and time function
 Tags:
- - 兼容时间和日期函数
  - date function
  - time function
 ---
 
-# 兼容时间和日期函数
+# Compatible with date and time function Overview
 
 ## 1. from_tz
 
-### 1.1 目的
+### 1.1 Purpose
 
-    将给定的不带时区的时间戳转换为指定的带时区的时间戳，如果指定时区或者时间戳为NULL，则返回NULL。
+    Convert the given timestamp without time zone to the timestamp with time zone in the specified time zone, if the specified time zone is NULL, return NULL.
 
-### 1.2 参数描述
+### 1.2 Parameter Description
 
-|              参数                        |     描述                                    |
-|-----------------------------------------|---------------------------------------------|
-| day                                     | 不带时区的时间戳                              |
-| tz                                      |  指定的时区                                  |
+|    Parameter                         |  Description                                         |
+|------------------------------------- | ---------------------------------------------------- |
+| day                                  | Timestamp without time zone to be converted          |
+| tz                                   | Specified time zone                                  |
 
-### 1.3 例子
+### 1.3 Examples
 
 ```SQL
 select oracle.from_tz('2021-11-08 09:12:39','Asia/Shanghai') from dual;
@@ -53,18 +52,18 @@ select oracle.from_tz('2021-11-08 09:12:31',NULL) from dual;
 
 ## 2 numtodsinterval
 
-### 2.1 目的
+### 2.1 Purpose
 
-    将给定数字转换为指定格式的时间，格式参数有：'day','hour','minute','second'。
+    The time to convert the given number to the specified string, the string can be'day','hour','minute','second'.
 
-### 2.2 参数描述
+### 2.2 Parameter Description
 
-|    参数                               |  描述                                                             |
+|    Parameter or Type                 |  Description                                                      |
 |------------------------------------- | ----------------------------------------------------------------- |
-|value                                 | 要转化的数字                                                       |
-|fmt                                   | 目标日期和时间类型, 包括 'day', 'hour', 'minute' 'second'           |
+|value                                 | Number to be converted                                            |
+|fmt                                   | Target time or date type, include 'day', 'hour', 'minute' 'second'|
 
-### 2.3 例子
+### 2.3 Examples
 
 ```SQL
 select oracle.numtodsinterval(2147483646.1232131232,'day') from dual;
@@ -101,18 +100,18 @@ select oracle.numtodsinterval(7730941132800.1232131232,NULL) from dual;
 
 ## 3. numtoyminterval
 
-### 3.1 目的
+### 3.1 Purpose
 
-    将给定数字转换为指定格式的日期， 格式参数有：'year','month'。
+    Convert the given number to a date in the specified format,  the string can be'year','month'.
 
-### 3.2 参数描述
+### 3.2 Parameter Description
 
-|    参数                              |  描述                                                 |
+|    Parameter or Type                 |  Description                                         |
 |------------------------------------- | ---------------------------------------------------- |
-|value                                 | 要转化的数字                                          |
-|fmt                                   | 目标日期 ('year' or 'month'）                         |
+|value                                 | Number to be converted                               |
+|fmt                                   | Target time or date type ('year' or 'month'）        |
 
-### 3.3 例子
+### 3.3 Examples
 
 ```SQL
 select oracle.numtoyminterval(178956970.1232131232,'year') from dual;
@@ -143,11 +142,11 @@ select oracle.numtoyminterval(2147483647.1232131232,NULL) from dual;
 
 ## 4. systimestamp
 
-### 4.1 目的
+### 4.1 Purpose
 
-    获取当前数据库系统的时间戳。
+    Get the timestamp of the current system.
 
-### 4.2 例子
+### 4.2 Examples
 
 ```SQL
 select oracle.systimestamp();
@@ -165,17 +164,17 @@ select systimestamp;
 
 ## 5. sys_extract_utc
 
-### 5.1 目的
+### 5.1 Purpose
 
-    将给定的带时区的时间戳转换为不带时区的UTC时间。
+    Convert the given timestamp with time zone to UTC timestamp without time zone.
 
-### 5.2 参数描述
+### 5.2 Parameter Description
 
-|    参数                              |  描述                                                |
-|------------------------------------- | ----------------------------------------------------|
-| day                                  | 需要转换带时区的时间戳                                |
+|    Parameter or Type                 |  Description                                         |
+|------------------------------------- | ---------------------------------------------------- |
+| day                                  | Timestamp with time zone need to be converted        |
 
-### 5.3 例子
+### 5.3 Examples
 
 ```SQL
 select oracle.sys_extract_utc('2018-03-28 11:30:00.00 +09:00'::timestamptz) from dual;
@@ -194,11 +193,11 @@ select oracle.sys_extract_utc(NULL) from dual;
 
 ## 6. sessiontimezone
 
-### 6.1 目的
+### 6.1 Purpose
 
-    获取当前会话的时区。
+    sessiontimezone returns the time zone of the current session.
 
-### 6.2 例子
+### 6.2 Examples
 
 ```SQL
 select oracle.sessiontimezone() from dual;
@@ -219,11 +218,11 @@ set timezone to UTC;
 
 ## 7. dbtimezone
 
-### 7.1 目的
+### 7.1 Purpose
 
-    获取数据库服务器的时区。
+    dbtimezone returns the value of the database time zone.
 
-### 7.2 例子
+### 7.2 Examples
 
 ```SQL
 select oracle.dbtimezone();
@@ -236,18 +235,18 @@ select oracle.dbtimezone();
 
 ## 8. days_between
 
-### 8.1 目的
+### 8.1 Purpose
 
-    获取两个时间的天数差。
+    Calculate the number of days between two timestamps.
 
-### 8.2 参数描述
+### 8.2 Parameter Description
 
-|    参数                              |  描述                                                 |
+|    Parameter or Type                 |  Description                                         |
 |------------------------------------- | ---------------------------------------------------- |
-| day1                                 | 第一个时间戳                                          |
-| day2                                 | 第二个时间戳                                          |
+| day1                                 | first timestamp or oracle.date                       |
+| day2                                 | second timestamp  or oracle.date                     |
 
-### 8.3 例子
+### 8.3 Examples
 
 ```SQL
 
@@ -279,18 +278,18 @@ select oracle.days_between(NULL,NULL) from dual;
 
 ## 9. days_between_tmtz
 
-### 9.1 目的
+### 9.1 Purpose
 
-    获取两个带有时区的时间戳之间相差的天数，如果时间戳为NULL，则返回NULL。
+    Calculate the number of days between two timestamps with time zones.
 
-### 9.2 参数描述
+### 9.2 Parameter Description
 
-|    参数                              |  描述                                                |
+|    Parameter or Type                 |  Description                                         |
 |------------------------------------- | ---------------------------------------------------- |
-| tz1                                  | 第一个时间戳                                          |
-| tz2                                  | 第一个时间戳                                          |
+| tz1                                  | first timestamptz                                    |
+| tz2                                  | second timestamptz                                   |
 
-### 9.3 例子
+### 9.3 Examples
 
 ```SQL
 select oracle.days_between_tmtz('2019-09-08 09:09:09+08'::timestamptz,'2019-05-08 12:34:09+08'::timestamptz) from dual;
@@ -315,18 +314,18 @@ select oracle.days_between_tmtz(NULL,NULL) from dual;
 
 ## 10. add_days_to_timestamp
 
-### 10.1 目的
+### 10.1 Purpose
 
-    给一个时间戳增加需要的天数，增加的天数可以为浮点型。
+    Add the number of days to the timestamp, the number of days can be a floating point number.
 
-### 10.2 参数描述
+### 10.2 Parameter Description
 
-|    参数                               |  描述                                                |
+|    Parameter or Type                 |  Description                                         |
 |------------------------------------- | ---------------------------------------------------- |
-| tz                                   | 需要被改变的时间戳                                     |
-| days                                 | 增加的天数                                            |
+| tz                                   | Need to change the timestamp                         |
+| days                                 | Added days                                           |
 
-### 10.3 例子
+### 10.3 Examples
 
 ```SQL
 select oracle.add_days_to_timestamp('1009-09-15 09:00:00'::timestamp, '3267.123'::numeric) from dual;
@@ -345,18 +344,18 @@ select oracle.add_days_to_timestamp(NULL, '3267.123'::numeric) from dual;
 
 ## 11. subtract
 
-### 11.1 目的
+### 11.1 Purpose
 
-    时间戳的减法表示两个时间戳相减的天数，或者时间戳减去一个数字，结果为时间戳，这个数字就是天数，时间戳可以带时区也可以不带时区。
+    The subtraction of the timestamp represents the number of days between the two timestamps. Or the timestamp minus a number to indicate the timestamp of the result, this number is the number of days, and the timestamp can be with or without time zone.
 
-### 11.2 参数描述
+### 11.2 Parameter Description
 
-|    参数                                         |  描述                                                       |
+|    Parameter or Type                            |  Description                                               |
 |------------------------------------------------ | ---------------------------------------------------------- |
-| days                                            | 需要被改变的时间戳                                           |
-| value                                           | 时间戳或者一个代表天数的数字                                  |
+| days                                            | Need to change the timestamptz, timestamp or oracle.date   |
+| value                                           | Subtracted timestamp or oracle.date or days                |
 
-### 11.3 例子
+### 11.3 Examples
 
 ```SQL
 select oracle.subtract('2019-11-25 16:51:20'::timestamptz,'3267.123'::numeric) from dual;
@@ -387,18 +386,18 @@ select oracle.subtract('2019-11-25 16:51:20'::oracle.date,'3267.123'::numeric) f
 
 ## 12. next_day
 
-### 12.1 目的
+### 12.1 Purpose
 
-    next_day 返回由格式名相同的第一个工作日的日期，该日期晚于当前日期。 无论日期的数据类型如何，返回类型始终为 DATE。 返回值具有与参数日期相同的小时、分钟和秒部分。
+    next_day returns the date of the first weekday named by text that is later than the  date date. The return type is always DATE, regardless of the data type of date. The return value has the same hours, minutes, and seconds component as the argument date.
 
-### 12.2 参数描述
+### 12.2 Parameter Description
 
-|    参数                         |  描述                                                               |
+|    Parameter or Type            |  Description                                                       |
 |-------------------------------- | -------------------------------------------------------------------|
-| value                           | 开始时间戳                                                          |
-| weekday                         | 星期几，可以是 "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" 或者 0,1,2,3,4,5,6,0代表星期天                            |
+| value                           | This is the time, it can be timestamp, timestamptz and oracle.date |
+| weekday                         | The day of the week, it can be "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" or 0,1,2,3,4,5,6,0 for Sunday                            |
 
-### 12.3 例子
+### 12.3 Examples
 
 ```SQL
 
@@ -424,17 +423,17 @@ select oracle.next_day(oracle.date '2020-09-15 12:13:29', 6) from dual;
 
 ## 13. last_day
 
-### 13.1 目的
+### 13.1 Purpose
 
-    last_day返回档期日期所在月份的最后一天。 
+    last_day returns the date of the last day of the month that contains date. 
 
-### 13.2 参数描述
+### 13.2 Parameter Description
 
-|    参数                          |  描述                                                              |
+|    Parameter or Type            |  Description                                                       |
 |-------------------------------- | ----------------------------------------------------               |
-| value                           | 指定的时间戳                                                        |
+| value                           | This is a date, it can be timestamp, timestamptz and oracle.date   |
 
-### 13.3 例子
+### 13.3 Examples
 
 ```SQL
 select oracle.last_day(timestamp '2020-05-17 13:27:19') from dual;
@@ -459,18 +458,18 @@ select oracle.last_day('-0004-2-1 13:27:19'::oracle.date) from dual;
 
 ## 14. add_months
 
-### 14.1 目的
+### 14.1 Purpose
 
-    add_months 返回日期加上整数月份。 date 参数可以是日期时间值或任何可以隐式转换为 DATE 的值。 整数参数可以是整数或任何可以隐式转换为整数的值。 
+    add_months returns the date date plus integer months. The date argument can be a datetime value or any value that can be implicitly converted to DATE. The integer argument can be an integer or any value that can be implicitly converted to an integer. 
 
-### 14.2 参数描述
+### 14.2 Parameter Description
 
-|    参数                         |  描述                                                               |
+|    Parameter or Type            |  Description                                                       |
 |-------------------------------- | -------------------------------------------------------------------|
-| day                             | oracle.date类型，需要被改变的时间戳                                  |
-| value                           | 一个整形数据，需要增加的月数                                          |
+| day                             | This is the time, it can be timestamp, timestamptz and oracle.date |
+| value                           | this is a integer,  representing the number of months increased    |
 
-### 14.3 例子
+### 14.3 Examples
 
 ```SQL
 select oracle.add_months(oracle.date '2020-02-15',7) from dual;
@@ -495,18 +494,18 @@ select oracle.add_months(timestamptz'2018-12-15 12:12:09 +08',120) from dual;
 
 ## 15. months_between
 
-### 15.1 目的
+### 15.1 Purpose
 
-    months_between 返回第一个日期和第二个日期之间的月份值, 如果第一个日期晚于第二个日期，则结果为正, 如果第一个日期早于第二个日期，则结果为负数。
+    months_between returns value of months between first date and second date.  If first date is later than second date, then the result is positive. If first date is earlier than second date, then the result is negative.
 
-### 15.2 参数描述
+### 15.2 Parameter Description
 
-|    参数                         |  描述                                                              |
+|    Parameter or Type            |  Description                                                       |
 |-------------------------------- | -------------------------------------------------------------------|
-| day1                            | 第一个时间戳                                                        |
-| day2                            | 第二个时间戳                                                        |
+| day1                            | first date, it can be timestamp, timestamptz and oracle.date       |
+| day2                            | second date,  it can be timestamp, timestamptz and oracle.date     |
 
-### 15.3 例子
+### 15.3 Examples
 
 ```SQL
 select oracle.months_between(oracle.date '2021-11-10 12:11:10', oracle.date '2020-05-20 19:40:21') from dual;
@@ -531,11 +530,11 @@ select oracle.months_between(timestamptz '2020-01-10 01:00:00 +08', timestamptz 
 
 ## 16. sysdate
 
-### 16.1 目的
+### 16.1 Purpose
 
-    sysdate 返回数据库服务器的操作系统时间。
+    sysdate returns the operating system time of the database server.
 
-### 16.2 例子
+### 16.2 Examples
 
 ```SQL
 select sysdate;
@@ -554,19 +553,19 @@ select oracle.sysdate();
 
 ## 17. new_time
 
-### 17.1 目的
+### 17.1 Purpose
 
-    转换第一个时区的时间到第二个时区的时间. 时区包括了 "ast", "adt", "bst", "bdt", "cst", "cdt", "est", "edt", "gmt", "hst", "hdt", "mst", "mdt", "nst", "pst", "pdt", "yst", "ydt".
+    Convert the time in the first time zone to the time in the second time zone. time zone include "ast", "adt", "bst", "bdt", "cst", "cdt", "est", "edt", "gmt", "hst", "hdt", "mst", "mdt", "nst", "pst", "pdt", "yst", "ydt".
 
-### 17.2 参数描述
+### 17.2 Parameter Description
 
-|    参数                         |  描述                                                               |
+|    Parameter or Type            |  Description                                                       |
 |-------------------------------- | -------------------------------------------------------------------|
-| day                             | 需要被转换的时间戳                                                   |
-| tz1                             | 时间戳的时区                                                         |
-| tz2                             | 目标时区                                                            |
+| day                             | This is the date, it can be timestamp, timestamptz and oracle.date |
+| tz1                             | first time zone                                                    |
+| tz2                             | second time zone                                                   |
 
-### 17.2 例子
+### 17.2 Examples
 
 ```SQL
 select oracle.new_time(timestamp '2020-12-12 17:45:18', 'AST', 'ADT') from dual;
@@ -591,18 +590,18 @@ select oracle.new_time(timestamp '2020-12-12 17:45:18', 'CST', 'CDT') from dual;
 
 ## 18. trunc
 
-### 18.1 目的
+### 18.1 Purpose
 
-    trunc函数返回一个日期, 按照指定格式被截断, fmt包括 "Y", "YY", "YYY", "YYYY","YEAR", "SYYYY", "SYEAR", "I", "IY", "IYY", "IYYY", "Q", "WW", "Iw", "W", "DAY", "DY", "D", "MONTH", "MONn", "MM", "RM", "CC", "SCC", "DDD", "DD", "J", "HH", "HH12", "HH24", "MI".
+    The trunc function returns the date, truncated to the specified format, fmt include "Y", "YY", "YYY", "YYYY","YEAR", "SYYYY", "SYEAR", "I", "IY", "IYY", "IYYY", "Q", "WW", "Iw", "W", "DAY", "DY", "D", "MONTH", "MONn", "MM", "RM", "CC", "SCC", "DDD", "DD", "J", "HH", "HH12", "HH24", "MI".
 
-### 18.2 参数描述
+### 18.2 Parameter Description
 
-|    参数                         |  描述                                                               |
+|    Parameter or Type            |  Description                                                       |
 |-------------------------------- | -------------------------------------------------------------------|
-| value                           | 指定的日期（oracle.date, timestamp, timestamptz）                   |
-| fmt                             | 指定的格式, 如果被省略, 默认为 "DDD"                                  |
+| value                           | This is the date, it can be timestamp, timestamptz and oracle.date |
+| fmt                             | The specified format, if omitted, the default is "DDD"             |
 
-### 18.2 例子
+### 18.2 Examples
 
 ```SQL
 select oracle.trunc(cast('2050-12-12 12:12:13' as oracle.date), 'SCC');
@@ -627,18 +626,18 @@ select oracle.trunc(timestamptz '2020-09-27 18:30:21 + 08', 'MONTH');
 
 ## 19. round
 
-### 19.1 目的
+### 19.1 Purpose
 
-    round函数返回一个日期,按照指定的格式四舍五入, fmt 包括了 "Y", "YY", "YYY", "YYYY","YEAR", "SYYYY", "SYEAR", "I", "IY", "IYY", "IYYY", "Q", "WW", "Iw", "W", "DAY", "DY", "D", "MONTH", "MONn", "MM", "RM", "CC", "SCC", "DDD", "DD", "J", "HH", "HH12", "HH24", "MI".
+    The round function returns the date, rounded to the specified format, fmt include "Y", "YY", "YYY", "YYYY","YEAR", "SYYYY", "SYEAR", "I", "IY", "IYY", "IYYY", "Q", "WW", "Iw", "W", "DAY", "DY", "D", "MONTH", "MONn", "MM", "RM", "CC", "SCC", "DDD", "DD", "J", "HH", "HH12", "HH24", "MI".
 
-### 19.2 参数描述
+### 19.2 Parameter Description
 
-|    参数                         |  描述                                                               |
+|    Parameter or Type            |  Description                                                       |
 |-------------------------------- | -------------------------------------------------------------------|
-| value                           | 被转换的日期（oracle.date, timestamp, timestamptz）                  |
-| fmt                             | 指定的格式, 如果被省略, 默认为 "DDD"  
+| value                           | This is the date, it can be timestamp, timestamptz and oracle.date |
+| fmt                             | The specified format, if omitted, the default is "DDD"  
 
-### 19.2 例子
+### 19.2 Examples
 
 ```SQL
 select oracle.round(cast('2051-12-12 19:00:00' as oracle.date), 'SCC');

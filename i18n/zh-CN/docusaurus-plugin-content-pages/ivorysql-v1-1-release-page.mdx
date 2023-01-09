@@ -1,0 +1,75 @@
+---
+id: IvorySQL-Release-1-1
+title: IvorySQL Release - 1.1
+---
+
+# IvorySQL 版本 1.1
+
+
+## [**下载**](https://github.com/IvorySQL/IvorySQL/releases/tag/Ivory_REL_1_1)
+
+## 发行说明
+[**发行日期: 2022年1月25日**]
+### 概述
+IvorySQL 1.1 基于 PostgreSQL 14.1 并包含从 IvorySQL 1.0 开始的各种修复。
+有关主要版本 1.0 中的新功能的信息，请参阅 [IvorySQL 1.0 发行说明](ivorysql-v1-0-release-page).
+
+有关 PostgreSQL 14.1 中的更新和错误修复，请参阅官方 [PostgreSQL 14.1 发行说明](https://www.postgresql.org/docs/release/14.1/).
+
+### 增强功能
+
+- 在 initdb 自动加载 Orafce
+    Orafce 扩展随 IvorySQL 服务器自动安装，所以全部
+    Oracle 兼容的对象和类型开箱即用。 
+
+- 支持 Oracle Compatible Number(p,s) 类型
+    添加对具有可配置精度和比例的 Oracle 兼容数字数据类型的支持 NUMBER[(precision , scale)]
+
+- 允许没有schema限定的 Oracle 兼容对象。
+    [查看细节](https://github.com/IvorySQL/IvorySQL/issues/30)
+
+- 添加 DROP PACKAGE BODY 支持
+   添加对删除包主体而不删除完整包的支持。
+    [查看细节](https://github.com/IvorySQL/IvorySQL/issues/29)
+
+- ### 问题修复
+
+- 修复了 Oracle 兼容文档
+    [问题细节](https://github.com/IvorySQL/IvorySQL/issues/23)
+
+- SELECT sysdate FROM dual 无法工作
+    [问题细节](https://github.com/IvorySQL/IvorySQL/issues/24)
+
+- 修复了 CHAR、VARCHAR、VARCHAR2 和 NVARCHAR2 数据类型的处理
+    问题细节:
+    [1](https://github.com/IvorySQL/IvorySQL/issues/33)
+    [2](https://github.com/IvorySQL/IvorySQL/issues/46)
+
+- 允许日志收集器收集 PACKAGE DDL 语句。
+    [问题细节](https://github.com/IvorySQL/IvorySQL/issues/21)
+
+- 修复了 VARCHAR2 比较运算符的问题。
+    [问题细节](https://github.com/IvorySQL/IvorySQL/issues/25)
+
+- 修复了 make check-world 的回归问题
+    [问题细节](https://github.com/IvorySQL/IvorySQL/issues/39)
+
+- 修复了包主体中定义的游标在丢弃包主体时没有关闭的问题
+    [问题细节](https://github.com/IvorySQL/IvorySQL/issues/54)
+
+## 贡献者
+以下个人作为补丁作者、提交者、审阅者、测试者或问题报告者为本版本做出了贡献。
+
+- Asif Rehman
+- Andy Qinshy
+- Bing Ao
+- Denis Lussier
+- Grant Zhou
+- Haruka Takatsuka 
+- Huajianjin
+- Japin Li
+- Jack Lan
+- Shengbin Zhao
+- Muhammad Usama
+
+**[完整的变更日志](https://github.com/IvorySQL/IvorySQL/commits/Ivory_REL_1_1)**

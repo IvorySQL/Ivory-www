@@ -1,17 +1,17 @@
 ---
 sidebar_position: 7
-sidebar_label: 'UNION'
-title: UNION
+sidebar_label: 'Union Operator'
+title: Union Operator
 Tags:
  - UNION
  - Operator
 ---
 
 ## UNION
-### 概述
-在两个以上的union子句中支持连续使用null。我们将把null的类型转换为最近右边的非null值类型。
+### Overview
+Support continuous use null in more than two union clauses. NULL gets transformed to the type on the nearest right NON NULL value.
 
-### 示例
+### Example
 ```
 select null union select null union select 1.2;
  ?column?

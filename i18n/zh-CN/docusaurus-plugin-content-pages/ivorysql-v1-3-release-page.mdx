@@ -1,0 +1,65 @@
+---
+id: IvorySQL-Release-1-3
+title: IvorySQL 版本 - 1.3
+---
+
+# IvorySQL Release - 1.3
+
+## [**Downolad**](https://github.com/IvorySQL/IvorySQL/releases/tag/Ivory_REL_1_3)
+
+## 发行说明
+[**发行日期: 2022年5月27日**]
+
+### 概述
+
+IvorySQL 1.3 is based on PostgreSQL 14.3 and contains a variety of fixes and new feature from IvorySQL 1.2.
+For information about new features in major release 1.0, see [IvorySQL 1.0 release notes](ivorysql-v1-0-release-page).  
+
+
+This release is compatible with IvorySQL 1.2 and does not require a dump/restore for those running IvorySQL 1.X
+
+However, if you have any GiST indexes on columns of type ltree (supplied by the contrib/ltree extension),
+you should re-index them after updating to IovrySQL 1.3.
+See the second changelog entry of PostgreSQL [14.3 release notes](https://www.postgresql.org/docs/release/14.3/)
+For updates and bug fixes in PostgreSQL 14.3 please refer to the release notes of official PostgreSQL [14.3](https://www.postgresql.org/docs/release/14.3/).
+
+
+### 增强功能
+
+- Support for Anonymous blocks.
+    Anonymous are unnamed PL blocks in PL/iSQL.
+    Unlike named blocks, An anonymous block is not get saved in the Database server and is just for one-time use.
+    [Details](https://github.com/IvorySQL/IvorySQL/issues/56)
+
+- ### 问题修复
+
+- Fixed a server crash using the LEVEL pseudo column.  
+    [issue details](https://github.com/IvorySQL/IvorySQL/issues/80)
+
+- Fixed an issue with using the extended data types in Packages throws an error.  
+    [issue details](https://github.com/IvorySQL/IvorySQL/pull/91)
+
+- Fixed an issue, If the package is created in pg_catalog namespace (implicitly part of search_path), calling the package object without schema qualification throws function/procedure not found error.  
+    [issue details](https://github.com/IvorySQL/IvorySQL/issues/88)
+
+- Fixed an issue with nls_length_semantics is not honored by NCHAR and NVARCHAR  
+    [issue details](https://github.com/IvorySQL/IvorySQL/issues/46)
+
+- Fixed an issue with DROP PACKAGE BODY not cleaning up the package body.  
+    [issue details](https://github.com/IvorySQL/IvorySQL/issues/107)
+
+- Fixed an issue with specifying END label in PL/iSQL was throwing an error.  
+    [issue details](https://github.com/IvorySQL/IvorySQL/issues/67)
+
+
+## 贡献者
+The following individuals have contributed to this release as patch authors,
+committers, reviewers, testers, or reporters of issues.
+
+- Asif Rehman
+- Grant Zhou
+- Jack Lan
+- Shengbin Zhao
+- Muhammad Usama
+
+**[完整的变更日志](https://github.com/IvorySQL/IvorySQL/commits/Ivory_REL_1_3)**

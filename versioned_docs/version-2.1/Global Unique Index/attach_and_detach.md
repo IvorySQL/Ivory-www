@@ -1,21 +1,20 @@
 ---
 sidebar_position: 3
-sidebar_label: '附加和分离'
-title: 附加和分离
+sidebar_label: 'Attach and Detach'
+title: Attach and Detach
 tags:
-  - 附加和分离
+  - Attach and Detach
 ---
 
 
-## 附加语句的全球唯一性保证
+## Global Uniqueness Guarantee with Attach
 
-将新表附加到具有全局唯一索引的分区表时，系统将对所有现有分区进行重复检查。 如果在现有分区中发现与附加表中的元组匹配的重复项，则会引发错误并且附加失败。
+When attaching a new table to a partitioned table with global unique index, system will parform a duplicate check on all existing partitions. If there is a duplicate found in existing partitions that match a tuple in the attached table, an error will be raised and attach will fail.
 
-附加需要所有现有分区上的共享锁（sharedlock）。 如果其中一个分区正在进行并发 INSERT，则附加将等待它先完成。 这可以在未来的版本中改进
+The attach requires a shared lock on all existing partitions. If there is a concurrent INSERT in progress on one of the partitions, the attach will wait for it to finish first. This can be improved in future releases
 
-## 示例
+## Example
 
-**运行命令**
 ```
 create table gidxpart (a int, b int, c text) partition by range (a);
 create table gidxpart1 partition of gidxpart for values from (0) to (100000);
@@ -25,10 +24,7 @@ create table gidxpart2 (a int, b int, c text);
 insert into gidxpart2 (a, b, c) values (150000, 572814, 'dup inserted on gidxpart2');
 
 alter table gidxpart attach partition gidxpart2 for values from (100000) to (199999); 
-```
-
-**输出**
-```
 ERROR:  could not create unique index "gidxpart1_b_idx"
 DETAIL:  Key (b)=(572814) is duplicated.
+
 ```

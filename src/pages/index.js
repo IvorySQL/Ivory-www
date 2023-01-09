@@ -2,14 +2,10 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import IndexIntroduce from '../components/index-introduce.js';
-import IndexActivity from '../components/index-activity.js';
-import IndexContribute from '../components/index-contribute.js';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import HomepageFeatures from '../components/HomepageFeatures';
+import Translate, {translate} from '@docusaurus/Translate';
 import '../css/index.css';
-// import styles from './index.module.css';
-// import HomepageFeatures from '../components/HomepageFeatures';
-// import Translate, {translate} from '@docusaurus/Translate';
 
 function HomepageHeader() {
   return (
@@ -44,13 +40,10 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      id="Ivory"
       description="Open Source Oracle compatible PostgreSQL">
       <main>
-      <HomepageHeader />
-      <IndexIntroduce></IndexIntroduce>
-      <IndexActivity></IndexActivity>
-      <IndexContribute></IndexContribute>
+        <HomepageHeader />
+        <HomepageFeatures />
       </main>
     </Layout>
   );
