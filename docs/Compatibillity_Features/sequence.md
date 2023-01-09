@@ -1,24 +1,22 @@
 ---
 sidebar_position: 10
-sidebar_label: '序列'
-title: 序列
+sidebar_label: 'Sequence'
+title: Sequence
 Tags:
  - Sequence
- - 序列
 ---
 
-## 序列
-### 概述
-可以使用列引用调用nextval或currval。
-
-### 语法
+## Sequence Syntax Enhancements
+### Overview
+Column reference can be used to call nextval or currval.
+### Syntax
 ```
 SELECT [ database {schema} | schema ] sequence {nextval | currval};
 ```
-#### **参数**
+#### **Parameters**
 ```sequence```
-	序列名.  
-### 示例
+	Sequence name.  
+### Example
 ```
 create sequence sq;
 

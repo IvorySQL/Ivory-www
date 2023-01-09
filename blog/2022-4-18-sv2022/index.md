@@ -1,111 +1,87 @@
 ---
 slug: IvorySQL-sv
-title: IvorySQL亮相于PostgresConf SV 2022 硅谷Postgres大会
+title: IvorySQL at PostgresConf SV 2022 
 authors: [official]
 authorTwitter: IvorySql
 tags: [IvorySQL,PostgresConf SV , Database, Oracle Compatible, PostgreSQL, Join Us]
 ---
 
-> 硅谷Postgres会议是西海岸最大的PG会议，也是美国乃至全球Postgres年度重要会议之一，于2022年4月7日至8日（PDT）在美国加利福尼亚州圣何塞希尔顿酒店召开。作为面向全球PostgreSQL技术专家、从业者、爱好者的年度技术交流活动，硅谷会议致力于汇集和讨论关于人、Postgres和数据间的关系！会议与主办地硅谷一样极具包容和公平精神，这里汇集了最优秀的演讲者、听众和赞助商，所有人努力为全球Postgres生态系统创造发展机会。
->
-> 会议现场人数大概有200多人，是疫情以来聚集人数最多的一次线下会议。
->
-> **社区核心人员Bruce Momjian出席**，会议由PostgresConf,Joshua D.Drake, Jim Mlodgenski 等组织。来自中国、美国、加拿大、巴西、西班牙、德国、印度、巴基斯坦等多个国家的人员参与。
+The Postgres Conference in Silicon Valley is the largest PG conference on the West Coast and one of the most important Postgres conferences of the year in the US and globally. It will be held on April 7-8, 2022 (PDT) at the Hilton Hotel SAN Jose, California, USA. As an annual technology event for PostgreSQL technologists, practitioners, and enthusiasts around the world, the Silicon Valley Conference is dedicated to bringing together and discussing the relationship between people, Postgres, and data! The conference is as inclusive and fair as silicon Valley, bringing together the best speakers, audiences and sponsors, all working to create growth opportunities for the global Postgres ecosystem.
+
+ About 200 people attended the meeting, the largest offline meeting since the outbreak. 
+
+**Bruce Momjian, a key member of the community**, attended the conference, which was organized by PostgresConf,Joshua D.Drake, Jim Mlodgenski, and others. People from the United States,China, Canada, Brazil, Spain, Germany, India, Pakistan and other countries participated.
+
+**Grant Zhou, head of Highgo North America Research Institute and Secretary general of PostgreSQL China International Advisory Committee, was invited to participate in PostgreSQL internal development discussions and community project contributions.** 
+
+The following is a two-day Postgres conference briefing in Silicon Valley brought to you by the IvorySQL open source database community.
+
+## Some of the speech
+
+**Digital Rights and Privacy: Concerns for the 21st century--by Andres Arrieta**
+
+The Electronic Frontier Foundation has been protecting and fighting for our civil liberties for over 30 years. In those 30 years a lot has happened: Our relationship to the internet has fundamentally changed, and yet, in many ways, our understanding of how it works has remained stagnant. 30 years ago, the Internet was a mystical place of wizardry with many unknowns, and a realm which was difficult to access. Today it’s a core part of our life that we have become reliant on, and while it has become far easier than ever to access the many gifts that the Internet provides, understanding of how it works - from policy makers to enforcement agencies - continues to lag. During that time, EFF and its mission have grown to cover many of the aspects that technology has brought for better or worse and to help protect those impacted by it, while ensuring a bright future with innovation that improves our lives. So what is happening today and where are our efforts going? Why have some issues like privacy and competition become so strongly intertwined, and what new opportunities and threats lay ahead? I’ll walk you through some of our work, some of the areas of concern, and some of the things I believe will help us work towards a better future.
 
 
 
-**瀚高北美研究院兼中国PostgreSQL分会国际顾问委员会秘书长Grant Zhou作为唯一中国代表，将携IvorySQL项目亮相本次会议。**
-
-以下是由**IvorySQL开源数据库社区**为您带来的硅谷Postgres两日会议简报。
-
+**Past, Present, and Future of Logical Replication--by Amit Kapila**
+In this talk, I will tell how the Logical Replication has been evolved over years in PostgreSQL. This will explain some of the major recent enhancements like facilitating logical replication of two-phase and large in-progress transactions. I will share my views on how this technology can be leveraged to build a highly scalable and available database solution for large Enterprises. After that, I will also talk about some of the important enhancements being discussed in this technology area for future releases of PostgreSQL. I'll also cover how this technology can be enhanced for data migration from PostgreSQL to other databases.
 
 
 
+**IvorySQL--An Open Source Oracle-compatible Database Based on PostgreSQL--by GRANT ZHOU**
+There are many users who need to migrate their applications from Oracle to the open source Postgres, but in order to support the new database, users often need to re-develop the application, which is inconvenient. If there is a database based on Postgres and compatible with most Oracle syntax and functions, it will be too convenient for customers. However, the official Postgres project will not accept this kind of code submission. After all, Postgres is Postgres, and Oracle is Oracle. So, let's make an Oracle compatible database. This talk will introduce how to make a database compatible with Oracle syntax based on PG, and introduce the IvorySQL project. This project is an open source project (Apache 2.0) led by Highgo Software, and currently has released version 1.2 based on PostgreSQL 14.2. Welcome everyone to contribute on this open source Oracle compatible database - IvorySQL, powered by PostgreSQL.
 
-## 部分演讲议题
+
+
+**Non-Relational Postgres--by Bruce Momjian**
+Postgres has always had strong support for relational storage. However, there are many cases where relational storage is either inefficient or overly restrictive. This talk shows the many ways that Postgres has expanded to support non-relational storage, specifically the ability to store and index multiple values, even unrelated ones, in a single database field. Such storage allows for greater efficiency and access simplicity, and can also avoid the negatives of entity-attribute-value (eav) storage. The talk will cover many examples of multiple-value-per-field storage, including arrays, range types, geometry, full text search, xml, json, and records.
 
 
 
-**IvorySQL--一个基于PostgreSQL的兼容Oracle的开源数据库 --by GRANT ZHOU**
+**Using Global database in Amazon Aurora PostgreSQL--by Shayon Sanyal and Sukhpreet Bedi**
+An Amazon Aurora Global database is designed for globally distributed applications, allowing a single Amazon Aurora database to span multiple AWS Regions. It replicates your data with no impact on database performance, enables fast local reads with low latency in each Region, and provides disaster recovery (DR) from Region-wide outages. In this session, learn how to plan for cross-Region DR and easily scale Aurora reads across the world to place your applications close to your users. You also learn how to meet your recovery point objective (RPO) and recovery time objective (RTO) with Amazon Aurora global databases.
 
-有很多用户需要将他们的应用程序从Oracle迁移到开放源码的Postgres，但是为了支持新的数据库，用户经常需要重新开发应用程序，这很不方便。如果有一个基于Postgres的数据库，并且兼容大多数Oracle语法和函数，对客户来说就太方便了。然而官方的Postgres项目不接受这种代码提交。毕竟，Postgres是Postgres, Oracle是Oracle。因此，IvorySQL项目团队创建一个Oracle兼容的数据库。
 
-本演讲中介绍了如何基于PG实现与Oracle语法兼容的数据库，并介绍IvorySQL项目。这个项目是一个开源项目(Apache 2.0)，由Highgo软件领导，目前已经发布了基于PostgreSQL 14.2版本的IvorySQL 1.2。
 
-同时欢迎大家为这个开源的侧重Oracle兼容性的数据库——IvorySQL做出贡献。
+**Amazon Babelfish for Aurora--by chandra pathivada**
+Now the Babelfish for Aurora is available. This presentation is about how Babelfish helps customers to migrate SQL Server workloads to Postgres. In this presentation, we are going to give a demo of what is Babelfish , the internals of Aurora ,Aurora for SQL Server DBAs using Babelfish, and Labs on Application Migration.
 
- 
 
-**非关系型Postgres --by Bruce Momjian**
 
-Postgres一直对关系存储提供强大的支持。然而，在许多情况下，关系存储要么效率低下，要么限制过度。这个演讲展示了Postgres扩展到支持非关系存储的许多方式，特别是在一个数据库字段中存储和索引多个值(甚至是不相关的值)的能力。这种存储可以提高效率和访问的简单性，还可以避免实体-属性-值(eav)存储的缺点。演讲涵盖多个字段多值存储的例子，包括数组、范围类型、几何图形、全文搜索、xml、json和记录。
-
- 
-
-**数字权力和隐私：21世纪的关注--by Andres Arrieta**
-
-30多年来，电子前沿基金会一直在保护和争取我们的公民自由。在这30年里发生了很多事情:我们与互联网的关系从根本上发生了改变，然而，在很多方面，我们对互联网如何运作的理解仍然停滞不前。如今，互联网已经成为我们生活中不可或缺的核心部分，我们越来越依赖互联网。虽然我们比以往任何时候都更容易接触到互联网提供的众多礼物，但决策者和执法机构对互联网如何运作的理解仍然滞后。在此期间，电子前沿基金会及其使命已经涵盖了技术带来的好或坏的许多方面，并帮助保护那些受其影响的人，同时确保一个光明的未来，通过创新改善我们的生活。
-
-Andres Arrieta向大家介绍了我们的一些工作、一些关切的领域以及Andres Arrieta认为将有助于我们朝着更美好的未来努力的一些事情。主要是关于数据隐私和消费者权利的理论视角。讨论了隐私的不同方面以及保护个人隐私的选项。
-
- 
-
-**逻辑复制的过去、现在和未来--by Amit Kapila**
-
-在这次演讲中，Amit Kapila讲述了逻辑复制在PostgreSQL中是如何发展的。这将解释最近的一些最近的主要增强，比如促进两阶段和正在进行的大型事务的逻辑复制。并分享了Amit Kapila对如何利用该技术为大型企业构建高度可伸缩和可用的数据库解决方案的看法。在那之后，还讨论了在PostgreSQL未来版本中在这个技术领域中讨论的一些重要增强。并且介绍如何增强这项技术，以便将数据从PostgreSQL迁移到其他数据库。
-
- 
-
-**现代原生云应用的传记--by Karthik Ranganathan**
-
- 
-
-现代云原生应用程序过着令人兴奋的生活 - 从它们在云中诞生，到处理巨大的计划外成功，再到在云中断中幸存下来并处理全球客户。在本次演讲中，Yugabyte 首席技术官 Karthik Ranganathan 从数据层的角度介绍了Yugabyte 如何处理双向表级复制和高可用性。
-
- 
-
-**Aurora的亚马逊Babelfish--by chandra pathivada**
-
-现在奥罗拉的Babelfish已经上市了。这个演示是关于Babelfish如何帮助客户迁移SQL Server工作负载到Postgres。在这个演示中，chandra pathivada演示了什么是Babelfish, Aurora的内部结构，使用Babelfish的SQL Server dba的Aurora，以及应用程序迁移实验室。
+**The Biography of a Modern Cloud Native Application--by Alexandra Elchinoff and Karthik Ranganathan**
+Modern cloud native applications lead exciting lives - from their birth in the cloud and dealing with massive unplanned success to surviving cloud outages and handling customers worldwide. In this talk, Yugabyte CTO Karthik Ranganathan walks through the eventful life of a successful cloud native app, as seen from the perspective of the data layer.
 
 
 
 
 
-## 现场照片
+## Some of the pictures
 
-![p](p-one.png)
+![po](po-one.png)
 
-![p](p-two.png)
+![po](po-two.png)
 
-![p](p-three.png)
+![po](po-three.png)
 
-![p](p-four.png)
+![po](po-four.png)
 
-![p](p-five.png)
-
-
+![po](po-five.png)
 
 
 
-## 更多详情内容
 
-**2022年硅谷Postgres会议官方网址：**
+
+## Postgres Conference in Silicon Valley 2022
+
 https://postgresconf.org/conferences/SV2022
 
 
 
-## 关于IvorySQL
-
-IvorySQL项目是一个具有广泛生态基础和中国特色的PG开源衍生项目，是**瀚高公司**设计研发的一款具备强大Oracle兼容能力的开源数据库。
-具备高兼容性和高可用性，并致力于遵守open-source ways。
-IvorySQL社区欢迎并赞赏所有类型的贡献，期待您的加入！
-
 ---
 
->通过订阅邮件列表加入IvorySQL社区： 
+>Join the IvorySQL community by subscribing to mailing lists:  
 >- **[Hackers List](https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/)**  
 >- **[Users List](https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/)**  
->- 官方微信公众号：IvorySQL开源数据库社区
->
->***还有，别忘了在[Github](https://github.com/IvorySQL/IvorySQL)给我们一个 :star: ***
+>  
+>***Also, don't forget to give us a :star: on [Github](https://github.com/IvorySQL/IvorySQL)***

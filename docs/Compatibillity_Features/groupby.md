@@ -1,16 +1,15 @@
 ---
 sidebar_position: 6
-sidebar_label: 'GROUP BY'
+sidebar_label: 'Group By'
 title: Group By
 Tags:
  - Group By
  - Groupby
 ---
+## Overview
+In Oracle compatible_mode, GROUP BY clause requires all target columns to be listed in GROUP BY even when the PRIMARY KEY column exists in GROUP BY.
 
-## 概述
-当compatible_mode为oracle时，即使group by子句中有主键列，目标列也必须存在于group by子句中。
-
-## 示例
+## Example
 ```
 set compatible_mode to oracle;
 
