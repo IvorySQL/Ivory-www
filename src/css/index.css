@@ -1,6 +1,5 @@
 
 .homepage-header{
-  min-width: 350px;
   height: 28em;
   background-image: url(../../svg/banner/banner-balloon-web.png);
   background-size: 100% 100%;
@@ -37,7 +36,6 @@
 #Link{
   width: 60%;
   height: 300%;
-  min-width: 350px;
 }
 #header-link-getstart{
   width: 117px;
@@ -55,7 +53,6 @@
   height: 35px;
   position: relative;
   left:25px;
-  /* border: 1px solid #FFFFFF; */
   background-color: #fff1cc;
   border-radius: 3px;
   border: 1px solid #626262;
@@ -112,8 +109,6 @@
     font-family: Alibaba PuHuiTi;
     font-weight: 400;
     color: #ffffff;
-    line-height: 14px;
-    width: 500px;
     position: relative;
     top: 39px;
   }
@@ -156,7 +151,7 @@
 }
 @media screen and (max-width: 997px) {
   #id-homepage-header {
-    height: 30em;
+    height: 23em;
   }
   .header-font{
     left: 20%;
@@ -167,28 +162,23 @@
   .header-title{
     width: 50vw;
     font-size: 25px;
-    line-height: 40px;
-    text-align: center;
-    min-width: 20vw;
+    position: relative;
+    top: -30%;
   }
   .header-content{
     width: 70vw;
     height: 10vh;
     font-size: 12px;
-    line-height: 40px;
-    text-align: center;
-    min-width: 20vw;
     position: relative;
     left: -15%;
+    top: -30%;
   }
   #Link{
     width: 70vw;
     height: 20vh;
-    min-width: 20vw;
-    display: inline;
-    text-align: center;
     position: relative;
     left: -17%;
+    top: -30%;
   }
 }
 @media screen and (max-width: 850px) {
@@ -225,27 +215,78 @@
 @media screen and (max-width: 660px) {
   #id-homepage-header{
     background-image: url(../../svg/banner/banner-balloon-mobile.png);
-    height: 22em;
+    height: 18em;
   }
   .header-font{
     position: relative;
     top: 30px;
   }
+  .header-title{
+    width: 50vw;
+    font-size: 5px;
+    position: relative;
+    top: -10%;
+  }
+  .header-content{
+    width: 70vw;
+    height: 10vh;
+    position: relative;
+    left: -20%;
+    top: -30%;
+  }
+  #Link{
+    width: 70vw;
+    height: 20vh;
+    position: relative;
+    left: -22%;
+    top: -30%;
+  }
+}
+@media screen and (max-width: 560px) {
+  #id-homepage-header{
+    background-image: url(../../svg/banner/banner-balloon-mobile.png);
+    height: 16em;
+  }
+  .header-font{
+    position: relative;
+    top: 30px;
+  }
+  .header-title{
+    width: 50vw;
+    font-size: 5px;
+    line-height: 40px;
+    position: relative;
+    top: -10%;
+  }
+  .header-content{
+    width: 70vw;
+    height: 10vh;
+    font-size: 2px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    left: -20%;
+    top: -30%;
+  }
+  #Link{
+    width: 70vw;
+    height: 20vh;
+    position: relative;
+    left: -22%;
+    top: -30%;
+  }
 }
 @media screen and (max-width: 480px) {
   #id-homepage-header{
-    height: 18em;
+    height: 14em;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 420px) {
   #id-homepage-header{
-    height: 18em;
+    background-image: url(../../svg/banner/banner-balloon-mobile\(1\).png);
+    height: 16em;
+  }
+  #id-homepage-header{
+    height: 16em;
   }
 }
-/* @media screen and (max-width: 660px) {
-  #id-homepage-header{
-    background-image: url(../../svg/banner/phone.png);
-    background-size: 100% 100%;
-    height: 40vh;
-  }
-} */
