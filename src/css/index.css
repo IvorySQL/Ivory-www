@@ -34,8 +34,10 @@
   top: 19px;
 }
 #Link{
-  width: 60%;
+  width: 100%;
   height: 300%;
+  position: relative;
+  top: 300%;
 }
 #header-link-getstart{
   width: 117px;
@@ -87,12 +89,17 @@
 }
 @media screen and (min-width: 2150px) {
   #id-homepage-header{
-    height: 67em;
+    height: 47em;
   }
 }
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1650px) {
   .homepage-header{
-    height: 50em;
+    height: 43em;
+  }
+  .header-font{
+    position: relative;
+    top: 30%;
+    left: 10%;
   }
   .header-title{
     width: 75%;
@@ -164,6 +171,7 @@
     font-size: 25px;
     position: relative;
     top: -30%;
+    left: -20%;
   }
   .header-content{
     width: 70vw;
@@ -174,11 +182,11 @@
     top: -30%;
   }
   #Link{
-    width: 70vw;
+    width: 20em;
     height: 20vh;
     position: relative;
-    left: -17%;
-    top: -30%;
+    top: 30%;
+    left: -20%;
   }
 }
 @media screen and (max-width: 850px) {
@@ -187,22 +195,20 @@
   }
   .header-font{
     position: relative;
-    top: 50px;
+    top: 30%;
   }
   #Link{
     position: relative;
-    top: -10%;
+    top: 10%;
   }
 }
 @media screen and (max-width: 753px) {
   #id-homepage-header{
-    height: 20em;
+    height: 18em;
   }
   .header-title{
-    font-size: 10px;
+    font-size: 20px;
     width: 55vw;
-    position: relative;
-    left: -20px;
   }
   .header-content{
     font-size: 1.5vh;
@@ -219,13 +225,15 @@
   }
   .header-font{
     position: relative;
-    top: 30px;
+    top: 30%;
+    left: 150px;
   }
   .header-title{
-    width: 50vw;
-    font-size: 5px;
+    width: 20em;
+    font-size: 1.2em;
     position: relative;
     top: -10%;
+    
   }
   .header-content{
     width: 70vw;
@@ -235,11 +243,10 @@
     top: -30%;
   }
   #Link{
-    width: 70vw;
+    width: 20em;
     height: 20vh;
     position: relative;
-    left: -22%;
-    top: -30%;
+    top: 10%;
   }
 }
 @media screen and (max-width: 560px) {
@@ -249,36 +256,48 @@
   }
   .header-font{
     position: relative;
-    top: 30px;
+    top: 50px;
+    left: 30%;
   }
   .header-title{
-    width: 50vw;
-    font-size: 5px;
-    line-height: 40px;
+    width: 15em;
+    font-size: 1em;
     position: relative;
-    top: -10%;
+    top: 10%;
   }
   .header-content{
     width: 70vw;
     height: 10vh;
     font-size: 2px;
-    line-height: 40px;
-    text-align: center;
     position: relative;
     left: -20%;
     top: -30%;
   }
   #Link{
-    width: 70vw;
+    width: 20em;
     height: 20vh;
     position: relative;
     left: -22%;
-    top: -30%;
+    top: 20%;
   }
 }
 @media screen and (max-width: 480px) {
   #id-homepage-header{
     height: 14em;
+  }
+  #Link{
+    width: 20em;
+    height: 20vh;
+    position: relative;
+    left: -22%;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .header-font{
+    position: relative;
+    top: 30px;
+    left: 40%;
   }
 }
 @media screen and (max-width: 420px) {
@@ -288,5 +307,12 @@
   }
   #id-homepage-header{
     height: 16em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .header-font{
+    position: relative;
+    top: 30px;
+    left: 50%;
   }
 }

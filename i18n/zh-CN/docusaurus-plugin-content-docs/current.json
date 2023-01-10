@@ -33,7 +33,6 @@
   },
   "sidebar.tutorialSidebar.category.Global Unique Index": {
     "message": "全局唯一索引",
-    "description": "The label for category Global Unique Index in sidebar"
+    "description": "The label for category Global Unique Index in sidebar tutorialSidebar"
   }
-
 }
