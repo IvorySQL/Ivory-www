@@ -91,14 +91,14 @@
   #id-homepage-header{
     height: 37em;
   }
-  .header-title{
+  /* .header-title{
     width: 35%;
     font-size: 45px;
     font-family: Gilroy;
     font-weight: 800;
     color: #ffffff;;
     line-height: 61px;
-  }
+  } */
 }
 @media screen and (min-width: 1500px) {
   .homepage-header{
