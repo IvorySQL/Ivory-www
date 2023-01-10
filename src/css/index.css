@@ -11,7 +11,7 @@
   height: 1em;
   position: relative;
   top: 122px;
-  left: 250px;
+  left: 200px;
 }
 .header-title{
   width: 55%;
@@ -87,14 +87,22 @@
   top: 10%;
   right: 18%;
 }
-@media screen and (min-width: 2150px) {
+@media screen and (min-width: 1595px) {
   #id-homepage-header{
-    height: 47em;
+    height: 37em;
+  }
+  .header-title{
+    width: 35%;
+    font-size: 45px;
+    font-family: Gilroy;
+    font-weight: 800;
+    color: #ffffff;;
+    line-height: 61px;
   }
 }
-@media screen and (min-width: 1650px) {
+@media screen and (min-width: 1500px) {
   .homepage-header{
-    height: 43em;
+    height: 33em;
   }
   .header-font{
     position: relative;
@@ -102,14 +110,14 @@
     left: 10%;
   }
   .header-title{
-    width: 75%;
+    width: 95%;
     font-size: 45px;
     font-family: Gilroy;
     font-weight: 800;
     color: #ffffff;;
-    line-height: 55px;
+    line-height: 61px;
   }
-  .header-content{
+  /* .header-content{
     width: 75%;
     height: 104px;
     font-size: 26px;
@@ -118,7 +126,7 @@
     color: #ffffff;
     position: relative;
     top: 39px;
-  }
+  } */
   #header-link-getstart{
     width: 167px;
     height: 50px;
@@ -151,9 +159,12 @@
     left: -11px;
   }
 }
-@media screen and (max-width: 1100px) {
-  #id-homepage-header{
-    height: 25em;
+@media screen and (max-width: 1245px) {
+  .header-title{
+    width: 18em;
+    font-size: 25px;
+    position: relative;
+    top: -30%;
   }
 }
 @media screen and (max-width: 997px) {
@@ -165,9 +176,11 @@
     height: 20vh;
     display: grid;
     justify-content: center;
+    position: relative;
+    left: 20%;
   }
   .header-title{
-    width: 50vw;
+    width: 17em;
     font-size: 25px;
     position: relative;
     top: -30%;
@@ -260,7 +273,7 @@
     left: 30%;
   }
   .header-title{
-    width: 15em;
+    width: 16em;
     font-size: 1em;
     position: relative;
     top: 10%;
@@ -284,6 +297,11 @@
 @media screen and (max-width: 480px) {
   #id-homepage-header{
     height: 14em;
+  }
+  .header-font{
+    position: relative;
+    top: 30px;
+    left: 30%;
   }
   #Link{
     width: 20em;
