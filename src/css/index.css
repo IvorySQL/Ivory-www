@@ -91,14 +91,6 @@
   #id-homepage-header{
     height: 37em;
   }
-  /* .header-title{
-    width: 35%;
-    font-size: 45px;
-    font-family: Gilroy;
-    font-weight: 800;
-    color: #ffffff;;
-    line-height: 61px;
-  } */
 }
 @media screen and (min-width: 1500px) {
   .homepage-header{
@@ -117,16 +109,6 @@
     color: #ffffff;;
     line-height: 61px;
   }
-  /* .header-content{
-    width: 75%;
-    height: 104px;
-    font-size: 26px;
-    font-family: Alibaba PuHuiTi;
-    font-weight: 400;
-    color: #ffffff;
-    position: relative;
-    top: 39px;
-  } */
   #header-link-getstart{
     width: 167px;
     height: 50px;
@@ -251,7 +233,6 @@
     font-size: 1.2em;
     position: relative;
     top: -10%;
-    
   }
   .header-content{
     width: 70vw;
@@ -292,8 +273,6 @@
     top: -30%;
   }
   #Link{
-    width: 20em;
-    height: 20vh;
     position: relative;
     left: -22%;
     top: 20%;
@@ -309,10 +288,7 @@
     left: 30%;
   }
   #Link{
-    width: 20em;
-    height: 20vh;
     position: relative;
-    left: -22%;
     top: 10%;
   }
 }
