@@ -167,6 +167,11 @@
     top: -30%;
   }
 }
+@media screen and (max-width: 1185px) {
+  #id-homepage-header {
+    height: 23em;
+  }
+}
 @media screen and (max-width: 997px) {
   #id-homepage-header {
     height: 23em;
