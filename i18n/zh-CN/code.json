@@ -1,11 +1,11 @@
 {
   "theme.NotFound.title": {
     "message": "没有发现页面",
-    "description": "The title of the 404 page"
+    "description": "The title of the 404 page (错误 - 404)"
   },
   "theme.NotFound.p1": {
     "message": "我们找不到您要找的页面",
-    "description": "The first paragraph of the 404 page"
+    "description": "The first paragraph of the 404 page (我们找不到您要找的页面)"
   },
   "theme.NotFound.p2": {
     "message": "请联系将您链接到原始 URL 的站点的所有者，并让他们知道他们的链接已损坏",
@@ -227,87 +227,5 @@
   },
   "Open Source Oracle compatible PostgreSQL": {
     "message": "开源的兼容ORACLE的PostgreSQL"
-  },
-  "Open Source PostgreSQL with Oracle compatibility Features": {
-    "message": "基于PostgreSQL兼容Oracle的开源数据库"
-  },
-  "theme.ErrorPageContent.title": {
-    "message": "页面已崩溃。",
-    "description": "The title of the fallback page when the page crashed"
-  },
-  "theme.ErrorPageContent.tryAgain": {
-    "message": "重试",
-    "description": "The label of the button to try again when the page crashed"
-  },
-  "theme.admonition.note": {
-    "message": "备注",
-    "description": "The default label used for the Note admonition (:::note)"
-  },
-  "theme.admonition.tip": {
-    "message": "提示",
-    "description": "The default label used for the Tip admonition (:::tip)"
-  },
-  "theme.admonition.danger": {
-    "message": "危险",
-    "description": "The default label used for the Danger admonition (:::danger)"
-  },
-  "theme.admonition.info": {
-    "message": "信息",
-    "description": "The default label used for the Info admonition (:::info)"
-  },
-  "theme.admonition.caution": {
-    "message": "警告",
-    "description": "The default label used for the Caution admonition (:::caution)"
-  },
-  "theme.colorToggle.ariaLabel": {
-    "message": "切换浅色/暗黑模式（当前为{mode}）",
-    "description": "The ARIA label for the navbar color mode toggle"
-  },
-  "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "暗黑模式",
-    "description": "The name for the dark color mode"
-  },
-  "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "浅色模式",
-    "description": "The name for the light color mode"
-  },
-  "theme.docs.breadcrumbs.home": {
-    "message": "主页面",
-    "description": "The ARIA label for the home page in the breadcrumbs"
-  },
-  "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "页面路径",
-    "description": "The ARIA label for the breadcrumbs"
-  },
-  "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} 个项目",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
-  },
-  "theme.docs.versionBadge.label": {
-    "message": "版本：{versionLabel}"
-  },
-  "theme.CodeBlock.wordWrapToggle": {
-    "message": "切换自动换行",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
-  },
-  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "打开/收起侧边栏菜单「{label}」",
-    "description": "The ARIA label to toggle the collapsible sidebar category"
-  },
-  "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "选择语言",
-    "description": "The label for the mobile language switcher dropdown"
-  },
-  "theme.blog.post.readMoreLabel": {
-    "message": "阅读 {title} 的全文",
-    "description": "The ARIA label for the link to full blog posts from excerpts"
-  },
-  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Close navigation bar",
-    "description": "The ARIA label for close button of mobile sidebar"
-  },
-  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Toggle navigation bar",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
   }
 }
