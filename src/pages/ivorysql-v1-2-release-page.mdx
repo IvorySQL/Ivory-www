@@ -1,0 +1,52 @@
+---
+id: IvorySQL-Release-1-2
+title: IvorySQL Release - 1.2
+---
+
+# IvorySQL Release - 1.2
+
+## [**Download**](https://github.com/IvorySQL/IvorySQL/releases/tag/Ivory_REL_1_2)
+
+## Release Notes
+[**Release Date: February 28, 2022**]
+### Overview
+IvorySQL 1.2 is based on PostgreSQL 14.2 and contains a variety of fixes and new feature from IvorySQL 1.1.
+For information about new features in major release 1.0, see [IvorySQL 1.0 release notes](ivorysql-v1-0-release-page).  
+
+This release is compatible with IvorySQL 1.1 and does not require a dump/restore for those running IvorySQL 1.1
+
+However, a couple of bug have been fixed in PostgreSQL 14.2 around possible index corruption (See first and the
+second change-log entries of PostgreSQL [14.2 change-log](https://www.postgresql.org/docs/release/14.2/) ),
+If any of those cases apply to you, It is recommended to reindex the affected indexes after updating to IvorySQL 1.2  
+
+For updates and bug fixes in PostgreSQL 14.2 please refer to Official PostgreSQL release
+notes of [14.2](https://www.postgresql.org/docs/release/14.2/).
+
+
+### Enhancements
+
+- Support for Hierarchical Queries.  
+    Hierarchical queries allow to select rows in a hierarchical order using the hierarchical query
+    clause for tables that contains the hierarchical data.  
+    [Details](https://github.com/IvorySQL/IvorySQL/pull/61)
+
+- ### Bug fixes
+
+- Fixed an issue with Package Array type variables losing value after first execution.  
+    [issue details](https://github.com/IvorySQL/IvorySQL/issues/53)
+
+- Fixed an issue with Package functions fails to use user defined type as their return type.  
+    [issue details](https://github.com/IvorySQL/IvorySQL/issues/50)
+
+
+## Contributors
+The following individuals have contributed to this release as patch authors,
+committers, reviewers, testers, or reporters of issues.
+
+- Asif Rehman
+- Grant Zhou
+- Jack Lan
+- Shengbin Zhao
+- Muhammad Usama
+
+**[Complete Changelog](https://github.com/IvorySQL/IvorySQL/commits/Ivory_REL_1_2)**

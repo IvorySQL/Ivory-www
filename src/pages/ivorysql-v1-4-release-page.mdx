@@ -1,0 +1,40 @@
+---
+id: IvorySQL-Release-1-4
+title: IvorySQL Release - 1.4
+---
+
+# IvorySQL Release - 1.4
+
+## [**Download**](https://github.com/IvorySQL/IvorySQL/releases/tag/Ivory_REL_1_4)
+
+## Release Notes
+[**Release Date: Jun 28, 2022**]
+### Overview
+
+IvorySQL 1.4 is based on PostgreSQL 14.4 and contains a variety of fixes and new feature from IvorySQL 1.3.
+
+This release is compatible with IvorySQL 1.3 and does not require a dump/restore for those running IvorySQL 1.X. 
+
+It contains a variety of fixes from 14.3, specifically fixes an issue with [CREATE INDEX CONCURRENTLY](https://www.postgresql.org/docs/current/sql-createindex.html)
+and [REINDEX CONCURRENTLY](https://www.postgresql.org/docs/current/sql-reindex.html) that could cause silent data corruption of indexes.
+Prior to the fix, CREATE INDEX CONCURRENTLY and REINDEX CONCURRENTLY could build indexes that would have missing entries, causing
+SELECT queries that used the index to not find certain rows. More details can be found at [14.4 release](https://www.postgresql.org/about/news/postgresql-144-released-2470/)
+
+if you have any indexes that were created using the CONCURRENTLY option under 14.X, you should re-index them after updating. See the first
+changelog entry of PostgreSQL [14.4 release notes](https://www.postgresql.org/docs/release/14.4/)
+
+For updates and bug fixes in PostgreSQL 14.4 please refer to the official PostgreSQL [14.4 release notes](https://www.postgresql.org/docs/release/14.4/).
+
+
+### Bug Fixes
+- Fixed package privileges issue. [Details](https://github.com/IvorySQL/IvorySQL/pull/139)
+
+
+### Contributions
+The following individuals have contributed to this release as patch authors, committers, reviewers, testers, or reporters of issues.
+- Asif Rehman
+- Grant Zhou
+- Shengbin Zhao
+- Muhammad Usama
+
+**[Complete Changelog](https://github.com/IvorySQL/IvorySQL/commits/Ivory_REL_1_4)**

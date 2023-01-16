@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "1.5",
+    "description": "The label for version 1.5"
+  },
+  "sidebar.tutorialSidebar.category.Compatibility Features": {
+    "message": "Oracle 兼容功能",
+    "description": "The label for category Compatibility Features in sidebar tutorialSidebar"
+  }
+}

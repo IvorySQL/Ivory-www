@@ -1,0 +1,7 @@
+contact_links:
+  - name: Join IvorySQL Website mailing list
+    url: https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/
+    about: Discussion of development and coordination of the IvorySQL Website.
+  - name: Join IvorySQL Documentation mailing list
+    url: https://lists.ivorysql.org/postorius/lists/ivorysql-docs.ivorysql.org/
+    about: Discussion regarding IvorySql documentation
