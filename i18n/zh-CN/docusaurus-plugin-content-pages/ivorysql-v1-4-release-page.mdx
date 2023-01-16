@@ -1,0 +1,37 @@
+---
+id: IvorySQL-Release-1-4
+title: IvorySQL 版本 - 1.4
+---
+
+# IvorySQL Release - 1.4
+
+## [**Downolad**](https://github.com/IvorySQL/IvorySQL/releases/tag/Ivory_REL_1_4)
+
+## 发行说明
+[**发行日期: 2022年6月28日**]
+
+### 概述
+
+IvorySQL 1.4 基于 PostgreSQL 14.4 并包含 IvorySQL 1.3 的各种修复和新功能。
+
+此版本与 IvorySQL 1.3 兼容，并且不需要为运行 IvorySQL 1.X 的用户进行数据备份/恢复。
+
+它包含从 14.3 开始的各种修复，特别修复了 [CREATE INDEX CONCURRENTLY](https://www.postgresql.org/docs/current/sql-createindex.html) 和 [REINDEX CONCURRENTLY](https://www.postgresql.org/docs/current/sql-reindex.html) ，这可能会导致索引的无提示数据损坏. 在修复之前，CREATE INDEX CONCURRENTLY 和 REINDEX CONCURRENTLY 可以构建缺少条目的索引，导致使用该索引的 SELECT 查询找不到某些行。更多细节可以在 [14.4 发行](https://www.postgresql.org/about/news/postgresql-144-released-2470/)中找到。
+
+如果您有任何使用 14.X 下的 CONCURRENTLY 选项创建的索引，您应该在更新后重新索引它们。请参阅 PostgreSQL [14.4 发行说明](https://www.postgresql.org/docs/release/14.4/)的第一个变更条目。
+
+有关 PostgreSQL 14.4 中的更新和错误修复，请参阅官方 PostgreSQL[14.4 发行说明](https://www.postgresql.org/docs/release/14.4/)。
+
+
+### Bug 修复
+- 修复了包权限问题 [详细信息](https://github.com/IvorySQL/IvorySQL/pull/139)
+
+
+### 贡献
+以下个人作为补丁作者、提交者、审阅者、测试者或问题报告者为本版本做出了贡献。
+- Asif Rehman
+- Grant Zhou
+- Shengbin Zhao
+- Muhammad Usama
+
+**[完整的变更日志](https://github.com/IvorySQL/IvorySQL/commits/Ivory_REL_1_4)**
