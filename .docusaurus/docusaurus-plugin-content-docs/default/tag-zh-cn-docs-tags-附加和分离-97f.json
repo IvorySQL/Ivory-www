@@ -1,0 +1,14 @@
+{
+  "label": "附加和分离",
+  "permalink": "/zh-CN/docs/tags/附加和分离",
+  "allTagsPath": "/zh-CN/docs/tags",
+  "count": 1,
+  "items": [
+    {
+      "id": "version-2.1/Global Unique Index/attach_and_detach",
+      "title": "附加和分离",
+      "description": "附加语句的全球唯一性保证",
+      "permalink": "/zh-CN/docs/Global Unique Index/attach_and_detach"
+    }
+  ]
+}

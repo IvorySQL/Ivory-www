@@ -1,0 +1,12 @@
+{
+  "type": "mdx",
+  "permalink": "/activity/oneday-page",
+  "source": "@site/src/pages/activity/oneday-page.mdx",
+  "title": "IvorySQL 2022 一日开源活动",
+  "description": "IvorySQL Release - 1.5",
+  "frontMatter": {
+    "sidebar_position": 1,
+    "sidebar_label": "IvorySQL 2022 一日开源活动",
+    "title": "IvorySQL 2022 一日开源活动"
+  }
+}

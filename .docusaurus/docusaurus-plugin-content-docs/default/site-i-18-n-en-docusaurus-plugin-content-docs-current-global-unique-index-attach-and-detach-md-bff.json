@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Global Unique Index/attach_and_detach",
+  "id": "Global Unique Index/attach_and_detach",
+  "title": "Attach and Detach",
+  "description": "Global Uniqueness Guarantee with Attach",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/current/Global Unique Index/attach_and_detach.md",
+  "sourceDirName": "Global Unique Index",
+  "slug": "/Global Unique Index/attach_and_detach",
+  "permalink": "/en/docs/next/Global Unique Index/attach_and_detach",
+  "draft": false,
+  "tags": [
+    {
+      "label": "Attach and Detach",
+      "permalink": "/en/docs/next/tags/attach-and-detach"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "sidebar_label": "Attach and Detach",
+    "title": "Attach and Detach",
+    "tags": [
+      "Attach and Detach"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Insert and Update",
+    "permalink": "/en/docs/next/Global Unique Index/insert_and_update"
+  }
+}

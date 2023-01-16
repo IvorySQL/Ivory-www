@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/activity/releases-page",
+  "source": "@site/src/pages/activity/releases-page.mdx",
+  "title": "IvorySQL Releases",
+  "frontMatter": {
+    "id": "IvorySQL-Releases",
+    "title": "IvorySQL Releases"
+  }
+}

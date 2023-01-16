@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Compatibillity_Features/union",
+  "id": "version-2.1/Compatibillity_Features/union",
+  "title": "Union Operator",
+  "description": "UNION",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-2.1/Compatibillity_Features/union.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/union",
+  "permalink": "/en/docs/2.1/Compatibillity_Features/union",
+  "draft": false,
+  "tags": [],
+  "version": "2.1",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "sidebar_label": "Union Operator",
+    "title": "Union Operator",
+    "Tags": [
+      "UNION",
+      "Operator"
+    ]
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "Group By",
+    "permalink": "/en/docs/2.1/Compatibillity_Features/groupby"
+  },
+  "next": {
+    "title": "Minus Operator",
+    "permalink": "/en/docs/2.1/Compatibillity_Features/minus"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "permalink": "/blog/IvorySQL-package",
+  "source": "@site/blog/2022-6-10-package/index.md",
+  "title": "IvorySQL功能点介绍--Package（包）",
+  "description": "IvorySQL 是一个开源项目，该项目的核心目标之一是提供 oracle 兼容功能，以便在 IvorySQL 数据库服务器上使用 oracle 代码。",
+  "date": "2022-06-10T00:00:00.000Z",
+  "formattedDate": "2022年6月10日",
+  "tags": [
+    {
+      "label": "IvorySQL",
+      "permalink": "/blog/tags/ivory-sql"
+    },
+    {
+      "label": "功能点",
+      "permalink": "/blog/tags/功能点"
+    },
+    {
+      "label": "Database",
+      "permalink": "/blog/tags/database"
+    },
+    {
+      "label": "Oracle Compatible",
+      "permalink": "/blog/tags/oracle-compatible"
+    },
+    {
+      "label": "PostgreSQL",
+      "permalink": "/blog/tags/postgre-sql"
+    },
+    {
+      "label": "Join Us",
+      "permalink": "/blog/tags/join-us"
+    }
+  ],
+  "readingTime": 7.745,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "IvorySQL Team",
+      "url": "https://github.com/ivorysql",
+      "twitter": "IvorySql",
+      "imageURL": "https://github.com/ivorysql.png",
+      "key": "official"
+    }
+  ],
+  "frontMatter": {
+    "slug": "IvorySQL-package",
+    "title": "IvorySQL功能点介绍--Package（包）",
+    "authors": [
+      "official"
+    ],
+    "authorTwitter": "IvorySql",
+    "tags": [
+      "IvorySQL",
+      "功能点",
+      "Database",
+      "Oracle Compatible",
+      "PostgreSQL",
+      "Join Us"
+    ]
+  },
+  "nextItem": {
+    "title": "PGCon2022会议回顾|IvorySQL项目的技术讲解",
+    "permalink": "/blog/IvorySQL-PGCon2022"
+  }
+}

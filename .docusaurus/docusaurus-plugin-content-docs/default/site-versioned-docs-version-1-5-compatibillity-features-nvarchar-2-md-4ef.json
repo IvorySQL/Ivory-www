@@ -1,0 +1,31 @@
+{
+  "unversionedId": "Compatibillity_Features/nvarchar2",
+  "id": "version-1.5/Compatibillity_Features/nvarchar2",
+  "title": "NVARCHAR2(size)",
+  "description": "Overview",
+  "source": "@site/versioned_docs/version-1.5/Compatibillity_Features/nvarchar2.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/nvarchar2",
+  "permalink": "/docs/1.5/Compatibillity_Features/nvarchar2",
+  "draft": false,
+  "tags": [],
+  "version": "1.5",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "sidebar_position": 14,
+    "sidebar_label": "NVARCHAR2(size)",
+    "title": "NVARCHAR2(size)",
+    "Tags": [
+      "NVARCHAR2(size)"
+    ]
+  },
+  "sidebar": "version-1.5/tutorialSidebar",
+  "previous": {
+    "title": "NLS_LENGTH_SEMANTICS",
+    "permalink": "/docs/1.5/Compatibillity_Features/nls_length_semantics"
+  },
+  "next": {
+    "title": "VARCHAR2(size)",
+    "permalink": "/docs/1.5/Compatibillity_Features/varchar2"
+  }
+}

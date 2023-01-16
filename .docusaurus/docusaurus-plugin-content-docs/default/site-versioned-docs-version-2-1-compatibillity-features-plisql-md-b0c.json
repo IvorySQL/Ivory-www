@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Compatibillity_Features/plisql",
+  "id": "version-2.1/Compatibillity_Features/plisql",
+  "title": "PL/iSQL",
+  "description": "PL/iSQL is IvorySQL’s procedural language for writing custom Functions,",
+  "source": "@site/versioned_docs/version-2.1/Compatibillity_Features/plisql.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/plisql",
+  "permalink": "/docs/Compatibillity_Features/plisql",
+  "draft": false,
+  "tags": [],
+  "version": "2.1",
+  "sidebarPosition": 17,
+  "frontMatter": {
+    "sidebar_position": 17,
+    "sidebar_label": "PL/iSQL",
+    "title": "PL/iSQL",
+    "Tags": [
+      "PL/iSQL",
+      "PL Language"
+    ]
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "VARCHAR2(size)",
+    "permalink": "/docs/Compatibillity_Features/varchar2"
+  },
+  "next": {
+    "title": "Hierarchical Query",
+    "permalink": "/docs/Compatibillity_Features/hierarchical"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "label": "Insert and Update",
+  "permalink": "/docs/next/tags/insert-and-update",
+  "allTagsPath": "/docs/next/tags",
+  "count": 1,
+  "items": [
+    {
+      "id": "Global Unique Index/insert_and_update",
+      "title": "Insert and Update",
+      "description": "Global Uniqueness Guarantee with Insert and Update",
+      "permalink": "/docs/next/Global Unique Index/insert_and_update"
+    }
+  ]
+}

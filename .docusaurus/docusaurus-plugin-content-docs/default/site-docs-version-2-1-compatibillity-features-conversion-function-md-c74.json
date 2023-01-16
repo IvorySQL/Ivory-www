@@ -1,0 +1,27 @@
+{
+  "unversionedId": "version-2.1/Compatibillity_Features/conversion_function",
+  "id": "version-2.1/Compatibillity_Features/conversion_function",
+  "title": "转换函数",
+  "description": "TO_CHAR",
+  "source": "@site/docs/version-2.1/Compatibillity_Features/conversion_function.md",
+  "sourceDirName": "version-2.1/Compatibillity_Features",
+  "slug": "/version-2.1/Compatibillity_Features/conversion_function",
+  "permalink": "/docs/next/version-2.1/Compatibillity_Features/conversion_function",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "sidebar_label": "兼容转换和比较以及与 NULL 相关的函数",
+    "sidebar_position": 12
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "兼容时间和日期函数",
+    "permalink": "/docs/next/version-2.1/Compatibillity_Features/datefuncs"
+  },
+  "next": {
+    "title": "NLS_LENGTH_SEMANTICS参数",
+    "permalink": "/docs/next/version-2.1/Compatibillity_Features/nls_length_semantics"
+  }
+}

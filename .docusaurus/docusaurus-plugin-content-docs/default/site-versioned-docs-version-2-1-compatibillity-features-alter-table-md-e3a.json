@@ -1,0 +1,31 @@
+{
+  "unversionedId": "Compatibillity_Features/alter_table",
+  "id": "version-2.1/Compatibillity_Features/alter_table",
+  "title": "Alter Table",
+  "description": "Overview",
+  "source": "@site/versioned_docs/version-2.1/Compatibillity_Features/alter_table.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/alter_table",
+  "permalink": "/docs/Compatibillity_Features/alter_table",
+  "draft": false,
+  "tags": [],
+  "version": "2.1",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "sidebar_label": "Alter Table",
+    "title": "Alter Table",
+    "Tags": [
+      "Alter table"
+    ]
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "Packages",
+    "permalink": "/docs/Compatibillity_Features/package"
+  },
+  "next": {
+    "title": "Delete Table",
+    "permalink": "/docs/Compatibillity_Features/delete_table"
+  }
+}

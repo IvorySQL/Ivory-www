@@ -1,0 +1,33 @@
+{
+  "unversionedId": "version-1.5/Compatibillity_Features/datefuncs",
+  "id": "version-1.5/Compatibillity_Features/datefuncs",
+  "title": "兼容时间和日期函数",
+  "description": "1. from_tz",
+  "source": "@site/docs/version-1.5/Compatibillity_Features/datefuncs.md",
+  "sourceDirName": "version-1.5/Compatibillity_Features",
+  "slug": "/version-1.5/Compatibillity_Features/datefuncs",
+  "permalink": "/docs/next/version-1.5/Compatibillity_Features/datefuncs",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "sidebar_label": "兼容时间和日期函数",
+    "sidebar_position": 11,
+    "title": "兼容时间和日期函数",
+    "Tags": [
+      "兼容时间和日期函数",
+      "date function",
+      "time function"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "序列",
+    "permalink": "/docs/next/version-1.5/Compatibillity_Features/sequence"
+  },
+  "next": {
+    "title": "兼容转换和比较以及与 NULL 相关的函数",
+    "permalink": "/docs/next/version-1.5/Compatibillity_Features/conversion_function"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "permalink": "/blog/IvorySQL-Packages",
+  "source": "@site/blog/2022-5-27-packages/index.md",
+  "title": "Introduction to IvorySQL Packages",
+  "description": "IvorySQL is an open source project. One of the core goals of this project is to deliver oracle",
+  "date": "2022-05-27T00:00:00.000Z",
+  "formattedDate": "May 27, 2022",
+  "tags": [
+    {
+      "label": "IvorySQL",
+      "permalink": "/blog/tags/ivory-sql"
+    },
+    {
+      "label": "Oracle",
+      "permalink": "/blog/tags/oracle"
+    },
+    {
+      "label": "Packages",
+      "permalink": "/blog/tags/packages"
+    },
+    {
+      "label": "PostgreSQL",
+      "permalink": "/blog/tags/postgre-sql"
+    },
+    {
+      "label": "Join Us",
+      "permalink": "/blog/tags/join-us"
+    }
+  ],
+  "readingTime": 6.025,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Asif Rehman",
+      "url": "https://github.com/rasifr",
+      "key": "Asif"
+    }
+  ],
+  "frontMatter": {
+    "slug": "IvorySQL-Packages",
+    "title": "Introduction to IvorySQL Packages",
+    "authors": [
+      "Asif"
+    ],
+    "tags": [
+      "IvorySQL",
+      "Oracle",
+      "Packages",
+      "PostgreSQL",
+      "Join Us"
+    ]
+  },
+  "prevItem": {
+    "title": "PGCon2022 meeting review | Technical explanation of IvorySQL project",
+    "permalink": "/blog/IvorySQL-PGCon2022"
+  },
+  "nextItem": {
+    "title": "Compiling and Installing IvorySQL on Linux",
+    "permalink": "/blog/IvorySQL-Linux"
+  }
+}

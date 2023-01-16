@@ -1,0 +1,64 @@
+{
+  "permalink": "/blog/IvorySQL-YUM",
+  "source": "@site/blog/2022-5-6-yum/index.md",
+  "title": "Install software through the YUM source",
+  "description": "Install software through the YUM source",
+  "date": "2022-05-06T00:00:00.000Z",
+  "formattedDate": "May 6, 2022",
+  "tags": [
+    {
+      "label": "IvorySQL",
+      "permalink": "/blog/tags/ivory-sql"
+    },
+    {
+      "label": "Welcome",
+      "permalink": "/blog/tags/welcome"
+    },
+    {
+      "label": "YUM",
+      "permalink": "/blog/tags/yum"
+    },
+    {
+      "label": "PostgreSQL",
+      "permalink": "/blog/tags/postgre-sql"
+    },
+    {
+      "label": "Join Us",
+      "permalink": "/blog/tags/join-us"
+    }
+  ],
+  "readingTime": 6.835,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "IvorySQL Team",
+      "url": "https://github.com/ivorysql",
+      "twitter": "IvorySql",
+      "imageURL": "https://github.com/ivorysql.png",
+      "key": "official"
+    }
+  ],
+  "frontMatter": {
+    "slug": "IvorySQL-YUM",
+    "title": "Install software through the YUM source",
+    "authors": [
+      "official"
+    ],
+    "authorTwitter": "IvorySql",
+    "tags": [
+      "IvorySQL",
+      "Welcome",
+      "YUM",
+      "PostgreSQL",
+      "Join Us"
+    ]
+  },
+  "prevItem": {
+    "title": "Compiling and Installing IvorySQL on Linux",
+    "permalink": "/blog/IvorySQL-Linux"
+  },
+  "nextItem": {
+    "title": "IvorySQL at PostgresConf SV 2022",
+    "permalink": "/blog/IvorySQL-sv"
+  }
+}

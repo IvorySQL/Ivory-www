@@ -1,0 +1,31 @@
+{
+  "unversionedId": "Compatibillity_Features/nls_length_semantics",
+  "id": "version-2.1/Compatibillity_Features/nls_length_semantics",
+  "title": "NLS_LENGTH_SEMANTICS",
+  "description": "Overview",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-2.1/Compatibillity_Features/nls_length_semantics.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/nls_length_semantics",
+  "permalink": "/en/docs/2.1/Compatibillity_Features/nls_length_semantics",
+  "draft": false,
+  "tags": [],
+  "version": "2.1",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "sidebar_position": 13,
+    "sidebar_label": "NLS_LENGTH_SEMANTICS",
+    "title": "NLS_LENGTH_SEMANTICS",
+    "Tags": [
+      "NLS_LENGTH_SEMANTICS"
+    ]
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "Compatible Conversion and Comparision and NULL-Related functions",
+    "permalink": "/en/docs/2.1/Compatibillity_Features/conversion_function"
+  },
+  "next": {
+    "title": "NVARCHAR2(size)",
+    "permalink": "/en/docs/2.1/Compatibillity_Features/nvarchar2"
+  }
+}

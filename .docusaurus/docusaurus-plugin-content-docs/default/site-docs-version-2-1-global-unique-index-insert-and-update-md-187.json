@@ -1,0 +1,36 @@
+{
+  "unversionedId": "version-2.1/Global Unique Index/insert_and_update",
+  "id": "version-2.1/Global Unique Index/insert_and_update",
+  "title": "插入和更新",
+  "description": "插入和更新的全局唯一性保证",
+  "source": "@site/docs/version-2.1/Global Unique Index/insert_and_update.md",
+  "sourceDirName": "version-2.1/Global Unique Index",
+  "slug": "/version-2.1/Global Unique Index/insert_and_update",
+  "permalink": "/docs/next/version-2.1/Global Unique Index/insert_and_update",
+  "draft": false,
+  "tags": [
+    {
+      "label": "插入和更新",
+      "permalink": "/docs/next/tags/插入和更新"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "sidebar_label": "插入和更新",
+    "title": "插入和更新",
+    "tags": [
+      "插入和更新"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "创建全局唯一索引",
+    "permalink": "/docs/next/version-2.1/Global Unique Index/create_global_unique_index"
+  },
+  "next": {
+    "title": "附加和分离",
+    "permalink": "/docs/next/version-2.1/Global Unique Index/attach_and_detach"
+  }
+}

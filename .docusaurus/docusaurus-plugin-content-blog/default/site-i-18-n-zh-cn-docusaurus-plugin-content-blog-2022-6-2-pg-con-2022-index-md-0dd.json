@@ -1,0 +1,65 @@
+{
+  "permalink": "/zh-CN/blog/IvorySQL-PGCon2022",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-blog/2022-6-2-PGCon2022/index.md",
+  "title": "PGCon2022会议回顾|IvorySQL项目的技术讲解",
+  "description": "2022年渥太华时间5月26日瀚高北美研究院负责人Grant Zhou在会上发表IvorySQL项目的技术讲解。本次会议内容主要介绍了我们是谁、IvorySQL是什么、IvorySQL的关键功能点、社区贡献指南、开发者指南等。重点介绍了基于 PostgreSQL 14，IvorySQL在PostgreSQL基础之上添加了一些令人兴奋的功能点！！",
+  "date": "2022-06-02T00:00:00.000Z",
+  "formattedDate": "2022年6月2日",
+  "tags": [
+    {
+      "label": "IvorySQL",
+      "permalink": "/zh-CN/blog/tags/ivory-sql"
+    },
+    {
+      "label": "PGCon2022",
+      "permalink": "/zh-CN/blog/tags/pg-con-2022"
+    },
+    {
+      "label": "Database",
+      "permalink": "/zh-CN/blog/tags/database"
+    },
+    {
+      "label": "Oracle Compatible",
+      "permalink": "/zh-CN/blog/tags/oracle-compatible"
+    },
+    {
+      "label": "PostgreSQL",
+      "permalink": "/zh-CN/blog/tags/postgre-sql"
+    },
+    {
+      "label": "Join Us",
+      "permalink": "/zh-CN/blog/tags/join-us"
+    }
+  ],
+  "readingTime": 1.795,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "IvorySQL Team",
+      "url": "https://github.com/ivorysql",
+      "twitter": "IvorySql",
+      "imageURL": "https://github.com/ivorysql.png",
+      "key": "official"
+    }
+  ],
+  "frontMatter": {
+    "slug": "IvorySQL-PGCon2022",
+    "title": "PGCon2022会议回顾|IvorySQL项目的技术讲解",
+    "authors": [
+      "official"
+    ],
+    "authorTwitter": "IvorySql",
+    "tags": [
+      "IvorySQL",
+      "PGCon2022",
+      "Database",
+      "Oracle Compatible",
+      "PostgreSQL",
+      "Join Us"
+    ]
+  },
+  "nextItem": {
+    "title": "Introduction to IvorySQL Packages",
+    "permalink": "/zh-CN/blog/IvorySQL-Packages"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Compatibillity_Features/parameter_settings",
+  "id": "version-activity/Compatibillity_Features/parameter_settings",
+  "title": "Compatibility Parameters",
+  "description": "Parameter Names and Values",
+  "source": "@site/versioned_docs/version-activity/Compatibillity_Features/1_parameter_settings.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/parameter_settings",
+  "permalink": "/docs/Compatibillity_Features/parameter_settings",
+  "draft": false,
+  "tags": [
+    {
+      "label": "Compatibility Parameters",
+      "permalink": "/docs/tags/compatibility-parameters"
+    }
+  ],
+  "version": "activity",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "sidebar_label": "Compatibility Parameters",
+    "title": "Compatibility Parameters",
+    "tags": [
+      "Compatibility Parameters"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Packages",
+    "permalink": "/docs/Compatibillity_Features/package"
+  }
+}

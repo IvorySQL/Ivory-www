@@ -1,0 +1,69 @@
+{
+  "permalink": "/blog/IvorySQL-sv",
+  "source": "@site/blog/2022-4-18-sv2022/index.md",
+  "title": "IvorySQL at PostgresConf SV 2022",
+  "description": "The Postgres Conference in Silicon Valley is the largest PG conference on the West Coast and one of the most important Postgres conferences of the year in the US and globally. It will be held on April 7-8, 2022 (PDT) at the Hilton Hotel SAN Jose, California, USA. As an annual technology event for PostgreSQL technologists, practitioners, and enthusiasts around the world, the Silicon Valley Conference is dedicated to bringing together and discussing the relationship between people, Postgres, and data! The conference is as inclusive and fair as silicon Valley, bringing together the best speakers, audiences and sponsors, all working to create growth opportunities for the global Postgres ecosystem.",
+  "date": "2022-04-18T00:00:00.000Z",
+  "formattedDate": "April 18, 2022",
+  "tags": [
+    {
+      "label": "IvorySQL",
+      "permalink": "/blog/tags/ivory-sql"
+    },
+    {
+      "label": "PostgresConf SV",
+      "permalink": "/blog/tags/postgres-conf-sv"
+    },
+    {
+      "label": "Database",
+      "permalink": "/blog/tags/database"
+    },
+    {
+      "label": "Oracle Compatible",
+      "permalink": "/blog/tags/oracle-compatible"
+    },
+    {
+      "label": "PostgreSQL",
+      "permalink": "/blog/tags/postgre-sql"
+    },
+    {
+      "label": "Join Us",
+      "permalink": "/blog/tags/join-us"
+    }
+  ],
+  "readingTime": 5.45,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "IvorySQL Team",
+      "url": "https://github.com/ivorysql",
+      "twitter": "IvorySql",
+      "imageURL": "https://github.com/ivorysql.png",
+      "key": "official"
+    }
+  ],
+  "frontMatter": {
+    "slug": "IvorySQL-sv",
+    "title": "IvorySQL at PostgresConf SV 2022",
+    "authors": [
+      "official"
+    ],
+    "authorTwitter": "IvorySql",
+    "tags": [
+      "IvorySQL",
+      "PostgresConf SV",
+      "Database",
+      "Oracle Compatible",
+      "PostgreSQL",
+      "Join Us"
+    ]
+  },
+  "prevItem": {
+    "title": "Install software through the YUM source",
+    "permalink": "/blog/IvorySQL-YUM"
+  },
+  "nextItem": {
+    "title": "PostgresWorld Webinar | A Deep Dive Into IvorySQL",
+    "permalink": "/blog/IvorySQL-Webinar"
+  }
+}

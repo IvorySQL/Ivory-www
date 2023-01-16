@@ -1,0 +1,24 @@
+{
+  "permalink": "/blog/2022/2/2/a/activity/releases-page",
+  "source": "@site/blog/2022-2-2-a/activity/releases-page.mdx",
+  "title": "IvorySQL Releases",
+  "description": "",
+  "date": "2022-02-02T00:00:00.000Z",
+  "formattedDate": "February 2, 2022",
+  "tags": [],
+  "readingTime": 0.715,
+  "hasTruncateMarker": false,
+  "authors": [],
+  "frontMatter": {
+    "id": "IvorySQL-Releases",
+    "title": "IvorySQL Releases"
+  },
+  "prevItem": {
+    "title": "IvorySQL 2022 一日开源活动",
+    "permalink": "/blog/2022/2/2/a/activity/oneday-page"
+  },
+  "nextItem": {
+    "title": "IvorySQL Has Arrived",
+    "permalink": "/blog/IvorySQL"
+  }
+}

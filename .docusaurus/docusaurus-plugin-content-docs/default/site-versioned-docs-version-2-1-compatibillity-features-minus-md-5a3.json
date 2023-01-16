@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Compatibillity_Features/minus",
+  "id": "version-2.1/Compatibillity_Features/minus",
+  "title": "MINUS Operator",
+  "description": "MINUS",
+  "source": "@site/versioned_docs/version-2.1/Compatibillity_Features/minus.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/minus",
+  "permalink": "/docs/Compatibillity_Features/minus",
+  "draft": false,
+  "tags": [],
+  "version": "2.1",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "sidebar_label": "Minus Operator",
+    "title": "MINUS Operator",
+    "Tags": [
+      "MINUS",
+      "Operator"
+    ]
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "Union Operator",
+    "permalink": "/docs/Compatibillity_Features/union"
+  },
+  "next": {
+    "title": "Escape Characters",
+    "permalink": "/docs/Compatibillity_Features/escape-character"
+  }
+}

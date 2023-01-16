@@ -1,0 +1,29 @@
+{
+  "unversionedId": "oneday-page",
+  "id": "oneday-page",
+  "title": "IvorySQL 2022 一日开源活动",
+  "description": "",
+  "source": "@site/docs/oneday-page.md",
+  "sourceDirName": ".",
+  "slug": "/oneday-page",
+  "permalink": "/docs/next/oneday-page",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "sidebar_label": "IvorySQL 2022 一日开源活动",
+    "title": "IvorySQL 2022 一日开源活动",
+    "Tags": [
+      "IvorySQL",
+      "PostgresConf CN",
+      "Database"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Welcome to IvorySQL",
+    "permalink": "/docs/next/intro"
+  }
+}

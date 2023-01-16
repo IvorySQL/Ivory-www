@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Compatibillity_Features/groupby",
+  "id": "Compatibillity_Features/groupby",
+  "title": "Group By",
+  "description": "Overview",
+  "source": "@site/docs/Compatibillity_Features/groupby.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/groupby",
+  "permalink": "/docs/next/Compatibillity_Features/groupby",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "sidebar_label": "Group By",
+    "title": "Group By",
+    "Tags": [
+      "Group By",
+      "Groupby"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Update Table",
+    "permalink": "/docs/next/Compatibillity_Features/update_table"
+  },
+  "next": {
+    "title": "Union Operator",
+    "permalink": "/docs/next/Compatibillity_Features/union"
+  }
+}

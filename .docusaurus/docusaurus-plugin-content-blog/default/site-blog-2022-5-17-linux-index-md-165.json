@@ -1,0 +1,64 @@
+{
+  "permalink": "/blog/IvorySQL-Linux",
+  "source": "@site/blog/2022-5-17-linux/index.md",
+  "title": "Compiling and Installing IvorySQL on Linux",
+  "description": "IvorySQL can be built on Linux, OSX, Unix, and Windows platforms, and is basically the same as PostgreSQL compiled and installed. This article describes the steps for compiling source code on a Linux-based system.",
+  "date": "2022-05-17T00:00:00.000Z",
+  "formattedDate": "May 17, 2022",
+  "tags": [
+    {
+      "label": "IvorySQL",
+      "permalink": "/blog/tags/ivory-sql"
+    },
+    {
+      "label": "Welcome",
+      "permalink": "/blog/tags/welcome"
+    },
+    {
+      "label": "Linux",
+      "permalink": "/blog/tags/linux"
+    },
+    {
+      "label": "PostgreSQL",
+      "permalink": "/blog/tags/postgre-sql"
+    },
+    {
+      "label": "Join Us",
+      "permalink": "/blog/tags/join-us"
+    }
+  ],
+  "readingTime": 5.72,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "IvorySQL Team",
+      "url": "https://github.com/ivorysql",
+      "twitter": "IvorySql",
+      "imageURL": "https://github.com/ivorysql.png",
+      "key": "official"
+    }
+  ],
+  "frontMatter": {
+    "slug": "IvorySQL-Linux",
+    "title": "Compiling and Installing IvorySQL on Linux",
+    "authors": [
+      "official"
+    ],
+    "authorTwitter": "IvorySql",
+    "tags": [
+      "IvorySQL",
+      "Welcome",
+      "Linux",
+      "PostgreSQL",
+      "Join Us"
+    ]
+  },
+  "prevItem": {
+    "title": "Introduction to IvorySQL Packages",
+    "permalink": "/blog/IvorySQL-Packages"
+  },
+  "nextItem": {
+    "title": "Install software through the YUM source",
+    "permalink": "/blog/IvorySQL-YUM"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "permalink": "/zh-CN/blog/IvorySQL",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-blog/2022-1-28-ivorysql-arrived/index.md",
+  "title": "IvorySQL已经来了",
+  "description": "Hello",
+  "date": "2022-01-28T00:00:00.000Z",
+  "formattedDate": "2022年1月28日",
+  "tags": [
+    {
+      "label": "IvorySQL",
+      "permalink": "/zh-CN/blog/tags/ivory-sql"
+    },
+    {
+      "label": "Welcome",
+      "permalink": "/zh-CN/blog/tags/welcome"
+    },
+    {
+      "label": "Database",
+      "permalink": "/zh-CN/blog/tags/database"
+    },
+    {
+      "label": "Oracle Compatible",
+      "permalink": "/zh-CN/blog/tags/oracle-compatible"
+    },
+    {
+      "label": "PostgreSQL",
+      "permalink": "/zh-CN/blog/tags/postgre-sql"
+    },
+    {
+      "label": "Join Us",
+      "permalink": "/zh-CN/blog/tags/join-us"
+    }
+  ],
+  "readingTime": 3.485,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "IvorySQL Team",
+      "url": "https://github.com/ivorysql",
+      "twitter": "IvorySql",
+      "imageURL": "https://github.com/ivorysql.png",
+      "key": "official"
+    }
+  ],
+  "frontMatter": {
+    "slug": "IvorySQL",
+    "title": "IvorySQL已经来了",
+    "authors": [
+      "official"
+    ],
+    "authorTwitter": "IvorySql",
+    "tags": [
+      "IvorySQL",
+      "Welcome",
+      "Database",
+      "Oracle Compatible",
+      "PostgreSQL",
+      "Join Us"
+    ]
+  },
+  "prevItem": {
+    "title": "PostgresWorld网络研讨会|IvorySQL的深度探讨",
+    "permalink": "/zh-CN/blog/IvorySQL-Webinar"
+  }
+}

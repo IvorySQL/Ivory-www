@@ -1,0 +1,8 @@
+{
+  "type": "mdx",
+  "permalink": "/zh-CN/contribution-guidelines",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-pages/contribution-guidelines.md",
+  "title": "贡献",
+  "description": "IvorySQL由一个核心开发团队维护，该团队拥有对GitHub上的IvorySQL主存储库的提交权限。同时，我们非常渴望从更广泛的IvorySQL社区中的成员那里获得贡献。如果您希望看到您的代码或文档更改被添加到IvorySQL并出现在将来的版本中，本节的内容介绍是您需要知道的。",
+  "frontMatter": {}
+}

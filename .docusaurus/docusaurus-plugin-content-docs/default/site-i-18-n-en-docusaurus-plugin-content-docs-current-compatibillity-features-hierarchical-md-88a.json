@@ -1,0 +1,36 @@
+{
+  "unversionedId": "Compatibillity_Features/hierarchical",
+  "id": "Compatibillity_Features/hierarchical",
+  "title": "Hierarchical Query",
+  "description": "Hierarchical Query",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/current/Compatibillity_Features/hierarchical.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/hierarchical",
+  "permalink": "/en/docs/next/Compatibillity_Features/hierarchical",
+  "draft": false,
+  "tags": [
+    {
+      "label": "Hierarchical Query",
+      "permalink": "/en/docs/next/tags/hierarchical-query"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 18,
+  "frontMatter": {
+    "sidebar_position": 18,
+    "sidebar_label": "Hierarchical Query",
+    "title": "Hierarchical Query",
+    "tags": [
+      "Hierarchical Query"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PL/iSQL",
+    "permalink": "/en/docs/next/Compatibillity_Features/plisql"
+  },
+  "next": {
+    "title": "String Functions",
+    "permalink": "/en/docs/next/Compatibillity_Features/string_function"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "unversionedId": "Global Unique Index/create_global_unique_index",
+  "id": "Global Unique Index/create_global_unique_index",
+  "title": "创建全局唯一索引",
+  "description": "概述",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-docs/current/Global Unique Index/create_global_unique_index.md",
+  "sourceDirName": "Global Unique Index",
+  "slug": "/Global Unique Index/create_global_unique_index",
+  "permalink": "/zh-CN/docs/next/Global Unique Index/create_global_unique_index",
+  "draft": false,
+  "tags": [
+    {
+      "label": "创建全局唯一索引",
+      "permalink": "/zh-CN/docs/next/tags/创建全局唯一索引"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "sidebar_label": "创建全局唯一索引",
+    "title": "创建全局唯一索引",
+    "tags": [
+      "创建全局唯一索引"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "欢迎",
+    "permalink": "/zh-CN/docs/next/intro"
+  },
+  "next": {
+    "title": "插入和更新",
+    "permalink": "/zh-CN/docs/next/Global Unique Index/insert_and_update"
+  }
+}

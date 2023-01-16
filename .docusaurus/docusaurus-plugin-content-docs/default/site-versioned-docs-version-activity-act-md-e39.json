@@ -1,0 +1,22 @@
+{
+  "unversionedId": "act",
+  "id": "version-activity/act",
+  "title": "Welcome to IvorySQL",
+  "description": "IvorySQL is the only Oracle compatible open source PostgreSQL.",
+  "source": "@site/versioned_docs/version-activity/act.md",
+  "sourceDirName": ".",
+  "slug": "/act",
+  "permalink": "/docs/act",
+  "draft": false,
+  "tags": [],
+  "version": "activity",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "IvorySQL 2022 一日开源活动",
+    "permalink": "/docs/Compatibillity_Features/oneday-page"
+  }
+}

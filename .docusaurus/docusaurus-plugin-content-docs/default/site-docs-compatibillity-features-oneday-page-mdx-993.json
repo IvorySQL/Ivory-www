@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Compatibillity_Features/oneday-page",
+  "id": "Compatibillity_Features/oneday-page",
+  "title": "IvorySQL 2022 一日开源活动",
+  "description": "IvorySQL Release - 1.5",
+  "source": "@site/docs/Compatibillity_Features/oneday-page.mdx",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/oneday-page",
+  "permalink": "/docs/next/Compatibillity_Features/oneday-page",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 20,
+  "frontMatter": {
+    "sidebar_position": 20,
+    "sidebar_label": "IvorySQL 2022 一日开源活动",
+    "title": "IvorySQL 2022 一日开源活动"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "String Functions",
+    "permalink": "/docs/next/Compatibillity_Features/string_function"
+  },
+  "next": {
+    "title": "Welcome to IvorySQL",
+    "permalink": "/docs/next/intro"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "unversionedId": "version-1.5/Compatibillity_Features/hierarchical",
+  "id": "version-1.5/Compatibillity_Features/hierarchical",
+  "title": "层级查询",
+  "description": "层级查询",
+  "source": "@site/docs/version-1.5/Compatibillity_Features/hierarchical.md",
+  "sourceDirName": "version-1.5/Compatibillity_Features",
+  "slug": "/version-1.5/Compatibillity_Features/hierarchical",
+  "permalink": "/docs/next/version-1.5/Compatibillity_Features/hierarchical",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 18,
+  "frontMatter": {
+    "sidebar_position": 18,
+    "sidebar_label": "层级查询",
+    "title": "层级查询",
+    "Tags": [
+      "Hierarchical Query",
+      "SQL"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "字符串函数",
+    "permalink": "/docs/next/version-1.5/Compatibillity_Features/string_function"
+  },
+  "next": {
+    "title": "欢迎",
+    "permalink": "/docs/next/version-1.5/intro"
+  }
+}

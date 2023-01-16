@@ -1,0 +1,32 @@
+{
+  "unversionedId": "version-2.1/Compatibillity_Features/sequence",
+  "id": "version-2.1/Compatibillity_Features/sequence",
+  "title": "序列",
+  "description": "序列",
+  "source": "@site/docs/version-2.1/Compatibillity_Features/sequence.md",
+  "sourceDirName": "version-2.1/Compatibillity_Features",
+  "slug": "/version-2.1/Compatibillity_Features/sequence",
+  "permalink": "/docs/next/version-2.1/Compatibillity_Features/sequence",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10,
+    "sidebar_label": "序列",
+    "title": "序列",
+    "Tags": [
+      "Sequence",
+      "序列"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "转义字符",
+    "permalink": "/docs/next/version-2.1/Compatibillity_Features/escape-character"
+  },
+  "next": {
+    "title": "兼容时间和日期函数",
+    "permalink": "/docs/next/version-2.1/Compatibillity_Features/datefuncs"
+  }
+}

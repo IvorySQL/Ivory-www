@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/community-page",
+  "source": "@site/src/pages/community-page.md",
+  "title": "IvorySQL Community",
+  "description": "The IvorySQL community includes people from around the globe who are developing and using the open source database. We welcome and encourage participation by everyone.",
+  "frontMatter": {
+    "title": "IvorySQL Community"
+  }
+}

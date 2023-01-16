@@ -1,0 +1,36 @@
+{
+  "unversionedId": "Compatibillity_Features/hierarchical",
+  "id": "version-2.1/Compatibillity_Features/hierarchical",
+  "title": "Hierarchical Query",
+  "description": "Hierarchical Query",
+  "source": "@site/versioned_docs/version-2.1/Compatibillity_Features/hierarchical.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/hierarchical",
+  "permalink": "/docs/Compatibillity_Features/hierarchical",
+  "draft": false,
+  "tags": [
+    {
+      "label": "Hierarchical Query",
+      "permalink": "/docs/tags/hierarchical-query"
+    }
+  ],
+  "version": "2.1",
+  "sidebarPosition": 18,
+  "frontMatter": {
+    "sidebar_position": 18,
+    "sidebar_label": "Hierarchical Query",
+    "title": "Hierarchical Query",
+    "tags": [
+      "Hierarchical Query"
+    ]
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "PL/iSQL",
+    "permalink": "/docs/Compatibillity_Features/plisql"
+  },
+  "next": {
+    "title": "Welcome to IvorySQL",
+    "permalink": "/docs/intro"
+  }
+}

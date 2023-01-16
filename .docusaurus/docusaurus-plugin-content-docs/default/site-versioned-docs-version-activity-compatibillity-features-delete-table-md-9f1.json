@@ -1,0 +1,31 @@
+{
+  "unversionedId": "Compatibillity_Features/delete_table",
+  "id": "version-activity/Compatibillity_Features/delete_table",
+  "title": "Delete Table",
+  "description": "Overview",
+  "source": "@site/versioned_docs/version-activity/Compatibillity_Features/delete_table.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/delete_table",
+  "permalink": "/docs/Compatibillity_Features/delete_table",
+  "draft": false,
+  "tags": [],
+  "version": "activity",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "sidebar_label": "Delete Table",
+    "title": "Delete Table",
+    "Tags": [
+      "Delete table"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Alter Table",
+    "permalink": "/docs/Compatibillity_Features/alter_table"
+  },
+  "next": {
+    "title": "Update Table",
+    "permalink": "/docs/Compatibillity_Features/update_table"
+  }
+}

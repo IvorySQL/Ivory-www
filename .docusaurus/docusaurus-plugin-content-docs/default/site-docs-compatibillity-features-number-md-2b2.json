@@ -1,0 +1,31 @@
+{
+  "unversionedId": "Compatibillity_Features/number",
+  "id": "Compatibillity_Features/number",
+  "title": "NUMBER [ (p [, s]) ]",
+  "description": "Overview",
+  "source": "@site/docs/Compatibillity_Features/number.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/number",
+  "permalink": "/docs/next/Compatibillity_Features/number",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 16,
+  "frontMatter": {
+    "sidebar_position": 16,
+    "sidebar_label": "NUMBER [ (p [, s]) ]",
+    "title": "NUMBER [ (p [, s]) ]",
+    "Tags": [
+      "NUMBER [ (p [, s]) ]"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "VARCHAR2(size)",
+    "permalink": "/docs/next/Compatibillity_Features/varchar2"
+  },
+  "next": {
+    "title": "PL/iSQL",
+    "permalink": "/docs/next/Compatibillity_Features/plisql"
+  }
+}

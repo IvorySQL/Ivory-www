@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Compatibillity_Features/hierarchical",
+  "id": "version-2.1/Compatibillity_Features/hierarchical",
+  "title": "层级查询",
+  "description": "层级查询",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-docs/version-2.1/Compatibillity_Features/hierarchical.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/hierarchical",
+  "permalink": "/zh-CN/docs/Compatibillity_Features/hierarchical",
+  "draft": false,
+  "tags": [],
+  "version": "2.1",
+  "sidebarPosition": 18,
+  "frontMatter": {
+    "sidebar_position": 18,
+    "sidebar_label": "层级查询",
+    "title": "层级查询",
+    "Tags": [
+      "Hierarchical Query",
+      "SQL"
+    ]
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "PL/iSQL",
+    "permalink": "/zh-CN/docs/Compatibillity_Features/plisql"
+  },
+  "next": {
+    "title": "欢迎",
+    "permalink": "/zh-CN/docs/intro"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unversionedId": "Compatibillity_Features/escape-character",
+  "id": "version-2.1/Compatibillity_Features/escape-character",
+  "title": "Escape Characters",
+  "description": "q\\'",
+  "source": "@site/versioned_docs/version-2.1/Compatibillity_Features/escape-character.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/escape-character",
+  "permalink": "/docs/Compatibillity_Features/escape-character",
+  "draft": false,
+  "tags": [],
+  "version": "2.1",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9,
+    "sidebar_label": "Escape Characters",
+    "title": "Escape Characters",
+    "Tags": [
+      "Escape Character"
+    ]
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "Minus Operator",
+    "permalink": "/docs/Compatibillity_Features/minus"
+  },
+  "next": {
+    "title": "Sequence",
+    "permalink": "/docs/Compatibillity_Features/sequence"
+  }
+}

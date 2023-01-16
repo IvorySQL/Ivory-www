@@ -1,0 +1,36 @@
+{
+  "unversionedId": "Global Unique Index/insert_and_update",
+  "id": "version-2.1/Global Unique Index/insert_and_update",
+  "title": "Insert and Update",
+  "description": "Global Uniqueness Guarantee with Insert and Update",
+  "source": "@site/versioned_docs/version-2.1/Global Unique Index/insert_and_update.md",
+  "sourceDirName": "Global Unique Index",
+  "slug": "/Global Unique Index/insert_and_update",
+  "permalink": "/docs/Global Unique Index/insert_and_update",
+  "draft": false,
+  "tags": [
+    {
+      "label": "Insert and Update",
+      "permalink": "/docs/tags/insert-and-update"
+    }
+  ],
+  "version": "2.1",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "sidebar_label": "Insert and Update",
+    "title": "Insert and Update",
+    "tags": [
+      "Insert and Update"
+    ]
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "Create Global Unique Index",
+    "permalink": "/docs/Global Unique Index/create_global_unique_index"
+  },
+  "next": {
+    "title": "Attach and Detach",
+    "permalink": "/docs/Global Unique Index/attach_and_detach"
+  }
+}

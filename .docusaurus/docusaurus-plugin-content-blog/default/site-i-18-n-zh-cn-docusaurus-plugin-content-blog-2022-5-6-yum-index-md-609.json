@@ -1,0 +1,54 @@
+{
+  "permalink": "/zh-CN/blog/IvorySQL-YUM",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-blog/2022-5-6-yum/index.md",
+  "title": "IvorySQL--YUM源安装",
+  "description": "通过 YUM 源安装软件",
+  "date": "2022-05-06T00:00:00.000Z",
+  "formattedDate": "2022年5月6日",
+  "tags": [
+    {
+      "label": "IvorySQL",
+      "permalink": "/zh-CN/blog/tags/ivory-sql"
+    },
+    {
+      "label": "YUM， PostgreSQL",
+      "permalink": "/zh-CN/blog/tags/yum，-postgre-sql"
+    },
+    {
+      "label": "Join Us",
+      "permalink": "/zh-CN/blog/tags/join-us"
+    }
+  ],
+  "readingTime": 9.32,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "IvorySQL Team",
+      "url": "https://github.com/ivorysql",
+      "twitter": "IvorySql",
+      "imageURL": "https://github.com/ivorysql.png",
+      "key": "official"
+    }
+  ],
+  "frontMatter": {
+    "slug": "IvorySQL-YUM",
+    "title": "IvorySQL--YUM源安装",
+    "authors": [
+      "official"
+    ],
+    "authorTwitter": "IvorySql",
+    "tags": [
+      "IvorySQL",
+      "YUM， PostgreSQL",
+      "Join Us"
+    ]
+  },
+  "prevItem": {
+    "title": "IvorySQL--Linux环境源码编译安装",
+    "permalink": "/zh-CN/blog/IvorySQL-Linux"
+  },
+  "nextItem": {
+    "title": "IvorySQL亮相于PostgresConf SV 2022 硅谷Postgres大会",
+    "permalink": "/zh-CN/blog/IvorySQL-sv"
+  }
+}

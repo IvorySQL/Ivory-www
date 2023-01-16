@@ -1,0 +1,69 @@
+{
+  "permalink": "/blog/IvorySQL-Webinar",
+  "source": "@site/blog/2022-3-25-postgres-world-webinar/index.md",
+  "title": "PostgresWorld Webinar | A Deep Dive Into IvorySQL",
+  "description": "Hi guys, PostgresWorld Webinars is back!",
+  "date": "2022-03-25T00:00:00.000Z",
+  "formattedDate": "March 25, 2022",
+  "tags": [
+    {
+      "label": "IvorySQL",
+      "permalink": "/blog/tags/ivory-sql"
+    },
+    {
+      "label": "PostgresWorld",
+      "permalink": "/blog/tags/postgres-world"
+    },
+    {
+      "label": "Database",
+      "permalink": "/blog/tags/database"
+    },
+    {
+      "label": "Oracle Compatible",
+      "permalink": "/blog/tags/oracle-compatible"
+    },
+    {
+      "label": "PostgreSQL",
+      "permalink": "/blog/tags/postgre-sql"
+    },
+    {
+      "label": "Join Us",
+      "permalink": "/blog/tags/join-us"
+    }
+  ],
+  "readingTime": 2.24,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "IvorySQL Team",
+      "url": "https://github.com/ivorysql",
+      "twitter": "IvorySql",
+      "imageURL": "https://github.com/ivorysql.png",
+      "key": "official"
+    }
+  ],
+  "frontMatter": {
+    "slug": "IvorySQL-Webinar",
+    "title": "PostgresWorld Webinar | A Deep Dive Into IvorySQL",
+    "authors": [
+      "official"
+    ],
+    "authorTwitter": "IvorySql",
+    "tags": [
+      "IvorySQL",
+      "PostgresWorld",
+      "Database",
+      "Oracle Compatible",
+      "PostgreSQL",
+      "Join Us"
+    ]
+  },
+  "prevItem": {
+    "title": "IvorySQL at PostgresConf SV 2022",
+    "permalink": "/blog/IvorySQL-sv"
+  },
+  "nextItem": {
+    "title": "IvorySQL Has Arrived",
+    "permalink": "/blog/IvorySQL"
+  }
+}

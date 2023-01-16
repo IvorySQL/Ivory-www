@@ -1,0 +1,17 @@
+{
+  "type": "mdx",
+  "permalink": "/Recent%20activities/oneday",
+  "source": "@site/src/pages/Recent activities/oneday.mdx",
+  "title": "IvorySQL 2022 一日开源活动",
+  "description": "1111",
+  "frontMatter": {
+    "sidebar_position": 1,
+    "sidebar_label": "IvorySQL 2022 一日开源活动",
+    "title": "IvorySQL 2022 一日开源活动",
+    "Tags": [
+      "IvorySQL",
+      "PostgresConf CN",
+      "Database"
+    ]
+  }
+}

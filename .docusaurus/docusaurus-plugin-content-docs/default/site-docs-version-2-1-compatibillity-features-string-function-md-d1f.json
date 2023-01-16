@@ -1,0 +1,28 @@
+{
+  "unversionedId": "version-2.1/Compatibillity_Features/string_function",
+  "id": "version-2.1/Compatibillity_Features/string_function",
+  "title": "兼容字符串函数",
+  "description": "概述",
+  "source": "@site/docs/version-2.1/Compatibillity_Features/string_function.md",
+  "sourceDirName": "version-2.1/Compatibillity_Features",
+  "slug": "/version-2.1/Compatibillity_Features/string_function",
+  "permalink": "/docs/next/version-2.1/Compatibillity_Features/string_function",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 17,
+  "frontMatter": {
+    "sidebar_label": "字符串函数",
+    "sidebar_position": 17,
+    "title": "兼容字符串函数"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PL/iSQL",
+    "permalink": "/docs/next/version-2.1/Compatibillity_Features/plisql"
+  },
+  "next": {
+    "title": "层级查询",
+    "permalink": "/docs/next/version-2.1/Compatibillity_Features/hierarchical"
+  }
+}

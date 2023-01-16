@@ -1,0 +1,32 @@
+{
+  "unversionedId": "version-1.5/Compatibillity_Features/delete_table",
+  "id": "version-1.5/Compatibillity_Features/delete_table",
+  "title": "删除表",
+  "description": "概述",
+  "source": "@site/docs/version-1.5/Compatibillity_Features/delete_table.md",
+  "sourceDirName": "version-1.5/Compatibillity_Features",
+  "slug": "/version-1.5/Compatibillity_Features/delete_table",
+  "permalink": "/docs/next/version-1.5/Compatibillity_Features/delete_table",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "sidebar_label": "删除表",
+    "title": "删除表",
+    "Tags": [
+      "Delete table",
+      "删除表"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "更改表",
+    "permalink": "/docs/next/version-1.5/Compatibillity_Features/alter_table"
+  },
+  "next": {
+    "title": "更新表",
+    "permalink": "/docs/next/version-1.5/Compatibillity_Features/update_table"
+  }
+}

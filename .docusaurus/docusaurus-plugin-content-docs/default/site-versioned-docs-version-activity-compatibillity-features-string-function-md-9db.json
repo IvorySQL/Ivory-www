@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Compatibillity_Features/string_function",
+  "id": "version-activity/Compatibillity_Features/string_function",
+  "title": "Compatible String Functions",
+  "description": "Overview",
+  "source": "@site/versioned_docs/version-activity/Compatibillity_Features/string_function.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/string_function",
+  "permalink": "/docs/Compatibillity_Features/string_function",
+  "draft": false,
+  "tags": [],
+  "version": "activity",
+  "sidebarPosition": 19,
+  "frontMatter": {
+    "sidebar_label": "String Functions",
+    "sidebar_position": 19,
+    "title": "Compatible String Functions"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Hierarchical Query",
+    "permalink": "/docs/Compatibillity_Features/hierarchical"
+  },
+  "next": {
+    "title": "Welcome to IvorySQL",
+    "permalink": "/docs/act"
+  }
+}

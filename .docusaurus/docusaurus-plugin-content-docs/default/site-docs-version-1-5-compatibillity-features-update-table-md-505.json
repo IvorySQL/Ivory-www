@@ -1,0 +1,32 @@
+{
+  "unversionedId": "version-1.5/Compatibillity_Features/update_table",
+  "id": "version-1.5/Compatibillity_Features/update_table",
+  "title": "更新表",
+  "description": "概述",
+  "source": "@site/docs/version-1.5/Compatibillity_Features/update_table.md",
+  "sourceDirName": "version-1.5/Compatibillity_Features",
+  "slug": "/version-1.5/Compatibillity_Features/update_table",
+  "permalink": "/docs/next/version-1.5/Compatibillity_Features/update_table",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "sidebar_label": "更新表",
+    "title": "更新表",
+    "Tags": [
+      "Update table",
+      "更新表"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "删除表",
+    "permalink": "/docs/next/version-1.5/Compatibillity_Features/delete_table"
+  },
+  "next": {
+    "title": "GROUP BY",
+    "permalink": "/docs/next/version-1.5/Compatibillity_Features/groupby"
+  }
+}

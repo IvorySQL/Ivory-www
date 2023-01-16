@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Compatibillity_Features/minus",
+  "id": "Compatibillity_Features/minus",
+  "title": "MINUS Operator",
+  "description": "MINUS",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-docs/current/Compatibillity_Features/minus.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/minus",
+  "permalink": "/zh-CN/docs/next/Compatibillity_Features/minus",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "sidebar_label": "Minus Operator",
+    "title": "MINUS Operator",
+    "Tags": [
+      "MINUS",
+      "Operator"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UNION",
+    "permalink": "/zh-CN/docs/next/Compatibillity_Features/union"
+  },
+  "next": {
+    "title": "转义字符",
+    "permalink": "/zh-CN/docs/next/Compatibillity_Features/escape-character"
+  }
+}

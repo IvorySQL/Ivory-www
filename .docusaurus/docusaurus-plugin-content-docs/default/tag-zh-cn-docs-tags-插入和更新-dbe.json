@@ -1,0 +1,14 @@
+{
+  "label": "插入和更新",
+  "permalink": "/zh-CN/docs/tags/插入和更新",
+  "allTagsPath": "/zh-CN/docs/tags",
+  "count": 1,
+  "items": [
+    {
+      "id": "version-2.1/Global Unique Index/insert_and_update",
+      "title": "插入和更新",
+      "description": "插入和更新的全局唯一性保证",
+      "permalink": "/zh-CN/docs/Global Unique Index/insert_and_update"
+    }
+  ]
+}

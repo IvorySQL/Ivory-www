@@ -1,0 +1,240 @@
+{
+  "pluginId": "default",
+  "version": "1.5",
+  "label": "1.5",
+  "banner": "unmaintained",
+  "badge": true,
+  "noIndex": false,
+  "className": "docs-version-1.5",
+  "isLast": false,
+  "docsSidebars": {
+    "version-1.5/tutorialSidebar": [
+      {
+        "type": "category",
+        "label": "Compatibility Features",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Compatibility Parameters",
+            "href": "/docs/1.5/Compatibillity_Features/parameter_settings",
+            "docId": "Compatibillity_Features/parameter_settings"
+          },
+          {
+            "type": "link",
+            "label": "Packages",
+            "href": "/docs/1.5/Compatibillity_Features/package",
+            "docId": "Compatibillity_Features/package"
+          },
+          {
+            "type": "link",
+            "label": "Alter Table",
+            "href": "/docs/1.5/Compatibillity_Features/alter_table",
+            "docId": "Compatibillity_Features/alter_table"
+          },
+          {
+            "type": "link",
+            "label": "Delete Table",
+            "href": "/docs/1.5/Compatibillity_Features/delete_table",
+            "docId": "Compatibillity_Features/delete_table"
+          },
+          {
+            "type": "link",
+            "label": "Update Table",
+            "href": "/docs/1.5/Compatibillity_Features/update_table",
+            "docId": "Compatibillity_Features/update_table"
+          },
+          {
+            "type": "link",
+            "label": "Group By",
+            "href": "/docs/1.5/Compatibillity_Features/groupby",
+            "docId": "Compatibillity_Features/groupby"
+          },
+          {
+            "type": "link",
+            "label": "Union Operator",
+            "href": "/docs/1.5/Compatibillity_Features/union",
+            "docId": "Compatibillity_Features/union"
+          },
+          {
+            "type": "link",
+            "label": "Minus Operator",
+            "href": "/docs/1.5/Compatibillity_Features/minus",
+            "docId": "Compatibillity_Features/minus"
+          },
+          {
+            "type": "link",
+            "label": "Escape Characters",
+            "href": "/docs/1.5/Compatibillity_Features/escape-character",
+            "docId": "Compatibillity_Features/escape-character"
+          },
+          {
+            "type": "link",
+            "label": "Sequence",
+            "href": "/docs/1.5/Compatibillity_Features/sequence",
+            "docId": "Compatibillity_Features/sequence"
+          },
+          {
+            "type": "link",
+            "label": "Compatible with date and time function",
+            "href": "/docs/1.5/Compatibillity_Features/datefuncs",
+            "docId": "Compatibillity_Features/datefuncs"
+          },
+          {
+            "type": "link",
+            "label": "Compatible Conversion and Comparision and NULL-Related functions",
+            "href": "/docs/1.5/Compatibillity_Features/conversion_function",
+            "docId": "Compatibillity_Features/conversion_function"
+          },
+          {
+            "type": "link",
+            "label": "NLS_LENGTH_SEMANTICS",
+            "href": "/docs/1.5/Compatibillity_Features/nls_length_semantics",
+            "docId": "Compatibillity_Features/nls_length_semantics"
+          },
+          {
+            "type": "link",
+            "label": "NVARCHAR2(size)",
+            "href": "/docs/1.5/Compatibillity_Features/nvarchar2",
+            "docId": "Compatibillity_Features/nvarchar2"
+          },
+          {
+            "type": "link",
+            "label": "VARCHAR2(size)",
+            "href": "/docs/1.5/Compatibillity_Features/varchar2",
+            "docId": "Compatibillity_Features/varchar2"
+          },
+          {
+            "type": "link",
+            "label": "PL/iSQL",
+            "href": "/docs/1.5/Compatibillity_Features/plisql",
+            "docId": "Compatibillity_Features/plisql"
+          },
+          {
+            "type": "link",
+            "label": "Hierarchical Query",
+            "href": "/docs/1.5/Compatibillity_Features/hierarchical",
+            "docId": "Compatibillity_Features/hierarchical"
+          }
+        ]
+      },
+      {
+        "type": "link",
+        "label": "Welcome to IvorySQL",
+        "href": "/docs/1.5/intro",
+        "docId": "intro"
+      }
+    ]
+  },
+  "docs": {
+    "Compatibillity_Features/alter_table": {
+      "id": "Compatibillity_Features/alter_table",
+      "title": "Alter Table",
+      "description": "Overview",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/conversion_function": {
+      "id": "Compatibillity_Features/conversion_function",
+      "title": "Compatible Conversion and Comparision and NULL-Related functions",
+      "description": "TO_CHAR",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/datefuncs": {
+      "id": "Compatibillity_Features/datefuncs",
+      "title": "Compatible with date and time function",
+      "description": "1. from_tz",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/delete_table": {
+      "id": "Compatibillity_Features/delete_table",
+      "title": "Delete Table",
+      "description": "Overview",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/escape-character": {
+      "id": "Compatibillity_Features/escape-character",
+      "title": "Escape Characters",
+      "description": "q\\'",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/groupby": {
+      "id": "Compatibillity_Features/groupby",
+      "title": "Group By",
+      "description": "Overview",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/hierarchical": {
+      "id": "Compatibillity_Features/hierarchical",
+      "title": "Hierarchical Query",
+      "description": "Hierarchical Query",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/minus": {
+      "id": "Compatibillity_Features/minus",
+      "title": "MINUS Operator",
+      "description": "MINUS",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/nls_length_semantics": {
+      "id": "Compatibillity_Features/nls_length_semantics",
+      "title": "NLS_LENGTH_SEMANTICS",
+      "description": "Overview",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/nvarchar2": {
+      "id": "Compatibillity_Features/nvarchar2",
+      "title": "NVARCHAR2(size)",
+      "description": "Overview",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/package": {
+      "id": "Compatibillity_Features/package",
+      "title": "Packages",
+      "description": "Package Overview",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/parameter_settings": {
+      "id": "Compatibillity_Features/parameter_settings",
+      "title": "Compatibility Parameters",
+      "description": "Parameter Names and Values",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/plisql": {
+      "id": "Compatibillity_Features/plisql",
+      "title": "PL/iSQL",
+      "description": "PL/iSQL is IvorySQL’s procedural language for writing custom Functions,",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/sequence": {
+      "id": "Compatibillity_Features/sequence",
+      "title": "Sequence",
+      "description": "Sequence Syntax Enhancements",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/union": {
+      "id": "Compatibillity_Features/union",
+      "title": "Union Operator",
+      "description": "UNION",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/update_table": {
+      "id": "Compatibillity_Features/update_table",
+      "title": "Update Table",
+      "description": "Overview",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "Compatibillity_Features/varchar2": {
+      "id": "Compatibillity_Features/varchar2",
+      "title": "VARCHAR2(size)",
+      "description": "Overview",
+      "sidebar": "version-1.5/tutorialSidebar"
+    },
+    "intro": {
+      "id": "intro",
+      "title": "Welcome to IvorySQL",
+      "description": "IvorySQL is the only Oracle compatible open source PostgreSQL.",
+      "sidebar": "version-1.5/tutorialSidebar"
+    }
+  }
+}

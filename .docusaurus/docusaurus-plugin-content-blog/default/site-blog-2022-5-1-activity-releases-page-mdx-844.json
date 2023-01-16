@@ -1,0 +1,24 @@
+{
+  "permalink": "/blog/2022/5/1/activity/releases-page",
+  "source": "@site/blog/2022-5-1-activity/releases-page.mdx",
+  "title": "IvorySQL Releases",
+  "description": "",
+  "date": "2022-05-01T00:00:00.000Z",
+  "formattedDate": "May 1, 2022",
+  "tags": [],
+  "readingTime": 0.715,
+  "hasTruncateMarker": false,
+  "authors": [],
+  "frontMatter": {
+    "id": "IvorySQL-Releases",
+    "title": "IvorySQL Releases"
+  },
+  "prevItem": {
+    "title": "IvorySQL 2022 一日开源活动",
+    "permalink": "/blog/2022/5/1/activity/oneday-page"
+  },
+  "nextItem": {
+    "title": "IvorySQL at PostgresConf SV 2022",
+    "permalink": "/blog/IvorySQL-sv"
+  }
+}

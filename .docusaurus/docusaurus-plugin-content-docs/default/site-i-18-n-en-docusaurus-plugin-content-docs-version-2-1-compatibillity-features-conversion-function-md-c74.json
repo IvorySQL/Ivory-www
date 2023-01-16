@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Compatibillity_Features/conversion_function",
+  "id": "version-2.1/Compatibillity_Features/conversion_function",
+  "title": "Compatible Conversion and Comparision and NULL-Related functions",
+  "description": "TO_CHAR",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-2.1/Compatibillity_Features/conversion_function.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/conversion_function",
+  "permalink": "/en/docs/2.1/Compatibillity_Features/conversion_function",
+  "draft": false,
+  "tags": [],
+  "version": "2.1",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "sidebar_label": "Compatible Conversion and Comparision and NULL-Related functions",
+    "sidebar_position": 12,
+    "title": "Compatible Conversion and Comparision and NULL-Related functions"
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "Compatible with date and time function",
+    "permalink": "/en/docs/2.1/Compatibillity_Features/datefuncs"
+  },
+  "next": {
+    "title": "NLS_LENGTH_SEMANTICS",
+    "permalink": "/en/docs/2.1/Compatibillity_Features/nls_length_semantics"
+  }
+}

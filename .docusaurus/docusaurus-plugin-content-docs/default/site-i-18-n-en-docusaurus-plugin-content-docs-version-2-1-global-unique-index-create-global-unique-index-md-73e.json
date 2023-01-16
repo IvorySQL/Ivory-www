@@ -1,0 +1,36 @@
+{
+  "unversionedId": "Global Unique Index/create_global_unique_index",
+  "id": "version-2.1/Global Unique Index/create_global_unique_index",
+  "title": "Create Global Unique Index",
+  "description": "Overview",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-2.1/Global Unique Index/create_global_unique_index.md",
+  "sourceDirName": "Global Unique Index",
+  "slug": "/Global Unique Index/create_global_unique_index",
+  "permalink": "/en/docs/2.1/Global Unique Index/create_global_unique_index",
+  "draft": false,
+  "tags": [
+    {
+      "label": "Create Global Unique Index",
+      "permalink": "/en/docs/2.1/tags/create-global-unique-index"
+    }
+  ],
+  "version": "2.1",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "sidebar_label": "Create Global Unique Index",
+    "title": "Create Global Unique Index",
+    "tags": [
+      "Create Global Unique Index"
+    ]
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "Welcome to IvorySQL",
+    "permalink": "/en/docs/2.1/intro"
+  },
+  "next": {
+    "title": "Insert and Update",
+    "permalink": "/en/docs/2.1/Global Unique Index/insert_and_update"
+  }
+}

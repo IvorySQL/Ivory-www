@@ -1,0 +1,32 @@
+{
+  "unversionedId": "version-2.1/Compatibillity_Features/plisql",
+  "id": "version-2.1/Compatibillity_Features/plisql",
+  "title": "PL/iSQL",
+  "description": "PL/iSQL 是 IvorySQL 的过程语言，用于为 IvorySQL 编写自定义函数、过程和包。",
+  "source": "@site/docs/version-2.1/Compatibillity_Features/plisql.md",
+  "sourceDirName": "version-2.1/Compatibillity_Features",
+  "slug": "/version-2.1/Compatibillity_Features/plisql",
+  "permalink": "/docs/next/version-2.1/Compatibillity_Features/plisql",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 17,
+  "frontMatter": {
+    "sidebar_position": 17,
+    "sidebar_label": "PL/iSQL",
+    "title": "PL/iSQL",
+    "Tags": [
+      "PL/iSQL",
+      "PL Language"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "VARCHAR2(size)类型",
+    "permalink": "/docs/next/version-2.1/Compatibillity_Features/varchar2"
+  },
+  "next": {
+    "title": "字符串函数",
+    "permalink": "/docs/next/version-2.1/Compatibillity_Features/string_function"
+  }
+}

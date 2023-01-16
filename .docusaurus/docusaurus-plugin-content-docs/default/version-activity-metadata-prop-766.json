@@ -1,0 +1,48 @@
+{
+  "pluginId": "default",
+  "version": "activity",
+  "label": "activity",
+  "banner": null,
+  "badge": true,
+  "noIndex": false,
+  "className": "docs-version-activity",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "category",
+        "label": "更多活动",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "IvorySQL 2022 一日开源活动",
+            "href": "/docs/Compatibillity_Features/oneday-page",
+            "docId": "Compatibillity_Features/oneday-page"
+          }
+        ]
+      },
+      {
+        "type": "link",
+        "label": "Welcome to IvorySQL",
+        "href": "/docs/intro",
+        "docId": "intro"
+      }
+    ]
+  },
+  "docs": {
+    "Compatibillity_Features/oneday-page": {
+      "id": "Compatibillity_Features/oneday-page",
+      "title": "IvorySQL 2022 一日开源活动",
+      "description": "IvorySQL Release - 1.5",
+      "sidebar": "tutorialSidebar"
+    },
+    "intro": {
+      "id": "intro",
+      "title": "Welcome to IvorySQL",
+      "description": "IvorySQL is the only Oracle compatible open source PostgreSQL.",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

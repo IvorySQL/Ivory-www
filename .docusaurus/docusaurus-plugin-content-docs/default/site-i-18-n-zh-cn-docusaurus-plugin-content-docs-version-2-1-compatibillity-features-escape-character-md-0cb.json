@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Compatibillity_Features/escape-character",
+  "id": "version-2.1/Compatibillity_Features/escape-character",
+  "title": "转义字符",
+  "description": "q\\' feature",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-docs/version-2.1/Compatibillity_Features/escape-character.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/escape-character",
+  "permalink": "/zh-CN/docs/Compatibillity_Features/escape-character",
+  "draft": false,
+  "tags": [],
+  "version": "2.1",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9,
+    "sidebar_label": "转义字符",
+    "title": "转义字符",
+    "Tags": [
+      "Escape Character",
+      "转义字符"
+    ]
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "Minus Operator",
+    "permalink": "/zh-CN/docs/Compatibillity_Features/minus"
+  },
+  "next": {
+    "title": "序列",
+    "permalink": "/zh-CN/docs/Compatibillity_Features/sequence"
+  }
+}

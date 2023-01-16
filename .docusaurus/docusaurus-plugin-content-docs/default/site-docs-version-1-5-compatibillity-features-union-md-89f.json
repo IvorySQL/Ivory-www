@@ -1,0 +1,32 @@
+{
+  "unversionedId": "version-1.5/Compatibillity_Features/union",
+  "id": "version-1.5/Compatibillity_Features/union",
+  "title": "UNION",
+  "description": "UNION",
+  "source": "@site/docs/version-1.5/Compatibillity_Features/union.md",
+  "sourceDirName": "version-1.5/Compatibillity_Features",
+  "slug": "/version-1.5/Compatibillity_Features/union",
+  "permalink": "/docs/next/version-1.5/Compatibillity_Features/union",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "sidebar_label": "UNION",
+    "title": "UNION",
+    "Tags": [
+      "UNION",
+      "Operator"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "GROUP BY",
+    "permalink": "/docs/next/version-1.5/Compatibillity_Features/groupby"
+  },
+  "next": {
+    "title": "Minus Operator",
+    "permalink": "/docs/next/version-1.5/Compatibillity_Features/minus"
+  }
+}

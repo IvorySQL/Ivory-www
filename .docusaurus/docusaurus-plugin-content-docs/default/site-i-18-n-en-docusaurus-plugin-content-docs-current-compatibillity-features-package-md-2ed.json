@@ -1,0 +1,36 @@
+{
+  "unversionedId": "Compatibillity_Features/package",
+  "id": "Compatibillity_Features/package",
+  "title": "Packages",
+  "description": "Package Overview",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/current/Compatibillity_Features/package.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/package",
+  "permalink": "/en/docs/next/Compatibillity_Features/package",
+  "draft": false,
+  "tags": [
+    {
+      "label": "Oracle Style Packages",
+      "permalink": "/en/docs/next/tags/oracle-style-packages"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "sidebar_label": "Packages",
+    "title": "Packages",
+    "tags": [
+      "Oracle Style Packages"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Compatibility Parameters",
+    "permalink": "/en/docs/next/Compatibillity_Features/parameter_settings"
+  },
+  "next": {
+    "title": "Alter Table",
+    "permalink": "/en/docs/next/Compatibillity_Features/alter_table"
+  }
+}

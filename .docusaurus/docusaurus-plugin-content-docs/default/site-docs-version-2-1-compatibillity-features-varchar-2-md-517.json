@@ -1,0 +1,31 @@
+{
+  "unversionedId": "version-2.1/Compatibillity_Features/varchar2",
+  "id": "version-2.1/Compatibillity_Features/varchar2",
+  "title": "VARCHAR2(size)类型",
+  "description": "概述",
+  "source": "@site/docs/version-2.1/Compatibillity_Features/varchar2.md",
+  "sourceDirName": "version-2.1/Compatibillity_Features",
+  "slug": "/version-2.1/Compatibillity_Features/varchar2",
+  "permalink": "/docs/next/version-2.1/Compatibillity_Features/varchar2",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "sidebar_position": 15,
+    "sidebar_label": "VARCHAR2(size)类型",
+    "title": "VARCHAR2(size)类型",
+    "Tags": [
+      "VARCHAR2(size)类型"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "NVARCHAR2(size)",
+    "permalink": "/docs/next/version-2.1/Compatibillity_Features/nvarchar2"
+  },
+  "next": {
+    "title": "PL/iSQL",
+    "permalink": "/docs/next/version-2.1/Compatibillity_Features/plisql"
+  }
+}

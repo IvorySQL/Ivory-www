@@ -1,0 +1,14 @@
+{
+  "label": "Insert and Update",
+  "permalink": "/docs/tags/insert-and-update",
+  "allTagsPath": "/docs/tags",
+  "count": 1,
+  "items": [
+    {
+      "id": "version-2.1/Global Unique Index/insert_and_update",
+      "title": "Insert and Update",
+      "description": "Global Uniqueness Guarantee with Insert and Update",
+      "permalink": "/docs/Global Unique Index/insert_and_update"
+    }
+  ]
+}

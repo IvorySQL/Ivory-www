@@ -1,0 +1,25 @@
+{
+  "permalink": "/blog/2022/5/1/111/activity/oneday-page copy",
+  "source": "@site/blog/111/2022-5-1-activity/oneday-page copy.mdx",
+  "title": "IvorySQL 2022 一日开源活动",
+  "description": "IvorySQL Release - 1.5",
+  "date": "2022-05-01T00:00:00.000Z",
+  "formattedDate": "May 1, 2022",
+  "tags": [],
+  "readingTime": 3.46,
+  "hasTruncateMarker": false,
+  "authors": [],
+  "frontMatter": {
+    "sidebar_position": 1,
+    "sidebar_label": "IvorySQL 2022 一日开源活动",
+    "title": "IvorySQL 2022 一日开源活动"
+  },
+  "prevItem": {
+    "title": "Install software through the YUM source",
+    "permalink": "/blog/IvorySQL-YUM"
+  },
+  "nextItem": {
+    "title": "IvorySQL 2022 一日开源活动",
+    "permalink": "/blog/2022/5/1/111/activity/oneday-page"
+  }
+}

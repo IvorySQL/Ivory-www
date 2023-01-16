@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/zh-CN/ivorysql-v1-5-release-page",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-pages/ivorysql-v1-5-release-page.mdx",
+  "title": "IvorySQL 版本 - 1.5",
+  "description": "[最新稳定版本]",
+  "frontMatter": {
+    "id": "IvorySQL-Release-1-5",
+    "title": "IvorySQL 版本 - 1.5"
+  }
+}

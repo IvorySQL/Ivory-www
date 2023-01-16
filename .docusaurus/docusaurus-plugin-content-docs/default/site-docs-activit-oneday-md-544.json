@@ -1,0 +1,25 @@
+{
+  "unversionedId": "activit/oneday",
+  "id": "activit/oneday",
+  "title": "IvorySQL 2022 一日开源活动",
+  "description": "IvorySQL Release - 1.5",
+  "source": "@site/docs/activit/oneday.md",
+  "sourceDirName": "activit",
+  "slug": "/activit/oneday",
+  "permalink": "/docs/next/activit/oneday",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_id": "activit",
+    "sidebar_position": 1,
+    "sidebar_label": "IvorySQL 2022 一日开源活动",
+    "title": "IvorySQL 2022 一日开源活动"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Welcome to IvorySQL",
+    "permalink": "/docs/next/intro"
+  }
+}

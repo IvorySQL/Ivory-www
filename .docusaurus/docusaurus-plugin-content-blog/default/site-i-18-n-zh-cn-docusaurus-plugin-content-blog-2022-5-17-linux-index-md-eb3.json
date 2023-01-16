@@ -1,0 +1,54 @@
+{
+  "permalink": "/zh-CN/blog/IvorySQL-Linux",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-blog/2022-5-17-linux/index.md",
+  "title": "IvorySQL--Linux环境源码编译安装",
+  "description": "IvorySQL可以在Linux, OSX, Unix和Windows平台上构建，与PostgreSQL的编译安装基本上是一样的。本文对基于Linux的系统上编译源代码的步骤进行说明。",
+  "date": "2022-05-17T00:00:00.000Z",
+  "formattedDate": "2022年5月17日",
+  "tags": [
+    {
+      "label": "IvorySQL",
+      "permalink": "/zh-CN/blog/tags/ivory-sql"
+    },
+    {
+      "label": "Linux，PostgreSQL",
+      "permalink": "/zh-CN/blog/tags/linux，-postgre-sql"
+    },
+    {
+      "label": "Join Us",
+      "permalink": "/zh-CN/blog/tags/join-us"
+    }
+  ],
+  "readingTime": 8.21,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "IvorySQL Team",
+      "url": "https://github.com/ivorysql",
+      "twitter": "IvorySql",
+      "imageURL": "https://github.com/ivorysql.png",
+      "key": "official"
+    }
+  ],
+  "frontMatter": {
+    "slug": "IvorySQL-Linux",
+    "title": "IvorySQL--Linux环境源码编译安装",
+    "authors": [
+      "official"
+    ],
+    "authorTwitter": "IvorySql",
+    "tags": [
+      "IvorySQL",
+      "Linux，PostgreSQL",
+      "Join Us"
+    ]
+  },
+  "prevItem": {
+    "title": "Introduction to IvorySQL Packages",
+    "permalink": "/zh-CN/blog/IvorySQL-Packages"
+  },
+  "nextItem": {
+    "title": "IvorySQL--YUM源安装",
+    "permalink": "/zh-CN/blog/IvorySQL-YUM"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "unversionedId": "Compatibillity_Features/package",
+  "id": "Compatibillity_Features/package",
+  "title": "包",
+  "description": "软件包概述",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-docs/current/Compatibillity_Features/package.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/package",
+  "permalink": "/zh-CN/docs/next/Compatibillity_Features/package",
+  "draft": false,
+  "tags": [
+    {
+      "label": "Oracle Style Packages",
+      "permalink": "/zh-CN/docs/next/tags/oracle-style-packages"
+    },
+    {
+      "label": "包",
+      "permalink": "/zh-CN/docs/next/tags/包"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "sidebar_label": "包",
+    "title": "包",
+    "tags": [
+      "Oracle Style Packages",
+      "包"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "配置参数",
+    "permalink": "/zh-CN/docs/next/Compatibillity_Features/parameter_settings"
+  },
+  "next": {
+    "title": "更改表",
+    "permalink": "/zh-CN/docs/next/Compatibillity_Features/alter_table"
+  }
+}

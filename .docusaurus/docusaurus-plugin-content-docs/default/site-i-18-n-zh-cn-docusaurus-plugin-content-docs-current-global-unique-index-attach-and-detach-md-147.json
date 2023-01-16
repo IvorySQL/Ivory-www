@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Global Unique Index/attach_and_detach",
+  "id": "Global Unique Index/attach_and_detach",
+  "title": "附加和分离",
+  "description": "附加语句的全球唯一性保证",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-docs/current/Global Unique Index/attach_and_detach.md",
+  "sourceDirName": "Global Unique Index",
+  "slug": "/Global Unique Index/attach_and_detach",
+  "permalink": "/zh-CN/docs/next/Global Unique Index/attach_and_detach",
+  "draft": false,
+  "tags": [
+    {
+      "label": "附加和分离",
+      "permalink": "/zh-CN/docs/next/tags/附加和分离"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "sidebar_label": "附加和分离",
+    "title": "附加和分离",
+    "tags": [
+      "附加和分离"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "插入和更新",
+    "permalink": "/zh-CN/docs/next/Global Unique Index/insert_and_update"
+  }
+}

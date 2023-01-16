@@ -1,0 +1,8 @@
+{
+  "type": "mdx",
+  "permalink": "/contribution-guidelines",
+  "source": "@site/src/pages/contribution-guidelines.md",
+  "title": "Contributing",
+  "description": "IvorySQL is maintained by a core team of developers with commit rights to the main IvorySQL repository on GitHub. At the same time, we are very eager to receive contributions from anybody in the wider IvorySQL community. This section covers all you need to know if you want to see your code or documentation changes be added to IvorySQL and appear in future releases.",
+  "frontMatter": {}
+}

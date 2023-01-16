@@ -1,0 +1,32 @@
+{
+  "unversionedId": "Compatibillity_Features/groupby",
+  "id": "version-2.1/Compatibillity_Features/groupby",
+  "title": "Group By",
+  "description": "概述",
+  "source": "@site/i18n/zh-CN/docusaurus-plugin-content-docs/version-2.1/Compatibillity_Features/groupby.md",
+  "sourceDirName": "Compatibillity_Features",
+  "slug": "/Compatibillity_Features/groupby",
+  "permalink": "/zh-CN/docs/Compatibillity_Features/groupby",
+  "draft": false,
+  "tags": [],
+  "version": "2.1",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "sidebar_label": "GROUP BY",
+    "title": "Group By",
+    "Tags": [
+      "Group By",
+      "Groupby"
+    ]
+  },
+  "sidebar": "version-2.1/tutorialSidebar",
+  "previous": {
+    "title": "更新表",
+    "permalink": "/zh-CN/docs/Compatibillity_Features/update_table"
+  },
+  "next": {
+    "title": "UNION",
+    "permalink": "/zh-CN/docs/Compatibillity_Features/union"
+  }
+}
