@@ -29,7 +29,7 @@ function HomepageHeader() {
               className="button button--secondary button--lg" 
               id="header-link-viewmore"
               to="https://github.com/IvorySQL/IvorySQL/blob/master/README.md">
-                <div class="button-font-viewmore" id="id-button-font-viewmore">嘿嘿</div>
+                <div class="button-font-viewmore" id="id-button-font-viewmore">View More</div>
             </Link>
         </div>
       </div>
