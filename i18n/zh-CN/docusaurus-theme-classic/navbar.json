@@ -1,59 +1,27 @@
 {
-  "title": {
-    "message": "IvorySQL",
-    "description": "The title in the navbar"
-  },
-  "item.label.Docs": {
-    "message": "文档",
-    "description": "Navbar item with label Docs"
-  },
-  "item.label.Community": {
-    "message": "社区",
-    "description": "Navbar item with label Community"
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
   },
   "item.label.Download": {
     "message": "下载",
     "description": "Navbar item with label Download"
   },
-  "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Navbar item with label GitHub"
+  "item.label.Releases": {
+    "message": "发布",
+    "description": "Navbar item with label Releases"
   },
   "item.label.Resources": {
     "message": "资源",
     "description": "Navbar item with label Resources"
   },
-  "item.label.Contribution Guidelines": {
-    "message": "贡献准则",
-    "description": "Navbar item with label Contribution Guidelines"
+  "item.label.Community": {
+    "message": "社区",
+    "description": "Navbar item with label Community"
   },
-  "item.label.Report an issue": {
-    "message": "提交问题",
-    "description": "Navbar item with label Report an issue"
-  },
-  "item.label.IvorySQL GitHub": {
-    "message": "IvorySQL GitHub",
-    "description": "Navbar item with label IvorySQL GitHub"
-  },
-  "item.label.Mailing Lists": {
-    "message": "邮件列表",
-    "description": "Navbar item with label Mailing Lists"
-  },
-  "item.label.Downloads": {
-    "message": "下载",
-    "description": "Navbar item with label Downloads"
-  },
-  "item.label.Blog": {
-    "message": "博客",
-    "description": "Navbar item with label Blog"
-  },
-  "item.label.Releases": {
-    "message": "发布",
-    "description": "Navbar item with label Releases"
-  },
-  "item.label.Gitee": {
-    "message": "Gitee",
-    "description": "Navbar item with label Gitee"
+  "item.label.Try for Free": {
+    "message": "Try for Free",
+    "description": "Navbar item with label Try for Free"
   },
   "item.label.Webinars": {
     "message": "网络研讨会",
@@ -63,8 +31,48 @@
     "message": "合作伙伴",
     "description": "Navbar item with label Partners"
   },
-  "item.label.Customer Stories": {
+  "item.label.Customer Story": {
     "message": "客户故事",
-    "description": "Navbar item with label Customer Stories"
+    "description": "Navbar item with label Customer Story"
+  },
+  "item.label.Cases Studies": {
+    "message": "成功案例",
+    "description": "Navbar item with label Cases Studies"
+  },
+  "item.label.Docs": {
+    "message": "文档",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Code Of Conduct": {
+    "message": "行为准则",
+    "description": "Navbar item with label Code Of Conduct"
+  },
+  "item.label.Mail list": {
+    "message": "邮箱列表",
+    "description": "Navbar item with label Mail list"
+  },
+  "item.label.Contribute": {
+    "message": "贡献-Github",
+    "description": "Navbar item with label Contribute"
+  },
+  "item.label.Shareing": {
+    "message": "共享",
+    "description": "Navbar item with label Shareing"
+  },
+  "item.label.Discuss": {
+    "message": "讨论",
+    "description": "Navbar item with label Discuss"
+  },
+  "item.label.Subscribe": {
+    "message": "订阅",
+    "description": "Navbar item with label Subscribe"
+  },
+  "item.label.activity": {
+    "message": "活动",
+    "description": "Navbar item with label activity"
+  },
+  "item.label.Devel": {
+    "message": "开发者版",
+    "description": "Navbar item with label Devel"
   }
 }

@@ -1,58 +1,86 @@
 {
-  "link.title.Docs": {
-    "message": "文档",
-    "description": "The title of the footer links column with title=Docs in the footer"
+  "link.title.About Us": {
+    "message": "关于我们",
+    "description": "The title of the footer links column with title=About Us in the footer"
+  },
+  "link.title.Learning": {
+    "message": "学习",
+    "description": "The title of the footer links column with title=Learning in the footer"
   },
   "link.title.Community": {
     "message": "社区",
     "description": "The title of the footer links column with title=Community in the footer"
   },
-  "link.title.More": {
-    "message": "更多",
-    "description": "The title of the footer links column with title=More in the footer"
+  "link.title. ": {
+    "message": " ",
+    "description": "The title of the footer links column with title=  in the footer"
+  },
+  "link.item.label.About IvorySQL": {
+    "message": "IvorySQL介绍",
+    "description": "The label of footer link with label=About IvorySQL linking to https://github.com/IvorySQL/IvorySQL#readme"
+  },
+  "link.item.label.About HGDB": {
+    "message": "瀚高公司介绍",
+    "description": "The label of footer link with label=About HGDB linking to https://www.highgo.com/"
+  },
+  "link.item.label.Legal Notices": {
+    "message": "法律声明",
+    "description": "The label of footer link with label=Legal Notices linking to /blog"
+  },
+  "link.item.label.Problem Feedback": {
+    "message": "问题反馈",
+    "description": "The label of footer link with label=Problem Feedback linking to https://github.com/IvorySQL/IvorySQL/issues/new/choose"
   },
   "link.item.label.Docs": {
     "message": "文档",
-    "description": "The label of footer link with label=Docs linking to /docs/intro"
+    "description": "The label of footer link with label=Docs linking to /docs/next/intro"
   },
-  "link.item.label.Twitter": {
-    "message": "Twitter",
-    "description": "The label of footer link with label=Twitter linking to https://twitter.com/IvorySQL"
+  "link.item.label.Blogs": {
+    "message": "博客",
+    "description": "The label of footer link with label=Blogs linking to /Blog"
   },
-  "link.item.label.Hackers mailing list": {
-    "message": "Hackers邮件列表",
-    "description": "The label of footer link with label=Hackers mailing list linking to https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/"
+  "link.item.label.Downloads": {
+    "message": "下载",
+    "description": "The label of footer link with label=Downloads linking to /release"
   },
-  "link.item.label.Users mailing list": {
-    "message": "用户邮件列表",
-    "description": "The label of footer link with label=Users mailing list linking to https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/"
+  "link.item.label.Quick Starts": {
+    "message": "快速入门",
+    "description": "The label of footer link with label=Quick Starts linking to /"
   },
-  "link.item.label.Website GitHub": {
-    "message": "Website GitHub",
-    "description": "The label of footer link with label=Website GitHub linking to https://github.com/IvorySQL/Ivory-www"
+  "link.item.label.Release Notes": {
+    "message": "发行说明",
+    "description": "The label of footer link with label=Release Notes linking to /ivorysql-v1-5-release-page"
   },
-  "link.item.label.IvorySQL GitHub": {
-    "message": "IvorySQL GitHub",
-    "description": "The label of footer link with label=IvorySQL GitHub linking to https://github.com/IvorySQL/IvorySQL"
+  "link.item.label.Webinars": {
+    "message": "网络研讨会",
+    "description": "The label of footer link with label=Webinars linking to /webinars-page"
   },
-  "copyright": {
-    "message": "Copyright © 2022 IvorySQL.",
-    "description": "The footer copyright"
+  "link.item.label.Partners": {
+    "message": "合作伙伴",
+    "description": "The label of footer link with label=Partners linking to /partners-page"
   },
-  "link.item.label.Mailing Lists": {
-    "message": "邮件列表",
-    "description": "The label of footer link with label=Mailing Lists linking to https://lists.IvorySQL.org"
+  "link.item.label.Cases Studies": {
+    "message": "成功案例",
+    "description": "The label of footer link with label=Cases Studies linking to /contribution-guidelines"
   },
-  "link.item.label.IvorySQL Gitee": {
-    "message": "IvorySQL Gitee",
-    "description": "The label of footer link with label=IvorySQL Gitee linking to https://gitee.com/IvorySQL/"
+  "link.item.label.Join Us": {
+    "message": "参与进来",
+    "description": "The label of footer link with label=Join Us linking to /"
   },
-  "link.item.label.Report an issue": {
-    "message": "提交问题",
-    "description": "The label of footer link with label=Report an issue linking to https://github.com/IvorySQL/IvorySQL/issues/new/choose"
+  "link.item.label.Contribute Documents": {
+    "message": "贡献文章",
+    "description": "The label of footer link with label=Contribute Documents linking to /blog"
   },
-  "link.item.label.IvorySQL YUM": {
-    "message": "IvorySQL YUM",
-    "description": "The label of footer link with label=IvorySQL YUM linking to https://yum.highgo.ca/ivorysql.html"
+  "link.item.label.Github": {
+    "message": "Github",
+    "description": "The label of footer link with label=Github linking to https://github.com/IvorySQL/IvorySQL"
+  },
+  "link.item.label.Gitee": {
+    "message": "Gitee",
+    "description": "The label of footer link with label=Gitee linking to https://gitee.com/IvorySQL/"
+  },
+  "link.item.label.Latest Events": {
+    "message": "最新动态",
+    "description": "The label of footer link with label=Latest Events linking to /"
   }
 }
