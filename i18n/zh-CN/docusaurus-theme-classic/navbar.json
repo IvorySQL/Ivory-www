@@ -67,7 +67,7 @@
     "message": "订阅",
     "description": "Navbar item with label Subscribe"
   },
-  "item.label.activity": {
+  "item.label.Activity": {
     "message": "活动",
     "description": "Navbar item with label activity"
   },
