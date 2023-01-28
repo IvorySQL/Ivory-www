@@ -43,7 +43,7 @@
     "message": "文档",
     "description": "Navbar item with label Docs"
   },
-  "item.label.Code Of Conduct": {
+  "item.label.Code of Conduct": {
     "message": "行为准则",
     "description": "Navbar item with label Code Of Conduct"
   },
