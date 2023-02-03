@@ -189,7 +189,7 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} IvorySQL.`,
       },
-      colorMode: {
+      colorModeToggle: {
         defaultMode: 'light',
         disableSwitch: true,
         respectPrefersColorScheme: false,
