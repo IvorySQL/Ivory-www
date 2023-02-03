@@ -1,0 +1,332 @@
+.Outer-layer{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.homepage-header{
+  width: 100vw;
+  height: 28em;
+  background-image: url(../../svg/banner/banner-balloon-web.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: grid;
+  max-width: 2000px;
+}
+.header-font{
+  width: 55%;
+  height: 1em;
+  position: relative; 
+  top: 122px;
+  left: 200px;
+}
+.header-title{
+  width: 55%;
+  font-size: 25px;
+  font-family: Gilroy;
+  font-weight: 800;
+  color: #ffffff;;
+  line-height: 31px;
+}
+.header-content{
+  width: 40%;
+  height: 34px;
+  font-size: 14px;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 14px;
+  width: 500px;
+  position: relative;
+  top: 19px;
+}
+#Link{
+  width: 100%;
+  height: 300%;
+  position: relative;
+  top: 300%;
+}
+#header-link-getstart{
+  width: 117px;
+  height: 35px;
+  background: #FFD673;
+  border-radius: 3px;
+  border: 1px;
+}
+#header-link-getstart:hover{
+  background: #F9BB30;
+  color: black;
+}
+#header-link-viewmore{
+  width: 117px;
+  height: 35px;
+  position: relative;
+  left:25px;
+  background-color: #fff1cc;
+  border-radius: 3px;
+  border: 1px solid #626262;
+}
+#header-link-viewmore:hover{
+  background: #FFD673;
+  color: black;
+}
+.button-font-getstart{
+  width: 72px;
+  height: 9px;
+  font-size: 12px;
+  font-family: Gilroy;
+  font-weight: 800;
+  color: #333333;
+  line-height: 14px;
+  position: relative;
+  top: 10%;
+  right: 18%;
+}
+.button-font-viewmore{
+  width: 72px;
+  height: 9px;
+  font-size: 12px;
+  font-family: Gilroy;
+  font-weight: 800;
+  color: #555555;
+  line-height: 14px;
+  position: relative;
+  top: 10%;
+  right: 18%;
+}
+@media screen and (min-width: 1595px) {
+  .homepage-header{
+    height: 37em;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .homepage-header{
+    height: 33em;
+  }
+  .header-font{
+    position: relative;
+    top: 30%;
+    left: 10%;
+  }
+  .header-title{
+    width: 95%;
+    font-size: 45px;
+    font-family: Gilroy;
+    font-weight: 800;
+    color: #ffffff;;
+    line-height: 61px;
+  }
+  #header-link-getstart{
+    width: 167px;
+    height: 50px;
+    background: #FFD673;
+    border-radius: 3px;
+    border: 1px;
+  }
+  .button-font-getstart{
+    width: 72px;
+    height: 9px;
+    font-size: 23px;
+    font-weight: 900;
+    position: relative;
+    top: 9.5px;
+    left: -13px;
+  }
+  #header-link-viewmore{
+    width: 167px;
+    height: 50px;
+    position: relative;
+    left:45px;
+  }
+  .button-font-viewmore{
+    width: 72px;
+    height: 9px;
+    font-size: 23px;
+    font-weight: 900;
+    position: relative;
+    top: 9px;
+    left: -11px;
+  }
+}
+@media screen and (max-width: 1245px) {
+  .header-title{
+    width: 18em;
+    font-size: 25px;
+    position: relative;
+    top: -30%;
+  }
+}
+@media screen and (max-width: 1185px) {
+  .homepage-header {
+    height: 23em;
+  }
+}
+@media screen and (max-width: 997px) {
+  .homepage-header {
+    height: 23em;
+  }
+  .header-font{
+    left: 20%;
+    height: 20vh;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    left: 20%;
+  }
+  .header-title{
+    width: 17em;
+    font-size: 25px;
+    position: relative;
+    top: -30%;
+    left: -20%;
+  }
+  .header-content{
+    width: 70vw;
+    height: 10vh;
+    font-size: 12px;
+    position: relative;
+    left: -15%;
+    top: -30%;
+  }
+  #Link{
+    width: 20em;
+    height: 20vh;
+    position: relative;
+    top: 30%;
+    left: -20%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .homepage-header{
+    height: 20em;
+  }
+  .header-font{
+    position: relative;
+    top: 30%;
+  }
+  #Link{
+    position: relative;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 753px) {
+  .homepage-header{
+    height: 18em;
+  }
+  .header-title{
+    font-size: 20px;
+    width: 55vw;
+  }
+  .header-content{
+    font-size: 1.5vh;
+    width: 40vw;
+    position: relative;
+    left: 13px;
+    top: -10px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .homepage-header{
+    background-image: url(../../svg/banner/banner-balloon-mobile.png);
+    height: 18em;
+  }
+  .header-font{
+    position: relative;
+    top: 30%;
+    left: 150px;
+  }
+  .header-title{
+    width: 20em;
+    font-size: 1.2em;
+    position: relative;
+    top: -10%;
+  }
+  .header-content{
+    width: 70vw;
+    height: 10vh;
+    position: relative;
+    left: -20%;
+    top: -30%;
+  }
+  #Link{
+    width: 20em;
+    height: 20vh;
+    position: relative;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .homepage-header{
+    background-image: url(../../svg/banner/banner-balloon-mobile.png);
+    height: 16em;
+  }
+  .header-font{
+    position: relative;
+    top: 50px;
+    left: 30%;
+  }
+  .header-title{
+    width: 16em;
+    font-size: 1em;
+    position: relative;
+    top: 10%;
+  }
+  .header-content{
+    width: 70vw;
+    height: 10vh;
+    font-size: 2px;
+    position: relative;
+    left: -20%;
+    top: -30%;
+  }
+  #Link{
+    position: relative;
+    left: -22%;
+    top: 20%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .homepage-header{
+    height: 14em;
+  }
+  .header-font{
+    position: relative;
+    top: 30px;
+    left: 30%;
+  }
+  #Link{
+    position: relative;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .header-font{
+    position: relative;
+    top: 30px;
+    left: 40%;
+  }
+  #Link{
+    position: relative;
+    top: 30%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .homepage-header{
+    background-image: url(../../svg/banner/banner-balloon-mobile\(1\).png);
+    height: 16em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .homepage-header{
+    background-image: url(../../svg/banner/banner-balloon-mobile\(1\).png);
+    height: 14em;
+  }
+  .header-font{
+    position: relative;
+    top: 30px;
+    left: 50%;
+  }
+  #Link{
+    position: relative;
+    top: 35%;
+  }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 515 390" style="enable-background:new 0 0 515 390;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#1C1C1C;stroke-miterlimit:10;}
+	.st1{fill:#FFD673;}
+	.st2{fill:#FFFFFF;stroke:#1C1C1C;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st5{clip-path:url(#SVGID_2_);fill:none;stroke:#1C1C1C;stroke-miterlimit:10;}
+</style>
+<circle class="st0" cx="381" cy="81.4" r="8.7"/>
+<circle class="st0" cx="73.3" cy="311.5" r="11.6"/>
+<rect x="167.9" y="226.6" class="st1" width="28.5" height="28.5"/>
+<polygon class="st2" points="186.7,214.5 186.7,244.1 207.3,230.2 "/>
+<circle class="st1" cx="396.8" cy="209" r="22.3"/>
+<g>
+	<path class="st3" d="M206.3,383.6c0,0-0.4-44.1,32.1-35.7c0,0,6.3,1.5,12.9,7.1c0,0,12.1,11.1,24.4-3.6c0,0,13.3-17.5,38.3-15.3
+		c0,0,23,6.9-6.7,47.6H206.3z"/>
+	<path class="st3" d="M325.8,383.6c0,0-18.9-7.1-11.3-32.1c0,0,8.3-10.9-6.2-21.6c0,0-9.5-6-4-28.2c0,0,5.8-7.3-0.6-25.2
+		c0,0-6.9-21.2,0.8-36.7c0,0,8.1-13.7,16.9,3.4c0,0,4.8,7.5,4.4,21.2c0,0-1.4,10.5,11.9,16.1c0,0,19.8,7.1,13.1,28.5
+		c0,0-9.5,16,8.1,26.7c0,0,27.4,16.3,3.4,47.8H325.8z"/>
+	<path class="st4" d="M314.3,252.7l14.5,54.2l6.2,15.7c0,0,10.5,21.8,10.5,60.9"/>
+	<path class="st4" d="M306.4,296.1c0,0,11.8,8.9,22.5,10.9"/>
+	<path class="st4" d="M311.5,305c0,0,15.3,8,20.5,10"/>
+	<line class="st4" x1="357.7" y1="335.8" x2="343.8" y2="356.6"/>
+	<path class="st4" d="M226.1,354.5c0,0,12.3,9.3,16.1,29"/>
+	<path class="st4" d="M213.6,368.3c0,0,10.7,5.5,25,3.6"/>
+	<path class="st4" d="M294.8,338.8c0,0,6.2,18,17.9,23.8"/>
+	<path class="st4" d="M296.4,354.5c0,0,6,10.8,17.9,17.7"/>
+	<path class="st4" d="M266.8,357.9c0,0,9.3,18.4,20.8,25.7"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="454.5" y="91" width="60.2" height="111"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<circle class="st5" cx="509" cy="143" r="43.2"/>
+</g>
+</svg>
