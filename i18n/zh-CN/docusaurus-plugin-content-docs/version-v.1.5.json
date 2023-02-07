@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "v.1.5",
+    "description": "The label for version v.1.5"
+  },
+  "sidebar.tutorialSidebar.category.Compatibility Features": {
+    "message": "Compatibility Features",
+    "description": "The label for category Compatibility Features in sidebar tutorialSidebar"
+  }
+}

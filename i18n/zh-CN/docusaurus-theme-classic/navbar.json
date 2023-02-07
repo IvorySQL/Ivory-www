@@ -20,7 +20,7 @@
     "description": "Navbar item with label Community"
   },
   "item.label.Try for Free": {
-    "message": "Try for Free",
+    "message": "免  费  试  用",
     "description": "Navbar item with label Try for Free"
   },
   "item.label.Webinars": {
@@ -45,7 +45,7 @@
   },
   "item.label.Code of Conduct": {
     "message": "行为准则",
-    "description": "Navbar item with label Code Of Conduct"
+    "description": "Navbar item with label Code of Conduct"
   },
   "item.label.Mail list": {
     "message": "邮箱列表",
@@ -55,10 +55,6 @@
     "message": "贡献-Github",
     "description": "Navbar item with label Contribute"
   },
-  "item.label.Shareing": {
-    "message": "共享",
-    "description": "Navbar item with label Shareing"
-  },
   "item.label.Discuss": {
     "message": "讨论",
     "description": "Navbar item with label Discuss"
@@ -67,12 +63,8 @@
     "message": "订阅",
     "description": "Navbar item with label Subscribe"
   },
-  "item.label.Activity": {
-    "message": "活动",
-    "description": "Navbar item with label activity"
-  },
-  "item.label.Devel": {
-    "message": "开发者版",
-    "description": "Navbar item with label Devel"
+  "item.label.Sharing": {
+    "message": "Sharing",
+    "description": "Navbar item with label Sharing"
   }
 }

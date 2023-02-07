@@ -300,5 +300,47 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "Get Started": {
+    "message": "快速开始"
+  },
+  "View More": {
+    "message": "了解更多"
+  },
+  "'China PostgreSQL Database Ecology Conference' organized by PostgreConf.CN With the theme of 'Collaborative Progress', experts, scholars, representatives of manufacturers and users will be invited to have an in-depth discussion on the promotion and application of PG in the industry and region.": {
+    "message": "由中国PG分会主办的“中国PostgreSQL数据库生态大会”，将以‘协同共进’为主题，邀请专家学者、厂商好用户代表就PG在行业和区域的推广与应用进行深入探讨。"
+  },
+  "+": {
+    "message": " "
+  },
+  "More": {
+    "message": "更多"
+  },
+  "One day open source at IvorySQL for all programmers of open source databases, and for all programmers who love and use open source or databases. We encouraged all developers to participate in the open source development of IvorySQL, contribute code or help the community submit and fix bugs, etc., and grow together with the project. Through this activity, we hope we encourage and maintain IvorySQL users, improve the IvorySQL project activity.": {
+    "message": "IvorySQL面向开源数据库的所有程序员，面向所有热爱并使用开源或数据库的程序员。我们鼓励所有开发人员参与IvorySQL的开源开发，贡献代码或帮助社区提交和修复bug等，与项目一起成长。我们希望通过本次活动，鼓励和维护IvorySQL用户，提高IvorySQL项目的活跃度。"
+  },
+  "How to Contribute?": {
+    "message": "如何贡献"
+  },
+  "IvorySQL community includes developers from around the world who develop and use open source databases. Everyone is welcome and encouraged to participate.": {
+    "message": "lvorySQL社区包括来自世界各地的开发和使用开源数据库的人员。 我们欢迎并鼓励大家参与。"
+  },
+  "China PostgreSQL Database Ecology Conference": {
+    "message": "中国PostgreSQL数据库生态大会"
+  },
+  "17.02-19.02/ Institute of Software, Beijing Academy of Sciences": {
+    "message": "02.17-02.19/北京中科院软件所"
+  },
+  "IvorySQL 2022 - One Day Open Source at IvorySQL": {
+    "message": "IvorySQL 2022 一日开源活动"
+  },
+  "03.11-11.11": {
+    "message": "11.03-11.11"
+  },
+  "Recent Activities": {
+    "message": "近期活动"
+  },
+  "11.03-11.11": {
+    "message": "11.03-11.11"
   }
 }
