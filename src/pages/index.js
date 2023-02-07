@@ -25,13 +25,13 @@ function HomepageHeader() {
               className="button button--secondary button--lg" 
               id="header-link-getstart"
               to="https://github.com/IvorySQL/IvorySQL">
-                <div class="button-font-getstart" id="id-button-font-getstart">Get Started</div>
+                <div class="button-font-getstart" id="id-button-font-getstart"><Translate>Get Started</Translate></div>
             </Link>
             <Link 
               className="button button--secondary button--lg" 
               id="header-link-viewmore"
               to="https://github.com/IvorySQL/IvorySQL/blob/master/README.md">
-                <div class="button-font-viewmore" id="id-button-font-viewmore">View More</div>
+                <div class="button-font-viewmore" id="id-button-font-viewmore"><Translate>View More</Translate></div>
             </Link>
         </div>
       </div>
