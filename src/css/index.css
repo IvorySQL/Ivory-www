@@ -49,7 +49,7 @@
   width: 117px;
   height: 35px;
   background: #FFD673;
-  border-radius: 3px;
+  border-radius: 8px;
   border: 1px;
 }
 #header-link-getstart:hover{
@@ -62,7 +62,6 @@
   position: relative;
   left:25px;
   background-color: #fff1cc;
-  border-radius: 3px;
   border: 1px solid #626262;
 }
 #header-link-viewmore:hover{
@@ -119,7 +118,7 @@
     width: 167px;
     height: 50px;
     background: #FFD673;
-    border-radius: 3px;
+    border-radius: 8px;
     border: 1px;
   }
   .button-font-getstart{
@@ -281,7 +280,7 @@
   #Link{
     position: relative;
     left: -22%;
-    top: 20%;
+    top: 10%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -295,18 +294,19 @@
   }
   #Link{
     position: relative;
-    top: 10%;
+    top: 8%;
   }
 }
 @media screen and (max-width: 440px) {
   .header-font{
+    width: 20px;
     position: relative;
     top: 30px;
-    left: 40%;
+    left: 70%;
   }
   #Link{
     position: relative;
-    top: 30%;
+    top: 38%;
   }
 }
 @media screen and (max-width: 420px) {
@@ -319,14 +319,5 @@
   .homepage-header{
     background-image: url(../../svg/banner/banner-balloon-mobile\(1\).png);
     height: 14em;
-  }
-  .header-font{
-    position: relative;
-    top: 30px;
-    left: 50%;
-  }
-  #Link{
-    position: relative;
-    top: 35%;
   }
 }
