@@ -56,21 +56,12 @@
   width: 50%;
   height: 100px;
   position:relative;
-  top: -20px;
-  /* padding: 4rem 4rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-
-  background: url("@site/static/img/fp_right_header.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 25%; */
+  top: -42px;
 }
 @media screen and (max-width: 1440px) {
   .heroRightImage {
     position:relative;
-    top: 30px;
+    top: 21px;
   }
 }
 @media screen and (min-width: 997px) {
