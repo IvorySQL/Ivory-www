@@ -27,18 +27,6 @@
   color: #ffffff;;
   line-height: 31px;
 }
-.header-content{
-  width: 40%;
-  height: 34px;
-  font-size: 14px;
-  font-family: Alibaba PuHuiTi;
-  font-weight: 400;
-  color: #ffffff;
-  line-height: 14px;
-  width: 500px;
-  position: relative;
-  top: 19px;
-}
 #Link{
   width: 100%;
   height: 300%;
@@ -178,14 +166,6 @@
     top: -30%;
     left: -20%;
   }
-  .header-content{
-    width: 70vw;
-    height: 10vh;
-    font-size: 12px;
-    position: relative;
-    left: -15%;
-    top: -30%;
-  }
   #Link{
     width: 20em;
     height: 20vh;
@@ -215,13 +195,6 @@
     font-size: 20px;
     width: 55vw;
   }
-  .header-content{
-    font-size: 1.5vh;
-    width: 40vw;
-    position: relative;
-    left: 13px;
-    top: -10px;
-  }
 }
 @media screen and (max-width: 660px) {
   .homepage-header{
@@ -239,13 +212,6 @@
     position: relative;
     top: -10%;
   }
-  .header-content{
-    width: 70vw;
-    height: 10vh;
-    position: relative;
-    left: -20%;
-    top: -30%;
-  }
   #Link{
     width: 20em;
     height: 20vh;
@@ -255,7 +221,6 @@
 }
 @media screen and (max-width: 560px) {
   .homepage-header{
-    background-image: url(../../svg/banner/banner-balloon-mobile.png);
     height: 16em;
   }
   .header-font{
@@ -268,14 +233,6 @@
     font-size: 1em;
     position: relative;
     top: 10%;
-  }
-  .header-content{
-    width: 70vw;
-    height: 10vh;
-    font-size: 2px;
-    position: relative;
-    left: -20%;
-    top: -30%;
   }
   #Link{
     position: relative;
@@ -290,7 +247,6 @@
   .header-font{
     position: relative;
     top: 30px;
-    left: 30%;
   }
   #Link{
     position: relative;
@@ -301,7 +257,6 @@
   .header-font{
     width: 20px;
     position: relative;
-    top: 30px;
     left: 70%;
   }
   #Link{
@@ -317,7 +272,6 @@
 }
 @media screen and (max-width: 360px) {
   .homepage-header{
-    background-image: url(../../svg/banner/banner-balloon-mobile\(1\).png);
     height: 14em;
   }
 }
