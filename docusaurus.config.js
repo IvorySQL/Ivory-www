@@ -189,15 +189,11 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} IvorySQL.`,
       },
-      colorModeToggle: {
+      colorMode: {
         defaultMode: 'light',
         disableSwitch: true,
         respectPrefersColorScheme: false,
-        switchConfig: {
-          darkIcon: '🌙',
-          darkIconStyle: {
-            marginLeft: '2px',
-          }}},
+        },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
