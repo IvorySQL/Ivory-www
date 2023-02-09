@@ -193,7 +193,7 @@ const config = {
         defaultMode: 'light',
         disableSwitch: true,
         respectPrefersColorScheme: false,
-},
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
