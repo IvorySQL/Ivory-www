@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import Translate, {translate} from '@docusaurus/Translate';
+import Elephant from '../../svg/img-elephant-balloon.svg';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -13,8 +14,6 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <div class="row">
-          <div className={styles.heroLeftImage}>
-          </div>
 
           <div className={styles.heroCenterImage}>
           <h1 className="hero__title"><Translate>IvorySQL</Translate></h1>
@@ -29,6 +28,7 @@ function HomepageHeader() {
 
           </div>
           <div className={styles.heroRightImage}>
+            <Elephant></Elephant>
           </div>
         </div>
       </div>
