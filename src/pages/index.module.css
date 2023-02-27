@@ -3,12 +3,11 @@
  * and scoped locally.
  */
 
-.heroBanner {
+ .heroBanner {
   padding: 5rem 0;
   text-align: center;
   position: relative;
-  overflow: hidden;
-  background-color:#363a41;
+  background-image: linear-gradient(134.3deg,#1f0c79,#5a43ca 39.99%,#ba74e3);
 }
 .heroBanner_2 {
   padding: 4rem 4rem;
@@ -54,15 +53,16 @@
   width: 25%;
 }
 .heroRightImage {
-  padding: 4rem 4rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-
-  background: url("@site/static/img/fp_right_header.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 25%;
+  width: 50%;
+  height: 100px;
+  position:relative;
+  top: -42px;
+}
+@media screen and (max-width: 1440px) {
+  .heroRightImage {
+    position:relative;
+    top: 21px;
+  }
 }
 @media screen and (min-width: 997px) {
   /* Show inline table of contents on mobile only */
