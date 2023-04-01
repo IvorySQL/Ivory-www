@@ -187,7 +187,7 @@
     "message": "了解更多"
   },
   "Open Source": {
-    "message": "开源"
+    "message": "开源软件"
   },
   "No Vendor Lock-In": {
     "message": "没有厂商的限制。"
@@ -227,5 +227,11 @@
   },
   "Open Source Oracle compatible PostgreSQL": {
     "message": "开源的兼容ORACLE的PostgreSQL"
+  },
+  "Open Community": {
+    "message": "开放的社区"
+  },
+  "A creative and open community, work together to create more possibilities.": {
+    "message": "充满活力和创造力的社区，一起创造无限可能。"
   }
 }

@@ -61,8 +61,7 @@ const config = {
         items: [
           {
             label: 'Docs',
-            type: 'doc',
-            docId: 'intro',
+            href: 'https://docs.IvorySQL.org',
             position: 'left'
           },
           {
@@ -107,11 +106,6 @@ const config = {
 
           //Right Side Items
           {
-            type: 'docsVersionDropdown',
-            position: 'right',
-            nextVersionLabel: 'Devel',
-          },
-          {
             label: 'Community',
             to: '/community-page',
             position: 'right'
@@ -140,11 +134,11 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs/intro',
+                href: 'https://docs.IvorySQL.org',
               },
             ],
           },
-          {
+          { 
             title: 'Community',
             items: [
               {
@@ -193,7 +187,7 @@ const config = {
         defaultMode: 'light',
         disableSwitch: true,
         respectPrefersColorScheme: false,
-      },
+        },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
