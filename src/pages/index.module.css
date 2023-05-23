@@ -53,9 +53,9 @@
   width: 25%;
 }
 .heroRightImage {
-  width: 50%;
+  width: 43%;
   height: 100px;
-  position:relative;
+  position: relative;
   top: -42px;
 }
 @media screen and (max-width: 1440px) {
