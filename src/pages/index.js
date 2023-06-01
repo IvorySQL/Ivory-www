@@ -16,8 +16,8 @@ import SliderPhoneIndex from './slider-phone'
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
      const settings = {
-      // autoplay: true,
-      // autoplaySpeed: 5000,
+      autoplay: true,
+      autoplaySpeed: 5000,
       dots: true,
       infinite: true,
       slidesToShow: 1,
@@ -27,16 +27,6 @@ function HomepageHeader() {
   return (
      <div id='main'>
         <Slider {...settings}>
-          <div className={clsx(styles.recruitBanner)}>
-            <div class="indexImg">
-              <img src={Recruit} className={styles.indexImg}></img>
-              <SliderIndex></SliderIndex>
-            </div>
-            <div class="indexImg-phone">
-              <img src={RecruitPhone} className={styles.indexImgPhone}></img>
-              <SliderPhoneIndex></SliderPhoneIndex>
-            </div>
-          </div>
           <div>
             <header className={clsx('hero hero--primary', styles.heroBanner)}>
               <div className="container">
@@ -60,6 +50,16 @@ function HomepageHeader() {
                 </div>
               </div>
             </header>
+          </div>
+          <div className={clsx(styles.recruitBanner)}>
+            <div class="indexImg">
+              <img src={Recruit} className={styles.indexImg}></img>
+              <SliderIndex></SliderIndex>
+            </div>
+            <div class="indexImg-phone">
+              <img src={RecruitPhone} className={styles.indexImgPhone}></img>
+              <SliderPhoneIndex></SliderPhoneIndex>
+            </div>
           </div>
         </Slider>
       </div>
