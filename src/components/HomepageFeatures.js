@@ -6,7 +6,7 @@ import Translate, {translate} from '@docusaurus/Translate';
 const FeatureList = [
   {
     title: <Translate>Open Source</Translate>,
-    Svg: require('../../static/img/fp_open_source.svg').default,
+    Svg: require('../../svg/icon-01.svg').default,
     description: (
       <>
         <Translate>No Vendor Lock-In</Translate>
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Powered by PostgreSQL</Translate>,
-    Svg: require('../../static/img/postgresql-icon.svg').default,
+    Svg: require('../../svg/icon-02.svg').default,
     description: (
       <>
         <Translate>Based on PostgreSQL, with full SQL, rock-solid reliability, and a massive ecosystem.</Translate>
@@ -23,17 +23,8 @@ const FeatureList = [
     ),
   },
   {
-    title: <Translate>Backed by HighGo</Translate>,
-    Svg: require('../../static/img/fp_backed_by_highgo.svg').default,
-    description: (
-      <>
-        <Translate>Supported by HighGo, The leading provider of PostgreSQL database.</Translate>
-      </>
-    ),
-  },
-  {
     title: <Translate>Oracle Compatible</Translate>,
-    Svg: require('../../static/img/fp_ora_compitable.svg').default,
+    Svg: require('../../svg/icon-03.svg').default,
     description: (
       <>
         <Translate>Migrate your Oracle DB to IvorySQL.</Translate>
@@ -42,10 +33,28 @@ const FeatureList = [
   },
   {
     title: <Translate>Customization</Translate>,
-    Svg: require('../../static/img/fp_advanced_customization.svg').default,
+    Svg: require('../../svg/icon-04.svg').default,
     description: (
       <>
         <Translate>Just download the code and make it as you like.</Translate>
+      </>
+    ),
+  },
+  {
+    title: <Translate>Backed by HighGo</Translate>,
+    Svg: require('../../svg/icon-05.svg').default,
+    description: (
+      <>
+        <Translate>Supported by HighGo, The leading provider of PostgreSQL database.</Translate>
+      </>
+    ),
+  },
+  {
+    title: <Translate>Open Community</Translate>,
+    Svg: require('../../svg/icon-06.svg').default,
+    description: (
+      <>
+        <Translate>A creative and open community, work together to create more possibilities.</Translate>
       </>
     ),
   },
@@ -53,11 +62,21 @@ const FeatureList = [
 
 function Feature({Svg, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
+    <div className={clsx('col col--4')} style={{height:'300px'}}>
+      <div className="text--center" id="homepage-svg" style={{
+        backgroundColor:'#f4f4f4',
+        width:'130px',
+        height:'130px',
+        margin:'auto',
+        textAlign:'center',
+        borderRadius:'65px',
+      }}>
         <Svg className={styles.featureSvg} alt={title} />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className="text--center padding-horiz--md" style={{
+        position:'relative',
+        top:'20px',
+      }}>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>

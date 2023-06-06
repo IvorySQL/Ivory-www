@@ -1,11 +1,11 @@
 {
   "theme.NotFound.title": {
     "message": "没有发现页面",
-    "description": "The title of the 404 page (错误 - 404)"
+    "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
     "message": "我们找不到您要找的页面",
-    "description": "The first paragraph of the 404 page (我们找不到您要找的页面)"
+    "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
     "message": "请联系将您链接到原始 URL 的站点的所有者，并让他们知道他们的链接已损坏",
@@ -187,7 +187,7 @@
     "message": "了解更多"
   },
   "Open Source": {
-    "message": "开源"
+    "message": "开源软件"
   },
   "No Vendor Lock-In": {
     "message": "没有厂商的限制。"
@@ -227,5 +227,146 @@
   },
   "Open Source Oracle compatible PostgreSQL": {
     "message": "开源的兼容ORACLE的PostgreSQL"
+  },
+  "Open Community": {
+    "message": "开放的社区"
+  },
+  "A creative and open community, work together to create more possibilities.": {
+    "message": "充满活力和创造力的社区，一起创造无限可能。"
+  },
+  "IvorySQL China User Groupis Recruiting!": {
+    "message": "lvorySQL中国地区用户组!"
+  },
+  "We want you!": {
+    "message": "招募啦!"
+  },
+  "First batch community members will receive": {
+    "message": "首批社区成员福利-赠送"
+  },
+  "a surprise mystery gift pack!": {
+    "message": "开源惊喜神秘大礼包!"
+  },
+  "Recruiting Cities:": {
+    "message": "招募城市:"
+  },
+  "Jinan、Chengdu、Beijing": {
+    "message": "济南、成都、北京"
+  },
+  "Recruiting Roles:": {
+    "message": "招募角色:"
+  },
+  "ICC": {
+    "message": "地区组织者ICC"
+  },
+  "ICA": {
+    "message": "名誉推荐官ICA"
+  },
+  "ICM": {
+    "message": "地区成员ICM"
+  },
+  "ICT": {
+    "message": "核心内测组ICT"
+  },
+  "Please scan the codeto join IvorySQL China User Group": {
+    "message": "扫码申请加入IvorySQL中国地区用户组"
+  },
+  "ICC(lvorySQL City Chief)": {
+    "message": "ICC(地区组织者)"
+  },
+  "ICA(IvorySQL City Ambassador)": {
+    "message": "ICA(名誉推荐官)"
+  },
+  "ICM (IvorysQL City Member)": {
+    "message": "ICM (地区成员)"
+  },
+  "ICT(IvorySQL City Core Tester)": {
+    "message": "ICT(核心内测组)"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "页面已崩溃。",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.admonition.note": {
+    "message": "备注",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "提示",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "危险",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "信息",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "警告",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "切换浅色/暗黑模式（当前为{mode}）",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "暗黑模式",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "浅色模式",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} 个项目",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "页面路径",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "版本：{versionLabel}"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "切换自动换行",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "打开/收起侧边栏菜单「{label}」",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "主导航",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "选择语言",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "阅读 {title} 的全文",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "文档侧边栏",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "主页面",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "关闭导航栏",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "切换导航栏",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "重试",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
   }
 }

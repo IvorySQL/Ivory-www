@@ -1,0 +1,137 @@
+.recruit-content{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -440px;
+    left: 1vw;
+    margin: auto;
+    height: auto;
+}
+.content-left{
+    width: 30em;
+    position: relative;
+    left: 90px;
+}
+.content-left-top{
+    height: 220px;
+}
+.left-top-title{
+    width: 55%;
+    font-size: 1.1em;
+    font-weight: 600;
+    height: 20px;
+    line-height: 20px;
+}
+.left-top-font{
+    width: 65%;
+    font-size: 42px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+.content-left-buttom{
+    width: 100%;
+    display: flex;
+    position: relative;
+    right: 50px;
+}
+.left-air{
+    display: inline;
+    width: 15em;
+    height: 20px;
+}
+.left-buttom-font{
+    display: inline;
+    width: 30em;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.buttom-title{
+    font-size: 10px;
+    width: 80%;
+    font-weight: 400;
+    height: 23px;
+}
+.buttom-font{
+    width: 80%;
+    font-size: 16px;
+    font-weight: 800;
+}
+.content-right{
+    color: #ffffff;
+    position: relative;
+    right: 2.5em;
+    top: -1em;
+}
+.content-right-top{
+    height: 200px;
+}
+.right-want{
+    width: 80%;
+}
+.right-top-title{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.right-top-city{
+    font-size: 10px;
+    font-weight: 800;
+    border-bottom: 5px solid rgb(7, 31, 247);
+}
+.point{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    background-color: blue;
+    position: relative;
+    bottom: 2px;
+}
+.work{
+    font-size: 10px;
+    font-weight: 100;
+    margin-right: 5px;
+}
+.work-english{
+    font-size: 1px;
+    font-weight: 200;
+}
+.content-right-buttom{
+    justify-content: center;
+    position: relative;
+    top: 80px;
+}
+.right-buttom-content{
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    right: 62px;
+}
+.right-air{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.right-buttom-title{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+.right-buttom-font{
+    width: 130px;
+    text-align: center;
+    font-size: 0.2em;
+    font-weight: 200;
+    position: relative;
+    top: -20px;
+    left: 5px;
+}
+.work-english{
+    display: none;
+}
