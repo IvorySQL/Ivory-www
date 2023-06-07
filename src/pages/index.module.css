@@ -61,7 +61,8 @@
 }
 
 .indexImg{
-  width: 997px;
+  width: 100%;
+  max-width: 1390px;
   height: 500px;
   margin: auto;
 }

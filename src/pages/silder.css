@@ -11,7 +11,7 @@
 .content-left{
     width: 30em;
     position: relative;
-    left: 90px;
+    left: 10px;
 }
 .content-left-top{
     height: 220px;
@@ -24,16 +24,16 @@
     line-height: 20px;
 }
 .left-top-font{
-    width: 65%;
-    font-size: 42px;
-    font-weight: 800;
-    margin-top: 30px;
+    width: 100%;
+    font-size: 58px;
+    font-weight: 900;
+    margin-top: 10px;
 }
 .content-left-buttom{
     width: 100%;
     display: flex;
     position: relative;
-    right: 50px;
+    right: 10px;
 }
 .left-air{
     display: inline;
@@ -60,7 +60,6 @@
 .content-right{
     color: #ffffff;
     position: relative;
-    right: 2.5em;
     top: -1em;
 }
 .content-right-top{
@@ -108,7 +107,7 @@
     display: inline-block;
     position: relative;
     top: -10px;
-    right: 62px;
+    right: 32px;
 }
 .right-air{
     width: 100px;
@@ -118,7 +117,8 @@
 .right-buttom-title{
     width: 100px;
     height: 100px;
-    background-color: black;
+    background-image: url(../../static/img/code.png);
+    background-size: 100%,100%;
     position: relative;
     top: -20px;
     left: 20px;
@@ -134,4 +134,48 @@
 }
 .work-english{
     display: none;
+}
+@media screen and (max-width: 1225px) {
+    div[class^='content-left'] {
+      position: relative;
+      left: 30px;
+    }
+    div[class^='content-right'] {
+      position: relative;
+      right: 10px;
+    }
+    div[class^='right-buttom-content'] {
+        position: relative;
+        right: 40px;
+    }
+    div[class^='left-top-font'] {
+        font-size: 51px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    div[class^='content-right'] {
+      position: relative;
+      right: 20px;
+    }
+    div[class^='right-buttom-content'] {
+        position: relative;
+        right: 45px;
+      }
+}
+@media screen and (max-width: 1049px) {
+    div[class^='content-left'] {
+      position: relative;
+      left: 45px;
+    }
+    div[class^='content-left-buttom'] {
+        position: relative;
+        left: 10px;
+      }
+    div[class^='content-right'] {
+      position: relative;
+      right: 25px;
+    }
+    div[class^='left-top-font'] {
+        font-size: 46px;
+    }
 }
