@@ -6,12 +6,11 @@ export default function SliderPhoneIndex(){
     return(
         <div class="phone-main">
                 <div class="phone-main-top">
-                    <p class="top-toptitle"><Translate>IvorySQL China User Groupis Recruiting!</Translate></p>
+                    <p class="top-toptitle"><Translate>IvorySQL China User Group is Recruiting!</Translate></p>
                     <p class="top-nexttitle"><Translate>We want you!</Translate></p>
                     <p class="top-thirdtitle"><Translate>First batch community members will receive</Translate></p>
                     <p class="top-lasttitle"><Translate>a surprise mystery gift pack!</Translate></p>
                 </div>
-                {/* <div class="phone-air"></div> */}
                 <div class="phone-main-buttom">
                     <div class="phone-buttom-main">
                         <span class="phone-buttom-title"><Translate>Recruiting Cities:</Translate></span><span class="phone-buttom-city"><Translate>Jinan、Chengdu、Beijing</Translate></span>

@@ -8,7 +8,7 @@ export default function SliderIndex(){
             <div class="recruit-content">
                 <div class="content-left">
                   <div class="content-left-top">
-                    <div class="left-top-title"><Translate>IvorySQL China User Groupis Recruiting!</Translate></div>
+                    <div class="left-top-title"><Translate>IvorySQL China User Group is Recruiting!</Translate></div>
                     <div class="left-top-font"><Translate>We want you!</Translate></div>
                   </div>
                   <div class="content-left-buttom">
@@ -26,10 +26,10 @@ export default function SliderIndex(){
                         </div>
                         <div class="right-top-font">
                             <div class="right-top-title"><Translate>Recruiting Roles:</Translate></div>
-                            <div><div class="point"></div><span class="work"><Translate>ICC(lvorySQL City Chief)</Translate></span><span class="work-english">(IvorysqL City Chief)</span></div>
-                            <div><div class="point"></div><span class="work"><Translate>ICA(IvorySQL City Ambassador)</Translate></span><span class="work-english">(IvorysqL City Ambassador)</span></div>
-                            <div><div class="point"></div><span class="work"><Translate>ICM (IvorysQL City Member)</Translate></span><span class="work-english">(IvorysqL City Member)</span></div>
-                            <div><div class="point"></div><span class="work"><Translate>ICT(IvorySQL City Core Tester)</Translate></span><span class="work-english">(IvorysqL City Core Testers)</span></div>
+                            <div><div class="point"></div><span class="work"><Translate>ICC (lvorySQL City Chief)</Translate></span><span class="work-english">(IvorysqL City Chief)</span></div>
+                            <div><div class="point"></div><span class="work"><Translate>ICA (IvorySQL City Ambassador)</Translate></span><span class="work-english">(IvorysqL City Ambassador)</span></div>
+                            <div><div class="point"></div><span class="work"><Translate>ICM (IvorySQL City Member)</Translate></span><span class="work-english">(IvorysqL City Member)</span></div>
+                            <div><div class="point"></div><span class="work"><Translate>ICT (IvorySQL City Core Tester)</Translate></span><span class="work-english">(IvorysqL City Core Testers)</span></div>
                         </div>
                     </div>
                     <div class="content-right-buttom">
