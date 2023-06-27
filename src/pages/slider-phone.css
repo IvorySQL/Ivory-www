@@ -1,0 +1,83 @@
+.phone-main{
+    display: none;
+}
+.phone-main-top{
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 10px;
+    height: 180px;
+}
+.phone-main-top p{
+    line-height: 20px;
+}
+.phone-main-buttom{
+    color: #ffffff;
+    font-size: 12px;
+    margin-left: 35%;
+    display: flex;
+}
+.phone-buttom-font{
+    display: inline-block;
+}
+.top-toptitle{
+    font-size: 20px;
+    font-weight: 400;
+}
+.top-nexttitle{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: -15px;
+}
+.top-thirdtitle{
+    margin-top: -15px;
+    font-size: 15px;
+    font-weight: 1000;
+}
+.top-lasttitle{
+    margin-top: -25px;
+}
+.phone-buttom-main{
+    width: 80%;
+}
+.phone-QRcode{
+    width: 100px;
+    height: 100px;
+    background-image: url(../../static/img/code.png);
+    background-size: 100%,100%;
+    display: inline-block;
+    margin-left: 28px;
+    margin-top: 8px;
+}
+.phone-lasttext{
+    width: 160px;
+    font-size: 12px;
+    font-weight: 800;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 997px) {
+    div[class^='phone-main'] {
+        display: grid;
+        position: relative;
+        top: -220px;
+    }
+}
+@media screen and (max-width: 726px) {
+    div[class^='phone-main-top'] {
+        margin-left: 10%;
+    }
+    div[class^='phone-lasttext'] {
+        margin-left: 18%;
+    }
+}   
+@media screen and (max-width: 542px) {
+    div[class^='phone-QRcode'] {
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 372px) {
+    div[class^='phone-main'] {
+        position: relative;
+        top: -220px;
+    }
+}

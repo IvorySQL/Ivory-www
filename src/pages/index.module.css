@@ -2,7 +2,8 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css);
  .heroBanner {
   padding: 5rem 0;
   text-align: center;
@@ -47,7 +48,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: url("@site/static/img/fp_left_header.svg");
+  /* background: url("@site/static/img/fp_left_header.svg"); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 25%;
@@ -56,7 +57,24 @@
   width: 43%;
   height: 100px;
   position: relative;
-  top: -42px;
+  top: -47px;
+}
+
+.indexImg{
+  width: 100%;
+  max-width: 1390px;
+  height: 500px;
+  margin: auto;
+}
+.indexImgPhone{
+  display: none;
+  height: 501px;
+  margin: auto;
+}
+.recruitBanner{
+  padding: 0;
+  height: 500px;
+  background-color: #3227d5;
 }
 @media screen and (max-width: 1440px) {
   .heroRightImage {
@@ -83,6 +101,12 @@
   }
   div[class^='heroCenterImage'] {
     width: 100%;
+  }
+  div[class^='indexImg'] {
+    display: none;
+  }
+  div[class^='indexImg-phone'] {
+    display: inline;
   }
 }
 .buttons {
