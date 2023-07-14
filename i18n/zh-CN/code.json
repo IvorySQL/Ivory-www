@@ -368,5 +368,26 @@
   "theme.ErrorPageContent.tryAgain": {
     "message": "重试",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "IvorySQL China User Group is Recruiting!": {
+    "message": "lvorySQL中国地区用户组!"
+  },
+  "ICD": {
+    "message": "核心开发组"
+  },
+  "ICC (lvorySQL City Chief)": {
+    "message": "地区组织者ICC"
+  },
+  "ICA (IvorySQL City Ambassador)": {
+    "message": "名誉推荐官ICA"
+  },
+  "ICM (IvorySQL City Member)": {
+    "message": "地区成员ICM "
+  },
+  "ICT (IvorySQL City Core Tester)": {
+    "message": "核心内测组ICT"
+  },
+  "ICD (IvorySQL City Core Developers)": {
+    "message": "核心开发组ICD"
   }
 }
