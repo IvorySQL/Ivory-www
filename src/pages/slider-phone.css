@@ -49,11 +49,11 @@
     margin-top: 8px;
 }
 .phone-lasttext{
-    width: 160px;
+    width: 170px;
     font-size: 12px;
     font-weight: 800;
     margin-left: 180px;
-    margin-top: 20px;
+    margin-top: 1px;
 }
 @media screen and (max-width: 997px) {
     div[class^='phone-main'] {
