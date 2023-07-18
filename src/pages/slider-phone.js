@@ -22,6 +22,7 @@ export default function SliderPhoneIndex(){
                             <div><div class="phone-point"></div><span class="phone-work"><Translate>ICA</Translate></span></div>
                             <div><div class="phone-point"></div><span class="phone-work"><Translate>ICM</Translate></span></div>
                             <div><div class="phone-point"></div><span class="phone-work"><Translate>ICT</Translate></span></div>
+                            <div><div class="phone-point"></div><span class="phone-work"><Translate>ICD</Translate></span></div>
                         </div>
                         <div class="phone-QRcode"></div>
                         <div class="phone-lasttext"><Translate>Please scan the codeto join IvorySQL China User Group</Translate></div>

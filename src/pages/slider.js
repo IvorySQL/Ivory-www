@@ -30,6 +30,7 @@ export default function SliderIndex(){
                             <div><div class="point"></div><span class="work"><Translate>ICA (IvorySQL City Ambassador)</Translate></span><span class="work-english">(IvorysqL City Ambassador)</span></div>
                             <div><div class="point"></div><span class="work"><Translate>ICM (IvorySQL City Member)</Translate></span><span class="work-english">(IvorysqL City Member)</span></div>
                             <div><div class="point"></div><span class="work"><Translate>ICT (IvorySQL City Core Tester)</Translate></span><span class="work-english">(IvorysqL City Core Testers)</span></div>
+                            <div><div class="point"></div><span class="work"><Translate>ICD (IvorySQL City Core Developers)</Translate></span><span class="work-english">(IvorySQL City Core Developers)</span></div>
                         </div>
                     </div>
                     <div class="content-right-buttom">
