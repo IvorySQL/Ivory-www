@@ -181,7 +181,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2023 IvorySQL.`,
+        copyright: `Copyright © ${new Date().getFullYear()} IvorySQL.`,
       },
       colorMode: {
         defaultMode: 'light',
