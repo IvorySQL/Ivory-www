@@ -22,12 +22,14 @@
     font-weight: 600;
     height: 20px;
     line-height: 20px;
+    margin-left: -20px;
 }
 .left-top-font{
     width: 100%;
     font-size: 58px;
     font-weight: 900;
-    margin-top: 10px;
+    margin-top: 10px;   
+    margin-left: -20px;
 }
 .content-left-buttom{
     width: 100%;
