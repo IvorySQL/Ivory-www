@@ -9,6 +9,7 @@
   text-align: center;
   position: relative;
   background-image: linear-gradient(134.3deg,#1f0c79,#5a43ca 39.99%,#ba74e3);
+  height: 502px;
 }
 .heroBanner_2 {
   padding: 4rem 4rem;
@@ -42,7 +43,6 @@
   background-size: cover;
   width: 50%;
 }
-
 .heroLeftImage {
   padding: 4rem 4rem;
   text-align: center;
@@ -59,17 +59,28 @@
   position: relative;
   top: -47px;
 }
-
 .indexImg{
   width: 100%;
   max-width: 1390px;
   height: 500px;
   margin: auto;
 }
+.indexImgbug{
+  width: 100%;
+  max-width: 2391px;
+  height: 502px;
+  margin: 0px auto -30px auto;
+}
 .indexImgPhone{
   display: none;
   height: 501px;
   margin: auto;
+}
+.indexImgbugphone{
+  width: 1000px;
+  min-width: 600px;
+  height: 502px;
+  margin: 0px auto -30px auto;
 }
 .recruitBanner{
   padding: 0;
@@ -89,6 +100,9 @@
   }
   div[class^='heroCenterImage'] {
     width: 50%;
+  }
+  div[class^='indexImg-phone'] {
+    display: none;
   }
 }
 

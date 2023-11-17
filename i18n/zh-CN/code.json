@@ -389,5 +389,23 @@
   },
   "ICD (IvorySQL City Core Developers)": {
     "message": "核心开发组ICD"
+  },
+  "IvorySQL 3.0 version is released. Community friends are welcome to participate in testing activity, help identify product bugs!": {
+    "message": "在IvorySQL3.0版本的发布之际，热烈欢迎社区朋友们能够参与到新功能的测试活动当中，一起寻找产品存在的bug!"
+  },
+  "Any rticipants will receive exquisite peripherals.": {
+    "message": "参与即可获得精美周边。"
+  },
+  "Click \"Learn More\" to access detailed operational instructions.": {
+    "message": "点击了解详细操作说明"
+  },
+  "Woodpecker Plan": {
+    "message": "啄木鸟计划"
+  },
+  "IvorySQL version 3.0 has been released. We invite community members to join our testing activities and assist in identifying any product issues！": {
+    "message": "IvorySQL3.0版本发布之际，热烈欢迎社区的朋友们参与新功能的测试活动，寻找产品bug！"
+  },
+  "Participants will receive exclusive IvorySQL-branded peripherals as a token of appreciation.": {
+    "message": "参与即可获得精美周边"
   }
 }

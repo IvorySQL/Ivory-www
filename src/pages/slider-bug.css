@@ -1,0 +1,99 @@
+@font-face {
+    font-family: content;
+    src: url('../../static/975MaruSC-Regular.ttf');
+}
+@font-face {
+    font-family: title;
+    src: url('../../static/LianMengQiYiLuShuaiZhengRuiHeiTi-2.ttf');
+}
+.index-bug{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -400px;
+    left: 1vw;
+    margin: auto;
+    height: 10px;
+}
+#bug{
+    height: 0px;
+}
+.index-bug-content{
+    width: 700px;
+}
+.bug-title{
+    font-size: 40px;
+    font-family: 'title';
+    margin-left: 6px;
+}
+.index-bug-svg{
+    width: 25%;
+    max-width: 380px;
+    margin-top: -40px;
+}
+.bug-content{
+    display: flex;
+    width: 550px;
+}
+.bug-content-bottom{
+    display: flex;
+    width: 550px;
+}
+.bug-svg{
+    margin-right: 10px;
+    width: 8%;
+}
+.bug-svg-bottom{
+    margin-right: 10px;
+    width: 8%;
+}
+.span{
+    width: 80%;
+    margin-top: 5px;
+    font-weight: 600;
+    font-family: 'content';
+    font-size: 18px;
+}
+.buttom-span{
+    font-size: 12px;
+    margin-left: -10px;
+    margin-top: 10px;
+    font-family: 'content';
+}
+.bug-button{
+    display: flex;
+    margin-top: 40px;
+}
+.bug-button .bug-svg{
+    width: 30px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.bug-button .button{
+    color: #000;
+    width: 100px;
+    height: 38px;
+    border-radius: 5px;
+    border: 0px;
+    font-family: 'content';
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ffd673;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 1550px) {
+    .index-bug-svg{
+        position: relative;
+        right: 50px;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .index-bug-svg{
+        position: relative;
+        right: 120px;
+    }
+}

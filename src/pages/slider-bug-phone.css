@@ -1,0 +1,149 @@
+@font-face {
+    font-family: content;
+    src: url('../../static/975MaruSC-Regular.ttf');
+}
+@font-face {
+    font-family: title;
+    src: url('../../static/LianMengQiYiLuShuaiZhengRuiHeiTi-2.ttf');
+}
+.index-bug-p{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -400px;
+    left: 10px;
+    margin: auto;
+    height: 10px;
+}
+#bug{
+    height: 0px;
+}
+.index-bug-content-p{
+    width: 500px;
+}
+.bug-title-p{
+    font-size: 40px;
+    font-family: 'title';
+    margin-left: 6px;
+}
+.bug-content-p{
+    display: flex;
+    width: 550px;
+    margin-top: 30px;
+}
+.bug-content-bottom-p{
+    display: flex;
+    width: 550px;
+}
+.bug-svg-p{
+    margin-right: 10px;
+    width: 9%;
+}
+.bug-svg-bottom-p{
+    margin-right: 10px;
+    width: 9%;
+}
+.span-p{
+    width: 85%;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'content';
+    font-size: 18px;
+    margin-top: 8px;
+}
+.buttom-span-p{
+    width: 200px;
+    font-size: 12px;
+    margin-left: -10px;
+    margin-top: 10px;
+    font-family: 'content';
+}
+.bug-button-p{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 5px;
+}
+.bug-button-p .bug-svg-p{
+    width: 30px;
+    margin-top: 6px;
+    margin-left: -10px;
+}
+.bug-button-p .button-p{
+    width: 80px;
+    height: 28px;
+    border-radius: 5px;
+    border: 0px;
+    font-family: 'content';
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ffd673;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    margin-right: 20px;
+}
+.bug-thebutton{
+    margin: auto;
+    text-decoration:none;
+    color: #000;
+}
+@media screen and (max-width: 510px) {
+    div[class^='span-p'] {
+        width: 65%;
+        font-size: 15px;
+    }
+    div[class^='bug-title-p']{
+        font-size: 30px;
+        margin-left: 6px;
+    }
+    .index-bug-content-p{
+        width: 450px;
+    }
+}
+@media screen and (max-width: 420px) {
+    div[class^='span-p'] {
+        width: 55%;
+        font-size: 15px;
+    }
+    div[class^='bug-title-p']{
+        font-size: 30px;
+        margin-left: 6px;
+    }
+    .index-bug-content-p{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 370px) {
+    div[class^='span-p'] {
+        width: 50%;
+        font-size: 15px;
+    }
+    div[class^='bug-title-p']{
+        font-size: 30px;
+        margin-left: 6px;
+    }
+    .index-bug-content-p{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 330px) {
+    div[class^='span-p'] {
+        width: 40%;
+        font-size: 15px;
+    }
+    div[class^='bug-title-p']{
+        font-size: 30px;
+        margin-left: 6px;
+    }
+    .index-bug-content-p{
+        width: 300px;
+    }
+    .bug-button-p{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+}
