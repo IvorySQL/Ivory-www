@@ -9,7 +9,7 @@ const FeatureList = [
     Svg: require('../../svg/icon-01.svg').default,
     description: (
       <>
-        <Translate>No Vendor Lock-In</Translate>
+        <Translate>No Vendor Lock-In.</Translate>
       </>
     ),
   },
