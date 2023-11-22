@@ -189,7 +189,7 @@
   "Open Source": {
     "message": "开源软件"
   },
-  "No Vendor Lock-In": {
+  "No Vendor Lock-In.": {
     "message": "没有厂商的限制。"
   },
   "'Powered by PostgrSQL'": {
@@ -220,12 +220,12 @@
     "message": "基于PostgreSQL"
   },
   "Based on PostgreSQL, with full SQL, rock-solid reliability, and a massive ecosystem.": {
-    "message": "基于PostgreSQL，具有完整的SQL、坚如磐石的可靠性和庞大的生态系统."
+    "message": "基于PostgreSQL，具有完整的SQL、坚如磐石的可靠性和庞大的生态系统。"
   },
   "IvorySQL": {
     "message": "IvorySQL"
   },
-  "Open Source Oracle compatible PostgreSQL": {
+  "Open Source Oracle Compatible PostgreSQL": {
     "message": "开源的兼容ORACLE的PostgreSQL"
   },
   "Open Community": {
