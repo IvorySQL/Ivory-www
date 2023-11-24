@@ -42,7 +42,7 @@ const config = {
     ],
   ],
   i18n: {
-    defaultLocale: 'zh-cn',
+ //   defaultLocale: 'zh-cn',
     locales: ['en', 'zh-CN'],
   },
   themeConfig:
