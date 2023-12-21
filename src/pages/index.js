@@ -7,6 +7,8 @@ import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import Translate, {translate} from '@docusaurus/Translate';
 import Elephant from '../../svg/img-elephant-balloon.svg';
+import Christmas from '../../svg/christmas-ball-02.svg'
+import Tree from '../../svg/christmas-tree-02.svg'
 import Slider from "react-slick";
 import Recruit from "../../static/img/index-recruit.jpg"
 import SliderIndex from './slider'
@@ -19,7 +21,7 @@ import indexbugphone from '../../static/img/indexbugphone.png'
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
      const settings = {
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 5000,
       dots: true,
       infinite: true,
@@ -31,10 +33,13 @@ function HomepageHeader() {
      <div id='main'>
         <Slider {...settings}>
           {/* 页面一 */}
-          <div>
+          <div id='pageone'>
             <header className={clsx('hero hero--primary', styles.heroBanner)}>
               <div className="container">
-                <div class="row">
+                <div className={styles.tree}>
+                  <Tree></Tree>
+                </div>
+                <div className={styles.row}>
                   <div className={styles.heroCenterImage}>
                     <h1 className="hero__title"><Translate>IvorySQL</Translate></h1>
                     <p className="hero__subtitle"><Translate>Open Source Oracle Compatible PostgreSQL</Translate></p>
@@ -46,8 +51,9 @@ function HomepageHeader() {
                       </Link>
                     </div>
                   </div>
-                  <div className={styles.heroRightImage}>
-                    <Elephant></Elephant>
+                  <div className={styles.heroRightImage}    >
+                    {/* <Elephant></Elephant> */}
+                    <Christmas></Christmas>
                   </div>
                 </div>
               </div>
