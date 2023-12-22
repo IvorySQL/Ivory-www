@@ -21,7 +21,7 @@ import indexbugphone from '../../static/img/indexbugphone.png'
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
      const settings = {
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 5000,
       dots: true,
       infinite: true,
