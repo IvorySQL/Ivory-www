@@ -4,12 +4,17 @@
  */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css);
- .heroBanner {
+.heroBanner {
   padding: 5rem 0;
   text-align: center;
   position: relative;
-  background-image: linear-gradient(134.3deg,#1f0c79,#5a43ca 39.99%,#ba74e3);
+  
+  /* background-image: linear-gradient(134.3deg,#1f0c79,#5a43ca 39.99%,#ba74e3); */
+  /* 圣诞 */
+  background-color: #0e2956;
+
   height: 502px;
+  overflow: hidden;
 }
 .heroBanner_2 {
   padding: 4rem 4rem;
@@ -28,11 +33,13 @@
   background-position: center;
   background-size: cover;
   position: relative;
-    background-blend-mode: darken;
+  background-blend-mode: darken;
   width: 100%;
-
 }
-
+.row{
+  display: flex;
+  flex-wrap:nowrap;
+}
 .heroCenterImage {
   padding: 5rem 0;
   text-align: center;
@@ -41,7 +48,8 @@
   background-repeat: no-repeat;
   background-position: cover;
   background-size: cover;
-  width: 50%;
+  /* 圣诞 */
+  margin-left: 300px;
 }
 .heroLeftImage {
   padding: 4rem 4rem;
@@ -54,10 +62,28 @@
   width: 25%;
 }
 .heroRightImage {
-  width: 43%;
+  /* 原图 */
+  /* width: 43%;
   height: 100px;
   position: relative;
-  top: -47px;
+  top: -47px; */
+  /* 圣诞 */
+  width: 160%;
+  height: 100px;
+  position: relative;
+  top: -75px;
+  left: 100px;
+  overflow:visible;
+  white-space:nowrap;
+  margin-left: 30px;
+}
+.tree{
+  width: 40%;
+  height: 100px;
+  margin-left: -200px;
+  margin-top: -50px;
+  position: relative;
+  top: 28px;
 }
 .indexImg{
   width: 100%;
@@ -87,10 +113,25 @@
   height: 500px;
   background-color: #3227d5;
 }
+.phonetree{
+  display: none;
+}
 @media screen and (max-width: 1440px) {
-  .heroRightImage {
-    position:relative;
-    top: 21px;
+  .tree{
+    position: relative;
+    top: 140px;
+  }
+  .heroRightImage{
+    width: 160%;
+    margin-left: -20px;
+    position: relative;
+    left: 90px;
+    top: -25px;
+  }
+  .heroCenterImage{
+    margin-left: 200px;
+    width: 400px;
+    height: 500px;
   }
 }
 @media screen and (min-width: 997px) {
@@ -115,6 +156,8 @@
   }
   div[class^='heroCenterImage'] {
     width: 100%;
+    margin-left:0px;
+    margin-top: 50px;
   }
   div[class^='indexImg'] {
     display: none;
@@ -122,6 +165,16 @@
   div[class^='indexImg-phone'] {
     display: inline;
   }
+  div[class^='tree'] { 
+    display: none;
+  }
+  /* div[class^='phonetree'] {
+    display: inline-block;
+    width: 120%;
+    position: relative;
+    right: 90px;
+    top: 200px;
+  } */
 }
 .buttons {
   display: flex;
