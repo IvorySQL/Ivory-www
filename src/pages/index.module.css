@@ -9,9 +9,9 @@
   text-align: center;
   position: relative;
   
-  /* background-image: linear-gradient(134.3deg,#1f0c79,#5a43ca 39.99%,#ba74e3); */
+  background-image: linear-gradient(134.3deg,#1f0c79,#5a43ca 39.99%,#ba74e3);
   /* 圣诞 */
-  background-color: #0e2956;
+  /* background-color: #0e2956; */
 
   height: 502px;
   overflow: hidden;
@@ -49,7 +49,7 @@
   background-position: cover;
   background-size: cover;
   /* 圣诞 */
-  margin-left: 300px;
+  /* margin-left: 300px; */
 }
 .heroLeftImage {
   padding: 4rem 4rem;
@@ -63,19 +63,19 @@
 }
 .heroRightImage {
   /* 原图 */
-  /* width: 43%;
+  width: 43%;
   height: 100px;
   position: relative;
-  top: -47px; */
+  top: -47px;
   /* 圣诞 */
-  width: 160%;
+  /* width: 160%;
   height: 100px;
   position: relative;
   top: -75px;
   left: 100px;
   overflow:visible;
   white-space:nowrap;
-  margin-left: 30px;
+  margin-left: 30px; */
 }
 .tree{
   width: 40%;
