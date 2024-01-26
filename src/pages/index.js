@@ -37,7 +37,7 @@ function HomepageHeader() {
             <header className={clsx('hero hero--primary', styles.heroBanner)}>
               <div className="container">
                 <div className={styles.tree}>
-                  <Tree></Tree>
+                  {/* <Tree></Tree> */}
                 </div>
                 <div className={styles.row}>
                   <div className={styles.heroCenterImage}>
@@ -51,9 +51,9 @@ function HomepageHeader() {
                       </Link>
                     </div>
                   </div>
-                  <div className={styles.heroRightImage}    >
-                    {/* <Elephant></Elephant> */}
-                    <Christmas></Christmas>
+                  <div className={styles.heroRightImage}>
+                    <Elephant></Elephant>
+                    {/* <Christmas></Christmas> */}
                   </div>
                 </div>
               </div>
