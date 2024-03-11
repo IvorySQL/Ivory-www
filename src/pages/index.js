@@ -32,7 +32,7 @@ function HomepageHeader() {
   return (
      <div id='main'>
         <Slider {...settings}>
-          {/* 页面一 */}
+          {/* 页面一： */}
           <div id='pageone'>
             <header className={clsx('hero hero--primary', styles.heroBanner)}>
               <div className="container">
