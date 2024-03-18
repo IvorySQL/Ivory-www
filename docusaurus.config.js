@@ -70,6 +70,11 @@ const config = {
             position: 'left'
           },
           {
+            label: 'Installation',
+            href: 'https://docs.ivorysql.org/en/ivorysql-doc/v3.1/v3.1/3#quick-installation',
+            position: 'left'
+          },
+          {
             label: 'Downloads',
             href: 'https://github.com/IvorySQL/IvorySQL/releases',
             position: 'left'
@@ -79,7 +84,6 @@ const config = {
             to: '/releases-page',
             position: 'left'
           },
-
           {
             type: 'dropdown',
             position: 'left',
