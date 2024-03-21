@@ -43,6 +43,10 @@
     "message": "下载",
     "description": "Navbar item with label Downloads"
   },
+  "item.label.Installation": {
+    "message": "安装",
+    "description": "Navbar item with label Installation"
+  },
   "item.label.Blog": {
     "message": "博客",
     "description": "Navbar item with label Blog"
