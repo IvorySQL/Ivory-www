@@ -10,24 +10,25 @@ import Recruit from "../../../static/img/index-recruit.jpg"
 import RecruitPhone from "../../../static/img/index-recruit-phone.jpg"
 import indexbug from '../../../static/img/indexbug.png'
 import indexbugphone from '../../../static/img/indexbugphone.png'
-
-import styles from './index.module.css';
 import SliderIndex from '../Slider'
 import SliderPhoneIndex from '../SliderPhone'
 import SliderBug from '../SliderBug'
 import SliderBugPhone from '../SliderBugPhone'
 
+import styles from './index.module.css';
+
+// Slider in homepage
 export default function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-     const settings = {
-      autoplay: true,
-      autoplaySpeed: 5000,
-      dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      };
+  const { siteConfig } = useDocusaurusContext();
+  const settings = {
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
   return (
     <div id='main'>
       <Slider {...settings}>
@@ -72,18 +73,11 @@ export default function HomepageHeader() {
         {/* 页面三 */}
         <div>
           <div class="indexImg">
-              <Link
-                to="https://summer-ospp.ac.cn/">
-                  <img src={indexbug} className={styles.indexImgbug}></img>
-              </Link>
+            <img src={indexbug} className={styles.indexImgbug}></img>
             <SliderBug></SliderBug>
           </div>
           <div class="indexImg-phone">
-
-              <Link
-                to="https://summer-ospp.ac.cn/">
-                  <img src={indexbugphone} className={styles.indexImgbugphone}></img>
-              </Link>
+            <img src={indexbugphone} className={styles.indexImgbugphone}></img>
             <SliderBugPhone></SliderBugPhone>
           </div>
         </div>

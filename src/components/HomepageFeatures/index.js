@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 
-import Translate, {translate} from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 
 import styles from './index.module.css';
 
@@ -62,22 +62,22 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx('col col--4')} style={{height:'300px'}}>
+    <div className={clsx('col col--4')} style={{ height: '300px' }}>
       <div className="text--center" id="homepage-svg" style={{
-        backgroundColor:'#f4f4f4',
-        width:'130px',
-        height:'130px',
-        margin:'auto',
-        textAlign:'center',
-        borderRadius:'65px',
+        backgroundColor: '#f4f4f4',
+        width: '130px',
+        height: '130px',
+        margin: 'auto',
+        textAlign: 'center',
+        borderRadius: '65px',
       }}>
         <Svg className={styles.featureSvg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md" style={{
-        position:'relative',
-        top:'20px',
+        position: 'relative',
+        top: '20px',
       }}>
         <h3>{title}</h3>
         <p>{description}</p>
@@ -86,6 +86,7 @@ function Feature({Svg, title, description}) {
   );
 }
 
+// Open Source Icons in homepage
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
