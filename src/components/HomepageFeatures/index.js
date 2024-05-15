@@ -1,12 +1,14 @@
 import React from 'react';
 import clsx from 'clsx';
-import styles from './HomepageFeatures.module.css';
+
 import Translate, {translate} from '@docusaurus/Translate';
+
+import styles from './index.module.css';
 
 const FeatureList = [
   {
     title: <Translate>Open Source</Translate>,
-    Svg: require('../../svg/icon-01.svg').default,
+    Svg: require('../../../svg/icon-01.svg').default,
     description: (
       <>
         <Translate>No Vendor Lock-In.</Translate>
@@ -15,7 +17,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Powered by PostgreSQL</Translate>,
-    Svg: require('../../svg/icon-02.svg').default,
+    Svg: require('../../../svg/icon-02.svg').default,
     description: (
       <>
         <Translate>Based on PostgreSQL, with full SQL, rock-solid reliability, and a massive ecosystem.</Translate>
@@ -24,7 +26,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Oracle Compatible</Translate>,
-    Svg: require('../../svg/icon-03.svg').default,
+    Svg: require('../../../svg/icon-03.svg').default,
     description: (
       <>
         <Translate>Migrate your Oracle DB to IvorySQL.</Translate>
@@ -33,7 +35,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Customization</Translate>,
-    Svg: require('../../svg/icon-04.svg').default,
+    Svg: require('../../../svg/icon-04.svg').default,
     description: (
       <>
         <Translate>Just download the code and make it as you like.</Translate>
@@ -42,7 +44,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Backed by HighGo</Translate>,
-    Svg: require('../../svg/icon-05.svg').default,
+    Svg: require('../../../svg/icon-05.svg').default,
     description: (
       <>
         <Translate>Supported by HighGo, The leading provider of PostgreSQL database.</Translate>
@@ -51,7 +53,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Open Community</Translate>,
-    Svg: require('../../svg/icon-06.svg').default,
+    Svg: require('../../../svg/icon-06.svg').default,
     description: (
       <>
         <Translate>A creative and open community, work together to create more possibilities.</Translate>
