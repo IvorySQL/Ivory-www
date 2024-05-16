@@ -92,6 +92,7 @@
   margin: auto;
 }
 .indexImgbug{
+  object-fit: cover;
   width: 100%;
   max-width: 2391px;
   height: 502px;
@@ -103,8 +104,9 @@
   margin: auto;
 }
 .indexImgbugphone{
+  object-fit: cover;
   width: 1000px;
-  min-width: 600px;
+  /* min-width: 600px; */
   height: 502px;
   margin: 0px auto -30px auto;
 }

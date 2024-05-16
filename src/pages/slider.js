@@ -22,7 +22,7 @@ export default function SliderIndex(){
                 <div class="content-right">
                     <div class="content-right-top">
                         <div class="right-want">
-                            <span class="right-top-title"><Translate>Recruiting Cities:</Translate></span><span class="right-top-city"><Translate>Jinan、Chengdu、Beijing</Translate></span>
+                            <span class="right-top-title"><Translate>Recruiting Cities:</Translate></span><span class="right-top-city"><Translate>Nanjing、Guangzhou、Qingdao</Translate></span>
                         </div>
                         <div class="right-top-font">
                             <div class="right-top-title"><Translate>Recruiting Roles:</Translate></div>
