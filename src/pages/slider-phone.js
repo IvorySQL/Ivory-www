@@ -13,7 +13,7 @@ export default function SliderPhoneIndex(){
                 </div>
                 <div class="phone-main-buttom">
                     <div class="phone-buttom-main">
-                        <span class="phone-buttom-title"><Translate>Recruiting Cities:</Translate></span><span class="phone-buttom-city"><Translate>Jinan、Chengdu、Beijing</Translate></span>
+                        <span class="phone-buttom-title"><Translate>Recruiting Cities:</Translate></span><span class="phone-buttom-city"><Translate>Nanjing、Guangzhou、Qingdao</Translate></span>
                     </div>
                     <div>
                         <div class="phone-buttom-font">
