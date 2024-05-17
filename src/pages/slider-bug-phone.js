@@ -20,13 +20,13 @@ export default function SliderBugphone(){
                     {/* <div className="span-p"><Translate>Participants will receive exclusive IvorySQL-branded peripherals as a token of appreciation.</Translate></div> */}
                 </div>
                 <div className="bug-button-p">
-                    <div className="button-p">
-                      {/* <Link
+                    {/* <div className="button-p">
+                      <Link
                         className="bug-thebutton"
                         to="https://kdocs.cn/l/chdVh5CuGxxr">
                         <Translate>Learn More</Translate>
-                      </Link> */}
-                    </div>
+                      </Link>
+                    </div> */}
                     {/* <div className="bug-svg-p"><ArrowLeft></ArrowLeft></div> */}
                     {/* <span className="buttom-span-p"><Translate>Click "Learn More" to access detailed operational instructions.</Translate></span> */}
                 </div>
