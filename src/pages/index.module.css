@@ -104,8 +104,9 @@
   margin: auto;
 }
 .indexImgbugphone{
-  object-fit: cover;
+  /* object-fit: cover; */
   width: 1000px;
+  width: 100%;
   /* min-width: 600px; */
   height: 502px;
   margin: 0px auto -30px auto;
