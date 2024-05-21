@@ -1,10 +1,5 @@
-import React from "react"
-import './slider-bug-phone.css'
-import Translate, {translate} from '@docusaurus/Translate';
-import Woodpecker from '../../svg/woodpecker.svg'
-import ArrowLeft from '../../svg/arrow-left.svg'
-import ArrowRight from '../../svg/arrow-right.svg'
-import Link from '@docusaurus/Link';
+import React from "react";
+import './slider-bug-phone.css';
 
 export default function SliderBugphone(){
     return(

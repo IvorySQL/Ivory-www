@@ -1,23 +1,21 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
-import Translate, {translate} from '@docusaurus/Translate';
-import Elephant from '../../svg/img-elephant-balloon.svg';
-import Christmas from '../../svg/christmas-ball-02.svg'
-import Tree from '../../svg/christmas-tree-02.svg'
+import Layout from '@theme/Layout';
+import clsx from 'clsx';
+import React from 'react';
 import Slider from "react-slick";
-import Recruit from "../../static/img/index-recruit.jpg"
-import SliderIndex from './slider'
-import RecruitPhone from "../../static/img/index-recruit-phone.jpg"
-import SliderPhoneIndex from './slider-phone'
-import SliderBug from './slider-bug'
-import SliderBugPhone from './slider-bug-phone'
-import indexbug from '../../static/img/indexbug.png'
-import indexbugphone from '../../static/img/indexbugphone.png'
+import RecruitPhone from "../../static/img/index-recruit-phone.jpg";
+import Recruit from "../../static/img/index-recruit.jpg";
+import indexbug from '../../static/img/indexbug.png';
+import indexbugphone from '../../static/img/indexbugphone.png';
+import Elephant from '../../svg/img-elephant-balloon.svg';
+import HomepageFeatures from '../components/HomepageFeatures';
+import styles from './index.module.css';
+import SliderIndex from './slider';
+import SliderBug from './slider-bug';
+import SliderBugPhone from './slider-bug-phone';
+import SliderPhoneIndex from './slider-phone';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
      const settings = {
@@ -73,11 +71,18 @@ function HomepageHeader() {
           {/* 页面三 */}
           <div>
             <div class="indexImg">
-              <img src={indexbug} className={styles.indexImgbug}></img>
+                <Link
+                  to="https://summer-ospp.ac.cn/">
+                    <img src={indexbug} className={styles.indexImgbug}></img>
+                </Link>
               <SliderBug></SliderBug>
             </div>
             <div class="indexImg-phone">
-              <img src={indexbugphone} className={styles.indexImgbugphone}></img>
+
+                <Link
+                  to="https://summer-ospp.ac.cn/">
+                    <img src={indexbugphone} className={styles.indexImgbugphone}></img>
+                </Link>
               <SliderBugPhone></SliderBugPhone>
             </div>
           </div>
