@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const tailwindPlugin = require("./plugins/postcss-tailwind-loader.js");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -15,6 +16,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'IvorySQL', // Usually your GitHub org/user name.
   projectName: 'ivory-www', // Usually your repo name.
+  plugins: [tailwindPlugin],
 
   presets: [
     [
