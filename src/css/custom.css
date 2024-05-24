@@ -3,12 +3,6 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-.tailwind {
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  @tailwind screens;
-}
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #4e89e8;
@@ -28,6 +22,7 @@
 */
 }
 
+/* --- overwrite docusaurus styles - start ---  */
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
   display: block;
@@ -44,3 +39,23 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   color: white;
   border: white;
 }
+.navbar {
+  display: none;
+}
+/* --- overwrite docusaurus styles - end ---  */
+
+/* global tailwind styles  */
+.tailwind {
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  @tailwind screens;
+}
+
+.tailwind-navbar {
+  position: sticky;
+  display: block;
+  top: 0;
+  z-index: 99;
+}
+/* global tailwind styles  */

@@ -51,144 +51,144 @@ const config = {
   
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      navbar: {
-        style: 'dark',
+      // navbar: {
+      //   style: 'dark',
 
-        title: 'IvorySQL',
-        logo: {
-          alt: 'IvorySQL Logo',
-          src: 'img/ivory.png',
-        },
+      //   title: 'IvorySQL',
+      //   logo: {
+      //     alt: 'IvorySQL Logo',
+      //     src: 'img/ivory.png',
+      //   },
         
-        items: [
-          {
-            label: 'Docs',
-            href: 'https://docs.IvorySQL.org',
-            position: 'left'
-          },
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left'
-          },
-          {
-            label: 'Installation',
-            href: 'https://docs.ivorysql.org/en/ivorysql-doc/v3.2/v3.2/3#quick-installation',
-            position: 'left'
-          },
-          {
-            label: 'Downloads',
-            href: 'https://github.com/IvorySQL/IvorySQL/releases',
-            position: 'left'
-          },
-          {
-            label: 'Releases',
-            to: '/releases-page',
-            position: 'left'
-          },
-          {
-            type: 'dropdown',
-            position: 'left',
-            label: 'Resources',
-            items: [
-              {
-                label: 'Webinars',
-                to: '/webinars-page',
-              },
-              {
-                label: 'Partners',
-                to: '/partners-page',
-              },
-              {
-                label: 'Customer Stories',
-                href: 'customer-stories-page',
-              },
-              {
-                label: 'Contribution Guidelines',
-                to: '/contribution-guidelines',
-              },
-            ]
-          },
+      //   items: [
+      //     {
+      //       label: 'Docs',
+      //       href: 'https://docs.IvorySQL.org',
+      //       position: 'left'
+      //     },
+      //     {
+      //       to: '/blog',
+      //       label: 'Blog',
+      //       position: 'left'
+      //     },
+      //     {
+      //       label: 'Installation',
+      //       href: 'https://docs.ivorysql.org/en/ivorysql-doc/v3.2/v3.2/3#quick-installation',
+      //       position: 'left'
+      //     },
+      //     {
+      //       label: 'Downloads',
+      //       href: 'https://github.com/IvorySQL/IvorySQL/releases',
+      //       position: 'left'
+      //     },
+      //     {
+      //       label: 'Releases',
+      //       to: '/releases-page',
+      //       position: 'left'
+      //     },
+      //     {
+      //       type: 'dropdown',
+      //       position: 'left',
+      //       label: 'Resources',
+      //       items: [
+      //         {
+      //           label: 'Webinars',
+      //           to: '/webinars-page',
+      //         },
+      //         {
+      //           label: 'Partners',
+      //           to: '/partners-page',
+      //         },
+      //         {
+      //           label: 'Customer Stories',
+      //           href: 'customer-stories-page',
+      //         },
+      //         {
+      //           label: 'Contribution Guidelines',
+      //           to: '/contribution-guidelines',
+      //         },
+      //       ]
+      //     },
 
-          //Right Side Items
-          {
-            label: 'Community',
-            to: '/community-page',
-            position: 'right'
-          },
-          {
-            href: 'https://gitee.com/IvorySQL/',
-            label: 'Gitee',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/IvorySQL/IvorySQL',
-            label: 'GitHub',
-            position: 'right',
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Docs',
-                href: 'https://docs.IvorySQL.org',
-              },
-            ],
-          },
-          { 
-            title: 'Community',
-            items: [
-              {
-                label: 'Hackers mailing list',
-                href: 'https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/',
-              },
-              {
-                label: 'Users mailing list',
-                href: 'https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/',
-              },
-              {
-                label: 'Mailing Lists',
-                href: 'https://lists.IvorySQL.org',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/IvorySQL',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'IvorySQL GitHub',
-                href: 'https://github.com/IvorySQL/IvorySQL',
-              },
-              {
-                label: 'IvorySQL Gitee',
-                href: 'https://gitee.com/IvorySQL/',
-              },
-              {
-                label: 'IvorySQL YUM',
-                href: 'https://yum.highgo.ca/ivorysql.html',
-              },
-              {
-                label: 'Report an issue',
-                href: 'https://github.com/IvorySQL/IvorySQL/issues/new/choose',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} IvorySQL.`,
-      },
+      //     //Right Side Items
+      //     {
+      //       label: 'Community',
+      //       to: '/community-page',
+      //       position: 'right'
+      //     },
+      //     {
+      //       href: 'https://gitee.com/IvorySQL/',
+      //       label: 'Gitee',
+      //       position: 'right',
+      //     },
+      //     {
+      //       href: 'https://github.com/IvorySQL/IvorySQL',
+      //       label: 'GitHub',
+      //       position: 'right',
+      //     },
+      //     {
+      //       type: 'localeDropdown',
+      //       position: 'right',
+      //     },
+      //   ],
+      // },
+      // footer: {
+      //   style: 'dark',
+      //   links: [
+      //     {
+      //       title: 'Docs',
+      //       items: [
+      //         {
+      //           label: 'Docs',
+      //           href: 'https://docs.IvorySQL.org',
+      //         },
+      //       ],
+      //     },
+      //     { 
+      //       title: 'Community',
+      //       items: [
+      //         {
+      //           label: 'Hackers mailing list',
+      //           href: 'https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/',
+      //         },
+      //         {
+      //           label: 'Users mailing list',
+      //           href: 'https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/',
+      //         },
+      //         {
+      //           label: 'Mailing Lists',
+      //           href: 'https://lists.IvorySQL.org',
+      //         },
+      //         {
+      //           label: 'Twitter',
+      //           href: 'https://twitter.com/IvorySQL',
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: 'More',
+      //       items: [
+      //         {
+      //           label: 'IvorySQL GitHub',
+      //           href: 'https://github.com/IvorySQL/IvorySQL',
+      //         },
+      //         {
+      //           label: 'IvorySQL Gitee',
+      //           href: 'https://gitee.com/IvorySQL/',
+      //         },
+      //         {
+      //           label: 'IvorySQL YUM',
+      //           href: 'https://yum.highgo.ca/ivorysql.html',
+      //         },
+      //         {
+      //           label: 'Report an issue',
+      //           href: 'https://github.com/IvorySQL/IvorySQL/issues/new/choose',
+      //         },
+      //       ],
+      //     },
+      //   ],
+      //   copyright: `Copyright © ${new Date().getFullYear()} IvorySQL.`,
+      // },
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true,
