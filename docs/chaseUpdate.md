@@ -4,6 +4,7 @@
   - [结构调整](#结构调整)
   - [引入tailwind](#引入tailwind)
   - [组件复写](#组件复写)
+  - [多语言小坑](#多语言小坑)
 
 
 # 前言
@@ -124,9 +125,7 @@ https://docusaurus-archive-october-2023.netlify.app/zh-CN/docs/2.0.1/swizzling#w
 
 文档提供了一个方法可以把框架通过`docusaurus.config`的这种配置出来的`footer`和`navigation`组件暴露出来覆写.
 
-至于哪些组件可以暴露出来, 他说可以了`npm run swizzle -- --list`. 我这里失败了, 可能是`docusaurus`版本太老的原因.
-
-或者自己直接去[这里](https://github.com/facebook/docusaurus/tree/main/packages/docusaurus-theme-classic/src/theme)查看
+至于哪些组件可以暴露出来, 他说可以了`npm run swizzle -- --list`. 我这里失败了, 可能是`docusaurus`版本太老的原因, 或者自己直接去[这里](https://github.com/facebook/docusaurus/tree/main/packages/docusaurus-theme-classic/src/theme)查看.
 
 文档也提供了另一个思路, 配置一个顶级入口, 他会是`pages`目录下所有组件的外层包裹. 我选择了这么干.
 ```sh
@@ -140,4 +139,7 @@ https://docusaurus-archive-october-2023.netlify.app/zh-CN/docs/2.0.1/swizzling#w
 
 ![new-layout](./new-layout.png)
 
+
+## 多语言小坑
+`navigation`暴露出来重写, 多语言切换的组件也需要自己重写, 
 

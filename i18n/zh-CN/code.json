@@ -407,5 +407,73 @@
   },
   "Participants will receive exclusive IvorySQL-branded peripherals as a token of appreciation.": {
     "message": "参与即可获得精美周边"
+  },
+  "Docs": {
+    "message": "文档",
+    "description": "Navbar item with label Docs"
+  },
+  "Community": {
+    "message": "社区",
+    "description": "Navbar item with label Community"
+  },
+  "Download": {
+    "message": "下载",
+    "description": "Navbar item with label Download"
+  },
+  "GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "Resources": {
+    "message": "资源",
+    "description": "Navbar item with label Resources"
+  },
+  "Contribution Guidelines": {
+    "message": "贡献准则",
+    "description": "Navbar item with label Contribution Guidelines"
+  },
+  "Report an issue": {
+    "message": "提交问题",
+    "description": "Navbar item with label Report an issue"
+  },
+  "IvorySQL GitHub": {
+    "message": "IvorySQL GitHub",
+    "description": "Navbar item with label IvorySQL GitHub"
+  },
+  "Mailing Lists": {
+    "message": "邮件列表",
+    "description": "Navbar item with label Mailing Lists"
+  },
+  "Downloads": {
+    "message": "下载",
+    "description": "Navbar item with label Downloads"
+  },
+  "Installation": {
+    "message": "安装",
+    "description": "Navbar item with label Installation"
+  },
+  "Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "Releases": {
+    "message": "发布",
+    "description": "Navbar item with label Releases"
+  },
+  "Gitee": {
+    "message": "Gitee",
+    "description": "Navbar item with label Gitee"
+  },
+  "Webinars": {
+    "message": "网络研讨会",
+    "description": "Navbar item with label Webinars"
+  },
+  "Partners": {
+    "message": "合作伙伴",
+    "description": "Navbar item with label Partners"
+  },
+  "Customer Stories": {
+    "message": "客户故事",
+    "description": "Navbar item with label Customer Stories"
   }
 }

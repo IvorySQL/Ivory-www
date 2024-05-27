@@ -6,6 +6,7 @@ import HomepageHeader from '../components/HomepageHeader';
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+
   return (
     <Layout
       title={`${siteConfig.title}`}
