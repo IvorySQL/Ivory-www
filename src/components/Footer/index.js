@@ -45,9 +45,7 @@ export default function Footer() {
                 alt="Company name"
               />
               <p className="text-sm leading-6 text-gray-300">
-                <Translate>
-                  Open Source Oracle Compatible PostgreSQL.
-                </Translate>
+                <Translate>Open Source Oracle Compatible PostgreSQL</Translate>
               </p>
               <div className="flex space-x-6">
                 {FOOTER.Icons.map((item) => (
@@ -102,7 +100,7 @@ export default function Footer() {
                       <li key={item.name}>
                         <a href={item.href}
                           className="text-sm leading-6 text-gray-300 hover:text-white flex items-center">
-                          {item.name}
+                          <Translate>{item.name}</Translate>
                           <ArrowTopRightOnSquareIcon className="h-4 w-4 ml-1" />
                         </a>
                       </li>
@@ -118,7 +116,7 @@ export default function Footer() {
                       <li key={item.name}>
                         <a href={item.href}
                           className="text-sm leading-6 text-gray-300 hover:text-white flex items-center">
-                          {item.name}
+                          <Translate>{item.name}</Translate>
                           <ArrowTopRightOnSquareIcon className="h-4 w-4 ml-1" />
                         </a>
                       </li>

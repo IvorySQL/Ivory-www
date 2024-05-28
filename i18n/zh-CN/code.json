@@ -472,8 +472,26 @@
     "message": "合作伙伴",
     "description": "Navbar item with label Partners"
   },
+  "Partners of IvorySQL": {
+    "message": "IvorySQL的合作伙伴",
+    "description": "Navbar item with label Partners des"
+  },
   "Customer Stories": {
     "message": "客户故事",
     "description": "Navbar item with label Customer Stories"
+  },
+  "Guide how to contribulte to the IvorySQL on Github": {
+    "message": "指导您如何在Github上贡献代码"
+  },
+  "Join online discussions or training sessions, sharing audio, documents, or slides": {
+    "message": "参加在线讨论或培训课程，共享音频、文件或PPT"
+  },
+  "Hackers mailing list": {
+    "message": "Hackers邮件列表",
+    "description": "The label of footer link with label=Hackers mailing list linking to https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/"
+  },
+  "Users mailing list": {
+    "message": "用户邮件列表",
+    "description": "The label of footer link with label=Users mailing list linking to https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/"
   }
 }

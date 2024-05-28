@@ -20,6 +20,21 @@
 .feature h3 {
   font-family: "GT Walsheim Pro";
   margin-top: 1rem;
+  width: fit-content;
+}
+
+.feature h3:hover {
+  color: rgb(79, 70, 229);
+  background-color: #f4f4f4;
+}
+
+.feature p {
+  width: fit-content;
+}
+
+.feature p:hover {
+  color: rgb(79, 70, 229);
+  background-color: #f4f4f4;
 }
 
 .iconContainer {
@@ -46,3 +61,5 @@
   top: 0;
   z-index: 1;
 }
+
+
