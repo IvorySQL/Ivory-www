@@ -22,6 +22,14 @@
 */
 }
 
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('../../static/GTWalsheimPro-Bold.woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap
+}
+
 /* --- overwrite docusaurus styles - start ---  */
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);

@@ -96,10 +96,10 @@ const Navigation = () => {
                           key={item.name}
                           to={item.href}
                           className={classNames(
-                            location.pathname === item.href ? 'bg-gray-900 text-indigo-600' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                            location.pathname.includes(item.href) ? 'bg-gray-900 text-indigo-600' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                             'nav-item'
                           )}
-                          aria-current={location.pathname === item.href ? 'page' : undefined}
+                          aria-current={location.pathname.includes(item.href) ? 'page' : undefined}
                         >
                           <span><Translate>{item.name}</Translate></span>
                           {item.outFlag && <ArrowTopRightOnSquareIcon className="block h-4 w-4" aria-hidden="true" />}
@@ -125,10 +125,10 @@ const Navigation = () => {
                     as="a"
                     href={item.href}
                     className={classNames(
-                      location.pathname === item.href ? 'bg-gray-900 text-indigo-600' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      location.pathname.includes(item.href) ? 'bg-gray-900 text-indigo-600' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                       'flex items-center rounded-md px-3 py-2 text-base font-medium'
                     )}
-                    aria-current={location.pathname === item.href ? 'page' : undefined}
+                    aria-current={location.pathname.includes(item.href) ? 'page' : undefined}
                   >
                     <span>{item.name}</span>
                     {item.outFlag && <ArrowTopRightOnSquareIcon className="block h-4 w-4" aria-hidden="true" />}
