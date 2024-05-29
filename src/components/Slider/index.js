@@ -1,6 +1,7 @@
 import React from 'react'
-import './silder.css'
 import Translate, {translate} from '@docusaurus/Translate';
+
+import './silder.css'
 
 export default function SliderIndex(){
     return(

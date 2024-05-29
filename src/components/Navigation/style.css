@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+  .nav-item {
+    @apply rounded-md px-3 py-2 text-sm font-medium flex justify-center items-center shrink-0
+  }
+}

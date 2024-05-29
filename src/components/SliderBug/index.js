@@ -1,10 +1,13 @@
 import React from "react"
-import "./slider-bug.css"
-import Translate, {translate} from '@docusaurus/Translate';
-import Woodpecker from '../../svg/woodpecker.svg'
-import ArrowLeft from '../../svg/arrow-left.svg'
-import ArrowRight from '../../svg/arrow-right.svg'
 import Link from '@docusaurus/Link';
+import Translate, {translate} from '@docusaurus/Translate';
+
+import Woodpecker from '../../../svg/woodpecker.svg'
+import ArrowLeft from '../../../svg/arrow-left.svg'
+import ArrowRight from '../../../svg/arrow-right.svg'
+
+import "./slider-bug.css"
+
 export default function SliderBug(){
     return(
         <div className="index-bug">

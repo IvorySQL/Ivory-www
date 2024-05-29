@@ -1,6 +1,7 @@
 import React from 'react'
+import Translate from '@docusaurus/Translate';
+
 import './slider-phone.css'
-import Translate, {translate} from '@docusaurus/Translate';
 
 export default function SliderPhoneIndex(){
     return(
