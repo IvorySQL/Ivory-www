@@ -94,7 +94,7 @@ export default function HomepageFeatures() {
 
 
   return (
-    <section className="container">
+    <section className={["container", styles.container].join(' ')}>
       <div className={styles.layout}>
         {FeatureList.map((props, idx) => (
           <Feature key={idx} {...props} />
