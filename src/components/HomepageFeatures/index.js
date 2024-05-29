@@ -94,7 +94,7 @@ export default function HomepageFeatures() {
 
 
   return (
-    <section className={["container", styles.container].join(' ')}>
+    <section className="container" style={{ maxWidth: '1280px' }}>
       <div className={styles.layout}>
         {FeatureList.map((props, idx) => (
           <Feature key={idx} {...props} />

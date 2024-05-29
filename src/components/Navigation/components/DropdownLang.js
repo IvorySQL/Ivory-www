@@ -22,7 +22,11 @@ export default function DropdownLanguage() {
   const { localeConfigs, currentLocale } = i18n;
 
   const handleChangeLang = (langKey) => {
-    const langKeysArr = Object.keys(localeConfigs)
+    const langKeysArr = [
+      ...Object.keys(localeConfigs),
+      // production online change zh-CN to zh-cn
+      'zh-cn'
+    ]
     const { pathname } = location
     // filter old langkey in path
     const purePath = langKeysArr
