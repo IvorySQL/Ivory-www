@@ -30,7 +30,7 @@ PostgreSQL在国内数据库的发展过程中承担了非常重要的角色，�
  - 活动时间：**美国太平洋时间（PDT）3月31日 下午1点-2点 (北京时间凌晨4：00-5：00）进行**，敬请关注。
 - 参与注册网址：https://postgresconf.org/accounts/sign_up
 - 观看链接：https://postgresconf.org/conferences/PostgresWorld-Webinars-2022/program/proposals/ivorysql-an-open-source-oracle-compatible-database-based-on-postgresql
-- 也可添加小助理微信：R-jiaoo，立即报名参与！
+- 也可添加小助理微信：IvorySQL_official，立即报名参与！
 
 ---
 

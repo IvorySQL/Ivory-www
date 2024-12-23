@@ -49,6 +49,6 @@
   },
   "link.item.label.IvorySQL YUM": {
     "message": "IvorySQL YUM",
-    "description": "The label of footer link with label=IvorySQL YUM linking to https://yum.highgo.ca/ivorysql.html"
+    "description": "The label of footer link with label=IvorySQL YUM linking to https://yum.highgo.com/dists/ivorysql-rpms/"
   }
 }
