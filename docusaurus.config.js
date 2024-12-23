@@ -71,7 +71,7 @@ const config = {
           },
           {
             label: 'Installation',
-            href: 'https://docs.ivorysql.org/en/ivorysql-doc/v3.4/v3.4/3#quick-installation',
+            href: 'https://docs.ivorysql.org/en/ivorysql-doc/v4.0/v4.0/3#quick-installation',
             position: 'left'
           },
           {
@@ -176,7 +176,7 @@ const config = {
               },
               {
                 label: 'IvorySQL YUM',
-                href: 'https://yum.highgo.ca/ivorysql.html',
+                href: 'https://yum.highgo.com/dists/ivorysql-rpms/',
               },
               {
                 label: 'Report an issue',
