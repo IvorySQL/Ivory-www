@@ -11,6 +11,10 @@
     "message": "社区",
     "description": "Navbar item with label Community"
   },
+  "item.label.Developers": {
+    "message": "开发者",
+    "description": "Navbar item with label Developers"
+  },
   "item.label.Download": {
     "message": "下载",
     "description": "Navbar item with label Download"
