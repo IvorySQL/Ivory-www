@@ -115,6 +115,11 @@ const config = {
             position: 'right'
           },
           {
+            label: 'Developers',
+            to: '/developers-page',
+            position: 'right'
+          },
+          {
             href: 'https://gitee.com/IvorySQL/',
             label: 'Gitee',
             position: 'right',
