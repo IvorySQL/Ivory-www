@@ -9,7 +9,7 @@ Recently, IvorySQL 4.0 was released, offering full support for PostgreSQL 17 and
 
 This article will detail the process of upgrading from IvorySQL 3.x to IvorySQL 4.0.
 
-## Introduction to the pg_upgrade Tool
+## Introduction to the `pg_upgrade` Tool
 
 Recently, IvorySQL 4.0 was released, offering full support for PostgreSQL 17 and enhanced compatibility with Oracle.
 
@@ -30,7 +30,7 @@ Common parameters include:
 * `-c, --check`: Perform only a compatibility check without making any changes to data
 * `-k, --link`: Upgrade using hard links
 
-Next, we will explain how to use `pg_upgrade` to upgrade IvorySQL to the latest 4.0 version on the CentOS8 platform.
+Next, we will explain how to use `pg_upgrade` to upgrade IvorySQL to the latest 4.0 version on the CentOS 8 platform.
 
 ## Upgrade Preparation
 
@@ -68,7 +68,7 @@ First, start the new version of the database:
 
 ![img](up-to-4.0-7.png)
 
-Manually run the vacuum command:
+Manually run the `vacuum` command:
 
 ![img](up-to-4.0-8.png)
 
