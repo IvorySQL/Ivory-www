@@ -7,13 +7,13 @@ tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL]
 ---
 日前，IvorySQL 4.0 重磅发布，全面支持 PostgreSQL 17，并且增强了对 Oracle 的兼容性。
 
-本篇文章将详细描述一下，如何从 IvorySQL 3.x 升级到 IvorySQL 4.0。
+本篇文章将详细描述，如何从 IvorySQL 3.x 升级到 IvorySQL 4.0。
 
 ## `pg_upgrade` 工具介绍
 
-`pg_upgrade` 工具是 PostgreSQL 内置的跨版本升级工具，能够对数据库就地升级，不需要执行导出和导入操作。IvorySQL 源自于 PG，因此也能够使用 pg_upgrade 工具进行大版本升级。
+`pg_upgrade` 工具是 PostgreSQL 内置的跨版本升级工具，能够对数据库就地升级，不需要执行导出和导入操作。IvorySQL 源自于 PG，因此也能够使用 `pg_upgrade` 工具进行大版本升级。
 
-pg_upgrade 提供了升级前的兼容性检查（`-c` 或者 `--check` 选项）功能，可以发现插件、数据类型不兼容等问题。如果指定了 `--link` 选项，新版本服务可以直接使用原有的数据库文件而不需要执行复制，通常可以在几分钟内完成升级操作。
+`pg_upgrade` 提供了升级前的兼容性检查（`-c` 或者 `--check` 选项）功能，可以发现插件、数据类型不兼容等问题。如果指定了 `--link` 选项，新版本服务可以直接使用原有的数据库文件而不需要执行复制，通常可以在几分钟内完成升级操作。
 
 常用的参数包括：
 
@@ -24,7 +24,7 @@ pg_upgrade 提供了升级前的兼容性检查（`-c` 或者 `--check` 选项�
 * `-c，--check`：只检查升级兼容性，不更改任何数据
 * `-k，--link`：硬链接方式升级
 
-下面介绍一下在 CentOS8 平台上如何使用 pg_upgrade 将 IvorySQL 升级到最新的 4.0 版本。
+下面介绍一下在 CentOS 8 平台上如何使用 `pg_upgrade` 将 IvorySQL 升级到最新的 4.0 版本。
 
 ## 升级准备
 
@@ -32,11 +32,11 @@ pg_upgrade 提供了升级前的兼容性检查（`-c` 或者 `--check` 选项�
 
 ![img](up-to-4.0-1.png)
 
-然后安装新版本的 IvorySQL4.0 数据库：
+然后安装新版本的 IvorySQL 4.0 数据库：
 
 ![img](up-to-4.0-2.png)
 
-初始化新版 IvorySQL4.0 数据目录：
+初始化新版 IvorySQL 4.0 数据目录：
 
 ![img](up-to-4.0-3.png)
 
@@ -62,7 +62,7 @@ pg_upgrade 提供了升级前的兼容性检查（`-c` 或者 `--check` 选项�
 
 ![img](up-to-4.0-7.png)
 
-手动运行 vacuum 命令：
+手动运行 `vacuum` 命令：
 
 ![img](up-to-4.0-8.png)
 
