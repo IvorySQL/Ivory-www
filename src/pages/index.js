@@ -3,7 +3,7 @@ import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
-import React from 'react';
+import React, { useEffect }  from 'react';
 import Slider from "react-slick";
 import RecruitPhone from "../../static/img/index-recruit-phone.jpg";
 import Recruit from "../../static/img/index-recruit.jpg";
@@ -16,6 +16,7 @@ import SliderIndex from './slider';
 import SliderBug from './slider-bug';
 import SliderBugPhone from './slider-bug-phone';
 import SliderPhoneIndex from './slider-phone';
+import { customFields } from '../../docusaurus.config';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
      const settings = {
@@ -91,12 +92,55 @@ function HomepageHeader() {
   );
 }
 
+function ChatWidget() {
+  useEffect(() => {
+    // 创建外部 script 标签加载 SDK
+    const script = document.createElement('script');
+    script.src = "https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.1.0-beta.3/libs/cn/index.js";
+    script.async = true;
+
+    // 当脚本加载完成后调用初始化代码
+    script.onload = () => {
+      if (window.CozeWebSDK && window.CozeWebSDK.WebChatClient) {
+        new window.CozeWebSDK.WebChatClient({
+          config: {
+            bot_id: customFields.botId,
+          },
+          componentProps: {
+            title: 'IvorySQL chatbot',
+          },
+          auth: {
+            type: "token",
+            token: customFields.patToken,
+            onRefreshToken: function () {
+              return customFields.patToken;
+            }
+          }
+        });
+      } else {
+        console.error('CozeWebSDK 未加载成功！');
+      }
+    };
+
+    // 将 script 标签添加到 body 中
+    document.body.appendChild(script);
+
+    // 可选：组件卸载时清除 script 标签
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return null; // 该组件不需要渲染任何内容
+}
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title={`${siteConfig.title}`}
       description="Open Source Oracle compatible PostgreSQL">
+      <ChatWidget />
       <HomepageHeader />
       <main>
         <HomepageFeatures />
