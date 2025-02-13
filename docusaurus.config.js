@@ -5,6 +5,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
+
 const config = {
   title: 'IvorySQL',
   tagline: 'Open Source Oracle compatible PostgreSQL',
@@ -15,6 +16,25 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'IvorySQL', // Usually your GitHub org/user name.
   projectName: 'ivory-www', // Usually your repo name.
+  customFields: {
+    // Put your custom environment here
+    botId: process.env.BOT_ID,
+    patToken: process.env.TOKEN
+  },
+  
+  plugins: [
+    [
+      'docusaurus-plugin-dotenv',
+      {
+          path: "./.env", // The path to your environment variables.
+          safe: false, // If false ignore safe-mode, if true load './.env.example', if a string load that file as the sample
+          systemvars: true, // Set to true if you would rather load all system variables as well (useful for CI purposes)
+          silent: false, //  If true, all warnings will be suppressed
+          expand: false, // Allows your variables to be "expanded" for reusability within your .env file
+          defaults: false, //  Adds support for dotenv-defaults. If set to true, uses ./.env.defaults
+      }
+    ]
+  ],
 
   presets: [
     [
