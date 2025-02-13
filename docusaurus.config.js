@@ -5,7 +5,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
-console.log(process.env.BOT_ID)
+
 const config = {
   title: 'IvorySQL',
   tagline: 'Open Source Oracle compatible PostgreSQL',
