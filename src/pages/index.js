@@ -93,6 +93,8 @@ function HomepageHeader() {
 }
 
 function ChatWidget() {
+  const {siteConfig:{customFields}} = useDocusaurusContext();
+  
   useEffect(() => {
     // 创建外部 script 标签加载 SDK
     const script = document.createElement('script');
