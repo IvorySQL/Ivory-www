@@ -5,6 +5,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
+console.log(process.env.BOT_ID)
 const config = {
   title: 'IvorySQL',
   tagline: 'Open Source Oracle compatible PostgreSQL',
@@ -23,7 +24,7 @@ const config = {
   
   plugins: [
     [
-      'docusaurus2-dotenv',
+      'docusaurus-plugin-dotenv',
       {
           path: "./.env", // The path to your environment variables.
           safe: false, // If false ignore safe-mode, if true load './.env.example', if a string load that file as the sample
