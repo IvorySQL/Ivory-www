@@ -109,7 +109,9 @@ function ChatWidget() {
             bot_id: customFields.botId,
           },
           componentProps: {
-            title: 'IvorySQL chatbot',
+            title: 'IvorySQL Chatroom',
+            icon: 'https://p9-flow-imagex-sign.byteimg.com/ocean-cloud-tos/FileBizType.BIZ_BOT_ICON/4449078776436256_1739264668220928828_XG93XHTXWY.png~tplv-a9rns2rl98-image-qvalue.jpeg?rk3s=bbd3e7ed&x-expires=1743235877&x-signature=RGI6uPcr8DvW%2FeWBsjA0sOSBqjk%3D',
+
           },
           auth: {
             type: "token",
