@@ -68,24 +68,6 @@ function HomepageHeader() {
               <SliderPhoneIndex></SliderPhoneIndex>
             </div>
           </div>
-          {/* 页面三 */}
-          <div>
-            <div class="indexImg">
-                <Link
-                  to="https://summer-ospp.ac.cn/">
-                    <img src={indexbug} className={styles.indexImgbug}></img>
-                </Link>
-              <SliderBug></SliderBug>
-            </div>
-            <div class="indexImg-phone">
-
-                <Link
-                  to="https://summer-ospp.ac.cn/">
-                    <img src={indexbugphone} className={styles.indexImgbugphone}></img>
-                </Link>
-              <SliderBugPhone></SliderBugPhone>
-            </div>
-          </div>
         </Slider>
       </div>
   );
