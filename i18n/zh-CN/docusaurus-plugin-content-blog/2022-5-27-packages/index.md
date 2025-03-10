@@ -1,31 +1,31 @@
 ---
 slug: IvorySQL-Packages
-title: IvorySQL功能点介绍--Package（包）
+title: IvorySQL 功能点介绍--Package（包）
 authors: [official]
 authorTwitter: IvorySql
-tags: [IvorySQL,功能点 , Database, Oracle Compatible, PostgreSQL, Join Us]
+tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, Oracle Package]
 ---
 # 概述
 
 IvorySQL 是一个开源项目，该项目的**核心目标之一是提供 oracle 兼容功能**，以便在 IvorySQL 数据库服务器上使用 oracle 代码。
 
-在 PostgreSQL 之上提供 Oracle 兼容是一项多维任务。 从提供与 Oracle 兼容的 SQL 语法到添加对 PostgreSQL 中缺失或行为不同的数据类型的支持。 Oracle 兼容性的**主要核心之一是在 PostgreSQL 中提供兼容的过程语言PL（procedural language），它在功能和语法上与 Oracle 的 PL/SQL 兼容**。
+在 PostgreSQL 之上提供 Oracle 兼容是一项多维任务。 从提供与 Oracle 兼容的 SQL 语法到添加对 PostgreSQL 中缺失或行为不同的数据类型的支持。 Oracle 兼容性的**主要核心之一是在 PostgreSQL 中提供兼容的过程语言 PL（procedural language），它在功能和语法上与 Oracle 的 PL/SQL 兼容**。
 
 为此，**IvorySQL 添加了一种新的 PL 语言 PL/iSQL，它接受、理解和执行 PL/SQL 语法**。 如您所知，Oracle PL/SQL 的核心特性之一是 PACKAGES（包）。Package（包）是 Oracle 中的一个模式对象，它包含一组相关功能的定义，是 Oracle 使用最广泛的特性之一。
 
-因此，本文将介绍Package（包），并举例说明**如何用 IvorySQL 创建、使用和销毁 Oracle 样式的包**。
+因此，本文将介绍 Package（包），并举例说明**如何用 IvorySQL 创建、使用和销毁 Oracle 样式的包**。
 
 # 包（Package）
 
-那么什么是Package(包)？ 包是 PL/iSQL 代码的分组，按逻辑程序单元划分。 换句话说，一个包可以被认为是相关函数、过程、变量或游标的集合，这个集合可以通过通用公共名称来访问。
+那么什么是 Package(包)？ 包是 PL/iSQL 代码的分组，按逻辑程序单元划分。 换句话说，一个包可以被认为是相关函数、过程、变量或游标的集合，这个集合可以通过通用公共名称来访问。
 
-IvorySQL 内置PL/iSQL语言，可以接受、理解和执行PL/SQL代码。包使用相同的语言，并且有两个主要组件。
+IvorySQL 内置 PL/iSQL 语言，可以接受、理解和执行 PL/SQL 代码。包使用相同的语言，并且有两个主要组件。
 
 - **包规范（Specification）**
 
 包规范列出了可以从包外部访问的所有项目,例如函数、过程、变量和游标。这也称为公共规范。
 
-- **包体(Body)**
+- **包体（Body）**
 
 包体包含包规范中列出的所有函数和过程的实现。除此之外，它还可以实现更多的功能、过程或其他元素。
 
@@ -39,7 +39,7 @@ IvorySQL 内置PL/iSQL语言，可以接受、理解和执行PL/SQL代码。包�
 
 ### 通用示例
 
-首先让我们设置兼容模式，这样我们就可以访问 IvorysSQL数据库中可用的 Oracle 兼容特性。
+首先让我们设置兼容模式，这样我们就可以访问 IvorysSQL 数据库中可用的 Oracle 兼容特性。
 
 SET compatible_mode TO oracle;
 
@@ -215,7 +215,7 @@ ivorysql=> SELECT current_user;
 (1 row)
 ```
 
---创建具有INVOKER权限的包
+--创建具有 INVOKER 权限的包
 
 ```
 CREATE OR REPLACE PACKAGE pkg_invrights AUTHID CURRENT_USER AS
@@ -232,7 +232,7 @@ END;
 /
 ```
 
---创建一个具有DEFINER权限的包
+--创建一个具有 DEFINER 权限的包
 
 ```
 CREATE OR REPLACE PACKAGE pkg_defrights AUTHID DEFINER AS
@@ -265,7 +265,7 @@ INFO:  Current User: ivorysql
 CALL
 ```
 
-让我们切换到另一个名为ivuser的用户。
+让我们切换到另一个名为 ivuser 的用户。
 
 ```
 ivorysql=> \c ivorysql ivuser;
@@ -290,4 +290,4 @@ CALL
 
 # 总结
 
-如上所示，当调用具有调用者权限(pkg_invrights)的包时，它使用的是调用该包的用户的特权。但是，当调用(pkg_defrights)时，它仍然使用包所有者的特权。
+如上所示，当调用具有调用者权限（pkg_invrights）的包时，它使用的是调用该包的用户的特权。但是，当调用（pkg_defrights）时，它仍然使用包所有者的特权。
