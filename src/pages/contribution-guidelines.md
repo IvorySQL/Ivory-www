@@ -1,3 +1,6 @@
+# Project Contribution Process
+![process](/img/process_en.png)
+
 # Contributing
 IvorySQL is maintained by a core team of developers with commit rights to the main IvorySQL repository on GitHub. At the same time, we are very eager to receive contributions from anybody in the wider IvorySQL community. This section covers all you need to know if you want to see your code or documentation changes be added to IvorySQL and appear in future releases.
 
@@ -6,7 +9,7 @@ IvorySQL is developed on GitHub, and anybody wishing to contribute to it will ha
 
 Once you have your GitHub account, fork this repository so that you can have your private copy to start hacking on and to use as a source of pull requests.
 
- 
+Before submitting any code or documentation contributions, individual or corporate contributors are required to sign the Contributor License Agreement (CLA). Signing the CLA is a mandatory requirement for the IvorySQL community to accept contributions, ensuring your work can be legally distributed. Please visit [CLA signing page link](/pdf/cla_en.pdf) to complete the signing process. Pull Requests from contributors who have not signed the CLA will not proceed to the review stage. 
 
 # Licensing of IvorySQL contributions
 If the contribution you're submitting is original work, you can assume that IvorySQL will release it as part of an overall IvorySQL release available to the downstream consumers under the Apache License, Version 2.0.
