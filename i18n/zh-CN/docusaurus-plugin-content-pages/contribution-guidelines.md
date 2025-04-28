@@ -1,3 +1,6 @@
+# 项目贡献流程
+![process](/img/process_cn.png)
+
 # 贡献
 IvorySQL由一个核心开发团队维护，该团队拥有对GitHub上的IvorySQL主存储库的提交权限。同时，我们非常渴望从更广泛的IvorySQL社区中的成员那里获得贡献。如果您希望看到您的代码或文档更改被添加到IvorySQL并出现在将来的版本中，本节的内容介绍是您需要知道的。
 
@@ -5,6 +8,13 @@ IvorySQL由一个核心开发团队维护，该团队拥有对GitHub上的IvoryS
 IvorySQL是在GitHub上开发的，任何希望对其作出贡献的人都必须拥有GitHub帐户，并熟悉Git工具和工作流。还建议您遵循开发人员的邮件列表，因为一些贡献可能会在那里产生更详细的讨论。
 
 如果您有GitHub帐户，fork这个存储库，这样您就可以拥有您的私人副本来开始hacking，并将其用作拉取请求的来源。
+
+在提交代码或文档贡献之前，个人或企业贡献者需要签署贡献者许可协议(CLA)。签署CLA是IvorySQL社区接受贡献的必要条件，以确保您的贡献被合法分发。请根据下列链接下载CLA进行签署并将签署后的CLA发送至 cla@ivorysql.org。
+
+- [个人贡献者](/pdf/individual_cla.pdf)
+- [企业贡献者](/pdf/corporate_cla.pdf)
+
+未签署CLA的Pull Request将无法进入评审阶段。
 
 # IvorySQL贡献的许可
 如果您提交的贡献是原创作品，那么您可以假设IvorySQL将作为整个IvorySQL版本的一部分发布给下游用户，该版本将遵循Apache许可证2.0版本。
