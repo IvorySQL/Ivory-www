@@ -10,8 +10,10 @@ IvorySQL是在GitHub上开发的，任何希望对其作出贡献的人都必须
 如果您有GitHub帐户，fork这个存储库，这样您就可以拥有您的私人副本来开始hacking，并将其用作拉取请求的来源。
 
 在提交代码或文档贡献之前，个人或企业贡献者需要签署贡献者许可协议(CLA)。签署CLA是IvorySQL社区接受贡献的必要条件，以确保您的贡献被合法分发。请访问CLA签署页面完成签署。
+
 - [个人贡献者](/pdf/individual_cla.pdf)
 - [企业贡献者](/pdf/corporate_cla.pdf)
+
 未签署CLA的Pull Request将无法进入评审阶段。
 
 # IvorySQL贡献的许可
