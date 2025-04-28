@@ -10,8 +10,8 @@ IvorySQL is developed on GitHub, and anybody wishing to contribute to it will ha
 Once you have your GitHub account, fork this repository so that you can have your private copy to start hacking on and to use as a source of pull requests.
 
 Before submitting any code or documentation contributions, individual or corporate contributors are required to sign the Contributor License Agreement (CLA). Signing the CLA is a mandatory requirement for the IvorySQL community to accept contributions, ensuring your work can be legally distributed. Please visit CLA signing page to complete the signing process. 
-- [individual contributor](/pdf/individual_cla_en.pdf)
-- [corporate contributor](/pdf/corporate_cla_en.pdf)
+- [individual contributor](/pdf/individual_cla.pdf)
+- [corporate contributor](/pdf/corporate_cla.pdf)
 Pull Requests from contributors who have not signed the CLA will not proceed to the review stage. 
 
 # Licensing of IvorySQL contributions
