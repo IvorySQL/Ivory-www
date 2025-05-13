@@ -20,7 +20,8 @@ Read our [**contribution guidelines**](https://github.com/IvorySQL/IvorySQL/blob
 - [Submit a pull request](https://github.com/IvorySQL/IvorySQL/pulls)
 
 ## Conversations
-Join the conversations about IvorySQL through these mailing lists
+Participate in IvorySQL community discussions through the following channels:
 
 - [IvorySQL Users](https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/)
 - [IvorySQL Hackers](https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/)
+- [IvorySQL Discord](https://discord.gg/dxDCwPzg)
