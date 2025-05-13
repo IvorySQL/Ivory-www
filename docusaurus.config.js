@@ -186,6 +186,10 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/IvorySQL',
               },
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/dxDCwPzg',
+              },
             ],
           },
           {
