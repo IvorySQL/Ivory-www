@@ -27,6 +27,10 @@
     "message": "安全",
     "description": "Navbar item with label Security"
   },
+  "item.label.Vulnerability Management": {
+    "message": "漏洞管理",
+    "description": "Navbar item with label Vulnerability Management"
+  },
   "item.label.Resources": {
     "message": "资源",
     "description": "Navbar item with label Resources"
