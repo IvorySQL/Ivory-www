@@ -107,6 +107,17 @@ const config = {
           {
             type: 'dropdown',
             position: 'left',
+            label: 'Security',
+            items: [
+              {
+                label: 'Vulnerability Management',
+                to: '/vulnerability-management',
+              },
+            ]
+          },
+          {
+            type: 'dropdown',
+            position: 'left',
             label: 'Resources',
             items: [
               {
