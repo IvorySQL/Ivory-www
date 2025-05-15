@@ -10,6 +10,7 @@ import Recruit from "../../static/img/index-recruit.jpg";
 import indexbug from '../../static/img/indexbug.png';
 import indexbugphone from '../../static/img/indexbugphone.png';
 import Elephant from '../../svg/img-elephant-balloon.svg';
+import HOW from '../../static/img/ivorysql-how.jpg';
 import HomepageFeatures from '../components/HomepageFeatures';
 import styles from './index.module.css';
 import SliderIndex from './slider';
@@ -31,6 +32,16 @@ function HomepageHeader() {
   return (
      <div id='main'>
         <Slider {...settings}>
+          {/* HOW */}
+          <div>
+            <a href="https://ivorysql.io/" target="_blank" rel="noopener noreferrer">
+              <img 
+                src={require('../../static/img/ivorysql-how.jpg').default} 
+                alt="IvorySQL Banner" 
+                style={{width: '100%', cursor: 'pointer'}}
+              />
+            </a>
+          </div>
           {/* 页面一 */}
           <div id='pageone'>
             <header className={clsx('hero hero--primary', styles.heroBanner)}>
