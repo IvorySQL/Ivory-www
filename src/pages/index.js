@@ -29,19 +29,23 @@ function HomepageHeader() {
       slidesToScroll: 1,
       arrows: false,
       };
+  const { i18n } = useDocusaurusContext();
+  const isEnglish = i18n.currentLocale === 'en';
   return (
      <div id='main'>
         <Slider {...settings}>
           {/* HOW */}
-          <div>
-            <a href="https://ivorysql.io/" target="_blank" rel="noopener noreferrer">
-              <img 
-                src={require('../../static/img/ivorysql-how.jpg').default} 
-                alt="IvorySQL Banner" 
-                style={{width: '100%', cursor: 'pointer'}}
-              />
-            </a>
-          </div>
+          {isEnglish && (
+            <div>
+              <a href="https://ivorysql.io/" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src={require('../../static/img/ivorysql-how.jpg').default} 
+                  alt="IvorySQL Banner" 
+                  style={{width: '100%', cursor: 'pointer'}}
+                />
+              </a>
+            </div>
+          )}
           {/* 页面一 */}
           <div id='pageone'>
             <header className={clsx('hero hero--primary', styles.heroBanner)}>
