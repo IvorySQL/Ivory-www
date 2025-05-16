@@ -34,18 +34,20 @@ function HomepageHeader() {
   return (
      <div id='main'>
         <Slider {...settings}>
-          {/* HOW */}
-          {isEnglish && (
-            <div>
-              <a href="https://ivorysql.io/" target="_blank" rel="noopener noreferrer">
-                <img 
-                  src={require('../../static/img/ivorysql-how.jpg').default} 
-                  alt="IvorySQL Banner" 
-                  style={{width: '100%', cursor: 'pointer'}}
-                />
-              </a>
-            </div>
-          )}
+          {/* HOW 大会宣传，根据中英版显示不同图片及链接*/}
+          <div>
+            <a href={isEnglish ? "https://ivorysql.io/" : "https://howconf.cn/"} target="_blank" rel="noopener noreferrer">
+              <img 
+                src={
+                  isEnglish 
+                    ? require('../../static/img/ivorysql-how.jpg').default 
+                    : require('../../static/img/ivorysql-how-zh.jpg').default
+                }
+                alt="IvorySQL Banner" 
+                style={{width: '100%', cursor: 'pointer'}}
+              />
+            </a>
+          </div>
           {/* 页面一 */}
           <div id='pageone'>
             <header className={clsx('hero hero--primary', styles.heroBanner)}>
