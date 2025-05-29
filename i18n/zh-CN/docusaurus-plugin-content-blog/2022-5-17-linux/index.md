@@ -434,7 +434,7 @@ rm -fr /usr/local/pgsql									--删除残留安装目录
 
 - 更细化的操作，可参照PostgreSQL的相关内容。
 
-- 大家还可以参考IvorySQL源码下自带文档：/root/IvorySQL/README.md。
+- 大家还可以参考IvorySQL源码下自带文档：[/root/IvorySQL/README.md](https://github.com/IvorySQL/IvorySQL/blob/master/README.md)。
 
 - 也可以打开网站链接：https://gitee.com/IvorySQL/IvorySQL/blob/master/README.md。
 
