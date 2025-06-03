@@ -59,7 +59,7 @@ function HomepageHeader() {
                   <div className={styles.heroCenterImage}>
                     <h1 className="hero__title"><Translate>IvorySQL</Translate></h1>
                     <p className="hero__subtitle"><Translate>Open Source Oracle Compatible PostgreSQL</Translate></p>
-                    <div className={styles.buttons} margin-horiz--md>
+                    <div className={styles.buttons}>
                       <Link
                         className="button button--primary button--lg"
                         target="_blank"
