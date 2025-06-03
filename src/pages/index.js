@@ -61,7 +61,7 @@ function HomepageHeader() {
                     <p className="hero__subtitle"><Translate>Open Source Oracle Compatible PostgreSQL</Translate></p>
                     <div className={styles.buttons}>
                       <Link
-                        className="button button--primary button--lg"
+                        className="button button--secondary button--lg"
                         target="_blank"
                         rel="noopener noreferrer"
                         to="https://trial.ivorysql.org/">
