@@ -35,6 +35,10 @@
     "message": "资源",
     "description": "Navbar item with label Resources"
   },
+  "item.label.Online Trial": {
+    "message": "在线试用",
+    "description": "Navbar item with label Online Trial"
+  },
   "item.label.Contribution Guidelines": {
     "message": "贡献准则",
     "description": "Navbar item with label Contribution Guidelines"

@@ -138,6 +138,11 @@ const config = {
               },
             ]
           },
+          {
+            label: 'Online Trial',
+            href: 'https://trial.ivorysql.org/',
+            position: 'left'
+          },
 
           //Right Side Items
           {

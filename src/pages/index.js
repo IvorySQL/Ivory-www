@@ -62,6 +62,13 @@ function HomepageHeader() {
                     <div className={styles.buttons}>
                       <Link
                         className="button button--secondary button--lg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        to="https://trial.ivorysql.org/">
+                        <Translate>Online Trial</Translate>
+                      </Link>
+                      <Link
+                        className="button button--secondary button--lg"
                         to="https://github.com/IvorySQL/IvorySQL/blob/master/README.md">
                         <Translate>Learn More</Translate>
                       </Link>
