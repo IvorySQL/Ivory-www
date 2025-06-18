@@ -64,7 +64,7 @@ function HomepageHeader() {
                         className="button button--secondary button--lg"
                         target="_blank"
                         rel="noopener noreferrer"
-                        to="https://trial.ivorysql.org/">
+                        to="http://trial.ivorysql.org:8080/">
                         <Translate>Online Trial</Translate>
                       </Link>
                       <Link
