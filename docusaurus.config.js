@@ -140,7 +140,7 @@ const config = {
           },
           {
             label: 'Online Trial',
-            href: 'https://trial.ivorysql.org/',
+            href: 'http://trial.ivorysql.org:8080/',
             position: 'left'
           },
 
