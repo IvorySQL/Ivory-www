@@ -91,7 +91,7 @@ const config = {
           },
           {
             label: 'Installation',
-            href: 'https://docs.ivorysql.org/en/ivorysql-doc/v4.6/v4.6/3#quick-installation',
+            href: 'https://docs.ivorysql.org/en/ivorysql-doc/v4.5/v4.5/3#quick-installation',
             position: 'left'
           },
           {
