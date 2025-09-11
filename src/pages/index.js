@@ -44,7 +44,12 @@ function HomepageHeader() {
                     : require('../../static/img/ivorysql-how-zh.jpg').default
                 }
                 alt="IvorySQL Banner" 
-                style={{width: '100%', cursor: 'pointer'}}
+                style={{
+                  width: '100%',
+                  cursor: 'pointer',
+                  objectFit: 'cover',
+                  height: '500px', 
+                }}
               />
             </a>
           </div>
