@@ -90,16 +90,6 @@ const config = {
             position: 'left'
           },
           {
-            label: 'Installation',
-            href: 'https://docs.ivorysql.org/en/ivorysql-doc/v4.6/v4.6/3#quick-installation',
-            position: 'left'
-          },
-          {
-            label: 'Downloads',
-            href: 'https://github.com/IvorySQL/IvorySQL/releases',
-            position: 'left'
-          },
-          {
             label: 'Releases',
             to: '/releases-page',
             position: 'left'
@@ -165,7 +155,7 @@ const config = {
           },
           {
             type: 'dropdown',
-            position: 'left',
+            position: 'right',
             label: 'Developers',
             items: [
               {
@@ -182,16 +172,6 @@ const config = {
                 label: 'Github',
               },
             ]
-          },
-          {
-            href: 'https://gitee.com/IvorySQL/',
-            label: 'Gitee',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/IvorySQL/IvorySQL',
-            label: 'GitHub',
-            position: 'right',
           },
           {
             type: 'localeDropdown',
