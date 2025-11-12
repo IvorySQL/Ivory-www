@@ -86,9 +86,10 @@
   "item.label.Customer Stories": {
     "message": "客户故事",
     "description": "Navbar item with label Customer Stories"
-  }
+  },
   "item.label.Ecological Cooperation": {
     "message": "生态合作",
     "description": "Navbar item with label Ecological Cooperation"
   }
 }
+
