@@ -80,11 +80,6 @@ const config = {
         
         items: [
           {
-            label: 'Docs',
-            href: 'https://docs.IvorySQL.org',
-            position: 'left'
-          },
-          {
             to: '/blog',
             label: 'Blog',
             position: 'left'
@@ -111,6 +106,18 @@ const config = {
             label: 'Resources',
             items: [
               {
+                label: 'Downloads',
+                href: 'https://github.com/IvorySQL/IvorySQL/releases',
+              },
+              {
+                label: 'Installation',
+                href: 'https://docs.ivorysql.org/en/ivorysql-doc/v4.6/v4.6/3#quick-installation',
+              },
+              {
+                label: 'Contribution Guidelines',
+                to: '/contribution-guidelines',
+              },
+              {
                 label: 'Webinars',
                 to: '/webinars-page',
               },
@@ -122,18 +129,6 @@ const config = {
                 label: 'Customer Stories',
                 href: 'customer-stories-page',
               },
-              {
-                label: 'Contribution Guidelines',
-                to: '/contribution-guidelines',
-              },
-              {
-                label: 'Downloads',
-                href: 'https://github.com/IvorySQL/IvorySQL/releases',
-              },
-              {
-                label: 'Installation',
-                href: 'https://docs.ivorysql.org/en/ivorysql-doc/v4.6/v4.6/3#quick-installation',
-              },
             ]
           },
           {
@@ -144,6 +139,11 @@ const config = {
           {
             label: 'Online Trial',
             href: 'http://trial.ivorysql.org:8080/',
+            position: 'left'
+          },
+          {
+            label: 'Docs',
+            href: 'https://docs.IvorySQL.org',
             position: 'left'
           },
 
