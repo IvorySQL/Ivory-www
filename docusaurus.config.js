@@ -136,7 +136,20 @@ const config = {
                 label: 'Contribution Guidelines',
                 to: '/contribution-guidelines',
               },
+              {
+                label: 'Downloads',
+                href: 'https://github.com/IvorySQL/IvorySQL/releases',
+              },
+              {
+                label: 'Installation',
+                href: 'https://docs.ivorysql.org/en/ivorysql-doc/v4.6/v4.6/3#quick-installation',
+              },
             ]
+          },
+          {
+            label: 'Ecological Cooperation',
+            href: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.0/v5.0/3#ecological-cooperation',
+            position: 'left'
           },
           {
             label: 'Online Trial',
@@ -151,9 +164,24 @@ const config = {
             position: 'right'
           },
           {
+            type: 'dropdown',
+            position: 'left',
             label: 'Developers',
-            to: '/developers-page',
-            position: 'right'
+            items: [
+              {
+                label: 'Roadmap',
+                //to: '/developers-page',
+                to: '/roadmap-page',
+              },
+              {
+                href: 'https://gitee.com/IvorySQL/',
+                label: 'Gitee',
+              },
+              {
+                href: 'https://github.com/IvorySQL/IvorySQL',
+                label: 'Github',
+              },
+            ]
           },
           {
             href: 'https://gitee.com/IvorySQL/',
