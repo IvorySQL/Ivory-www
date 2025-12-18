@@ -111,7 +111,7 @@ const config = {
               },
               {
                 label: 'Installation',
-                href: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.0/v5.0/3.1#quick-installation',
+                href: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.1/v5.1/3.1#quick-installation',
               },
               {
                 label: 'Contribution Guidelines',
@@ -133,7 +133,7 @@ const config = {
           },
           {
             label: 'Ecological Cooperation',
-            href: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.0/v5.0/5.0',
+            href: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.1/v5.1/5.0',
             position: 'left'
           },
           {
