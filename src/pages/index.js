@@ -30,7 +30,7 @@ function HomepageHeader() {
       arrows: false,
       };
   const { i18n } = useDocusaurusContext();
-  const isEnglish = i18n.currentLocale === 'en';
+  const isEnglish = i18n.currentLocale !== 'zh-CN';
   return (
      <div id='main'>
         <Slider {...settings}>
