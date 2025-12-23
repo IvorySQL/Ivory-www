@@ -64,18 +64,6 @@ const config = {
   i18n: {
     defaultLocale: 'zh-CN',
     locales: ['en', 'zh-CN'],
-    localeConfigs: {
-      'zh-CN': {
-        label: '中文',
-        htmlLang: 'zh-CN',
-        baseUrl: '/zh-CN',
-      },
-      en: {
-        label: 'English',
-        htmlLang: 'en',
-        baseUrl: '/en',
-      },
-    },
   },
   themeConfig:
   
