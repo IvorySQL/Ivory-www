@@ -62,12 +62,12 @@ const config = {
     ],
   ],
   i18n: {
-    defaultLocale: 'zh-CN',
-    locales: ['en', 'zh-CN'],
+    defaultLocale: 'zh',
+    locales: ['en', 'zh'],
     localeConfigs: {
-      'zh-CN': {
+      zh: {
         label: '中文',
-        htmlLang: 'zh-CN',
+        htmlLang: 'zh',
         path: '/',  // 明确指定路径为根目录/
       },
       en: {
