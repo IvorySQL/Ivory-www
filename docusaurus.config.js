@@ -64,6 +64,18 @@ const config = {
   i18n: {
     defaultLocale: 'zh-CN',
     locales: ['en', 'zh-CN'],
+    localeConfigs: {
+      'zh-CN': {
+        label: '中文',
+        htmlLang: 'zh-CN',
+        path: '/',  // 明确指定路径为根目录/
+      },
+      en: {
+        label: 'English',
+        htmlLang: 'en',
+        path: 'en',
+      },
+    },
   },
   themeConfig:
   
