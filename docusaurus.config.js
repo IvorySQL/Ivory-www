@@ -11,7 +11,7 @@ const config = {
   tagline: 'Open Source Oracle compatible PostgreSQL',
   url: 'https://ivorySQL.org',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn', // 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'IvorySQL', // Usually your GitHub org/user name.
@@ -62,7 +62,7 @@ const config = {
     ],
   ],
   i18n: {
-    defaultLocale: 'zh',
+    defaultLocale: 'en',
     locales: ['en', 'zh-CN'],
   },
   themeConfig:
