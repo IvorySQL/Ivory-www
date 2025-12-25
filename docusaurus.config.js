@@ -33,7 +33,7 @@ const config = {
         explicitSearchResultPath: true,
         searchBarPosition: 'right',
         indexPages: true,
-        searchContextByPaths: ["/blog/","/releases-page/", "/roadmap-page/"],
+        searchContextByPaths: ["blog","docs","releases-page", "roadmap-page","contribution-guidelines"],
       }),
     ],
   ],
