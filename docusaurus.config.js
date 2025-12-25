@@ -22,6 +22,22 @@ const config = {
     patToken: process.env.TOKEN
   },
   
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        language: ['en', 'zh'],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        searchBarPosition: 'right',
+        indexPages: true,
+        searchContextByPaths: ["/blog/","/releases-page/", "/roadmap-page/"],
+      }),
+    ],
+  ],
+
   plugins: [
     [
       'docusaurus-plugin-dotenv',
