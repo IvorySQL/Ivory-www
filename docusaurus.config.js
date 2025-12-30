@@ -12,7 +12,6 @@ const config = {
   url: 'https://ivorySQL.org',
   baseUrl: '/',
   onBrokenLinks: 'warn', // 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'IvorySQL', // Usually your GitHub org/user name.
   projectName: 'ivory-www', // Usually your repo name.
@@ -20,6 +19,11 @@ const config = {
     // Put your custom environment here
     botId: process.env.BOT_ID,
     patToken: process.env.TOKEN
+  },
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    }
   },
   
   themes: [
@@ -33,11 +37,14 @@ const config = {
         explicitSearchResultPath: true,
         searchBarPosition: 'right',
         indexPages: true,
-        searchContextByPaths: ["blog","docs","releases-page", "roadmap-page","contribution-guidelines"],
+        indexBlog: true,
+        indexDocs: false,
+        ignoreFiles: ["partners-page","customer-stories-page",
+          "webinars-page","slider","slider-bug","slider-bug-phone","slider-phone","slider-phone-content"],
+        ignoreCssSelectors:['*.css'],
       }),
     ],
   ],
-
   plugins: [
     [
       'docusaurus-plugin-dotenv',
@@ -68,6 +75,7 @@ const config = {
         blog: {
           showReadingTime: true,
           blogSidebarTitle: 'IvorySQL Blogs',
+          onUntruncatedBlogPosts: 'warn',
           // Please change this to your repo.
 //          editUrl: 'https://github.com/IvorySQL/Ivory-www/tree/main/blog/',
         },
