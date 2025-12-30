@@ -1,3 +1,4 @@
 # 将非中国用户 / 重定向到 /en
 # / /en 302! Country!=CN
-/ /en 302! [Language!~zh]
+/ /en 302! [Language!=zh]
+/ /en 301! [Language!=zh]
