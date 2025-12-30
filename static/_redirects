@@ -2,3 +2,6 @@
 # / /en 302! Country!=CN
 / /en 302! [Language!=zh]
 / /en 301! [Language!=zh]
+/ /en 302! [Language!=zh*]
+/ /fr 302! [Language=fr]
+/ /en 302! [Language=en]
