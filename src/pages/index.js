@@ -151,20 +151,6 @@ function ChatWidget() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    const path = window.location.pathname;
-    const lang = navigator.language || navigator.userLanguage || '';
-
-    // 只在根路径且浏览器是中文时重定向
-    if ((path === '/' || path === '' || path === '/index.html') &&
-        lang.startsWith('zh')) {
-      window.location.href = '/zh-CN/';
-    }
-  }, []);
-
   return (
     <Layout
       title={`${siteConfig.title}`}
