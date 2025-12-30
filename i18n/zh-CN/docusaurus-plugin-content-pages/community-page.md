@@ -25,6 +25,6 @@ Hey everybody!
 
 也可以通过以下方式参与IvorySQL社区讨论：
 
-- [加入IvorySQL Discord频道](https://discord.gg/dxDCwPzg)
+- [加入IvorySQL Discord频道](https://discord.gg/w79Ta45Gkc)
 - [加入IvorySQL 用户邮件列表](https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/)
 - [加入IvorySQL Hackers邮件列表](https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/)
