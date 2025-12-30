@@ -1,5 +1,2 @@
-/ /fr 302! [Language=fr]
-/ /en 302! [Language=en]
-/zh /en 302! [Language=fr]
-/zh /en 302! [Language!=zh*]
-/zh /en 302! [Language!=zh]
+/ /fr 302! 
+/ /en 302!
