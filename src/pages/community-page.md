@@ -24,4 +24,4 @@ Participate in IvorySQL community discussions through the following channels:
 
 - [IvorySQL Users](https://lists.ivorysql.org/postorius/lists/general.ivorysql.org/)
 - [IvorySQL Hackers](https://lists.ivorysql.org/postorius/lists/hackers.ivorysql.org/)
-- [IvorySQL Discord](https://discord.gg/dxDCwPzg)
+- [IvorySQL Discord](https://discord.gg/w79Ta45Gkc)
