@@ -3,6 +3,8 @@ id: IvorySQL-Releases
 title: IvorySQL Releases
 ---
 
+import React, { useState } from 'react';
+
 export const Highlight = ({children, color}) => (
   <span
     style={{
@@ -15,217 +17,241 @@ export const Highlight = ({children, color}) => (
   </span>
 );
 
+export const TabButton = ({active, onClick, children}) => (
+  <button
+    onClick={onClick}
+    style={{
+      padding: '10px 20px',
+      marginRight: '8px',
+      border: 'none',
+      borderRadius: '4px 4px 0 0',
+      cursor: 'pointer',
+      fontWeight: 'bold',
+      backgroundColor: active ? '#fff' : '#f0f0f0',
+      color: active ? '#333' : '#666',
+      borderBottom: active ? '2px solid #1ca3ec' : '2px solid transparent',
+    }}>
+    {children}
+  </button>
+);
 
-<table>
-<caption><h2>IvorySQL Releases</h2></caption>
-  <tr>
-    <th>Date</th>
-    <th>Version</th>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.0/v1.0/1.html">Dec 15, 2021</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.0/v1.0/1.html">IvorySQL 1.0 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.1/v1.1/1.html">Jan 25, 2022</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.1/v1.1/1.html">IvorySQL 1.1 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.2/v1.2/1.html">Feb 28, 2022</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.2/v1.2/1.html">IvorySQL 1.2 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>  
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.3/v1.3/1.html">May 27, 2022</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.3/v1.3/1.html">IvorySQL 1.3 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.4/v1.4/1.html">Jun 28, 2022</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.4/v1.4/1.html">IvorySQL 1.4 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.5/v1.5/1.html">Sep 09, 2022</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.5/v1.5/1.html">IvorySQL 1.5 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.8/v1.8/1.html">Nov 21, 2024</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.8/v1.8/1.html">IvorySQL 1.8 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.17/v1.17/1.html">Mar 26, 2025</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v1.17/v1.17/1.html">IvorySQL 1.17 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v2.1/v2.1/1.html">Dec 14, 2022</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v2.1/v2.1/1.html">IvorySQL 2.1 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v2.2/v2.2/1.html">Mar 29, 2023</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v2.2/v2.2/1.html">IvorySQL 2.2 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v2.3/v2.3/1.html">Jun 28, 2023</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v2.3/v2.3/1.html">IvorySQL 2.3 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v3.0/v3.0/1.html">Nov 17, 2023</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v3.0/v3.0/1.html">IvorySQL 3.0 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v3.1/v3.1/1.html">Jan 26, 2024</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v3.1/v3.1/1.html">IvorySQL 3.1 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v3.2/v3.2/1.html">Apr 11, 2024</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v3.2/v3.2/1.html">IvorySQL 3.2 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v3.3/v3.3/1.html">Jul 11, 2024</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v3.3/v3.3/1.html">IvorySQL 3.3 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v3.4/v3.4/1.html">Sep 26, 2024</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v3.4/v3.4/1.html">IvorySQL 3.4 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v4.0/v4.0/1.html">Dec 23, 2024</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v4.0/v4.0/1.html">IvorySQL 4.0 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v4.2/v4.2/1.html">Jan 13, 2025</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v4.2/v4.2/1.html">IvorySQL 4.2 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v4.4/v4.4/1.html">Mar 10, 2025</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v4.4/v4.4/1.html">IvorySQL 4.4 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v4.5/v4.5/1.html">Jun 4, 2025</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v4.5/v4.5/1.html">IvorySQL 4.5 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v4.6/v4.6/1.html">Sept 10, 2025</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v4.6/v4.6/1.html">IvorySQL 4.6 STABLE </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v5.0/v5.0/1.html">Nov 25, 2025</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v5.0/v5.0/1.html">IvorySQL 5.0 STABLE</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v5.1/v5.1/1.html">Dec 18, 2025</a>
-    </td>
-    <td>
-        <a href="https://docs.ivorysql.org/en/ivorysql-doc/v5.1/v5.1/1.html">IvorySQL 5.1 STABLE <Highlight color="#1ca3ec">Latest Stable</Highlight></a>
-    </td>
-  </tr>
-</table>
+export const VersionTable = () => {
+  const [activeTab, setActiveTab] = useState('currentTab');
 
+  const currentVersions = [
+    {
+      date: 'Mar 26, 2025',
+      version: 'IvorySQL 1.17 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v1.17/v1.17/1.html'
+    },    
+    {
+      date: 'Dec 18, 2025',
+      version: 'IvorySQL 5.1 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.1/v5.1/1.html',
+      highlight: true
+    },    
+  ];
 
+  const historicalVersions = [
+    {
+      date: 'Dec 15, 2021',
+      version: 'IvorySQL 1.0 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v1.0/v1.0/1.html'
+    },
+    {
+      date: 'Jan 25, 2022',
+      version: 'IvorySQL 1.1 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v1.1/v1.1/1.html'
+    },
+    {
+      date: 'Feb 28, 2022',
+      version: 'IvorySQL 1.2 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v1.2/v1.2/1.html'
+    },
+    {
+      date: 'May 27, 2022',
+      version: 'IvorySQL 1.3 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v1.3/v1.3/1.html'
+    },
+    {
+      date: 'Jun 28, 2022',
+      version: 'IvorySQL 1.4 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v1.4/v1.4/1.html'
+    },
+    {
+      date: 'Sep 09, 2022',
+      version: 'IvorySQL 1.5 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v1.5/v1.5/1.html'
+    },
+    {
+      date: 'Dec 14, 2022',
+      version: 'IvorySQL 2.1 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v2.1/v2.1/1.html'
+    },
+    {
+      date: 'Mar 29, 2023',
+      version: 'IvorySQL 2.2 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v2.2/v2.2/1.html'
+    },
+    {
+      date: 'Jun 28, 2023',
+      version: 'IvorySQL 2.3 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v2.3/v2.3/1.html'
+    },
+    {
+      date: 'Nov 17, 2023',
+      version: 'IvorySQL 3.0 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v3.0/v3.0/1.html'
+    },
+    {
+      date: 'Jan 26, 2024',
+      version: 'IvorySQL 3.1 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v3.1/v3.1/1.html'
+    },
+    {
+      date: 'Apr 11, 2024',
+      version: 'IvorySQL 3.2 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v3.2/v3.2/1.html'
+    },
+    {
+      date: 'Jul 11, 2024',
+      version: 'IvorySQL 3.3 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v3.3/v3.3/1.html'
+    },
+    {
+      date: 'Sep 26, 2024',
+      version: 'IvorySQL 3.4 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v3.4/v3.4/1.html'
+    },
+    {
+      date: 'Nov 21, 2024',
+      version: 'IvorySQL 1.8 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v1.8/v1.8/1.html'
+    },
+    {
+      date: 'Dec 23, 2024',
+      version: 'IvorySQL 4.0 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v4.0/v4.0/1.html'
+    },
+    {
+      date: 'Jan 13, 2025',
+      version: 'IvorySQL 4.2 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v4.2/v4.2/1.html'
+    },
+    {
+      date: 'Mar 10, 2025',
+      version: 'IvorySQL 4.4 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v4.4/v4.4/1.html'
+    },
+    {
+      date: 'Jun 4, 2025',
+      version: 'IvorySQL 4.5 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v4.5/v4.5/1.html'
+    },
+    {
+      date: 'Sept 10, 2025',
+      version: 'IvorySQL 4.6 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v4.6/v4.6/1.html'
+    },
+    {
+      date: 'Nov 25, 2025',
+      version: 'IvorySQL 5.0 STABLE',
+      url: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.0/v5.0/1.html'
+    },
+  ];
 
-<table>
-<caption><h2>Packages</h2></caption>
-  <tr>
-    <th>Maintainer</th>
-    <th>link</th>
-  </tr>
-  <tr>
-    <td>
-        <a href="http://www.highgo.com">HIGHGO</a>
-    </td>
-    <td>
-        <a href="https://yum.highgo.com/dists/ivorysql-rpms/">HIGHGO YUM REPOSITORY</a>
-    </td>
-  </tr>
-</table>
+  const packages = [
+    {
+      maintainer: 'HIGHGO',
+      link: 'HIGHGO YUM REPOSITORY',
+      url: 'https://yum.highgo.com/dists/ivorysql-rpms/'
+    },
+  ];
 
+  const renderTable = (data, columns) => (
+    <table style={{width: '100%', borderCollapse: 'collapse', marginTop: '10px'}}>
+      <thead>
+        <tr>
+          {columns.map((col, idx) => (
+            <th key={idx} style={{border: '1px solid #ddd', padding: '12px', backgroundColor: '#f5f5f5', textAlign: 'left'}}>
+              {col}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((row, idx) => (
+          <tr key={idx} style={{backgroundColor: idx % 2 === 0 ? '#fff' : '#f9f9f9'}}>
+            {columns.map((col, colIdx) => {
+              const key = col.toLowerCase();
+              let content = row[key];
+              if (key === 'version' && row.highlight) {
+                content = (
+                  <a href={row.url}>
+                    {row.version.replace('STABLE', 'STABLE')} <Highlight color="#1ca3ec">Latest Stable</Highlight>
+                  </a>
+                );
+              } else if (row.url && (key === 'date' || key === 'version' || key === 'link')) {
+                content = <a href={row.url}>{content}</a>;
+              }
+              return (
+                <td key={colIdx} style={{border: '1px solid #ddd', padding: '12px'}}>
+                  {content}
+                </td>
+              );
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
 
+  return (
+    <div>
+      <div style={{marginBottom: '20px'}}>
+        <h2>IvorySQL Releases</h2>
+        <div style={{borderBottom: '1px solid #ddd', marginBottom: '0'}}>
+          <TabButton 
+            active={activeTab === 'currentTab'} 
+            onClick={() => setActiveTab('currentTab')}
+          >
+            Current versions
+          </TabButton>
+          <TabButton 
+            active={activeTab === 'historicalTab'} 
+            onClick={() => setActiveTab('historicalTab')}
+          >
+            Historical versions
+          </TabButton>
+        </div>
 
-**<Highlight color="#25c2a0">To provide IvorySQL packages contact support@ivorysql.org</Highlight>**
+        {activeTab === 'currentTab' && (
+          <div>
+            {renderTable(currentVersions, ['Date', 'Version'])}
+          </div>
+        )}
+
+        {activeTab === 'historicalTab' && (
+          <div>
+            {renderTable(historicalVersions, ['Date', 'Version'])}
+          </div>
+        )}
+      </div>
+
+      <div style={{marginTop: '30px'}}>
+        <h2>Packages</h2>
+        <div>
+          {renderTable(packages, ['Maintainer', 'Link'])}
+        </div>
+      </div>
+
+      <div style={{marginTop: '20px'}}>
+        <p>
+          <Highlight color="#25c2a0">To provide IvorySQL packages contact support@ivorysql.org</Highlight>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+<VersionTable />
