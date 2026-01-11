@@ -36,7 +36,7 @@ function HomepageHeader() {
         <Slider {...settings}>
           {/* HOW 大会宣传，根据中英版显示不同图片及链接*/}
           <div>
-            <a href={isEnglish ? "https://ivorysql.io/" : "https://howconf.cn/"} target="_blank" rel="noopener noreferrer">
+            <a href={isEnglish ? "https://ivorysql.io/" : "https://jsj.top/f/uebqBc"} target="_blank" rel="noopener noreferrer">
               <img 
                 src={
                   isEnglish 
