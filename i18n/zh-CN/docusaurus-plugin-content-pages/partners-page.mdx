@@ -1,8 +1,238 @@
-:::info 敬请期待
+---
+title: 合作伙伴
+hide_table_of_contents: true
+---
 
-合作伙伴页面正在建设中。
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-:::
+<style>{`
+  .partner-card {
+    height: 120px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .partner-card:hover {
+    transform: translateY(-5px);
+  }
+  .partner-card p {
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .partner-card img {
+    max-width: 160px !important;
+    max-height: 60px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    cursor: pointer;
+  }
+  .custom-banner {
+    background-color: #7D52F4;
+    background-image: url('img/partners/partner-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+    text-align: left;
+    border-radius: 10px;
+  }
+  .custom-footer {
+    text-align: center;
+    padding: 120px 20px; 
+    margin-top: 50px;
+    background-image: url('img/partners/partner-background-2.svg');
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+  .tabs {
+    justify-content: center;
+    border-bottom: none !important;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .tabs__item {
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    padding: 10px 20px !important;
+    border-radius: 30px !important;
+    border: 2px solid #f0f0f0 !important;
+    transition: all 0.3s ease;
+    margin: 5px 0 !important;
+  }
+  .tabs__item--active {
+    background-color: #7D52F4 !important;
+    color: white !important;
+    border-color: #7D52F4 !important;
+  }
+  .benefits-section {
+    background: #F9F7FF;
+    border-radius: 16px;
+    padding: 40px;
+    margin: 60px auto;
+    max-width: 1200px;
+  }
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .benefit-item h4 {
+    color: #7D52F4;
+    font-size: 1.2rem;
+  }
+  .cert-carousel-container {
+    overflow: hidden;
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .cert-track {
+    display: flex;
+    width: calc(280px * 10);
+    animation: scroll 40s linear infinite;
+  }
+  .cert-track:hover {
+    animation-play-state: paused;
+  }
+  .cert-slide {
+    width: 280px;
+    height: 200px;
+    padding: 0 15px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cert-slide p {
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cert-slide img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: transform 0.3s;
+  }
+  .cert-slide img:hover {
+    transform: scale(1.05);
+  }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-280px * 5)); }
+  }
+`}</style>
 
-![Coming Soon](/img/under_construction.svg)
+<div className="custom-banner">
+  <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+    <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: 'white' }}>成为 IvorySQL 的合作伙伴</h1>
+    <p style={{ fontSize: '1.2rem' }}>我们期待您的加入！</p>
+    <a href="https://jsj.top/f/AvKTbu" style={{ backgroundColor: '#A38CF9', color: 'white', padding: '10px 25px', borderRadius: '20px', textDecoration: 'none', display: 'inline-block', marginTop: '20px' }}>立即申请</a>
+  </div>
+</div>
 
+<div style={{ padding: '50px 0', maxWidth: '1200px', margin: '0 auto' }}>
+  <Tabs defaultValue="tech" values={[{label: '技术与生态伙伴', value: 'tech'},{label: '社区与活动伙伴', value: 'community'},{label: '解决方案与商业伙伴', value: 'solutions'},{label: '教育与科研伙伴', value: 'academic'}]}>
+    <TabItem value="tech">
+      <p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>深度兼容主流基础设施，构建稳定、高性能的技术生态。</p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', marginTop: '20px' }}>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://pigsty.cc/" target="_blank">![](/img/partners/pigsty.jpg)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.openkylin.top/index-cn.html" target="_blank">![](/img/partners/openkylin.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.deepin.org/" target="_blank">![](/img/partners/deepin.jpg)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://openanolis.cn/" target="_blank">![](/img/partners/openanolis.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.kylinos.cn/" target="_blank">![](/img/partners/kylin.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.data-bene.io/en/" target="_blank">![](/img/partners/databene.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://ongres.com/" target="_blank">![](/img/partners/ongres.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.navicat.com.cn/" target="_blank">![](/img/partners/navicat.jpg)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.whaleops.com/index.html" target="_blank">![](/img/partners/whaleops.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.loongson.cn/index.php/system/loongarch" target="_blank">![](/img/partners/loongarch.png)</a></div>
+      </div>
+    </TabItem>
+    <TabItem value="community">
+      <p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>连接开发者生态，共同推广开源技术与实践案例。</p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', marginTop: '20px' }}>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.postgresqlchina.com/" target="_blank">![](/img/partners/pg-association.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://cloudberry.apache.org/" target="_blank">![](/img/partners/cloudberry.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.ifclub.org/" target="_blank">![](/img/partners/ifclub.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.modb.pro/" target="_blank">![](/img/partners/motianlun.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.oschina.net/" target="_blank">![](/img/partners/oschina.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://segmentfault.com/" target="_blank">![](/img/partners/segmentfault.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://juejin.cn/" target="_blank">![](/img/partners/juejin.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://qloc-cn.org/" target="_blank">![](/img/partners/qilukaiyuanshe.webp)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://kaiyuanshe.cn/" target="_blank">![](/img/partners/kaiyuanshe.png)</a></div>
+      </div>
+    </TabItem>
+    <TabItem value="solutions">
+      <p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>与领先的系统集成商和解决方案商合作，为企业提供开箱即用的行业化能力。</p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', marginTop: '20px' }}>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.data-bene.io/en/" target="_blank">![](/img/partners/databene.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://ongres.com/" target="_blank">![](/img/partners/ongres.png)</a></div>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://www.navicat.com.cn/products/navicat-premium-resources" target="_blank">![](/img/partners/navicat.jpg)</a></div>
+      </div>
+    </TabItem>
+    <TabItem value="academic">
+      <p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>深化产学研融合，赋能下一代技术人才培养。</p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', marginTop: '20px' }}>
+        <div className="partner-card" style={{ border: '1px solid #f0f0f0', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}><a href="https://summer-ospp.ac.cn/" target="_blank">![](/img/partners/ospp.png)</a></div>
+      </div>
+    </TabItem>
+  </Tabs>
+</div>
+
+<div className="cert-carousel-container">
+<h3 style={{ textAlign: 'center', marginBottom: '30px', color: '#333' }}>兼容认证证书</h3>
+<div className="cert-track">
+<div className="cert-slide">![](/img/partners/cert1.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert2.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert3.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert4.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert5.png)</div>
+<div className="cert-slide">![](/img/partners/cert1.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert2.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert3.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert4.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert5.png)</div>
+</div>
+</div>
+
+<div className="benefits-section">
+<h3 style={{ textAlign: 'center', color: '#333' }}>合作伙伴权益</h3>
+<div className="benefits-grid">
+<div className="benefit-item">
+<h4>技术专家支持</h4>
+<p>获得 IvorySQL 核心开发团队的直接技术指导，优先获取产品路线图及新功能预览，加速产品集成与适配流程。</p>
+</div>
+<div className="benefit-item">
+<h4>联合品牌推广</h4>
+<p>合作伙伴 Logo 将在官网长期展示。通过联合发布白皮书、技术案例及沙龙活动，共享 IvorySQL 开源社区的流量与品牌影响力。</p>
+</div>
+<div className="benefit-item">
+<h4>生态互惠增长</h4>
+<p>加入 IvorySQL 全球合作伙伴网络，与上下游厂商建立深度连接，共同挖掘商业机会，打造更具竞争力的联合解决方案。</p>
+</div>
+</div>
+</div>
+
+<div className="custom-footer">
+<h3>如果您希望与 IvorySQL 成为合作伙伴，请点击填写申请。</h3>
+<a href="https://jsj.top/f/AvKTbu" style={{ backgroundColor: '#7D52F4', color: 'white', padding: '10px 30px', borderRadius: '20px', textDecoration: 'none', display: 'inline-block', marginTop: '20px' }}>立即申请</a>
+</div>
