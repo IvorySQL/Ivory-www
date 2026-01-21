@@ -1,8 +1,108 @@
-:::info Stay Tuned
+---
+title: Partners
+hide_table_of_contents: true
+---
 
-Partners page is under construction!
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-:::
+<style>{`
+.partner-card {height:120px;display:flex!important;align-items:center;justify-content:center;overflow:hidden;transition:transform 0.3s ease;border:1px solid #f0f0f0;border-radius:12px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,0.05);}
+.partner-card:hover {transform:translateY(-5px);}
+.partner-card p {margin:0!important;display:flex;align-items:center;justify-content:center;width:100%;height:100%;}
+.partner-card img {max-width:160px!important;max-height:60px!important;width:auto!important;height:auto!important;object-fit:contain!important;}
+.custom-banner {background-color:#7D52F4;background-image:linear-gradient(to right,rgba(125,82,244,0.95),rgba(125,82,244,0.4)),url('/img/partners/partner-background.jpg');background-size:cover;background-position:center;padding:80px 40px;color:white!important;border-radius:10px;text-shadow:0 2px 4px rgba(0,0,0,0.3);}
+.custom-footer {text-align:center;padding:120px 20px;margin-top:50px;background-image:url('/img/partners/partner-background-2.svg');background-size:contain;background-position:bottom center;background-repeat:no-repeat;}
+ul.tabs {justify-content:center !important;border-bottom:none !important;gap:15px !important;display:flex !important;}
+.tabs__item {font-size:1rem!important;font-weight:bold!important;padding:10px 20px!important;border-radius:30px!important;border:2px solid #f0f0f0!important;margin:5px!important;}
+.tabs__item--active {background-color:#7D52F4!important;color:white!important;border-color:#7D52F4!important;}
+.cert-track {display:flex;width:calc(280px * 10);animation:scroll 40s linear infinite;}
+.cert-slide {width:280px;height:200px;padding:0 15px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.cert-slide p {margin:0!important;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #f0f0f0;border-radius:8px;}
+.cert-slide img {max-width:90%!important;max-height:90%!important;object-fit:contain!important;}
+@keyframes scroll {0%{transform:translateX(0);}100%{transform:translateX(calc(-280px * 5));}}
+`}</style>
 
-![Coming Soon](/img/under_construction.svg)
+<div className="custom-banner">
+<h1 style={{color:'white',fontSize:'3rem',fontWeight:'bold',margin:'0 0 15px 0'}}>Become an IvorySQL Partner</h1>
+<p style={{color:'white',fontSize:'1.2rem',margin:'0 0 20px 0'}}>Applications are welcome.</p>
+<a href="https://jsj.top/f/cg4swk" style={{backgroundColor:'#A38CF9',color:'white',padding:'10px 25px',borderRadius:'20px',textDecoration:'none',display:'inline-block'}}>Apply Now</a>
+</div>
 
+<div style={{padding:'50px 0',maxWidth:'1200px',margin:'0 auto'}}>
+<Tabs defaultValue="tech" values={[{label:'Technology & Ecosystem',value:'tech'},{label:'Community & Marketing',value:'community'},{label:'Solutions & Commercial',value:'solutions'},{label:'Academic & Research',value:'academic'}]}>
+<TabItem value="tech">
+<p style={{color:'#666',textAlign:'center',marginTop:'20px'}}>Deep compatibility with mainstream infrastructure to build a stable and high-performance technical ecosystem.</p>
+<div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'20px',marginTop:'20px'}}>
+<div className="partner-card"><a href="https://pigsty.io/" target="_blank">![](/img/partners/pigsty.jpg)</a></div>
+<div className="partner-card"><a href="https://www.openkylin.top/index-en.html" target="_blank">![](/img/partners/openkylin.png)</a></div>
+<div className="partner-card"><a href="https://www.deepin.org/index/en" target="_blank">![](/img/partners/deepin.jpg)</a></div>
+<div className="partner-card"><a href="https://openanolis.cn/?lang=en" target="_blank">![](/img/partners/openanolis.png)</a></div>
+<div className="partner-card"><a href="https://www.kylinos.cn/" target="_blank">![](/img/partners/kylin.png)</a></div>
+<div className="partner-card"><a href="https://www.data-bene.io/" target="_blank">![](/img/partners/databene.png)</a></div>
+<div className="partner-card"><a href="https://ongres.com/" target="_blank">![](/img/partners/ongres.png)</a></div>
+<div className="partner-card"><a href="https://www.navicat.com/en" target="_blank">![](/img/partners/navicat.jpg)</a></div>
+<div className="partner-card"><a href="https://www.whaleops.com/" target="_blank">![](/img/partners/whaleops.png)</a></div>
+<div className="partner-card"><a href="https://www.loongson.cn/EN" target="_blank">![](/img/partners/loongarch.png)</a></div>
+</div>
+</TabItem>
+<TabItem value="community">
+<p style={{color:'#666',textAlign:'center',marginTop:'20px'}}>Connecting the developer ecosystem, promoting open-source technology and practical case studies.</p>
+<div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'20px',marginTop:'20px'}}>
+<div className="partner-card"><a href="https://www.postgresqlchina.com/" target="_blank">![](/img/partners/pg-association.png)</a></div>
+<div className="partner-card"><a href="https://cloudberry.apache.org/" target="_blank">![](/img/partners/cloudberry.png)</a></div>
+<div className="partner-card"><a href="https://www.ifclub.org/" target="_blank">![](/img/partners/ifclub.png)</a></div>
+<div className="partner-card"><a href="https://www.modb.pro/" target="_blank">![](/img/partners/motianlun.png)</a></div>
+<div className="partner-card"><a href="https://www.oschina.net/" target="_blank">![](/img/partners/oschina.png)</a></div>
+<div className="partner-card"><a href="https://segmentfault.com/" target="_blank">![](/img/partners/segmentfault.png)</a></div>
+<div className="partner-card"><a href="https://juejin.cn/" target="_blank">![](/img/partners/juejin.png)</a></div>
+<div className="partner-card"><a href="https://qloc-cn.org/" target="_blank">![](/img/partners/qilukaiyuanshe.webp)</a></div>
+<div className="partner-card"><a href="https://kaiyuanshe.cn/" target="_blank">![](/img/partners/kaiyuanshe.png)</a></div>
+</div>
+</TabItem>
+<TabItem value="solutions">
+<p style={{color:'#666',textAlign:'center',marginTop:'20px'}}>Partnering with leading system integrators and solution providers to provide enterprise-ready capabilities.</p>
+<div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'20px',marginTop:'20px'}}>
+<div className="partner-card"><a href="https://www.data-bene.io/" target="_blank">![](/img/partners/databene.png)</a></div>
+<div className="partner-card"><a href="https://ongres.com/" target="_blank">![](/img/partners/ongres.png)</a></div>
+<div className="partner-card"><a href="https://www.navicat.com.cn/" target="_blank">![](/img/partners/navicat.jpg)</a></div>
+</div>
+</TabItem>
+<TabItem value="academic">
+<p style={{color:'#666',textAlign:'center',marginTop:'20px'}}>Deepening the fusion of industry, education, and research to empower the next generation of technical talent.</p>
+<div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'20px',marginTop:'20px'}}>
+<div className="partner-card"><a href="https://summer-ospp.ac.cn/" target="_blank">![](/img/partners/ospp-en.png)</a></div>
+</div>
+</TabItem>
+</Tabs>
+</div>
+
+<div style={{overflow:'hidden',padding:'40px 0',maxWidth:'1200px',margin:'0 auto'}}>
+<h3 style={{textAlign:'center',marginBottom:'30px'}}>Compatibility Certificates</h3>
+<div className="cert-track">
+<div className="cert-slide">![](/img/partners/cert1.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert2.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert3.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert4.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert5.png)</div>
+<div className="cert-slide">![](/img/partners/cert1.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert2.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert3.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert4.jpg)</div>
+<div className="cert-slide">![](/img/partners/cert5.png)</div>
+</div>
+</div>
+
+<div style={{background:'#F9F7FF',borderRadius:'16px',padding:'40px',margin:'60px auto',maxWidth:'1200px'}}>
+<h3 style={{textAlign:'center',color:'#333'}}>Partner Benefits</h3>
+<div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'30px',marginTop:'30px'}}>
+<div><h4 style={{color:'#7D52F4'}}>Expert Technical Support</h4><p style={{color:'#666',fontSize:'0.95rem'}}>Direct technical guidance from the IvorySQL core development team, priority access to product roadmaps.</p></div>
+<div><h4 style={{color:'#7D52F4'}}>Joint Brand Promotion</h4><p style={{color:'#666',fontSize:'0.95rem'}}>Partner logos displayed on the official website. Co-publication of whitepapers and marketing events.</p></div>
+<div><h4 style={{color:'#7D52F4'}}>Ecosystem Growth</h4><p style={{color:'#666',fontSize:'0.95rem'}}>Join the global IvorySQL partner network to build deep connections for mutual commercial opportunities.</p></div>
+</div>
+</div>
+
+<div className="custom-footer">
+<h3 style={{marginBottom:'20px'}}>If you are interested in becoming an IvorySQL partner, please apply here.</h3>
+<a href="https://jsj.top/f/cg4swk" style={{backgroundColor:'#7D52F4',color:'white',padding:'10px 30px',borderRadius:'20px',textDecoration:'none',display:'inline-block'}}>Apply Now</a>
+</div>
