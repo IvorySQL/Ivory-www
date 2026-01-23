@@ -1,0 +1,154 @@
+---
+title: 【征文启动】IvorySQL & PostgreSQL 迁移实战经验征集：分享你的技术沉淀，赢取专属好礼！
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  
+  .custom-quote { border-left: 5px solid #7D52F4; padding: 10px 25px; margin: 30px 0; background: transparent; }
+  .custom-quote p { margin-bottom: 15px; color: #555; line-height: 1.8; }
+  .custom-quote p:last-child { margin-bottom: 0; }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      【征文启动】IvorySQL & PostgreSQL 迁移实战经验征集：分享你的技术沉淀，赢取专属好礼！
+    </h1>
+
+    <div style={{ display: 'flex', gap: '20px', color: '#666', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 活动时间：2025-09-16 至 2026-02-28</span>
+      <span>🌍 线上活动</span>
+    </div>
+
+    <div className="content-text">
+      在数据库技术选型与迭代的浪潮中，迁移始终是企业与开发者绕不开的核心课题——从旧数据库升级到 PostgreSQL 社区版，从其他数据库（Oracle）迁移至 IvorySQL/PostgreSQL，每一步都藏着技术决策的智慧与实战踩坑的经验。
+    </div>
+
+    <div className="content-text">
+      为汇聚更多迁移场景下的实战方案，助力开发者少走弯路，我们正式启动 IvorySQL 征文活动第一期——“IvorySQL & PostgreSQL 迁移实战经验征集”，诚邀每一位深耕数据库领域的技术人，分享你的迁移故事、技术干货与最佳实践！
+    </div>
+
+    <h2 className="section-title">迁移场景的痛点，需要你的经验破局</h2>
+    <div className="content-text">
+      无论是企业级系统的大规模数据迁移，还是小型应用的轻量升级，迁移过程中总有无数“卡壳时刻”：
+      <ul>
+        <li>从 Oracle 迁移到 PostgreSQL 时，自定义函数语法不兼容怎么办？</li>
+        <li>迁移 IvorySQL 时，如何利用其 Oracle 兼容特性，减少应用改造成本？</li>
+        <li>百万级数据迁移如何实现“零停机”，兼顾效率与业务连续性？</li>
+      </ul>
+      你的一次经验分享，或许能帮同行避开一个踩了多天的坑；你的一套迁移方案，可能成为某家企业选型的关键参考——这正是技术分享的价值所在。
+    </div>
+
+    <h2 className="section-title">征文方向</h2>
+    <div className="content-text">
+      本次征文不设复杂框架，只要你的内容围绕“迁移”展开，且涉及 IvorySQL 或 PostgreSQL，皆可参与！我们尤其欢迎这些方向的实战内容：
+    </div>
+
+    <div className="content-text">
+      <b>1. 跨数据库迁移实战</b>
+      <ul>
+        <li>「从 X 到 PostgreSQL」：如 Oracle→IvorySQL 迁移全流程（含工具选型、语法适配、数据校验）；</li>
+        <li>「从 PostgreSQL 到 IvorySQL」：版本升级、特性适配（如利用 IvorySQL 的兼容函数简化应用改造）的踩坑与优化；</li>
+        <li>「其他迁移场景」：如 PostgreSQL 不同版本间迁移的差异化处理。</li>
+      </ul>
+    </div>
+
+    <div className="content-text">
+      <b>2. 迁移工具深度解析</b>
+      <ul>
+        <li>工具对比：pgloader、pg_dump/pg_restore、Ora2Pg 等迁移工具的场景适配（如小数据量用什么，TB 级数据选什么）；</li>
+        <li>工具实战：某款工具的“避坑指南”（如 pgloader 迁移时的编码问题解决）、自定义脚本辅助迁移的技巧。</li>
+      </ul>
+    </div>
+
+    <div className="content-text">
+      <b>3. 迁移保障与性能优化</b>
+      <ul>
+        <li>数据一致性：迁移前后数据校验方法（如 pg_checksums、自定义比对脚本）；</li>
+        <li>零停机迁移：CDC 工具结合 PostgreSQL/IvorySQL 实现实时同步的方案；</li>
+        <li>迁移后优化：迁移完成后 PostgreSQL/IvorySQL 的参数调优、索引重建，提升业务响应速度。</li>
+      </ul>
+    </div>
+
+    <div className="content-text">
+      <b>4. 行业迁移案例</b>
+      <ul>
+        <li>互联网场景：高并发业务的 PostgreSQL 迁移，如何平衡迁移效率与业务峰值；</li>
+        <li>企业级场景：ERP/CRM 系统迁移 IvorySQL，利用其兼容性降低定制化开发成本的实践；</li>
+        <li>小众场景：如嵌入式系统、边缘计算中 PostgreSQL 轻量版迁移的特殊处理。</li>
+      </ul>
+    </div>
+
+    <h2 className="section-title">征文要求</h2>
+    <div className="content-text">
+      1. 内容要求：
+      <ul>
+        <li>原创性：必须为未在其他平台发表过的原创内容，杜绝抄袭、洗稿；</li>
+        <li>实战性：拒绝“纯理论”，需包含具体场景、操作步骤、代码片段（如迁移脚本、配置参数）、效果验证（如迁移耗时、性能对比等）。建议字数不少于 800 字。</li>
+        <li>可读性：结构清晰（建议分“背景-方案-步骤-总结”），语言通俗，可附截图（如迁移工具界面、执行计划分析图）</li>
+      </ul>
+    </div>
+
+    <div className="content-text">
+      2. 投稿方式：
+      <ul>
+        <li>请将文章（Markdown 或 Word 格式）及联系方式发送至社区邮箱：ivorysql1213@gmail.com；</li>
+        <li>邮件标题格式：【征文投稿】文章标题+作者姓名。</li>
+      </ul>
+    </div>
+
+    <h2 className="section-title">专属好礼与激励</h2>
+    <div className="content-text">
+      <ul>
+        <li><b>精品文章奖</b>：经社区技术委员会评选为优秀的实战文章，将获得 IvorySQL 定制礼品；</li>
+        <li><b>社区之星激励</b>：优秀文章将发布于 IvorySQL 官网博客、官方公众号及主流技术社区（CSDN、掘金、OSChina 等），获得万级流量曝光，并同步录入社区贡献者名单。</li>
+      </ul>
+    </div>
+
+    <div className="custom-quote">
+      <p style={{ fontWeight: 'bold' }}>
+        分享你的迁移智慧，共建更强大的开源生态！期待你的来稿！
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/webinars/event-202510" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202510-1.jpg')} />
+        <div className="side-item-title">PostgreSQL 哈尔滨站回顾</div>
+      </a>
+      <a href="/webinars/event-202509" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202509-1.jpg')} />
+        <div className="side-item-title">Bruce Momjian 深圳 meetup 回顾</div>
+      </a>
+      <a href="/webinars/event-202508" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202508-1.jpg')} />
+        <div className="side-item-title">IvorySQL 2025 生态大会圆满落幕</div>
+      </a>
+    </div>
+  </div>
+</div>

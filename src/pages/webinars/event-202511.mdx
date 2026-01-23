@@ -1,0 +1,150 @@
+---
+title: "Article Call Launched | IvorySQL & PostgreSQL Migration Practice Experience Collection: Share Your Technical Insights and Win Exclusive Gifts!"
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  
+  .custom-quote { border-left: 5px solid #7D52F4; padding: 10px 25px; margin: 30px 0; background: transparent; }
+  .custom-quote p { margin-bottom: 15px; color: #555; line-height: 1.8; }
+  .custom-quote p:last-child { margin-bottom: 0; }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      Article Call Launched | IvorySQL & PostgreSQL Migration Practice Experience Collection: Share Your Technical Insights and Win Exclusive Gifts!
+    </h1>
+
+    <div style={{ display: 'flex', gap: '20px', color: '#666', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 Duration: 2025-09-16 to 2026-02-28</span>
+      <span>🌍 Online Event</span>
+    </div>
+
+    <div className="content-text">
+      In the wave of database technology selection and iteration, migration has always been a core subject that enterprises and developers cannot avoid—from upgrading old databases to the PostgreSQL community edition, to migrating from other databases (Oracle) to IvorySQL/PostgreSQL. Every step contains the wisdom of technical decision-making and practical experience from troubleshooting.
+    </div>
+
+    <div className="content-text">
+      To gather more practical solutions in migration scenarios and help developers avoid detours, we are officially launching the first phase of the IvorySQL Article Call—"IvorySQL & PostgreSQL Migration Practice Experience Collection." We sincerely invite every technical professional deep in the database field to share your migration stories, technical dry goods, and best practices!
+    </div>
+
+    <h2 className="section-title">Migration Pain Points Need Your Experience to Solve</h2>
+    <div className="content-text">
+      Whether it is a large-scale data migration for enterprise-level systems or a lightweight upgrade for small applications, there are always countless "stuck moments" during the migration process:
+      <ul>
+        <li>What should I do if custom function syntax is incompatible when migrating from Oracle to PostgreSQL?</li>
+        <li>How can I utilize the Oracle compatibility features of IvorySQL to reduce application reconstruction costs during migration?</li>
+        <li>How can million-level data migrations achieve "zero downtime" while balancing efficiency and business continuity?</li>
+      </ul>
+      A single experience share from you might help a peer avoid a pitfall they've been stuck in for days; your set of migration plans might become a key reference for an enterprise's selection—this is exactly where the value of technical sharing lies.
+    </div>
+
+    <h2 className="section-title">Article Directions</h2>
+    <div className="content-text">
+      This article call does not set complex frameworks. As long as your content revolves around "migration" and involves IvorySQL or PostgreSQL, you can participate! We especially welcome practical content in these directions:
+    </div>
+
+    <div className="content-text">
+      <b>1. Cross-Database Migration Practice</b>
+      <ul>
+        <li>"From X to PostgreSQL": Such as the full Oracle→IvorySQL migration process (including tool selection, syntax adaptation, data validation);</li>
+        <li>"From PostgreSQL to IvorySQL": Version upgrades, feature adaptation (such as utilizing IvorySQL's compatibility functions to simplify application reconstruction), pitfalls, and optimizations;</li>
+        <li>"Other Migration Scenarios": Such as differential handling of migrations between different PostgreSQL versions.</li>
+      </ul>
+    </div>
+
+    <div className="content-text">
+      <b>2. In-depth Analysis of Migration Tools</b>
+      <ul>
+        <li>Tool Comparison: Scenario adaptation of migration tools like pgloader, pg_dump/pg_restore, Ora2Pg (e.g., what to use for small data volumes vs. TB-level data);</li>
+        <li>Tool in Action: "Pitfall avoidance guides" for specific tools (e.g., solving encoding issues during pgloader migration), and tips for using custom scripts to assist migration.</li>
+      </ul>
+    </div>
+
+    <div className="content-text">
+      <b>3. Migration Assurance and Performance Optimization</b>
+      <ul>
+        <li>Data Consistency: Data validation methods before and after migration (such as pg_checksums, custom comparison scripts);</li>
+        <li>Zero-Downtime Migration: Solutions combining CDC tools with PostgreSQL/IvorySQL for real-time synchronization;</li>
+        <li>Post-Migration Optimization: Parameter tuning and index rebuilding for PostgreSQL/IvorySQL after migration completion to improve business response speed.</li>
+      </ul>
+    </div>
+
+    <div className="content-text">
+      <b>4. Industry Migration Cases</b>
+      <ul>
+        <li>Internet Scenarios: PostgreSQL migration for high-concurrency businesses, balancing migration efficiency with peak traffic;</li>
+        <li>Enterprise Scenarios: ERP/CRM systems migrating to IvorySQL, utilizing its compatibility to reduce customized development costs;</li>
+        <li>Niche Scenarios: Special handling for lightweight PostgreSQL version migrations in embedded systems or edge computing.</li>
+      </ul>
+    </div>
+
+    <h2 className="section-title">Submission Requirements</h2>
+    <div className="content-text">
+      1. Content Requirements:
+      <ul>
+        <li>Originality: Must be original content that has not been published on other platforms; plagiarism or paraphrasing is strictly prohibited;</li>
+        <li>Practicality: No "pure theory." Must include specific scenarios, operation steps, code snippets (such as migration scripts, configuration parameters), and effect validation (such as migration time, performance comparison, etc.). A word count of at least 800 words is recommended.</li>
+        <li>Readability: Clear structure (suggested: Background-Solution-Steps-Summary), easy-to-understand language, and screenshots (such as migration tool interfaces or execution plan analysis charts) can be attached.</li>
+      </ul>
+    </div>
+
+    <div className="content-text">
+      2. Submission Method:
+      <ul>
+        <li>Please send your article (Markdown or Word format) and contact information to the community email: ivorysql1213@gmail.com;</li>
+        <li>Email subject format: [Article Submission] Article Title + Author Name.</li>
+      </ul>
+    </div>
+
+    <h2 className="section-title">Exclusive Gifts and Incentives</h2>
+    <div className="content-text">
+      <ul>
+        <li><b>Excellence Article Award</b>: Outstanding practical articles selected by the Community Technical Committee will receive IvorySQL custom gifts;</li>
+        <li><b>Community Star Incentive</b>: Excellent articles will be published on the IvorySQL official blog, official WeChat account, and mainstream technical communities (CSDN, Juejin, OSChina, etc.), gaining tens of thousands of traffic exposures, and will be simultaneously recorded in the community contributor list.</li>
+      </ul>
+    </div>
+
+    <div className="custom-quote">
+      <p style={{ fontWeight: 'bold' }}>
+        Share your migration wisdom and build a stronger open-source ecosystem together! We look forward to your submission!
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">Recent Events</div>
+      <a href="/webinars/event-202509" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202509-1.jpg')} />
+        <div className="side-item-title">Recap of Bruce Momjian Shenzhen Meetup</div>
+      </a>
+      <a href="/webinars/event-202508" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202508-1.jpg')} />
+        <div className="side-item-title">Recap of HOW 2025</div>
+      </a>
+    </div>
+  </div>
+</div>

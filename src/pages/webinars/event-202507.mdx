@@ -1,0 +1,105 @@
+---
+title: Recap of PostgreSQL Technology Summit (Chongqing) | IvorySQL Open Source Practice and Community Ecosystem
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  .highlight-box { background: #F9F7FF; padding: 25px; border-radius: 8px; margin: 25px 0; border-left: 4px solid #7D52F4; }
+  .tech-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .tech-card h4 { margin-top: 0; color: #333; border-bottom: 1px solid #f5f5f5; padding-bottom: 10px; margin-bottom: 15px; }
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      Recap of PostgreSQL Technology Summit (Chongqing) | IvorySQL Open Source Practice and Community Ecosystem
+    </h1>
+    
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', color: '#888', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 Date: 2025-06-07</span>
+      <span>📍 Location: Chongqing</span>
+      <span>🌍 Offline Event</span>
+    </div>
+
+    <div className="content-text">
+      On June 7, 2025, the PostgreSQL Technology Summit (Chongqing), jointly organized by the PG Branch of the China Open Source Software Promotion Alliance and Chongqing Sizhuang Technology Co., Ltd., concluded successfully. With the theme "PostgreSQL and Local Ecosystem," the event aimed to promote the development of PostgreSQL in China. IvorySQL was invited to participate, and technical engineer Liang Xiangyu delivered a keynote speech titled "IvorySQL Open Source Practice and Community Ecosystem."
+    </div>
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202507-1.jpg')} alt="Event On-site" />
+    
+    <h2 className="section-title">Session Recap</h2>
+    
+    <div className="tech-card">
+      <h4>1. Overview and Releases</h4>
+      * **Project Positioning**: An open-source database based on PostgreSQL with deep Oracle compatibility.
+      * **Release Progress**: 17 versions have been released since its debut in 2021. The latest version is IvorySQL 4.5, based on PostgreSQL 17.5 (released 2025/06/04).
+    </div>
+
+    <div className="tech-card">
+      <h4>2. Core Features</h4>
+      * **Open Source Core**: Entirely open source, supporting both native PG mode and Oracle syntax compatibility mode.
+      * **User-Friendly**: Supports cross-platform installation media, containerized deployment, and an [online trial platform](http://trial.ivorysql.org).
+      * **Active Community**: Features participation from many domestic and international contributors and is supported by the China PostgreSQL Association.
+    </div>
+
+    <div className="tech-card">
+      <h4>3. Technical Highlights</h4>
+      * **Dual-Port Design**: Port 5432 is compatible with PostgreSQL, while Port 1521 defaults to Oracle compatibility mode.
+      * **Dual Parser**: A new Parser module handles Oracle syntax, minimizing interference between the two types of syntax.
+      * **Cloud Support**: Supports high-availability cluster deployment based on Kubernetes and provides monitoring and backup tools.
+    </div>
+
+    <div className="tech-card">
+      <h4>4. Ecosystem and Cooperation</h4>
+      * **Pigsty**: v3.4 updated its support for IvorySQL.
+      * **International Cooperation**: Collaborating with OnGres (Spain) for integration into the StackGres project; cooperating with Data Bene (France) to promote "De-Oracle" migration projects.
+    </div>
+
+    <div className="tech-card">
+      <h4>5. Community and Events</h4>
+      * Introduced PGConf.dev 2025 and HOW 2025 tech conferences, focusing on the PostgreSQL ecosystem and open-source innovation.
+      * Provided incentive plans for contributors in the China region, including event support and custom merchandise.
+      * Encouraged joining the IvorySQL community and following the official WeChat account for more technical content.
+    </div>
+
+    <div className="highlight-box">
+      **PPT Download**: Follow our WeChat Account [IvorySQL开源数据库社区] and reply with the keyword **"20250607"** to get the link.
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">Recent Events</div>
+      <a href="/webinars/event-202506" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202506-1.jpg')} />
+        <div className="side-item-title">PGConf.dev 2025 Summary</div>
+      </a>
+      <a href="/webinars/event-202505" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202505.png')} />
+        <div className="side-item-title">OSPP 2025 Graduation Successfully Concluded</div>
+      </a>
+      <a href="/webinars/event-202504" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202504.png')} />
+        <div className="side-item-title">From Oracle to PostgreSQL: Smoother Migration</div>
+      </a>
+    </div>
+  </div>
+</div>

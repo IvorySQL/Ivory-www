@@ -1,0 +1,139 @@
+---
+title: 直播回顾｜PostgreSQL 18 六大新特性深度解析
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  
+  .tech-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .tech-card h4 { margin-top: 0; color: #333; border-bottom: 1px solid #f5f5f5; padding-bottom: 10px; margin-bottom: 15px; }
+  
+  .custom-quote { border-left: 5px solid #7D52F4; padding: 10px 25px; margin: 30px 0; background: transparent; }
+  .custom-quote p { margin-bottom: 15px; color: #555; line-height: 1.8; }
+  .custom-quote p:last-child { margin-bottom: 0; }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      直播回顾｜PostgreSQL 18 六大新特性深度解析
+    </h1>
+    
+    <div style={{ display: 'flex', gap: '20px', color: '#666', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 活动时间：2025-10-16</span>
+      <span>🌍 线上直播</span>
+    </div>
+
+    <div className="content-text">
+      10 月 16 日，IvorySQL 社区组织了一场线上直播，主题为：PostgreSQL 18 六大新特性深度解析。以下为本场直播的回顾。
+    </div>
+
+    <h2 className="section-title">嘉宾简介</h2>
+    <div className="content-text">
+      <ul>
+        <li>王世鑫，数据库软件工程师</li>
+        <li>张虎，数据库软件工程师</li>
+        <li>权宗亮，数据库软件工程师</li>
+        <li>兰柯，数据库软件工程师</li>
+        <li>史跃飞，数据库软件工程师</li>
+        <li>胡勋棋，数据库软件工程师</li>
+        <li>矫顺田，数据库软件工程师</li>
+      </ul>
+      <p style={{ marginTop: '15px' }}>
+        <b>特邀主持人：彭冲</b>，PostgreSQL ACE，PostgreSQL 中文社区委员，Gauss 松鼠会 2021 年度热心专家，openGauss 天津用户组 Ambassador，易景科技外聘技术顾问，IvorySQL 专家顾问委员会成员，现就职于云和恩墨，专注于 PG 系数据库新技术、新特性的实践研究。荆州洪湖人，个人公众号"象楚之行"。
+      </p>
+    </div>
+
+    <h2 className="section-title">分享内容简介</h2>
+    <div className="content-text">
+      本次直播，IvorySQL 社区将带您深入拆解六大核心特性，全方位提升您的数据库能力：
+      <ul>
+        <li>异步 I/O 框架</li>
+        <li>跳跃式扫描</li>
+        <li>虚拟生成列</li>
+        <li>UUIDv7 增强</li>
+        <li>EXPLAIN 命令升级</li>
+        <li>OAuth 2.0 认证</li>
+      </ul>
+      这六大特性从底层 I/O 优化到上层开发体验，从查询性能到安全防护，全方位提升了 PostgreSQL 在现代应用中的竞争力。
+    </div>
+
+    <h2 className="section-title">Q&A</h2>
+    
+    <div className="tech-card">
+      <b>Q1：什么情况下不适合开启异步 IO？</b>
+      <div style={{ marginTop: '10px' }}>
+        <ul>
+          <li>没有精力自行压测计算适合自身生产环境需要的诸 AIO 相关 GUC 参数的时候不适合使用；</li>
+          <li>重写入场景（PG 18 AIO 不支持写入）不适合开启异步 IO；</li>
+          <li>老旧 Linux 内核不适合使用 io_uring 作为 AIO 底层实现。</li>
+        </ul>
+        <p>具体来说：Linux kerenl 版本&lt; 5.1 原版 PostgreSQL 18 不能使用 `io_methods=io_uring`，Linux kernel&lt;5.6 不建议使用 `io_method=io_uring`。</p>
+      </div>
+    </div>
+
+    <div className="tech-card">
+      <b>Q2：使用 OAUTH 认证的话，需要额外的资源消耗怎么评估？比如性能消耗和网络？</b>
+      <div style={{ marginTop: '10px' }}>
+        <p>由于 PostgreSQL 本身其实是与授权服务器是完全解耦的，所以资源消耗主要取决于授权服务器。</p>
+        <p>对于授权服务器而言，从性能消耗的角度去看涉及到的工作主要有令牌的生成、接收网络请求、授权服务的维护工作如日志采集和归档等，这些会消耗一定的 CPU、内存资源。令牌的存储以及令牌与数据库用户之间的 MAP 映射关系的存储会消耗服务器的存储资源。总的来说 CPU 和内存的资源消耗取决于授权频率，也就是 PostgreSQL 用户的登录频率，存储资源的消耗取决于 PostgreSQL 的用户数量。</p>
+        <p>从网络开销上来看，首先是前期令牌的获取上，PostgreSQL 18 需要向授权服务器进行多次 HTTP 请求，当网络延迟过高时，登录的时间就会受影响，同时用户也需要向授权服务器发送 HTTP 请求进行验证请求，所以还需要考虑到用户与授权服务器间的网络延迟。在令牌的验证过程中，外部验证器与 PostgreSQL 服务端在同一台服务器，二者之间是不会有网络通信的，但是如果采取的是在线验证令牌的方式，就需要考虑外部验证器也就是 PostgreSQL 部署的服务器与授权服务器之间的网络延迟。</p>
+        <p>从优化性能的角度考虑，授权服务器应尽量与 PostgreSQL 在同一局域网下，并且外部验证器可以考虑本地验证的方式去减少网络开销。</p>
+      </div>
+    </div>
+
+    <div className="tech-card">
+      <b>Q3：逻辑复制不支持虚拟列有什么好的解决方案吗？</b>
+      <div style={{ marginTop: '10px' }}>
+        <p>PostgreSQL 18 中带虚拟列的表是可以做逻辑复制，因为虚拟列的值是依赖于其它列，只要其它列做了逻辑复制，虚拟列在查询时通过计算就能获取该列的值。只是逻辑复制不能单独的指定虚拟列（因为虚拟列没做值存储），但是可以指定存储列。</p>
+      </div>
+    </div>
+
+    <div className="custom-quote">
+      <p style={{ fontWeight: 'bold' }}>
+        PPT 下载：关注公众号【IvorySQL开源数据库社区】，后台回复关键词 <code>20251016</code> 即可下载 PPT。
+        <br />
+        直播回放视频：https://www.bilibili.com/video/BV17rWkzZE8Q/
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/webinars/event-202513" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202513.png')} />
+        <div className="side-item-title">PostgreSQL 与 IvorySQL 在云原生时代的演进与实践</div>
+      </a>
+      <a href="/webinars/event-202512" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202512.png')} />
+        <div className="side-item-title">IvorySQL 文档共建计划第一期</div>
+      </a>
+      <a href="/webinars/event-202511" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202511.png')} />
+        <div className="side-item-title">IvorySQL & PostgreSQL 迁移实战经验征集</div>
+      </a>
+    </div>
+  </div>
+</div>

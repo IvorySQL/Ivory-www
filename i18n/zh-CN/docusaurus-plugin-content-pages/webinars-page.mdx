@@ -1,8 +1,434 @@
-:::info 敬请期待
+---
+title: 社区活动
+hide_table_of_contents: true
+---
 
-网络研讨会页面正在建设中。
+import { useState, useCallback, useMemo } from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::
+export const EventsData = [
+  {
+    title: "直播活动｜IvorySQL v5 兼容功能使用指南",
+    desc: "IvorySQL v5重磅发布！12月25日线上直播深度解析21项Oracle兼容新功能，助您无缝迁移与高效开发。",
+    startTime: "2025-12-25",
+    endTime: "2025-12-25",
+    location: "线上活动",
+    link: "/webinars/event-202517",
+    img: "/img/events/event-202517.jpg"
+  },
+  {
+    title: "活动回顾｜Oracle 到 PostgreSQL 迁移技术网络研讨会",
+    desc: "Oracle迁移迎全球解法！IvorySQL 5.0网络研讨会汇聚多国专家，深度揭秘如何以语法兼容与全局索引规划，实现迁移成本锐减与平滑过渡。",
+    startTime: "2025-12-13",
+    endTime: "2025-12-13",
+    location: "线上活动",
+    link: "/webinars/event-202516",
+    img: "/img/events/event-202516.png"
+  },
+  {
+    title: "第八届中国PostgreSQL数据库生态大会11/29杭州见！",
+    desc: "探索开源无界，共话无限可能！",
+    startTime: "2025-11-29",
+    endTime: "2025-11-29",
+    location: "线下活动",
+    link: "/webinars/event-202515",
+    img: "/img/events/event-202515.png"
+  },
+  {
+    title: "直播活动｜ PostgreSQL 18 六大新特性深度解析",
+    desc: "PostgreSQL 18六大革新特性深度揭秘！IvorySQL社区带你解锁异步I/O、虚拟生成列、OAuth 2.0认证等核心技术，赋能数据库性能飞跃。",
+    startTime: "2025-10-16",
+    endTime: "2025-10-16",
+    location: "线上活动",
+    link: "/webinars/event-202514",
+    img: "/img/events/event-202514.png"
+  },
+  {
+    title: "直播活动｜ PostgreSQL 与 IvorySQL 在云原生时代的演进与实践",
+    desc: "云原生时代如何破局？PostgreSQL与IvorySQL双剑合璧，揭秘K8s全栈支持与Oracle无缝兼容的演进实践！",
+    startTime: "2025-09-29",
+    endTime: "2025-09-29",
+    location: "线上活动",
+    link: "/webinars/event-202513",
+    img: "/img/events/event-202513.png"
+  },
+  {
+    title: "IvorySQL 文档共建计划第一期",
+    desc: "IvorySQL 文档共建计划第一期！提 PR，提 Issue，赢取 Beats 耳机、机械键盘、书籍等多重好礼！",
+    startTime: "2025-09-23",
+    endTime: "2026-12-23",
+    location: "线上活动",
+    link: "/webinars/event-202512",
+    img: "/img/events/event-202512.png"
+  },
+  {
+    title: "【征文启动】IvorySQL & PostgreSQL 迁移实战经验征集",
+    desc: "分享你的技术沉淀，赢取专属好礼！",
+    startTime: "2025-09-16",
+    endTime: "2026-02-28",
+    location: "线上活动",
+    link: "/webinars/event-202511",
+    img: "/img/events/event-202511.png"
+  },
+  {
+    title: "PostgreSQL 技术峰会哈尔滨站与您相约 8 月 30 日",
+    desc: "IvorySQL亮相PostgreSQL哈尔滨峰会，揭秘如何以开源社区力量打造Oracle兼容、云原生就绪的下一代企业级数据库。",
+    startTime: "2025-08-30",
+    endTime: "2025-08-30",
+    location: "线下活动",
+    link: "/webinars/event-202510",
+    img: "/img/events/event-202510.png"
+  },
+  {
+    title: "PostgreSQL 技术峰会深圳站与您相约",
+    desc: "PostgreSQL传奇人物Bruce Momjian亲临深圳Meetup，携手IvorySQL与行业领袖，共同回顾开源数据库20年辉煌历程，并展望AI时代下PostgreSQL与兼容生态的全新未来。",
+    startTime: "2025-07-18",
+    endTime: "2025-07-18",
+    location: "线下活动",
+    link: "/webinars/event-202509",
+    img: "/img/events/event-202509.png"
+  },
+  {
+    title: "开源链接世界｜IvorySQL 2025 生态大会暨 PostgreSQL 高峰论坛圆满落幕",
+    desc: "汇全球开源智慧，聚中国创新力量",
+    startTime: "2025-06-27",
+    endTime: "2025-06-28",
+    location: "线下活动",
+    link: "/webinars/event-202508",
+    img: "/img/events/event-202508.jpg"
+  },
+  {
+    title: "PostgreSQL 数据库技术峰会重庆站",
+    desc: "IvorySQL亮相PostgreSQL重庆峰会，以开源内核与Oracle无缝兼容特性，助力国产生态建设与数据库平滑迁移。",
+    startTime: "2025-06-07",
+    endTime: "2025-06-07",
+    location: "线下活动",
+    link: "/webinars/event-202507",
+    img: "/img/events/event-202507.png"
+  },
+  {
+    title: "技术无界·共创未来｜PG 全球开发者大会（PGConf.Dev）圆满落幕",
+    desc: "IvorySQL 4.4震撼登陆全球PGConf.dev舞台！",
+    startTime: "2025-05-13",
+    endTime: "2025-05-16",
+    location: "线下活动",
+    link: "/webinars/event-202506",
+    img: "/img/events/event-202506.png"
+  },
+  {
+    title: "开源之夏 2025",
+    desc: "为 IvorySQL 增加一键式安装脚本/为 IvorySQL 开发基于 uuid-ossp 的 sys_guid 函数 ",
+    startTime: "2025-05-09",
+    endTime: "2025-06-09",
+    location: "线上活动",
+    link: "/webinars/event-202505",
+    img: "/img/events/event-202505.png"
+  },
+  {
+    title: "直播活动｜从 Oracle 到 PostgreSQL：IvorySQL v4 如何让数据库迁移更丝滑",
+    desc: "告别迁移之痛！解锁从Oracle到PostgreSQL的平滑迁移密码，IvorySQL v4深度揭秘如何让数据库迁移“丝滑”无阻。",
+    startTime: "2025-04-24",
+    endTime: "2025-04-24",
+    location: "线上活动",
+    link: "/webinars/event-202504",
+    img: "/img/events/event-202504.png"
+  },
+  {
+    title: "IvorySQL 亮相 PostgreSQL 技术峰会（北京站）",
+    desc: "IvorySQL技术专家现场揭秘“双解析器”黑科技，深度解读Oracle无缝兼容创新实践.",
+    startTime: "2025-04-19",
+    endTime: "2025-04-19",
+    location: "线下活动",
+    link: "/webinars/event-202503",
+    img: "/img/events/event-202503.png"
+  },
+  {
+    title: "IvorySQL 用户案例有奖征集！",
+    desc: "现在就分享您的IvorySQL实战经验！参与案例征集，赢取机械键盘、专属证书，更有机会入选官网案例库，与全球开发者共创开源数据库的未来！",
+    startTime: "2025-02-26",
+    endTime: "2026-12-31",
+    location: "线上活动",
+    link: "/webinars/event-202502",
+    img: "/img/events/event-202502.png"
+  },
+  {
+    title: "IvorySQL 与您相聚第七届中国 PostgreSQL 数据库生态大会",
+    desc: "现场揭秘 IvorySQL 的 Oracle 兼容新篇章，更有集市区互动打卡赢好礼",
+    startTime: "2025-01-04",
+    endTime: "2025-01-04",
+    location: "线下活动",
+    link: "/webinars/event-202501",
+    img: "/img/events/event-202501.png"
+  }
+];
 
-![Coming Soon](/img/under_construction.svg)
+export const EventCard = ({ event }) => {
+  const { title, desc, startTime, endTime, location, link, img } = event;
+  const now = new Date();
+  const start = new Date(startTime);
+  const end = new Date(endTime);
+  
+  let status = { label: '已结束', class: 'status-ended' };
+  if (now < start) {
+    status = { label: '待开始', class: 'status-upcoming' };
+  } else if (now <= end) {
+    status = { label: '进行中', class: 'status-ongoing' };
+  }
 
+  return (
+    <a 
+      href={link} 
+      className="event-card"
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <div className="card-img-wrapper">
+        <img src={useBaseUrl(img)} alt={title} loading="lazy" />
+      </div>
+      <div className="card-content">
+        <div className="card-header">
+          <div className="card-title">{title}</div>
+          <span className={`status-tag ${status.class}`}>{status.label}</span>
+        </div>
+        <div className="card-desc">{desc}</div>
+        <div className="card-meta">
+          <div className="meta-item">📅 {startTime} 至 {endTime}</div>
+          <div className="meta-item">🌐 {location}</div>
+        </div>
+      </div>
+    </a>
+  );
+};
+
+export const WebinarList = () => {
+  const [filter, setFilter] = useState('all');
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageSize = 10;
+
+  const filteredData = useMemo(() => {
+    const now = new Date();
+    return EventsData.filter(event => {
+      const start = new Date(event.startTime);
+      const end = new Date(event.endTime);
+      if (filter === 'ongoing') return now >= start && now <= end;
+      if (filter === 'upcoming') return now < start;
+      return true;
+    });
+  }, [filter]);
+
+  const totalPages = Math.ceil(filteredData.length / pageSize);
+  const currentData = filteredData.slice((currentPage - 1) * pageSize, currentPage * pageSize);
+
+  const handleFilterChange = (newFilter) => {
+    setFilter(newFilter);
+    setCurrentPage(1);
+  };
+
+  const handlePageChange = useCallback((page) => {
+    setCurrentPage(page);
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 400, behavior: 'smooth' });
+    }
+  }, []);
+
+  return (
+    <div className="events-list-container">
+      <div className="filter-container">
+        <button 
+          className={`filter-btn ${filter === 'all' ? 'active' : ''}`}
+          onClick={() => handleFilterChange('all')}
+        >
+          全部活动
+        </button>
+        <button 
+          className={`filter-btn ${filter === 'ongoing' ? 'active' : ''}`}
+          onClick={() => handleFilterChange('ongoing')}
+        >
+          进行中
+        </button>
+        <button 
+          className={`filter-btn ${filter === 'upcoming' ? 'active' : ''}`}
+          onClick={() => handleFilterChange('upcoming')}
+        >
+          待开始
+        </button>
+      </div>
+
+      <div className="events-list">
+        {currentData.length > 0 ? (
+          currentData.map((item, index) => (
+            <EventCard key={`${filter}-${currentPage}-${index}`} event={item} />
+          ))
+        ) : (
+          <div className="no-data">暂无相关活动</div>
+        )}
+      </div>
+
+      {totalPages > 1 && (
+        <div className="pagination-container">
+          <button 
+            className="pager-btn" 
+            disabled={currentPage === 1} 
+            onClick={() => handlePageChange(currentPage - 1)}
+          >
+            上一页
+          </button>
+          <span className="pager-info">第 {currentPage} 页 / 共 {totalPages} 页</span>
+          <button 
+            className="pager-btn" 
+            disabled={currentPage === totalPages} 
+            onClick={() => handlePageChange(currentPage + 1)}
+          >
+            下一页
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+<style>{`
+  .filter-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+  }
+  .filter-btn {
+    padding: 8px 24px;
+    border-radius: 24px;
+    border: 1px solid #eee;
+    background: #fff;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .filter-btn:hover {
+    color: #7D52F4;
+    border-color: #7D52F4;
+  }
+  .filter-btn.active {
+    background: #7D52F4;
+    color: #fff;
+    border-color: #7D52F4;
+  }
+  .no-data {
+    text-align: center;
+    padding: 80px 20px;
+    color: #999;
+    background: #fcfcfc;
+    border: 1px dashed #eee;
+    border-radius: 12px;
+  }
+  .event-banner {
+    background-color: #7D52F4;
+    padding: 4rem 2rem;
+    color: white !important;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    min-height: 280px;
+    z-index: 1;
+  }
+  .banner-bg-img {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .banner-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to right, rgba(125, 82, 244, 0.95), rgba(125, 82, 244, 0.5));
+    z-index: 0;
+  }
+  .banner-text { 
+    position: relative;
+    z-index: 2; 
+    max-width: 800px; 
+    text-align: left;
+  }
+  .banner-text h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: bold; margin: 0; color: white !important; }
+  .banner-text p { font-size: clamp(1rem, 2vw, 1.25rem); opacity: 0.9; margin-top: 10px; color: white !important; line-height: 1.6; }
+  
+  .event-card { 
+    display: flex; 
+    border: 1px solid #f0f0f0; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    margin-bottom: 25px; 
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
+    background: #fff; 
+    text-decoration: none !important; 
+    color: inherit !important; 
+  }
+  .event-card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08); 
+  }
+  
+  .card-img-wrapper { 
+    width: 320px; 
+    flex-shrink: 0; 
+    aspect-ratio: 16 / 9; 
+    overflow: hidden;
+    background-color: #f5f5f5;
+  }
+  .card-img-wrapper img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  .event-card:hover .card-img-wrapper img {
+    transform: scale(1.05);
+  }
+  
+  .card-content { padding: 25px 30px; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; }
+  .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 10px; }
+  .card-title { font-size: 1.25rem; font-weight: bold; color: #333; flex: 1; line-height: 1.5; }
+  .status-tag { padding: 4px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; }
+  .status-upcoming { background: rgba(125, 82, 244, 0.1); color: #7D52F4; } 
+  .status-ongoing { background: rgba(255, 153, 0, 0.1); color: #FF9900; }  
+  .status-ended { background: #f0f0f0; color: #888; }     
+  .card-desc { color: #666; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .card-meta { color: #888; font-size: 0.85rem; border-top: 1px solid #f5f5f5; padding-top: 15px; }
+  .meta-item { display: flex; align-items: center; margin-bottom: 4px; gap: 8px; }
+  
+  .pagination-container { display: flex; justify-content: center; align-items: center; gap: 20px; margin: 60px 0; }
+  .pager-btn { padding: 10px 24px; border-radius: 30px; border: 1px solid #7D52F4; background: transparent; color: #7D52F4; cursor: pointer; transition: all 0.3s; font-weight: 600; font-size: 0.9rem; }
+  .pager-btn:hover:not(:disabled) { background: #7D52F4; color: white; }
+  .pager-btn:disabled { border-color: #eee; color: #ccc; cursor: not-allowed; }
+  .pager-info { color: #888; font-size: 0.9rem; }
+  
+  @media (max-width: 996px) {
+    .event-banner { padding: 3rem 1.5rem; min-height: 220px; }
+    .event-card { flex-direction: column; }
+    .card-img-wrapper { 
+      width: 100%; 
+      aspect-ratio: 16 / 9; 
+    }
+    .card-content { padding: 20px; }
+    .card-title { font-size: 1.1rem; }
+    .filter-container { overflow-x: auto; padding-bottom: 10px; }
+    .filter-btn { white-space: nowrap; }
+  }
+`}</style>
+
+<div className="event-banner">
+  <img className="banner-bg-img" src={useBaseUrl('/img/events/event-banner.png')} />
+  <div className="banner-overlay"></div>
+  <div className="banner-text">
+    <h1>社区活动</h1>
+    <p>IvorySQL 社区始终秉持开源开放的原则，致力于 PostgreSQL 和 IvorySQL 开源技术的布道，持续组织和参与国内外开源技术活动。</p>
+  </div>
+</div>
+
+<WebinarList />

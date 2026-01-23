@@ -1,0 +1,139 @@
+---
+title: Webinar Recap | Deep Dive into the Six Major New Features of PostgreSQL 18
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  
+  .tech-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .tech-card h4 { margin-top: 0; color: #333; border-bottom: 1px solid #f5f5f5; padding-bottom: 10px; margin-bottom: 15px; }
+  
+  .custom-quote { border-left: 5px solid #7D52F4; padding: 10px 25px; margin: 30px 0; background: transparent; }
+  .custom-quote p { margin-bottom: 15px; color: #555; line-height: 1.8; }
+  .custom-quote p:last-child { margin-bottom: 0; }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      Webinar Recap | Deep Dive into the Six Major New Features of PostgreSQL 18
+    </h1>
+    
+    <div style={{ display: 'flex', gap: '20px', color: '#666', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 Date: 2025-10-16</span>
+      <span>🌍 Online Webinar</span>
+    </div>
+
+    <div className="content-text">
+      On October 16, the IvorySQL community organized an online webinar themed: "Deep Dive into the Six Major New Features of PostgreSQL 18." Below is the recap of this session.
+    </div>
+
+    <h2 className="section-title">Speaker Profiles</h2>
+    <div className="content-text">
+      <ul>
+        <li>Shixin Wang, Database Software Engineer</li>
+        <li>Hu Zhang, Database Software Engineer</li>
+        <li>Zongliang Quan, Database Software Engineer</li>
+        <li>Ke Lan, Database Software Engineer</li>
+        <li>Yuefei Shi, Database Software Engineer</li>
+        <li>Xunqi Hu, Database Software Engineer</li>
+        <li>Shuntian Jiao, Database Software Engineer</li>
+      </ul>
+      <p style={{ marginTop: '15px' }}>
+        <b>Guest Moderator: Chong Peng</b>, PostgreSQL ACE, member of the PostgreSQL Chinese Community Committee, 2021 Enthusiastic Expert of Gauss Squirrel Society, openGauss Tianjin User Group Ambassador, external technical consultant for Yijing Technology, and member of the IvorySQL Expert Advisory Committee. Currently working at Enmotech, focusing on the practical research of new technologies and features in the PG series databases. Originally from Honghu, Jingzhou, he runs the personal WeChat account "Elephant Chu Journey."
+      </p>
+    </div>
+
+    <h2 className="section-title">Content Introduction</h2>
+    <div className="content-text">
+      In this webinar, the IvorySQL community dismantled six core features to comprehensively enhance your database capabilities:
+      <ul>
+        <li>Asynchronous I/O Framework</li>
+        <li>Skip Scan</li>
+        <li>Virtual Generated Columns</li>
+        <li>UUIDv7 Enhancements</li>
+        <li>EXPLAIN Command Upgrades</li>
+        <li>OAuth 2.0 Authentication</li>
+      </ul>
+      These six features range from low-level I/O optimization to high-level developer experience, and from query performance to security protection, comprehensively enhancing PostgreSQL's competitiveness in modern applications.
+    </div>
+
+    <h2 className="section-title">Q&A</h2>
+    
+    <div className="tech-card">
+      <b>Q1: Under what circumstances is it NOT suitable to enable Async I/O?</b>
+      <div style={{ marginTop: '10px' }}>
+        <ul>
+          <li>It is not suitable when there is no capacity to perform self-pressure tests to calculate various AIO-related GUC parameters required for one's own production environment;</li>
+          <li>It is not suitable for heavy write scenarios (PG 18 AIO does not yet support writes);</li>
+          <li>It is not suitable to use <code>io_uring</code> as the AIO underlying implementation on old Linux kernels.</li>
+        </ul>
+        <p>Specifically: For Linux kernel versions &lt; 5.1, the original PostgreSQL 18 cannot use <code>io_methods=io_uring</code>; for Linux kernels &lt; 5.6, it is not recommended to use <code>io_method=io_uring</code>.</p>
+      </div>
+    </div>
+
+    <div className="tech-card">
+      <b>Q2: If OAUTH authentication is used, how should the additional resource consumption be evaluated? For example, performance and network?</b>
+      <div style={{ marginTop: '10px' }}>
+        <p>Since PostgreSQL itself is completely decoupled from the authorization server, resource consumption primarily depends on the authorization server.</p>
+        <p>For the authorization server, performance consumption involves tasks like token generation, handling network requests, and maintenance work such as log collection and archiving, which consume CPU and memory resources. The storage of tokens and the MAP relationship between database users and tokens will consume server storage resources. Overall, CPU and memory consumption depend on the authorization frequency (the login frequency of PostgreSQL users), while storage consumption depends on the number of PostgreSQL users.</p>
+        <p>From a network overhead perspective, PostgreSQL 18 needs to make multiple HTTP requests to the authorization server for initial token acquisition. High network latency will affect login time. Additionally, users need to send HTTP requests to the authorization server for verification, so the network latency between the user and the authorization server must also be considered. During token verification, if an external validator and the PostgreSQL server are on the same machine, there is no network communication; however, if online token verification is used, the latency between the PostgreSQL server and the authorization server must be taken into account.</p>
+        <p>To optimize performance, the authorization server should be placed in the same local network as PostgreSQL as much as possible, and local verification can be considered for external validators to reduce network overhead.</p>
+      </div>
+    </div>
+
+    <div className="tech-card">
+      <b>Q3: Are there any good solutions for logical replication not supporting virtual columns?</b>
+      <div style={{ marginTop: '10px' }}>
+        <p>In PostgreSQL 18, tables with virtual columns can actually undergo logical replication. Because the value of a virtual column depends on other columns, as long as those other columns are replicated, the virtual column value can be calculated during a query. Logical replication simply cannot specify a virtual column individually (since virtual columns do not store values), but it can specify stored columns.</p>
+      </div>
+    </div>
+
+    <div className="custom-quote">
+      <p style={{ fontWeight: 'bold' }}>
+        PPT Download: Follow the official WeChat account [IvorySQL开源数据库社区] and reply with the keyword <code>20251016</code> to download the PPT.
+        <br />
+        Playback Video: https://www.bilibili.com/video/BV17rWkzZE8Q/
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">Recent Events</div>
+      <a href="/webinars/event-202512" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202512.png')} />
+        <div className="side-item-title">IvorySQL Documentation Co-construction Plan Phase I</div>
+      </a>
+      <a href="/webinars/event-202511" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202511.png')} />
+        <div className="side-item-title">IvorySQL & PostgreSQL Migration Practice Experience Collection</div>
+      </a>
+      <a href="/webinars/event-202510" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202510-1.jpg')} />
+        <div className="side-item-title">Recap of PostgreSQL Harbin Summit</div>
+      </a>
+    </div>
+  </div>
+</div>

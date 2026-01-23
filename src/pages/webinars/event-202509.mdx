@@ -1,0 +1,113 @@
+---
+title: Recap of Shenzhen Meetup | IvorySQL & PostgreSQL Technology Summit
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  
+  .tech-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .tech-card h4 { margin-top: 0; color: #333; border-bottom: 1px solid #f5f5f5; padding-bottom: 10px; margin-bottom: 15px; }
+  
+  .custom-quote { border-left: 5px solid #7D52F4; padding: 10px 25px; margin: 30px 0; background: transparent; }
+  .custom-quote p { margin-bottom: 0; color: #555; line-height: 1.8; font-style: italic; }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      Recap of Shenzhen Meetup
+    </h1>
+    
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', color: '#888', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 Date: 2025-07-18</span>
+      <span>📍 Location: Shenzhen</span>
+      <span>🌍 Offline Event</span>
+    </div>
+
+    <div className="content-text">
+      On July 18, 2025, the PostgreSQL Database Technology Summit Shenzhen, co-hosted by the PostgreSQL Branch of the China Open Source Software Promotion Alliance (PG Branch), the IvorySQL open-source database community, and the Intel GBA Tech Innovation Center, successfully concluded. This event aimed to strengthen ties and cooperation between domestic PGers and the PostgreSQL Global Development Group. Bruce Momjian, along with prominent domestic guests, reviewed the 20-year development history and operational mechanisms of PostgreSQL, while looking ahead to its future and discussing how to further promote open-source culture and PostgreSQL applications in China and globally.
+    </div>
+
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202509-1.jpg')} alt="Bruce Momjian Shenzhen Meetup Group Photo" />
+
+    <h2 className="section-title">Session Highlights</h2>
+
+    <div className="tech-card">
+      <h4>Review of PostgreSQL's 20-Year Journey</h4>
+      <div className="content-text">
+        Bruce Momjian, a core member of the PostgreSQL Global Development Group, VP at EDB, and International Advisory Board member of the China PostgreSQL Branch, reviewed the development history and mechanisms of PostgreSQL over the last 20 years. He shared insights into its future and discussed strategies for promoting open-source culture and PostgreSQL applications in China and worldwide.
+      </div>
+      <div className="content-text">
+        After Bruce Momjian's session, several attendees raised questions, which he answered individually. The atmosphere was highly energetic!
+      </div>
+      <div className="custom-quote">
+        <p>The moderator of this event, Xiao Shao-cong (Independent Technical Consultant and co-founder of the PostgreSQL Chinese Community), stated that Bruce Momjian's contributions and sharing within the PostgreSQL community—particularly his blogs and public session content on his personal website https://momjian.us/—have played a significant role in the development and construction of the domestic PostgreSQL community.</p>
+      </div>
+    </div>
+
+    <div className="tech-card">
+      <h4>New Requirements for PostgreSQL Observability in the AI Era</h4>
+      <div className="content-text">
+        PostgreSQL ACE Director and founder of the DBAIOPS community, Bai Shan, shared insights on the new requirements for PostgreSQL observability in the AI era, as well as the challenges and solutions facing database AIOPS.
+      </div>
+    </div>
+
+    <div className="tech-card">
+      <h4>IvorySQL Open Source Practice and Community Ecosystem</h4>
+      <div className="content-text">
+        Dr. Xinjie Lyu, Chairman of the IvorySQL Technical Committee, shared IvorySQL’s open-source practices and community ecosystem. He primarily introduced IvorySQL's compatibility system, community ecosystem building, and the operational model of the IvorySQL open-source community.
+         <img className="event-main-img" src={useBaseUrl('/img/events/event-202509-2.jpg')} alt="Session Photo" />
+      </div>
+    </div>
+    
+    <div className="tech-card">
+      <h4>The Open Source Journey of OpenTenBase</h4>
+      <div className="content-text">
+        Wang Hongbo, a database technology expert from Tencent Cloud, shared the open-source journey of OpenTenBase. He introduced its overall architecture, historical evolution, key technical capabilities, as well as its follow-up and technical exploration within the PG community.
+      </div>
+    </div>
+
+    <div className="custom-quote" style={{ borderLeftColor: '#333' }}>
+      <p style={{ fontWeight: 'bold', fontStyle: 'normal' }}>
+        Sincere thanks to the dozens of enthusiastic partners who braved the wind and rain to gather on Friday afternoon, jointly igniting a warm and active offline meetup! Your participation and brilliant discussions made this technical feast truly unforgettable!
+        <br /><br />
+        PPT Download: Follow the official WeChat account [IvorySQL开源数据库社区] and reply with the keyword 【20250718】 to obtain the PPT shared at this event.
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">Recent Events</div>
+      <a href="/webinars/event-202508" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202508-1.jpg')} />
+        <div className="side-item-title">Recap of HOW 2025</div>
+      </a>
+      <a href="/webinars/event-202506" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202506-1.jpg')} />
+        <div className="side-item-title">PGConf.dev 2025 Summary</div>
+      </a>
+    </div>
+  </div>
+</div>
