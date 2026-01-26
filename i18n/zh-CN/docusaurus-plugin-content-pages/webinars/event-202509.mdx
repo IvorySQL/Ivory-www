@@ -1,0 +1,117 @@
+---
+title: 深圳 meetup 回顾
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  
+  .tech-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .tech-card h4 { margin-top: 0; color: #333; border-bottom: 1px solid #f5f5f5; padding-bottom: 10px; margin-bottom: 15px; }
+  
+  .custom-quote { border-left: 5px solid #7D52F4; padding: 10px 25px; margin: 30px 0; background: transparent; }
+  .custom-quote p { margin-bottom: 0; color: #555; line-height: 1.8; font-style: italic; }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      深圳 meetup 回顾
+    </h1>
+    
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', color: '#888', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 活动日期：2025-07-18</span>
+      <span>📍 活动地点：深圳</span>
+      <span>🌍 线下活动</span>
+    </div>
+
+    <div className="content-text">
+      2025 年 7 月 18 日，由中国开源软件推进联盟 PostgreSQL 分会（简称：PG 分会）、IvorySQL 开源数据库社区、英特尔大湾区科技创新中心联合主办的 PostgreSQL 数据库技术峰会深圳站圆满落幕。本次活动旨在增强国内PGer与PostgreSQL全球开发组之间的联系与合作。Bruce Momjian将与国内重要嘉宾一起回顾过去20年间PostgreSQL的发展历程，运作机制，同时展望PostgreSQL的未来，探讨如何在中国乃至全球范围内进一步推广开源文化及PostgreSQL的应用。
+    </div>
+
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202509-1.jpg')} alt="Bruce Momjian 深圳 meetup 合照" />
+
+    <h2 className="section-title">分享内容回顾</h2>
+
+    <div className="tech-card">
+      <h4>PostgreSQL 20 年发展历程回顾</h4>
+      <div className="content-text">
+        PostgreSQL全球开发组核心组成员、EDB副总裁、中国PostgreSQL分会国际顾问委员会委员 Bruce Momjian 回顾了过去20年间PostgreSQL的发展历程，运作机制，同时展望了PostgreSQL的未来，探讨如何在中国乃至全球范围内进一步推广开源文化及PostgreSQL的应用。
+      </div>
+      <div className="content-text">
+        Bruce Momjian 分享结束后，有多位现场的小伙伴提出了问题，他都一一做了解答。现场气氛十分热烈！
+      </div>
+      <div className="custom-quote">
+        <p>本场活动的主持人萧少聪（独立技术顾问、PostgreSQL中文社区联合发起人）表示，Bruce Momjian在 PostgreSQL 社区的贡献和分享，尤其是他在个人网站 https://momjian.us/ 中撰写的博客、公开的活动分享内容等，对国内 PostgreSQL 社区的发展和建设都起到了很大的作用。</p>
+      </div>
+    </div>
+
+    <div className="tech-card">
+      <h4>AI时代对 PostgreSQL可观测性的新需求</h4>
+      <div className="content-text">
+        PostgreSQL ACE Director、DBAIOPS社区创始人白鳝，分享了 AI时代对 PostgreSQL可观测性的新需求，数据库AIOPS面临的挑战及解决之道。
+      </div>
+    </div>
+
+    <div className="tech-card">
+      <h4>IvorySQL开源实践与社区生态</h4>
+      <div className="content-text">
+        IvorySQL技术委员会主席吕新杰博士，分享了IvorySQL开源实践与社区生态，主要介绍了 IvorySQL 的兼容体系、IvorySQL 社区的生态建设以及 IvorySQL开源社区的运作模式等方向。
+         <img className="event-main-img" src={useBaseUrl('/img/events/event-202509-2.jpg')} alt="分享照片" />
+      </div>
+    </div>
+   
+    <div className="tech-card">
+      <h4>OpenTenBase开源之路</h4>
+      <div className="content-text">
+        腾讯云数据库技术专家王宏博分享了OpenTenBase的开源之路，主要介绍了OpenTenBase的整体架构与历史沿革、关键技术能力以及PG社区跟进及技术探索。
+      </div>
+    </div>
+
+    <div className="custom-quote" style={{ borderLeftColor: '#333' }}>
+      <p style={{ fontWeight: 'bold', fontStyle: 'normal' }}>
+        衷心感谢现场数十位热情的小伙伴，冒着风雨齐聚周五下午，共同点燃了一场气氛热烈、交流踊跃的线下 meetup！你们的参与和精彩讨论，让这场技术盛会更加难忘！
+        <br /><br />
+        PPT 下载： 关注公众号【IvorySQL开源数据库社区】，回复关键词【20250718】可获取本次活动分享的 PPT。
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/webinars/event-202508" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202508-1.jpg')} />
+        <div className="side-item-title">IvorySQL 2025 生态大会圆满落幕</div>
+      </a>
+      <a href="/webinars/event-202507" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202507-1.jpg')} />
+        <div className="side-item-title">PostgreSQL 数据库技术峰会重庆站回顾</div>
+      </a>
+      <a href="/webinars/event-202506" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202506-1.jpg')} />
+        <div className="side-item-title">PGConf.dev 2025 大会总结</div>
+      </a>
+    </div>
+  </div>
+</div>

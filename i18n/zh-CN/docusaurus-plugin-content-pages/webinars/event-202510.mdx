@@ -1,0 +1,192 @@
+---
+title: PostgreSQL 技术峰会哈尔滨站活动回顾｜深度参与 IvorySQL 开源社区建设的实践与思考
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  
+  .tech-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .tech-card h4 { margin-top: 0; color: #333; border-bottom: 1px solid #f5f5f5; padding-bottom: 10px; margin-bottom: 15px; }
+  
+  .custom-quote { border-left: 5px solid #7D52F4; padding: 10px 25px; margin: 30px 0; background: transparent; }
+  .custom-quote p { margin-bottom: 15px; color: #555; line-height: 1.8; }
+  .custom-quote p:last-child { margin-bottom: 0; }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      PostgreSQL 技术峰会哈尔滨站活动回顾｜深度参与 IvorySQL 开源社区建设的实践与思考
+    </h1>
+    
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', color: '#888', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 活动日期：2025-08-30</span>
+      <span>📍 活动地点：哈尔滨</span>
+      <span>🌍 线下活动</span>
+    </div>
+
+    <div className="content-text">
+      2025 年 8 月 30 日，PostgreSQL技术峰会哈尔滨站圆满结束。本次活动由中国开源软件推进联盟PostgreSQL分会（简称：PG分会）联合哈尔滨PG用户组共同举办，以“PostgreSQL与国产生态”为主题，结合当下开源、国产化趋势，邀请技术专家围绕数据库的应用案例、运维经验、技术要点、行业方向等进行分享，推动PostgreSQL在中国的发展。
+    </div>
+
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202510-1.jpg')} alt="哈尔滨站活动现场" />
+
+    <div className="content-text">
+      IvorySQL 受邀参与本次活动，由 IvorySQL 活跃贡献者、IvorySQL 专家顾问委员会成员严少安进行了专题分享《深度参与 IvorySQL 开源社区建设的实践与思考》。
+    </div>
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202510-2.jpg')} alt=" 严少安分享" />
+    <h2 className="section-title">议程回顾</h2>
+    
+    <div className="tech-card">
+      <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+        <thead>
+          <tr style={{ backgroundColor: '#f8f9fa' }}>
+            <th style={{ padding: '10px', border: '1px solid #eee' }}>时间</th>
+            <th style={{ padding: '10px', border: '1px solid #eee' }}>日程</th>
+            <th style={{ padding: '10px', border: '1px solid #eee' }}>嘉宾</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>13:30-14:00</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>签到入场</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}></td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>14:00-14:30</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>PostgreSQL数据库在专网通信领域的应用与实践</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>崔鹏，海能达数据库团队负责人、PostgreSQL ACE、PG分会哈尔滨用户组主席</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>14:30-15:00</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>PostgreSQL备份恢复方法及应用场景</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>杨宇，中国联通黑龙江省公司高级工程师</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>15:00-15:30</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>深度参与IvorySQL开源社区建设的实践与思考</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>严少安，PostgreSQL ACE，IvorySQL IEAC</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>15:30-15:40</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>茶歇及互动交流</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>全体参会人员</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>15:40-16:10</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>PGCM公开课：深入理解GUC--Internal & DIY</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>杨向博，PostgreSQL ACE、PG分会西安用户组主席</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>16:10-16:40</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>PG+SuperMap：构建多源异构时空数据融合治理与业务赋能体系</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>李英彤，超图软件高级技术经理</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>16:40-17:00</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>答疑互动，自由交流</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>全体参会人员</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 className="section-title">分享内容回顾</h2>
+
+    <div className="tech-card">
+      <h4>一、IvorySQL：基于 PostgreSQL 的开源兼容数据库</h4>
+      <div className="content-text">
+        1. <b>GitHub 地址</b>：https://github.com/IvorySQL/IvorySQL <br/>
+        2. <b>Gitee 地址</b>：https://gitee.com/IvorySQL/IvorySQL <br/>
+        3. <b>特点</b>：
+        <ul>
+          <li>兼容 Oracle，降低从 Oracle 迁移的成本</li>
+          <li>提供云原生数据库解决方案，通过 IvorySQL Operator 在 Kubernetes上实现自动化管理</li>
+        </ul>
+        4. <b>版本信息</b>：
+        <ul>
+          <li>当前版本：IvorySQL 4.5</li>
+          <li>新版本 IvorySQL 4.6 即将发布</li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="tech-card">
+      <h4>二、IvorySQL开源社区：适配性强，生态丰富且易上手</h4>
+      <div className="content-text">
+        1. <b>适配性强，生态丰富</b>：
+        <ul>
+          <li>更符合开发者代码管理习惯</li>
+          <li>Oracle 迁移代价更小</li>
+          <li>适配主流操作系统（Red Hat、Debian、Kylin、UOS、NSAR OS 等）</li>
+          <li>全平台介质包（x86、鲲鹏、海光、龙芯、兆芯、飞腾、申威、MIPS、RISC-V等）</li>
+        </ul>
+        2. <b>活动多样</b> <br/>
+        社区活动丰富多样，为技术交流与合作搭建良好平台。IvorySQL 2025生态大会暨PostgreSQL高峰论坛于2025年6月27-28日在中国济南举办，吸引开源与PG社区的采用者及国内外技术专家参与，围绕全球数据库技术发展趋势、开源创新与行业实践展开探讨，推动产学研用深度融合。 <br/>
+        3. <b>工具支持</b> <br/>
+        工具支持方面，Navicat为IvorySQL提供完善的管理开发方案。Navicat V17.3及更高版本支持IvorySQL V4及以上版本，具备URI连接、数据分析、数据查看器、表设计器、SQL编辑、数据导入/导出、备份/还原等功能。
+      </div>
+    </div>
+
+    <div className="tech-card">
+      <h4>三、参与方式与总结</h4>
+      <div className="content-text">
+        深度参与开源社区不仅是技术的输出，更是个人价值与行业生态的共同成长。欢迎更多开发者加入 IvorySQL 社区，通过以下方式参与：
+        <ul>
+          <li>提交 Issue：报告 Bug 或提出功能建议</li>
+          <li>贡献代码 (PR)：修复 Bug 或实现新功能</li>
+          <li>完善文档：翻译或改进技术文档</li>
+          <li>社区交流：在邮件列表、Slack 或微信群中解答疑问</li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="custom-quote">
+      <p style={{ fontWeight: 'bold' }}>
+        作为一款基于 PostgreSQL 并深度兼容 Oracle 的开源数据库系统，IvorySQL 始终怀抱开源热情，致力于开源社区建设。未来，期待更多技术爱好者加入进来，为 IvorySQL 社区发展壮大提供源源不断的动力！
+      </p>
+      <p style={{ marginTop: '15px', fontWeight: 'bold' }}>
+        PPT 下载： 关注公众号【IvorySQL开源数据库社区】，回复关键词【20250830】获取。
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/webinars/event-202509" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202509-1.jpg')} />
+        <div className="side-item-title">Bruce Momjian 深圳 meetup 回顾</div>
+      </a>
+      <a href="/webinars/event-202508" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202508-1.jpg')} />
+        <div className="side-item-title">IvorySQL 2025 生态大会圆满落幕</div>
+      </a>
+      <a href="/webinars/event-202507" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202507-1.jpg')} />
+        <div className="side-item-title">PostgreSQL 数据库技术峰会重庆站回顾</div>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,191 @@
+---
+title: IvorySQL文档共建计划第一期！提 PR，提 Issue，赢取 Beats 耳机、机械键盘、书籍等多重好礼！
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  
+  .custom-quote { border-left: 5px solid #7D52F4; padding: 10px 25px; margin: 30px 0; background: transparent; }
+  .custom-quote p { margin-bottom: 15px; color: #555; line-height: 1.8; }
+  .custom-quote p:last-child { margin-bottom: 0; }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      IvorySQL文档共建计划第一期！提 PR，提 Issue，赢取 Beats 耳机、机械键盘、书籍等多重好礼！
+    </h1>
+
+    <div style={{ display: 'flex', gap: '20px', color: '#666', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 活动时间：2025-09-23 至 2026-12-23</span>
+      <span>🌍 线上活动</span>
+    </div>
+
+    <div className="content-text">
+      文档是开源项目的重要组成部分。结构清晰、内容详细且准确、易于理解，这样的文档可以让用户更容易理解并上手使用开源项目，在使用的过程中，大部分问题也可以通过阅读理解文档来解决。在开源数据库的世界里，一份完整、准确的文档不仅是技术的指南针，更是社区成长的基石。
+    </div>
+
+    <div className="content-text">
+      作为一款基于 PostgreSQL 的开源数据库，IvorySQL 一直致力于提供更优质的用户体验。然而，随着功能的不断迭代和任务的增多，IvorySQL 文档还有待进一步完善。为了让文档更全面、更易用，同时激发社区活力，我们决定将文档更新任务开放给整个社区，并通过丰厚的奖励激励大家参与！
+    </div>
+
+    <div className="content-text">
+      IvorySQL 文档共建计划第一期现已正式开启！这一期活动为期 3 个月，重点聚焦新增文档内容。我们诚挚邀请您加入，一起优化文档结构、补充缺失目录，并通过实际贡献赢得奖励。未来，我们还将不定期开展后续期活动，让共建成为 IvorySQL 社区的常态。
+    </div>
+
+    <h2 className="section-title">活动时间</h2>
+    <div className="content-text">
+      <ul>
+        <li>活动开始时间：2025 年 9 月 23 日</li>
+        <li>活动结束时间：2026 年 12 月 23 日</li>
+      </ul>
+    </div>
+
+    <h2 className="section-title">活动任务</h2>
+    <div className="content-text">
+      1. 撰写新文档（包括中英文两版），提交 PR <br/>
+      2. 对现有文档结构提出建议，如需要新增哪些文档，文档目录调整等等（issue） <br/>
+      3. 对现有文档可进行验证和检查，如有错误可提交修改建议（issue）或直接修改（PR）
+    </div>
+
+    <h2 className="section-title">活动参与方式</h2>
+    <div className="content-text">
+      1. 方式一：提 PR 完成任务列表中的任务 （推荐）
+      <ul>
+        <li>在活动任务列表中，选择感兴趣的任务并点开该任务。</li>
+        <li>在任务的 issue 或者 pull request (PR) 上，通过在 comment 中添加 /assign 命令认领任务。</li>
+        <li>提交 PR 解决任务，在 PR 描述中提供 PR 相关的 issue 链接，在 PR comment 中通过添加 /label ivorysql-docs-build 命令标识 PR，并处理 PR 收到的评审建议。</li>
+      </ul>
+      2. 方式二：提 issue 指出文档问题，包含但不限于文档目录结构以及文档内容的准确性、完整性、清晰性等问题。 <br/>
+      3. 方式三：提 PR 解决任何文档问题。 <br/>
+      4. 方式四：为活动任务列表中的 issue 提供有价值的评论。
+    </div>
+
+    <div className="custom-quote">
+      <p>我们优化后的文档结构如下（未更新到官网文档）：https://www.kdocs.cn/l/cg7tqtbtTXYB</p>
+      <p style={{ marginTop: '10px' }}>注：此活动相关的 PR，请提交到<a href="https://github.com/IvorySQL/ivorysql_docs/tree/master/CN/modules/ROOT/pages/master" target="_blank">master</a>分支下。</p>
+    </div>
+
+    <h2 className="section-title">活动奖励</h2>
+    <div className="content-text">
+      凡是参与了本次活动，提交的意见被采纳，提交的 PR 被合并，即视为做出了贡献，即可获得 IvorySQL 贡献者证书。
+    </div>
+    <div className="content-text">
+      此外还有好礼相送。
+    </div>
+    <div className="content-text">
+      参与奖：凡是提交 issue，对文档结构或文档内容提出任何建议并最终被采纳的，可获得参与奖——IvorySQL 社区周边礼包：IvorySQL T 恤、IvorySQL 帆布袋、IvorySQL 冰箱贴、IvorySQL 眼罩等。
+    </div>
+    <div className="content-text">
+      另外，按照最终积分，设置以下奖励：
+      <ul>
+        <li>一等奖，奖品：beats 头戴式蓝牙耳机</li>
+        <li>二等奖，奖品：定制机械键盘</li>
+        <li>三等奖，奖品：3C 认证充电宝+一拖三数据线</li>
+      </ul>
+      另外，所有参与者还可获得书籍一本。
+    </div>
+
+    <div className="tech-card">
+      <h4>积分规则如下：</h4>
+      <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+        <thead>
+          <tr style={{ backgroundColor: '#f8f9fa' }}>
+            <th style={{ padding: '10px', border: '1px solid #eee' }}>贡献方式</th>
+            <th style={{ padding: '10px', border: '1px solid #eee' }}>积分</th>
+            <th style={{ padding: '10px', border: '1px solid #eee' }}>备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>领取任务</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>1</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>每领取一个任务，获得 1 分</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>提交任务 PR</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>5</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>每提交一个任务 PR，获得 5 分</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>任务 PR 被合并</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>10</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>每一个任务 PR 被合并，获得 10 分</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>提交 issue</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>2</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>每提交一个 issue，获得 2 分</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>issue 被采纳</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>4</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>每一个 issue 被采纳，获得 4 分</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style={{ marginTop: '10px', fontSize: '0.9rem', color: '#888' }}>注：以上仅针对于本次活动中说明的对应方式，以上 PR 和 issue 提交都应在文档仓库下。</p>
+    </div>
+
+    <h2 className="section-title">FAQ</h2>
+    <div className="content-text">
+      <b>1. 参与本活动需要什么条件？</b> <br/>
+      需要有 GitHub 账号，在提交 PR 前阅读 <a href="https://docs.ivorysql.org/cn/ivorysql-doc/master/8.1" target="_blank">IvorySQL 贡献流程指南</a>，并签署贡献者许可协议（CLA）。为了大家更流畅的撰写文档，请阅读<a href="https://docs.ivorysql.org/cn/ivorysql-doc/master/8.2" target="_blank">文档语法参考</a>。
+    </div>
+    <div className="content-text">
+      <b>2. IvorySQL 项目的 GitHub 仓库和文档仓库地址是什么？</b> <br/>
+      <ul>
+        <li>IvorySQL：https://github.com/IvorySQL/IvorySQL</li>
+        <li>IvorySQL 文档：https://github.com/IvorySQL/ivorysql_docs</li>
+      </ul>
+    </div>
+    <div className="content-text">
+      <b>3. 提交的 issue 和 PR 一定会被采纳吗？</b> <br/>
+      贡献者提交 issue 后，我们会进行审核，如符合需求，会被采纳。 <br/>
+      贡献者提交 PR 后，同样会进行审核，并反馈修改建议，因此一个新的文档可能会进行多次修改，直到符合合并条件。
+    </div>
+    <div className="content-text">
+      <b>4. 参与活动期间，有问题如何获得帮助？</b> <br/>
+      您可以加入本次活动的专属交流微信群，在群内进行交流。进群方式：添加微信小助理 IvorySQL_official，备注参加文档活动第一期。
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/webinars/event-202511" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202511.png')} />
+        <div className="side-item-title">IvorySQL & PostgreSQL 迁移实战经验征集</div>
+      </a>
+      <a href="/webinars/event-202510" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202510-1.jpg')} />
+        <div className="side-item-title">PostgreSQL 哈尔滨站回顾</div>
+      </a>
+      <a href="/webinars/event-202509" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202509-1.jpg')} />
+        <div className="side-item-title">Bruce Momjian 深圳 meetup 回顾</div>
+      </a>
+    </div>
+  </div>
+</div>

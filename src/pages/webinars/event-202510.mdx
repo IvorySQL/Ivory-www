@@ -1,0 +1,194 @@
+---
+title: Recap of PostgreSQL Technology Summit (Harbin) | Practices and Reflections on Deep Participation in IvorySQL Community Construction
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  
+  .tech-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .tech-card h4 { margin-top: 0; color: #333; border-bottom: 1px solid #f5f5f5; padding-bottom: 10px; margin-bottom: 15px; }
+  
+  .custom-quote { border-left: 5px solid #7D52F4; padding: 10px 25px; margin: 30px 0; background: transparent; }
+  .custom-quote p { margin-bottom: 15px; color: #555; line-height: 1.8; }
+  .custom-quote p:last-child { margin-bottom: 0; }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      Recap of PostgreSQL Technology Summit (Harbin) | Practices and Reflections on Deep Participation in IvorySQL Community Construction
+    </h1>
+    
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', color: '#888', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 Date: 2025-08-30</span>
+      <span>📍 Location: Harbin</span>
+      <span>🌍 Offline Event</span>
+    </div>
+
+    <div className="content-text">
+      On August 30, 2025, the PostgreSQL Technology Summit (Harbin) successfully concluded. This event was jointly organized by the PostgreSQL Branch of the China Open Source Software Promotion Alliance (PG Branch) and the Harbin PG User Group. Themed "PostgreSQL and the Domestic Ecosystem," it combined current open-source and localization trends, inviting technical experts to share insights on database application cases, O&M experience, technical key points, and industry directions to promote the development of PostgreSQL in China.
+    </div>
+
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202510-1.jpg')} alt="Harbin Summit On-site" />
+
+    <div className="content-text">
+      IvorySQL was invited to participate in this event. Shaoan Yan, an active contributor to IvorySQL and a member of the IvorySQL Expert Advisory Committee, delivered a specialized session titled "Practices and Reflections on Deep Participation in IvorySQL Community Construction."
+    </div>
+    
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202510-2.jpg')} alt="Shaoan Yan's Sharing" />
+
+    <h2 className="section-title">Agenda Recap</h2>
+    
+    <div className="tech-card">
+      <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+        <thead>
+          <tr style={{ backgroundColor: '#f8f9fa' }}>
+            <th style={{ padding: '10px', border: '1px solid #eee' }}>Time</th>
+            <th style={{ padding: '10px', border: '1px solid #eee' }}>Agenda</th>
+            <th style={{ padding: '10px', border: '1px solid #eee' }}>Guest</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>13:30-14:00</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>Check-in & Entry</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}></td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>14:00-14:30</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>Application and Practice of PostgreSQL Database in Private Network Communication</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>Peng Cui, Database Team Leader at Hytera, PostgreSQL ACE, Chairman of PG Branch Harbin User Group</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>14:30-15:00</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>PostgreSQL Backup & Recovery Methods and Application Scenarios</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>Yu Yang, Senior Engineer at China Unicom Heilongjiang Branch</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>15:00-15:30</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>Practices and Reflections on Deep Participation in IvorySQL Community Construction</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>Shaoan Yan, PostgreSQL ACE, IvorySQL IEAC</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>15:30-15:40</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>Tea Break & Interactive Networking</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>All Attendees</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>15:40-16:10</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>PGCM Open Class: In-depth Understanding of GUC--Internal & DIY</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>Xiangbo Yang, PostgreSQL ACE, Chairman of PG Branch Xi'an User Group</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>16:10-16:40</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>PG+SuperMap: Building a Multi-source Heterogeneous Spatiotemporal Data Fusion Governance and Business Empowerment System</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>Yingtong Li, Senior Technical Manager at SuperMap</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>16:40-17:00</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>Q&A, Free Discussion</td>
+            <td style={{ padding: '10px', border: '1px solid #eee' }}>All Attendees</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 className="section-title">Sharing Content Recap</h2>
+
+    <div className="tech-card">
+      <h4>I. IvorySQL: An Open-source Compatible Database Based on PostgreSQL</h4>
+      <div className="content-text">
+        1. <b>GitHub Address</b>: https://github.com/IvorySQL/IvorySQL <br/>
+        2. <b>Gitee Address</b>: https://gitee.com/IvorySQL/IvorySQL <br/>
+        3. <b>Features</b>:
+        <ul>
+          <li>Oracle compatibility, reducing the cost of migration from Oracle</li>
+          <li>Cloud-native database solution, achieving automated management via IvorySQL Operator on Kubernetes</li>
+        </ul>
+        4. <b>Version Information</b>:
+        <ul>
+          <li>Current Version: IvorySQL 4.5</li>
+          <li>New Version: IvorySQL 4.6 to be released soon</li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="tech-card">
+      <h4>II. IvorySQL Community: Highly Compatible, Rich Ecosystem, and Easy to Start</h4>
+      <div className="content-text">
+        1. <b>Strong Compatibility and Rich Ecosystem</b>:
+        <ul>
+          <li>Better aligned with developer code management habits</li>
+          <li>Lower cost for Oracle migration</li>
+          <li>Adapted to mainstream operating systems (Red Hat, Debian, Kylin, UOS, NSAR OS, etc.)</li>
+          <li>Full-platform distribution packages (x86, Kunpeng, Haiguang, Loongson, Zhaoxin, Feiteng, Shenwei, MIPS, RISC-V, etc.)</li>
+        </ul>
+        2. <b>Diverse Activities</b> <br/>
+        The community offers rich and diverse activities, building a platform for technical exchange and cooperation. The IvorySQL 2025 Eco-Conference & PostgreSQL Summit was held in Jinan, China, on June 27-28, 2025, attracting open-source and PG community adopters along with domestic and international technical experts to discuss global database technology trends, open-source innovation, and industry practices, promoting deep fusion of industry, academia, and research. <br/>
+        3. <b>Tool Support</b> <br/>
+        In terms of tool support, Navicat provides a comprehensive management and development solution for IvorySQL. Navicat V17.3 and later versions support IvorySQL V4 and above, featuring URI connection, data analysis, data viewer, table designer, SQL editing, data import/export, backup/restore, and more.
+      </div>
+    </div>
+
+    <div className="tech-card">
+      <h4>III. Participation and Summary</h4>
+      <div className="content-text">
+        Deep participation in the open-source community is not only a technical output but also the mutual growth of individual value and the industrial ecosystem. We welcome more developers to join the IvorySQL community through the following ways:
+        <ul>
+          <li>Submit Issues: Report bugs or suggest features</li>
+          <li>Contribute Code (PR): Fix bugs or implement new features</li>
+          <li>Improve Documentation: Translate or enhance technical documents</li>
+          <li>Community Communication: Answer questions in mailing lists, Slack, or WeChat groups</li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="custom-quote">
+      <p style={{ fontWeight: 'bold' }}>
+        As an open-source database system based on PostgreSQL and deeply compatible with Oracle, IvorySQL always embraces open-source passion and remains committed to open-source community building. In the future, we look forward to more technical enthusiasts joining us to provide continuous momentum for the growth of the IvorySQL community!
+      </p>
+      <p style={{ marginTop: '15px', fontWeight: 'bold' }}>
+        PPT Download: Follow our WeChat Account [IvorySQL开源数据库社区] and reply with the keyword 【20250830】 to obtain the files.
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">Recent Events</div>
+      <a href="/webinars/event-202509" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202509-1.jpg')} />
+        <div className="side-item-title">Recap of Bruce Momjian Shenzhen Meetup</div>
+      </a>
+      <a href="/webinars/event-202508" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202508-1.jpg')} />
+        <div className="side-item-title">Recap of IvorySQL 2025 Eco-Conference</div>
+      </a>
+      <a href="/webinars/event-202507" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202507-1.jpg')} />
+        <div className="side-item-title">Recap of PostgreSQL Technology Summit Chongqing</div>
+      </a>
+    </div>
+  </div>
+</div>

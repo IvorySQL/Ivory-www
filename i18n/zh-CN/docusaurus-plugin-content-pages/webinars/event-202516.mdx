@@ -1,0 +1,117 @@
+---
+title: 活动回顾｜Oracle 到 PostgreSQL 迁移技术网络研讨会
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  
+  .tech-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .tech-card h4 { margin-top: 0; color: #333; border-bottom: 1px solid #f5f5f5; padding-bottom: 10px; margin-bottom: 15px; }
+  
+  .custom-quote { border-left: 5px solid #7D52F4; padding: 10px 25px; margin: 30px 0; background: transparent; }
+  .custom-quote h3 { color: #333; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 15px; }
+  .custom-quote p { margin-bottom: 15px; color: #555; line-height: 1.8; }
+  .custom-quote p:last-child { margin-bottom: 0; }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      活动回顾｜Oracle 到 PostgreSQL 迁移技术网络研讨会
+    </h1>
+    
+    <div style={{ display: 'flex', gap: '20px', color: '#666', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 活动时间：2025-12-13</span>
+      <span>🌍 线上直播</span>
+    </div>
+
+    <div className="content-text">
+      北京时间 2025 年 12 月 13 日 15:00-16:00，由 IvorySQL 社区主办的 Oracle 到 PostgreSQL 迁移技术网络研讨会圆满落幕。
+    </div>
+
+    <div className="content-text">
+      本次研讨会聚焦 Oracle 迁移至 PostgreSQL 全流程的核心挑战与解决方案，重点凸显 IvorySQL 5.0 在迁移过程中的赋能价值。活动由 Grant 与 Cary 联合主持，邀请到 Hope、Oreo、Cédric、Matthew、Alvaro 等多位技术专家担任分享嘉宾，围绕迁移技术痛点、核心功能适配及配套辅助工具展开深度探讨，详细解读了 IvorySQL 在兼容 Oracle 语法、降低代码重写成本方面的核心优势。会议期间还同步了 IvorySQL 发展路线图，包括全局索引（Global Index）等规划功能的推进计划，并探讨了向 PostgreSQL 社区回馈兼容性功能的可行性。活动全程鼓励参会者参与互动问答，答对者可赢取专属礼品，同时引导大家通过访问 IvorySQL GitHub 代码库、加入社区官方频道等方式深度参与项目共建。
+    </div>
+
+    <h2 className="section-title">分享内容</h2>
+
+    <div className="tech-card">
+      <h4>IvorySQL 概况</h4>
+      <p className="content-text">IvorySQL 开发团队的 Hope 与 Oreo 共同介绍了项目核心概况。该项目启动于 2021 年 12 月，始终保持与 PostgreSQL 新版本的同步适配节奏。分享中重点解读了其三大核心特性：AI 子系统、Oracle 语义兼容性及云原生部署能力。目前 IvorySQL 已发布最新稳定版本（IvorySQL 5.0），团队计划在一个月内推出 5.1 版本。演讲末尾，嘉宾还展示了项目新增的扩展功能与编码特性，并预告将邀请 Data Bene 公司的 Cédric 参与后续深度研讨。</p>
+    </div>
+
+    <div className="tech-card">
+      <h4>Oracle 到 PostgreSQL 迁移洞察</h4>
+      <p className="content-text">Data Bene 创始人兼首席执行官 Cédric 结合欧洲市场实践，分享了 Oracle 迁移至 PostgreSQL 的核心挑战。他强调，大型长期运行的 Oracle 数据库迁移至 PostgreSQL 过程中，保障业务连续性是核心难点，因此亟需高效可靠的迁移工具支撑。Data Bene 采用的全流程解决方案，可实现跨不同数据库引擎的数据精准导出与导入，为企业平滑完成迁移提供关键支撑。随后，Cary 与 Grant 进一步探讨了迁移过程中“降低代码重写成本”的核心价值，强调这是提升迁移效率、控制项目风险的关键环节。</p>
+    </div>
+
+    <div className="tech-card">
+      <h4>Oracle 到 PostgreSQL 迁移全景</h4>
+      <p className="content-text">Matthew 全面拆解了 Oracle 到 PostgreSQL 的迁移全流程，重点阐述 IvorySQL 5.0 针对迁移痛点的解决方案。通过现场演示，他直观展示了 IvorySQL 的 PL/SQL 引擎、隐藏列、大小写转换模型等核心功能如何精准解决迁移中的常见问题。Cary 在此环节强调了 IvorySQL 开发的社区驱动属性，鼓励参会者参与功能优先级投票，助力项目迭代方向贴合实际需求。演讲末尾设置了互动问答环节，答对问题的参会者可获得专属奖品。</p>
+    </div>
+
+    <div className="tech-card">
+      <h4>SQL 功能路线图分享</h4>
+      <p className="content-text">Cary 详细分享了 IvorySQL 未来一年的 SQL 功能规划路线图，涵盖全局索引、触发器、嵌套表、自治事务、同义词等核心功能。他指出，多项规划功能与当前社区 SQL 类别改进投票结果高度契合，充分体现了项目迭代对社区需求的响应。Cary 着重强调社区反馈的重要性，鼓励有个性化功能需求的用户通过 GitHub 提交需求提案。Grant 同步确认，后续将向所有参会者同步完整路线图及投票结果。</p>
+    </div>
+
+    <div className="tech-card">
+      <h4>IoT 与包支持讨论</h4>
+      <p className="content-text">会议团队围绕 IoT 场景适配与包支持功能展开专项讨论。其中，包支持功能以 33% 的支持率成为参会者最关注的需求点。Cary 提及，Alvaro 针对工具选型部分做了评论，并指出需关注 Pgpool-II 的性能损耗与安全风险，建议适配和结合 PgBouncer 和 Patroni 的解决方案；同时，Alvaro 表示有意向推动 IvorySQL 部分核心功能贡献至标准 PostgreSQL 生态。</p>
+    </div>
+
+    <div className="tech-card">
+      <h4>PostgreSQL 功能贡献讨论</h4>
+      <p className="content-text">本次研讨会重点探讨了“跨兼容项目向 PostgreSQL 社区贡献功能”的可行性。Alvaro 提出核心原则：功能贡献需优先兼顾 PostgreSQL 社区的整体利益；Grant 补充说明，计划将全局索引（Global Index）等适配性较强的功能回馈至社区，但受限于两款数据库的架构差异，部分 Oracle 兼容功能可能不适合直接迁移。Cary 进一步解读了向 PostgreSQL 提交补丁的复杂性与周期特性，并以实例说明：曾有相关功能补丁历经超过一年时间才完成社区审核与接纳。</p>
+    </div>
+
+    <div className="content-text">
+      研讨会最后以互动问答环节收尾。Grant 代表主办方感谢所有参会者的支持，特别向跨时区凌晨参与活动的海外观众表达谢意，并正式宣布下一届 PostgreSQL 专题会议定于 2026 年 4 月 27 日至 28 日举办。同时，再次引导参会者通过 GitHub 代码库、社区官方频道等渠道深度参与项目共建。
+    </div>
+
+    <h2 className="section-title">总结</h2>
+
+    <div>
+      <p>本次网络研讨会得到全球开发者的积极响应，共吸引 32 人报名注册，实际参会 27 人，参会者覆盖加拿大、美国、法国、西班牙、印度、中国、德国等多个国家和地区，实现了跨地域技术经验的高效交流。</p>
+      <p>IvorySQL 衷心感谢所有参会人员的积极参与和热情互动，也感谢各位分享嘉宾带来的专业洞察与经验分享。未来，IvorySQL 社区将持续聚焦 Oracle 到 PostgreSQL 迁移领域的技术创新与生态建设，通过更多高质量的技术交流活动搭建行业沟通桥梁，助力更多企业突破数据库迁移瓶颈、实现平滑转型，与全球社区成员共同推动开源数据库生态的繁荣发展。</p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/webinars/event-202515" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202515.png')} />
+        <div className="side-item-title">第八届中国PostgreSQL数据库生态大会圆满收官</div>
+      </a>
+      <a href="/webinars/event-202514" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202514.png')} />
+        <div className="side-item-title">直播回顾｜PostgreSQL 18 六大新特性深度解析</div>
+      </a>
+      <a href="/webinars/event-202513" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202513.png')} />
+        <div className="side-item-title">PostgreSQL 与 IvorySQL 在云原生时代的演进与实践</div>
+      </a>
+    </div>
+  </div>
+</div>

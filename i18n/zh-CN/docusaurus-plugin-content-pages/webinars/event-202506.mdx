@@ -1,0 +1,124 @@
+---
+title: PGConf.dev 2025 大会总结｜开发者盛会亮点回顾
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  .highlight-box { background: #F9F7FF; padding: 25px; border-radius: 8px; margin: 25px 0; border-left: 4px solid #7D52F4; }
+  .tech-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .tech-card h4 { margin-top: 0; color: #333; border-bottom: 1px solid #f5f5f5; padding-bottom: 10px; margin-bottom: 15px; }
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      PGConf.dev 2025 大会总结｜技术突破与 PostgreSQL 未来展望
+    </h1>
+    
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', color: '#888', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 活动日期：2025-05-13 至 2025-05-16</span>
+      <span>📍 活动地点：加拿大蒙特利尔</span>
+      <span>🌍 线下活动</span>
+    </div>
+
+    <div className="content-text">
+      2025 年 5 月 16 日，PGConf.dev 2025 大会在加拿大蒙特利尔圆满落幕。这一年度盛会再次成为 PostgreSQL 开发者、用户和社区组织者的核心聚集地，专注于探讨数据库的未来发展、分享前沿功能并促进社区协作。由 Slonik Events Canada 组织的本次大会，为与会者提供了一个共同推动世界上最先进开源数据库发展的独特平台。
+    </div>
+
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202506-1.jpg')} alt="PGConf.dev 2025 现场" />
+
+    <h2 className="section-title">Day 0：开发者与扩展生态峰会</h2>
+    <div className="content-text">
+      5 月 13 日为非正式会议，参会人员大都为社区主要参与者和开发者。
+    </div>
+    <div className="tech-card">
+      <h4>开发者会议 (Developer Meeting)</h4>
+      * **参与者**：主要为社区内核代码贡献者。
+      * **目标**：解决无法通过电子邮件轻松解决的技术或程序问题，就方案达成共识，制定未来开发年度的技术优先事项。
+      * **流程**：前三分之二按选定主题分组（如“棘手问题”、政策建议），最后三分之一向全体汇报并形成决议或明年行动方案。
+    </div>
+    <div className="tech-card">
+      <h4>扩展生态峰会 (Extension Ecosystem Summit)</h4>
+      * **宗旨**：推进 PostgreSQL 扩展的开发与发行工作。
+      * **形式**：开放式工作组，针对包管理、开发工具、API 稳定性等 13 个核心主题进行研究实践。
+      * **意义**：通过扩展生态的标准化，使 PostgreSQL 从“通用数据库”进化为“数据库领域的超级平台”。
+    </div>
+    <div className="content-text">
+      下午还举行了 **Postgres Community Summit 社区峰会**，探讨如何降低参与门槛及改进社区举措。瀚高作为赞助商，在签到桌准备了钥匙扣、贴纸等小礼物，并与现场 PG 核心贡献者深度交流。
+    </div>
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202506-2.png')} alt="PGConf.dev 2025 现场" />
+
+    <h2 className="section-title">Day 1：核心技术演讲</h2>
+    <div className="content-text">
+      5 月 14 日是大会正式开始的第一天，由核心委员会成员 Jonathan Katz 和 Melanie Plageman 主持开幕。
+    </div>
+    <div className="tech-card">
+      <h4>重点演讲回顾</h4>
+      * **David DeWitt** (主题演讲)：《From RAP to Snowflake - A Look at 50 Years of SQL DB Scalability》。
+      * **Thomas Munro**：多线程 PostgreSQL 研究。
+      * **Peter Eisentraut**：C 和 POSIX 的新功能分享。
+      * **NTT Data Yuya**：重温 XTMl 的实际案例研究。
+      * **Sam Willis**：使用 PGlite 将 Postgres 编译为 WASM。
+      * **Robert Hass**：提交者审查的练习。
+      * **张博涵 (OpenAI)**：分享 OpenAI 将 Postgres 扩展到新水平的最佳实践。
+      * **Cédric Villemain (Data Bene)**：PostgreSQL 容器组 (cgroups)。
+      * **Alvaro Hernandez (OnGres)**：可重复的 Postgres。
+    </div>
+
+    <h2 className="section-title">Day 2：技术演进与闪电演讲</h2>
+    <div className="tech-card">
+      <h4>前沿议题回顾</h4>
+      * **Andres Freund (Microsoft)**：详解 AIO (异步 I/O) 的演进。AIO 是 PG 18 刚引入的重点功能，旨在优化高并发场景下的磁盘交互效率。
+      * **Jonathan Katz (AWS)**：分享 Pg Vector Search 的最新进展。
+      * **Melanie Plageman (Microsoft)**：分享在 PostgreSQL 中实现自适应行为的尝试经验，涉及摘要数据结构与概率模型。
+    </div>
+    <div className="content-text">
+      下午的闪电演讲中，瀚高分享了即将由 IvorySQL 社区等联合主办、瀚高承办的 **HOW 2025 生态大会** 的相关情况。
+    </div>
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202506-3.jpg')} alt="PGConf.dev 2025 现场" />
+    <h2 className="section-title">Day 3：非正式讨论与总结</h2>
+    <div className="content-text">
+      5 月 16 日上午的 UNCONFERENCE 环节，现场通过投票选出 12 个话题进行分组讨论，涵盖多线程、多执行器、全局索引等核心议题。
+    </div>
+    <div className="content-text">
+      下午闭幕式上，组织方宣布了 **2026 年 PGConf.dev 将再次在温哥华举行**，瀚高作为东道主将加入到会议的组织协调工作中。
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/webinars/event-202505" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202505.png')} />
+        <div className="side-item-title">开源之夏 2025 结项圆满收官</div>
+      </a>
+      <a href="/webinars/event-202504" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202504.png')} />
+        <div className="side-item-title">从Oracle 到 PostgreSQL：迁移更丝滑</div>
+      </a>
+      <a href="/webinars/event-202503" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202503.png')} />
+        <div className="side-item-title">PostgreSQL数据库技术峰会北京站</div>
+      </a>
+    </div>
+  </div>
+</div>
