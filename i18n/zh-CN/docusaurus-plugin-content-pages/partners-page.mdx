@@ -16,46 +16,57 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   .custom-banner {
     background-color: #7D52F4;
     position: relative;
-    padding: 60px 20px;
+    padding: 80px 20px;
     color: white !important;
     text-align: left;
     border-radius: 10px;
     overflow: hidden;
     z-index: 1;
   }
-  .banner-bg {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.8;
-  }
-  .banner-overlay {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(to right, rgba(125, 82, 244, 0.95), rgba(125, 82, 244, 0.4));
-    z-index: -1;
-  }
+  .banner-content { max-width: 1200px; margin: 0 auto; position: relative; }
+  .banner-title { font-size: 3rem; font-weight: bold; color: white !important; margin: 0 0 15px 0; }
   
-  .custom-footer {
-    text-align: center;
-    padding: 120px 20px; 
-    margin-top: 50px;
-    position: relative;
-    overflow: hidden;
-    background-color: transparent;
-  }
-  .footer-bg {
-    position: absolute;
-    bottom: 0; left: 50%; 
-    transform: translateX(-50%);
-    width: 100%; 
-    max-height: 100%;
-    z-index: -1;
-    object-fit: contain;
-    pointer-events: none;
+  .banner-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: 0.8; }
+  .banner-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(125, 82, 244, 0.95), rgba(125, 82, 244, 0.4)); z-index: -1; }
+
+  .partners-grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    margin-top: 20px; 
   }
 
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 996px) {
+    .banner-title { font-size: 2rem; }
+    .custom-banner { padding: 40px 20px; }
+    
+    .partners-grid { 
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 12px;
+    }
+    
+    .benefits-grid {
+      grid-template-columns: 1fr; 
+      gap: 20px;
+    }
+
+    .tabs__item {
+      padding: 8px 15px !important;
+      font-size: 0.9rem !important;
+    }
+    
+    .cert-slide { width: 200px; } 
+  }
+
+  .custom-footer { text-align: center; padding: 120px 20px; margin-top: 50px; position: relative; overflow: hidden; background-color: transparent; }
+  .footer-bg { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-height: 100%; z-index: -1; object-fit: contain; pointer-events: none; }
   ul.tabs {justify-content: center !important;border-bottom: none !important;gap: 15px !important;display: flex !important;}
   .tabs__item {font-size: 1rem !important;font-weight: bold !important;padding: 10px 20px !important;border-radius: 30px !important;border: 2px solid #f0f0f0 !important;transition: all 0.3s ease;margin: 5px 0 !important;}
   .tabs__item--active {background-color: #7D52F4 !important;color: white !important;border-color: #7D52F4 !important;}
@@ -73,18 +84,18 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <div className="custom-banner">
   <img className="banner-bg" src={useBaseUrl('/img/partners/partner-background.jpg')} />
   <div className="banner-overlay"></div>
-  <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative' }}>
-    <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: 'white', margin: '0 0 15px 0' }}>成为 IvorySQL 的合作伙伴</h1>
+  <div className="banner-content">
+    <h1 className="banner-title">成为 IvorySQL 的合作伙伴</h1>
     <p style={{ fontSize: '1.2rem', color: 'white' }}>欢迎申请！</p>
     <a href="https://jsj.top/f/AvKTbu" style={{ backgroundColor: '#A38CF9', color: 'white', padding: '10px 25px', borderRadius: '20px', textDecoration: 'none', display: 'inline-block', marginTop: '20px' }}>立即申请</a>
   </div>
 </div>
 
-<div style={{ padding: '50px 0', maxWidth: '1200px', margin: '0 auto' }}>
-<Tabs defaultValue="tech" values={[{label: '技术与生态伙伴', value: 'tech'},{label: '社区与活动伙伴', value: 'community'},{label: '解决方案与商业伙伴', value: 'solutions'},{label: '教育与科研伙伴', value: 'academic'}]}>
+<div style={{ padding: '50px 20px', maxWidth: '1200px', margin: '0 auto' }}>
+<Tabs defaultValue="tech" values={[{label: '技术与生态', value: 'tech'},{label: '社区与活动', value: 'community'},{label: '商业伙伴', value: 'solutions'},{label: '科研伙伴', value: 'academic'}]}>
 <TabItem value="tech">
 <p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>深度兼容主流基础设施，构建稳定、高性能的技术生态。</p>
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', marginTop: '20px' }}>
+<div className="partners-grid">
 <div className="partner-card"><a href="https://pigsty.cc/" target="_blank">![](/img/partners/pigsty.jpg)</a></div>
 <div className="partner-card"><a href="https://www.openkylin.top/index-cn.html" target="_blank">![](/img/partners/openkylin.png)</a></div>
 <div className="partner-card"><a href="https://www.deepin.org/" target="_blank">![](/img/partners/deepin.jpg)</a></div>
@@ -99,7 +110,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 </TabItem>
 <TabItem value="community">
 <p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>连接开发者生态，共同推广开源技术与实践案例。</p>
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', marginTop: '20px' }}>
+<div className="partners-grid">
 <div className="partner-card"><a href="https://www.postgresqlchina.com/" target="_blank">![](/img/partners/pg-association.png)</a></div>
 <div className="partner-card"><a href="https://cloudberry.apache.org/" target="_blank">![](/img/partners/cloudberry.png)</a></div>
 <div className="partner-card"><a href="https://www.ifclub.org/" target="_blank">![](/img/partners/ifclub.png)</a></div>
@@ -109,11 +120,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <div className="partner-card"><a href="https://juejin.cn/" target="_blank">![](/img/partners/juejin.png)</a></div>
 <div className="partner-card"><a href="https://qloc-cn.org/" target="_blank">![](/img/partners/qilukaiyuanshe.webp)</a></div>
 <div className="partner-card"><a href="https://kaiyuanshe.cn/" target="_blank">![](/img/partners/kaiyuanshe.png)</a></div>
+<div className="partner-card"><a href="https://mp.weixin.qq.com/s/p4ZFy-bYvh5a0AR2gAJb2A" target="_blank">![](/img/partners/shaoanshiwusuo.png)</a></div>
 </div>
 </TabItem>
 <TabItem value="solutions">
-<p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>与领先的系统集成商和解决方案商合作，为企业提供开箱即用的行业化能力。</p>
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', marginTop: '20px' }}>
+<p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>与领先的系统集成商合作，提供开箱即用的行业化能力。</p>
+<div className="partners-grid">
 <div className="partner-card"><a href="https://www.data-bene.io/en/" target="_blank">![](/img/partners/databene.png)</a></div>
 <div className="partner-card"><a href="https://ongres.com/" target="_blank">![](/img/partners/ongres.png)</a></div>
 <div className="partner-card"><a href="https://www.navicat.com.cn/products/navicat-premium-resources" target="_blank">![](/img/partners/navicat.jpg)</a></div>
@@ -121,7 +133,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 </TabItem>
 <TabItem value="academic">
 <p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>深化产学研融合，赋能下一代技术人才培养。</p>
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', marginTop: '20px' }}>
+<div className="partners-grid">
 <div className="partner-card"><a href="https://summer-ospp.ac.cn/" target="_blank">![](/img/partners/ospp.png)</a></div>
 </div>
 </TabItem>
@@ -144,9 +156,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 </div>
 </div>
 
-<div style={{background: '#F9F7FF', borderRadius: '16px', padding: '40px', margin: '60px auto', maxWidth: '1200px'}}>
+<div style={{background: '#F9F7FF', borderRadius: '16px', padding: '40px 20px', margin: '60px auto', maxWidth: '1200px'}}>
 <h3 style={{ textAlign: 'center', color: '#333' }}>合作伙伴权益</h3>
-<div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '30px', marginTop: '30px'}}>
+<div className="benefits-grid">
 <div><h4 style={{color: '#7D52F4'}}>技术专家支持</h4><p style={{color: '#666', fontSize: '0.95rem'}}>获得 IvorySQL 核心开发团队的直接技术指导，优先获取产品路线图及新功能预览。</p></div>
 <div><h4 style={{color: '#7D52F4'}}>联合品牌推广</h4><p style={{color: '#666', fontSize: '0.95rem'}}>合作伙伴 Logo 将在官网长期展示。通过联合发布白皮书、技术案例及沙龙活动共享流量。</p></div>
 <div><h4 style={{color: '#7D52F4'}}>生态互惠增长</h4><p style={{color: '#666', fontSize: '0.95rem'}}>加入 IvorySQL 全球合作伙伴网络，与上下游厂商建立深度连接，打造联合解决方案。</p></div>
@@ -155,6 +167,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <div className="custom-footer">
   <img className="footer-bg" src={useBaseUrl('/img/partners/partner-background-2.svg')} />
-  <h3 style={{ position: 'relative', marginBottom: '20px', zIndex: '1' }}>如果您希望与 IvorySQL 成为合作伙伴，请点击填写申请。</h3>
+  <h3 style={{ position: 'relative', marginBottom: '20px', zIndex: '1', padding: '0 20px' }}>如果您希望与 IvorySQL 成为合作伙伴，请点击填写申请。</h3>
   <a href="https://jsj.top/f/AvKTbu" style={{ position: 'relative', backgroundColor: '#7D52F4', color: 'white', padding: '10px 30px', borderRadius: '20px', textDecoration: 'none', display: 'inline-block', zIndex: '1' }}>立即申请</a>
 </div>
