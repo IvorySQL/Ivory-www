@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-Oracle Package
+slug: ivorysql-oracle-package-compatibility
 title: IvorySQL 4.0-Design Insights into Oracle Package Compatibility Feature
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/Oracle-Package-Compatibility.png
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, Oracle Package, Package]
 ---
 

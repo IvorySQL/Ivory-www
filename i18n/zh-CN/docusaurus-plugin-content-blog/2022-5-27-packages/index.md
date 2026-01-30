@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-Packages
+slug: ivorysql-packages
 title: IvorySQL 功能点介绍--Package（包）
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/IvorySQL-packages.png
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, Oracle Package]
 ---
 # 概述

@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-WASM
+slug: ivorysql-wasm
 title: IvorySQL-WASM, An Exploration Journey of Installation-Free Databases
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/ivorysql-wasm.png
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, WasmEdge]
 ---
 

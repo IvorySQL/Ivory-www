@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-High Availability
+slug: ivorysql-ha-zero-loss-logical-replication-slots
 title: IvorySQL High Availability—Zero Loss Logical Replication Slots
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/IvorySQL-High-Availability.png
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, High Availability]
 ---
 

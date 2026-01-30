@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-Incremental Backup and Merge Features
+slug: ivorysql-incremental-backup-and-merge-features
 title: IvorySQL 增量备份与合并增量备份功能解析
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/IvorySQL-Incremental-Backup.png
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, Incremental Backup]
 ---
 

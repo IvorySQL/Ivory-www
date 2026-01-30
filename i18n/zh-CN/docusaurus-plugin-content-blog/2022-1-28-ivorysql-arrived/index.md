@@ -1,8 +1,10 @@
 ---
 slug: IvorySQL
-title: IvorySQL已经来了
+title: IvorySQL 已经来了
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/IvorySQL-has-arrived.png
 tags: [IvorySQL, Welcome, Database, Oracle Compatible, PostgreSQL, Join Us]
 ---
 

@@ -1,41 +1,141 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #4e89e8;
-
-  --ifm-color-primary-dark: #31343a;
-  --ifm-color-primary-darker: #333538;
-  --ifm-color-primary-darkest: #26292d;
-  --ifm-color-primary-light: #3b4047;
-  --ifm-color-primary-lighter: #3e434b;
-  --ifm-color-primary-lightest: #464b55;
-  --ifm-code-font-size: 110%;
-  --ifm-background-surface-color: #f4f4f5;
-  --ifm-link-color:rgb(110, 95, 197);
-
-  /*
-  --ifm-font-color-base: hsl(263, 48%, 87%);
-*/
+.blog-post-list-page main > .container > .row > .col[class*='col--'] {
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
 }
 
-.docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+.category-nav-container {
+  display: flex;
+  gap: 30px;
+  margin: 10px 0 40px 0;
+  border-bottom: 1px solid #ebedf0;
+  padding-bottom: 15px;
 }
 
-html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
-  --ifm-background-surface-color: #4d4848;
+.category-nav-link {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #444;
+  text-decoration: none;
 }
-.navbar .navbar__items {
-  flex: auto;
-  color: white;
-  border: white;
+
+.active-link {
+  color: var(--ifm-color-primary) !important;
+  border-bottom: 2px solid var(--ifm-color-primary);
+}
+
+.custom-horizontal-card {
+  display: flex !important;
+  flex-direction: row !important;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 30px !important;
+  height: 220px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card-left-img {
+  flex: 0 0 350px !important;
+  background: #f0f2f5;
+  border-right: 1px solid #eee;
+}
+
+.card-left-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-right-content {
+  flex: 1;
+  padding: 24px 30px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-item-title {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+
+.post-item-title a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.post-item-date {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: auto;
+}
+
+.post-item-tags {
+  display: flex;
+  width: 100%;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.tag-pill-static {
+  display: inline-flex;
+  align-items: center;
+  background: #f4f4f5;
+  color: #606266;
+  padding: 2px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  border: 1px solid #e9e9eb;
+  white-space: nowrap;
+}
+
+.blog-pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.custom-pagination {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pagination-number-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+}
+
+.pagination-nav-item, .pagination-number-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  color: #444;
+  text-decoration: none !important;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+.pagination-number-item.active {
+  background: var(--ifm-color-primary);
+  color: #fff;
+  border-color: var(--ifm-color-primary);
+}
+
+.pagination-nav-item.disabled {
+  color: #ccc;
+  border-color: #f3f4f6;
+  background: #fafafa;
 }

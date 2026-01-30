@@ -3,6 +3,8 @@ slug: ivorysql-external-storage-manager
 title: IvorySQL 数据库中的外部存储管理器
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/External-Storage-Manager.png
 tags: [IvorySQL, Database, Storage Manager, PostgreSQL]
 ---
 一般来说，数据库的存储系统分为内存和外存两个部分，而除了内存数据库之外，数据最终都是持久化存储的，持久化就要将数据从内存 buffer 落盘到外存，因此今天我们来聊聊 IvorySQL 中的外部存储管理器。

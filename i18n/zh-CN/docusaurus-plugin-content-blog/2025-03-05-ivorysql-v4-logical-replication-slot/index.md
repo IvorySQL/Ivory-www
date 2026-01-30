@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-Logical Replication Slot
+slug: ivorysql-logical-replication-slot
 title: IvorySQL v4 逻辑复制槽同步功能解析
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/IvorySQL-Logical-Replication-Slot.png
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, Logical Replication Slot, 逻辑复制槽]
 ---
 

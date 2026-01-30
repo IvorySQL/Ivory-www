@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-PGCon2022
+slug: ivorysql-pgcon2022
 title: PGCon2022 会议回顾｜IvorySQL 项目的技术讲解
 authors: [official]
 authorTwitter: IvorySql
+category: PostgreSQL
+image: img/blog/PGCon2022-meeting-review.png
 tags: [IvorySQL, PGCon2022 , Database, Oracle Compatible, PostgreSQL]
 ---
 
