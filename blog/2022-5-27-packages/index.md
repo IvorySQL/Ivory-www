@@ -1,7 +1,9 @@
 ---
-slug: IvorySQL-Packages
+slug: ivorysql-packages
 title: Introduction to IvorySQL Packages
 authors: [Asif]
+category: IvorySQL
+image: img/blog/IvorySQL-packages.png
 tags: [IvorySQL, Oracle, Packages, PostgreSQL, Join Us]
 ---
 

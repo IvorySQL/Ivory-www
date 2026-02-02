@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-sv
+slug: ivorysql-pgconf-sv-2022
 title: IvorySQL亮相于PostgresConf SV 2022 硅谷Postgres大会
 authors: [official]
 authorTwitter: IvorySql
+category: PostgreSQL
+image: img/blog/PostgresConf-SV-2022.png
 tags: [IvorySQL,PostgresConf SV , Database, Oracle Compatible, PostgreSQL, Join Us]
 ---
 

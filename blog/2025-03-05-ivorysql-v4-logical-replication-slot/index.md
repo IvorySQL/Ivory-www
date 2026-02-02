@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-Logical Replication Slot
+slug: ivorysql-logical-replication-slot
 title: Analysis of the Logical Replication Slot Synchronization Feature in IvorySQL v4
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/IvorySQL-Logical-Replication-Slot.png
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, Logical Replication Slot]
 ---
 

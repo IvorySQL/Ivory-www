@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-Invisible Column
+slug: ivorysql-invisible-column
 title: IvorySQL 4.0 之 Invisible Column 功能解析
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/IvorySQL-Invisible-Column.png
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, Invisible Column, 不可见列]
 ---
 

@@ -1,12 +1,13 @@
 ---
-slug: IvorySQL-Linux
+slug: ivorysql-linux
 title: Compiling and Installing IvorySQL on Linux
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/Compiling-and-Installing-IvorySQL-on-Linux.png
 tags: [IvorySQL, Welcome,Linux, PostgreSQL, Join Us]
 ---
 
- 
 # Compiling and Installing IvorySQL on Linux
 
 IvorySQL can be built on Linux, OSX, Unix, and Windows platforms, and is basically the same as PostgreSQL compiled and installed. This article describes the steps for compiling source code on a Linux-based system.

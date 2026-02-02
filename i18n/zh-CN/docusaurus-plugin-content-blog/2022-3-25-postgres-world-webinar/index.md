@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-Webinar
+slug: ivorysql-pg-webinar
 title: PostgresWorld网络研讨会|IvorySQL的深度探讨
 authors: [official]
 authorTwitter: IvorySql
+category: PostgreSQL
+image: img/blog/PostgresWorld-Webinar.png
 tags: [IvorySQL, PostgresWorld, Database, Oracle Compatible, PostgreSQL, Join Us]
 ---
 

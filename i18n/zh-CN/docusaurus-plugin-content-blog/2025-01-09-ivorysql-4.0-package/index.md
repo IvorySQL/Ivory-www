@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-Oracle Package
+slug: ivorysql-oracle-package-compatibility
 title: IvorySQL 4.0 之兼容 Oracle 包功能设计思路解读
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/Oracle-Package-Compatibility.png
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, Oracle Package, Package, 包功能]
 ---
 

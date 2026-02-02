@@ -1,26 +1,17 @@
 ---
-slug: IvorySQL-Linux
+slug: ivorysql-linux
 title: IvorySQL--Linux环境源码编译安装
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/Compiling-and-Installing-IvorySQL-on-Linux.png
 tags: [IvorySQL, Linux，PostgreSQL,Join Us]
 ---
-
-
-
 # Linux环境源码编译安装IvorySQL
-
-
 
 IvorySQL可以在Linux, OSX, Unix和Windows平台上构建，与PostgreSQL的编译安装基本上是一样的。本文对基于Linux的系统上编译源代码的步骤进行说明。
 
-
-
-
-
 ## 一、准备工作
-
-
 
 ### 1.1 获取 IvorySQL 源码
 
@@ -30,7 +21,6 @@ git clone https://github.com/IvorySQL/IvorySQL.git
 
 git clone https://gitee.com/IvorySQL/IvorySQL.git
 
- 
 
 或者直接去github或gitee下载都可以：
 
@@ -40,7 +30,6 @@ https://gitee.com/IvorySQL/IvorySQL
 
 github会有点慢，能用则用，不行就改用gitee。
 
- 
 
 截至本稿，IvorySQL的最新发布版本是1.2，于2022年2月28日发布。
 

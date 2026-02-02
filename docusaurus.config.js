@@ -1,22 +1,17 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
-
 const config = {
   title: 'IvorySQL',
   tagline: 'Open Source Oracle compatible PostgreSQL',
   url: 'https://ivorySQL.org',
   baseUrl: '/',
-  onBrokenLinks: 'warn', // 'throw',
+  onBrokenLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'IvorySQL', // Usually your GitHub org/user name.
-  projectName: 'ivory-www', // Usually your repo name.
+  organizationName: 'IvorySQL',
+  projectName: 'ivory-www',
   customFields: {
-    // Put your custom environment here
     botId: process.env.BOT_ID,
     patToken: process.env.TOKEN
   },
@@ -25,11 +20,9 @@ const config = {
       onBrokenMarkdownLinks: 'warn',
     }
   },
-  
   themes: [
     [
       '@easyops-cn/docusaurus-search-local',
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
         hashed: true,
         language: ['en', 'zh'],
@@ -49,35 +42,31 @@ const config = {
     [
       'docusaurus-plugin-dotenv',
       {
-          path: "./.env", // The path to your environment variables.
-          safe: false, // If false ignore safe-mode, if true load './.env.example', if a string load that file as the sample
-          systemvars: true, // Set to true if you would rather load all system variables as well (useful for CI purposes)
-          silent: false, //  If true, all warnings will be suppressed
-          expand: false, // Allows your variables to be "expanded" for reusability within your .env file
-          defaults: false, //  Adds support for dotenv-defaults. If set to true, uses ./.env.defaults
+          path: "./.env",
+          safe: false,
+          systemvars: true,
+          silent: false,
+          expand: false,
+          defaults: false,
       }
     ]
   ],
-
   presets: [
     [
       '@docusaurus/preset-classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           versions: {
             current: {label: 'Devel',},
           },
           sidebarPath: require.resolve('./sidebars.js'),
-//          editUrl: 'https://github.com/IvorySQL/Ivory-www/tree/main/docs',
           editCurrentVersion: false,
         },
         blog: {
-          showReadingTime: true,
-          blogSidebarTitle: 'IvorySQL Blogs',
+          showReadingTime: false,
+          blogSidebarCount: 0,
+          postsPerPage: 100,
           onUntruncatedBlogPosts: 'warn',
-          // Please change this to your repo.
-//          editUrl: 'https://github.com/IvorySQL/Ivory-www/tree/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -90,18 +79,14 @@ const config = {
     locales: ['en', 'zh-CN'],
   },
   themeConfig:
-  
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
         style: 'dark',
-
         title: 'IvorySQL',
         logo: {
           alt: 'IvorySQL Logo',
           src: 'img/ivory.png',
         },
-        
         items: [
           {
             to: '/blog',
@@ -170,8 +155,6 @@ const config = {
             href: 'https://docs.IvorySQL.org',
             position: 'left'
           },
-
-          //Right Side Items
           {
             label: 'Community',
             to: '/community-page',
@@ -184,7 +167,6 @@ const config = {
             items: [
               {
                 label: 'Roadmap',
-                //to: '/developers-page',
                 to: '/roadmap-page',
               },
               {
@@ -273,7 +255,6 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      
     }),
 };
 

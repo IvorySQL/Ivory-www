@@ -3,6 +3,8 @@ slug: ivorysql-upgrade-3.x-to-4.0
 title: IvorySQL 升级指南：从 3.x 到 4.0 的平滑过渡
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/ivorysql-upgrade.png
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL]
 ---
 日前，IvorySQL 4.0 重磅发布，全面支持 PostgreSQL 17，并且增强了对 Oracle 的兼容性。

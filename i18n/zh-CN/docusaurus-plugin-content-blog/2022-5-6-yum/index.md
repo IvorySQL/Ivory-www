@@ -1,8 +1,10 @@
 ---
-slug: IvorySQL-YUM
-title: IvorySQL--YUM源安装
+slug: ivorysql-yum
+title: IvorySQL--YUM 源安装
 authors: [official]
 authorTwitter: IvorySql
+category: IvorySQL
+image: img/blog/Install-software-through-the-YUM-source.png
 tags: [IvorySQL, YUM， PostgreSQL, Join Us]
 ---
 
