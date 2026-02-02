@@ -52,14 +52,25 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
       gap: 12px;
     }
     
+    .partner-card {
+      padding: 8px !important; 
+      height: 80px !important;
+      border-radius: 8px;
+    }
+
+    .partner-card img {
+      max-width: 100% !important; 
+      max-height: 45px !important;
+    }
+
     .benefits-grid {
       grid-template-columns: 1fr; 
       gap: 20px;
     }
 
     .tabs__item {
-      padding: 8px 15px !important;
-      font-size: 0.9rem !important;
+      padding: 8px 12px !important;
+      font-size: 0.85rem !important;
     }
     
     .cert-slide { width: 200px; } 
@@ -67,16 +78,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
   .custom-footer { text-align: center; padding: 120px 20px; margin-top: 50px; position: relative; overflow: hidden; background-color: transparent; }
   .footer-bg { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-height: 100%; z-index: -1; object-fit: contain; pointer-events: none; }
-  ul.tabs {justify-content: center !important;border-bottom: none !important;gap: 15px !important;display: flex !important;}
-  .tabs__item {font-size: 1rem !important;font-weight: bold !important;padding: 10px 20px !important;border-radius: 30px !important;border: 2px solid #f0f0f0 !important;transition: all 0.3s ease;margin: 5px 0 !important;}
-  .tabs__item--active {background-color: #7D52F4 !important;color: white !important;border-color: #7D52F4 !important;}
+  ul.tabs {justify-content: center !important; border-bottom: none !important; gap: 10px !important; display: flex !important; flex-wrap: wrap;}
+  .tabs__item {font-size: 1rem !important; font-weight: bold !important; padding: 10px 20px !important; border-radius: 30px !important; border: 2px solid #f0f0f0 !important; transition: all 0.3s ease; margin: 5px 0 !important;}
+  .tabs__item--active {background-color: #7D52F4 !important; color: white !important; border-color: #7D52F4 !important;}
   
-  .cert-carousel-container {overflow: hidden;padding: 40px 0;max-width: 1200px;margin: 0 auto;position: relative;}
-  .cert-track {display: flex;width: calc(280px * 10);animation: scroll 40s linear infinite;}
+  .cert-carousel-container {overflow: hidden; padding: 40px 0; max-width: 1200px; margin: 0 auto; position: relative;}
+  .cert-track {display: flex; width: calc(280px * 10); animation: scroll 40s linear infinite;}
   .cert-track:hover {animation-play-state: paused;}
-  .cert-slide {width: 280px;height: 200px;padding: 0 15px;flex-shrink: 0;display: flex;align-items: center;justify-content: center;}
-  .cert-slide p {margin: 0 !important;width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;}
-  .cert-slide img {max-width: 100% !important;max-height: 100% !important;width: auto !important;height: auto !important;object-fit: contain !important;border-radius: 8px;box-shadow: 0 4px 10px rgba(0,0,0,0.1);background-color: #fff;transition: transform 0.3s;}
+  .cert-slide {width: 280px; height: 200px; padding: 0 15px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;}
+  .cert-slide p {margin: 0 !important; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+  .cert-slide img {max-width: 100% !important; max-height: 100% !important; width: auto !important; height: auto !important; object-fit: contain !important; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); background-color: #fff; transition: transform 0.3s;}
   .cert-slide img:hover {transform: scale(1.05);}
   @keyframes scroll {0% { transform: translateX(0); } 100% { transform: translateX(calc(-280px * 5)); }}
 `}</style>
@@ -87,7 +98,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   <div className="banner-content">
     <h1 className="banner-title">成为 IvorySQL 的合作伙伴</h1>
     <p style={{ fontSize: '1.2rem', color: 'white' }}>欢迎申请！</p>
-    <a href="https://jsj.top/f/AvKTbu" style={{ backgroundColor: '#A38CF9', color: 'white', padding: '10px 25px', borderRadius: '20px', textDecoration: 'none', display: 'inline-block', marginTop: '20px' }}>立即申请</a>
+    <a href="https://jsj.top/f/AvKTbu" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#A38CF9', color: 'white', padding: '10px 25px', borderRadius: '20px', textDecoration: 'none', display: 'inline-block', marginTop: '20px' }}>立即申请</a>
   </div>
 </div>
 
@@ -96,45 +107,45 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <TabItem value="tech">
 <p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>深度兼容主流基础设施，构建稳定、高性能的技术生态。</p>
 <div className="partners-grid">
-<div className="partner-card"><a href="https://pigsty.cc/" target="_blank">![](/img/partners/pigsty.jpg)</a></div>
-<div className="partner-card"><a href="https://www.openkylin.top/index-cn.html" target="_blank">![](/img/partners/openkylin.png)</a></div>
-<div className="partner-card"><a href="https://www.deepin.org/" target="_blank">![](/img/partners/deepin.jpg)</a></div>
-<div className="partner-card"><a href="https://openanolis.cn/" target="_blank">![](/img/partners/openanolis.png)</a></div>
-<div className="partner-card"><a href="https://www.kylinos.cn/" target="_blank">![](/img/partners/kylin.png)</a></div>
-<div className="partner-card"><a href="https://www.data-bene.io/en/" target="_blank">![](/img/partners/databene.png)</a></div>
-<div className="partner-card"><a href="https://ongres.com/" target="_blank">![](/img/partners/ongres.png)</a></div>
-<div className="partner-card"><a href="https://www.navicat.com.cn/" target="_blank">![](/img/partners/navicat.jpg)</a></div>
-<div className="partner-card"><a href="https://www.whaleops.com/index.html" target="_blank">![](/img/partners/whaleops.png)</a></div>
-<div className="partner-card"><a href="https://www.loongson.cn/index.php/system/loongarch" target="_blank">![](/img/partners/loongarch.png)</a></div>
+<div className="partner-card"><a href="https://pigsty.cc/" target="_blank" rel="noopener noreferrer">![](/img/partners/pigsty.jpg)</a></div>
+<div className="partner-card"><a href="https://www.openkylin.top/index-cn.html" target="_blank" rel="noopener noreferrer">![](/img/partners/openkylin.png)</a></div>
+<div className="partner-card"><a href="https://www.deepin.org/" target="_blank" rel="noopener noreferrer">![](/img/partners/deepin.jpg)</a></div>
+<div className="partner-card"><a href="https://openanolis.cn/" target="_blank" rel="noopener noreferrer">![](/img/partners/openanolis.png)</a></div>
+<div className="partner-card"><a href="https://www.kylinos.cn/" target="_blank" rel="noopener noreferrer">![](/img/partners/kylin.png)</a></div>
+<div className="partner-card"><a href="https://www.data-bene.io/en/" target="_blank" rel="noopener noreferrer">![](/img/partners/databene.png)</a></div>
+<div className="partner-card"><a href="https://ongres.com/" target="_blank" rel="noopener noreferrer">![](/img/partners/ongres.png)</a></div>
+<div className="partner-card"><a href="https://www.navicat.com.cn/" target="_blank" rel="noopener noreferrer">![](/img/partners/navicat.jpg)</a></div>
+<div className="partner-card"><a href="https://www.whaleops.com/index.html" target="_blank" rel="noopener noreferrer">![](/img/partners/whaleops.png)</a></div>
+<div className="partner-card"><a href="https://www.loongson.cn/index.php/system/loongarch" target="_blank" rel="noopener noreferrer">![](/img/partners/loongarch.png)</a></div>
 </div>
 </TabItem>
 <TabItem value="community">
 <p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>连接开发者生态，共同推广开源技术与实践案例。</p>
 <div className="partners-grid">
-<div className="partner-card"><a href="https://www.postgresqlchina.com/" target="_blank">![](/img/partners/pg-association.png)</a></div>
-<div className="partner-card"><a href="https://cloudberry.apache.org/" target="_blank">![](/img/partners/cloudberry.png)</a></div>
-<div className="partner-card"><a href="https://www.ifclub.org/" target="_blank">![](/img/partners/ifclub.png)</a></div>
-<div className="partner-card"><a href="https://www.modb.pro/" target="_blank">![](/img/partners/motianlun.png)</a></div>
-<div className="partner-card"><a href="https://www.oschina.net/" target="_blank">![](/img/partners/oschina.png)</a></div>
-<div className="partner-card"><a href="https://segmentfault.com/" target="_blank">![](/img/partners/segmentfault.png)</a></div>
-<div className="partner-card"><a href="https://juejin.cn/" target="_blank">![](/img/partners/juejin.png)</a></div>
-<div className="partner-card"><a href="https://qloc-cn.org/" target="_blank">![](/img/partners/qilukaiyuanshe.webp)</a></div>
-<div className="partner-card"><a href="https://kaiyuanshe.cn/" target="_blank">![](/img/partners/kaiyuanshe.png)</a></div>
-<div className="partner-card"><a href="https://mp.weixin.qq.com/s/p4ZFy-bYvh5a0AR2gAJb2A" target="_blank">![](/img/partners/shaoanshiwusuo.png)</a></div>
+<div className="partner-card"><a href="https://www.postgresqlchina.com/" target="_blank" rel="noopener noreferrer">![](/img/partners/pg-association.png)</a></div>
+<div className="partner-card"><a href="https://cloudberry.apache.org/" target="_blank" rel="noopener noreferrer">![](/img/partners/cloudberry.png)</a></div>
+<div className="partner-card"><a href="https://www.ifclub.org/" target="_blank" rel="noopener noreferrer">![](/img/partners/ifclub.png)</a></div>
+<div className="partner-card"><a href="https://www.modb.pro/" target="_blank" rel="noopener noreferrer">![](/img/partners/motianlun.png)</a></div>
+<div className="partner-card"><a href="https://www.oschina.net/" target="_blank" rel="noopener noreferrer">![](/img/partners/oschina.png)</a></div>
+<div className="partner-card"><a href="https://segmentfault.com/" target="_blank" rel="noopener noreferrer">![](/img/partners/segmentfault.png)</a></div>
+<div className="partner-card"><a href="https://juejin.cn/" target="_blank" rel="noopener noreferrer">![](/img/partners/juejin.png)</a></div>
+<div className="partner-card"><a href="https://qloc-cn.org/" target="_blank" rel="noopener noreferrer">![](/img/partners/qilukaiyuanshe.webp)</a></div>
+<div className="partner-card"><a href="https://kaiyuanshe.cn/" target="_blank" rel="noopener noreferrer">![](/img/partners/kaiyuanshe.png)</a></div>
+<div className="partner-card"><a href="https://mp.weixin.qq.com/s/p4ZFy-bYvh5a0AR2gAJb2A" target="_blank" rel="noopener noreferrer">![](/img/partners/shaoanshiwusuo.png)</a></div>
 </div>
 </TabItem>
 <TabItem value="solutions">
 <p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>与领先的系统集成商合作，提供开箱即用的行业化能力。</p>
 <div className="partners-grid">
-<div className="partner-card"><a href="https://www.data-bene.io/en/" target="_blank">![](/img/partners/databene.png)</a></div>
-<div className="partner-card"><a href="https://ongres.com/" target="_blank">![](/img/partners/ongres.png)</a></div>
-<div className="partner-card"><a href="https://www.navicat.com.cn/products/navicat-premium-resources" target="_blank">![](/img/partners/navicat.jpg)</a></div>
+<div className="partner-card"><a href="https://www.data-bene.io/en/" target="_blank" rel="noopener noreferrer">![](/img/partners/databene.png)</a></div>
+<div className="partner-card"><a href="https://ongres.com/" target="_blank" rel="noopener noreferrer">![](/img/partners/ongres.png)</a></div>
+<div className="partner-card"><a href="https://www.navicat.com.cn/products/navicat-premium-resources" target="_blank" rel="noopener noreferrer">![](/img/partners/navicat.jpg)</a></div>
 </div>
 </TabItem>
 <TabItem value="academic">
 <p style={{ color: '#666', marginTop: '20px', textAlign: 'center' }}>深化产学研融合，赋能下一代技术人才培养。</p>
 <div className="partners-grid">
-<div className="partner-card"><a href="https://summer-ospp.ac.cn/" target="_blank">![](/img/partners/ospp.png)</a></div>
+<div className="partner-card"><a href="https://summer-ospp.ac.cn/" target="_blank" rel="noopener noreferrer">![](/img/partners/ospp.png)</a></div>
 </div>
 </TabItem>
 </Tabs>
@@ -168,5 +179,5 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <div className="custom-footer">
   <img className="footer-bg" src={useBaseUrl('/img/partners/partner-background-2.svg')} />
   <h3 style={{ position: 'relative', marginBottom: '20px', zIndex: '1', padding: '0 20px' }}>如果您希望与 IvorySQL 成为合作伙伴，请点击填写申请。</h3>
-  <a href="https://jsj.top/f/AvKTbu" style={{ position: 'relative', backgroundColor: '#7D52F4', color: 'white', padding: '10px 30px', borderRadius: '20px', textDecoration: 'none', display: 'inline-block', zIndex: '1' }}>立即申请</a>
+  <a href="https://jsj.top/f/AvKTbu" target="_blank" rel="noopener noreferrer" style={{ position: 'relative', backgroundColor: '#7D52F4', color: 'white', padding: '10px 30px', borderRadius: '20px', textDecoration: 'none', display: 'inline-block', zIndex: '1' }}>立即申请</a>
 </div>
