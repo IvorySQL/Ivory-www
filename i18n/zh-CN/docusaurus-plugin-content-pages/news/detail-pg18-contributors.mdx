@@ -1,0 +1,185 @@
+---
+title: PostgreSQL 18 中国贡献者经验分享：开源参与的四点建议
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-banner {
+    background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
+    padding: 40px 0;
+    color: white !important;
+    margin-bottom: 30px;
+  }
+  .detail-banner-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
+  .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
+
+  .detail-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .detail-main { flex: 1; min-width: 0; }
+  .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #7D52F4; }
+  
+  .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
+  .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+
+  .post-cover { width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+  
+  .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
+  .post-content h3 { font-size: 1.25rem; color: #444; margin-top: 25px; margin-bottom: 15px; font-weight: bold; }
+  .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
+  .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
+
+  .detail-sidebar { width: 240px; flex-shrink: 0; }
+  .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+  .sidebar-nav li { margin-bottom: 10px; }
+  .sidebar-nav a { color: #666; font-size: 0.9rem; text-decoration: none; transition: color 0.2s; }
+  .sidebar-nav a:hover { color: #7D52F4; }
+
+  @media (max-width: 996px) {
+    .detail-banner { padding: 30px 0; }
+    .detail-banner h1 { font-size: 1.5rem; }
+    .detail-wrapper { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .post-title { font-size: 1.5rem; }
+  }
+`}</style>
+
+<div className="detail-banner">
+  <div className="detail-banner-inner">
+    <h1>新闻动态</h1>
+    <div className="detail-banner-decor">● ○ ●</div>
+  </div>
+</div>
+
+<div className="detail-wrapper">
+  <div className="detail-main">
+    <div className="breadcrumb">
+      <a href="/news">新闻动态</a> <span>&gt;</span> <span>社区动态</span>
+    </div>
+
+    <div className="post-header">
+      <div className="post-title">PostgreSQL 18 中国贡献者经验分享：开源参与的四点建议</div>
+      <div className="post-date">📅 发布时间：2025 年 10 月 20 日</div>
+    </div>
+
+    <div className="post-content">
+      <p>
+        2025 年 9 月 25 日，PostgreSQL 18 正式发布。该版本不仅修复了上百个问题，更带来了多项颠覆性的功能升级，例如全新的异步 I/O（AIO）框架、新增的跳跃式扫描（SKIP SCAN）技术，以及原生 UUIDv7 支持等，每一项升级都为用户带来更优质的使用体验。
+      </p>
+      <p>
+        这些丰富的功能变化与大量的问题修复，离不开 PostgreSQL 社区贡献者们的积极参与。在 PostgreSQL 18 的研发过程中，共有来自 200 多位贡献者完成了 3000 次提交，这样的规模十分惊人。值得关注的是，来自中国的贡献者数量也在不断增加，其中就包括瀚高的多位开发者。本文特别采访了瀚高中的 5 位贡献者，希望他们的经历能为有意参与 PostgreSQL 贡献乃至开源贡献的小伙伴带来启发。
+      </p>
+
+      <h2 id="li-chao">厉超：短期适应社区节奏，建议 “大胆参与、先想后做”</h2>
+      <p>
+        厉超贡献的两个功能模块均是在 PG 18 发布后才完成合并，因此在 PG 18 版本中，他的主要贡献集中在代码审阅以及几个小型 bug 补丁的修复上。
+      </p>
+      <p>
+        由于参与 PG 社区贡献的时间较短，厉超需要重新适应社区的工作习惯与节奏。他表示，PG 社区是一个完全开放的工作环境，这与他之前开发习惯差异显著。不过经过短期磨合，他已基本适应社区的工作模式。
+      </p>
+      <p>
+        在工作支持方面，厉超的主要任务就是参与 PG 社区贡献，公司对此给予了全力支持，这一细节也充分体现出瀚高对开源事业的重视与投入力度。
+      </p>
+      <p>对于首次尝试参与 PostgreSQL 贡献的开发者，厉超给出了两点建议：</p>
+      <ul>
+        <li><b>大胆参与：</b>PG 社区如同一个开放包容的大家庭，对新人十分友好，只要有参与的想法，就不妨勇敢迈出第一步。</li>
+        <li><b>先想后做：</b>在社区中，每一句话都会被众多人关注，因此发言前一定要深思熟虑。社区更看重内容质量而非速度，不存在必须立刻回复的邮件，所以在发言前多思考一遍，能让沟通更高效、准确。</li>
+      </ul>
+
+      <h2 id="niu-shiji">牛世继：敏感捕捉内存泄漏问题，从简单 bug 切入开源</h2>
+      <p>
+        在 PostgreSQL 18 版本的开发中，牛世继成功修复了一个内存泄漏问题。他认为，在日常工作中，内存泄漏是需要极力避免的问题，作为一名软件工程师，他始终对潜在的内存泄漏代码保持高度敏感，这一职业习惯让他在阅读 PostgreSQL 源代码时，能够及时发现此类隐患并着手解决。
+      </p>
+      <p>
+        作为企业开发者，牛世继会在开展内部业务开发工作时，主动思考与开源社区的关联，积极寻找为社区做贡献的机会。而瀚高也一直鼓励公司工程师参与开源贡献，允许员工拿出部分工作时间投入到开源项目中，为开发者提供了良好的参与条件。
+      </p>
+      <p>
+        针对开源贡献的入门方式，牛世继建议，PostgreSQL 是一个庞大的项目，贡献方式多种多样，新手可以先从相对简单的 bug 修复入手，积累经验后再逐步深入更复杂的模块。
+      </p>
+
+      <h2 id="li-yonghao">李永昊：从业务开发遇 bug 到贡献社区，感谢公司与团队支持</h2>
+      <p>
+        此次参与 PG 社区贡献，李永昊向社区提交了一个关于执行视图定义时语法解析的 bug。他介绍，这个 bug 是在进行数据库类型和操作符开发时发现的，而在后续跟踪 bug 解决的过程中，他对相关模块的逻辑有了更深刻的理解，这些知识也为他未来的工作打下了更坚实的基础。
+      </p>
+      <p>
+        李永昊表示，自己是加入瀚高后才逐渐接触数据库内核开发，刚上手时面临诸多挑战，比如在语法、操作符、类型转换、函数等方面都遇到过难题。为解决这些问题，一方面他会积极向有经验的同事请教、讨论，另一方面也会参考 PG 原生功能或市面上其他产品的设计思路，寻找最优解决方案。
+      </p>
+      <p>
+        作为瀚高的研发人员，李永昊的本职工作就与 PG 内核开发相关，此次发现的 bug，也是他和同事们在内核代码评审工作中察觉的。他提到，近几年瀚高一直将开源建设列为重点工作，此次参与开源贡献，从一开始就得到了领导的高度关注，在与国际社区人员交流的过程中，有经验的同事也给予了他诸多帮助和指导。对于领导与同事的鼓励和支持，李永昊在此表达了由衷的感谢。
+      </p>
+      <p>
+        回顾三年前，刚入职瀚高、初次接触 PG 的李永昊，还觉得开源贡献是一件十分遥远的事。如今作为接触数据库内核开发时间不长的 “萌新”，此次能参与 PG 18 的贡献并被关注，对他而言是莫大的鼓励。他希望未来有更多人能大胆参与开源，因为社区内的 “大佬” 们回复问题十分热情，只要积极参与，就一定会有所收获。
+      </p>
+
+      <h2 id="jiao-shuntian">矫顺田：修复 pg_amcheck 工具 bug，依托公司支持攻克技术难题</h2>
+      <p>
+        在 PG 18 的贡献中，矫顺田提交了针对 pg_amcheck 工具的 BUG 修复补丁。他表示，PostgreSQL 作为复杂的数据库系统，包含多个专业子模块，自己在实际开发中，就经常遇到词法语法解析方面的技术问题。
+      </p>
+      <p>
+        不过，瀚高建立了高效的内部协作机制，每位研发人员都深耕特定领域，例如有同事专门研究查询解析器，积累了深厚的词法 / 语法分析经验。同时，公司会定期举办技术分享会，各模块负责人会分享最新研究成果；此外，还构建了完善的内部文档体系，涵盖各模块的设计原理与常见问题。这些支持让研发人员即便遇到不熟悉的领域，也能快速获取专业帮助，不仅提高了问题解决效率，还促进了团队整体的技术成长。
+      </p>
+      <p>
+        矫顺田提到，瀚高的企业使命是 “开源链接世界”，因此公司大力鼓励员工参与开源社区，并提供了系统性支持来平衡内部业务与开源贡献，比如允许员工在工作时间投入开源项目、组建专门从事开源贡献的研发小组，以及积极举办和参与各类开源相关活动等。
+      </p>
+      <p>
+        对于有意参与 PostgreSQL 贡献的开发者，矫顺田建议订阅 <b>pgsql-hackers</b> 邮件列表 ——PG 社区的贡献者主要通过该列表开展研发讨论，开发者可以从中挑选感兴趣或擅长的主题参与；同时，也可以时常关注 PG 的 commitfest 网站，参与补丁的 review 及测试等工作，逐步融入社区。
+      </p>
+
+      <h2 id="han-weibo">韩伟博：修复分区表 bug，以业务为驱动深耕 PG 源码</h2>
+      <p>
+        在 PostgreSQL 18 的贡献中，韩伟博的主要工作是修复了一个分区表的 bug。他表示，在开展兼容业务时，如何更好地实现兼容特性，同时保证 PG 的 “原汁原味”，是日常工作中极具挑战性的问题。为应对这一挑战，需要做好三方面工作：设计良好的方案、加强代码审查以避免重复造轮子，以及适时进行代码重构以提高代码活力。
+      </p>
+      <p>
+        韩伟博认为，公司的具体业务为研发人员深入学习 PG、深耕 PG 源码提供了动力，在这一过程中，通过发现问题、提出问题、解决问题，自然而然地就能为 PG 生态贡献力量。而瀚高为研发人员提供了广阔的平台、充足的时间以及良好的工作氛围，这些都是能够潜心深入研究 PG 的重要保障。
+      </p>
+      <p>
+        对于首次参与 PostgreSQL 贡献的开发者，韩伟博给出的建议是：多阅读代码、多动手实践、多主动提问。
+      </p>
+
+      <h2 id="summary">总结</h2>
+      <p>
+        从修复内存泄漏、优化语法解析，到完善工具模块，瀚高 5 位贡献者的实践经历，不仅是中国力量融入 PostgreSQL 生态的生动缩影，更清晰拆解了 “参与开源” 的真实路径 —— 它并非遥不可及的技术壁垒，而是从一次代码审阅、一个 BUG 修复、一封邮件讨论开始的点滴积累。
+      </p>
+      <p>
+        PostgreSQL 18 背后的 3000 次提交，是 200 多位开发者协作的成果，而中国贡献者数量的增长，正让开源生态的 “多元性” 愈发鲜明。对于渴望踏入开源领域的开发者而言，厉超的 “大胆参与、先想后做”，牛世继的 “从简单 bug 切入”，矫顺田的 “紧跟社区邮件列表”，或许都是比技术细节更珍贵的 “入门钥匙”。
+      </p>
+      <p>
+        未来，随着更多企业加大对开源的投入、更多开发者加入开源行列，PostgreSQL 生态必将迎来更丰富的功能突破。而每一次微小的贡献，都是推动这个开源数据库持续进化的重要力量。我们期待在下一个版本中，能看到更多新鲜面孔的身影，共同助力 PostgreSQL 生态的发展。
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-sticky">
+      <div className="sidebar-title">▼ 文章大纲</div>
+      <ul className="sidebar-nav">
+        <li><a href="#li-chao">厉超：先想后做</a></li>
+        <li><a href="#niu-shiji">牛世继：简单切入</a></li>
+        <li><a href="#li-yonghao">李永昊：业务驱动</a></li>
+        <li><a href="#jiao-shuntian">矫顺田：邮件列表</a></li>
+        <li><a href="#han-weibo">韩伟博：多动实践</a></li>
+        <li><a href="#summary">总结</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

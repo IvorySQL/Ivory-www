@@ -1,0 +1,138 @@
+---
+title: IvorySQL 适配 LoongArch® 龙架构
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-banner {
+    background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
+    padding: 40px 0;
+    color: white !important;
+    margin-bottom: 30px;
+  }
+  .detail-banner-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
+  .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
+
+  .detail-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .detail-main { flex: 1; min-width: 0; }
+  .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #7D52F4; }
+  
+  .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
+  .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+
+  .post-cover { width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+  
+  .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
+  .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
+  .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
+  .post-content strong { color: #333; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
+
+  .detail-sidebar { width: 240px; flex-shrink: 0; }
+  .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+  .sidebar-nav li { margin-bottom: 10px; }
+  .sidebar-nav a { color: #666; font-size: 0.85rem; text-decoration: none; transition: color 0.2s; line-height: 1.4; display: block; }
+  .sidebar-nav a:hover { color: #7D52F4; }
+
+  @media (max-width: 996px) {
+    .detail-banner { padding: 30px 0; }
+    .detail-banner h1 { font-size: 1.5rem; }
+    .detail-wrapper { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .post-title { font-size: 1.5rem; }
+  }
+`}</style>
+
+<div className="detail-banner">
+  <div className="detail-banner-inner">
+    <h1>新闻动态</h1>
+    <div className="detail-banner-decor">● ○ ●</div>
+  </div>
+</div>
+
+<div className="detail-wrapper">
+  <div className="detail-main">
+    <div className="breadcrumb">
+      <a href="/news">新闻动态</a> <span>&gt;</span> <span>正文内容</span>
+    </div>
+
+    <div className="post-header">
+      <div className="post-title">IvorySQL 适配 LoongArch® 龙架构</div>
+      <div className="post-date">📅 发布时间：2025 年 9 月 12 日</div>
+    </div>
+
+    <div className="post-content">
+      <p>
+        IvorySQL 社区很高兴向您宣布，IvorySQL 已成功适配LoongArch® 龙架构，为国产数据库与国产芯片的深度融合迈出了坚实一步。这一里程碑标志着 IvorySQL 在推动国产化生态建设、赋能信创产业方面取得了重大突破，为用户提供更高效、稳定、安全的数据库解决方案。
+      </p>
+
+      <h2 id="ecosystem">适配LoongArch® 龙架构，助力国产化生态</h2>
+      <p>
+        2020年，龙芯中科基于二十年的CPU研制和生态建设积累推出了龙架构（LoongArch®），包括基础架构部分和向量指令、虚拟化、二进制翻译等扩展部分，近2000条指令。
+      </p>
+      <p>龙架构具有较好的自主性、先进性与兼容性：</p>
+      <ul>
+        <li><strong>先进性：</strong>吸收近年来指令集发展的先进技术成果，提高代码效率</li>
+        <li><strong>兼容性：</strong>融合X86、ARM等的主要特点，高效支持二进制翻译</li>
+        <li><strong>模块化：</strong>基础部分、二进制翻译、虚拟化、向量化</li>
+        <li><strong>扩展性：</strong>指令槽留有余地，利于今后的持续演进</li>
+      </ul>
+      <p>
+        IvorySQL是一款基于PostgreSQL的开源关系型数据库，它继承了PostgreSQL强大的功能和稳定性，同时针对特定用户的需求进行了优化和扩展。
+      </p>
+      <p>
+        作为PostgreSQL的重要分支，IvorySQL不仅保持了与上游版本的兼容性，还致力于实现对 Oracle 数据库的兼容，并可直接进行替换。
+      </p>
+      <p>
+        2025年6月，IvorySQL发布了4.5版本，新增了全平台MIPS打包支持，在已有ARM和X86架构的基础上，进一步扩展了对多样化芯片生态的支持。
+      </p>
+      <p>
+        此次 IvorySQL 与龙架构的成功适配，不仅实现了软硬件的深度协同优化，还进一步推动了国产数据库在信创产业中的广泛应用。
+      </p>
+      <p>
+        通过在龙架构上的深度优化，IvorySQL 能够充分发挥龙芯处理器的性能优势，提供更高效的数据处理能力和更低的延迟。无论是企业级 OLTP 业务、数据分析，还是云原生场景，IvorySQL 在龙架构上的表现都展现出卓越的稳定性和兼容性，为用户提供了高性价比的数据库解决方案。
+      </p>
+      
+      <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-loongarch-cert-1.jpg')} />
+
+      <h2 id="outlook">未来展望</h2>
+      <p>
+        未来，IvorySQL 将继续深化与龙架构的合作，持续优化性能并扩展应用场景。IvorySQL 计划在后续版本中进一步增强对国产芯片和操作系统的支持，同时推动 IvorySQL 在云原生、AI 融合等前沿领域的创新应用，为全球用户提供更优质的数据库解决方案。
+      </p>
+      <p>
+        欢迎广大开发者、用户和合作伙伴加入 IvorySQL 开源社区，共同探索数据库技术的无限可能！
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-sticky">
+      <div className="sidebar-title">▼ 文章大纲</div>
+      <ul className="sidebar-nav">
+        <li><a href="#ecosystem">助力国产化生态</a></li>
+        <li><a href="#outlook">未来展望</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

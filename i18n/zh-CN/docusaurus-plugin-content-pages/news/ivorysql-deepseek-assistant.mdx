@@ -1,0 +1,181 @@
+---
+title: DeepSeek 加持！IvorySQL 文档智能助手正式上线！
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-banner {
+    background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
+    padding: 40px 0;
+    color: white !important;
+    margin-bottom: 30px;
+  }
+  .detail-banner-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
+  .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
+
+  .detail-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .detail-main { flex: 1; min-width: 0; }
+  .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #7D52F4; }
+  
+  .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
+  .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+
+  .post-cover { width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+  
+  .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
+  .post-content h3 { font-size: 1.25rem; color: #444; margin-top: 25px; margin-bottom: 15px; font-weight: bold; }
+  .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
+  .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
+  .post-content strong { color: #333; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
+  .post-content blockquote { background: #fff4e5; border-left: 5px solid #ffa94d; padding: 15px 20px; margin: 20px 0; color: #666; font-size: 0.95rem; }
+
+  .detail-sidebar { width: 260px; flex-shrink: 0; }
+  .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+  .sidebar-nav li { margin-bottom: 10px; }
+  .sidebar-nav a { color: #666; font-size: 0.85rem; text-decoration: none; transition: color 0.2s; line-height: 1.4; display: block; }
+  .sidebar-nav a:hover { color: #7D52F4; }
+
+  @media (max-width: 996px) {
+    .detail-banner { padding: 30px 0; }
+    .detail-banner h1 { font-size: 1.5rem; }
+    .detail-wrapper { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .post-title { font-size: 1.5rem; }
+  }
+`}</style>
+
+<div className="detail-banner">
+  <div className="detail-banner-inner">
+    <h1>新闻动态</h1>
+    <div className="detail-banner-decor">● ○ ●</div>
+  </div>
+</div>
+
+<div className="detail-wrapper">
+  <div className="detail-main">
+    <div className="breadcrumb">
+      <a href="/news">新闻动态</a> <span>&gt;</span> <span>正文内容</span>
+    </div>
+
+    <div className="post-header">
+      <div className="post-title">DeepSeek 加持！IvorySQL 文档智能助手正式上线！</div>
+      <div className="post-date">📅 发布时间：2026 年 02 月 02 日</div>
+    </div>
+
+    <div className="post-content">
+      <p>"那个配置参数到底在第几章？"——正在部署 IvorySQL 的运维工程师小 “I”，第 5 次按 Ctrl+F 搜索文档。</p>
+      <p>从<strong>版本差异</strong>到<strong>参数说明</strong>，在浩如烟海的技术文档中精准定位信息，曾是每个开发运维们的必修课。技术文档也通常是我们了解开源项目的必要渠道之一，但文档内容繁杂，学习成本巨大。</p>
+      <p>IvorySQL 作为一款基于 PostgreSQL 研发的兼容 Oracle 的数据库，在功能融合方面表现卓越，它由瀚高股份开源，吸引了众多开发者和企业的目光。但随着功能不断丰富，知识体系日益庞大，想要快速找到关键信息并非易事。</p>
+      <p><strong>现在，IvorySQL 给出全新解决方案！</strong></p>
+      <p>基于 DeepSeek 打造的文档智能助手，让你用自然语言提问直接获取：</p>
+      <ul>
+        <li>✅ 产品基本信息</li>
+        <li>✅ 版本更新对比</li>
+        <li>✅ 配置示例代码</li>
+        <li>......</li>
+      </ul>
+
+      <h2 id="assistant-intro">IvorySQL 文档智能助手介绍</h2>
+      <p>IvorySQL 文档智能助手基于 Coze 平台和 DeepSeek R1 模型构建，现已在 <a href="https://www.ivorysql.org/zh-CN/" target="_blank">IvorySQL 官网</a>上线运行。</p>
+      <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-deepseek-assistant-1.png')} />
+      <p style={{textAlign: 'center', color: '#888', margin: '40px 0'}}>【截图：官网右下角图标展示】</p>
+      <p>如上图所示，直接点击官网右下角的 IvorySQL logo，即可打开助手界面。</p>
+      <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-deepseek-assistant-2.png')} />
+      <p style={{textAlign: 'center', color: '#888', margin: '40px 0'}}>【截图：助手对话界面展示】</p>
+      <p>在此界面中，您可以直接提问，获取即时答案！</p>
+      <p>IvorySQL 文档智能助手全面覆盖 IvorySQL 官网文档，包括发行说明、快速入门、安装指南、开发者指南、迁移指南、Oracle 兼容功能列表等等。只需简单输入问题，它就能迅速给出准确、详细的答案。</p>
+      <p>借助 IvorySQL 文档智能助手，您可以迅速掌握与 IvorySQL 相关的各项信息，加速学习进程，降低学习成本。</p>
+      <p>无论您是新手，还是已使用一段时间，IvorySQL 文档智能助手都能为您提供快速学习和使用的支持。</p>
+      <blockquote>
+        ⚠️ 需要说明的是：为了降低大家的使用成本，该助手采用了聊天室的形式，所有用户均可查看他人的问题，避免重复提问。
+      </blockquote>
+
+      <h3 id="r1-benefits">DeepSeek R1 带来的几大提升</h3>
+      <p><strong>1. 更强的文档理解能力</strong></p>
+      <ul>
+        <li>文档信息提取：在处理大规模文档时，能够更好地理解和提取关键信息，从而能够精准地回答基于文档内容的问题。</li>
+        <li>复杂内容推理：推理能力增强，能够在多个文档段落中进行跨段落推理，从而处理更为复杂的查询，生成更合理的答案。</li>
+      </ul>
+      <p><strong>2. 精准的文档相关性匹配：</strong></p>
+      <ul>
+        <li>文档与问题匹配优化：提供更强的语义匹配能力，能够理解用户提出的问题，并精准定位到相关文档中的具体段落或条目，避免模糊回答或错误引用文档内容。</li>
+        <li>问题精细化解析：在面对复杂问题时，可以通过更精细的自然语言处理能力分析问题的语义，理解问题背后的深层含义，从而提供更加准确的文档引用。</li>
+      </ul>
+      <p><strong>3. 提升的准确性与效率：</strong></p>
+      <ul>
+        <li>高效的查询响应：优化了文档查询和推理算法，能在较短时间内处理大量文档信息并提供高质量的答案。</li>
+        <li>降低误解率：能更准确地理解用户提问的意图，降低误解率，尤其是处理技术性、专业性较强的文档时，能够给出更为精确的答案。</li>
+      </ul>
+
+      <h3 id="boundary">能力边界说明</h3>
+      <ul>
+        <li>❌ 不处理故障诊断</li>
+        <li>❌ 不提供未在文档中声明的配置建议</li>
+      </ul>
+      <p><strong>IvorySQL 文档智能助手目前还处于 Beta 阶段，我们将持续优化，尽快为大家提供更全面的能力支持！</strong></p>
+
+      <h2 id="examples">问题示例</h2>
+      <p>以下是一些基础的问题示例，仅供参考。</p>
+      <h3 id="basic-info">基础信息获取</h3>
+      <ul>
+        <li>IvorySQL 是什么？</li>
+        <li>IvorySQL 与 PostgreSQL 的区别是什么？</li>
+        <li>IvorySQL 支持哪些 Oracle 兼容功能？</li>
+      </ul>
+      <h3 id="daily-usage">日常使用参考</h3>
+      <ul>
+        <li>IvorySQL 有哪些安装方式？</li>
+        <li>IvorySQL 有哪些备份方式？</li>
+        <li>如何在 IvorySQL 中导入和导出数据？</li>
+      </ul>
+      <h3 id="dev-prep">开发准备阶段</h3>
+      <ul>
+        <li>IvorySQL 是什么架构？</li>
+        <li>如何创建一个数据库？</li>
+      </ul>
+      <h3 id="others">其他</h3>
+      <ul>
+        <li>如何给 IvorySQL 做开源贡献？</li>
+      </ul>
+
+      <h2 id="welcome">欢迎体验</h2>
+      <p>IvorySQL 社区一直致力于为大家提供更好的服务和体验，这款文档智能助手就是社区努力的成果之一。我们期待它能成为大家在探索 IvorySQL 道路上的得力助手，帮助开发者们节省查找资料的时间，将更多精力投入到创新和实践中。</p>
+      <p>如果你还没有体验过，那就快来 IvorySQL 官网试试吧！在使用过程中有任何想法或建议，欢迎发送邮件至 <strong>support@ivorysql.org</strong> 或提交 issue 反馈给我们，让我们一起完善这个文档智能助手，共同打造更优质的 IvorySQL 技术生态。</p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-sticky">
+      <div className="sidebar-title">▼ 文章大纲</div>
+      <ul className="sidebar-nav">
+        <li><a href="#assistant-intro">助手介绍</a></li>
+        <li><a href="#r1-benefits">R1 带来的提升</a></li>
+        <li><a href="#boundary">能力边界说明</a></li>
+        <li><a href="#examples">问题示例</a></li>
+        <li><a href="#welcome">欢迎体验</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

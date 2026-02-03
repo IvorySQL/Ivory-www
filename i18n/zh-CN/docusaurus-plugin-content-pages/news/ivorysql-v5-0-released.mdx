@@ -1,0 +1,172 @@
+---
+title: IvorySQL 5.0 发布：基于 PG 18.0，Oracle 兼容、生态组件、云原生与易用性全面进化！
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-banner {
+    background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
+    padding: 40px 0;
+    color: white !important;
+    margin-bottom: 30px;
+  }
+  .detail-banner-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
+  .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
+
+  .detail-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .detail-main { flex: 1; min-width: 0; }
+  .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #7D52F4; }
+  
+  .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
+  .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+
+  .post-cover { width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+  
+  .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
+  .post-content h3 { font-size: 1.2rem; color: #444; margin-top: 25px; margin-bottom: 15px; font-weight: bold; }
+  .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
+  .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
+  .contributor-list { font-size: 0.95rem; color: #666; background: #f9f9f9; padding: 20px; border-radius: 8px; line-height: 1.6; }
+
+  .detail-sidebar { width: 240px; flex-shrink: 0; }
+  .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+  .sidebar-nav li { margin-bottom: 10px; }
+  .sidebar-nav a { color: #666; font-size: 0.9rem; text-decoration: none; transition: color 0.2s; }
+  .sidebar-nav a:hover { color: #7D52F4; }
+
+  @media (max-width: 996px) {
+    .detail-banner { padding: 30px 0; }
+    .detail-banner h1 { font-size: 1.5rem; }
+    .detail-wrapper { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .post-title { font-size: 1.5rem; }
+  }
+`}</style>
+
+<div className="detail-banner">
+  <div className="detail-banner-inner">
+    <h1>新闻动态</h1>
+    <div className="detail-banner-decor">● ○ ●</div>
+  </div>
+</div>
+
+<div className="detail-wrapper">
+  <div className="detail-main">
+    <div className="breadcrumb">
+      <a href="/news">新闻动态</a> <span>&gt;</span> <span>IvorySQL 5.0 发布</span>
+    </div>
+
+    <div className="post-header">
+      <div className="post-title">IvorySQL 5.0 发布：基于 PG 18.0，Oracle 兼容、生态组件、云原生与易用性全面进化！</div>
+      <div className="post-date">📅 发布时间：2025 年 11 月 25 日</div>
+    </div>
+
+    <div className="post-content">
+      <p>
+        [cite_start]IvorySQL 开源社区今天激动的向大家宣布：IvorySQL 5.0 发布了！ [cite: 5] [cite_start]基于 PostgreSQL 18.0 全面升级：Oracle 兼容性再突破，生态组件集成再升级，云原生深度支持，配合全平台安装包与在线丝滑体验，让复杂变得简单。 [cite: 6]
+      </p>
+
+      <h2 id="pg-18">基于 PostgreSQL 18.0</h2>
+      [cite_start]<p>PostgreSQL 18.0 核心升级包括： [cite: 1, 2, 3, 4, 5, 6, 7, 8]</p>
+      <ul>
+        [cite_start]<li>引入异步 IO（AIO）子系统，提升性能。 [cite: 1]</li>
+        [cite_start]<li><code>pg_upgrade</code> 工具新增优化器统计信息保留功能。 [cite: 2]</li>
+        [cite_start]<li>支持跳跃扫描（skip scan）。 [cite: 3]</li>
+        [cite_start]<li>新增 <code>uuidv7()</code> 函数。 [cite: 4]</li>
+        [cite_start]<li>虚拟生成列成为生成列的默认类型。 [cite: 5]</li>
+        [cite_start]<li>支持 OAuth 认证。 [cite: 6]</li>
+        [cite_start]<li>RETURNING 子句增强支持 OLD 和 NEW 关键字。 [cite: 7]</li>
+        [cite_start]<li>PRIMARY KEY、UNIQUE、FOREIGN KEY 增加时间范围约束支持。 [cite: 8]</li>
+      </ul>
+
+      <h2 id="new-features">新特性</h2>
+      <h3 id="oracle-compat">新增 21 个 Oracle 兼容功能</h3>
+      <ul>
+        <li>Oracle 兼容 ROWID 支持。</li>
+        <li>PL/iSQL CALL 调用语法、%ROWTYPE 及 %TYPE 支持。</li>
+        <li>空字符串自动转换为 NULL。</li>
+        <li>支持在 Oracle 和 PostgreSQL 解析器之间会话级切换。</li>
+        <li>Oracle 兼容 <code>SYS_GUID</code>、<code>SYS_CONTEXT</code> 及 <code>USERENV</code> 函数。</li>
+        <li>扩展 libpq、存储过程及函数的 OUT 参数支持。</li>
+        <li>支持嵌套子程序。</li>
+        <li>Oracle 兼容 <code>INSTR</code> 函数、FORCE VIEW 及 LIKE 运算符。</li>
+      </ul>
+
+      <h3 id="cloud-native">在线体验与云原生</h3>
+      <ul>
+        <li>推出基于浏览器的<a href="http://trial.ivorysql.org:8080/" target="_blank">在线体验环境</a>。</li>
+        <li>全平台打包支持 X86、ARM、MIPS、LoongArch 架构。</li>
+        <li>支持 Docker Compose、Swarm 及 Kubernetes (Helm) 容器化部署。</li>
+        <li>IvorySQL Cloud 5.0 发布，支持可视化全生命周期管理。</li>
+      </ul>
+
+      <h3 id="extensions">扩展适配</h3>
+      <p>新增或增强支持 pg_cron, pgAudit, PostGIS, pgRouting, PGroonga, ddlx, pgsql-http, system_stats, plpgsql_check, pgvector。</p>
+
+      <h2 id="fixed-issues">已修复问题</h2>
+      <ul>
+        <li>修复 OID 冲突检测工具避免误报。</li>
+        <li>消除 MainLoop 悬空指针场景，解决高并发下的偶发段错误。</li>
+        <li>重新启用 Oracle 兼容性端到端测试用例。</li>
+        <li>修正全局唯一索引强制约束逻辑。</li>
+      </ul>
+
+      <h2 id="source-code">源代码</h2>
+      <ul>
+        <li><strong>IvorySQL 数据库源码：</strong><a href="https://github.com/IvorySQL/IvorySQL" target="_blank">https://github.com/IvorySQL/IvorySQL</a></li>
+        <li><strong>IvorySQL 官网：</strong><a href="https://github.com/IvorySQL/Ivory-www" target="_blank">https://github.com/IvorySQL/Ivory-www</a></li>
+        <li><strong>IvorySQL 文档：</strong><a href="https://github.com/IvorySQL/IvorySQL-docs" target="_blank">https://github.com/IvorySQL/IvorySQL-docs</a></li>
+        <li><strong>IvorySQL Docker：</strong><a href="https://github.com/IvorySQL/docker_library" target="_blank">https://github.com/IvorySQL/docker_library</a></li>
+      </ul>
+
+      <h2 id="contributors">致谢</h2>
+      <p>感谢产品发布过程中的所有贡献者：</p>
+      <div className="contributor-list">
+        Carlos Chong, ccwxl, Cédric Villemain, Fu Bei, Fawei Zhao, Ge Sui, Grant Zhou, Imran Zaheer, jerome-peng, Jiaoshun Tian, luss, Martin Gerhardy, Mingran Feng, omstack, otegami, Ruike Sun, rophy, Shaolin Chu, Shawn Yan, Shihua Yang, Shiji Niu, Shuisen Tong, shlei6067, sjw1933, Xiangyu Liang, Xiaohui Liu, Xinjie Lv, xuexiaoganghs, Xueyu Gao, yangchunwanwusheng, Yanliang Lei, Yasir Hussain Shah, Yuan Li, Zhe Zhang, Zheng Tao, Zhenhao Pan, Zhuoyan Shi.
+      </div>
+
+      <h2 id="feedback">问题反馈</h2>
+      <p>
+        欢迎大家试用 IvorySQL 5.0，如发现问题，请在 GitHub 提交 issue：<a href="https://github.com/IvorySQL/IvorySQL/issues" target="_blank">https://github.com/IvorySQL/IvorySQL/issues</a>
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-sticky">
+      <div className="sidebar-title">▼ 文章大纲</div>
+      <ul className="sidebar-nav">
+        <li><a href="#pg-18">PostgreSQL 18.0</a></li>
+        <li><a href="#oracle-compat">Oracle 兼容</a></li>
+        <li><a href="#cloud-native">云原生与体验</a></li>
+        <li><a href="#extensions">扩展适配</a></li>
+        <li><a href="#fixed-issues">已修复问题</a></li>
+        <li><a href="#source-code">源代码</a></li>
+        <li><a href="#contributors">致谢</a></li>
+        <li><a href="#feedback">问题反馈</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

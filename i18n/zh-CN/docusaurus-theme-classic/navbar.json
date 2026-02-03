@@ -83,6 +83,10 @@
     "message": "合作伙伴",
     "description": "Navbar item with label Partners"
   },
+  "item.label.News": {
+    "message": "社区动态",
+    "description": "Navbar item with label News"
+  },
   "item.label.Customer Stories": {
     "message": "客户故事",
     "description": "Navbar item with label Customer Stories"
