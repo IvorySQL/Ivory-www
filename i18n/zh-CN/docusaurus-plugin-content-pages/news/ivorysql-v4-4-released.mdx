@@ -1,0 +1,160 @@
+---
+title: IvorySQL 4.4 发布
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-banner {
+    background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
+    padding: 40px 0;
+    color: white !important;
+    margin-bottom: 30px;
+  }
+  .detail-banner-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
+  .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
+
+  .detail-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .detail-main { flex: 1; min-width: 0; }
+  .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #7D52F4; }
+  
+  .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
+  .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+
+  .post-cover { width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+  
+  .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
+  .post-content h3 { font-size: 1.25rem; color: #444; margin-top: 25px; margin-bottom: 15px; font-weight: bold; }
+  .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
+  .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
+  .contributor-list { font-size: 0.95rem; color: #666; background: #f9f9f9; padding: 20px; border-radius: 8px; line-height: 1.6; }
+
+  .detail-sidebar { width: 240px; flex-shrink: 0; }
+  .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+  .sidebar-nav li { margin-bottom: 10px; }
+  .sidebar-nav a { color: #666; font-size: 0.85rem; text-decoration: none; transition: color 0.2s; line-height: 1.4; display: block; }
+  .sidebar-nav a:hover { color: #7D52F4; }
+
+  @media (max-width: 996px) {
+    .detail-banner { padding: 30px 0; }
+    .detail-banner h1 { font-size: 1.5rem; }
+    .detail-wrapper { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .post-title { font-size: 1.5rem; }
+  }
+`}</style>
+
+<div className="detail-banner">
+  <div className="detail-banner-inner">
+    <h1>新闻动态</h1>
+    <div className="detail-banner-decor">● ○ ●</div>
+  </div>
+</div>
+
+<div className="detail-wrapper">
+  <div className="detail-main">
+    <div className="breadcrumb">
+      <a href="/news">新闻动态</a> <span>&gt;</span> <span>正文内容</span>
+    </div>
+
+    <div className="post-header">
+      <div className="post-title">IvorySQL 4.4 发布</div>
+      <div className="post-date">📅 发布时间：2025 年 03 月 10 日</div>
+    </div>
+
+    <div className="post-content">
+      <p>IvorySQL 4.4 已于 2025 年 3 月 10 日正式发布。新版本全面支持 PostgreSQL 17.4，新增多项新功能，并修复了已知问题。</p>
+
+      <h2 id="enhancements">增强功能</h2>
+      <h3 id="pg-17-3">PostgreSQL 17.3 增强功能</h3>
+      <ul>
+        <li>加强 PQescapeString 及相关函数对无效编码输入字符串的防护。</li>
+        <li>恢复在连接请求中出现的数据库和用户名的自动截断。</li>
+        <li>从连接权限检查和限制中排除并行工作者。</li>
+        <li>从 LWLock 等待事件名称中移除 “Lock” 后缀。</li>
+        <li>修复窗口聚合中可能重用过时结果的问题。</li>
+        <li>防止在关系截断过程中启动检查点。</li>
+      </ul>
+      <p>有关更多详细信息，请访问 <a href="https://www.postgresql.org/docs/release/17.3/" target="_blank">PostgreSQL 17.3 发布说明</a>。</p>
+
+      <h3 id="pg-17-4">PostgreSQL 17.4 增强功能</h3>
+      <ul>
+        <li>改进 libpq 的引号处理函数行为。</li>
+        <li>修复 pg_createsubscriber 中的小内存泄漏问题。</li>
+        <li>修复 meson 构建系统以正确检测 bsd_auth.h 系统头文件的可用性。</li>
+      </ul>
+      <p>有关更多详细信息，请访问 <a href="https://www.postgresql.org/docs/release/17.4/" target="_blank">PostgreSQL 17.4 发布说明</a>。</p>
+
+      <h2 id="new-features">新功能</h2>
+      <h3 id="arm64">1. ARM64 架构全平台介质包</h3>
+      <p>提供适用于 ARM 架构的全平台介质包，支持国内外主流操作系统，包括 Red Hat、Debian、Kylin、UOS、NSAR OS 等。</p>
+
+      <h3 id="x86">2. X86 架构全平台介质包</h3>
+      <p>提供适用于 X86 架构的全平台介质包，支持国内外主流操作系统，包括 Red Hat、Debian、Kylin、UOS、NSAR OS 等。</p>
+
+      <h3 id="kernel-design">3. 新增内核架构设计专栏</h3>
+      <p>新增一系列内核架构设计文档，首个主题为 Oracle 兼容性，深入探讨每个模块的框架、设计和实现原理，旨在帮助用户深入理解 Oracle 兼容性框架。目前已经发布两个模块的架构设计文档：</p>
+      <ul>
+        <li>Oracle 兼容性框架中的双 parser 架构原理分析</li>
+        <li>Oracle 兼容性框架中的 initdb 架构原理分析</li>
+      </ul>
+
+      <h3 id="chatroom">4. IvorySQL 官方网站新增聊天室功能</h3>
+      <p>在官方网站上新增聊天室功能，支持与 IvorySQL 相关的智能互动和问答环节。</p>
+
+      <h2 id="fixed-issues">修复的问题</h2>
+      <ul>
+        <li>使用不可见列和 pg_dump 时 SQL 不完整的问题</li>
+        <li>EulerOS 的安装包问题</li>
+      </ul>
+      <p>更多详情参考：<a href="https://github.com/IvorySQL/IvorySQL/releases/tag/IvorySQL_4.4" target="_blank">IvorySQL 4.4 发布说明</a>。</p>
+
+      <h2 id="source-code">源码</h2>
+      <p>IvorySQL 主要包含 2 个代码仓库:</p>
+      <ul>
+        <li>IvorySQL 数据库源码：<a href="https://github.com/IvorySQL/IvorySQL" target="_blank">https://github.com/IvorySQL/IvorySQL</a></li>
+        <li>IvorySQL 官方网站：<a href="https://github.com/IvorySQL/Ivory-www" target="_blank">https://github.com/IvorySQL/Ivory-www</a></li>
+      </ul>
+
+      <h2 id="contributors">贡献者</h2>
+      <p>以下人员（按字母顺序排列）作为补丁作者、提交者、审阅者、测试人员或问题报告者对本版本做出了贡献：</p>
+      <div className="contributor-list">
+        Alex Guo, Cary Huang, Denis Lussier, Fawei Zhao, Flyingbeecd, Grant Zhou, Imran Zaheer, Kang Wang, Lily Wang, Mingran Feng, Ruohang Feng, Shawn Yan, Shiji Niu, Shoubo Wang, Shuntian Jiao, Xiangyu Liang, Xinjie Lv, Xueyu Gao, Zhenhao Pan.
+      </div>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-sticky">
+      <div className="sidebar-title">▼ 文章大纲</div>
+      <ul className="sidebar-nav">
+        <li><a href="#enhancements">增强功能</a></li>
+        <li><a href="#new-features">新功能介绍</a></li>
+        <li><a href="#fixed-issues">修复的问题</a></li>
+        <li><a href="#source-code">源码仓库</a></li>
+        <li><a href="#contributors">贡献者名单</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

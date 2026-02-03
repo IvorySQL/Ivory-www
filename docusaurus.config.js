@@ -135,6 +135,10 @@ const config = {
                 to: '/partners-page',
               },
               {
+                label: 'News',
+                to: 'news',
+              },
+              {
                 label: 'Customer Stories',
                 href: 'customer-stories-page',
               },

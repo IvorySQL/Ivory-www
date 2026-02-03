@@ -1,0 +1,155 @@
+---
+title: IvorySQL 5.1 Officially Released on December 18, 2025!
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-banner {
+    background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
+    padding: 40px 0;
+    color: white !important;
+    margin-bottom: 30px;
+  }
+  .detail-banner-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
+  .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
+
+  .detail-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .detail-main { flex: 1; min-width: 0; }
+  .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #7D52F4; }
+  
+  .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
+  .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+
+  .post-cover { width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+  
+  .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
+  .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
+  .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
+  .contributor-list { font-size: 0.95rem; color: #666; background: #f9f9f9; padding: 20px; border-radius: 8px; line-height: 1.6; }
+
+  .detail-sidebar { width: 240px; flex-shrink: 0; }
+  .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem; }
+  .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+  .sidebar-nav li { margin-bottom: 10px; }
+  .sidebar-nav a { color: #666; font-size: 0.9rem; text-decoration: none; transition: color 0.2s; }
+  .sidebar-nav a:hover { color: #7D52F4; }
+
+  @media (max-width: 996px) {
+    .detail-banner { padding: 30px 0; }
+    .detail-banner h1 { font-size: 1.5rem; }
+    .detail-wrapper { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .post-title { font-size: 1.5rem; }
+  }
+`}</style>
+
+<div className="detail-banner">
+  <div className="detail-banner-inner">
+    <h1>News & Updates</h1>
+    <div className="detail-banner-decor">● ○ ●</div>
+  </div>
+</div>
+
+<div className="detail-wrapper">
+  <div className="detail-main">
+    <div className="breadcrumb">
+      <a href="/news">News</a> <span>&gt;</span> <span>IvorySQL 5.1 Release</span>
+    </div>
+
+    <div className="post-header">
+      <div className="post-title">IvorySQL 5.1 Officially Released on December 18, 2025!</div>
+      <div className="post-date">📅 Published on: December 18, 2025</div>
+    </div>
+
+    <div className="post-content">
+      <p>
+        IvorySQL 5.1 is built based on PostgreSQL 18.1, including multiple bug fixes and functional improvements. For the complete update list, please refer to the official documentation site.
+      </p>
+
+      <h2 id="pg-features">Enhanced Features from PostgreSQL 18.1</h2>
+      <ul>
+        <li>Check the CREATE permission for Schemas in CREATE STATISTICS.</li>
+        <li>Avoid potential integer overflows in size allocation calculations in libpq.</li>
+        <li>Prevent the "unrecognized node type" error when the DEFAULT clause of SQL/JSON functions (e.g., JSON_VALUE) contains COLLATE expressions.</li>
+        <li>Avoid incorrect optimization of constant HAVING clauses that include grouping sets.</li>
+        <li>Disable parallel execution in hash right semi joins.</li>
+        <li>Avoid potential division-by-zero errors when generating ordered-append execution plans.</li>
+        <li>Fix the issue where the query planner might fail for index types that support ordered access but not index-only scans.</li>
+      </ul>
+      <p>For more details, see the official <a href="https://www.postgresql.org/docs/release/18.1/" target="_blank" rel="noopener noreferrer">PostgreSQL 18.1 Release Notes</a>.</p>
+
+      <h2 id="ivory-features">New Features of IvorySQL 5.1</h2>
+      <ul>
+        <li><strong>Upgraded to PG 18.1 Kernel</strong></li>
+        <li><strong>Online Experience:</strong> IvorySQL 5.1 launches a browser-based interactive experience environment, allowing users to explore and evaluate its features in real time without local installation.</li>
+        <li><strong>Full-Platform Installation Package Support:</strong> Provide multi-platform installation packages covering X86, ARM, MIPS and LoongArch architectures.</li>
+        <li><strong>Containerized Deployment Support:</strong> Enable one-click deployment of IvorySQL 5.1 standalone instances or high-availability clusters via Docker Compose, Podman, Swarm, Helm and Operator tools.</li>
+        <li><strong>Synchronized Release of IvorySQL Cloud 5.1:</strong> Integrate the IvorySQL 5.1 database and its surrounding ecosystem to realize visual full-lifecycle management including database provisioning and deprovisioning, monitoring and operation.</li>
+        <li><strong>PostgreSQL Extension Support:</strong> Add support for 10 PostgreSQL extensions, namely pg_cron, pgAudit, PostGIS, pgRouting, PGroonga, ddlx, pgsql-http, system_stats, plpgsql_check and pgvector.</li>
+      </ul>
+
+      <h2 id="fixed-issues">Fixed Issues</h2>
+      <ul>
+        <li>Clean up warning messages during the compilation process.</li>
+        <li>Fix the issue where the PL/iSQL parser rejects parenthesized syntax in SELECT INTO expressions.</li>
+        <li>Correct the documentation description about the missing uuid-ossp extension during source code installation.</li>
+      </ul>
+
+      <h2 id="source-code">Source Code</h2>
+      <p>The development and maintenance of IvorySQL are mainly carried out in the following four code repositories:</p>
+      <ul>
+        <li><strong>IvorySQL Database Source Code:</strong> <a href="https://github.com/IvorySQL/IvorySQL" target="_blank">https://github.com/IvorySQL/IvorySQL</a></li>
+        <li><strong>IvorySQL Official Website:</strong> <a href="https://github.com/IvorySQL/Ivory-www" target="_blank">https://github.com/IvorySQL/Ivory-www</a></li>
+        <li><strong>IvorySQL Documentation:</strong> <a href="https://github.com/IvorySQL/IvorySQL_docs" target="_blank">https://github.com/IvorySQL/IvorySQL_docs</a></li>
+        <li><strong>IvorySQL Docker:</strong> <a href="https://github.com/IvorySQL/docker_library" target="_blank">https://github.com/IvorySQL/docker_library</a></li>
+      </ul>
+
+      <h2 id="contributors">Contributors</h2>
+      <p>The following individuals (in alphabetical order) participated in this release as patch authors, committers, reviewers, testers or issue reporters:</p>
+      <div className="contributor-list">
+        Amberwww1, Cédric Villemain, Fawei Zhao, Ge Sui, Grant Zhou, Oreo Yang, Rophy Tsai, Shuntian Jiao, Steven Niu, Xiangyu Liang, Xiaohui Liu, Xinjie Lv, Xueyu Gao, Yasir Hussain Shah, Yuan Li, Zheng Tao, Zhenhao Pan, Zhe Zhang, Zhibin Wang, Zhuoyan Shi.
+      </div>
+      <p style={{marginTop: '15px'}}><strong>Thanks to all the contributors!</strong></p>
+
+      <h2 id="try-it">Try It Out Now</h2>
+      <p>
+        We welcome all community members to try IvorySQL 5.1. If you encounter any issues, please submit feedback via <a href="https://github.com/IvorySQL/IvorySQL/issues" target="_blank">GitHub Issues</a>. We will send you exclusive IvorySQL merchandise as a gift!
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-sticky">
+      <div className="sidebar-title">▼ CONTENTS</div>
+      <ul className="sidebar-nav">
+        <li><a href="#pg-features">PG 18.1 Enhancements</a></li>
+        <li><a href="#ivory-features">IvorySQL 5.1 New Features</a></li>
+        <li><a href="#fixed-issues">Fixed Issues</a></li>
+        <li><a href="#source-code">Source Code</a></li>
+        <li><a href="#contributors">Contributors</a></li>
+        <li><a href="#try-it">Try It Out Now</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

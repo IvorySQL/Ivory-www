@@ -1,0 +1,168 @@
+---
+title: IvorySQL 4.6 Released!
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-banner {
+    background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
+    padding: 40px 0;
+    color: white !important;
+    margin-bottom: 30px;
+  }
+  .detail-banner-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
+  .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
+
+  .detail-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .detail-main { flex: 1; min-width: 0; }
+  .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #7D52F4; }
+  
+  .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
+  .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+
+  .post-cover { width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+  
+  .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
+  .post-content h3 { font-size: 1.25rem; color: #444; margin-top: 25px; margin-bottom: 15px; font-weight: bold; }
+  .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
+  .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
+  .contributor-list { font-size: 0.95rem; color: #666; background: #f9f9f9; padding: 20px; border-radius: 8px; line-height: 1.6; }
+
+  .detail-sidebar { width: 240px; flex-shrink: 0; }
+  .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem; }
+  .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+  .sidebar-nav li { margin-bottom: 10px; }
+  .sidebar-nav a { color: #666; font-size: 0.85rem; text-decoration: none; transition: color 0.2s; line-height: 1.4; display: block; }
+  .sidebar-nav a:hover { color: #7D52F4; }
+
+  @media (max-width: 996px) {
+    .detail-banner { padding: 30px 0; }
+    .detail-banner h1 { font-size: 1.5rem; }
+    .detail-wrapper { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .post-title { font-size: 1.5rem; }
+  }
+`}</style>
+
+<div className="detail-banner">
+  <div className="detail-banner-inner">
+    <h1>News & Updates</h1>
+    <div className="detail-banner-decor">● ○ ●</div>
+  </div>
+</div>
+
+<div className="detail-wrapper">
+  <div className="detail-main">
+    <div className="breadcrumb">
+      <a href="/news">News</a> <span>&gt;</span> <span>IvorySQL 4.6 Release</span>
+    </div>
+
+    <div className="post-header">
+      <div className="post-title">IvorySQL 4.6 Released!</div>
+      <div className="post-date">📅 Published on: September 10, 2025</div>
+    </div>
+
+    <div className="post-content">
+      <p>
+        IvorySQL 4.6 was officially released on September 10, 2025!
+      </p>
+      <p>
+        This new version offers full support for PostgreSQL 17.6, with a host of new features added and known issues fixed.
+      </p>
+
+      <h2 id="enhanced-features">Enhanced Features</h2>
+      <h3 id="pg-enhancements">PostgreSQL 17.6 Enhancements:</h3>
+      <ul>
+        <li>Strengthened security checks in planner estimation functions.</li>
+        <li>Prevented pg_dump scripts from being exploited to attack users performing restore operations.</li>
+        <li>Converted newlines to spaces in names included in comments of pg_dump output.</li>
+        <li>Fixed a distance calculation error in the support functions for BRIN numeric_minmax_multi_ops.</li>
+        <li>Addressed the regression issue in the size of XML input accepted by the system.</li>
+      </ul>
+      <p>
+        For more details, see the <a href="https://www.postgresql.org/docs/release/17.6/" target="_blank" rel="noopener noreferrer">PostgreSQL Release Notes</a>.
+      </p>
+
+      <h2 id="new-features">New Features</h2>
+      <ul>
+        <li>Upgraded to the PostgreSQL 17.6 kernel.</li>
+        <li><strong>MongoDB-compatible solutions:</strong> Delivered MongoDB-compatible support with FerretDB and DocumentDB.</li>
+        <li><strong>Full-platform LoongArch packaging:</strong> Provided full-platform installation packages for the LoongArch architecture, supporting mainstream operating systems at home and abroad including Red Hat, Debian, Kylin, UnionTech and Ningsi. X86, ARM and MIPS architectures are also supported.</li>
+        <li><strong>IvorySQL Online Trial:</strong> Launched a web-based platform for users to experience IvorySQL V4.6 online, enabling direct database interactions via a browser interface.</li>
+        <li><strong>Containerized deployment support (Docker Swarm):</strong> Enabled deployment of standalone IvorySQL instances and high-availability clusters in Docker Swarm environments.</li>
+        <li><strong>Containerized deployment support (Kubernetes):</strong> Enabled deployment of standalone IvorySQL instances and high-availability clusters on Kubernetes (K8s) using Helm.</li>
+        <li><strong>IvorySQL Cloud v4.0 Released:</strong> The IvorySQL Cloud platform now supports subscription management for IvorySQL v4 databases, as well as comprehensive management of its surrounding ecosystem.</li>
+      </ul>
+
+      <h2 id="fixed-issues">Fixed Known Issues</h2>
+      <ul>
+        <li>Resolved the missing libcrypt issue on the aarch64 platform.</li>
+        <li>Fixed the incorrect compilation and installation of extensions prefixed with test_ during make and make install execution.</li>
+        <li><strong>Documentation:</strong> Corrected several spelling errors.</li>
+        <li><strong>Documentation:</strong> Fixed errors in the installation section.</li>
+        <li><strong>Documentation:</strong> Updated the community contribution process.</li>
+      </ul>
+      <p>For more details:</p>
+      <ul>
+        <li><a href="https://github.com/IvorySQL/IvorySQL/releases/tag/IvorySQL_4.6" target="_blank" rel="noopener noreferrer">IvorySQL 4.6 Release Notes</a></li>
+        <li><a href="https://github.com/IvorySQL/IvorySQL/commits/IVORY_REL_4_STABLE" target="_blank" rel="noopener noreferrer">Complete Changelog</a></li>
+      </ul>
+
+      <h2 id="source-code">Source Code</h2>
+      <p>IvorySQL primarily consists of 2 code repositories:</p>
+      <ul>
+        <li>IvorySQL Database Source Code: <a href="https://github.com/IvorySQL/IvorySQL" target="_blank" rel="noopener noreferrer">https://github.com/IvorySQL/IvorySQL</a></li>
+        <li>IvorySQL Official Website: <a href="https://github.com/IvorySQL/Ivory-www" target="_blank" rel="noopener noreferrer">https://github.com/IvorySQL/Ivory-www</a></li>
+      </ul>
+
+      <h2 id="contributors">Acknowledgements to Contributors</h2>
+      <p>
+        The following individuals (listed in alphabetical order) contributed to this release as patch authors, committers, reviewers, testers or issue reporters:
+      </p>
+      <div className="contributor-list">
+        caffiendo, Cédric Villemain, Fawei Zhao, flyingbeecd, Ge Sui, Grant Zhou, huchangqiqi, Pedro Lopez, RRRRhl, Ruohang Feng, shangwei007, Shawn Yan, Shaolin Chu, Shihua Yang, Shiji Niu, Shuntian Jiao, tiankongbuqi, Xiangyu Liang, Xinjie Lv, Xueyu Gao, Yanliang Lei, Yasir Hussain Shah, Yuan Li, Zheng Tao, Zhenhao Pan, Zhuoyan Shi.
+      </div>
+      <p style={{marginTop: '15px'}}><strong>Thanks to all the contributors!</strong></p>
+
+      <h2 id="try-it">Try It Out Now</h2>
+      <p>
+        We welcome all community members to try IvorySQL 4.6. If you encounter any issues, please submit your feedback via <a href="https://github.com/IvorySQL/IvorySQL/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a>, and we will send you exclusive IvorySQL merchandise as a gift!
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-sticky">
+      <div className="sidebar-title">▼ CONTENTS</div>
+      <ul className="sidebar-nav">
+        <li><a href="#enhanced-features">Enhanced Features</a></li>
+        <li><a href="#new-features">New Features</a></li>
+        <li><a href="#fixed-issues">Fixed Known Issues</a></li>
+        <li><a href="#source-code">Source Code</a></li>
+        <li><a href="#contributors">Contributors</a></li>
+        <li><a href="#try-it">Try It Out Now</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
