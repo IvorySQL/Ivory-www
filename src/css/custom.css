@@ -139,3 +139,31 @@
   border-color: #f3f4f6;
   background: #fafafa;
 }
+
+@media (max-width: 768px) {
+  .custom-horizontal-card {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+
+  .card-left-img {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    border-right: none !important;
+    border-bottom: 1px solid #eee;
+    height: 200px;
+  }
+
+  .card-right-content {
+    padding: 16px !important;
+  }
+
+  .post-item-title {
+    font-size: 1.2rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .post-item-tags {
+    margin-top: 12px;
+  }
+}
