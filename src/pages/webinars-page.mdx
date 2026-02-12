@@ -114,10 +114,8 @@ export const EventCard = ({ event }) => {
 
   return (
     <a 
-      href={link} 
-      className="event-card" 
-      target="_blank" 
-      rel="noopener noreferrer"
+      href={useBaseUrl(link)} 
+      className="event-card"
     >
       <div className="card-img-wrapper">
         <img src={useBaseUrl(img)} alt={title} loading="lazy" />

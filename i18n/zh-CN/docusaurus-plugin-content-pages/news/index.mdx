@@ -13,7 +13,7 @@ export const NewsData = [
     date: "2025-12-18",
     category: "product",
     categoryLabel: "产品动态",
-    link: "/zh-cn/news/ivorysql-v5-1-released",
+    link: "/news/ivorysql-v5-1-released",
     img: "/img/news/ivorysql-v5-1-released.png"
   },
   {
@@ -22,7 +22,7 @@ export const NewsData = [
     date: "2025-11-25",
     category: "product",
     categoryLabel: "产品动态",
-    link: "/zh-cn/news/ivorysql-v5-0-released",
+    link: "/news/ivorysql-v5-0-released",
     img: "/img/news/ivorysql-v5-0-released.png"
   },
   {
@@ -31,7 +31,7 @@ export const NewsData = [
     date: "2025-11-13",
     category: "community",
     categoryLabel: "社区动态",
-    link: "/zh-cn/news/ivorysql-ospp-2025",
+    link: "/news/ivorysql-ospp-2025",
     img: "/img/news/ivorysql-ospp-2025.png"
   },
   {
@@ -40,7 +40,7 @@ export const NewsData = [
     date: "2025-10-20",
     category: "community",
     categoryLabel: "社区动态",
-    link: "/zh-cn/news/detail-pg18-contributors",
+    link: "/news/detail-pg18-contributors",
     img: "/img/news/detail-pg18-contributors.png"
   },
   {
@@ -49,7 +49,7 @@ export const NewsData = [
     date: "2025-09-26",
     category: "product",
     categoryLabel: "产品动态",
-    link: "/zh-cn/news/ivorysql-kylin-cert",
+    link: "/news/ivorysql-kylin-cert",
     img: "/img/news/ivorysql-kylin-cert.png"
   },
   {
@@ -58,7 +58,7 @@ export const NewsData = [
     date: "2025-09-17",
     category: "product",
     categoryLabel: "产品动态",
-    link: "/zh-cn/news/ivorysql-deepin-cert",
+    link: "/news/ivorysql-deepin-cert",
     img: "/img/news/ivorysql-deepin-cert.png"
   },
   {
@@ -67,7 +67,7 @@ export const NewsData = [
     date: "2025-09-12",
     category: "product",
     categoryLabel: "产品动态",
-    link: "/zh-cn/news/ivorysql-loongarch-cert",
+    link: "/news/ivorysql-loongarch-cert",
     img: "/img/news/ivorysql-loongarch-cert.png"
   },
   {
@@ -76,7 +76,7 @@ export const NewsData = [
     date: "2025-09-11",
     category: "product",
     categoryLabel: "产品动态",
-    link: "/zh-cn/news/ivorysql-v4-6-released",
+    link: "/news/ivorysql-v4-6-released",
     img: "/img/news/ivorysql-v4-6-released.png"
   },
   {
@@ -85,7 +85,7 @@ export const NewsData = [
     date: "2025-08-04",
     category: "product",
     categoryLabel: "产品动态",
-    link: "/zh-cn/news/ivorysql-navicat",
+    link: "/news/ivorysql-navicat",
     img: "/img/news/ivorysql-navicat.png"
   },
   {
@@ -94,7 +94,7 @@ export const NewsData = [
     date: "2025-07-15",
     category: "community",
     categoryLabel: "社区动态",
-    link: "/zh-cn/news/ivorysql-expert-advisory-committee",
+    link: "/news/ivorysql-expert-advisory-committee",
     img: "/img/news/ivorysql-expert-advisory-committee.png"
   },
   {
@@ -103,7 +103,7 @@ export const NewsData = [
     date: "2025-06-28",
     category: "community",
     categoryLabel: "社区动态",
-    link: "/zh-cn/news/ivorysql-ospp-students",
+    link: "/news/ivorysql-ospp-students",
     img: "/img/news/ivorysql-ospp-students.png"
   },
   {
@@ -112,7 +112,7 @@ export const NewsData = [
     date: "2025-06-05",
     category: "product",
     categoryLabel: "产品动态",
-    link: "/zh-cn/news/ivorysql-v4-5-released",
+    link: "/news/ivorysql-v4-5-released",
     img: "/img/news/ivorysql-v4-5-released.png"
   },
   {
@@ -121,7 +121,7 @@ export const NewsData = [
     date: "2025-05-07",
     category: "community",
     categoryLabel: "社区动态",
-    link: "/zh-cn/news/ivorysql-pku-course",
+    link: "/news/ivorysql-pku-course",
     img: "/img/news/ivorysql-pku-course.png"
   },
   {
@@ -130,7 +130,7 @@ export const NewsData = [
     date: "2025-03-14",
     category: "community",
     categoryLabel: "社区动态",
-    link: "/zh-cn/news/ivorysql-deepseek-assistant",
+    link: "/news/ivorysql-deepseek-assistant",
     img: "/img/news/ivorysql-deepseek-assistant.png"
   },
   {
@@ -139,7 +139,7 @@ export const NewsData = [
     date: "2025-03-10",
     category: "product",
     categoryLabel: "产品动态",
-    link: "/zh-cn/news/ivorysql-v4-4-released",
+    link: "/news/ivorysql-v4-4-released",
     img: "/img/news/ivorysql-v4-4-released.png"
   },
   {
@@ -148,7 +148,7 @@ export const NewsData = [
     date: "2025-01-13",
     category: "product",
     categoryLabel: "产品动态",
-    link: "/zh-cn/news/ivorysql-v4-2-released",
+    link: "/news/ivorysql-v4-2-released",
     img: "/img/news/ivorysql-v4-2-released.png"
   }
 ];
@@ -156,7 +156,7 @@ export const NewsData = [
 export const NewsCard = ({ news }) => {
   const { title, desc, date, category, categoryLabel, link, img } = news;
   return (
-    <a href={link} className="news-card" target="_blank" rel="noopener noreferrer">
+    <a href={useBaseUrl(link)} className="news-card">
       <div className="news-img-wrapper">
         <img src={useBaseUrl(img)} alt={title} loading="lazy" />
       </div>
@@ -225,12 +225,10 @@ export const NewsList = () => {
   .banner-text { position: relative; z-index: 2; max-width: 50%; }
   .banner-text h1 { font-size: 3rem; font-weight: bold; margin: 0; color: white !important; }
   .banner-text p { font-size: 1.2rem; opacity: 0.9; margin-top: 15px; color: white !important; }
-
   .news-container { max-width: 1200px; margin: 0 auto; padding: 0 20px 80px; }
   .filter-container { display: flex; gap: 12px; margin-bottom: 30px; }
   .filter-btn { padding: 10px 24px; border-radius: 30px; border: 1px solid #f0f0f0; background: #fff; color: #666; cursor: pointer; transition: all 0.3s; font-weight: 500; }
   .filter-btn.active { background: #7D52F4; color: #fff; border-color: #7D52F4; }
-
   .news-list { display: flex; flex-direction: column; gap: 20px; }
   .news-card { display: flex; background: #fff; border: 1px solid #f0f0f0; border-radius: 12px; overflow: hidden; text-decoration: none !important; color: inherit !important; transition: all 0.3s; }
   .news-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
@@ -246,7 +244,6 @@ export const NewsList = () => {
   .pagination { display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 50px; }
   .pager-btn { padding: 8px 20px; border-radius: 20px; border: 1px solid #7D52F4; color: #7D52F4; background: transparent; cursor: pointer; }
   .pager-btn:disabled { color: #ccc; border-color: #eee; cursor: not-allowed; }
-
   @media (max-width: 996px) {
     .news-banner { min-height: 240px; padding: 2rem 1.5rem; background-position: bottom center; }
     .banner-text { max-width: 100%; text-align: center; margin-bottom: 80px; }
