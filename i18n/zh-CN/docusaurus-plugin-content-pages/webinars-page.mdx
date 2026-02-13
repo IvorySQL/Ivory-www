@@ -13,7 +13,7 @@ export const EventsData = [
     startTime: "2025-12-25",
     endTime: "2025-12-25",
     location: "线上活动",
-    link: "/zh-cn/webinars/event-202517",
+    link: "/webinars/event-202517",
     img: "/img/events/event-202517.jpg"
   },
   {
@@ -22,7 +22,7 @@ export const EventsData = [
     startTime: "2025-12-13",
     endTime: "2025-12-13",
     location: "线上活动",
-    link: "/zh-cn/webinars/event-202516",
+    link: "/webinars/event-202516",
     img: "/img/events/event-202516.png"
   },
   {
@@ -31,7 +31,7 @@ export const EventsData = [
     startTime: "2025-11-29",
     endTime: "2025-11-29",
     location: "线下活动",
-    link: "/zh-cn/webinars/event-202515",
+    link: "/webinars/event-202515",
     img: "/img/events/event-202515.png"
   },
   {
@@ -40,7 +40,7 @@ export const EventsData = [
     startTime: "2025-10-16",
     endTime: "2025-10-16",
     location: "线上活动",
-    link: "/zh-cn/webinars/event-202514",
+    link: "/webinars/event-202514",
     img: "/img/events/event-202514.png"
   },
   {
@@ -49,7 +49,7 @@ export const EventsData = [
     startTime: "2025-09-29",
     endTime: "2025-09-29",
     location: "线上活动",
-    link: "/zh-cn/webinars/event-202513",
+    link: "/webinars/event-202513",
     img: "/img/events/event-202513.png"
   },
   {
@@ -58,7 +58,7 @@ export const EventsData = [
     startTime: "2025-09-23",
     endTime: "2026-12-23",
     location: "线上活动",
-    link: "/zh-cn/webinars/event-202512",
+    link: "/webinars/event-202512",
     img: "/img/events/event-202512.png"
   },
   {
@@ -67,7 +67,7 @@ export const EventsData = [
     startTime: "2025-09-16",
     endTime: "2026-02-28",
     location: "线上活动",
-    link: "/zh-cn/webinars/event-202511",
+    link: "/webinars/event-202511",
     img: "/img/events/event-202511.png"
   },
   {
@@ -76,7 +76,7 @@ export const EventsData = [
     startTime: "2025-08-30",
     endTime: "2025-08-30",
     location: "线下活动",
-    link: "/zh-cn/webinars/event-202510",
+    link: "/webinars/event-202510",
     img: "/img/events/event-202510.png"
   },
   {
@@ -85,7 +85,7 @@ export const EventsData = [
     startTime: "2025-07-18",
     endTime: "2025-07-18",
     location: "线下活动",
-    link: "/zh-cn/webinars/event-202509",
+    link: "/webinars/event-202509",
     img: "/img/events/event-202509.png"
   },
   {
@@ -94,7 +94,7 @@ export const EventsData = [
     startTime: "2025-06-27",
     endTime: "2025-06-28",
     location: "线下活动",
-    link: "/zh-cn/webinars/event-202508",
+    link: "/webinars/event-202508",
     img: "/img/events/event-202508.jpg"
   },
   {
@@ -103,7 +103,7 @@ export const EventsData = [
     startTime: "2025-06-07",
     endTime: "2025-06-07",
     location: "线下活动",
-    link: "/zh-cn/webinars/event-202507",
+    link: "/webinars/event-202507",
     img: "/img/events/event-202507.png"
   },
   {
@@ -112,7 +112,7 @@ export const EventsData = [
     startTime: "2025-05-13",
     endTime: "2025-05-16",
     location: "线下活动",
-    link: "/zh-cn/webinars/event-202506",
+    link: "/webinars/event-202506",
     img: "/img/events/event-202506.png"
   },
   {
@@ -121,7 +121,7 @@ export const EventsData = [
     startTime: "2025-05-09",
     endTime: "2025-06-09",
     location: "线上活动",
-    link: "/zh-cn/webinars/event-202505",
+    link: "/webinars/event-202505",
     img: "/img/events/event-202505.png"
   },
   {
@@ -130,7 +130,7 @@ export const EventsData = [
     startTime: "2025-04-24",
     endTime: "2025-04-24",
     location: "线上活动",
-    link: "/zh-cn/webinars/event-202504",
+    link: "/webinars/event-202504",
     img: "/img/events/event-202504.png"
   },
   {
@@ -139,7 +139,7 @@ export const EventsData = [
     startTime: "2025-04-19",
     endTime: "2025-04-19",
     location: "线下活动",
-    link: "/zh-cn/webinars/event-202503",
+    link: "/webinars/event-202503",
     img: "/img/events/event-202503.png"
   },
   {
@@ -148,7 +148,7 @@ export const EventsData = [
     startTime: "2025-02-26",
     endTime: "2026-12-31",
     location: "线上活动",
-    link: "/zh-cn/webinars/event-202502",
+    link: "/webinars/event-202502",
     img: "/img/events/event-202502.png"
   },
   {
@@ -157,7 +157,7 @@ export const EventsData = [
     startTime: "2025-01-04",
     endTime: "2025-01-04",
     location: "线下活动",
-    link: "/zh-cn/webinars/event-202501",
+    link: "/webinars/event-202501",
     img: "/img/events/event-202501.png"
   }
 ];
@@ -177,10 +177,8 @@ export const EventCard = ({ event }) => {
 
   return (
     <a 
-      href={link} 
+      href={useBaseUrl(link)} 
       className="event-card"
-      target="_blank" 
-      rel="noopener noreferrer"
     >
       <div className="card-img-wrapper">
         <img src={useBaseUrl(img)} alt={title} loading="lazy" />
