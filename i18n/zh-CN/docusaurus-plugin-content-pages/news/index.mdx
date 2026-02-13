@@ -5,6 +5,7 @@ hide_table_of_contents: true
 
 import { useState, useCallback, useMemo } from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
 
 export const NewsData = [
   {
@@ -121,7 +122,7 @@ export const NewsData = [
     date: "2025-05-07",
     category: "community",
     categoryLabel: "社区动态",
-    link: "/news/ivorysql-pku-course",
+    link: "/news/pku-open-source-course",
     img: "/img/news/ivorysql-pku-course.png"
   },
   {
@@ -156,7 +157,7 @@ export const NewsData = [
 export const NewsCard = ({ news }) => {
   const { title, desc, date, category, categoryLabel, link, img } = news;
   return (
-    <a href={useBaseUrl(link)} className="news-card">
+    <Link to={link} className="news-card">
       <div className="news-img-wrapper">
         <img src={useBaseUrl(img)} alt={title} loading="lazy" />
       </div>
@@ -168,7 +169,7 @@ export const NewsCard = ({ news }) => {
         </div>
         <div className="news-desc">{desc}</div>
       </div>
-    </a>
+    </Link>
   );
 };
 
