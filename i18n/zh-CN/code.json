@@ -410,5 +410,125 @@
   },
   "Participants will receive exclusive IvorySQL-branded peripherals as a token of appreciation.": {
     "message": "参与即可获得精美周边"
+  },
+  "Latest Release": {
+    "message": "最新版本"
+  },
+  "An Open Source 100% Oracle-Compatible PostgreSQL": {
+    "message": "一款开源的100%兼容Oracle的PostgreSQL"
+  },
+  "Free Download": {
+    "message": "免费下载"
+  },
+  "Online Trial": {
+    "message": "在线体验"
+  },
+  "Latest Events": {
+    "message": "最新活动"
+  },
+  "What is IvorySQL?": {
+    "message": "什么是 IvorySQL？"
+  },
+  "IvorySQL is an advanced, fully featured, open-source Oracle-compatible PostgreSQL, dedicated to maintaining 100% compatibility and serving as a drop-in replacement for the latest PostgreSQL. IvorySQL adds a \"compatible_db\" switch, allowing switching between Oracle and PostgreSQL modes. A highlight is the PL/iSQL procedural language, supporting Oracle's PL/SQL syntax and Oracle-style packages.": {
+    "message": "IvorySQL 是一款先进的、功能齐全的开源 Oracle 兼容 PostgreSQL，致力于始终保持 100% 兼容，并作为最新 PostgreSQL 的完全替代品。IvorySQL 增加了一个“compatible_db”开关，允许在 Oracle 和 PostgreSQL 兼容模式之间切换。IvorySQL 的亮点之一是 PL/iSQL 过程语言，支持 Oracle 的 PL/SQL 语法和 Oracle 风格的包（Packages）。"
+  },
+  "Latest Release: ": {
+    "message": "当前版本："
+  },
+  "View Release Notes": {
+    "message": " 查看发行说明"
+  },
+  "Core Advantages": {
+    "message": "核心优势"
+  },
+  "Core Open Source": {
+    "message": "核心开源"
+  },
+  "Open source under Apache 2.0 license with no vendor lock-in, transparent code, and support for custom development.": {
+    "message": "采用 Apache 2.0 协议开源，无厂商限制，代码透明且支持定制化开发。"
+  },
+  "Deep Oracle Compatibility": {
+    "message": "深度 Oracle 兼容"
+  },
+  "Achieves PL/SQL syntax compatibility through PL/iSQL and ivorysql_ora plugin, supporting smooth Oracle migrations.": {
+    "message": "通过 PL/iSQL 过程语言和 ivorysql_ora 插件实现语法兼容，支持平滑迁移。"
+  },
+  "Full Platform Compatibility": {
+    "message": "国产化全平台"
+  },
+  "Compatible with mainstream hardware/software and local chip architectures, providing packages for easy deployment.": {
+    "message": "全面兼容国内外主流软硬件，适配国产芯片架构和操作系统，提供全平台介质包。"
+  },
+  "Cloud Native Support": {
+    "message": "云原生支持"
+  },
+  "Container solutions covering mainstream technologies like Docker Compose/Swarm, K8S Operator, and cloud platforms.": {
+    "message": "涵盖 Docker Compose/Swarm、K8S Operator 及主流云服务平台解决方案。"
+  },
+  "Enterprise Grade Support": {
+    "message": "企业级支持"
+  },
+  "Backed by Highgo with solid technical support and verified in real-world enterprise production environments.": {
+    "message": "由瀚高股份提供技术支持，应用于实际企业案例，确保生产环境稳定可靠。"
+  },
+  "Ecosystem Integration": {
+    "message": "生态融合"
+  },
+  "Inherits PostgreSQL's complete SQL support, rock-solid reliability, and a massive global developer ecosystem.": {
+    "message": "完美继承 PostgreSQL 完整的 SQL 支持、极高的可靠性及庞大生态。"
+  },
+  "Wide Scenario Coverage": {
+    "message": "场景覆盖广"
+  },
+  "Supports enterprise DB, LBS applications, data warehousing, web development, and database migrations.": {
+    "message": "支持企业级数据库、LBS 应用、数据仓库、建站开发、数据库迁移等核心场景。"
+  },
+  "Highly Usable": {
+    "message": "易用性强"
+  },
+  "Reduces system management costs with developer-friendly interfaces and rich third-party tool integration.": {
+    "message": "降低系统管理成本，提供开发者友好接口和丰富的第三方工具集成能力。"
+  },
+  "Application Scenarios": {
+    "message": "应用场景"
+  },
+  "Enterprise DB": {
+    "message": "企业数据库"
+  },
+  "For ERP, trading, and financial systems requiring high availability.": {
+    "message": "适用于 ERP、交易系统、财务系统等高可用场景。"
+  },
+  "LBS Applications": {
+    "message": "LBS 应用"
+  },
+  "Supports geospatial queries via PostGIS for location services.": {
+    "message": "支持地理空间查询，通过 PostGIS 实现位置服务。"
+  },
+  "Data Warehouse": {
+    "message": "数据仓库"
+  },
+  "Build analysis platforms using rich data types and calculation power.": {
+    "message": "利用丰富数据类型和计算能力搭建分析平台。"
+  },
+  "Web/App Dev": {
+    "message": "建站开发"
+  },
+  "Enhance efficiency with high-performance database features.": {
+    "message": "提升 App 效率与扩展性。"
+  },
+  "DB Migration": {
+    "message": "数据库迁移"
+  },
+  "Directly migrate Oracle databases to IvorySQL with ease.": {
+    "message": "支持将 Oracle 数据库直接迁移到 IvorySQL。"
+  },
+  "IvorySQL Architecture": {
+    "message": "IvorySQL 架构"
+  },
+  "IvorySQL Ecosystem Full Map": {
+    "message": "IvorySQL 及周边工具生态全景图"
+  },
+  "Compatibility Certification": {
+    "message": "兼容认证"
   }
 }

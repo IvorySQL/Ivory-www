@@ -1,189 +1,101 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css);
-.heroBanner {
-  padding: 5rem 0;
-  text-align: center;
-  position: relative;
-  
-  background-image: linear-gradient(134.3deg,#1f0c79,#5a43ca 39.99%,#ba74e3);
-  /* 圣诞 */
-  /* background-color: #0e2956; */
-
-  height: 500px;
-  overflow: hidden;
-}
-.heroBanner_2 {
-  padding: 4rem 4rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+:root {
+  --section-padding: 100px 0;
+  --header-margin: 60px;
 }
 
-.heroBGImage {
-  padding: 5rem 0;
-  text-align: center;
+.techHero {
+  padding: 140px 0;
+  background-color: #1a0f3c;
   position: relative;
   overflow: hidden;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  background-blend-mode: darken;
-  width: 100%;
-}
-.row{
+  color: white;
   display: flex;
-  flex-wrap:nowrap;
-}
-.heroCenterImage {
-  padding: 5rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: cover;
-  background-size: cover;
-  /* 圣诞 */
-  /* margin-left: 300px; */
-}
-.heroLeftImage {
-  padding: 4rem 4rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  /* background: url("@site/static/img/fp_left_header.svg"); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 25%;
-}
-.heroRightImage {
-  /* 原图 */
-  width: 43%;
-  height: 100px;
-  position: relative;
-  top: -47px;
-  /* 圣诞 */
-  /* width: 160%;
-  height: 100px;
-  position: relative;
-  top: -75px;
-  left: 100px;
-  overflow:visible;
-  white-space:nowrap;
-  margin-left: 30px; */
-}
-.tree{
-  width: 40%;
-  height: 100px;
-  margin-left: -200px;
-  margin-top: -50px;
-  position: relative;
-  top: 28px;
-}
-.indexImg{
-  width: 100%;
-  max-width: 1390px;
-  height: 500px;
-  margin: auto;
-}
-.indexImgbug{
-  object-fit: cover;
-  width: 100%;
-  max-width: 2391px;
-  height: 502px;
-  margin: 0px auto -30px auto;
-}
-.indexImgPhone{
-  display: none;
-  height: 500px;
-  margin: auto;
-}
-.indexImgbugphone{
-  /* object-fit: cover; */
-  width: 1000px;
-  width: 100%;
-  /* min-width: 600px; */
-  height: 502px;
-  margin: 0px auto -30px auto;
-}
-.recruitBanner{
-  padding: 0;
-  height: 500px;
-  background-color: #3227d5;
-}
-.phonetree{
-  display: none;
-}
-@media screen and (max-width: 1440px) {
-  .tree{
-    position: relative;
-    top: 140px;
-  }
-  .heroRightImage{
-    width: 160%;
-    margin-left: -20px;
-    position: relative;
-    left: 90px;
-    top: -25px;
-  }
-  .heroCenterImage{
-    margin-left: 200px;
-    width: 400px;
-    height: 500px;
-  }
-}
-@media screen and (min-width: 997px) {
-  /* Show inline table of contents on mobile only */
-  div[class^='tableOfContentsInline'] {
-    display: none;
-  }
-  div[class^='heroCenterImage'] {
-    width: 50%;
-  }
-  div[class^='indexImg-phone'] {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 997px) {
-  div[class^='heroRightImage'] {
-    display: none;
-  }
-  div[class^='heroLeftImage'] {
-    display: none;
-  }
-  div[class^='heroCenterImage'] {
-    width: 100%;
-    margin-left:0px;
-    margin-top: 50px;
-  }
-  div[class^='indexImg'] {
-    display: none;
-  }
-  div[class^='indexImg-phone'] {
-    display: inline;
-  }
-  div[class^='tree'] { 
-    display: none;
-  }
-  /* div[class^='phonetree'] {
-    display: inline-block;
-    width: 120%;
-    position: relative;
-    right: 90px;
-    top: 200px;
-  } */
-}
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
+.gridOverlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: 
+    linear-gradient(rgba(125, 82, 244, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(125, 82, 244, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(circle at center, black, transparent 80%);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroSlogan {
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  font-weight: 800;
+  margin: 30px auto 50px;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #ffffff 40%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroButtons { display: flex; justify-content: center; gap: 24px; align-items: center; }
+
+.btnOutlineCustom {
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.centeredHeader { text-align: center; margin-bottom: var(--header-margin); }
+.sectionMainTitle { font-size: 2.8rem; font-weight: 800; color: #1a1a1a; margin-bottom: 15px; }
+.titleLine { width: 60px; height: 4px; background: #7D52F4; margin: 0 auto; border-radius: 2px; }
+
+.introBlock, .scenarioSection, .diagramBlock, .certBlock { padding: var(--section-padding); }
+.bgGray { background-color: #f9fafb; }
+
+.contentCard {
+  background: white; padding: 50px; border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); max-width: 1000px; margin: 0 auto; border: 1px solid #f0f0f0;
+}
+
+.scenarioGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+.scenarioCard {
+  background: white; padding: 40px 20px; border-radius: 16px; border: 1px solid #edf2f7; text-align: center; transition: 0.3s;
+}
+.scenarioCard:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(125, 82, 244, 0.1); border-color: #7D52F4; }
+
+.imgWrapper { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); display: inline-block; max-width: 100%; }
+.imgWrapper img { max-width: 1100px; width: 100%; }
+
+.carouselContainer { position: relative; overflow: hidden; }
+.carouselFadeLeft, .carouselFadeRight {
+  position: absolute; top: 0; width: 120px; height: 100%; z-index: 2; pointer-events: none;
+}
+.carouselFadeLeft { left: 0; background: linear-gradient(to right, #fff, transparent); }
+.carouselFadeRight { right: 0; background: linear-gradient(to left, #fff, transparent); }
+.bgGray .carouselFadeLeft, .bgGray .carouselFadeRight { background: linear-gradient(to right, #f9fafb, transparent); }
+
+.certItem { padding: 15px; outline: none; }
+.certImageCard {
+  background: #fff; border: 1px solid #f0f0f0; border-radius: 12px; height: 220px; 
+  display: flex !important; align-items: center; justify-content: center; padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02); transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.certImageCard:hover { transform: scale(1.03); box-shadow: 0 15px 35px rgba(0,0,0,0.1); border-color: #7D52F4; }
+.certImageCard img { max-width: 100%; max-height: 100%; object-fit: contain; opacity: 1; transition: 0.3s; }
+
+@media (max-width: 996px) {
+  .scenarioGrid { grid-template-columns: 1fr; }
+  .heroButtons { flex-direction: column; width: 100%; }
+  .sectionMainTitle { font-size: 2.2rem; }
+  .carouselFadeLeft, .carouselFadeRight { display: none; }
+}

@@ -1,165 +1,175 @@
+import React, { useEffect } from 'react';
+import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import clsx from 'clsx';
-import React, { useEffect }  from 'react';
 import Slider from "react-slick";
-import RecruitPhone from "../../static/img/index-recruit-phone.jpg";
-import Recruit from "../../static/img/index-recruit.jpg";
-import indexbug from '../../static/img/indexbug.png';
-import indexbugphone from '../../static/img/indexbugphone.png';
-import Elephant from '../../svg/img-elephant-balloon.svg';
-import HOW from '../../static/img/ivorysql-how.jpg';
 import HomepageFeatures from '../components/HomepageFeatures';
 import styles from './index.module.css';
-import SliderIndex from './slider';
-import SliderBug from './slider-bug';
-import SliderBugPhone from './slider-bug-phone';
-import SliderPhoneIndex from './slider-phone';
-import { customFields } from '../../docusaurus.config';
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-     const settings = {
-      autoplay: true,
-      autoplaySpeed: 5000,
-      dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      };
-  const { i18n } = useDocusaurusContext();
-  const isEnglish = i18n.currentLocale === 'en';
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+function HeroSection() {
   return (
-     <div id='main'>
-        <Slider {...settings}>
-          {/* HOW 大会宣传，根据中英版显示不同图片及链接*/}
-          <div>
-            <a href={isEnglish ? "https://ivorysql.io/" : "https://jsj.top/f/uebqBc"} target="_blank" rel="noopener noreferrer">
-              <img 
-                src={
-                  isEnglish 
-                    ? require('../../static/img/ivorysql-how.jpg').default 
-                    : require('../../static/img/ivorysql-how-zh.jpg').default
-                }
-                alt="IvorySQL Banner" 
-                style={{
-                  width: '100%',
-                  cursor: 'pointer',
-                  objectFit: 'cover',
-                  height: '500px', 
-                }}
-              />
-            </a>
+    <header className={styles.techHero}>
+      <div className={styles.gridOverlay}></div>
+      <div className="container">
+        <div className={styles.heroInner}>
+          <div className={styles.versionTag}><Translate>Latest Release: IvorySQL 5.1</Translate></div>
+          <h1 className={styles.heroSlogan}>
+            <Translate>An Open Source 100% Oracle-Compatible PostgreSQL</Translate>
+          </h1>
+          <div className={styles.heroButtons}>
+            <Link className="button button--primary button--lg" to="https://github.com/IvorySQL/IvorySQL/releases"><Translate>Free Download</Translate></Link>
+            <Link className="button button--secondary button--lg" to="http://trial.ivorysql.org:8080/"><Translate>Online Trial</Translate></Link>
+            <Link className={clsx("button button--outline button--lg", styles.btnOutlineCustom)} to="/events"><Translate>Latest Events</Translate></Link>
           </div>
-          {/* 页面一 */}
-          <div id='pageone'>
-            <header className={clsx('hero hero--primary', styles.heroBanner)}>
-              <div className="container">
-                <div className={styles.tree}>
-                  {/* <Tree></Tree> */}
-                </div>
-                <div className={styles.row}>
-                  <div className={styles.heroCenterImage}>
-                    <h1 className="hero__title"><Translate>IvorySQL</Translate></h1>
-                    <p className="hero__subtitle"><Translate>Open Source Oracle Compatible PostgreSQL</Translate></p>
-                    <div className={styles.buttons}>
-                      <Link
-                        className="button button--secondary button--lg"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        to="http://trial.ivorysql.org:8080/">
-                        <Translate>Online Trial</Translate>
-                      </Link>
-                      <Link
-                        className="button button--secondary button--lg"
-                        to="https://github.com/IvorySQL/IvorySQL/blob/master/README.md">
-                        <Translate>Learn More</Translate>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className={styles.heroRightImage}>
-                    <Elephant></Elephant>
-                    {/* <Christmas></Christmas> */}
-                  </div>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+function IntroSection() {
+  return (
+    <section className={styles.introBlock}>
+      <div className="container">
+        <div className={styles.contentCard}>
+          <h2 className={styles.introTitle}><Translate>What is IvorySQL?</Translate></h2>
+          <p className={styles.introText}>
+            <Translate>IvorySQL is an advanced, fully featured, open-source Oracle-compatible PostgreSQL, dedicated to maintaining 100% compatibility and serving as a drop-in replacement for the latest PostgreSQL. IvorySQL adds a "compatible_db" switch, allowing switching between Oracle and PostgreSQL modes. A highlight is the PL/iSQL procedural language, supporting Oracle's PL/SQL syntax and Oracle-style packages.</Translate>
+          </p>
+          <div className={styles.versionFooter}>
+            <span><Translate>Latest Release: </Translate><strong>IvorySQL 5.1</strong></span>
+            <Link to="https://github.com/IvorySQL/IvorySQL/releases" className={styles.releaseLink}><Translate>View Release Notes</Translate> →</Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ScenarioSection() {
+  const scenarios = [
+    { title: <Translate>Enterprise DB</Translate>, desc: <Translate>For ERP, trading, and financial systems requiring high availability.</Translate>, icon: '🏢' },
+    { title: <Translate>LBS Applications</Translate>, desc: <Translate>Supports geospatial queries via PostGIS for location services.</Translate>, icon: '📍' },
+    { title: <Translate>Data Warehouse</Translate>, desc: <Translate>Build analysis platforms using rich data types and calculation power.</Translate>, icon: '📊' },
+    { title: <Translate>Web/App Dev</Translate>, desc: <Translate>Enhance efficiency with high-performance database features.</Translate>, icon: '🚀' },
+    { title: <Translate>DB Migration</Translate>, desc: <Translate>Directly migrate Oracle databases to IvorySQL with ease.</Translate>, icon: '🔄' },
+  ];
+  return (
+    <section className={styles.scenarioSection}>
+      <div className="container">
+        <div className={styles.centeredHeader}>
+          <h2 className={styles.sectionMainTitle}><Translate>Application Scenarios</Translate></h2>
+          <div className={styles.titleLine}></div>
+        </div>
+        <div className={styles.scenarioGrid}>
+          {scenarios.map((s, idx) => (
+            <div key={idx} className={styles.scenarioCard}>
+              <div className={styles.scIcon}>{s.icon}</div>
+              <h4>{s.title}</h4>
+              <p>{s.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function DiagramSection({ title, img, gray }) {
+  return (
+    <section className={clsx(styles.diagramBlock, gray && styles.bgGray)}>
+      <div className="container text--center">
+        <div className={styles.centeredHeader}>
+          <h2 className={styles.sectionMainTitle}><Translate>{title}</Translate></h2>
+          <div className={styles.titleLine}></div>
+        </div>
+        <div className={styles.imgWrapper}>
+          <img src={useBaseUrl(img)} alt={title} />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CertSlider() {
+  const settings = {
+    dots: false, infinite: true, speed: 4000, slidesToShow: 4, slidesToScroll: 1, 
+    autoplay: true, autoplaySpeed: 0, cssEase: "linear", arrows: false, pauseOnHover: true,
+    responsive: [{ breakpoint: 1024, settings: { slidesToShow: 2 } }]
+  };
+  
+  const certs = [
+    '/img/partners/cert1.jpg',
+    '/img/partners/cert2.jpg',
+    '/img/partners/cert3.jpg',
+    '/img/partners/cert4.jpg',
+    '/img/partners/cert5.png'
+  ];
+
+  return (
+    <section className={styles.certBlock}>
+      <div className="container">
+        <div className={styles.centeredHeader}>
+          <h2 className={styles.sectionMainTitle}><Translate>Compatibility Certification</Translate></h2>
+          <div className={styles.titleLine}></div>
+        </div>
+        <div className={styles.carouselContainer}>
+          <div className={styles.carouselFadeLeft}></div>
+          <Slider {...settings}>
+            {certs.map((c, i) => (
+              <div key={i} className={styles.certItem}>
+                <div className={styles.certImageCard}>
+                  <img src={useBaseUrl(c)} alt="IvorySQL Cert" />
                 </div>
               </div>
-            </header>
-          </div>
-          {/* 页面二 */}
-          <div className={clsx(styles.recruitBanner)}>
-            <div class="indexImg">
-              <img src={Recruit} className={styles.indexImg}></img>
-              <SliderIndex></SliderIndex>
-            </div>
-            <div class="indexImg-phone">
-              <img src={RecruitPhone} className={styles.indexImgPhone}></img>
-              <SliderPhoneIndex></SliderPhoneIndex>
-            </div>
-          </div>
-        </Slider>
+            ))}
+          </Slider>
+          <div className={styles.carouselFadeRight}></div>
+        </div>
       </div>
+    </section>
   );
 }
 
 function ChatWidget() {
-  const {siteConfig:{customFields}} = useDocusaurusContext();
-  
+  const {siteConfig} = useDocusaurusContext();
   useEffect(() => {
-    // 创建外部 script 标签加载 SDK
     const script = document.createElement('script');
     script.src = "https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.1.0-beta.3/libs/cn/index.js";
     script.async = true;
-
-    // 当脚本加载完成后调用初始化代码
     script.onload = () => {
       if (window.CozeWebSDK && window.CozeWebSDK.WebChatClient) {
         new window.CozeWebSDK.WebChatClient({
-          config: {
-            bot_id: customFields.botId,
-          },
-          componentProps: {
-            title: 'IvorySQL Chatroom',
-            icon: 'https://raw.githubusercontent.com/IvorySQL/Ivory-www/main/static/img/ivory-black.png',
-
-          },
-          auth: {
-            type: "token",
-            token: customFields.patToken,
-            onRefreshToken: function () {
-              return customFields.patToken;
-            }
-          }
+          config: { bot_id: siteConfig.customFields.botId },
+          componentProps: { title: 'IvorySQL Chatroom', icon: 'https://raw.githubusercontent.com/IvorySQL/Ivory-www/main/static/img/ivory-black.png' },
+          auth: { type: "token", token: siteConfig.customFields.patToken, onRefreshToken: () => siteConfig.customFields.patToken }
         });
-      } else {
-        console.error('CozeWebSDK 未加载成功！');
       }
     };
-
-    // 将 script 标签添加到 body 中
     document.body.appendChild(script);
-
-    // 可选：组件卸载时清除 script 标签
-    return () => {
-      document.body.removeChild(script);
-    };
+    return () => { document.body.removeChild(script); };
   }, []);
-
-  return null; // 该组件不需要渲染任何内容
+  return null;
 }
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Open Source Oracle compatible PostgreSQL">
+    <Layout title={siteConfig.title} description="Oracle-compatible PostgreSQL">
       <ChatWidget />
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <HeroSection />
+      <IntroSection />
+      <HomepageFeatures />
+      <ScenarioSection />
+      <DiagramSection title="IvorySQL Architecture" img="/img/architecture.png" gray />
+      <DiagramSection title="IvorySQL Ecosystem Full Map" img="/img/ecosystem.png" />
+      <CertSlider />
     </Layout>
   );
 }
