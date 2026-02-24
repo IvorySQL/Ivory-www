@@ -1,17 +1,22 @@
 ---
 title: IvorySQL 5.1 正式发布！
 hide_table_of_contents: true
+slug: /news/ivorysql-v5-1-released
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 <style>{`
+  .news-detail-container {
+    padding-top: 40px;
+  }
   .detail-banner {
     background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
     padding: 40px 0;
     color: white !important;
     margin-bottom: 30px;
+    border-radius: 12px;
   }
   .detail-banner-inner {
     max-width: 1200px;
@@ -23,11 +28,9 @@ import Link from '@docusaurus/Link';
   .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
 
   .detail-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 80px;
     display: flex;
     gap: 40px;
+    margin-bottom: 80px;
   }
 
   .detail-main { flex: 1; min-width: 0; }
@@ -57,100 +60,100 @@ import Link from '@docusaurus/Link';
   .sidebar-nav a:hover { color: #7D52F4; }
 
   @media (max-width: 996px) {
-    .detail-banner { padding: 30px 0; }
-    .detail-banner h1 { font-size: 1.5rem; }
     .detail-wrapper { flex-direction: column; }
     .detail-sidebar { display: none; }
     .post-title { font-size: 1.5rem; }
   }
 `}</style>
 
-<div className="detail-banner">
-  <div className="detail-banner-inner">
-    <h1>新闻动态</h1>
-    <div className="detail-banner-decor">● ○ ●</div>
+<div className="container news-detail-container">
+  <div className="detail-banner">
+    <div className="detail-banner-inner">
+      <h1>新闻动态</h1>
+      <div className="detail-banner-decor">● ○ ●</div>
+    </div>
   </div>
-</div>
 
-<div className="container detail-wrapper">
-  <div className="detail-main">
-    <div className="breadcrumb">
-      <Link to="/news">新闻动态</Link> <span>&gt;</span> <span>社区动态</span>
-    </div>
-
-    <div className="post-header">
-      <div className="post-title">版本发布｜IvorySQL 5.1 正式发布！</div>
-      <div className="post-date">📅 发布时间：2025 年 12 月 18 日</div>
-    </div>
-
-    <div className="post-content">
-      <p>
-        IvorySQL 5.1 基于 PostgreSQL 18.1 构建，包含多项缺陷修复与功能改进。完整更新列表可参考官方文档站点。
-      </p>
-
-      <h2 id="pg-enhancements">PostgreSQL 18.1 增强功能</h2>
-      <ul>
-        <li>在 CREATE STATISTICS 中检查对 Schema 的 CREATE 权限。</li>
-        <li>避免 libpq 中分配大小计算可能引发的整数溢出。</li>
-        <li>防止在 SQL/JSON 函数（如 JSON_VALUE）的 DEFAULT 子句包含 COLLATE 表达式时出现“无法识别的节点类型”错误。</li>
-        <li>避免对包含分组集（grouping sets）的无变量 HAVING 子句进行错误优化。</li>
-        <li>在哈希右半连接（hash right semi join）中禁用并行执行。</li>
-        <li>避免在生成有序追加（ordered-append）执行计划时出现潜在的除零错误。</li>
-        <li>修复在支持有序访问但不支持仅索引扫描的索引类型下，查询规划器可能失败的问题。</li>
-      </ul>
-      <p>更多细节可参考 <a href="https://www.postgresql.org/docs/release/18.1/" target="_blank" rel="noopener noreferrer">PostgreSQL 官方发布说明</a>。</p>
-
-      <h2 id="ivory-features">IvorySQL 5.1 新增特性</h2>
-      <ul>
-        <li><strong>升级至 PG 18.1 内核</strong>。</li>
-        <li><strong>在线体验：</strong>IvorySQL 5.1 推出基于浏览器的交互式体验环境，用户无需本地安装，即可实时探索与评估 IvorySQL 5.1 功能。</li>
-        <li><strong>全平台安装包支持：</strong>提供覆盖 X86、ARM、MIPS、LoongArch 架构的多平台介质包。</li>
-        <li><strong>容器化部署支持：</strong>支持通过 Docker Compose、Podman、Swarm、Helm 及 Operator 工具，一键部署 IvorySQL 5.1 单机或高可用集群。</li>
-        <li><strong>IvorySQL Cloud 5.1 同步发布：</strong>集成了 IvorySQL 5.1 数据库以及周边生态，实现可视化的数据库发放回收、监控运维等全生命周期管理。</li>
-        <li><strong>PostgreSQL 扩展：</strong>新增支持 10 款 PostgreSQL 扩展，分别是 pg_cron、pgAudit、PostGIS、pgRouting、PGroonga、ddlx、pgsql-http、system_stats、plpgsql_check、pgvector。</li>
-      </ul>
-
-      <h2 id="fixed-issues">已修复问题</h2>
-      <ul>
-        <li>清理编译过程中的告警信息。</li>
-        <li>修复 PL/iSQL 解析器拒绝 SELECT INTO 表达式中带括号语法的问题。</li>
-        <li>修正文档中关于源码安装时缺失 uuid-ossp 插件的相关描述。</li>
-      </ul>
-
-      <h2 id="source-code">源代码</h2>
-      <p>IvorySQL 的开发维护主要在以下四个代码仓库进行：</p>
-      <ul>
-        <li><strong>IvorySQL 数据库源码：</strong><a href="https://github.com/IvorySQL/IvorySQL" target="_blank">https://github.com/IvorySQL/IvorySQL</a></li>
-        <li><strong>IvorySQL 官方网站：</strong><a href="https://github.com/IvorySQL/Ivory-www" target="_blank">https://github.com/IvorySQL/Ivory-www</a></li>
-        <li><strong>IvorySQL 文档：</strong><a href="https://github.com/IvorySQL/IvorySQL_docs" target="_blank">https://github.com/IvorySQL/IvorySQL_docs</a></li>
-        <li><strong>IvorySQL Docker：</strong><a href="https://github.com/IvorySQL/docker_library" target="_blank">https://github.com/IvorySQL/docker_library</a></li>
-      </ul>
-
-      <h2 id="contributors">贡献者</h2>
-      <p>以下人员（按字母顺序）以补丁作者、提交者、评审者、测试人员或问题反馈者的身份参与了本次版本发布：</p>
-      <div className="contributor-list">
-        Amberwww1, Cédric Villemain, Fawei Zhao, Ge Sui, Grant Zhou, Oreo Yang, Rophy Tsai, Shuntian Jiao, Steven Niu, Xiangyu Liang, Xiaohui Liu, Xinjie Lv, Xueyu Gao, Yasir Hussain Shah, Yuan Li, Zheng Tao, Zhenhao Pan, Zhe Zhang, Zhibin Wang, Zhuoyan Shi.
+  <div className="detail-wrapper">
+    <div className="detail-main">
+      <div className="breadcrumb">
+        <Link to="/news">新闻动态</Link> <span>&gt;</span> <span>社区动态</span>
       </div>
-      <p style={{marginTop: '15px'}}><strong>感谢以上贡献者！</strong></p>
 
-      <h2 id="try-it">欢迎试用</h2>
-      <p>
-        欢迎各位社区小伙伴试用 IvorySQL 5.1，如发现任何问题，可提交 <a href="https://github.com/IvorySQL/IvorySQL/issues" target="_blank">issue</a> 反馈，我们将为您送上 IvorySQL 周边好礼！
-      </p>
+      <div className="post-header">
+        <div className="post-title">版本发布｜IvorySQL 5.1 正式发布！</div>
+        <div className="post-date">📅 发布时间：2025 年 12 月 18 日</div>
+      </div>
+
+      <div className="post-content">
+        <p>
+          IvorySQL 5.1 基于 PostgreSQL 18.1 构建，包含多项缺陷修复与功能改进。完整更新列表可参考官方文档站点。
+        </p>
+
+        <h2 id="pg-enhancements">PostgreSQL 18.1 增强功能</h2>
+        <ul>
+          <li>在 CREATE STATISTICS 中检查对 Schema 的 CREATE 权限。</li>
+          <li>避免 libpq 中分配大小计算可能引发的整数溢出。</li>
+          <li>防止在 SQL/JSON 函数（如 JSON_VALUE）的 DEFAULT 子句包含 COLLATE 表达式时出现“无法识别的节点类型”错误。</li>
+          <li>避免对包含分组集（grouping sets）的无变量 HAVING 子句进行错误优化。</li>
+          <li>在哈希右半连接（hash right semi join）中禁用并行执行。</li>
+          <li>避免在生成有序追加（ordered-append）执行计划时出现潜在的除零错误。</li>
+          <li>修复在支持有序访问但不支持仅索引扫描的索引类型下，查询规划器可能失败的问题。</li>
+        </ul>
+        <p>更多细节可参考 <a href="https://www.postgresql.org/docs/release/18.1/" target="_blank" rel="noopener noreferrer">PostgreSQL 官方发布说明</a>。</p>
+
+        <h2 id="ivory-features">IvorySQL 5.1 新增特性</h2>
+        <ul>
+          <li><strong>升级至 PG 18.1 内核</strong>。</li>
+          <li><strong>在线体验：</strong>IvorySQL 5.1 推出基于浏览器的交互式体验环境，用户无需本地安装，即可实时探索与评估 IvorySQL 5.1 功能。</li>
+          <li><strong>全平台安装包支持：</strong>提供覆盖 X86、ARM、MIPS、LoongArch 架构的多平台介质包。</li>
+          <li><strong>容器化部署支持：</strong>支持通过 Docker Compose、Podman、Swarm、Helm 及 Operator 工具，一键部署 IvorySQL 5.1 单机或高可用集群。</li>
+          <li><strong>IvorySQL Cloud 5.1 同步发布：</strong>集成了 IvorySQL 5.1 数据库以及周边生态，实现可视化的数据库发放回收、监控运维等全生命周期管理。</li>
+          <li><strong>PostgreSQL 扩展：</strong>新增支持 10 款 PostgreSQL 扩展，分别是 pg_cron、pgAudit、PostGIS、pgRouting、PGroonga、ddlx、pgsql-http、system_stats、plpgsql_check、pgvector。</li>
+        </ul>
+
+        <h2 id="fixed-issues">已修复问题</h2>
+        <ul>
+          <li>清理编译过程中的告警信息。</li>
+          <li>修复 PL/iSQL 解析器拒绝 SELECT INTO 表达式中带括号语法的问题。</li>
+          <li>修正文档中关于源码安装时缺失 uuid-ossp 插件的相关描述。</li>
+        </ul>
+
+        <h2 id="source-code">源代码</h2>
+        <p>IvorySQL 的开发维护主要在以下四个代码仓库进行：</p>
+        <ul>
+          <li><strong>IvorySQL 数据库源码：</strong><a href="https://github.com/IvorySQL/IvorySQL" target="_blank">https://github.com/IvorySQL/IvorySQL</a></li>
+          <li><strong>IvorySQL 官方网站：</strong><a href="https://github.com/IvorySQL/Ivory-www" target="_blank">https://github.com/IvorySQL/Ivory-www</a></li>
+          <li><strong>IvorySQL 文档：</strong><a href="https://github.com/IvorySQL/IvorySQL_docs" target="_blank">https://github.com/IvorySQL/IvorySQL_docs</a></li>
+          <li><strong>IvorySQL Docker：</strong><a href="https://github.com/IvorySQL/docker_library" target="_blank">https://github.com/IvorySQL/docker_library</a></li>
+        </ul>
+
+        <h2 id="contributors">贡献者</h2>
+        <p>以下人员（按字母顺序）以补丁作者、提交者、评审者、测试人员或问题反馈者的身份参与了本次版本发布：</p>
+        <div className="contributor-list">
+          Amberwww1, Cédric Villemain, Fawei Zhao, Ge Sui, Grant Zhou, Oreo Yang, Rophy Tsai, Shuntian Jiao, Steven Niu, Xiangyu Liang, Xiaohui Liu, Xinjie Lv, Xueyu Gao, Yasir Hussain Shah, Yuan Li, Zheng Tao, Zhenhao Pan, Zhe Zhang, Zhibin Wang, Zhuoyan Shi.
+        </div>
+        <p style={{marginTop: '15px'}}><strong>感谢以上贡献者！</strong></p>
+
+        <h2 id="try-it">欢迎试用</h2>
+        <p>
+          欢迎各位社区小伙伴试用 IvorySQL 5.1，如发现任何问题，可提交 <a href="https://github.com/IvorySQL/IvorySQL/issues" target="_blank">issue</a> 反馈，我们将为您送上 IvorySQL 周边好礼！
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div className="detail-sidebar">
-    <div className="sidebar-sticky">
-      <div className="sidebar-title">▼ 文章大纲</div>
-      <ul className="sidebar-nav">
-        <li><a href="#pg-enhancements">PG 18.1 增强功能</a></li>
-        <li><a href="#ivory-features">IvorySQL 5.1 新特性</a></li>
-        <li><a href="#fixed-issues">已修复问题</a></li>
-        <li><a href="#source-code">源代码</a></li>
-        <li><a href="#contributors">贡献者</a></li>
-        <li><a href="#try-it">欢迎试用</a></li>
-      </ul>
+    <div className="detail-sidebar">
+      <div className="sidebar-sticky">
+        <div className="sidebar-title">▼ 文章大纲</div>
+        <ul className="sidebar-nav">
+          <li><Link to="#pg-enhancements">PG 18.1 增强功能</Link></li>
+          <li><Link to="#ivory-features">IvorySQL 5.1 新特性</Link></li>
+          <li><Link to="#fixed-issues">已修复问题</Link></li>
+          <li><Link to="#source-code">源代码</Link></li>
+          <li><Link to="#contributors">贡献者</Link></li>
+          <li><Link to="#try-it">欢迎试用</Link></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

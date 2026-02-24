@@ -1,17 +1,22 @@
 ---
 title: IvorySQL 4.2 发布
 hide_table_of_contents: true
+slug: /news/ivorysql-v4-2-released
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 <style>{`
+  .news-detail-container {
+    padding-top: 40px;
+  }
   .detail-banner {
     background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
     padding: 40px 0;
     color: white !important;
     margin-bottom: 30px;
+    border-radius: 12px;
   }
   .detail-banner-inner {
     max-width: 1200px;
@@ -23,11 +28,9 @@ import Link from '@docusaurus/Link';
   .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
 
   .detail-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 80px;
     display: flex;
     gap: 40px;
+    margin-bottom: 80px;
   }
 
   .detail-main { flex: 1; min-width: 0; }
@@ -51,94 +54,94 @@ import Link from '@docusaurus/Link';
 
   .detail-sidebar { width: 240px; flex-shrink: 0; }
   .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
-  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem; }
   .sidebar-nav { list-style: none; padding: 0; margin: 0; }
   .sidebar-nav li { margin-bottom: 10px; }
   .sidebar-nav a { color: #666; font-size: 0.85rem; text-decoration: none; transition: color 0.2s; line-height: 1.4; display: block; }
   .sidebar-nav a:hover { color: #7D52F4; }
 
   @media (max-width: 996px) {
-    .detail-banner { padding: 30px 0; }
-    .detail-banner h1 { font-size: 1.5rem; }
     .detail-wrapper { flex-direction: column; }
     .detail-sidebar { display: none; }
     .post-title { font-size: 1.5rem; }
   }
 `}</style>
 
-<div className="detail-banner">
-  <div className="detail-banner-inner">
-    <h1>新闻动态</h1>
-    <div className="detail-banner-decor">● ○ ●</div>
+<div className="container news-detail-container">
+  <div className="detail-banner">
+    <div className="detail-banner-inner">
+      <h1>新闻动态</h1>
+      <div className="detail-banner-decor">● ○ ●</div>
+    </div>
   </div>
-</div>
 
-<div className="container detail-wrapper">
-  <div className="detail-main">
-    <div className="breadcrumb">
-      <Link to="/news">新闻动态</Link> <span>&gt;</span> <span>社区动态</span>
-    </div>
+  <div className="detail-wrapper">
+    <div className="detail-main">
+      <div className="breadcrumb">
+        <Link to="/news">新闻动态</Link> <span>&gt;</span> <span>社区动态</span>
+      </div>
 
-    <div className="post-header">
-      <div className="post-title">版本发布 | IvorySQL 4.2 发布</div>
-      <div className="post-date">📅 发布时间：2025 年 01 月 13 日</div>
-    </div>
+      <div className="post-header">
+        <div className="post-title">版本发布 | IvorySQL 4.2 发布</div>
+        <div className="post-date">📅 发布时间：2025 年 01 月 13 日</div>
+      </div>
 
-    <div className="post-content">
-      <p>IvorySQL 4.2 已于 2025 年 1 月 13 日正式发布。新版本全面支持 PostgreSQL 17.2，并修复了多项 bug。</p>
+      <div className="post-content">
+        <p>IvorySQL 4.2 已于 2025 年 1 月 13 日正式发布。新版本全面支持 PostgreSQL 17.2，并修复了多项 bug。</p>
 
-      <h2 id="enhancements">增强功能</h2>
-      <h3 id="pg-17-1">PostgreSQL 17.1 增强功能</h3>
-      <ul>
-        <li>确保当 RLS 应用于非顶级表引用时，缓存的计划会标记为依赖于调用角色</li>
-        <li>使 libpq 在 SSL 或 GSS 协议协商期间丢弃接收到的错误消息</li>
-        <li>修复 SET SESSION AUTHORIZATION 和 SET ROLE 之间的意外交互</li>
-        <li>防止受信任的 PL/Perl 代码修改环境变量</li>
-        <li>修复在附加或分离表分区时对外键约束的目录状态更新问题</li>
-      </ul>
-      <p>有关更多详细信息，请访问 <a href="https://www.postgresql.org/docs/release/17.1/" target="_blank">PostgreSQL 17.1 发布说明</a>。</p>
+        <h2 id="enhancements">增强功能</h2>
+        <h3 id="pg-17-1">PostgreSQL 17.1 增强功能</h3>
+        <ul>
+          <li>确保当 RLS 应用于非顶级表引用时，缓存的计划会标记为依赖于调用角色</li>
+          <li>使 libpq 在 SSL 或 GSS 协议协商期间丢弃接收到的错误消息</li>
+          <li>修复 SET SESSION AUTHORIZATION 和 SET ROLE 之间的意外交互</li>
+          <li>防止受信任的 PL/Perl 代码修改环境变量</li>
+          <li>修复在附加或分离表分区时对外键约束的目录状态更新问题</li>
+        </ul>
+        <p>有关更多详细信息，请访问 <a href="https://www.postgresql.org/docs/release/17.1/" target="_blank">PostgreSQL 17.1 发布说明</a>。</p>
 
-      <h3 id="pg-17-2">PostgreSQL 17.2 增强功能</h3>
-      <ul>
-        <li>修复与 struct ResultRelInfo 配合使用的扩展的 ABI 断裂问题</li>
-        <li>恢复 ALTER &#123;ROLE|DATABASE&#125; SET role 功能</li>
-        <li>修复逻辑复制槽的 restart_lsn 可能回退的情况</li>
-        <li>在执行 pg_rewind 时避免删除仍需使用的 WAL 文件</li>
-        <li>修复与删除共享统计条目相关的竞争条件</li>
-      </ul>
-      <p>有关更多详细信息，请访问 <a href="https://www.postgresql.org/docs/release/17.2/" target="_blank">PostgreSQL 17.2 发布说明</a>。</p>
+        <h3 id="pg-17-2">PostgreSQL 17.2 增强功能</h3>
+        <ul>
+          <li>修复与 struct ResultRelInfo 配合使用的扩展的 ABI 断裂问题</li>
+          <li>恢复 ALTER &#123;ROLE|DATABASE&#125; SET role 功能</li>
+          <li>修复逻辑复制槽的 restart_lsn 可能回退的情况</li>
+          <li>在执行 pg_rewind 时避免删除仍需使用的 WAL 文件</li>
+          <li>修复与删除共享统计条目相关的竞争条件</li>
+        </ul>
+        <p>有关更多详细信息，请访问 <a href="https://www.postgresql.org/docs/release/17.2/" target="_blank">PostgreSQL 17.2 发布说明</a>。</p>
 
-      <h2 id="fixed-issues">IvorySQL 4.2 修复的问题</h2>
-      <ul>
-        <li>修复 pg_upgrade 问题，现在可使用 pg_upgrade 升级 IvorySQL</li>
-        <li>提供 Rocky9 安装包，目前可在 Rocky Linux 9 上安装 IvorySQL 4.x</li>
-        <li>修正 ivorysql_docs 中的英文语法错误</li>
-      </ul>
+        <h2 id="fixed-issues">IvorySQL 4.2 修复的问题</h2>
+        <ul>
+          <li>修复 pg_upgrade 问题，现在可使用 pg_upgrade 升级 IvorySQL</li>
+          <li>提供 Rocky9 安装包，目前可在 Rocky Linux 9 上安装 IvorySQL 4.x</li>
+          <li>修正 ivorysql_docs 中的英文语法错误</li>
+        </ul>
 
-      <h2 id="source-code">源码</h2>
-      <p>IvorySQL 主要包含 2 个代码仓库:</p>
-      <ul>
-        <li>IvorySQL 数据库源码：<a href="https://github.com/IvorySQL/IvorySQL" target="_blank">https://github.com/IvorySQL/IvorySQL</a></li>
-        <li>IvorySQL 官方网站：<a href="https://github.com/IvorySQL/Ivory-www" target="_blank">https://github.com/IvorySQL/Ivory-www</a></li>
-      </ul>
+        <h2 id="source-code">源码</h2>
+        <p>IvorySQL 主要包含 2 个代码仓库:</p>
+        <ul>
+          <li>IvorySQL 数据库源码：<a href="https://github.com/IvorySQL/IvorySQL" target="_blank">https://github.com/IvorySQL/IvorySQL</a></li>
+          <li>IvorySQL 官方网站：<a href="https://github.com/IvorySQL/Ivory-www" target="_blank">https://github.com/IvorySQL/Ivory-www</a></li>
+        </ul>
 
-      <h2 id="contributors">贡献者</h2>
-      <p>以下人员（按字母顺序排列）作为补丁作者、提交者、审阅者、测试者或问题报告人，贡献了此次版本的发布。</p>
-      <div className="contributor-list">
-        Cary Huang, Denis Lussier, Fawei Zhao, Grant Zhou, Hope Gao, Lily Wang, Shawn Yan, Shiji Niu, Shoubo Wang, Shuntian Jiao, Xiangyu Liang, Xinjie Lv, Zhibin Wang.
+        <h2 id="contributors">贡献者</h2>
+        <p>以下人员（按字母顺序排列）作为补丁作者、提交者、审阅者、测试者或问题报告人，贡献了此次版本的发布。</p>
+        <div className="contributor-list">
+          Cary Huang, Denis Lussier, Fawei Zhao, Grant Zhou, Hope Gao, Lily Wang, Shawn Yan, Shiji Niu, Shoubo Wang, Shuntian Jiao, Xiangyu Liang, Xinjie Lv, Zhibin Wang.
+        </div>
       </div>
     </div>
-  </div>
 
-  <div className="detail-sidebar">
-    <div className="sidebar-sticky">
-      <div className="sidebar-title">▼ 文章大纲</div>
-      <ul className="sidebar-nav">
-        <li><a href="#enhancements">增强功能</a></li>
-        <li><a href="#fixed-issues">修复的问题</a></li>
-        <li><a href="#source-code">源码仓库</a></li>
-        <li><a href="#contributors">贡献者名单</a></li>
-      </ul>
+    <div className="detail-sidebar">
+      <div className="sidebar-sticky">
+        <div className="sidebar-title">▼ 文章大纲</div>
+        <ul className="sidebar-nav">
+          <li><Link to="#enhancements">增强功能</Link></li>
+          <li><Link to="#fixed-issues">修复的问题</Link></li>
+          <li><Link to="#source-code">源码仓库</Link></li>
+          <li><Link to="#contributors">贡献者名单</Link></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

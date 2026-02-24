@@ -1,17 +1,22 @@
 ---
 title: OSPP 2025 Completion List Announced on November 9th!
 hide_table_of_contents: true
+slug: /news/ivorysql-ospp-2025
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 <style>{`
+  .news-detail-container {
+    padding-top: 40px;
+  }
   .detail-banner {
     background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
     padding: 40px 0;
     color: white !important;
     margin-bottom: 30px;
+    border-radius: 12px;
   }
   .detail-banner-inner {
     max-width: 1200px;
@@ -23,11 +28,9 @@ import Link from '@docusaurus/Link';
   .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
 
   .detail-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 80px;
     display: flex;
     gap: 40px;
+    margin-bottom: 80px;
   }
 
   .detail-main { flex: 1; min-width: 0; }
@@ -60,91 +63,91 @@ import Link from '@docusaurus/Link';
   .sidebar-nav a:hover { color: #7D52F4; }
 
   @media (max-width: 996px) {
-    .detail-banner { padding: 30px 0; }
-    .detail-banner h1 { font-size: 1.5rem; }
     .detail-wrapper { flex-direction: column; }
     .detail-sidebar { display: none; }
     .post-title { font-size: 1.5rem; }
   }
 `}</style>
 
-<div className="detail-banner">
-  <div className="detail-banner-inner">
-    <h1>News & Updates</h1>
-    <div className="detail-banner-decor">● ○ ●</div>
-  </div>
-</div>
-
-<div className="detail-wrapper">
-  <div className="detail-main">
-    <div className="breadcrumb">
-      <Link to="/news">News</Link> <span>&gt;</span> <span>Community News</span>
-    </div>
-
-    <div className="post-header">
-      <div className="post-title">OSPP 2025 Completion List Announced on November 9th!</div>
-      <div className="post-date">📅 Published on: November 9, 2025</div>
-    </div>
-
-    <div className="post-content">
-      <p>This year, a total of 182 open-source communities, 565 project tasks, and 2,290 students from 450 universities registered to participate.</p>
-      
-      <p>Under more stringent application and review criteria, 518 students were selected for this year's OSPP. After three months of project development and one month of code merging, 437 students successfully completed the project after passing reviews by mentors, communities, and the organizing committee.</p>
-      
-      <p>In the OSPP 2025 event, the IvorySQL community submitted 2 project topics: "Add One-Click Installation Script for IvorySQL" and "Develop <code>sys_guid</code> Function Based on uuid-ossp for IvorySQL". Each project was selected by one university student, and both successfully completed the project! Here, the IvorySQL community congratulates the two students on their successful project completion.</p>
-      
-      <p>Completion Announcement Link: <br/> <a href="https://summer-ospp.ac.cn/final" target="_blank" rel="noopener noreferrer">https://summer-ospp.ac.cn/final</a></p>
-
-      <img className="content-img" src="https://ifclub.com.cn/images/images/20251113/5668a3741c38439cb2dccf270d51b11d.jpg" alt="OSPP 2025" />
-
-      <h2 id="projects">Introduction to IvorySQL Community Projects</h2>
-      <p>This year, the IvorySQL community released 2 projects in OSPP, all focusing on the development of IvorySQL itself.</p>
-
-      <h3 id="project-1">Project 1: Add One-Click Installation Script for IvorySQL</h3>
-      <p>IvorySQL is an open-source Oracle-compatible database based on PostgreSQL, supporting multiple platforms and operating systems. Currently, IvorySQL requires manual execution of multiple commands for source code installation, lacking a one-click installation method. Although there are existing tutorials and commands for source code installation, the installation process varies across different operating systems, and manual execution is cumbersome and error-prone.</p>
-      <p>To address this, we plan to add a one-click installation script to enable users to quickly and easily install IvorySQL from source code. The ultimate goal is to provide a one-click installation script that allows users to complete the installation and startup of IvorySQL with a single command after simple configuration.</p>
-      <blockquote>
-        <p>👨‍🎓 <b>Selected Student:</b> Wang Shuo</p>
-        <p>👨‍🏫 <b>Project Mentor:</b> Jiao Shuntian</p>
-        <p>📨 <b>Contact Email:</b> jiaoshuntian@highgo.com</p>
-        <p>🔑 <b>Project Difficulty:</b> Basic</p>
-        <p>⛏ <b>Technical Field:</b> PostgreSQL</p>
-        <p>★ <b>Project Details:</b> <a href="https://summer-ospp.ac.cn/org/prodetail/258430417" target="_blank" rel="noopener noreferrer">https://summer-ospp.ac.cn/org/prodetail/258430417</a></p>
-      </blockquote>
-
-      <h3 id="project-2">Project 2: Develop sys_guid Function Based on uuid-ossp for IvorySQL</h3>
-      <p>IvorySQL is an open-source database based on PostgreSQL, supporting various Oracle-compatible features. Currently, IvorySQL needs a powerful <code>sys_guid</code> function that ensures database-level uniqueness. Although the PostgreSQL kernel provides similar functions such as <code>gen_random_uuid()</code> based on pseudorandom numbers, there is still a lack of a dedicated <code>sys_guid</code> function.</p>
-      <p>Therefore, we plan to develop a <code>sys_guid</code> function that meets the requirements based on the <code>uuid-ossp/e2fs</code> extension and submit the final code to GitHub in the form of a PR.</p>
-      <blockquote>
-        <p>👨‍🎓 <b>Selected Student:</b> Chong Penghao</p>
-        <p>👨‍🏫 <b>Project Mentor:</b> Niu Shiji</p>
-        <p>📨 <b>Contact Email:</b> niushiji@highgo.com</p>
-        <p>🔑 <b>Project Difficulty:</b> Basic</p>
-        <p>⛏ <b>Technical Field:</b> PostgreSQL</p>
-        <p>★ <b>Project Details:</b> <a href="https://summer-ospp.ac.cn/org/prodetail/258430418" target="_blank" rel="noopener noreferrer">https://summer-ospp.ac.cn/org/prodetail/258430418</a></p>
-      </blockquote>
-
-      <h2 id="about">About Open Source Promotion Plan (OSPP)</h2>
-      <p>The "Open Source Promotion Plan (OSPP)" is a series of summer activities guided by the "Open Source Software Supply Chain Promotion Plan" of the Institute of Software, Chinese Academy of Sciences. Co-hosted by the Institute of Software, Chinese Academy of Sciences and Huawei Technologies Co., Ltd., it aims to encourage college students to actively participate in the development and maintenance of open-source software, cultivate and discover more outstanding developers, promote the vigorous development of excellent open-source software communities, and contribute to the construction of the open-source software supply chain.</p>
-      <p>The event collaborates with major open-source communities to provide projects for the development and maintenance of important open-source software, and opens registration to college students worldwide. Students can independently choose interested projects to apply for, and after being selected, develop under the guidance of senior developers (community mentors) of the project. Based on the difficulty and completion of the project, those who complete the project will receive project remuneration and completion certificates.</p>
-      <p>Event Official Website: <br/> <a href="https://summer-ospp.ac.cn/" target="_blank" rel="noopener noreferrer">https://summer-ospp.ac.cn/</a></p>
-      <p>Official Email: <br/> org@summer-ospp.ac.cn</p>
-
-      <h2 id="summary">Summary</h2>
-      <p>OSPP is an effective way for college students to get in touch with and participate in open source. The IvorySQL community is honored to participate in it and assist two college students in successfully completing their projects. In the future, IvorySQL will invite the two students to join the IvorySQL community and continue to participate in open-source activities such as OSPP.</p>
+<div className="container news-detail-container">
+  <div className="detail-banner">
+    <div className="detail-banner-inner">
+      <h1>News & Updates</h1>
+      <div className="detail-banner-decor">● ○ ●</div>
     </div>
   </div>
 
-  <div className="detail-sidebar">
-    <div className="sidebar-sticky">
-      <div className="sidebar-title">▼ TABLE OF CONTENTS</div>
-      <ul className="sidebar-nav">
-        <li><a href="#projects">Community Projects</a></li>
-        <li><a href="#project-1">Installation Script</a></li>
-        <li><a href="#project-2">sys_guid Function</a></li>
-        <li><a href="#about">About OSPP</a></li>
-        <li><a href="#summary">Summary</a></li>
-      </ul>
+  <div className="detail-wrapper">
+    <div className="detail-main">
+      <div className="breadcrumb">
+        <Link to="/news">News</Link> <span>&gt;</span> <span>Community News</span>
+      </div>
+
+      <div className="post-header">
+        <div className="post-title">OSPP 2025 Completion List Announced on November 9th!</div>
+        <div className="post-date">📅 Published on: November 9, 2025</div>
+      </div>
+
+      <div className="post-content">
+        <p>This year, a total of 182 open-source communities, 565 project tasks, and 2,290 students from 450 universities registered to participate.</p>
+        
+        <p>Under more stringent application and review criteria, 518 students were selected for this year's OSPP. After three months of project development and one month of code merging, 437 students successfully completed the project after passing reviews by mentors, communities, and the organizing committee.</p>
+        
+        <p>In the OSPP 2025 event, the IvorySQL community submitted 2 project topics: "Add One-Click Installation Script for IvorySQL" and "Develop <code>sys_guid</code> Function Based on uuid-ossp for IvorySQL". Each project was selected by one university student, and both successfully completed the project! Here, the IvorySQL community congratulates the two students on their successful project completion.</p>
+        
+        <p>Completion Announcement Link: <br/> <a href="https://summer-ospp.ac.cn/final" target="_blank" rel="noopener noreferrer">https://summer-ospp.ac.cn/final</a></p>
+
+        <img className="content-img" src="https://ifclub.com.cn/images/images/20251113/5668a3741c38439cb2dccf270d51b11d.jpg" alt="OSPP 2025" />
+
+        <h2 id="projects">Introduction to IvorySQL Community Projects</h2>
+        <p>This year, the IvorySQL community released 2 projects in OSPP, all focusing on the development of IvorySQL itself.</p>
+
+        <h3 id="project-1">Project 1: Add One-Click Installation Script for IvorySQL</h3>
+        <p>IvorySQL is an open-source Oracle-compatible database based on PostgreSQL, supporting multiple platforms and operating systems. Currently, IvorySQL requires manual execution of multiple commands for source code installation, lacking a one-click installation method. Although there are existing tutorials and commands for source code installation, the installation process varies across different operating systems, and manual execution is cumbersome and error-prone.</p>
+        <p>To address this, we plan to add a one-click installation script to enable users to quickly and easily install IvorySQL from source code. The ultimate goal is to provide a one-click installation script that allows users to complete the installation and startup of IvorySQL with a single command after simple configuration.</p>
+        <blockquote>
+          <p>👨‍🎓 <b>Selected Student:</b> Wang Shuo</p>
+          <p>👨‍🏫 <b>Project Mentor:</b> Jiao Shuntian</p>
+          <p>📨 <b>Contact Email:</b> jiaoshuntian@highgo.com</p>
+          <p>🔑 <b>Project Difficulty:</b> Basic</p>
+          <p>⛏ <b>Technical Field:</b> PostgreSQL</p>
+          <p>★ <b>Project Details:</b> <a href="https://summer-ospp.ac.cn/org/prodetail/258430417" target="_blank" rel="noopener noreferrer">https://summer-ospp.ac.cn/org/prodetail/258430417</a></p>
+        </blockquote>
+
+        <h3 id="project-2">Project 2: Develop sys_guid Function Based on uuid-ossp for IvorySQL</h3>
+        <p>IvorySQL is an open-source database based on PostgreSQL, supporting various Oracle-compatible features. Currently, IvorySQL needs a powerful <code>sys_guid</code> function that ensures database-level uniqueness. Although the PostgreSQL kernel provides similar functions such as <code>gen_random_uuid()</code> based on pseudorandom numbers, there is still a lack of a dedicated <code>sys_guid</code> function.</p>
+        <p>Therefore, we plan to develop a <code>sys_guid</code> function that meets the requirements based on the <code>uuid-ossp/e2fs</code> extension and submit the final code to GitHub in the form of a PR.</p>
+        <blockquote>
+          <p>👨‍🎓 <b>Selected Student:</b> Chong Penghao</p>
+          <p>👨‍🏫 <b>Project Mentor:</b> Niu Shiji</p>
+          <p>📨 <b>Contact Email:</b> niushiji@highgo.com</p>
+          <p>🔑 <b>Project Difficulty:</b> Basic</p>
+          <p>⛏ <b>Technical Field:</b> PostgreSQL</p>
+          <p>★ <b>Project Details:</b> <a href="https://summer-ospp.ac.cn/org/prodetail/258430418" target="_blank" rel="noopener noreferrer">https://summer-ospp.ac.cn/org/prodetail/258430418</a></p>
+        </blockquote>
+
+        <h2 id="about">About Open Source Promotion Plan (OSPP)</h2>
+        <p>The "Open Source Promotion Plan (OSPP)" is a series of summer activities guided by the "Open Source Software Supply Chain Promotion Plan" of the Institute of Software, Chinese Academy of Sciences. Co-hosted by the Institute of Software, Chinese Academy of Sciences and Huawei Technologies Co., Ltd., it aims to encourage college students to actively participate in the development and maintenance of open-source software, cultivate and discover more outstanding developers, promote the vigorous development of excellent open-source software communities, and contribute to the construction of the open-source software supply chain.</p>
+        <p>The event collaborates with major open-source communities to provide projects for the development and maintenance of important open-source software, and opens registration to college students worldwide. Students can independently choose interested projects to apply for, and after being selected, develop under the guidance of senior developers (community mentors) of the project. Based on the difficulty and completion of the project, those who complete the project will receive project remuneration and completion certificates.</p>
+        <p>Event Official Website: <br/> <a href="https://summer-ospp.ac.cn/" target="_blank" rel="noopener noreferrer">https://summer-ospp.ac.cn/</a></p>
+        <p>Official Email: <br/> org@summer-ospp.ac.cn</p>
+
+        <h2 id="summary">Summary</h2>
+        <p>OSPP is an effective way for college students to get in touch with and participate in open source. The IvorySQL community is honored to participate in it and assist two college students in successfully completing their projects. In the future, IvorySQL will invite the two students to join the IvorySQL community and continue to participate in open-source activities such as OSPP.</p>
+      </div>
+    </div>
+
+    <div className="detail-sidebar">
+      <div className="sidebar-sticky">
+        <div className="sidebar-title">▼ TABLE OF CONTENTS</div>
+        <ul className="sidebar-nav">
+          <li><Link to="#projects">Community Projects</Link></li>
+          <li><Link to="#project-1">Installation Script</Link></li>
+          <li><Link to="#project-2">sys_guid Function</Link></li>
+          <li><Link to="#about">About OSPP</Link></li>
+          <li><Link to="#summary">Summary</Link></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

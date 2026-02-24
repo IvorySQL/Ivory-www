@@ -1,17 +1,22 @@
 ---
 title: IvorySQL 上线 Navicat
 hide_table_of_contents: true
+slug: /news/ivorysql-navicat
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 <style>{`
+  .news-detail-container {
+    padding-top: 40px;
+  }
   .detail-banner {
     background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
     padding: 40px 0;
     color: white !important;
     margin-bottom: 30px;
+    border-radius: 12px;
   }
   .detail-banner-inner {
     max-width: 1200px;
@@ -23,11 +28,9 @@ import Link from '@docusaurus/Link';
   .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
 
   .detail-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 80px;
     display: flex;
     gap: 40px;
+    margin-bottom: 80px;
   }
 
   .detail-main { flex: 1; min-width: 0; }
@@ -57,81 +60,80 @@ import Link from '@docusaurus/Link';
   .sidebar-nav a:hover { color: #7D52F4; }
 
   @media (max-width: 996px) {
-    .detail-banner { padding: 30px 0; }
-    .detail-banner h1 { font-size: 1.5rem; }
     .detail-wrapper { flex-direction: column; }
     .detail-sidebar { display: none; }
     .post-title { font-size: 1.5rem; }
   }
 `}</style>
 
-<div className="detail-banner">
-  <div className="detail-banner-inner">
-    <h1>新闻动态</h1>
-    <div className="detail-banner-decor">● ○ ●</div>
-  </div>
-</div>
-
-<div className="container detail-wrapper">
-  <div className="detail-main">
-    <div className="breadcrumb">
-      <Link to="/news">新闻动态</Link> <span>&gt;</span> <span>社区动态</span>
-    </div>
-
-    <div className="post-header">
-      <div className="post-title">IvorySQL 上线 Navicat</div>
-      <div className="post-date">📅 发布时间：2025 年 8 月 4 日</div>
-    </div>
-
-    <div className="post-content">
-      <p>
-        近日，IvorySQL 已完成与全球领先的数据库管理开发工具 Navicat 的全面兼容适配！从 Navicat Premium 17.3 版本开始，用户可直接使用 Navicat 无缝连接、管理和开发 IvorySQL 数据库。
-      </p>
-      <p>
-        Navicat 以其强大的功能、直观的用户界面和卓越的性能，深受全球数百万开发者和数据库管理员的信赖。此次 Navicat 对 IvorySQL 的原生支持，不仅是对 IvorySQL 技术先进性和兼容性的高度认可，更是 IvorySQL 生态建设历程中的一个里程碑式事件。未来，IvorySQL 将继续携手更多行业伙伴，持续优化开源数据库解决方案，助力企业与开发者在数字化转型的浪潮中乘风破浪。
-      </p>
-  
-      <h2 id="feature-chart">IvorySQL x Navicat 功能图</h2>
-  <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-navicat-1.png')} />
-
-      <p>
-        Navicat 旗下全能型工具 Navicat Premium 与轻量化管理工具 Navicat Premium Lite 均已接入 IvorySQL 数据库，且支持 Windows、macOS 和 Linux 多操作系统。其中，轻量化的 Navicat Premium Lite 为小型团队及独立开发者提供专业免费的工具选择，为开源用户提供强有力的技术支撑，功能涵盖数据查看器、对象设计器、SQL 编辑器（含 SQL 美化与代码补全）、导入导出、用户管理及协同合作等。而全功能的 Navicat Premium 还具备更多高阶功能，包括 AI 助手、询问 AI、数据同步、结构同步、备份还原、自动运行、数据字典、模型设计、商业智能及数据分析等。
-      </p>
-      <p>
-        此次瀚高 IvorySQL 与 Navicat 的合作，为国内开源数据库项目注入更多活力与可能性。未来，我们将持续与瀚高团队展开深度合作，力求精准满足更多用户的需求。
-      </p>
-
-      <h2 id="certificate">📖 官方兼容性认证证书</h2>
-      <p>
-        自 Navicat V17.3 版本起，Navicat Premium 与 Navicat Premium Lite 已完成对 IvorySQL V4 的兼容测试；同时，Navicat 亦获得 IvorySQL 社区授予的兼容性认证证书。
-      </p>
-      <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-navicat-2.jpg')} />
- 
-
-      <h2 id="about-ivorysql">关于 IvorySQL</h2>
-      <p>
-        IvorySQL 是由瀚高股份主导研发的一款开源的兼容 Oracle 的 PostgreSQL。
-      </p>
-      <p>
-        IvorySQL 与 PostgreSQL 国际社区紧密合作，保持与最新 PG 版本内核同步，为用户提供便捷的升级体验。基于双 Parser 架构设计，100% 与原生 PostgreSQL 兼容，支持丰富的 PG 周边工具和扩展，并根据用户需求提供定制化工具。同时，IvorySQL 提供更全面灵活的 Oracle 兼容功能，具备高度的 SQL 和 PL/SQL 兼容性能够为企业构建更加高效、稳定和灵活的数据库解决方案。
-      </p>
-
-      <h2 id="about-navicat">关于 Navicat</h2>
-      <p>
-        公司始于 1999 年中国香港，创立了 Navicat 品牌和系列产品。我们专注于数据库工具配套技术的研发与技术创新，以产品力与客户需求为导向不断提升工具的可靠性、便捷性、稳定性和安全性。Navicat 致力于帮助全球用户简化管理和维护数据库，用户群体包括数据库相关工作者、应用开发者以及数据分析师等。目前，超过五成的《财富》世界 500 强企业每天都会使用 Navicat。此外，Navicat 被广泛应用在各行各业，涵盖至科技、零售、医疗、运输、物流、酒店、银行、制造商以及更多其他行业或领域。
-      </p>
+<div className="container news-detail-container">
+  <div className="detail-banner">
+    <div className="detail-banner-inner">
+      <h1>新闻动态</h1>
+      <div className="detail-banner-decor">● ○ ●</div>
     </div>
   </div>
 
-  <div className="detail-sidebar">
-    <div className="sidebar-sticky">
-      <div className="sidebar-title">▼ 文章大纲</div>
-      <ul className="sidebar-nav">
-        <li><a href="#feature-chart">IvorySQL x Navicat 功能图</a></li>
-        <li><a href="#certificate">官方兼容性认证证书</a></li>
-        <li><a href="#about-ivorysql">关于 IvorySQL</a></li>
-        <li><a href="#about-navicat">关于 Navicat</a></li>
-      </ul>
+  <div className="detail-wrapper">
+    <div className="detail-main">
+      <div className="breadcrumb">
+        <Link to="/news">新闻动态</Link> <span>&gt;</span> <span>社区动态</span>
+      </div>
+
+      <div className="post-header">
+        <div className="post-title">IvorySQL 上线 Navicat</div>
+        <div className="post-date">📅 发布时间：2025 年 8 月 4 日</div>
+      </div>
+
+      <div className="post-content">
+        <p>
+          近日，IvorySQL 已完成与全球领先的数据库管理开发工具 Navicat 的全面兼容适配！从 Navicat Premium 17.3 版本开始，用户可直接使用 Navicat 无缝连接、管理和开发 IvorySQL 数据库。
+        </p>
+        <p>
+          Navicat 以其强大的功能、直观的用户界面和卓越的性能，深受全球数百万开发者和数据库管理员的信赖。此次 Navicat 对 IvorySQL 的原生支持，不仅是对 IvorySQL 技术先进性和兼容性的高度认可，更是 IvorySQL 生态建设历程中的一个里程碑式事件。未来，IvorySQL 将继续携手更多行业伙伴，持续优化开源数据库解决方案，助力企业与开发者在数字化转型的浪潮中乘风破浪。
+        </p>
+
+        <h2 id="feature-chart">IvorySQL x Navicat 功能图</h2>
+        <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-navicat-1.png')} />
+
+        <p>
+          Navicat 旗下全能型工具 Navicat Premium 与轻量化管理工具 Navicat Premium Lite 均已接入 IvorySQL 数据库，且支持 Windows、macOS 和 Linux 多操作系统。其中，轻量化的 Navicat Premium Lite 为小型团队及独立开发者提供专业免费的工具选择，为开源用户提供强有力的技术支撑，功能涵盖数据查看器、对象设计器、SQL 编辑器（含 SQL 美化与代码补全）、导入导出、用户管理及协同合作等。而全功能的 Navicat Premium 还具备更多高阶功能，包括 AI 助手、询问 AI、数据同步、结构同步、备份还原、自动运行、数据字典、模型设计、商业智能及数据分析等。
+        </p>
+        <p>
+          此次瀚高 IvorySQL 与 Navicat 的合作，为国内开源数据库项目注入更多活力与可能性。未来，我们将持续与瀚高团队展开深度合作，力求精准满足更多用户的需求。
+        </p>
+
+        <h2 id="certificate">📖 官方兼容性认证证书</h2>
+        <p>
+          自 Navicat V17.3 版本起，Navicat Premium 与 Navicat Premium Lite 已完成对 IvorySQL V4 的兼容测试；同时，Navicat 亦获得 IvorySQL 社区授予的兼容性认证证书。
+        </p>
+        <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-navicat-2.jpg')} />
+
+        <h2 id="about-ivorysql">关于 IvorySQL</h2>
+        <p>
+          IvorySQL 是由瀚高股份主导研发的一款开源的兼容 Oracle 的 PostgreSQL。
+        </p>
+        <p>
+          IvorySQL 与 PostgreSQL 国际社区紧密合作，保持与最新 PG 版本内核同步，为用户提供便捷的升级体验。基于双 Parser 架构设计，100% 与原生 PostgreSQL 兼容，支持丰富的 PG 周边工具和扩展，并根据用户需求提供定制化工具。同时，IvorySQL 提供更全面灵活的 Oracle 兼容功能，具备高度的 SQL 和 PL/SQL 兼容性能够为企业构建更加高效、稳定和灵活的数据库解决方案。
+        </p>
+
+        <h2 id="about-navicat">关于 Navicat</h2>
+        <p>
+          公司始于 1999 年中国香港，创立了 Navicat 品牌和系列产品。我们专注于数据库工具配套技术的研发与技术创新，以产品力与客户需求为导向不断提升工具的可靠性、便捷性、稳定性和安全性。Navicat 致力于帮助全球用户简化管理和维护数据库，用户群体包括数据库相关工作者、应用开发者以及数据分析师等。目前，超过五成的《财富》世界 500 强企业每天都会使用 Navicat。此外，Navicat 被广泛应用在各行各业，涵盖至科技、零售、医疗、运输、物流、酒店、银行、制造商以及更多其他行业或领域。
+        </p>
+      </div>
+    </div>
+
+    <div className="detail-sidebar">
+      <div className="sidebar-sticky">
+        <div className="sidebar-title">▼ 文章大纲</div>
+        <ul className="sidebar-nav">
+          <li><Link to="#feature-chart">IvorySQL x Navicat 功能图</Link></li>
+          <li><Link to="#certificate">官方兼容性认证证书</Link></li>
+          <li><Link to="#about-ivorysql">关于 IvorySQL</Link></li>
+          <li><Link to="#about-navicat">关于 Navicat</Link></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

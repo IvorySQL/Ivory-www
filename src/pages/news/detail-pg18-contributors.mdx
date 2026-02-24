@@ -1,17 +1,22 @@
 ---
 title: "PostgreSQL 18 China Contributors Share Experience: Four Tips for Participation"
 hide_table_of_contents: true
+slug: /news/detail-pg18-contributors
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 <style>{`
+  .news-detail-container {
+    padding-top: 40px;
+  }
   .detail-banner {
     background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
     padding: 40px 0;
     color: white !important;
     margin-bottom: 30px;
+    border-radius: 12px;
   }
   .detail-banner-inner {
     max-width: 1200px;
@@ -23,11 +28,9 @@ import Link from '@docusaurus/Link';
   .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
 
   .detail-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 80px;
     display: flex;
     gap: 40px;
+    margin-bottom: 80px;
   }
 
   .detail-main { flex: 1; min-width: 0; }
@@ -56,89 +59,89 @@ import Link from '@docusaurus/Link';
   .sidebar-nav a:hover { color: #7D52F4; }
 
   @media (max-width: 996px) {
-    .detail-banner { padding: 30px 0; }
-    .detail-banner h1 { font-size: 1.5rem; }
     .detail-wrapper { flex-direction: column; }
     .detail-sidebar { display: none; }
     .post-title { font-size: 1.5rem; }
   }
 `}</style>
 
-<div className="detail-banner">
-  <div className="detail-banner-inner">
-    <h1>News & Updates</h1>
-    <div className="detail-banner-decor">● ○ ●</div>
-  </div>
-</div>
-
-<div className="detail-wrapper">
-  <div className="detail-main">
-    <div className="breadcrumb">
-      <Link to="/news">News</Link> <span>&gt;</span> <span>Community News</span>
-    </div>
-
-    <div className="post-header">
-      <div className="post-title">PostgreSQL 18 China Contributors Share Experience: Four Tips for Participation</div>
-      <div className="post-date">📅 Published on: October 20, 2025</div>
-    </div>
-
-    <div className="post-content">
-      <p>PostgreSQL 18 Officially Released on September 25, 2025. This version not only fixes hundreds of issues but also brings multiple disruptive feature upgrades, such as a brand-new asynchronous I/O (AIO) framework, the newly added Skip Scan technology, and native UUIDv7 support. Each upgrade delivers a better user experience.</p>
-      <p>These rich functional changes and numerous bug fixes are inseparable from the active participation of contributors in the PostgreSQL community. During the development of PostgreSQL 18, more than 200 contributors completed 3,000 commits—an astonishing scale. Notably, the number of contributors from China is constantly growing, including several developers from Highgo Software. This article features exclusive interviews with 5 of these contributors from Highgo, hoping their experiences will inspire those interested in participating in PostgreSQL contributions and even open-source contributions.</p>
-
-      <h2 id="interviews">Contributor Interviews</h2>
-
-      <h3 id="li-chao">Li Chao: Adapt to Community Rhythm Quickly, Advise "Be Bold to Participate, Think Before Acting"</h3>
-      <p>Both functional modules contributed by Li Chao were merged after the release of PostgreSQL 18. Therefore, his main contributions to the PostgreSQL 18 version focus on code reviews and fixes for several small bugs.</p>
-      <p>As a newcomer to PostgreSQL community contributions, Li Chao needed to re-adapt to the community's work habits and rhythm. He noted that the PostgreSQL community is a fully open working environment, which is significantly different from his previous development experience. However, after a short period of adjustment, he has basically adapted to the community's workflow.</p>
-      <p>Regarding work support, Li Chao's main task is to participate in PostgreSQL community contributions, and the company provides full support for this. This detail fully reflects Highgo's emphasis on and investment in open-source initiatives.</p>
-      <p>For developers attempting to contribute to PostgreSQL for the first time, Li Chao offered two pieces of advice:</p>
-      <ul>
-        <li><strong>Be bold to participate:</strong> The PostgreSQL community is like an open and inclusive big family, very friendly to newcomers. If you have the idea to participate, don't hesitate to take the first step.</li>
-        <li><strong>Think before acting:</strong> Every word in the community will be noticed by many people, so it's crucial to think carefully before speaking. The community values content quality over speed, and there are no emails that require an immediate reply. Therefore, thinking twice before speaking can make communication more efficient and accurate.</li>
-      </ul>
-
-      <h3 id="niu-shiji">Niu Shiji: Sensitively Detect Memory Leak Issues, Start Open-Source with Simple Bugs</h3>
-      <p>During the development of PostgreSQL 18, Niu Shiji successfully fixed a memory leak issue. He believes that memory leaks are problems that need to be avoided at all costs in daily work. As a software engineer, he has always remained highly sensitive to potential memory leak code. This professional habit enabled him to promptly detect such hidden dangers and resolve them when reading PostgreSQL source code.</p>
-      <p>As an enterprise developer, Niu Shiji actively thinks about the connection with the open-source community while conducting internal business development and actively seeks opportunities to contribute to the community. Highgo has always encouraged its engineers to participate in open-source contributions, allowing employees to allocate part of their working time to open-source projects and providing developers with favorable conditions for participation.</p>
-      <p>Regarding the entry point for open-source contributions, Niu Shiji suggested that PostgreSQL is a large-scale project with diverse contribution methods. Newcomers can start with relatively simple bug fixes, accumulate experience, and then gradually delve into more complex modules.</p>
-
-      <h3 id="li-yonghao">Li Yonghao: From Encountering Bugs in Business Development to Contributing to the Community, Grateful for Company and Team Support</h3>
-      <p>In this participation in PostgreSQL community contributions, Li Yonghao submitted a bug related to syntax parsing when executing view definitions. He explained that this bug was discovered during the development of database types and operators. In the subsequent process of tracking and resolving the bug, he gained a deeper understanding of the logic of related modules, and this knowledge has laid a more solid foundation for his future work.</p>
-      <p>Li Yonghao stated that he only gradually came into contact with database kernel development after joining Highgo. When he first started, he faced many challenges, such as difficulties in syntax, operators, type conversion, and functions. To solve these problems, on the one hand, he actively consulted and discussed with experienced colleagues; on the other hand, he referred to the design ideas of PostgreSQL's native functions or other products on the market to find the optimal solution.</p>
-      <p>As a R&D personnel at Highgo, Li Yonghao's daily work is related to PostgreSQL kernel development. The bug discovered this time was also detected during the kernel code review work with his colleagues. He mentioned that in recent years, Highgo has listed open-source development as a key task. This participation in open-source contributions has received high attention from leaders from the very beginning. During the communication with international community members, experienced colleagues also provided him with a lot of help and guidance. Li Yonghao expressed his sincere gratitude to the leaders and colleagues for their encouragement and support.</p>
-      <p>Looking back three years ago, when Li Yonghao first joined Highgo and came into contact with PostgreSQL, he thought open-source contributions were a distant thing. Now, as a "newcomer" with not much experience in database kernel development, being able to participate in the contribution of PostgreSQL 18 and gain attention is a great encouragement for him. He hopes that more people will boldly participate in open-source in the future, because the "experts" in the community are very enthusiastic about replying to questions. As long as you actively participate, you will definitely gain something.</p>
-
-      <h3 id="jiao-shuntian">Jiao Shuntian: Fix Bugs in pg_amcheck Tool, Overcome Technical Challenges with Company Support</h3>
-      <p>In his contributions to PostgreSQL 18, Jiao Shuntian submitted a bug fix patch for the pg_amcheck tool. He said that as a complex database system, PostgreSQL includes multiple professional sub-modules, and he often encounters technical issues related to lexical and syntax parsing in actual development.</p>
-      <p>However, Highgo has established an efficient internal collaboration mechanism. Each R&D personnel specializes in a specific field. For example, some colleagues specialize in query parsers and have accumulated profound experience in lexical/syntax analysis. At the same time, the company regularly holds technical sharing sessions where the person in charge of each module shares the latest research results. In addition, it has built a comprehensive internal documentation system covering the design principles and common problems of each module. These supports enable R&D personnel to quickly obtain professional help even when encountering unfamiliar fields, which not only improves the efficiency of problem-solving but also promotes the overall technical growth of the team.</p>
-      <p>Jiao Shuntian mentioned that Highgo's corporate mission is "Connect the World Through Open Source". Therefore, the company strongly encourages employees to participate in open-source communities and provides systematic support to balance internal business and open-source contributions. For example, it allows employees to invest in open-source projects during working hours, forms a dedicated R&D team for open-source contributions, and actively organizes and participates in various open-source-related activities.</p>
-      <p>For developers interested in contributing to PostgreSQL, Jiao Shuntian suggested subscribing to the pgsql-hackers mailing list—contributors to the PostgreSQL community mainly conduct R&D discussions through this list, and developers can select topics of interest or expertise to participate in. At the same time, they can also pay attention to PostgreSQL's commitfest website from time to time, participate in patch reviews and testing, and gradually integrate into the community.</p>
-
-      <h3 id="han-weibo">Han Weibo: Fix Partitioned Table Bugs, Delve into PostgreSQL Source Code Driven by Business</h3>
-      <p>In his contributions to PostgreSQL 18, Han Weibo's main work was fixing a bug in partitioned tables. He said that in carrying out compatibility business, how to better implement compatibility features while maintaining the "original flavor" of PostgreSQL is a very challenging problem in daily work. To meet this challenge, three aspects of work need to be done well: designing a good plan, strengthening code reviews to avoid reinventing the wheel, and conducting code refactoring in a timely manner to improve code vitality.</p>
-      <p>Han Weibo believes that the company's specific business provides motivation for R&D personnel to deeply learn PostgreSQL and delve into its source code. In this process, by discovering problems, raising questions, and solving problems, they can naturally contribute to the PostgreSQL ecosystem. Highgo provides R&D personnel with a broad platform, sufficient time, and a good working atmosphere, which are important guarantees for being able to concentrate on in-depth research on PostgreSQL.</p>
-      <p>For developers participating in PostgreSQL contributions for the first time, Han Weibo's advice is: read more code, practice more, and ask more active questions.</p>
-
-      <h2 id="summary">Summary</h2>
-      <p>From fixing memory leaks and optimizing syntax parsing to improving tool modules, the practical experiences of the 5 contributors from Highgo are not only vivid examples of Chinese strength integrating into the PostgreSQL ecosystem but also clearly illustrate the real path of "participating in open source". It is not an unattainable technical barrier but a gradual accumulation starting from a code review, a bug fix, or an email discussion.</p>
-      <p>The 3,000 commits behind PostgreSQL 18 are the result of collaboration among more than 200 developers, and the growth in the number of Chinese contributors is making the "diversity" of the open-source ecosystem more distinct. For developers eager to enter the open-source field, Li Chao's "be bold to participate, think before acting", Niu Shiji's "start with simple bugs", and Jiao Shuntian's "follow the community mailing list" may be more precious "entry keys" than technical details.</p>
-      <p>In the future, as more enterprises increase their investment in open source and more developers join the open-source ranks, the PostgreSQL ecosystem will surely achieve more abundant functional breakthroughs. Every small contribution is an important force driving the continuous evolution of this open-source database. We look forward to seeing more new faces in the next version, jointly contributing to the development of the PostgreSQL ecosystem.</p>
+<div className="container news-detail-container">
+  <div className="detail-banner">
+    <div className="detail-banner-inner">
+      <h1>News & Updates</h1>
+      <div className="detail-banner-decor">● ○ ●</div>
     </div>
   </div>
 
-  <div className="detail-sidebar">
-    <div className="sidebar-sticky">
-      <div className="sidebar-title">▼ CONTENTS</div>
-      <ul className="sidebar-nav">
-        <li><a href="#interviews">Contributor Interviews</a></li>
-        <li><a href="#li-chao">Li Chao's Advice</a></li>
-        <li><a href="#niu-shiji">Niu Shiji's Tip</a></li>
-        <li><a href="#li-yonghao">Li Yonghao's Story</a></li>
-        <li><a href="#jiao-shuntian">Jiao Shuntian's Challenges</a></li>
-        <li><a href="#han-weibo">Han Weibo's Strategy</a></li>
-        <li><a href="#summary">Summary</a></li>
-      </ul>
+  <div className="detail-wrapper">
+    <div className="detail-main">
+      <div className="breadcrumb">
+        <Link to="/news">News</Link> <span>&gt;</span> <span>Community News</span>
+      </div>
+
+      <div className="post-header">
+        <div className="post-title">PostgreSQL 18 China Contributors Share Experience: Four Tips for Participation</div>
+        <div className="post-date">📅 Published on: October 20, 2025</div>
+      </div>
+
+      <div className="post-content">
+        <p>PostgreSQL 18 Officially Released on September 25, 2025. This version not only fixes hundreds of issues but also brings multiple disruptive feature upgrades, such as a brand-new asynchronous I/O (AIO) framework, the newly added Skip Scan technology, and native UUIDv7 support. Each upgrade delivers a better user experience.</p>
+        <p>These rich functional changes and numerous bug fixes are inseparable from the active participation of contributors in the PostgreSQL community. During the development of PostgreSQL 18, more than 200 contributors completed 3,000 commits—an astonishing scale. Notably, the number of contributors from China is constantly growing, including several developers from Highgo Software. This article features exclusive interviews with 5 of these contributors from Highgo, hoping their experiences will inspire those interested in participating in PostgreSQL contributions and even open-source contributions.</p>
+
+        <h2 id="interviews">Contributor Interviews</h2>
+
+        <h3 id="li-chao">Li Chao: Adapt to Community Rhythm Quickly, Advise "Be Bold to Participate, Think Before Acting"</h3>
+        <p>Both functional modules contributed by Li Chao were merged after the release of PostgreSQL 18. Therefore, his main contributions to the PostgreSQL 18 version focus on code reviews and fixes for several small bugs.</p>
+        <p>As a newcomer to PostgreSQL community contributions, Li Chao needed to re-adapt to the community's work habits and rhythm. He noted that the PostgreSQL community is a fully open working environment, which is significantly different from his previous development experience. However, after a short period of adjustment, he has basically adapted to the community's workflow.</p>
+        <p>Regarding work support, Li Chao's main task is to participate in PostgreSQL community contributions, and the company provides full support for this. This detail fully reflects Highgo's emphasis on and investment in open-source initiatives.</p>
+        <p>For developers attempting to contribute to PostgreSQL for the first time, Li Chao offered two pieces of advice:</p>
+        <ul>
+          <li><strong>Be bold to participate:</strong> The PostgreSQL community is like an open and inclusive big family, very friendly to newcomers. If you have the idea to participate, don't hesitate to take the first step.</li>
+          <li><strong>Think before acting:</strong> Every word in the community will be noticed by many people, so it's crucial to think carefully before speaking. The community values content quality over speed, and there are no emails that require an immediate reply. Therefore, thinking twice before speaking can make communication more efficient and accurate.</li>
+        </ul>
+
+        <h3 id="niu-shiji">Niu Shiji: Sensitively Detect Memory Leak Issues, Start Open-Source with Simple Bugs</h3>
+        <p>During the development of PostgreSQL 18, Niu Shiji successfully fixed a memory leak issue. He believes that memory leaks are problems that need to be avoided at all costs in daily work. As a software engineer, he has always remained highly sensitive to potential memory leak code. This professional habit enabled him to promptly detect such hidden dangers and resolve them when reading PostgreSQL source code.</p>
+        <p>As an enterprise developer, Niu Shiji actively thinks about the connection with the open-source community while conducting internal business development and actively seeks opportunities to contribute to the community. Highgo has always encouraged its engineers to participate in open-source contributions, allowing employees to allocate part of their working time to open-source projects and providing developers with favorable conditions for participation.</p>
+        <p>Regarding the entry point for open-source contributions, Niu Shiji suggested that PostgreSQL is a large-scale project with diverse contribution methods. Newcomers can start with relatively simple bug fixes, accumulate experience, and then gradually delve into more complex modules.</p>
+
+        <h3 id="li-yonghao">Li Yonghao: From Encountering Bugs in Business Development to Contributing to the Community, Grateful for Company and Team Support</h3>
+        <p>In this participation in PostgreSQL community contributions, Li Yonghao submitted a bug related to syntax parsing when executing view definitions. He explained that this bug was discovered during the development of database types and operators. In the subsequent process of tracking and resolving the bug, he gained a deeper understanding of the logic of related modules, and this knowledge has laid a more solid foundation for his future work.</p>
+        <p>Li Yonghao stated that he only gradually came into contact with database kernel development after joining Highgo. When he first started, he faced many challenges, such as difficulties in syntax, operators, type conversion, and functions. To solve these problems, on the one hand, he actively consulted and discussed with experienced colleagues; on the other hand, he referred to the design ideas of PostgreSQL's native functions or other products on the market to find the optimal solution.</p>
+        <p>As a R&D personnel at Highgo, Li Yonghao's daily work is related to PostgreSQL kernel development. The bug discovered this time was also detected during the kernel code review work with his colleagues. He mentioned that in recent years, Highgo has listed open-source development as a key task. This participation in open-source contributions has received high attention from leaders from the very beginning. During the communication with international community members, experienced colleagues also provided him with a lot of help and guidance. Li Yonghao expressed his sincere gratitude to the leaders and colleagues for their encouragement and support.</p>
+        <p>Looking back three years ago, when Li Yonghao first joined Highgo and came into contact with PostgreSQL, he thought open-source contributions were a distant thing. Now, as a "newcomer" with not much experience in database kernel development, being able to participate in the contribution of PostgreSQL 18 and gain attention is a great encouragement for him. He hopes that more people will boldly participate in open-source in the future, because the "experts" in the community are very enthusiastic about replying to questions. As long as you actively participate, you will definitely gain something.</p>
+
+        <h3 id="jiao-shuntian">Jiao Shuntian: Fix Bugs in pg_amcheck Tool, Overcome Technical Challenges with Company Support</h3>
+        <p>In his contributions to PostgreSQL 18, Jiao Shuntian submitted a bug fix patch for the pg_amcheck tool. He said that as a complex database system, PostgreSQL includes multiple professional sub-modules, and he often encounters technical issues related to lexical and syntax parsing in actual development.</p>
+        <p>However, Highgo has established an efficient internal collaboration mechanism. Each R&D personnel specializes in a specific field. For example, some colleagues specialize in query parsers and have accumulated profound experience in lexical/syntax analysis. At the same time, the company regularly holds technical sharing sessions where the person in charge of each module shares the latest research results. In addition, it has built a comprehensive internal documentation system covering the design principles and common problems of each module. These supports enable R&D personnel to quickly obtain professional help even when encountering unfamiliar fields, which not only improves the efficiency of problem-solving but also promotes the overall technical growth of the team.</p>
+        <p>Jiao Shuntian mentioned that Highgo's corporate mission is "Connect the World Through Open Source". Therefore, the company strongly encourages employees to participate in open-source communities and provides systematic support to balance internal business and open-source contributions. For example, it allows employees to invest in open-source projects during working hours, forms a dedicated R&D team for open-source contributions, and actively organizes and participates in various open-source-related activities.</p>
+        <p>For developers interested in contributing to PostgreSQL, Jiao Shuntian suggested subscribing to the pgsql-hackers mailing list—contributors to the PostgreSQL community mainly conduct R&D discussions through this list, and developers can select topics of interest or expertise to participate in. At the same time, they can also pay attention to PostgreSQL's commitfest website from time to time, participate in patch reviews and testing, and gradually integrate into the community.</p>
+
+        <h3 id="han-weibo">Han Weibo: Fix Partitioned Table Bugs, Delve into PostgreSQL Source Code Driven by Business</h3>
+        <p>In his contributions to PostgreSQL 18, Han Weibo's main work was fixing a bug in partitioned tables. He said that in carrying out compatibility business, how to better implement compatibility features while maintaining the "original flavor" of PostgreSQL is a very challenging problem in daily work. To meet this challenge, three aspects of work need to be done well: designing a good plan, strengthening code reviews to avoid reinventing the wheel, and conducting code refactoring in a timely manner to improve code vitality.</p>
+        <p>Han Weibo believes that the company's specific business provides motivation for R&D personnel to deeply learn PostgreSQL and delve into its source code. In this process, by discovering problems, raising questions, and solving problems, they can naturally contribute to the PostgreSQL ecosystem. Highgo provides R&D personnel with a broad platform, sufficient time, and a good working atmosphere, which are important guarantees for being able to concentrate on in-depth research on PostgreSQL.</p>
+        <p>For developers participating in PostgreSQL contributions for the first time, Han Weibo's advice is: read more code, practice more, and ask more active questions.</p>
+
+        <h2 id="summary">Summary</h2>
+        <p>From fixing memory leaks and optimizing syntax parsing to improving tool modules, the practical experiences of the 5 contributors from Highgo are not only vivid examples of Chinese strength integrating into the PostgreSQL ecosystem but also clearly illustrate the real path of "participating in open source". It is not an unattainable technical barrier but a gradual accumulation starting from a code review, a bug fix, or an email discussion.</p>
+        <p>The 3,000 commits behind PostgreSQL 18 are the result of collaboration among more than 200 developers, and the growth in the number of Chinese contributors is making the "diversity" of the open-source ecosystem more distinct. For developers eager to enter the open-source field, Li Chao's "be bold to participate, think before acting", Niu Shiji's "start with simple bugs", and Jiao Shuntian's "follow the community mailing list" may be more precious "entry keys" than technical details.</p>
+        <p>In the future, as more enterprises increase their investment in open source and more developers join the open-source ranks, the PostgreSQL ecosystem will surely achieve more abundant functional breakthroughs. Every small contribution is an important force driving the continuous evolution of this open-source database. We look forward to seeing more new faces in the next version, jointly contributing to the development of the PostgreSQL ecosystem.</p>
+      </div>
+    </div>
+
+    <div className="detail-sidebar">
+      <div className="sidebar-sticky">
+        <div className="sidebar-title">▼ CONTENTS</div>
+        <ul className="sidebar-nav">
+          <li><Link to="#interviews">Contributor Interviews</Link></li>
+          <li><Link to="#li-chao">Li Chao's Advice</Link></li>
+          <li><Link to="#niu-shiji">Niu Shiji's Tip</Link></li>
+          <li><Link to="#li-yonghao">Li Yonghao's Story</Link></li>
+          <li><Link to="#jiao-shuntian">Jiao Shuntian's Challenges</Link></li>
+          <li><Link to="#han-weibo">Han Weibo's Strategy</Link></li>
+          <li><Link to="#summary">Summary</Link></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

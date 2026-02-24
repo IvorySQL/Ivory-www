@@ -1,17 +1,22 @@
 ---
 title: "Highgo & IvorySQL Enter Peking University: Helping Cultivate Innovative Database Talent"
 hide_table_of_contents: true
+slug: /news/ivorysql-pku-course
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 <style>{`
+  .news-detail-container {
+    padding-top: 40px;
+  }
   .detail-banner {
     background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
     padding: 40px 0;
     color: white !important;
     margin-bottom: 30px;
+    border-radius: 12px;
   }
   .detail-banner-inner {
     max-width: 1200px;
@@ -23,11 +28,9 @@ import Link from '@docusaurus/Link';
   .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
 
   .detail-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 80px;
     display: flex;
     gap: 40px;
+    margin-bottom: 80px;
   }
 
   .detail-main { flex: 1; min-width: 0; }
@@ -58,72 +61,72 @@ import Link from '@docusaurus/Link';
   .sidebar-nav a:hover { color: #7D52F4; }
 
   @media (max-width: 996px) {
-    .detail-banner { padding: 30px 0; }
-    .detail-banner h1 { font-size: 1.5rem; }
     .detail-wrapper { flex-direction: column; }
     .detail-sidebar { display: none; }
     .post-title { font-size: 1.5rem; }
   }
 `}</style>
 
-<div className="detail-banner">
-  <div className="detail-banner-inner">
-    <h1>News & Updates</h1>
-    <div className="detail-banner-decor">● ○ ●</div>
-  </div>
-</div>
-
-<div className="detail-wrapper">
-  <div className="detail-main">
-    <div className="breadcrumb">
-      <Link to="/news">News</Link> <span>&gt;</span> <span>Community News</span>
-    </div>
-
-    <div className="post-header">
-      <div className="post-title">Highgo & IvorySQL Enter Peking University: Helping Cultivate Innovative Database Talent</div>
-      <div className="post-date">📅 Published on: April 21, 2025</div>
-    </div>
-
-    <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-pku-course-1.jpg')} />
-
-    <div className="post-content">
-      <p>
-        In January 2020, members of COPU (China Open Source Software Promotion Alliance) met to discuss open-source demonstration courses for universities. Led by Mr. Jing Qi, Deputy Secretary-General of the Alliance and a teacher at Peking University, the pilot program first launched at the School of Software and Microelectronics. This marks the fifth time the China PostgreSQL Branch and its member enterprises have been invited to teach. The course has attracted active participation from leading domestic open-source companies and numerous projects. Aimed at first-year graduate students at Peking University (second semester, from March to June annually), the course uses a formal credit system, with each project teaching team providing 48 class hours (3 credits) of open-source general education and development practice.
-      </p>
-
-      <h2 id="pku-tradition">Peking University: Cultivating Core Competitiveness</h2>
-      <p>
-        As a pioneer for Chinese universities "looking at the world," Peking University adheres to tradition while remaining open and enterprising, always emphasizing the cultivation of students' innovative thinking and practical abilities. The PostgreSQL Kernel Development general education course provides rich, cutting-edge academic resources for PKU to train database talents with core competitiveness. Here, students will integrate diverse knowledge backgrounds with rich practical experience, gradually growing into innovative database talents ready to lay a solid foundation for future open-source database research and development.
-      </p>
-
-      <h2 id="course-launch">Success of the "Open Source PostgreSQL Ecosystem and AI" Course</h2>
-      <p>
-        On April 21, 2025, the "Open Source PostgreSQL Ecosystem Development and AI Integration" general education course, jointly brought by the PostgreSQL Branch of COPU, Hangzhou Yijing Shutong, and Highgo for first-year graduate students at the School of Software and Microelectronics of Peking University, was successfully conducted.
-      </p>
-
-    <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-pku-course-2.jpg')} />
-
-      <h2 id="sharing">Theme Sharing: IvorySQL and Community Contribution Guide</h2>
-      <p>
-        Shuntian Jiao, a R&D engineer from Highgo, shared the theme "IvorySQL and Open Source Community Contribution Guide." During the PKU course, Jiao introduced that IvorySQL is built based on PostgreSQL. It achieves high compatibility with Oracle through a <strong>dual-parser engine</strong> (supporting both Oracle and PostgreSQL syntax) and a <strong>dual-port design</strong> (5432/1521). Deep alignment of data types and functions is supported by kernel dynamic hooks and the <code>ivorysql_ora</code> plugin. In terms of cloud-native capabilities, it integrates K8s Operator and Serverless architectures to adapt to multiple platforms. The community encourages developers to submit code via GitHub or participate in PostgreSQL patch reviews, promoting open-source collaboration through a "code + test + documentation" model. The annual "Open Source Summer" event provides a stage for practice.
-      </p>
-
-      <h2 id="future">Nurturing Future Database R&D Talent</h2>
-      <p>
-        The "PostgreSQL Development Fundamentals and Practice" graduate course at Peking University aims to promote the spread of open-source technology in Chinese universities, further enhance the development and practical capabilities of Peking University graduate students in PostgreSQL, and nurture future database R&D talents. As the PostgreSQL ecosystem continues to flourish, a large number of innovative open-source projects and peripheral tools based on PostgreSQL have emerged in China. In particular, the IvorySQL project (Oracle-compatible) not only helps enterprises reduce costs and increase efficiency through open-source databases but also provides a path for university faculty and students to participate in open-source projects. Collaborating and learning through open source is a more effective way to help university students master core database technologies and contribute to the development of the open-source or information innovation industry in the future.
-      </p>
+<div className="container news-detail-container">
+  <div className="detail-banner">
+    <div className="detail-banner-inner">
+      <h1>News & Updates</h1>
+      <div className="detail-banner-decor">● ○ ●</div>
     </div>
   </div>
 
-  <div className="detail-sidebar">
-    <div className="sidebar-sticky">
-      <div className="sidebar-title">▼ CONTENTS</div>
-      <ul className="sidebar-nav">
-        <li><a href="#pku-tradition">PKU Talent Cultivation</a></li>
-        <li><a href="#course-launch">Course Launch Details</a></li>
-        <li><a href="#sharing">IvorySQL Technology Sharing</a></li>
-        <li><a href="#future">Nurturing Future Talent</a></li>
-      </ul>
+  <div className="detail-wrapper">
+    <div className="detail-main">
+      <div className="breadcrumb">
+        <Link to="/news">News</Link> <span>&gt;</span> <span>Community News</span>
+      </div>
+
+      <div className="post-header">
+        <div className="post-title">Highgo & IvorySQL Enter Peking University: Helping Cultivate Innovative Database Talent</div>
+        <div className="post-date">📅 Published on: April 21, 2025</div>
+      </div>
+
+      <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-pku-course-1.jpg')} />
+
+      <div className="post-content">
+        <p>
+          In January 2020, members of COPU (China Open Source Software Promotion Alliance) met to discuss open-source demonstration courses for universities. Led by Mr. Jing Qi, Deputy Secretary-General of the Alliance and a teacher at Peking University, the pilot program first launched at the School of Software and Microelectronics. This marks the fifth time the China PostgreSQL Branch and its member enterprises have been invited to teach. The course has attracted active participation from leading domestic open-source companies and numerous projects. Aimed at first-year graduate students at Peking University (second semester, from March to June annually), the course uses a formal credit system, with each project teaching team providing 48 class hours (3 credits) of open-source general education and development practice.
+        </p>
+
+        <h2 id="pku-tradition">Peking University: Cultivating Core Competitiveness</h2>
+        <p>
+          As a pioneer for Chinese universities "looking at the world," Peking University adheres to tradition while remaining open and enterprising, always emphasizing the cultivation of students' innovative thinking and practical abilities. The PostgreSQL Kernel Development general education course provides rich, cutting-edge academic resources for PKU to train database talents with core competitiveness. Here, students will integrate diverse knowledge backgrounds with rich practical experience, gradually growing into innovative database talents ready to lay a solid foundation for future open-source database research and development.
+        </p>
+
+        <h2 id="course-launch">Success of the "Open Source PostgreSQL Ecosystem and AI" Course</h2>
+        <p>
+          On April 21, 2025, the "Open Source PostgreSQL Ecosystem Development and AI Integration" general education course, jointly brought by the PostgreSQL Branch of COPU, Hangzhou Yijing Shutong, and Highgo for first-year graduate students at the School of Software and Microelectronics of Peking University, was successfully conducted.
+        </p>
+
+        <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-pku-course-2.jpg')} />
+
+        <h2 id="sharing">Theme Sharing: IvorySQL and Community Contribution Guide</h2>
+        <p>
+          Shuntian Jiao, a R&D engineer from Highgo, shared the theme "IvorySQL and Open Source Community Contribution Guide." During the PKU course, Jiao introduced that IvorySQL is built based on PostgreSQL. It achieves high compatibility with Oracle through a <strong>dual-parser engine</strong> (supporting both Oracle and PostgreSQL syntax) and a <strong>dual-port design</strong> (5432/1521). Deep alignment of data types and functions is supported by kernel dynamic hooks and the <code>ivorysql_ora</code> plugin. In terms of cloud-native capabilities, it integrates K8s Operator and Serverless architectures to adapt to multiple platforms. The community encourages developers to submit code via GitHub or participate in PostgreSQL patch reviews, promoting open-source collaboration through a "code + test + documentation" model. The annual "Open Source Summer" event provides a stage for practice.
+        </p>
+
+        <h2 id="future">Nurturing Future Database R&D Talent</h2>
+        <p>
+          The "PostgreSQL Development Fundamentals and Practice" graduate course at Peking University aims to promote the spread of open-source technology in Chinese universities, further enhance the development and practical capabilities of Peking University graduate students in PostgreSQL, and nurture future database R&D talents. As the PostgreSQL ecosystem continues to flourish, a large number of innovative open-source projects and peripheral tools based on PostgreSQL have emerged in China. In particular, the IvorySQL project (Oracle-compatible) not only helps enterprises reduce costs and increase efficiency through open-source databases but also provides a path for university faculty and students to participate in open-source projects. Collaborating and learning through open source is a more effective way to help university students master core database technologies and contribute to the development of the open-source or information innovation industry in the future.
+        </p>
+      </div>
+    </div>
+
+    <div className="detail-sidebar">
+      <div className="sidebar-sticky">
+        <div className="sidebar-title">▼ CONTENTS</div>
+        <ul className="sidebar-nav">
+          <li><Link to="#pku-tradition">PKU Talent Cultivation</Link></li>
+          <li><Link to="#course-launch">Course Launch Details</Link></li>
+          <li><Link to="#sharing">IvorySQL Technology Sharing</Link></li>
+          <li><Link to="#future">Nurturing Future Talent</Link></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

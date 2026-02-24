@@ -1,17 +1,22 @@
 ---
 title: IvorySQL Adapts to LoongArch® Architecture
 hide_table_of_contents: true
+slug: /news/ivorysql-loongarch-cert
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 <style>{`
+  .news-detail-container {
+    padding-top: 40px;
+  }
   .detail-banner {
     background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
     padding: 40px 0;
     color: white !important;
     margin-bottom: 30px;
+    border-radius: 12px;
   }
   .detail-banner-inner {
     max-width: 1200px;
@@ -23,11 +28,9 @@ import Link from '@docusaurus/Link';
   .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
 
   .detail-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 80px;
     display: flex;
     gap: 40px;
+    margin-bottom: 80px;
   }
 
   .detail-main { flex: 1; min-width: 0; }
@@ -57,81 +60,81 @@ import Link from '@docusaurus/Link';
   .sidebar-nav a:hover { color: #7D52F4; }
 
   @media (max-width: 996px) {
-    .detail-banner { padding: 30px 0; }
-    .detail-banner h1 { font-size: 1.5rem; }
     .detail-wrapper { flex-direction: column; }
     .detail-sidebar { display: none; }
     .post-title { font-size: 1.5rem; }
   }
 `}</style>
 
-<div className="detail-banner">
-  <div className="detail-banner-inner">
-    <h1>News & Updates</h1>
-    <div className="detail-banner-decor">● ○ ●</div>
-  </div>
-</div>
-
-<div className="detail-wrapper">
-  <div className="detail-main">
-    <div className="breadcrumb">
-      <Link to="/news">News</Link> <span>&gt;</span> <span>Community News</span>
-    </div>
-
-    <div className="post-header">
-      <div className="post-title">IvorySQL Adapts to LoongArch® Architecture</div>
-      <div className="post-date">📅 Published on: September 12, 2025</div>
-    </div>
-
-    <div className="post-content">
-      <p>
-        The IvorySQL community is pleased to announce that IvorySQL has successfully adapted to the LoongArch® architecture, taking a solid step forward in the deep integration of domestic databases and domestic chips. This milestone marks a significant breakthrough for IvorySQL in promoting the construction of the domestic ecosystem and empowering the information innovation industry, providing users with more efficient, stable, and secure database solutions.
-      </p>
-
-      <h2 id="boosting-ecosystem">Adapting to LoongArch® Architecture, Boosting the Domestic Ecosystem</h2>
-      <p>
-        In 2020, Loongson Technology launched the LoongArch® architecture based on 20 years of CPU research and development and ecosystem construction experience. It includes a basic architecture part and extended parts such as vector instructions, virtualization, and binary translation, totaling nearly 2,000 instructions.
-      </p>
-      <p>LoongArch® boasts excellent independence, advanced features, and compatibility:</p>
-      <ul>
-        <li><strong>Advanced:</strong> Incorporates cutting-edge technological achievements in instruction set development in recent years to improve code efficiency.</li>
-        <li><strong>Compatible:</strong> Integrates key features of X86 and ARM, enabling efficient support for binary translation.</li>
-        <li><strong>Modular:</strong> Consists of basic components, binary translation, virtualization, and vectorization modules.</li>
-        <li><strong>Extensible:</strong> Reserved instruction slots to facilitate continuous evolution in the future.</li>
-      </ul>
-      <p>
-        IvorySQL is an open-source relational database built on PostgreSQL. It inherits PostgreSQL's powerful functions and stability while being optimized and extended to meet the specific needs of target users.
-      </p>
-      <p>
-        As an important branch of PostgreSQL, IvorySQL not only maintains compatibility with upstream versions but also strives to achieve compatibility with Oracle databases, allowing for direct replacement.
-      </p>
-      <p>
-        In June 2025, IvorySQL released version 4.5, adding full-platform MIPS packaging support. Building on the existing ARM and X86 architectures, it further expanded support for the diverse chip ecosystem.
-      </p>
-      <p>
-        The successful adaptation of IvorySQL to LoongArch® not only achieves deep collaborative optimization of software and hardware but also further promotes the wide application of domestic databases in the information innovation industry.
-      </p>
-      <p>
-        Through in-depth optimization on LoongArch®, IvorySQL can fully leverage the performance advantages of Loongson processors, delivering more efficient data processing capabilities and lower latency. Whether for enterprise-level OLTP services, data analysis, or cloud-native scenarios, IvorySQL's performance on LoongArch® demonstrates exceptional stability and compatibility, providing users with a cost-effective database solution.
-      </p>
-
-      <h2 id="future-outlook">Future Outlook</h2>
-      <p>
-        In the future, IvorySQL will continue to deepen cooperation with LoongArch®, continuously optimize performance, and expand application scenarios. IvorySQL plans to further enhance support for domestic chips and operating systems in subsequent versions, while promoting innovative applications of IvorySQL in cutting-edge fields such as cloud native and AI integration, to provide better database solutions for global users.
-      </p>
-      <p>
-        We welcome developers, users, and partners to join the IvorySQL open-source community and jointly explore the unlimited possibilities of database technology!
-      </p>
+<div className="container news-detail-container">
+  <div className="detail-banner">
+    <div className="detail-banner-inner">
+      <h1>News & Updates</h1>
+      <div className="detail-banner-decor">● ○ ●</div>
     </div>
   </div>
 
-  <div className="detail-sidebar">
-    <div className="sidebar-sticky">
-      <div className="sidebar-title">▼ CONTENTS</div>
-      <ul className="sidebar-nav">
-        <li><a href="#boosting-ecosystem">Boosting the Ecosystem</a></li>
-        <li><a href="#future-outlook">Future Outlook</a></li>
-      </ul>
+  <div className="detail-wrapper">
+    <div className="detail-main">
+      <div className="breadcrumb">
+        <Link to="/news">News</Link> <span>&gt;</span> <span>Community News</span>
+      </div>
+
+      <div className="post-header">
+        <div className="post-title">IvorySQL Adapts to LoongArch® Architecture</div>
+        <div className="post-date">📅 Published on: September 12, 2025</div>
+      </div>
+
+      <div className="post-content">
+        <p>
+          The IvorySQL community is pleased to announce that IvorySQL has successfully adapted to the LoongArch® architecture, taking a solid step forward in the deep integration of domestic databases and domestic chips. This milestone marks a significant breakthrough for IvorySQL in promoting the construction of the domestic ecosystem and empowering the information innovation industry, providing users with more efficient, stable, and secure database solutions.
+        </p>
+
+        <h2 id="boosting-ecosystem">Adapting to LoongArch® Architecture, Boosting the Domestic Ecosystem</h2>
+        <p>
+          In 2020, Loongson Technology launched the LoongArch® architecture based on 20 years of CPU research and development and ecosystem construction experience. It includes a basic architecture part and extended parts such as vector instructions, virtualization, and binary translation, totaling nearly 2,000 instructions.
+        </p>
+        <p>LoongArch® boasts excellent independence, advanced features, and compatibility:</p>
+        <ul>
+          <li><strong>Advanced:</strong> Incorporates cutting-edge technological achievements in instruction set development in recent years to improve code efficiency.</li>
+          <li><strong>Compatible:</strong> Integrates key features of X86 and ARM, enabling efficient support for binary translation.</li>
+          <li><strong>Modular:</strong> Consists of basic components, binary translation, virtualization, and vectorization modules.</li>
+          <li><strong>Extensible:</strong> Reserved instruction slots to facilitate continuous evolution in the future.</li>
+        </ul>
+        <p>
+          IvorySQL is an open-source relational database built on PostgreSQL. It inherits PostgreSQL's powerful functions and stability while being optimized and extended to meet the specific needs of target users.
+        </p>
+        <p>
+          As an important branch of PostgreSQL, IvorySQL not only maintains compatibility with upstream versions but also strives to achieve compatibility with Oracle databases, allowing for direct replacement.
+        </p>
+        <p>
+          In June 2025, IvorySQL released version 4.5, adding full-platform MIPS packaging support. Building on the existing ARM and X86 architectures, it further expanded support for the diverse chip ecosystem.
+        </p>
+        <p>
+          The successful adaptation of IvorySQL to LoongArch® not only achieves deep collaborative optimization of software and hardware but also further promotes the wide application of domestic databases in the information innovation industry.
+        </p>
+        <p>
+          Through in-depth optimization on LoongArch®, IvorySQL can fully leverage the performance advantages of Loongson processors, delivering more efficient data processing capabilities and lower latency. Whether for enterprise-level OLTP services, data analysis, or cloud-native scenarios, IvorySQL's performance on LoongArch® demonstrates exceptional stability and compatibility, providing users with a cost-effective database solution.
+        </p>
+
+        <h2 id="future-outlook">Future Outlook</h2>
+        <p>
+          In the future, IvorySQL will continue to deepen cooperation with LoongArch®, continuously optimize performance, and expand application scenarios. IvorySQL plans to further enhance support for domestic chips and operating systems in subsequent versions, while promoting innovative applications of IvorySQL in cutting-edge fields such as cloud native and AI integration, to provide better database solutions for global users.
+        </p>
+        <p>
+          We welcome developers, users, and partners to join the IvorySQL open-source community and jointly explore the unlimited possibilities of database technology!
+        </p>
+      </div>
+    </div>
+
+    <div className="detail-sidebar">
+      <div className="sidebar-sticky">
+        <div className="sidebar-title">▼ CONTENTS</div>
+        <ul className="sidebar-nav">
+          <li><Link to="#boosting-ecosystem">Boosting the Ecosystem</Link></li>
+          <li><Link to="#future-outlook">Future Outlook</Link></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

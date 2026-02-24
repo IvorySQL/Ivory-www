@@ -1,17 +1,22 @@
 ---
 title: 【生态再升级】IvorySQL 4.5 与银河麒麟高级服务器操作系统V11完成适配认证！
 hide_table_of_contents: true
+slug: /news/ivorysql-kylin-cert
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 <style>{`
+  .news-detail-container {
+    padding-top: 40px;
+  }
   .detail-banner {
     background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
     padding: 40px 0;
     color: white !important;
     margin-bottom: 30px;
+    border-radius: 12px;
   }
   .detail-banner-inner {
     max-width: 1200px;
@@ -23,11 +28,9 @@ import Link from '@docusaurus/Link';
   .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
 
   .detail-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 80px;
     display: flex;
     gap: 40px;
+    margin-bottom: 80px;
   }
 
   .detail-main { flex: 1; min-width: 0; }
@@ -45,6 +48,8 @@ import Link from '@docusaurus/Link';
   .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
   .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
   .post-content strong { color: #333; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
 
   .detail-sidebar { width: 240px; flex-shrink: 0; }
   .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
@@ -55,69 +60,69 @@ import Link from '@docusaurus/Link';
   .sidebar-nav a:hover { color: #7D52F4; }
 
   @media (max-width: 996px) {
-    .detail-banner { padding: 30px 0; }
-    .detail-banner h1 { font-size: 1.5rem; }
     .detail-wrapper { flex-direction: column; }
     .detail-sidebar { display: none; }
     .post-title { font-size: 1.5rem; }
   }
 `}</style>
 
-<div className="detail-banner">
-  <div className="detail-banner-inner">
-    <h1>新闻动态</h1>
-    <div className="detail-banner-decor">● ○ ●</div>
-  </div>
-</div>
-
-<div className="container detail-wrapper">
-  <div className="detail-main">
-    <div className="breadcrumb">
-      <Link to="/news">新闻动态</Link> <span>&gt;</span> <span>社区动态</span>
-    </div>
-
-    <div className="post-header">
-      <div className="post-title">【生态再升级】IvorySQL 4.5 与银河麒麟高级服务器操作系统V11完成适配认证！</div>
-      <div className="post-date">📅 发布时间：2025 年 9 月 26 日</div>
-    </div>
-
-    <div className="post-content">
-      <p>
-        IvorySQL 生态再进一步！近日，IvorySQL 4.5 成功适配银河麒麟高级服务器操作系统 V11。这一适配标志着国产开源数据库与自主操作系统生态的深度融合，进一步助力中国信创产业在高安全、高性能数据库领域的自主可控发展。
-      </p>
-
-      <h2 id="platform">多平台兼容，筑牢应用根基</h2>
-      <p>
-        银河麒麟高级服务器操作系统 V11（简称 Kylin Server V11）是由麒麟软件（KylinSoft）基于多年技术积累和应用实践经验，为企业级关键业务量身打造的新一代服务器操作系统。该系统于 2025 年 8 月 26 日正式发布，是中国首个采用 Linux 6.6 内核的商业发行版。它以高可靠、高可用、高安全、高性能和高扩展为核心优势，深度融合 AI 技术，构建了高速网络协议 MPTCP、热补丁管理、智能故障诊断、场景化优化及安全容器镜像仓库等关键技术体系。
-      </p>
-      <p>
-        此次适配测试覆盖了 <strong>Intel、AMD、海光、兆芯</strong> 等主流硬件平台。经严格验证，IvorySQL 4.5 与银河麒麟高级服务器操作系统 V11 在兼容性、性能表现与可靠性方面，均达到通用场景及关键业务的应用要求，能为用户核心系统提供稳定、高效的技术支撑。
-      </p>
-
-      <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-kylin-cert-1.jpg')} />
-
-      <h2 id="synergy">生态协同，赋能国产化发展</h2>
-      <p>
-        IvorySQL 始终以“完善国产数据库生态”为核心，积极推动与国产操作系统的深度适配。此次与银河麒麟的成功合作，不仅是双方技术实力的互认，更标志着国产数据库与操作系统在生态协同上的进一步突破——为企业数字化转型、关键业务系统国产化替代，提供了更安全、更可靠的“数据库+操作系统”一体化解决方案。
-      </p>
-
-      <h2 id="outlook">未来展望：技术深耕与生态共荣</h2>
-      <p>面向未来，IvorySQL 将在技术创新与生态建设上持续发力：</p>
-      <ul>
-        <li>一方面，聚焦数据库内核技术迭代，在高性能事务处理、分布式架构、智能运维等方向深化研发，为用户提供更具技术竞争力的产品；</li>
-        <li>另一方面，持续扩大 “生态朋友圈”，与更多国产软硬件厂商开展适配与联合创新，与生态伙伴携手共筑自主可控的数字底座，为国产基础软件产业的蓬勃发展注入更强动能。</li>
-      </ul>
+<div className="container news-detail-container">
+  <div className="detail-banner">
+    <div className="detail-banner-inner">
+      <h1>新闻动态</h1>
+      <div className="detail-banner-decor">● ○ ●</div>
     </div>
   </div>
 
-  <div className="detail-sidebar">
-    <div className="sidebar-sticky">
-      <div className="sidebar-title">▼ 文章大纲</div>
-      <ul className="sidebar-nav">
-        <li><a href="#platform">多平台兼容</a></li>
-        <li><a href="#synergy">生态协同</a></li>
-        <li><a href="#outlook">未来展望</a></li>
-      </ul>
+  <div className="detail-wrapper">
+    <div className="detail-main">
+      <div className="breadcrumb">
+        <Link to="/news">新闻动态</Link> <span>&gt;</span> <span>社区动态</span>
+      </div>
+
+      <div className="post-header">
+        <div className="post-title">【生态再升级】IvorySQL 4.5 与银河麒麟高级服务器操作系统V11完成适配认证！</div>
+        <div className="post-date">📅 发布时间：2025 年 9 月 26 日</div>
+      </div>
+
+      <div className="post-content">
+        <p>
+          IvorySQL 生态再进一步！近日，IvorySQL 4.5 成功适配银河麒麟高级服务器操作系统 V11。这一适配标志着国产开源数据库与自主操作系统生态的深度融合，进一步助力中国信创产业在高安全、高性能数据库领域的自主可控发展。
+        </p>
+
+        <h2 id="platform">多平台兼容，筑牢应用根基</h2>
+        <p>
+          银河麒麟高级服务器操作系统 V11（简称 Kylin Server V11）是由麒麟软件（KylinSoft）基于多年技术积累和应用实践经验，为企业级关键业务量身打造的新一代服务器操作系统。该系统于 2025 年 8 月 26 日正式发布，是中国首个采用 Linux 6.6 内核的商业发行版。它以高可靠、高可用、高安全、高性能和高扩展为核心优势，深度融合 AI 技术，构建了高速网络协议 MPTCP、热补丁管理、智能故障诊断、场景化优化及安全容器镜像仓库等关键技术体系。
+        </p>
+        <p>
+          此次适配测试覆盖了 <strong>Intel、AMD、海光、兆芯</strong> 等主流硬件平台。经严格验证，IvorySQL 4.5 与银河麒麟高级服务器操作系统 V11 在兼容性、性能表现与可靠性方面，均达到通用场景及关键业务的应用要求，能为用户核心系统提供稳定、高效的技术支撑。
+        </p>
+
+        <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-kylin-cert-1.jpg')} />
+
+        <h2 id="synergy">生态协同，赋能国产化发展</h2>
+        <p>
+          IvorySQL 始终以“完善国产数据库生态”为核心，积极推动与国产操作系统的深度适配。此次与银河麒麟的成功合作，不仅是双方技术实力的互认，更标志着国产数据库与操作系统在生态协同上的进一步突破——为企业数字化转型、关键业务系统国产化替代，提供了更安全、更可靠的“数据库+操作系统”一体化解决方案。
+        </p>
+
+        <h2 id="outlook">未来展望：技术深耕与生态共荣</h2>
+        <p>面向未来，IvorySQL 将在技术创新与生态建设上持续发力：</p>
+        <ul>
+          <li>一方面，聚焦数据库内核技术迭代，在高性能事务处理、分布式架构、智能运维等方向深化研发，为用户提供更具技术竞争力的产品；</li>
+          <li>另一方面，持续扩大 “生态朋友圈”，与更多国产软硬件厂商开展适配与联合创新，与生态伙伴携手共筑自主可控的数字底座，为国产基础软件产业的蓬勃发展注入更强动能。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="detail-sidebar">
+      <div className="sidebar-sticky">
+        <div className="sidebar-title">▼ 文章大纲</div>
+        <ul className="sidebar-nav">
+          <li><Link to="#platform">多平台兼容</Link></li>
+          <li><Link to="#synergy">生态协同</Link></li>
+          <li><Link to="#outlook">未来展望</Link></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

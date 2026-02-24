@@ -1,17 +1,22 @@
 ---
 title: 瀚高 & IvorySQL 走进北京大学：助力培养创新型数据库人才
 hide_table_of_contents: true
+slug: /news/ivorysql-pku-course
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 <style>{`
+  .news-detail-container {
+    padding-top: 40px;
+  }
   .detail-banner {
     background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
     padding: 40px 0;
     color: white !important;
     margin-bottom: 30px;
+    border-radius: 12px;
   }
   .detail-banner-inner {
     max-width: 1200px;
@@ -23,11 +28,9 @@ import Link from '@docusaurus/Link';
   .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
 
   .detail-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 80px;
     display: flex;
     gap: 40px;
+    margin-bottom: 80px;
   }
 
   .detail-main { flex: 1; min-width: 0; }
@@ -58,72 +61,72 @@ import Link from '@docusaurus/Link';
   .sidebar-nav a:hover { color: #7D52F4; }
 
   @media (max-width: 996px) {
-    .detail-banner { padding: 30px 0; }
-    .detail-banner h1 { font-size: 1.5rem; }
     .detail-wrapper { flex-direction: column; }
     .detail-sidebar { display: none; }
     .post-title { font-size: 1.5rem; }
   }
 `}</style>
 
-<div className="detail-banner">
-  <div className="detail-banner-inner">
-    <h1>新闻动态</h1>
-    <div className="detail-banner-decor">● ○ ●</div>
-  </div>
-</div>
-
-<div className="container detail-wrapper">
-  <div className="detail-main">
-    <div className="breadcrumb">
-      <Link to="/news">新闻动态</Link> <span>&gt;</span> <span>社区动态</span>
-    </div>
-
-    <div className="post-header">
-      <div className="post-title">瀚高 & IvorySQL 走进北京大学：助力培养创新型数据库人才</div>
-      <div className="post-date">📅 发布时间：2025 年 04 月 21 日</div>
-    </div>
-
-    <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-pku-course-1.jpg')} />
-
-    <div className="post-content">
-      <p>
-        2020年1月COPU（中国开源软件推进联盟）成员开会讨论面向高校的开源示范课程，由联盟副秘书长北京大学荆琦老师牵头筹备，并首先在北大软微学院试点。本次是中国PostgreSQL分会联合会员企业应邀第五次参与授课，课程吸引了国内头部开源大厂积极加入，包括众多开源项目。课程面向北大研一学生（研一第二学期课程，每年3-6月），采用正式学分制，每个项目授课团队包括48课时（3学分）的开源通识课和开发实践课。
-      </p>
-
-      <h2 id="pku-tradition">北京大学：开放进取，培养核心竞争力人才</h2>
-      <p>
-        作为中国高校“放眼世界”的开路者，北京大学秉承传统，开放进取，始终重视培养学生的创新思维和实践能力。而 PG 内核开发通识课，正是北大为培养具备核心竞争力的数据库人才提供的丰富前沿学术资源。在这里，学子们将融合多元知识背景与丰富的实践经验，逐渐成长为具备核心竞争力的创新型数据库人才，为未来开源数据库研发工作奠定坚实的基础。
-      </p>
-
-      <h2 id="course-launch">《开源PostgreSQL生态发展与AI融合》通识课顺利开展</h2>
-      <p>
-        2025年4月21日，中国开源软件推进联盟PostgreSQL分会联合杭州易景数通、瀚高为北京大学软件与微电子学院研一同学们带来的《开源PostgreSQL生态发展与AI融合》通识课顺利开展。
-      </p>
-
-      <h2 id="sharing">IvorySQL 与开源社区贡献指南主题分享</h2>
-      <p>
-        瀚高研发工程师矫顺田在通识课上带来了《IvorySQL与开源社区贡献指南》的主题分享。讲师矫顺田在北大课程中介绍，IvorySQL基于PostgreSQL打造，通过<strong>双解析器引擎</strong>（Oracle/PostgreSQL语法兼容）和<strong>双端口设计</strong>（5432/1521）实现与Oracle高度兼容，内核动态钩子与插件<code>ivorysql_ora</code>支撑数据类型、函数等深度对齐。云原生方面，集成K8s Operator、Serverless架构适配多平台。社区鼓励开发者通过GitHub提交代码或参与PostgreSQL补丁审查，以“代码+测试+文档”模式推动开源协作，年度活动“开源之夏”提供实践舞台。
-      </p>
-
-    <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-pku-course-1.jpg')} />
-    
-      <h2 id="future">培育未来数据库研发人才</h2>
-      <p>
-        北京大学“PostgreSQL开发基础及实践”研究生课程旨在促进开源技术在中国高校的传播，进一步提高北京大学研究生对PostgreSQL的开发实践能力，培育未来的数据库研发人才。PostgreSQL生态不断繁荣，国内涌现了大量基于PostgreSQL创新的开源项目和周边工具，特别是PostgreSQL生态开源项目IvorySQL（兼容Oracle）不仅能帮助企业通过使用开源数据库降本增效，也为高校师生参与开源项目提供路径。通过开源方式参与协作、学习创新，能更有效的促进高校学生掌握数据库核心技术，将来为开源或信创产业发展发展贡献力量。
-      </p>
+<div className="container news-detail-container">
+  <div className="detail-banner">
+    <div className="detail-banner-inner">
+      <h1>新闻动态</h1>
+      <div className="detail-banner-decor">● ○ ●</div>
     </div>
   </div>
 
-  <div className="detail-sidebar">
-    <div className="sidebar-sticky">
-      <div className="sidebar-title">▼ 文章大纲</div>
-      <ul className="sidebar-nav">
-        <li><a href="#pku-tradition">北京大学人才培养</a></li>
-        <li><a href="#course-launch">通识课开展情况</a></li>
-        <li><a href="#sharing">IvorySQL 技术分享</a></li>
-        <li><a href="#future">培育未来研发人才</a></li>
-      </ul>
+  <div className="detail-wrapper">
+    <div className="detail-main">
+      <div className="breadcrumb">
+        <Link to="/news">新闻动态</Link> <span>&gt;</span> <span>社区动态</span>
+      </div>
+
+      <div className="post-header">
+        <div className="post-title">瀚高 & IvorySQL 走进北京大学：助力培养创新型数据库人才</div>
+        <div className="post-date">📅 发布时间：2025 年 04 月 21 日</div>
+      </div>
+
+      <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-pku-course-1.jpg')} />
+
+      <div className="post-content">
+        <p>
+          2020年1月COPU（中国开源软件推进联盟）成员开会讨论面向高校的开源示范课程，由联盟副秘书长北京大学荆琦老师牵头筹备，并首先在北大软微学院试点。本次是中国PostgreSQL分会联合会员企业应邀第五次参与授课，课程吸引了国内头部开源大厂积极加入，包括众多开源项目。课程面向北大研一学生（研一第二学期课程，每年3-6月），采用正式学分制，每个项目授课团队包括48课时（3学分）的开源通识课和开发实践课。
+        </p>
+
+        <h2 id="pku-tradition">北京大学：开放进取，培养核心竞争力人才</h2>
+        <p>
+          作为中国高校“放眼世界”的开路者，北京大学秉承传统，开放进取，始终重视培养学生的创新思维和实践能力。而 PG 内核开发通识课，正是北大为培养具备核心竞争力的数据库人才提供的丰富前沿学术资源。在这里，学子们将融合多元知识背景与丰富的实践经验，逐渐成长为具备核心竞争力的创新型数据库人才，为未来开源数据库研发工作奠定坚实的基础。
+        </p>
+
+        <h2 id="course-launch">《开源PostgreSQL生态发展与AI融合》通识课顺利开展</h2>
+        <p>
+          2025年4月21日，中国开源软件推进联盟PostgreSQL分会联合杭州易景数通、瀚高为北京大学软件与微电子学院研一同学们带来的《开源PostgreSQL生态发展与AI融合》通识课顺利开展。
+        </p>
+
+        <h2 id="sharing">IvorySQL 与开源社区贡献指南主题分享</h2>
+        <p>
+          瀚高研发工程师矫顺田在通识课上带来了《IvorySQL与开源社区贡献指南》的主题分享。讲师矫顺田在北大课程中介绍，IvorySQL基于PostgreSQL打造，通过<strong>双解析器引擎</strong>（Oracle/PostgreSQL语法兼容）和<strong>双端口设计</strong>（5432/1521）实现与Oracle高度兼容，内核动态钩子与插件<code>ivorysql_ora</code>支撑数据类型、函数等深度对齐。云原生方面，集成K8s Operator、Serverless架构适配多平台。社区鼓励开发者通过GitHub提交代码或参与PostgreSQL补丁审查，以“代码+测试+文档”模式推动开源协作，年度活动“开源之夏”提供实践舞台。
+        </p>
+
+        <img className="post-cover" src={useBaseUrl('/img/news/ivorysql-pku-course-2.jpg')} />
+        
+        <h2 id="future">培育未来数据库研发人才</h2>
+        <p>
+          北京大学“PostgreSQL开发基础及实践”研究生课程旨在促进开源技术在中国高校的传播，进一步提高北京大学研究生对PostgreSQL的开发实践能力，培育未来的数据库研发人才。PostgreSQL生态不断繁荣，国内涌现了大量基于PostgreSQL创新的开源项目和周边工具，特别是PostgreSQL生态开源项目IvorySQL（兼容Oracle）不仅能帮助企业通过使用开源数据库降本增效，也为高校师生参与开源项目提供路径。通过开源方式参与协作、学习创新，能更有效的促进高校学生掌握数据库核心技术，将来为开源或信创产业发展发展贡献力量。
+        </p>
+      </div>
+    </div>
+
+    <div className="detail-sidebar">
+      <div className="sidebar-sticky">
+        <div className="sidebar-title">▼ 文章大纲</div>
+        <ul className="sidebar-nav">
+          <li><Link to="#pku-tradition">北京大学人才培养</Link></li>
+          <li><Link to="#course-launch">通识课开展情况</Link></li>
+          <li><Link to="#sharing">IvorySQL 技术分享</Link></li>
+          <li><Link to="#future">培育未来研发人才</Link></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

@@ -1,17 +1,22 @@
 ---
 title: 版本发布｜ IvorySQL 4.6 发布
 hide_table_of_contents: true
+slug: /news/ivorysql-v4-6-released
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 <style>{`
+  .news-detail-container {
+    padding-top: 40px;
+  }
   .detail-banner {
     background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
     padding: 40px 0;
     color: white !important;
     margin-bottom: 30px;
+    border-radius: 12px;
   }
   .detail-banner-inner {
     max-width: 1200px;
@@ -23,11 +28,9 @@ import Link from '@docusaurus/Link';
   .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
 
   .detail-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 80px;
     display: flex;
     gap: 40px;
+    margin-bottom: 80px;
   }
 
   .detail-main { flex: 1; min-width: 0; }
@@ -58,104 +61,104 @@ import Link from '@docusaurus/Link';
   .sidebar-nav a:hover { color: #7D52F4; }
 
   @media (max-width: 996px) {
-    .detail-banner { padding: 30px 0; }
-    .detail-banner h1 { font-size: 1.5rem; }
     .detail-wrapper { flex-direction: column; }
     .detail-sidebar { display: none; }
     .post-title { font-size: 1.5rem; }
   }
 `}</style>
 
-<div className="detail-banner">
-  <div className="detail-banner-inner">
-    <h1>新闻动态</h1>
-    <div className="detail-banner-decor">● ○ ●</div>
+<div className="container news-detail-container">
+  <div className="detail-banner">
+    <div className="detail-banner-inner">
+      <h1>新闻动态</h1>
+      <div className="detail-banner-decor">● ○ ●</div>
+    </div>
   </div>
-</div>
 
-<div className="container detail-wrapper">
-  <div className="detail-main">
-    <div className="breadcrumb">
-      <Link to="/news">新闻动态</Link> <span>&gt;</span> <span>社区动态</span>
-    </div>
-
-    <div className="post-header">
-      <div className="post-title">版本发布｜ IvorySQL 4.6 发布</div>
-      <div className="post-date">📅 发布时间：2025 年 9 月 10 日</div>
-    </div>
-
-    <div className="post-content">
-      <p>2025 年 9 月 10 日，IvorySQL 4.6 正式发布！</p>
-      <p>新版本全面支持 PostgreSQL 17.6，新增多项新功能，并修复了已知问题。</p>
-
-      <h2 id="enhancements">增强功能</h2>
-      <p>PostgreSQL 17.6 增强功能：</p>
-      <ul>
-        <li>加强规划器估计函数中的安全检查。</li>
-        <li>防止 pg_dump 脚本被用于攻击运行还原操作的用户。</li>
-        <li>在 pg_dump 输出的注释中包含的名称中将换行符转换为空格。</li>
-        <li>修复 BRIN numeric_minmax_multi_ops 支持函数中的距离计算错误。</li>
-        <li>避免我们将接受的 XML 输入大小出现倒退问题。</li>
-      </ul>
-      <p>更多细节请参阅 <a href="https://www.postgresql.org/docs/release/17.6/" target="_blank" rel="noopener noreferrer">PostgreSQL 发布说明</a>。</p>
-
-      <h2 id="new-features">新增特性</h2>
-      <ul>
-        <li>升级至 PG 17.6 内核。</li>
-        <li><strong>兼容 MongoDB 的解决方案：</strong>使用 FerretDB 和 DocumentDB 提供兼容 MongoDB 的解决方案。</li>
-        <li><strong>全平台 LoongArch 打包：</strong>提供适用于 LoongArch 架构的全平台介质包，支持国内外主流操作系统，包括红帽、Debian、麒麟、统信和凝思等操作系统。还支持 x86、ARM 和 MIPS 架构。</li>
-        <li><strong>IvorySQL 在线试用：</strong>为用户提供基于 Web 的平台，可在线体验 IvorySQL V4.6，直接通过浏览器界面进行数据库交互。</li>
-        <li><strong>容器化部署支持（Docker Swarm）：</strong>支持在 Docker Swarm 环境中部署单机 IvorySQL 数据库和高可用集群。</li>
-        <li><strong>容器化部署支持（Kubernetes）：</strong>支持使用 Helm 在 Kubernetes（K8 S）上部署单机 IvorySQL 数据库和高可用集群。</li>
-        <li><strong>IvorySQL Cloud v4.0 已发布：</strong>IvorySQL Cloud 平台目前支持 IvorySQL v4 数据库的订阅管理，以及其周边生态系统的全面管理。</li>
-      </ul>
-
-      <h2 id="fixed-issues">修复已知问题</h2>
-      <ul>
-        <li>修复 aarch64 平台上缺少 libcrypt 的问题。</li>
-        <li>修复执行 make 和 make install 时，前缀为 test_ 的扩展被错误地编译和安装问题。</li>
-        <li><strong>文档：</strong>修复一些拼写错误。</li>
-        <li><strong>文档：</strong>修复安装部分的文档错误。</li>
-        <li><strong>文档：</strong>更新社区贡献流程。</li>
-      </ul>
-      <p>详情参考：</p>
-      <ul>
-        <li><a href="https://github.com/IvorySQL/IvorySQL/releases/tag/IvorySQL_4.6" target="_blank" rel="noopener noreferrer">IvorySQL 4.6 发布说明</a></li>
-        <li><a href="https://github.com/IvorySQL/IvorySQL/commits/IVORY_REL_4_STABLE" target="_blank" rel="noopener noreferrer">Complete Changelog</a></li>
-      </ul>
-
-      <h2 id="source-code">源码</h2>
-      <p>IvorySQL 主要包含 2 个代码仓库:</p>
-      <ul>
-        <li>IvorySQL 数据库源码：<a href="https://github.com/IvorySQL/IvorySQL" target="_blank" rel="noopener noreferrer">https://github.com/IvorySQL/IvorySQL</a></li>
-        <li>IvorySQL 官方网站：<a href="https://github.com/IvorySQL/Ivory-www" target="_blank" rel="noopener noreferrer">https://github.com/IvorySQL/Ivory-www</a></li>
-      </ul>
-
-      <h2 id="contributors">感谢贡献者</h2>
-      <p>以下人员（按字母顺序排列）作为补丁作者、提交者、审阅者、测试人员或问题报告者对本版本做出了贡献：</p>
-      <div className="contributor-list">
-        caffiendo, Cédric Villemain, Fawei Zhao, flyingbeecd, Ge Sui, Grant Zhou, huchangqiqi, Pedro Lopez, RRRRhl, Ruohang Feng, shangwei007, Shawn Yan, Shaolin Chu, Shihua Yang, Shiji Niu, Shuntian Jiao, tiankongbuqi, Xiangyu Liang, Xinjie Lv, Xueyu Gao, Yanliang Lei, Yasir Hussain Shah, Yuan Li, Zheng Tao, Zhenhao Pan, Zhuoyan Shi.
+  <div className="detail-wrapper">
+    <div className="detail-main">
+      <div className="breadcrumb">
+        <Link to="/news">新闻动态</Link> <span>&gt;</span> <span>社区动态</span>
       </div>
-      <p style={{marginTop: '15px'}}>感谢以上贡献者！</p>
 
-      <h2 id="welcome-trial">欢迎试用</h2>
-      <p>
-        欢迎各位社区小伙伴试用 IvorySQL 4.6，如发现任何问题，可提交 <a href="https://github.com/IvorySQL/IvorySQL/issues" target="_blank" rel="noopener noreferrer">issue</a> 反馈，我们将为您送上 IvorySQL 周边好礼！
-      </p>
+      <div className="post-header">
+        <div className="post-title">版本发布｜ IvorySQL 4.6 发布</div>
+        <div className="post-date">📅 发布时间：2025 年 9 月 10 日</div>
+      </div>
+
+      <div className="post-content">
+        <p>2025 年 9 月 10 日，IvorySQL 4.6 正式发布！</p>
+        <p>新版本全面支持 PostgreSQL 17.6，新增多项新功能，并修复了已知问题。</p>
+
+        <h2 id="enhancements">增强功能</h2>
+        <p>PostgreSQL 17.6 增强功能：</p>
+        <ul>
+          <li>加强规划器估计函数中的安全检查。</li>
+          <li>防止 pg_dump 脚本被用于攻击运行还原操作的用户。</li>
+          <li>在 pg_dump 输出的注释中包含的名称中将换行符转换为空格。</li>
+          <li>修复 BRIN numeric_minmax_multi_ops 支持函数中的距离计算错误。</li>
+          <li>避免我们将接受的 XML 输入大小出现倒退问题。</li>
+        </ul>
+        <p>更多细节请参阅 <a href="https://www.postgresql.org/docs/release/17.6/" target="_blank" rel="noopener noreferrer">PostgreSQL 发布说明</a>。</p>
+
+        <h2 id="new-features">新增特性</h2>
+        <ul>
+          <li>升级至 PG 17.6 内核。</li>
+          <li><strong>兼容 MongoDB 的解决方案：</strong>使用 FerretDB 和 DocumentDB 提供兼容 MongoDB 的解决方案。</li>
+          <li><strong>全平台 LoongArch 打包：</strong>提供适用于 LoongArch 架构的全平台介质包，支持国内外主流操作系统，包括红帽、Debian、麒麟、统信和凝思等操作系统。还支持 x86、ARM 和 MIPS 架构。</li>
+          <li><strong>IvorySQL 在线试用：</strong>为用户提供基于 Web 的平台，可在线体验 IvorySQL V4.6，直接通过浏览器界面进行数据库交互。</li>
+          <li><strong>容器化部署支持（Docker Swarm）：</strong>支持在 Docker Swarm 环境中部署单机 IvorySQL 数据库和高可用集群。</li>
+          <li><strong>容器化部署支持（Kubernetes）：</strong>支持使用 Helm 在 Kubernetes（K8 S）上部署单机 IvorySQL 数据库和高可用集群。</li>
+          <li><strong>IvorySQL Cloud v4.0 已发布：</strong>IvorySQL Cloud 平台目前支持 IvorySQL v4 数据库的订阅管理，以及其周边生态系统的全面管理。</li>
+        </ul>
+
+        <h2 id="fixed-issues">修复已知问题</h2>
+        <ul>
+          <li>修复 aarch64 平台上缺少 libcrypt 的问题。</li>
+          <li>修复执行 make 和 make install 时，前缀为 test_ 的扩展被错误地编译和安装问题。</li>
+          <li><strong>文档：</strong>修复一些拼写错误。</li>
+          <li><strong>文档：</strong>修复安装部分的文档错误。</li>
+          <li><strong>文档：</strong>更新社区贡献流程。</li>
+        </ul>
+        <p>详情参考：</p>
+        <ul>
+          <li><a href="https://github.com/IvorySQL/IvorySQL/releases/tag/IvorySQL_4.6" target="_blank" rel="noopener noreferrer">IvorySQL 4.6 发布说明</a></li>
+          <li><a href="https://github.com/IvorySQL/IvorySQL/commits/IVORY_REL_4_STABLE" target="_blank" rel="noopener noreferrer">Complete Changelog</a></li>
+        </ul>
+
+        <h2 id="source-code">源码</h2>
+        <p>IvorySQL 主要包含 2 个代码仓库:</p>
+        <ul>
+          <li>IvorySQL 数据库源码：<a href="https://github.com/IvorySQL/IvorySQL" target="_blank" rel="noopener noreferrer">https://github.com/IvorySQL/IvorySQL</a></li>
+          <li>IvorySQL 官方网站：<a href="https://github.com/IvorySQL/Ivory-www" target="_blank" rel="noopener noreferrer">https://github.com/IvorySQL/Ivory-www</a></li>
+        </ul>
+
+        <h2 id="contributors">感谢贡献者</h2>
+        <p>以下人员（按字母顺序排列）作为补丁作者、提交者、审阅者、测试人员或问题报告者对本版本做出了贡献：</p>
+        <div className="contributor-list">
+          caffiendo, Cédric Villemain, Fawei Zhao, flyingbeecd, Ge Sui, Grant Zhou, huchangqiqi, Pedro Lopez, RRRRhl, Ruohang Feng, shangwei007, Shawn Yan, Shaolin Chu, Shihua Yang, Shiji Niu, Shuntian Jiao, tiankongbuqi, Xiangyu Liang, Xinjie Lv, Xueyu Gao, Yanliang Lei, Yasir Hussain Shah, Yuan Li, Zheng Tao, Zhenhao Pan, Zhuoyan Shi.
+        </div>
+        <p style={{marginTop: '15px'}}>感谢以上贡献者！</p>
+
+        <h2 id="welcome-trial">欢迎试用</h2>
+        <p>
+          欢迎各位社区小伙伴试用 IvorySQL 4.6，如发现任何问题，可提交 <a href="https://github.com/IvorySQL/IvorySQL/issues" target="_blank" rel="noopener noreferrer">issue</a> 反馈，我们将为您送上 IvorySQL 周边好礼！
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div className="detail-sidebar">
-    <div className="sidebar-sticky">
-      <div className="sidebar-title">▼ 文章大纲</div>
-      <ul className="sidebar-nav">
-        <li><a href="#enhancements">增强功能</a></li>
-        <li><a href="#new-features">新增特性</a></li>
-        <li><a href="#fixed-issues">修复已知问题</a></li>
-        <li><a href="#source-code">源码仓库</a></li>
-        <li><a href="#contributors">致谢贡献者</a></li>
-        <li><a href="#welcome-trial">欢迎试用</a></li>
-      </ul>
+    <div className="detail-sidebar">
+      <div className="sidebar-sticky">
+        <div className="sidebar-title">▼ 文章大纲</div>
+        <ul className="sidebar-nav">
+          <li><Link to="#enhancements">增强功能</Link></li>
+          <li><Link to="#new-features">新增特性</Link></li>
+          <li><Link to="#fixed-issues">修复已知问题</Link></li>
+          <li><Link to="#source-code">源码仓库</Link></li>
+          <li><Link to="#contributors">致谢贡献者</Link></li>
+          <li><Link to="#welcome-trial">欢迎试用</Link></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

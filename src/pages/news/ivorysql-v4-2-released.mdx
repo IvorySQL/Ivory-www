@@ -1,17 +1,22 @@
 ---
 title: IvorySQL 4.2 Released
 hide_table_of_contents: true
+slug: /news/ivorysql-v4-2-released
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 <style>{`
+  .news-detail-container {
+    padding-top: 40px;
+  }
   .detail-banner {
     background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
     padding: 40px 0;
     color: white !important;
     margin-bottom: 30px;
+    border-radius: 12px;
   }
   .detail-banner-inner {
     max-width: 1200px;
@@ -23,11 +28,9 @@ import Link from '@docusaurus/Link';
   .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
 
   .detail-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 80px;
     display: flex;
     gap: 40px;
+    margin-bottom: 80px;
   }
 
   .detail-main { flex: 1; min-width: 0; }
@@ -58,90 +61,90 @@ import Link from '@docusaurus/Link';
   .sidebar-nav a:hover { color: #7D52F4; }
 
   @media (max-width: 996px) {
-    .detail-banner { padding: 30px 0; }
-    .detail-banner h1 { font-size: 1.5rem; }
     .detail-wrapper { flex-direction: column; }
     .detail-sidebar { display: none; }
     .post-title { font-size: 1.5rem; }
   }
 `}</style>
 
-<div className="detail-banner">
-  <div className="detail-banner-inner">
-    <h1>News & Updates</h1>
-    <div className="detail-banner-decor">● ○ ●</div>
+<div className="container news-detail-container">
+  <div className="detail-banner">
+    <div className="detail-banner-inner">
+      <h1>News & Updates</h1>
+      <div className="detail-banner-decor">● ○ ●</div>
+    </div>
   </div>
-</div>
 
-<div className="detail-wrapper">
-  <div className="detail-main">
-    <div className="breadcrumb">
-      <Link to="/news">News</Link> <span>&gt;</span> <span>Community News</span>
-    </div>
+  <div className="detail-wrapper">
+    <div className="detail-main">
+      <div className="breadcrumb">
+        <Link to="/news">News</Link> <span>&gt;</span> <span>Community News</span>
+      </div>
 
-    <div className="post-header">
-      <div className="post-title">IvorySQL 4.2 Released</div>
-      <div className="post-date">📅 Published on: January 13, 2025</div>
-    </div>
+      <div className="post-header">
+        <div className="post-title">IvorySQL 4.2 Released</div>
+        <div className="post-date">📅 Published on: January 13, 2025</div>
+      </div>
 
-    <div className="post-content">
-      <p>
-        IvorySQL 4.2 was officially released on January 13, 2025. This new version offers full support for PostgreSQL 17.2 and fixes several bugs.
-      </p>
+      <div className="post-content">
+        <p>
+          IvorySQL 4.2 was officially released on January 13, 2025. This new version offers full support for PostgreSQL 17.2 and fixes several bugs.
+        </p>
 
-      <h2 id="enhancements">Enhanced Features</h2>
-      
-      <h3 id="pg-17-1">PostgreSQL 17.1 Enhancements</h3>
-      <ul>
-        <li>Ensured cached plans are marked as dependent on the calling role when RLS is applied to non-top-level table references.</li>
-        <li>Made libpq discard error messages received during SSL or GSS protocol negotiation.</li>
-        <li>Fixed unexpected interactions between SET SESSION AUTHORIZATION and SET ROLE.</li>
-        <li>Prevented trusted PL/Perl code from modifying environment variables.</li>
-        <li>Fixed catalog state update issues for foreign key constraints when attaching or detaching table partitions.</li>
-      </ul>
-      <p>For more details, please visit the <a href="https://www.postgresql.org/docs/release/17.1/" target="_blank">PostgreSQL 17.1 Release Notes</a>.</p>
+        <h2 id="enhancements">Enhanced Features</h2>
+        
+        <h3 id="pg-17-1">PostgreSQL 17.1 Enhancements</h3>
+        <ul>
+          <li>Ensured cached plans are marked as dependent on the calling role when RLS is applied to non-top-level table references.</li>
+          <li>Made libpq discard error messages received during SSL or GSS protocol negotiation.</li>
+          <li>Fixed unexpected interactions between SET SESSION AUTHORIZATION and SET ROLE.</li>
+          <li>Prevented trusted PL/Perl code from modifying environment variables.</li>
+          <li>Fixed catalog state update issues for foreign key constraints when attaching or detaching table partitions.</li>
+        </ul>
+        <p>For more details, please visit the <a href="https://www.postgresql.org/docs/release/17.1/" target="_blank">PostgreSQL 17.1 Release Notes</a>.</p>
 
-      <h3 id="pg-17-2">PostgreSQL 17.2 Enhancements</h3>
-      <ul>
-        <li>Fixed ABI breakage for extensions used with struct ResultRelInfo.</li>
-        <li>Restored ALTER &#123;ROLE|DATABASE&#125; SET role functionality.</li>
-        <li>Fixed cases where the restart_lsn of a logical replication slot could move backward.</li>
-        <li>Avoided deleting WAL files still needed when running pg_rewind.</li>
-        <li>Fixed race conditions related to deleting shared statistics entries.</li>
-      </ul>
-      <p>For more details, please visit the <a href="https://www.postgresql.org/docs/release/17.2/" target="_blank">PostgreSQL 17.2 Release Notes</a>.</p>
+        <h3 id="pg-17-2">PostgreSQL 17.2 Enhancements</h3>
+        <ul>
+          <li>Fixed ABI breakage for extensions used with struct ResultRelInfo.</li>
+          <li>Restored ALTER &#123;ROLE|DATABASE&#125; SET role functionality.</li>
+          <li>Fixed cases where the restart_lsn of a logical replication slot could move backward.</li>
+          <li>Avoided deleting WAL files still needed when running pg_rewind.</li>
+          <li>Fixed race conditions related to deleting shared statistics entries.</li>
+        </ul>
+        <p>For more details, please visit the <a href="https://www.postgresql.org/docs/release/17.2/" target="_blank">PostgreSQL 17.2 Release Notes</a>.</p>
 
-      <h2 id="resolved-issues">IvorySQL 4.2 Resolved Issues</h2>
-      <ul>
-        <li>Fixed pg_upgrade issues; IvorySQL can now be upgraded using pg_upgrade.</li>
-        <li>Provided Rocky9 installation packages; IvorySQL 4.x can now be installed on Rocky Linux 9.</li>
-        <li>Corrected English grammar errors in ivorysql_docs.</li>
-      </ul>
+        <h2 id="resolved-issues">IvorySQL 4.2 Resolved Issues</h2>
+        <ul>
+          <li>Fixed pg_upgrade issues; IvorySQL can now be upgraded using pg_upgrade.</li>
+          <li>Provided Rocky9 installation packages; IvorySQL 4.x can now be installed on Rocky Linux 9.</li>
+          <li>Corrected English grammar errors in ivorysql_docs.</li>
+        </ul>
 
-      <h2 id="source-code">Source Code</h2>
-      <p>IvorySQL primarily consists of two code repositories:</p>
-      <ul>
-        <li>IvorySQL Database Source Code: <a href="https://github.com/IvorySQL/IvorySQL" target="_blank">https://github.com/IvorySQL/IvorySQL</a></li>
-        <li>IvorySQL Official Website: <a href="https://github.com/IvorySQL/Ivory-www" target="_blank">https://github.com/IvorySQL/Ivory-www</a></li>
-      </ul>
+        <h2 id="source-code">Source Code</h2>
+        <p>IvorySQL primarily consists of two code repositories:</p>
+        <ul>
+          <li>IvorySQL Database Source Code: <a href="https://github.com/IvorySQL/IvorySQL" target="_blank">https://github.com/IvorySQL/IvorySQL</a></li>
+          <li>IvorySQL Official Website: <a href="https://github.com/IvorySQL/Ivory-www" target="_blank">https://github.com/IvorySQL/Ivory-www</a></li>
+        </ul>
 
-      <h2 id="contributors">Contributors</h2>
-      <p>The following individuals (listed in alphabetical order) contributed to this release as patch authors, committers, reviewers, testers, or issue reporters:</p>
-      <div className="contributor-list">
-        Cary Huang, Denis Lussier, Fawei Zhao, Grant Zhou, Hope Gao, Lily Wang, Shawn Yan, Shiji Niu, Shoubo Wang, Shuntian Jiao, Xiangyu Liang, Xinjie Lv, Zhibin Wang.
+        <h2 id="contributors">Contributors</h2>
+        <p>The following individuals (listed in alphabetical order) contributed to this release as patch authors, committers, reviewers, testers, or issue reporters:</p>
+        <div className="contributor-list">
+          Cary Huang, Denis Lussier, Fawei Zhao, Grant Zhou, Hope Gao, Lily Wang, Shawn Yan, Shiji Niu, Shoubo Wang, Shuntian Jiao, Xiangyu Liang, Xinjie Lv, Zhibin Wang.
+        </div>
       </div>
     </div>
-  </div>
 
-  <div className="detail-sidebar">
-    <div className="sidebar-sticky">
-      <div className="sidebar-title">▼ CONTENTS</div>
-      <ul className="sidebar-nav">
-        <li><a href="#enhancements">Enhanced Features</a></li>
-        <li><a href="#resolved-issues">Resolved Issues</a></li>
-        <li><a href="#source-code">Source Code</a></li>
-        <li><a href="#contributors">Contributors</a></li>
-      </ul>
+    <div className="detail-sidebar">
+      <div className="sidebar-sticky">
+        <div className="sidebar-title">▼ CONTENTS</div>
+        <ul className="sidebar-nav">
+          <li><Link to="#enhancements">Enhanced Features</Link></li>
+          <li><Link to="#resolved-issues">Resolved Issues</Link></li>
+          <li><Link to="#source-code">Source Code</Link></li>
+          <li><Link to="#contributors">Contributors</Link></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
