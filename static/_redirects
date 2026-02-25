@@ -1,4 +1,6 @@
 # Redirect users from China to chinese version at /zh-CN.
-/  /zh-cn 302! Country=cn
-# Also users with Chinese language should be redirected to /zh-cn
-# / /zh-cn 302! Language=zh
+# Disabled - relying on client-side browser language detection instead
+# The ! flag causes forced redirects that prevent manual language switching
+# /  /zh-CN 302 Country=cn
+# Also users with Chinese language should be redirected to /zh-CN
+# /  /zh-CN 302 Language=zh

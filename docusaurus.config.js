@@ -15,6 +15,8 @@ const config = {
     botId: process.env.BOT_ID,
     patToken: process.env.TOKEN
   },
+  // Add client module for language detection
+  clientModules: [require.resolve('./src/clientModules/lang-redirect.js')],
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
