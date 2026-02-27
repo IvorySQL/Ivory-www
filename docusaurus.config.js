@@ -77,6 +77,17 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'zh-CN'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        htmlLang: 'en',
+      },
+      'zh-CN': {
+        label: '中文',
+        htmlLang: 'zh-CN',
+        path: 'zh-CN',  // 使用小写路径，确保yarn build 一致
+      },
+    },
   },
   themeConfig:
     ({
