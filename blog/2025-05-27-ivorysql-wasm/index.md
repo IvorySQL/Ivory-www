@@ -76,4 +76,4 @@ Task Manager observations show that IvorySQL’s browser-based operation consume
 
 ## Community Edition Coming Soon
 
-The IvorySQL-WASM Community Edition will be released alongside IvorySQL 4.5. For details, follow the [IvorySQL Official Website](https://www.ivorysql.org/zh-cn/).
+The IvorySQL-WASM Community Edition will be released alongside IvorySQL 4.5. For details, follow the [IvorySQL Official Website](https://www.ivorysql.org/zh-CN/).

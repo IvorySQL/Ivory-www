@@ -76,4 +76,4 @@ IvorySQL-WASM 核心技术：
 
 ## 社区版即将发布
 
-IvorySQL-WASM 社区版将会伴随 IvorySQL 4.5 一起发布，详情请关注 [IvorySQL 官网](https://www.ivorysql.org/zh-cn/)信息。
+IvorySQL-WASM 社区版将会伴随 IvorySQL 4.5 一起发布，详情请关注 [IvorySQL 官网](https://www.ivorysql.org/zh-CN/)信息。
