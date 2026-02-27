@@ -15,6 +15,8 @@ const config = {
     botId: process.env.BOT_ID,
     patToken: process.env.TOKEN
   },
+  // Add client module for language detection
+  clientModules: [require.resolve('./src/clientModules/lang-redirect.js')],
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
@@ -76,7 +78,18 @@ const config = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-CN'],
+    locales: ['en', 'zh-cn'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        htmlLang: 'en',
+      },
+      'zh-cn': {
+        label: '中文',
+        htmlLang: 'zh-CN',
+        path: 'zh-CN',
+      },
+    },
   },
   themeConfig:
     ({
@@ -136,7 +149,7 @@ const config = {
               },
               {
                 label: 'News',
-                to: 'news',
+                to: '/news',
               },
               {
                 label: 'Customer Stories',
