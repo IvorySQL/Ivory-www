@@ -120,7 +120,7 @@ const config = {
               },
               {
                 label: 'Installation',
-                href: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.1/v5.1/3.1#quick-installation',
+                to: '/docs-installation',
               },
               {
                 label: 'Contribution Guidelines',
@@ -146,7 +146,7 @@ const config = {
           },
           {
             label: 'Ecological Cooperation',
-            href: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.1/v5.1/5.0',
+            to: '/docs-ecosystem',
             position: 'left'
           },
           {
@@ -180,6 +180,10 @@ const config = {
               {
                 href: 'https://github.com/IvorySQL/IvorySQL',
                 label: 'Github',
+              },
+              {
+                href: 'https://atomgit.com/IvorySQL/IvorySQL',
+                label: 'GitCode',
               },
             ]
           },
