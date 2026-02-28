@@ -1,5 +1,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const currentLocale = process.env.DOCUSAURUS_CURRENT_LOCALE || 'en';
+const docsLocaleSegment = currentLocale === 'zh-CN' ? 'cn' : 'en';
+const docsBaseUrl = `https://docs.ivorysql.org/${docsLocaleSegment}/ivorysql-doc/v5.1/v5.1`;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -120,7 +123,7 @@ const config = {
               },
               {
                 label: 'Installation',
-                href: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.1/v5.1/3.1#quick-installation',
+                href: `${docsBaseUrl}/3.1#quick-installation`,
               },
               {
                 label: 'Contribution Guidelines',
@@ -146,7 +149,7 @@ const config = {
           },
           {
             label: 'Ecological Cooperation',
-            href: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.1/v5.1/5.0',
+            href: `${docsBaseUrl}/5.0`,
             position: 'left'
           },
           {
@@ -180,6 +183,10 @@ const config = {
               {
                 href: 'https://github.com/IvorySQL/IvorySQL',
                 label: 'Github',
+              },
+              {
+                href: 'https://atomgit.com/IvorySQL/IvorySQL',
+                label: 'GitCode',
               },
             ]
           },
