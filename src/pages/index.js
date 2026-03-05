@@ -15,22 +15,23 @@ const HeroElephant = require('../../svg/img-elephant-balloon.svg').default;
 
 const CoreAdvantageIcon = Icon01;
 const ScenarioIcon = Icon03;
-const ArchitectureIcon = Icon04;
 const EcosystemIcon = Icon02;
 const CertificateIcon = Icon05;
+const InstallDeployIcon = Icon04;
 
 const CORE_CARD_ICONS = [Icon01, Icon03, Icon04, Icon02, Icon05, Icon06, Icon01, Icon03];
 const SCENARIO_CARD_ICONS = [Icon04, Icon02, Icon06, Icon01, Icon05];
+const INSTALL_CARD_ICONS = [Icon04, Icon01, Icon06];
 
 const RELEASES_URL = 'https://github.com/IvorySQL/IvorySQL/releases';
 const ONLINE_TRIAL_URL = 'http://trial.ivorysql.org:8080/';
 
 const CONTENT = {
   zh: {
-    slogan: '一款开源的 100% 兼容 Oracle 的 PostgreSQL',
+    slogan: '一款开源的兼容 Oracle 的 PostgreSQL',
     intro:
-      'IvorySQL 是一款先进、功能齐全的开源 Oracle 兼容 PostgreSQL，致力于始终保持 100% 兼容，并可作为最新 PostgreSQL 的完全替代品。通过 compatible_db 开关可在 Oracle 与 PostgreSQL 兼容模式间切换，PL/iSQL 支持 Oracle PL/SQL 语法及 Oracle 风格包（Packages）。',
-    heroBadges: ['100% Oracle 兼容', 'Apache 2.0 开源', '基于 PostgreSQL 内核'],
+      'IvorySQL 是一款先进、功能齐全的开源 Oracle 兼容 PostgreSQL，致力于保持高兼容性，并可作为最新 PostgreSQL 的完全替代品。通过 compatible_mode 开关可在 Oracle 与 PostgreSQL 兼容模式间切换，PL/iSQL 支持 Oracle PL/SQL 语法及 Oracle 风格包（Packages）。',
+    heroBadges: ['Oracle 兼容', 'Apache 2.0 开源', '基于 PostgreSQL 内核'],
     latestVersionPrefix: '最新版本',
     latestVersionLabel: 'IvorySQL 5.1',
     actions: [
@@ -98,19 +99,38 @@ const CONTENT = {
         description: '支持将 Oracle 数据库迁移到 IvorySQL。',
       },
     ],
-    architectureTitle: 'IvorySQL 架构',
-    architectureAlt: 'IvorySQL 架构图',
+    installTitle: 'IvorySQL 安装部署',
+    installDesc:
+      '结合官网文档与版本发布信息，提供从快速上手到生产部署的清晰路径，可按环境选择包安装、源码构建或容器化部署。',
+    installItems: [
+      {
+        title: '快速安装（推荐）',
+        description: '通过官方安装文档完成依赖准备、实例初始化和服务启动，适合首次体验与标准化部署。',
+        action: { label: '查看安装文档', to: '/docs-installation' },
+      },
+      {
+        title: '版本与介质包安装',
+        description: '在 Releases 页面查看当前稳定版本与历史版本，并根据系统环境选择对应安装介质包。',
+        action: { label: '查看 Releases', to: '/releases-page' },
+      },
+      {
+        title: '容器化部署',
+        description: '基于官方 Docker 仓库进行镜像部署，便于在开发测试、CI/CD 与云原生环境中快速落地。',
+        action: { label: '查看 Docker 仓库', href: 'https://github.com/IvorySQL/docker_library' },
+      },
+    ],
     ecosystemTitle: 'IvorySQL 及周边工具生态全景图',
+    ecosystemImage: '/img/home-ecosystem-zh.jpg',
     ecosystemAlt: 'IvorySQL 及周边工具生态全景图',
-    compatibilityTitle: '兼容认证',
+    compatibilityTitle: 'IvorySQL 兼容认证',
     compatibilityDesc: '更多兼容认证与生态合作信息，请查看合作伙伴页面。',
     compatibilityCta: '查看兼容认证详情',
   },
   en: {
-    slogan: 'An open source PostgreSQL with 100% Oracle compatibility',
+    slogan: 'An open source PostgreSQL with Oracle compatibility',
     intro:
-      'IvorySQL is an advanced open source Oracle-compatible PostgreSQL distribution built for complete compatibility and smooth replacement of the latest PostgreSQL. The compatible_db switch lets you move between Oracle and PostgreSQL modes, while PL/iSQL supports Oracle PL/SQL syntax and package-style development.',
-    heroBadges: ['100% Oracle compatibility', 'Apache 2.0 open source', 'Built on PostgreSQL kernel'],
+      'IvorySQL is an advanced open source Oracle-compatible PostgreSQL distribution built for strong compatibility and smooth replacement of the latest PostgreSQL. The compatible_mode switch lets you move between Oracle and PostgreSQL modes, while PL/iSQL supports Oracle PL/SQL syntax and package-style development.',
+    heroBadges: ['Oracle compatibility', 'Apache 2.0 open source', 'Built on PostgreSQL kernel'],
     latestVersionPrefix: 'Latest Version',
     latestVersionLabel: 'IvorySQL 5.1',
     actions: [
@@ -178,11 +198,33 @@ const CONTENT = {
         description: 'Enables direct migration paths from Oracle databases to IvorySQL.',
       },
     ],
-    architectureTitle: 'IvorySQL Architecture',
-    architectureAlt: 'IvorySQL architecture diagram',
+    installTitle: 'IvorySQL Installation & Deployment',
+    installDesc:
+      'Based on official docs and release resources, choose package installation, source build, or container deployment to match your environment.',
+    installItems: [
+      {
+        title: 'Quick Installation (Recommended)',
+        description:
+          'Follow the official installation guide to prepare dependencies, initialize clusters, and start services quickly.',
+        action: { label: 'Installation Guide', to: '/docs-installation' },
+      },
+      {
+        title: 'Packages & Releases',
+        description:
+          'Use the Releases page to check stable/historical versions and pick proper installation packages for your platform.',
+        action: { label: 'View Releases', to: '/releases-page' },
+      },
+      {
+        title: 'Container Deployment',
+        description:
+          'Use the official Docker repository for fast setup in development, CI/CD pipelines, and cloud-native environments.',
+        action: { label: 'Docker Repository', href: 'https://github.com/IvorySQL/docker_library' },
+      },
+    ],
     ecosystemTitle: 'IvorySQL Ecosystem Panorama',
+    ecosystemImage: '/img/home-ecosystem-en.jpg',
     ecosystemAlt: 'IvorySQL ecosystem panorama',
-    compatibilityTitle: 'Compatibility Certificates',
+    compatibilityTitle: 'IvorySQL Compatibility Certificates',
     compatibilityDesc: 'See more compatibility certificates and ecosystem partnerships on the partners page.',
     compatibilityCta: 'View Compatibility Details',
   },
@@ -358,11 +400,26 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={clsx(styles.section, styles.sectionToneArchitecture)}>
+        <section className={clsx(styles.section, styles.sectionToneDeployment)}>
           <div className="container">
-            <SectionTitle title={content.architectureTitle} Icon={ArchitectureIcon} />
-            <div className={styles.diagramCard}>
-              <img src="/img/home-architecture.png" alt={content.architectureAlt} />
+            <SectionTitle title={content.installTitle} Icon={InstallDeployIcon} />
+            <p className={styles.sectionDescription}>{content.installDesc}</p>
+            <div className={styles.deploymentGrid}>
+              {content.installItems.map((item, index) => {
+                const CardIcon = INSTALL_CARD_ICONS[index % INSTALL_CARD_ICONS.length];
+                return (
+                  <article key={item.title} className={styles.deploymentCard}>
+                    <div className={styles.cardTitleRow}>
+                      <span className={styles.cardIcon}>
+                        <CardIcon />
+                      </span>
+                      <h3>{item.title}</h3>
+                    </div>
+                    <p>{item.description}</p>
+                    <ActionLink className={clsx('button button--sm', styles.deployAction)} action={item.action} />
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -371,7 +428,7 @@ export default function Home() {
           <div className="container">
             <SectionTitle title={content.ecosystemTitle} Icon={EcosystemIcon} />
             <div className={styles.diagramCard}>
-              <img src="/img/home-ecosystem.png" alt={content.ecosystemAlt} />
+              <img src={content.ecosystemImage} alt={content.ecosystemAlt} />
             </div>
           </div>
         </section>
