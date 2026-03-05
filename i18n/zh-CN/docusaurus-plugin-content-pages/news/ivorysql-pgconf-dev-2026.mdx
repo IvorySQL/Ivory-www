@@ -1,0 +1,157 @@
+---
+title: IvorySQL 社区两项议题入选 PGConf.dev 2026
+hide_table_of_contents: true
+---
+
+<style>{`
+  .detail-banner {
+    background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
+    padding: 40px 0;
+    color: white !important;
+    margin-bottom: 30px;
+  }
+  .detail-banner-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
+  .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
+
+  .detail-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .detail-main { flex: 1; min-width: 0; }
+  .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #7D52F4; }
+
+  .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
+  .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+
+  .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
+  .post-content h3 { font-size: 1.25rem; color: #444; margin-top: 25px; margin-bottom: 15px; font-weight: bold; }
+  .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
+  .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
+
+  .detail-sidebar { width: 240px; flex-shrink: 0; }
+  .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+  .sidebar-nav li { margin-bottom: 10px; }
+  .sidebar-nav a { color: #666; font-size: 0.9rem; text-decoration: none; transition: color 0.2s; line-height: 1.4; display: block; }
+  .sidebar-nav a:hover { color: #7D52F4; }
+
+  @media (max-width: 996px) {
+    .detail-banner { padding: 30px 0; }
+    .detail-banner h1 { font-size: 1.5rem; }
+    .detail-wrapper { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .post-title { font-size: 1.5rem; }
+  }
+`}</style>
+
+<div className="detail-banner">
+  <div className="detail-banner-inner">
+    <h1>新闻动态</h1>
+    <div className="detail-banner-decor">● ○ ●</div>
+  </div>
+</div>
+
+<div className="detail-wrapper">
+  <div className="detail-main">
+    <div className="breadcrumb">
+      <a href="/news">新闻动态</a> <span>&gt;</span> <span>社区动态</span>
+    </div>
+
+    <div className="post-header">
+      <div className="post-title">IvorySQL 社区两项议题入选 PGConf.dev 2026</div>
+      <div className="post-date">📅 发布时间：2026 年 3 月 4 日</div>
+    </div>
+
+    <div className="post-content">
+      <h2 id="intro">引言</h2>
+      <p>
+        近日，PostgreSQL 全球顶级开发者盛会 <strong>PGConf.dev 2026</strong> 已公开<a href="https://2026.pgconf.dev/schedule/tuesday" target="_blank" rel="noopener noreferrer">议程</a>。
+      </p>
+      <p>
+        IvorySQL 开源数据库社区传来重磅喜讯：社区成员 <strong>Grant Zhou</strong> 与<strong>厉超</strong>提交的技术议题双双入选！
+      </p>
+      <p>
+        作为中国本土开源数据库社区在国际舞台的重要发声，这不仅是对两位开发者个人技术实力的认可，更标志着 IvorySQL 在推动中国技术力量融入 PostgreSQL 全球核心社区、从“参与者”向“贡献者”转变的征程上，迈出了坚实的一步。
+      </p>
+
+      <h2 id="session-overview">议题速览：从宏观连接到微观实践</h2>
+      <p>
+        在今年的温哥华盛会上，IvorySQL 的两位专家将分别从<strong>生态连接</strong>与<strong>内核开发成长</strong>两个维度，分享来自中国社区的实践与思考。
+      </p>
+
+      <h3 id="grant-zhou">🎙 演讲人：Grant Zhou</h3>
+      <ul>
+        <li><strong>议题：</strong>《失落的环节：将数万名中国用户与 PostgreSQL 核心连接起来》（<em>The Missing Link: Connecting Tens of Thousands of Chinese Users to the PostgreSQL Core</em>）</li>
+        <li><strong>核心看点：</strong></li>
+        <li><strong>打破“沉默的大多数”：</strong>探讨中国庞大的企业级用户群（金融、政府、制造业）与全球开发社区之间的脱节现状。</li>
+        <li><strong>硬核实战反馈：</strong>分享在物联网高频数据写入、大规模分区及 Oracle 到 PostgreSQL 迁移中的真实痛点。</li>
+        <li><strong>IvorySQL 的使命：</strong>阐述为何我们需要构建 IvorySQL 等下游项目来填补原版扩展性的空白，并探讨全球社区如何更好地集成这些企业级用例反馈。</li>
+      </ul>
+
+      <h3 id="li-chao">🎙 演讲人：厉超</h3>
+      <ul>
+        <li><strong>议题：</strong>《快速学习 PG 内核开发：新手的经验与教训》（<em>Learning PostgreSQL Hacking Fast: Lessons and Mistakes from a Newcomer</em>）</li>
+        <li><strong>核心看点：</strong></li>
+        <li><strong>快速进阶指南：</strong>分享如何在短短数月内从新人成长为深度参与 150+ 次提交（Commit）的贡献者。</li>
+        <li><strong>避坑指南：</strong>坦诚分享在代码阅读、补丁评审及社区交流中走过的弯路和技术误区。</li>
+        <li><strong>实战工具箱：</strong>揭秘加速学习的工具流（调试、测试、邮件列表处理），为全球开发者提供一份可复制的“内核黑客成长手册”。</li>
+      </ul>
+
+      <h2 id="community-role">社区担当：做中国 PG 力量的“架桥人”</h2>
+      <p>
+        长期以来，中国的 PostgreSQL 生态呈现出“内热外冷”的现象：国内应用极广，但在国际核心圈层的话语权仍有提升空间。
+      </p>
+      <p>
+        作为致力于“兼容 Oracle 生态”的开源数据库社区，IvorySQL 始终坚持“源于 PostgreSQL，回馈 PostgreSQL”。我们深知，真正的开源精神不仅仅是利用现有的代码，更是在全球主流社区中贡献中国场景下的创新。
+      </p>
+      <p>
+        IvorySQL 是瀚高基础软件股份有限公司于 2021 年发起并主导研发的开源数据库项目。项目基于 PostgreSQL 内核构建，核心目标是解决企业从 Oracle 向 PostgreSQL 迁移过程中面临的兼容性、成本及生态适配等关键问题。与此同时，瀚高股份始终积极参与 PostgreSQL 全球及国内社区建设，持续投入社区贡献，全力推动 PostgreSQL 生态的繁荣与发展。
+      </p>
+      <ul>
+        <li><strong>Grant Zhou</strong> 正在通过 IvorySQL 搭建起企业与核心社区的桥梁，让“沉默”的中国需求被世界听到。</li>
+        <li><strong>厉超</strong> 作为 IvorySQL 社区涌现出的新锐力量，在 PG 18 版本的代码贡献中表现优异，成为了中国年轻一代开发者参与国际开源协作的典范。</li>
+      </ul>
+
+      <h2 id="conclusion">结语：五月，温哥华见！</h2>
+      <p>
+        2026 年 5 月 19 日，加拿大温哥华。
+      </p>
+      <p>
+        当 IvorySQL 的开发者站上 PGConf.dev 的讲台，分享来自中国真实场景的性能挑战与成长经验时，我们正向世界发出一个清晰的信号：<strong>中国开发者不仅是代码的使用者，更是 PostgreSQL 生态进化的重要推动者。</strong>
+      </p>
+      <p>
+        让我们期待 Grant Zhou 与厉超在温哥华的精彩表现，也欢迎更多热爱开源的小伙伴加入 IvorySQL 社区，共同建设更强大的 PostgreSQL 生态！
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-sticky">
+      <div className="sidebar-title">▼ 文章大纲</div>
+      <ul className="sidebar-nav">
+        <li><a href="#intro">引言</a></li>
+        <li><a href="#session-overview">议题速览</a></li>
+        <li><a href="#grant-zhou">Grant Zhou</a></li>
+        <li><a href="#li-chao">厉超</a></li>
+        <li><a href="#community-role">社区担当</a></li>
+        <li><a href="#conclusion">结语</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
