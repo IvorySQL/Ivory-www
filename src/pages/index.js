@@ -26,6 +26,30 @@ const INSTALL_CARD_ICONS = [Icon04, Icon01, Icon06];
 const RELEASES_URL = 'https://github.com/IvorySQL/IvorySQL/releases';
 const ONLINE_TRIAL_URL = 'http://trial.ivorysql.org:8080/';
 
+const ECOSYSTEM_TOOL_STATUS = {
+  progress: new Set(['citus', 'pg_ai_query', 'stackgres', 'databene', 'madlib']),
+  planned: new Set(['shardingsphere', 'pacemaker corosync', 'postgresql age', 'yukon', 'powa']),
+  proprietary: new Set(['ivymigration', 'ivyevaluation', 'ivorysql serverless']),
+};
+
+function normalizeToolName(toolName) {
+  return toolName.replace(/\u200c/g, '').toLowerCase().trim();
+}
+
+function getEcosystemToolTone(toolName) {
+  const normalizedName = normalizeToolName(toolName);
+  if (ECOSYSTEM_TOOL_STATUS.proprietary.has(normalizedName)) {
+    return 'proprietary';
+  }
+  if (ECOSYSTEM_TOOL_STATUS.progress.has(normalizedName)) {
+    return 'progress';
+  }
+  if (ECOSYSTEM_TOOL_STATUS.planned.has(normalizedName)) {
+    return 'planned';
+  }
+  return 'supported';
+}
+
 const CONTENT = {
   zh: {
     slogan: '一款开源的兼容 Oracle 的 PostgreSQL',
@@ -119,9 +143,42 @@ const CONTENT = {
         action: { label: '查看 Docker 仓库', href: 'https://github.com/IvorySQL/docker_library' },
       },
     ],
-    ecosystemTitle: 'IvorySQL 及周边工具生态全景图',
-    ecosystemImage: '/img/home-ecosystem-zh.jpg',
-    ecosystemAlt: 'IvorySQL 及周边工具生态全景图',
+    ecosystemTitle: 'IvorySQL 及周边工具生态',
+    ecosystemDesc:
+      '社区提供丰富的生态工具：客户端工具、高可用工具、云原生工具、监控运维工具、备份恢复工具、地理信息工具等。',
+    ecosystemGroups: [
+      { title: '数据访问中间件', items: ['pgpool-II', 'pgBouncer', 'odyssey', 'HAProxy', 'ShardingSphere', 'Citus', 'vip-manager'], wide: true },
+      { title: 'ORM', items: ['Go', 'NodeJS', 'MyBatis', 'Hibernate'] },
+      { title: '标准 SQL 及驱动', items: ['libpq', 'JDBC', 'ODBC', 'NodeJS', 'psycopg2', 'Go', 'Python', 'Rust', 'Ruby', 'ADO.NET', 'lib/pq', 'pgx'], wide: true },
+      { title: '客户端工具', items: ['DBeaver', 'pgAdmin', 'Navicat', 'Navicat Premium'] },
+      { title: '内核扩展', items: ['Oracle 兼容', 'PG 兼容及跟进'] },
+      { title: '高可靠', items: ['pg_rman', 'WAL-G', 'pg_probackup', 'pgBackRest'] },
+      { title: '集群工具', items: ['Patroni', 'repmgr', 'Pacemaker Corosync'] },
+      { title: '监控运维', items: ['Prometheus', 'Alertmanager', 'pgMonitor', 'Grafana', 'PoWA'] },
+      { title: '异构数据库访问工具', items: ['Debezium', 'pglogical', 'mysql_fdw', 'oracle_fdw'] },
+      { title: '多模数据库', items: ['TimescaleDB', 'DocumentDB', 'PostgreSQL AGE', 'FerretDB'] },
+      { title: '地理信息', items: ['PostGIS', 'pgRouting'] },
+      { title: '机器学习及 AI', items: ['pgvector', 'MADlib', 'pg_ai_query'] },
+      { title: 'DDL 及数据加载工具', items: ['pg_bulkload', 'ddlx'] },
+      { title: '在线体验平台', items: ['postgres-wasm', 'IVYOnlineTrial'] },
+      { title: '定时任务工具', items: ['pg_cron', 'pgAgent', 'pg_jobs'] },
+      { title: '生态合作', items: ['Yukon', 'StackGres', 'Databene', 'WhaleOps'] },
+      { title: '迁移/评估工具', items: ['Ora2Pg', 'ivyMigration', 'ivyEvaluation'] },
+      {
+        title: '云生态',
+        items: ['Docker Compose', 'Podman', 'Docker Swarm', 'IvorySQL Cloud', 'IvorySQL Operator', 'IvorySQL Serverless'],
+      },
+    ],
+    ecosystemFooters: [
+      '操作系统（windows / CentOS / Redhat / ubuntu / openEuler / 银河麒麟 / 统信 UOS 等）',
+      'x86、鲲鹏、龙芯、兆芯、申威、海光、飞腾、MIPS、RISC-V',
+    ],
+    ecosystemLegend: [
+      { label: '已支持', tone: 'supported' },
+      { label: '正在支持', tone: 'progress' },
+      { label: '未来支持', tone: 'planned' },
+      { label: '闭源产品', tone: 'proprietary' },
+    ],
     compatibilityTitle: 'IvorySQL 兼容认证',
     compatibilityDesc: '更多兼容认证与生态合作信息，请查看合作伙伴页面。',
     compatibilityCta: '查看兼容认证详情',
@@ -221,9 +278,50 @@ const CONTENT = {
         action: { label: 'Docker Repository', href: 'https://github.com/IvorySQL/docker_library' },
       },
     ],
-    ecosystemTitle: 'IvorySQL Ecosystem Panorama',
-    ecosystemImage: '/img/home-ecosystem-en.jpg',
-    ecosystemAlt: 'IvorySQL ecosystem panorama',
+    ecosystemTitle: 'IvorySQL Ecosystem & Tools',
+    ecosystemDesc:
+      'The community provides a rich ecosystem of tools, including client tools, high availability tools, cloud-native tools, monitoring and operations tools, backup and recovery tools, and geospatial tools.',
+    ecosystemGroups: [
+      {
+        title: 'Data Access Middleware',
+        items: ['pgpool-II', 'pgBouncer', 'odyssey', 'HAProxy', 'ShardingSphere', 'Citus', 'vip-manager'],
+        wide: true,
+      },
+      { title: 'ORM', items: ['Go', 'NodeJS', 'MyBatis', 'Hibernate'] },
+      {
+        title: 'Standard SQL & Drivers',
+        items: ['libpq', 'JDBC', 'ODBC', 'NodeJS', 'psycopg2', 'Go', 'Python', 'Rust', 'Ruby', 'ADO.NET', 'lib/pq', 'pgx'],
+        wide: true,
+      },
+      { title: 'Client Tools', items: ['DBeaver', 'pgAdmin', 'Navicat', 'Navicat Premium'] },
+      { title: 'Core Extensions', items: ['Oracle Compatibility', 'PG Compatibility & Upstream Tracking'] },
+      { title: 'High Availability', items: ['pg_rman', 'WAL-G', 'pg_probackup', 'pgBackRest'] },
+      { title: 'Cluster Management Tools', items: ['Patroni', 'repmgr', 'Pacemaker Corosync'] },
+      { title: 'Monitoring & Operations', items: ['Prometheus', 'Alertmanager', 'pgMonitor', 'Grafana', 'PoWA'] },
+      { title: 'Heterogeneous Access Tools', items: ['Debezium', 'pglogical', 'mysql_fdw', 'oracle_fdw'] },
+      { title: 'Multi-Model Database', items: ['TimescaleDB', 'DocumentDB', 'PostgreSQL AGE', 'FerretDB'] },
+      { title: 'Geospatial', items: ['PostGIS', 'pgRouting'] },
+      { title: 'Machine Learning & AI', items: ['pgvector', 'MADlib', 'pg_ai_query'] },
+      { title: 'DDL & Data Loading Tools', items: ['pg_bulkload', 'ddlx'] },
+      { title: 'Online Demo Platform', items: ['postgres-wasm', 'IVYOnlineTrial'] },
+      { title: 'Job Scheduling Tools', items: ['pg_cron', 'pgAgent', 'pg_jobs'] },
+      { title: 'Ecosystem Partnerships', items: ['Yukon', 'StackGres', 'Databene', 'WhaleOps'] },
+      { title: 'Migration & Assessment Tools', items: ['Ora2Pg', 'ivyMigration', 'ivyEvaluation'] },
+      {
+        title: 'Cloud Ecosystem',
+        items: ['Docker Compose', 'Podman', 'Docker Swarm', 'IvorySQL Cloud', 'IvorySQL Operator', 'IvorySQL Serverless'],
+      },
+    ],
+    ecosystemFooters: [
+      'Operating System (windows / CentOS / Redhat / ubuntu / openEuler / kylin OS / UnionTech OS)',
+      'x86 / Kunpeng / LoongArch / Zhaoxin / Sunway / Hygon / Phytium / MIPS / RISC-V',
+    ],
+    ecosystemLegend: [
+      { label: 'Supported', tone: 'supported' },
+      { label: 'Support In Progress', tone: 'progress' },
+      { label: 'Support Planned', tone: 'planned' },
+      { label: 'Proprietary Software', tone: 'proprietary' },
+    ],
     compatibilityTitle: 'IvorySQL Compatibility Certificates',
     compatibilityDesc: 'See more compatibility certificates and ecosystem partnerships on the partners page.',
     compatibilityCta: 'View Compatibility Details',
@@ -403,7 +501,7 @@ export default function Home() {
         <section className={clsx(styles.section, styles.sectionToneDeployment)}>
           <div className="container">
             <SectionTitle title={content.installTitle} Icon={InstallDeployIcon} />
-            <p className={styles.sectionDescription}>{content.installDesc}</p>
+            <p className={clsx(styles.sectionDescription, styles.wideDescription)}>{content.installDesc}</p>
             <div className={styles.deploymentGrid}>
               {content.installItems.map((item, index) => {
                 const CardIcon = INSTALL_CARD_ICONS[index % INSTALL_CARD_ICONS.length];
@@ -427,8 +525,47 @@ export default function Home() {
         <section className={clsx(styles.section, styles.sectionToneEcosystem)}>
           <div className="container">
             <SectionTitle title={content.ecosystemTitle} Icon={EcosystemIcon} />
-            <div className={styles.diagramCard}>
-              <img src={content.ecosystemImage} alt={content.ecosystemAlt} />
+            <p className={clsx(styles.sectionDescription, styles.wideDescription)}>{content.ecosystemDesc}</p>
+            <div className={styles.ecosystemFrame}>
+              <div className={styles.ecosystemGrid}>
+                {content.ecosystemGroups.map((group) => (
+                  <article
+                    key={group.title}
+                    className={clsx(styles.ecosystemGroup, group.wide && styles.ecosystemGroupWide)}
+                  >
+                    <h3>{group.title}</h3>
+                    <div className={styles.ecosystemItems}>
+                      {group.items.map((item) => {
+                        const tone = getEcosystemToolTone(item);
+                        return (
+                          <span
+                            key={`${group.title}-${item}`}
+                            className={clsx(styles.ecosystemItem, styles[`ecosystemItem${tone}`])}
+                          >
+                            <i className={styles[`ecosystemDot${tone}`]} aria-hidden="true" />
+                            {item}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  </article>
+                ))}
+              </div>
+
+              <div className={styles.ecosystemFooters}>
+                {content.ecosystemFooters.map((line) => (
+                  <p key={line}>{line}</p>
+                ))}
+              </div>
+
+              <div className={styles.ecosystemLegend}>
+                {content.ecosystemLegend.map((legend) => (
+                  <span key={legend.label} className={styles.ecosystemLegendItem}>
+                    <i className={styles[`ecosystemDot${legend.tone}`]} aria-hidden="true" />
+                    {legend.label}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </section>

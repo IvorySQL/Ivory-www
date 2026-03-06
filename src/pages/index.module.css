@@ -396,6 +396,12 @@
   line-height: 1.74;
 }
 
+.wideDescription {
+  max-width: 1080px;
+  text-wrap: pretty;
+  text-wrap: balance;
+}
+
 .advantagesGrid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -555,21 +561,162 @@
   border-color: #b6d0ff;
 }
 
-.diagramCard {
-  overflow: hidden;
-  border-radius: 18px;
-  border: 1px solid #dfe8ff;
-  background: linear-gradient(180deg, #ffffff 0%, #fafeff 100%);
-  box-shadow: 0 14px 34px rgba(15, 43, 92, 0.1);
-  padding: 12px;
-  max-width: 980px;
+.ecosystemFrame {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
+  border-radius: 22px;
+  border: 1px solid #d9e6ff;
+  background:
+    radial-gradient(circle at 8% 0%, rgba(78, 143, 255, 0.08) 0%, rgba(78, 143, 255, 0) 42%),
+    radial-gradient(circle at 92% 100%, rgba(251, 175, 66, 0.1) 0%, rgba(251, 175, 66, 0) 40%),
+    linear-gradient(180deg, #fbfdff 0%, #f4f8ff 100%);
+  box-shadow: 0 12px 28px rgba(15, 43, 92, 0.08);
+  padding: 18px 18px 18px;
 }
 
-.diagramCard img {
-  display: block;
-  width: 100%;
-  height: auto;
+.ecosystemGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-flow: dense;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.ecosystemGroup {
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid #d8e5ff;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  box-shadow: 0 6px 14px rgba(15, 43, 92, 0.05);
+  padding: 10px 10px 12px;
+}
+
+.ecosystemGroup h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #2257a6;
+  line-height: 1.35;
+}
+
+.ecosystemGroupWide {
+  grid-column: span 2;
+}
+
+.ecosystemItems {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ecosystemItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid #d7e5ff;
+  background: #ffffff;
+  font-size: 0.76rem;
+  line-height: 1.3;
+  color: #3f547d;
+}
+
+.ecosystemItem i {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.ecosystemItemsupported {
+  border-color: #d9caf8;
+  background: #f8f4ff;
+  color: #5f45a8;
+}
+
+.ecosystemItemprogress {
+  border-color: #c6e4b0;
+  background: #f4faee;
+  color: #3f7726;
+}
+
+.ecosystemItemplanned {
+  border-color: #bae3f6;
+  background: #edf8ff;
+  color: #1f6d98;
+}
+
+.ecosystemItemproprietary {
+  border-color: #d6dbe4;
+  background: #f3f5f8;
+  color: #5a6172;
+}
+
+.ecosystemFooters {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.ecosystemFooters p {
+  margin: 0;
+  border-radius: 10px;
+  border: 1px solid #f2cc97;
+  border-left: 4px solid #fbaf42;
+  background: linear-gradient(180deg, #fffdf9 0%, #fff9ef 100%);
+  color: #7b5b22;
+  font-size: 0.83rem;
+  line-height: 1.45;
+  padding: 8px 10px;
+}
+
+.ecosystemLegend {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  padding: 2px 6px 0;
+}
+
+.ecosystemLegendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid #d9e4fb;
+  background: rgba(255, 255, 255, 0.72);
+  font-size: 0.8rem;
+  color: #4a5a83;
+  white-space: nowrap;
+}
+
+.ecosystemLegendItem i {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.ecosystemDotsupported {
+  background: #7a32ec;
+}
+
+.ecosystemDotprogress {
+  background: #75c740;
+}
+
+.ecosystemDotplanned {
+  background: #00b0f0;
+}
+
+.ecosystemDotproprietary {
+  background: #808080;
 }
 
 .certCarouselContainer {
@@ -687,6 +834,10 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .ecosystemGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .certCarouselContainer {
     --cert-slide-width: 220px;
     --cert-slide-height: 168px;
@@ -788,8 +939,21 @@
     padding: 8px;
   }
 
-  .diagramCard {
-    max-width: 100%;
+  .ecosystemFrame {
+    padding: 16px 14px 16px;
+  }
+
+  .ecosystemGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ecosystemGroupWide {
+    grid-column: span 2;
+  }
+
+  .ecosystemLegend {
+    justify-content: center;
+    gap: 12px;
   }
 }
 
@@ -873,6 +1037,41 @@
   .scenariosGrid,
   .deploymentGrid {
     grid-template-columns: 1fr;
+  }
+
+  .ecosystemGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ecosystemGroup,
+  .ecosystemGroupWide {
+    grid-column: span 1;
+  }
+
+  .ecosystemGroup h3 {
+    font-size: 0.88rem;
+  }
+
+  .ecosystemItem {
+    font-size: 0.74rem;
+    padding: 4px 7px;
+  }
+
+  .ecosystemFooters p {
+    font-size: 0.8rem;
+    padding: 7px 9px;
+  }
+
+  .ecosystemLegend {
+    margin-top: 8px;
+    gap: 8px;
+    justify-content: flex-start;
+    padding: 2px 2px 0;
+  }
+
+  .ecosystemLegendItem {
+    font-size: 0.78rem;
+    white-space: normal;
   }
 
   .infoCard {
