@@ -201,6 +201,24 @@ const CONTENT = {
       { icon: '✓', text: '多企业生产部署' },
       { icon: '✓', text: '全球开发者社区' },
     ],
+    statsItems: [
+      { value: 'PostgreSQL 18', label: '内核版本' },
+      { value: 'Apache 2.0', label: '开源协议' },
+      { value: '55+', label: '生态工具' },
+      { value: 'Oracle 兼容', label: '无缝迁移' },
+    ],
+    oracleShowcase: {
+      title: '让 Oracle 代码直接运行',
+      subtitle: '深度 Oracle 兼容',
+      points: [
+        'PL/iSQL 支持 Oracle PL/SQL 过程语言语法',
+        'ivorysql_ora 插件提供 Oracle 内置函数',
+        'compatible_mode 开关随时切换兼容模式',
+        '支持 Oracle 风格的 Package 包体结构',
+      ],
+      cta: '查看迁移指南',
+      ctaTo: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.3/4.5',
+    },
     coreTitle: 'IvorySQL 核心优势',
     coreDesc: '从内核兼容到生态扩展，提供面向企业生产环境的数据库能力。',
     coreItems: [
@@ -307,6 +325,14 @@ const CONTENT = {
         items: ['Docker Compose', 'Podman', 'Docker Swarm', 'IvorySQL Cloud', 'IvorySQL Operator', 'IvorySQL Serverless'],
       },
     ],
+    ecosystemCategories: [
+      { title: '连接与分发层',      desc: '连接池、负载均衡与水平分片',                  featuredTools: ['pgpool-II', 'pgBouncer', 'HAProxy', 'Citus', 'ShardingSphere'], count: 11, accent: 'blue'   },
+      { title: '高可用与备份',      desc: '集群管理、自动故障转移与时间点恢复',          featuredTools: ['Patroni', 'WAL-G', 'pgBackRest', 'repmgr'],                   count: 7,  accent: 'teal'   },
+      { title: '开发者工具与驱动',  desc: '图形客户端、ORM 框架与多语言驱动',            featuredTools: ['DBeaver', 'pgAdmin', 'pgx', 'psycopg2'],                      count: 16, accent: 'indigo' },
+      { title: '监控与运维',        desc: '指标采集、可视化大屏与查询性能分析',          featuredTools: ['Prometheus', 'Grafana', 'pgMonitor', 'PoWA'],                  count: 5,  accent: 'amber'  },
+      { title: '数据集成与迁移',    desc: 'CDC 变更捕获、异构数据访问与 Oracle 迁移',    featuredTools: ['Debezium', 'Ora2Pg', 'oracle_fdw', 'mysql_fdw'],              count: 8,  accent: 'purple' },
+      { title: 'AI、地理与多模型',  desc: '向量检索、时序、地理空间与图数据库扩展',      featuredTools: ['pgvector', 'PostGIS', 'TimescaleDB', 'DocumentDB'],           count: 8,  accent: 'rose'   },
+    ],
     ecosystemFooters: [
       '操作系统（windows / CentOS / Redhat / ubuntu / openEuler / 银河麒麟 / 统信 UOS 等）',
       'x86、鲲鹏、龙芯、兆芯、申威、海光、飞腾、MIPS、RISC-V',
@@ -338,6 +364,24 @@ const CONTENT = {
       { icon: '✓', text: 'Production-Proven' },
       { icon: '✓', text: 'Global Community' },
     ],
+    statsItems: [
+      { value: 'PostgreSQL 18', label: 'Kernel Base' },
+      { value: 'Apache 2.0', label: 'Open Source' },
+      { value: '55+', label: 'Ecosystem Tools' },
+      { value: 'Oracle SQL', label: 'Natively Compatible' },
+    ],
+    oracleShowcase: {
+      title: 'Run Oracle Code. No Rewrite.',
+      subtitle: 'Oracle Compatibility',
+      points: [
+        'PL/iSQL supports Oracle PL/SQL procedural syntax natively',
+        'ivorysql_ora plugin provides Oracle built-in functions',
+        'compatible_mode switch toggles compatibility on the fly',
+        'Oracle-style Package structures supported out of the box',
+      ],
+      cta: 'View Migration Guide',
+      ctaTo: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.3/4.5',
+    },
     coreTitle: 'Core Advantages',
     coreDesc: 'From kernel compatibility to ecosystem integration, built for production workloads.',
     coreItems: [
@@ -454,6 +498,14 @@ const CONTENT = {
         title: 'Cloud Ecosystem',
         items: ['Docker Compose', 'Podman', 'Docker Swarm', 'IvorySQL Cloud', 'IvorySQL Operator', 'IvorySQL Serverless'],
       },
+    ],
+    ecosystemCategories: [
+      { title: 'Connectivity & Pooling',        desc: 'Connection pooling, load balancing & horizontal sharding',          featuredTools: ['pgpool-II', 'pgBouncer', 'HAProxy', 'Citus', 'ShardingSphere'], count: 11, accent: 'blue'   },
+      { title: 'High Availability & Backup',    desc: 'Cluster management, automatic failover & point-in-time recovery',   featuredTools: ['Patroni', 'WAL-G', 'pgBackRest', 'repmgr'],                   count: 7,  accent: 'teal'   },
+      { title: 'Developer Tools & Drivers',     desc: 'GUI clients, ORM frameworks & multi-language database drivers',     featuredTools: ['DBeaver', 'pgAdmin', 'pgx', 'psycopg2'],                      count: 16, accent: 'indigo' },
+      { title: 'Monitoring & Operations',       desc: 'Metrics collection, dashboards & query performance analysis',       featuredTools: ['Prometheus', 'Grafana', 'pgMonitor', 'PoWA'],                  count: 5,  accent: 'amber'  },
+      { title: 'Data Integration & Migration',  desc: 'CDC, heterogeneous access & Oracle-to-PostgreSQL migration',        featuredTools: ['Debezium', 'Ora2Pg', 'oracle_fdw', 'mysql_fdw'],              count: 8,  accent: 'purple' },
+      { title: 'AI, Geo & Multi-Model',         desc: 'Vector search, time-series, geospatial & graph extensions',        featuredTools: ['pgvector', 'PostGIS', 'TimescaleDB', 'DocumentDB'],           count: 8,  accent: 'rose'   },
     ],
     ecosystemFooters: [
       'Operating System (windows / CentOS / Redhat / ubuntu / openEuler / kylin OS / UnionTech OS)',
@@ -628,22 +680,13 @@ export default function Home() {
         <section className={styles.heroSection}>
           <div className={clsx('container', styles.heroContainer)}>
             <div className={styles.heroContent}>
-              <h1 className={styles.heroTitle}>IvorySQL</h1>
-              <p className={styles.slogan}>{content.slogan}</p>
               <div className={styles.heroBadges}>
                 {content.heroBadges.map((badge) => (
-                  <span key={badge} className={styles.heroBadge}>
-                    {badge}
-                  </span>
+                  <span key={badge} className={styles.heroBadge}>{badge}</span>
                 ))}
               </div>
-              <p className={styles.heroIntro}>{content.intro}</p>
-              <div className={styles.latestVersion}>
-                <span>{content.latestVersionPrefix}</span>
-                <a href={RELEASES_URL} target="_blank" rel="noopener noreferrer">
-                  {latestVersionLabel}
-                </a>
-              </div>
+              <h1 className={styles.heroTitle}>IvorySQL</h1>
+              <p className={styles.slogan}>{content.slogan}</p>
               <div className={clsx(styles.heroActions, !isZh && styles.heroActionsEn)}>
                 {content.actions.map((action) => (
                   <ActionLink
@@ -653,19 +696,74 @@ export default function Home() {
                   />
                 ))}
               </div>
-              {content.heroTrust && (
-                <ul className={styles.heroTrust} aria-label={isZh ? '产品亮点' : 'Key highlights'}>
-                  {content.heroTrust.map((item) => (
-                    <li key={item.text} className={styles.heroTrustItem}>
-                      <span className={styles.heroTrustIcon} aria-hidden="true">{item.icon}</span>
-                      {item.text}
-                    </li>
-                  ))}
-                </ul>
-              )}
+              <div className={styles.latestVersion}>
+                <span>{content.latestVersionPrefix}: </span>
+                <a href={RELEASES_URL} target="_blank" rel="noopener noreferrer">
+                  {latestVersionLabel}
+                </a>
+              </div>
             </div>
             <div className={styles.heroVisual} aria-hidden="true">
               <HeroElephant />
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.statsStrip} data-reveal="up">
+          <div className="container">
+            <div className={styles.statsGrid}>
+              {content.statsItems.map((stat) => (
+                <div key={stat.label} className={styles.statItem}>
+                  <span className={styles.statValue}>{stat.value}</span>
+                  <span className={styles.statLabel}>{stat.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className={clsx(styles.section, styles.sectionOracleShowcase)} data-reveal="up">
+          <div className="container">
+            <div className={styles.showcaseLayout}>
+              <div className={styles.showcaseText}>
+                <span className={styles.showcaseBadge}>{content.oracleShowcase.subtitle}</span>
+                <h2 className={styles.showcaseTitle}>{content.oracleShowcase.title}</h2>
+                <ul className={styles.showcasePoints}>
+                  {content.oracleShowcase.points.map((pt) => (
+                    <li key={pt} className={styles.showcasePoint}>
+                      <span className={styles.showcaseCheck} aria-hidden="true">✓</span>
+                      {pt}
+                    </li>
+                  ))}
+                </ul>
+                <a className={clsx('button button--lg', styles.showcaseCta)} href={content.oracleShowcase.ctaTo} target="_blank" rel="noopener noreferrer" aria-label={isZh ? '查看 IvorySQL 迁移指南' : 'View IvorySQL Migration Guide'}>
+                  {content.oracleShowcase.cta}
+                </a>
+              </div>
+              <div className={styles.showcaseCode}>
+                <div className={styles.codeWindowBar}>
+                  <span className={styles.sqlDot} style={{background:'#ff5f56'}} />
+                  <span className={styles.sqlDot} style={{background:'#ffbd2e'}} />
+                  <span className={styles.sqlDot} style={{background:'#27c93f'}} />
+                  <span className={styles.codeWindowTitle}>{isZh ? 'Oracle 语法 → IvorySQL' : 'Oracle syntax → IvorySQL'}</span>
+                </div>
+                <div className={styles.codeWindowBody}>
+                  <div className={styles.codeComment}>{isZh ? '-- Oracle Package 结构' : '-- Oracle Package syntax'}</div>
+                  <div className={styles.codeLine}><span className={styles.codeKw}>CREATE OR REPLACE PACKAGE</span><span className={styles.codeFn}> hr_pkg </span><span className={styles.codeKw}>AS</span></div>
+                  <div className={styles.codeLine}><span className={styles.codeIndent}>  </span><span className={styles.codeKw}>FUNCTION</span><span className={styles.codeFn}> get_salary</span><span className={styles.codePunct}>(</span><span className={styles.codeParam}>emp_id</span><span className={styles.codeKw}> NUMBER</span><span className={styles.codePunct}>)</span></div>
+                  <div className={styles.codeLine}><span className={styles.codeIndent}>    </span><span className={styles.codeKw}>RETURN</span><span className={styles.codeType}> NUMBER</span><span className={styles.codePunct}>;</span></div>
+                  <div className={styles.codeLine}><span className={styles.codeKw}>END</span><span className={styles.codePunct}>;</span></div>
+                  <div className={styles.codeLine}><span className={styles.codePunct}>/</span></div>
+                  <div className={styles.codeSpacer} />
+                  <div className={styles.codeComment}>{isZh ? '-- Oracle 内置函数' : '-- Oracle built-in functions'}</div>
+                  <div className={styles.codeLine}><span className={styles.codeKw}>SELECT</span><span className={styles.codeFn}> NVL</span><span className={styles.codePunct}>(</span><span className={styles.codeParam}>salary</span><span className={styles.codePunct}>, </span><span className={styles.codeNum}>0</span><span className={styles.codePunct}>),</span></div>
+                  <div className={styles.codeLine}><span className={styles.codeIndent}>       </span><span className={styles.codeFn}>TO_DATE</span><span className={styles.codePunct}>(</span><span className={styles.codeStr}>'2024-01-01'</span><span className={styles.codePunct}>, </span><span className={styles.codeStr}>'YYYY-MM-DD'</span><span className={styles.codePunct}>),</span></div>
+                  <div className={styles.codeLine}><span className={styles.codeIndent}>       </span><span className={styles.codeFn}>DECODE</span><span className={styles.codePunct}>(</span><span className={styles.codeParam}>dept_id</span><span className={styles.codePunct}>, </span><span className={styles.codeNum}>10</span><span className={styles.codePunct}>, </span><span className={styles.codeStr}>'HR'</span><span className={styles.codePunct}>, </span><span className={styles.codeStr}>'Other'</span><span className={styles.codePunct}>)</span></div>
+                  <div className={styles.codeLine}><span className={styles.codeKw}>FROM</span><span className={styles.codeParam}> employees</span><span className={styles.codePunct}>;</span></div>
+                  <div className={styles.codeSpacer} />
+                  <div className={styles.codeSuccess}><span className={styles.codeGreen}>✓ </span>{isZh ? '与 Oracle 100% 语法兼容' : '100% Oracle syntax compatible'}</div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -744,22 +842,28 @@ export default function Home() {
           <div className="container">
             <SectionTitle title={content.ecosystemTitle} Icon={EcosystemIcon} />
             <p className={clsx(styles.sectionDescription, styles.wideDescription)} data-reveal="up" data-delay="1">{content.ecosystemDesc}</p>
-            <div className={styles.ecosystemFrame} data-reveal="scale">
-              <div className={styles.ecosystemGrid}>
-                {content.ecosystemGroups.map((group) => (
-                  <article
-                    key={group.title}
-                    className={clsx(styles.ecosystemGroup, group.wide && styles.ecosystemGroupWide)}
-                  >
-                    <h3>{group.title}</h3>
+
+            {/* 6 category spotlight cards */}
+            <div className={styles.ecoCategoryGrid} data-reveal="scale">
+              {content.ecosystemCategories.map((cat, idx) => {
+                const CatIcon = [Icon01, Icon02, Icon03, Icon04, Icon05, Icon06][idx % 6];
+                return (
+                  <div key={cat.title} className={clsx(styles.ecoCatCard, styles[`ecoCatAccent${cat.accent}`])}>
+                    <div className={styles.ecoCatHead}>
+                      <span className={styles.ecoCatIconWrap} aria-hidden="true"><CatIcon /></span>
+                      <div>
+                        <h3 className={styles.ecoCatTitle}>{cat.title}</h3>
+                        <p className={styles.ecoCatDesc}>{cat.desc}</p>
+                      </div>
+                    </div>
                     <div className={styles.ecosystemItems}>
-                      {group.items.map((item) => {
+                      {cat.featuredTools.map((item) => {
                         const tone = getEcosystemToolTone(item);
                         const meta = TOOL_META[item];
                         const tooltipDesc = meta && (isZh ? (meta.descZh || meta.desc) : meta.desc);
                         return (
                           <span
-                            key={`${group.title}-${item}`}
+                            key={item}
                             className={clsx(
                               styles.ecosystemItem,
                               styles[`ecosystemItem${tone}`],
@@ -787,24 +891,44 @@ export default function Home() {
                         );
                       })}
                     </div>
-                  </article>
-                ))}
-              </div>
+                    <div className={styles.ecoCatFooter}>
+                      <span className={styles.ecoCatCount}>
+                        {isZh ? `共 ${cat.count} 个工具` : `${cat.count} tools total`}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
 
-              <div className={styles.ecosystemFooters}>
-                {content.ecosystemFooters.map((line) => (
-                  <p key={line}>{line}</p>
-                ))}
-              </div>
+            {/* Platform coverage bar */}
+            <div className={styles.ecosystemPlatformBar} data-reveal="up">
+              {content.ecosystemFooters.map((line) => (
+                <p key={line}>{line}</p>
+              ))}
+            </div>
 
-              <div className={styles.ecosystemLegend}>
-                {content.ecosystemLegend.map((legend) => (
-                  <span key={legend.label} className={styles.ecosystemLegendItem}>
-                    <i className={styles[`ecosystemDot${legend.tone}`]} aria-hidden="true" />
-                    {legend.label}
-                  </span>
-                ))}
-              </div>
+            {/* Legend */}
+            <div className={styles.ecosystemLegend}>
+              {content.ecosystemLegend.map((legend) => (
+                <span key={legend.label} className={styles.ecosystemLegendItem}>
+                  <i className={styles[`ecosystemDot${legend.tone}`]} aria-hidden="true" />
+                  {legend.label}
+                </span>
+              ))}
+            </div>
+
+            {/* View all tools link */}
+            <div className={styles.ecosystemViewAll} data-reveal="up">
+              <a
+                href="https://docs.ivorysql.org/en/ivorysql-doc/v5.3/5.0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.ecosystemViewAllLink}
+                aria-label={isZh ? '查看完整生态及工具列表' : 'Browse the full ecosystem & tools list'}
+              >
+                {isZh ? '查看完整生态及工具列表 →' : 'Browse the full ecosystem & tools list →'}
+              </a>
             </div>
           </div>
         </section>
@@ -825,6 +949,23 @@ export default function Home() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.ctaBanner} data-reveal="up">
+          <div className="container">
+            <div className={styles.ctaBannerInner}>
+              <h2 className={styles.ctaBannerTitle}>{isZh ? '准备好开始迁移了吗？' : 'Ready to Start Your Migration?'}</h2>
+              <p className={styles.ctaBannerSub}>{isZh ? '免费开源，生产可用，立即体验 IvorySQL。' : 'Free, open-source, production-ready. Try IvorySQL today.'}</p>
+              <div className={styles.ctaBannerActions}>
+                <Link className={clsx('button button--lg', styles.ctaPrimary)} to="/releases-page" aria-label={isZh ? '免费下载 IvorySQL' : 'Download IvorySQL'}>
+                  {isZh ? '免费下载' : 'Free Download'}
+                </Link>
+                <a className={clsx('button button--lg', styles.ctaSecondary)} href={ONLINE_TRIAL_URL} target="_blank" rel="noopener noreferrer" aria-label={isZh ? '在线体验 IvorySQL' : 'Try IvorySQL Online'}>
+                  {isZh ? '在线体验 →' : 'Try Online →'}
+                </a>
               </div>
             </div>
           </div>
