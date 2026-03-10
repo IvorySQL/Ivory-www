@@ -31,7 +31,7 @@ const TRUSTED_CUSTOMERS = [
   { name: 'Highgo',                         nameZh: '瀚高软件',  logo: '/img/partners/highgo.png',              logoHeight: 36 },
   { name: 'Data Bene',                      logo: '/img/partners/databene.png' },
   { name: 'Ongres',                         logo: '/img/partners/ongres.png',                                  logoHeight: 18 },
-  { name: 'State Grid Corporation',         nameZh: '国家电网',  logo: '/img/partners/state-grid.png',          logoHeight: 40 },
+  { name: 'State Grid Corporation',         nameZh: '国家电网',  logo: '/img/partners/state-grid.png',          logoHeight: 28 },
   { name: 'Zhongtai Securities',            nameZh: '中泰证券',  logo: '/img/partners/zhongtai-securities.png' },
   { name: 'Goldwind',                       nameZh: '金风科技',  logo: '/img/partners/goldwind.png' },
 ];
