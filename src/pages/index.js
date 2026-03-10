@@ -31,7 +31,7 @@ const TRUSTED_CUSTOMERS = [
   { name: 'Highgo',                         nameZh: '瀚高软件' },
   { name: 'Data Bene',                      logo: '/img/partners/databene.png' },
   { name: 'Ongres',                         logo: '/img/partners/ongres.png' },
-  { name: 'State Grid Corporation',         nameZh: '国家电网' },
+  { name: 'State Grid Corporation',         nameZh: '国家电网',  logo: '/img/partners/state-grid.png' },
   { name: 'Zhongtai Securities',            nameZh: '中泰证券' },
   { name: 'Goldwind',                       nameZh: '金风科技' },
 ];
