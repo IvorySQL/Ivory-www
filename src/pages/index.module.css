@@ -919,7 +919,7 @@
     0 0 0 1px rgba(17, 63, 132, 0.04),
     0 4px 16px rgba(17, 63, 132, 0.06);
   padding: 28px 24px 24px;
-  transition: transform 0.28s cubic-bezier(0.22,1,0.36,1), box-shadow 0.28s ease, border-color 0.28s ease;
+  transition: box-shadow 0.28s ease, border-color 0.28s ease, filter 0.28s ease;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -953,10 +953,9 @@
 }
 
 .infoCard:hover {
-  transform: translateY(-6px);
   box-shadow:
-    0 0 0 1px rgba(17, 63, 132, 0.10),
-    0 20px 40px rgba(17, 63, 132, 0.12);
+    0 0 0 1px rgba(17, 63, 132, 0.14),
+    0 20px 40px rgba(17, 63, 132, 0.14);
   border-color: #b8d0ff;
 }
 
@@ -997,8 +996,8 @@
 .scenariosGrid .infoCard::after  { display: none; }
 
 .scenariosGrid .infoCard:hover {
-  transform: scale(1.02);
-  filter: brightness(1.08);
+  filter: brightness(1.12);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
 }
 
 .scenariosGrid .cardTitleRow {
