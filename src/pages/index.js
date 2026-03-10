@@ -28,7 +28,7 @@ const ONLINE_TRIAL_URL = 'https://trial.ivorysql.org/';
 
 /* Trusted-by customer list — logo path optional; nameZh shown in zh locale */
 const TRUSTED_CUSTOMERS = [
-  { name: 'Highgo',                         nameZh: '瀚高软件',  logo: '/img/partners/highgo.png' },
+  { name: 'Highgo',                         nameZh: '瀚高软件',  logo: '/img/partners/highgo.png',              logoHeight: 36 },
   { name: 'Data Bene',                      logo: '/img/partners/databene.png' },
   { name: 'Ongres',                         logo: '/img/partners/ongres.png',                                  logoHeight: 18 },
   { name: 'State Grid Corporation',         nameZh: '国家电网',  logo: '/img/partners/state-grid.png',          logoHeight: 64 },
