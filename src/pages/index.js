@@ -29,82 +29,82 @@ const LATEST_RELEASE_API_URL = 'https://api.github.com/repos/IvorySQL/IvorySQL/r
 const LATEST_VERSION_CACHE_KEY = 'ivorysql_latest_release_label';
 const LATEST_VERSION_CACHE_TTL = 6 * 60 * 60 * 1000;
 
-// Tool metadata: description + homepage URL for hover tooltips
+// Tool metadata: description + homepage URL for hover tooltips (bilingual)
 const TOOL_META = {
   // Data Access Middleware
-  'pgpool-II':       { desc: 'Middleware proxy for PostgreSQL: connection pooling, load balancing, and automatic failover.', url: 'https://www.pgpool.net/' },
-  'pgBouncer':       { desc: 'Ultra-lightweight connection pooler for PostgreSQL, minimizing connection overhead.', url: 'https://www.pgbouncer.org/' },
-  'odyssey':         { desc: 'Advanced multi-threaded PostgreSQL connection pooler by Yandex, designed for high concurrency.', url: 'https://github.com/yandex/odyssey' },
-  'HAProxy':         { desc: 'High-performance TCP/HTTP load balancer widely used for PostgreSQL read/write splitting.', url: 'https://www.haproxy.org/' },
-  'ShardingSphere':  { desc: 'Apache distributed database ecosystem providing sharding, scaling, and encryption for PostgreSQL.', url: 'https://shardingsphere.apache.org/' },
-  'Citus':           { desc: 'Distributed PostgreSQL extension that horizontally scales your database across multiple nodes.', url: 'https://www.citusdata.com/' },
-  'vip-manager':     { desc: 'Manages virtual IP addresses for PostgreSQL HA clusters, ensuring seamless failover.', url: 'https://github.com/Cybertec-PostgreSQL/vip-manager' },
+  'pgpool-II':       { desc: 'Middleware proxy for PostgreSQL: connection pooling, load balancing, and automatic failover.', descZh: 'PostgreSQL 中间件代理，提供连接池、负载均衡和自动故障转移能力。', url: 'https://www.pgpool.net/' },
+  'pgBouncer':       { desc: 'Ultra-lightweight connection pooler for PostgreSQL, minimizing connection overhead.', descZh: '超轻量级 PostgreSQL 连接池，大幅降低连接建立开销。', url: 'https://www.pgbouncer.org/' },
+  'odyssey':         { desc: 'Advanced multi-threaded PostgreSQL connection pooler by Yandex, designed for high concurrency.', descZh: 'Yandex 开发的高性能多线程 PostgreSQL 连接池，专为高并发场景设计。', url: 'https://github.com/yandex/odyssey' },
+  'HAProxy':         { desc: 'High-performance TCP/HTTP load balancer widely used for PostgreSQL read/write splitting.', descZh: '高性能 TCP/HTTP 负载均衡器，常用于 PostgreSQL 读写分离架构。', url: 'https://www.haproxy.org/' },
+  'ShardingSphere':  { desc: 'Apache distributed database ecosystem providing sharding, scaling, and encryption for PostgreSQL.', descZh: 'Apache 分布式数据库生态，为 PostgreSQL 提供分库分表、弹性伸缩和数据加密能力。', url: 'https://shardingsphere.apache.org/' },
+  'Citus':           { desc: 'Distributed PostgreSQL extension that horizontally scales your database across multiple nodes.', descZh: 'PostgreSQL 分布式扩展，通过水平分片将数据库扩展到多个节点。', url: 'https://www.citusdata.com/' },
+  'vip-manager':     { desc: 'Manages virtual IP addresses for PostgreSQL HA clusters, ensuring seamless failover.', descZh: '为 PostgreSQL 高可用集群管理虚拟 IP，确保故障切换时业务无感知。', url: 'https://github.com/Cybertec-PostgreSQL/vip-manager' },
   // ORM
-  'MyBatis':         { desc: 'Java SQL mapping framework that eliminates boilerplate JDBC code with flexible SQL control.', url: 'https://mybatis.org/' },
-  'Hibernate':       { desc: 'Powerful Java ORM framework with full PostgreSQL and JPQL support.', url: 'https://hibernate.org/' },
+  'MyBatis':         { desc: 'Java SQL mapping framework that eliminates boilerplate JDBC code with flexible SQL control.', descZh: 'Java SQL 映射框架，以灵活的 SQL 控制方式消除繁琐的 JDBC 样板代码。', url: 'https://mybatis.org/' },
+  'Hibernate':       { desc: 'Powerful Java ORM framework with full PostgreSQL and JPQL support.', descZh: '强大的 Java ORM 框架，全面支持 PostgreSQL 和 JPQL 查询语言。', url: 'https://hibernate.org/' },
   // Standard SQL & Drivers
-  'libpq':           { desc: 'Official C client library for PostgreSQL, the foundation for most language drivers.', url: 'https://www.postgresql.org/docs/current/libpq.html' },
-  'JDBC':            { desc: 'Official Java Database Connectivity driver for PostgreSQL (pgjdbc).', url: 'https://jdbc.postgresql.org/' },
-  'ODBC':            { desc: 'psqlODBC — official PostgreSQL ODBC driver for Windows and Linux applications.', url: 'https://odbc.postgresql.org/' },
-  'psycopg2':        { desc: 'Most popular PostgreSQL adapter for Python, featuring full async support.', url: 'https://www.psycopg.org/' },
-  'ADO.NET':         { desc: 'Npgsql — high-performance .NET data provider for PostgreSQL with EF Core support.', url: 'https://www.npgsql.org/' },
-  'lib/pq':          { desc: 'Pure Go PostgreSQL driver (legacy), compatible with database/sql standard interface.', url: 'https://github.com/lib/pq' },
-  'pgx':             { desc: 'High-performance PostgreSQL driver for Go with low-level protocol access.', url: 'https://github.com/jackc/pgx' },
-  'Ruby':            { desc: 'pg gem — the official Ruby interface to PostgreSQL.', url: 'https://github.com/ged/ruby-pg' },
-  'Rust':            { desc: 'rust-postgres — native PostgreSQL driver for Rust, with tokio async support.', url: 'https://github.com/sfackler/rust-postgres' },
+  'libpq':           { desc: 'Official C client library for PostgreSQL, the foundation for most language drivers.', descZh: 'PostgreSQL 官方 C 客户端库，是大多数语言驱动的底层基础。', url: 'https://www.postgresql.org/docs/current/libpq.html' },
+  'JDBC':            { desc: 'Official Java Database Connectivity driver for PostgreSQL (pgjdbc).', descZh: 'PostgreSQL 官方 Java 数据库连接驱动（pgjdbc）。', url: 'https://jdbc.postgresql.org/' },
+  'ODBC':            { desc: 'psqlODBC — official PostgreSQL ODBC driver for Windows and Linux applications.', descZh: 'psqlODBC — 适用于 Windows 和 Linux 应用程序的官方 PostgreSQL ODBC 驱动。', url: 'https://odbc.postgresql.org/' },
+  'psycopg2':        { desc: 'Most popular PostgreSQL adapter for Python, featuring full async support.', descZh: '最流行的 Python PostgreSQL 适配器，支持完整的异步操作。', url: 'https://www.psycopg.org/' },
+  'ADO.NET':         { desc: 'Npgsql — high-performance .NET data provider for PostgreSQL with EF Core support.', descZh: 'Npgsql — 高性能 .NET PostgreSQL 数据提供器，支持 Entity Framework Core。', url: 'https://www.npgsql.org/' },
+  'lib/pq':          { desc: 'Pure Go PostgreSQL driver (legacy), compatible with database/sql standard interface.', descZh: '纯 Go 实现的 PostgreSQL 驱动（经典版），兼容 database/sql 标准接口。', url: 'https://github.com/lib/pq' },
+  'pgx':             { desc: 'High-performance PostgreSQL driver for Go with low-level protocol access.', descZh: '高性能 Go 语言 PostgreSQL 驱动，支持底层协议直接访问。', url: 'https://github.com/jackc/pgx' },
+  'Ruby':            { desc: 'pg gem — the official Ruby interface to PostgreSQL.', descZh: 'pg gem — Ruby 访问 PostgreSQL 的官方接口库。', url: 'https://github.com/ged/ruby-pg' },
+  'Rust':            { desc: 'rust-postgres — native PostgreSQL driver for Rust, with tokio async support.', descZh: 'rust-postgres — 原生 Rust PostgreSQL 驱动，支持 tokio 异步运行时。', url: 'https://github.com/sfackler/rust-postgres' },
   // Client Tools
-  'DBeaver':         { desc: 'Universal multi-database GUI management tool with ERD, SQL editor, and data export.', url: 'https://dbeaver.io/' },
-  'pgAdmin':         { desc: 'Official open-source PostgreSQL administration and management web application.', url: 'https://www.pgadmin.org/' },
-  'Navicat':         { desc: 'Professional GUI tool for PostgreSQL with visual query builder and data modeling.', url: 'https://www.navicat.com/' },
-  'Navicat Premium': { desc: 'Multi-connection GUI tool supporting PostgreSQL, MySQL, Oracle, and more simultaneously.', url: 'https://www.navicat.com/en/products/navicat-premium' },
+  'DBeaver':         { desc: 'Universal multi-database GUI management tool with ERD, SQL editor, and data export.', descZh: '通用多数据库 GUI 管理工具，内置 ER 图、SQL 编辑器和数据导出功能。', url: 'https://dbeaver.io/' },
+  'pgAdmin':         { desc: 'Official open-source PostgreSQL administration and management web application.', descZh: 'PostgreSQL 官方开源管理工具，提供完整的数据库管理与监控功能。', url: 'https://www.pgadmin.org/' },
+  'Navicat':         { desc: 'Professional GUI tool for PostgreSQL with visual query builder and data modeling.', descZh: '专业的 PostgreSQL GUI 工具，提供可视化查询构建器和数据建模功能。', url: 'https://www.navicat.com/' },
+  'Navicat Premium': { desc: 'Multi-connection GUI tool supporting PostgreSQL, MySQL, Oracle, and more simultaneously.', descZh: '多连接 GUI 工具，可同时管理 PostgreSQL、MySQL、Oracle 等多种数据库。', url: 'https://www.navicat.com/en/products/navicat-premium' },
   // Backup & HA
-  'pg_rman':         { desc: 'Online backup and recovery manager for PostgreSQL with PITR support.', url: 'https://github.com/ossc-db/pg_rman' },
-  'WAL-G':           { desc: 'Fast cloud-native backup tool using cloud storage (S3, GCS, Azure) with delta compression.', url: 'https://github.com/wal-g/wal-g' },
-  'pg_probackup':    { desc: 'Backup and recovery solution for PostgreSQL with parallel processing and incremental backups.', url: 'https://github.com/postgrespro/pg_probackup' },
-  'pgBackRest':      { desc: 'Reliable, feature-rich backup solution with parallel restore and cloud storage support.', url: 'https://pgbackrest.org/' },
+  'pg_rman':         { desc: 'Online backup and recovery manager for PostgreSQL with PITR support.', descZh: 'PostgreSQL 在线备份与恢复管理器，支持时间点恢复（PITR）。', url: 'https://github.com/ossc-db/pg_rman' },
+  'WAL-G':           { desc: 'Fast cloud-native backup tool using cloud storage (S3, GCS, Azure) with delta compression.', descZh: '云原生备份工具，支持 S3/GCS/Azure 存储，具备增量压缩能力。', url: 'https://github.com/wal-g/wal-g' },
+  'pg_probackup':    { desc: 'Backup and recovery solution for PostgreSQL with parallel processing and incremental backups.', descZh: 'PostgreSQL 备份与恢复方案，支持并行处理和增量备份。', url: 'https://github.com/postgrespro/pg_probackup' },
+  'pgBackRest':      { desc: 'Reliable, feature-rich backup solution with parallel restore and cloud storage support.', descZh: '功能丰富的可靠备份方案，支持并行恢复和云存储对接。', url: 'https://pgbackrest.org/' },
   // Cluster Management
-  'Patroni':         { desc: 'HA template for PostgreSQL using DCS (etcd/Consul/ZooKeeper) for automatic failover.', url: 'https://patroni.readthedocs.io/' },
-  'repmgr':          { desc: 'Replication manager for PostgreSQL: manages streaming replication and switchover.', url: 'https://repmgr.org/' },
-  'Pacemaker Corosync': { desc: 'Open-source cluster resource manager providing HA for PostgreSQL and other services.', url: 'https://clusterlabs.org/' },
+  'Patroni':         { desc: 'HA template for PostgreSQL using DCS (etcd/Consul/ZooKeeper) for automatic failover.', descZh: '基于 DCS（etcd/Consul/ZooKeeper）的 PostgreSQL 高可用模板，实现自动故障转移。', url: 'https://patroni.readthedocs.io/' },
+  'repmgr':          { desc: 'Replication manager for PostgreSQL: manages streaming replication and switchover.', descZh: 'PostgreSQL 复制管理器，负责流复制管理和主从切换。', url: 'https://repmgr.org/' },
+  'Pacemaker Corosync': { desc: 'Open-source cluster resource manager providing HA for PostgreSQL and other services.', descZh: '开源集群资源管理器，为 PostgreSQL 等服务提供高可用保障。', url: 'https://clusterlabs.org/' },
   // Monitoring
-  'Prometheus':      { desc: 'Open-source monitoring and alerting toolkit; pairs with pg_exporter for PostgreSQL metrics.', url: 'https://prometheus.io/' },
-  'Alertmanager':    { desc: 'Handles alerts from Prometheus, routing notifications to email, Slack, PagerDuty, etc.', url: 'https://prometheus.io/docs/alerting/latest/alertmanager/' },
-  'pgMonitor':       { desc: 'Pre-configured PostgreSQL monitoring stack by Crunchy Data using Prometheus and Grafana.', url: 'https://github.com/CrunchyData/pgmonitor' },
-  'Grafana':         { desc: 'Observability and data visualization platform for dashboards and alerting.', url: 'https://grafana.com/' },
-  'PoWA':            { desc: 'PostgreSQL Workload Analyzer — query performance insights with historical data.', url: 'https://powa.readthedocs.io/' },
+  'Prometheus':      { desc: 'Open-source monitoring and alerting toolkit; pairs with pg_exporter for PostgreSQL metrics.', descZh: '开源监控与告警工具包，配合 pg_exporter 采集 PostgreSQL 指标。', url: 'https://prometheus.io/' },
+  'Alertmanager':    { desc: 'Handles alerts from Prometheus, routing notifications to email, Slack, PagerDuty, etc.', descZh: '处理 Prometheus 告警，将通知路由至邮件、Slack、PagerDuty 等渠道。', url: 'https://prometheus.io/docs/alerting/latest/alertmanager/' },
+  'pgMonitor':       { desc: 'Pre-configured PostgreSQL monitoring stack by Crunchy Data using Prometheus and Grafana.', descZh: 'Crunchy Data 提供的预配置 PostgreSQL 监控方案，基于 Prometheus 和 Grafana。', url: 'https://github.com/CrunchyData/pgmonitor' },
+  'Grafana':         { desc: 'Observability and data visualization platform for dashboards and alerting.', descZh: '可观测性与数据可视化平台，用于构建监控大屏和告警规则。', url: 'https://grafana.com/' },
+  'PoWA':            { desc: 'PostgreSQL Workload Analyzer — query performance insights with historical data.', descZh: 'PostgreSQL 工作负载分析器，基于历史数据提供查询性能洞察。', url: 'https://powa.readthedocs.io/' },
   // Heterogeneous Access
-  'Debezium':        { desc: 'CDC platform for capturing row-level database change events in real time.', url: 'https://debezium.io/' },
-  'pglogical':       { desc: 'Logical replication extension for PostgreSQL supporting selective table replication.', url: 'https://github.com/2ndQuadrant/pglogical' },
-  'mysql_fdw':       { desc: 'PostgreSQL Foreign Data Wrapper for accessing MySQL tables directly from PostgreSQL.', url: 'https://github.com/EnterpriseDB/mysql_fdw' },
-  'oracle_fdw':      { desc: 'PostgreSQL Foreign Data Wrapper for querying Oracle databases transparently.', url: 'https://github.com/laurenz/oracle_fdw' },
+  'Debezium':        { desc: 'CDC platform for capturing row-level database change events in real time.', descZh: '变更数据捕获（CDC）平台，实时捕获数据库行级变更事件。', url: 'https://debezium.io/' },
+  'pglogical':       { desc: 'Logical replication extension for PostgreSQL supporting selective table replication.', descZh: 'PostgreSQL 逻辑复制扩展，支持按需选择性地复制指定表。', url: 'https://github.com/2ndQuadrant/pglogical' },
+  'mysql_fdw':       { desc: 'PostgreSQL Foreign Data Wrapper for accessing MySQL tables directly from PostgreSQL.', descZh: 'PostgreSQL 外部数据包装器，可直接在 PostgreSQL 中查询 MySQL 表。', url: 'https://github.com/EnterpriseDB/mysql_fdw' },
+  'oracle_fdw':      { desc: 'PostgreSQL Foreign Data Wrapper for querying Oracle databases transparently.', descZh: 'PostgreSQL 外部数据包装器，透明访问 Oracle 数据库中的数据。', url: 'https://github.com/laurenz/oracle_fdw' },
   // Multi-Model
-  'TimescaleDB':     { desc: 'Time-series database built on PostgreSQL with automatic partitioning and compression.', url: 'https://www.timescale.com/' },
-  'DocumentDB':      { desc: 'Open-source document database compatible with MongoDB wire protocol, built on PostgreSQL.', url: 'https://github.com/microsoft/documentdb' },
-  'PostgreSQL AGE':  { desc: 'Apache AGE — graph database extension for PostgreSQL supporting openCypher queries.', url: 'https://age.apache.org/' },
-  'FerretDB':        { desc: 'MongoDB-compatible backend using PostgreSQL for storage, enabling Mongo drivers to work.', url: 'https://www.ferretdb.com/' },
+  'TimescaleDB':     { desc: 'Time-series database built on PostgreSQL with automatic partitioning and compression.', descZh: '基于 PostgreSQL 的时序数据库，具备自动分区和数据压缩能力。', url: 'https://www.timescale.com/' },
+  'DocumentDB':      { desc: 'Open-source document database compatible with MongoDB wire protocol, built on PostgreSQL.', descZh: '开源文档数据库，兼容 MongoDB 协议，以 PostgreSQL 为存储引擎。', url: 'https://github.com/microsoft/documentdb' },
+  'PostgreSQL AGE':  { desc: 'Apache AGE — graph database extension for PostgreSQL supporting openCypher queries.', descZh: 'Apache AGE — PostgreSQL 图数据库扩展，支持 openCypher 图查询语言。', url: 'https://age.apache.org/' },
+  'FerretDB':        { desc: 'MongoDB-compatible backend using PostgreSQL for storage, enabling Mongo drivers to work.', descZh: '以 PostgreSQL 为存储层的 MongoDB 兼容后端，让 Mongo 驱动开箱即用。', url: 'https://www.ferretdb.com/' },
   // Geospatial
-  'PostGIS':         { desc: 'Adds spatial and geographic object support to PostgreSQL, the gold standard for GIS.', url: 'https://postgis.net/' },
-  'pgRouting':       { desc: 'Geospatial routing extension extending PostGIS for path-finding and network analysis.', url: 'https://pgrouting.org/' },
+  'PostGIS':         { desc: 'Adds spatial and geographic object support to PostgreSQL, the gold standard for GIS.', descZh: '为 PostgreSQL 添加空间与地理对象支持，是 GIS 领域的事实标准。', url: 'https://postgis.net/' },
+  'pgRouting':       { desc: 'Geospatial routing extension extending PostGIS for path-finding and network analysis.', descZh: '扩展 PostGIS 的地理路由插件，支持最短路径与网络分析。', url: 'https://pgrouting.org/' },
   // ML & AI
-  'pgvector':        { desc: 'Open-source vector similarity search for PostgreSQL, ideal for AI embeddings and RAG.', url: 'https://github.com/pgvector/pgvector' },
-  'MADlib':          { desc: 'Apache MADlib — in-database machine learning library for scalable analytics.', url: 'https://madlib.apache.org/' },
+  'pgvector':        { desc: 'Open-source vector similarity search for PostgreSQL, ideal for AI embeddings and RAG.', descZh: '开源 PostgreSQL 向量相似度搜索扩展，专为 AI 嵌入和 RAG 场景设计。', url: 'https://github.com/pgvector/pgvector' },
+  'MADlib':          { desc: 'Apache MADlib — in-database machine learning library for scalable analytics.', descZh: 'Apache MADlib — 数据库内机器学习库，支持大规模分析计算。', url: 'https://madlib.apache.org/' },
   // DDL & Loading
-  'pg_bulkload':     { desc: 'High-speed data loading tool for PostgreSQL, bypassing WAL for maximum throughput.', url: 'https://github.com/ossc-db/pg_bulkload' },
-  'ddlx':            { desc: 'PostgreSQL extension to extract clean, executable DDL scripts from database objects.', url: 'https://github.com/lacanoid/pgddl' },
+  'pg_bulkload':     { desc: 'High-speed data loading tool for PostgreSQL, bypassing WAL for maximum throughput.', descZh: '高速 PostgreSQL 数据加载工具，绕过 WAL 日志以获得最大吞吐量。', url: 'https://github.com/ossc-db/pg_bulkload' },
+  'ddlx':            { desc: 'PostgreSQL extension to extract clean, executable DDL scripts from database objects.', descZh: 'PostgreSQL 扩展，从数据库对象中提取干净、可执行的 DDL 脚本。', url: 'https://github.com/lacanoid/pgddl' },
   // Online Demo
-  'postgres-wasm':   { desc: 'PostgreSQL compiled to WebAssembly — run a full database in your browser, zero install.', url: 'https://github.com/snaplet/postgres-wasm' },
+  'postgres-wasm':   { desc: 'PostgreSQL compiled to WebAssembly — run a full database in your browser, zero install.', descZh: 'PostgreSQL 的 WebAssembly 编译版本，无需安装即可在浏览器中运行完整数据库。', url: 'https://github.com/snaplet/postgres-wasm' },
   // Job Scheduling
-  'pg_cron':         { desc: 'Cron-based job scheduler for PostgreSQL, running SQL commands on a schedule inside the DB.', url: 'https://github.com/citusdata/pg_cron' },
-  'pgAgent':         { desc: 'Job scheduling agent for PostgreSQL integrated with pgAdmin for scheduled tasks.', url: 'https://www.pgadmin.org/docs/pgadmin4/latest/pgagent.html' },
+  'pg_cron':         { desc: 'Cron-based job scheduler for PostgreSQL, running SQL commands on a schedule inside the DB.', descZh: '基于 Cron 的 PostgreSQL 作业调度器，可在数据库内部按计划执行 SQL 命令。', url: 'https://github.com/citusdata/pg_cron' },
+  'pgAgent':         { desc: 'Job scheduling agent for PostgreSQL integrated with pgAdmin for scheduled tasks.', descZh: 'PostgreSQL 作业调度代理，与 pgAdmin 深度集成，方便管理定时任务。', url: 'https://www.pgadmin.org/docs/pgadmin4/latest/pgagent.html' },
   // Ecosystem Partnerships
-  'StackGres':       { desc: 'Production-grade PostgreSQL on Kubernetes with automated ops, monitoring, and backups.', url: 'https://stackgres.io/' },
-  'Databene':        { desc: 'Database testing and synthetic data generation framework for regression and performance tests.', url: 'https://databene.org/' },
+  'StackGres':       { desc: 'Production-grade PostgreSQL on Kubernetes with automated ops, monitoring, and backups.', descZh: '生产级 Kubernetes 上的 PostgreSQL 方案，自动化运维、监控和备份一体化。', url: 'https://stackgres.io/' },
+  'Databene':        { desc: 'Database testing and synthetic data generation framework for regression and performance tests.', descZh: '数据库测试与合成数据生成框架，用于回归测试和性能基准测试。', url: 'https://databene.org/' },
   // Migration
-  'Ora2Pg':          { desc: 'Free open-source tool for migrating Oracle database schemas and data to PostgreSQL.', url: 'https://ora2pg.darold.net/' },
+  'Ora2Pg':          { desc: 'Free open-source tool for migrating Oracle database schemas and data to PostgreSQL.', descZh: '免费开源的 Oracle 到 PostgreSQL 迁移工具，支持 Schema 和数据全量迁移。', url: 'https://ora2pg.darold.net/' },
   // Cloud
-  'Docker Compose':  { desc: 'Define and run multi-container applications; official IvorySQL Docker images available.', url: 'https://docs.docker.com/compose/' },
-  'Podman':          { desc: 'Daemonless, rootless container engine fully compatible with Docker images and compose files.', url: 'https://podman.io/' },
-  'Docker Swarm':    { desc: 'Native Docker clustering for deploying IvorySQL in a replicated, highly available setup.', url: 'https://docs.docker.com/engine/swarm/' },
+  'Docker Compose':  { desc: 'Define and run multi-container applications; official IvorySQL Docker images available.', descZh: '多容器应用编排工具，IvorySQL 官方提供 Docker 镜像支持。', url: 'https://docs.docker.com/compose/' },
+  'Podman':          { desc: 'Daemonless, rootless container engine fully compatible with Docker images and compose files.', descZh: '无守护进程、无 root 权限的容器引擎，完全兼容 Docker 镜像和 Compose 文件。', url: 'https://podman.io/' },
+  'Docker Swarm':    { desc: 'Native Docker clustering for deploying IvorySQL in a replicated, highly available setup.', descZh: 'Docker 原生集群方案，用于以高可用、多副本方式部署 IvorySQL。', url: 'https://docs.docker.com/engine/swarm/' },
 };
 
 const ECOSYSTEM_TOOL_STATUS = {
@@ -756,6 +756,7 @@ export default function Home() {
                       {group.items.map((item) => {
                         const tone = getEcosystemToolTone(item);
                         const meta = TOOL_META[item];
+                        const tooltipDesc = meta && (isZh ? (meta.descZh || meta.desc) : meta.desc);
                         return (
                           <span
                             key={`${group.title}-${item}`}
@@ -768,16 +769,16 @@ export default function Home() {
                             {item}
                             {meta && (
                               <span className={styles.ecosystemTooltip} role="tooltip">
-                                <span className={styles.ecosystemTooltipText}>{meta.desc}</span>
+                                <span className={styles.ecosystemTooltipText}>{tooltipDesc}</span>
                                 {meta.url && (
                                   <a
                                     href={meta.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={styles.ecosystemTooltipLink}
-                                    aria-label={`Visit ${item} homepage`}
+                                    aria-label={isZh ? `访问 ${item} 官网` : `Visit ${item} homepage`}
                                   >
-                                    Visit homepage →
+                                    {isZh ? '访问官网 →' : 'Visit homepage →'}
                                   </a>
                                 )}
                               </span>
