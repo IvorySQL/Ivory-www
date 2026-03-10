@@ -179,6 +179,84 @@
   content: none;
 }
 
+/* ── Hero Trust Bar ────────────────────────────────────────────── */
+.heroTrustBar {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 20px 0 48px;  /* extra bottom so statsStrip overlap doesn't cut off content */
+  margin-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+}
+
+.heroTrustLabel {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(200, 220, 255, 0.45);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.heroTrustList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+}
+
+.heroTrustItem {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo images — white-tinted, muted opacity */
+.heroTrustLogo {
+  height: 22px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.45;
+  transition: opacity 0.2s;
+}
+
+.heroTrustItem:hover .heroTrustLogo {
+  opacity: 0.75;
+}
+
+/* Text fallback badge for companies without logos */
+.heroTrustText {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(200, 220, 255, 0.45);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.heroTrustItem:hover .heroTrustText {
+  color: rgba(200, 220, 255, 0.75);
+}
+
+/* Dot separator between items */
+.heroTrustList > li + li::before {
+  content: '·';
+  margin-right: 24px;
+  color: rgba(255, 255, 255, 0.18);
+  font-size: 1.1rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
 .heroTitle {
   margin: 0;
   background: linear-gradient(135deg, #ffffff 0%, #d4e8ff 100%);
@@ -2118,6 +2196,19 @@
 
   .heroSection {
     padding: 62px 0 76px;
+  }
+
+  .heroTrustBar {
+    gap: 12px 16px;
+    padding-bottom: 32px;
+  }
+
+  .heroTrustList {
+    gap: 4px 16px;
+  }
+
+  .heroTrustList > li + li::before {
+    margin-right: 16px;
   }
 
   .heroContainer {

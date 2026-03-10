@@ -25,6 +25,16 @@ const INSTALL_CARD_ICONS = [Icon04, Icon01, Icon06];
 
 const RELEASES_URL = 'https://github.com/IvorySQL/IvorySQL/releases';
 const ONLINE_TRIAL_URL = 'https://trial.ivorysql.org/';
+
+/* Trusted-by customer list — logo path optional; nameZh shown in zh locale */
+const TRUSTED_CUSTOMERS = [
+  { name: 'Highgo',                         nameZh: '瀚高软件' },
+  { name: 'Data Bene',                      logo: '/img/partners/databene.png' },
+  { name: 'Ongres',                         logo: '/img/partners/ongres.png' },
+  { name: 'State Grid Corporation',         nameZh: '国家电网' },
+  { name: 'Zhongtai Securities',            nameZh: '中泰证券' },
+  { name: 'Goldwind',                       nameZh: '金风科技' },
+];
 const LATEST_RELEASE_API_URL = 'https://api.github.com/repos/IvorySQL/IvorySQL/releases/latest';
 const LATEST_VERSION_CACHE_KEY = 'ivorysql_latest_release_label';
 const LATEST_VERSION_CACHE_TTL = 6 * 60 * 60 * 1000;
@@ -195,12 +205,7 @@ const CONTENT = {
       { label: '在线体验', href: ONLINE_TRIAL_URL, ariaLabel: '在线体验 IvorySQL' },
       { label: '最新活动', to: '/webinars-page', ariaLabel: '查看 IvorySQL 最新活动' },
     ],
-    heroTrust: [
-      { icon: '✓', text: 'Apache 2.0 开源' },
-      { icon: '✓', text: '基于 PostgreSQL 18' },
-      { icon: '✓', text: '多企业生产部署' },
-      { icon: '✓', text: '全球开发者社区' },
-    ],
+    heroTrustLabel: '受到众多企业信赖',
     statsItems: [
       { value: 'PostgreSQL 18', label: '内核版本' },
       { value: 'Apache 2.0', label: '开源协议' },
@@ -358,12 +363,7 @@ const CONTENT = {
       { label: 'Online Trial', href: ONLINE_TRIAL_URL, ariaLabel: 'Try IvorySQL Online' },
       { label: 'Latest Webinars', to: '/webinars-page', ariaLabel: 'View Latest IvorySQL Webinars' },
     ],
-    heroTrust: [
-      { icon: '✓', text: 'Apache 2.0 Licensed' },
-      { icon: '✓', text: 'PostgreSQL 18 Based' },
-      { icon: '✓', text: 'Production-Proven' },
-      { icon: '✓', text: 'Global Community' },
-    ],
+    heroTrustLabel: 'Trusted by enterprises worldwide',
     statsItems: [
       { value: 'PostgreSQL 18', label: 'Kernel Base' },
       { value: 'Apache 2.0', label: 'Open Source' },
@@ -706,6 +706,24 @@ export default function Home() {
             <div className={styles.heroVisual} aria-hidden="true">
               <HeroElephant />
             </div>
+          </div>
+
+          {/* Trusted-by customer bar */}
+          <div className={styles.heroTrustBar}>
+            <span className={styles.heroTrustLabel}>{content.heroTrustLabel}</span>
+            <ul className={styles.heroTrustList} aria-label={content.heroTrustLabel}>
+              {TRUSTED_CUSTOMERS.map((c) => {
+                const displayName = isZh && c.nameZh ? c.nameZh : c.name;
+                return (
+                  <li key={c.name} className={styles.heroTrustItem}>
+                    {c.logo
+                      ? <img src={c.logo} alt={displayName} className={styles.heroTrustLogo} />
+                      : <span className={styles.heroTrustText}>{displayName}</span>
+                    }
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </section>
 
