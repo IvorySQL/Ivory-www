@@ -1,8 +1,3 @@
-# Provide an English-accessible entry for users in CN.
-# This avoids geolocation redirects when opening /en/ in deploy previews.
-/en/  /  200
-/en/*  /:splat  200
-
 # Redirect users from China to chinese version at /zh-CN.
 /  /zh-cn 302! Country=cn
 # Also users with Chinese language should be redirected to /zh-cn

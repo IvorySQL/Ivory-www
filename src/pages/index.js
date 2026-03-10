@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import styles from './index.module.css';
 
 const Icon01 = require('../../svg/icon-01.svg').default;
@@ -24,10 +24,7 @@ const SCENARIO_CARD_ICONS = [Icon04, Icon02, Icon06, Icon01, Icon05];
 const INSTALL_CARD_ICONS = [Icon04, Icon01, Icon06];
 
 const RELEASES_URL = 'https://github.com/IvorySQL/IvorySQL/releases';
-const ONLINE_TRIAL_URL = 'https://trial.ivorysql.org/';
-const LATEST_RELEASE_API_URL = 'https://api.github.com/repos/IvorySQL/IvorySQL/releases/latest';
-const LATEST_VERSION_CACHE_KEY = 'ivorysql_latest_release_label';
-const LATEST_VERSION_CACHE_TTL = 6 * 60 * 60 * 1000;
+const ONLINE_TRIAL_URL = 'http://trial.ivorysql.org:8080/';
 
 const ECOSYSTEM_TOOL_STATUS = {
   progress: new Set(['citus', 'pg_ai_query', 'stackgres', 'databene', 'madlib']),
@@ -51,55 +48,6 @@ function getEcosystemToolTone(toolName) {
     return 'planned';
   }
   return 'supported';
-}
-
-function formatLatestReleaseLabel(release, fallbackLabel) {
-  const source = `${release?.name || ''} ${release?.tag_name || ''}`;
-  const versionMatch = source.match(/(\d+(?:\.\d+){1,2})/);
-  if (versionMatch) {
-    return `IvorySQL ${versionMatch[1]}`;
-  }
-  const cleaned = (release?.name || release?.tag_name || '').trim();
-  return cleaned || fallbackLabel;
-}
-
-function readLatestVersionFromCache() {
-  if (typeof window === 'undefined') {
-    return null;
-  }
-  try {
-    const rawCache = window.localStorage.getItem(LATEST_VERSION_CACHE_KEY);
-    if (!rawCache) {
-      return null;
-    }
-    const parsedCache = JSON.parse(rawCache);
-    if (!parsedCache?.label || !parsedCache?.time) {
-      return null;
-    }
-    if (Date.now() - parsedCache.time > LATEST_VERSION_CACHE_TTL) {
-      return null;
-    }
-    return parsedCache.label;
-  } catch {
-    return null;
-  }
-}
-
-function writeLatestVersionToCache(label) {
-  if (typeof window === 'undefined') {
-    return;
-  }
-  try {
-    window.localStorage.setItem(
-      LATEST_VERSION_CACHE_KEY,
-      JSON.stringify({
-        label,
-        time: Date.now(),
-      })
-    );
-  } catch {
-    // Ignore cache write failures.
-  }
 }
 
 const CONTENT = {
@@ -456,7 +404,6 @@ export default function Home() {
   const { siteConfig, i18n } = useDocusaurusContext();
   const isZh = i18n.currentLocale.toLowerCase().startsWith('zh');
   const content = isZh ? CONTENT.zh : CONTENT.en;
-  const [latestVersionLabel, setLatestVersionLabel] = useState(content.latestVersionLabel);
   const certImages = [
     '/img/partners/cert1.jpg',
     '/img/partners/cert2.jpg',
@@ -465,45 +412,6 @@ export default function Home() {
     '/img/partners/cert5.png',
   ];
   const certCarouselImages = [...certImages, ...certImages];
-
-  useEffect(() => {
-    setLatestVersionLabel(content.latestVersionLabel);
-  }, [content.latestVersionLabel]);
-
-  useEffect(() => {
-    let isCancelled = false;
-    const cachedLabel = readLatestVersionFromCache();
-    if (cachedLabel) {
-      setLatestVersionLabel(cachedLabel);
-    }
-
-    async function fetchLatestRelease() {
-      try {
-        const response = await fetch(LATEST_RELEASE_API_URL, {
-          headers: { Accept: 'application/vnd.github+json' },
-        });
-        if (!response.ok) {
-          return;
-        }
-        const release = await response.json();
-        const fetchedLabel = formatLatestReleaseLabel(release, content.latestVersionLabel);
-        if (!fetchedLabel) {
-          return;
-        }
-        writeLatestVersionToCache(fetchedLabel);
-        if (!isCancelled) {
-          setLatestVersionLabel(fetchedLabel);
-        }
-      } catch {
-        // Keep fallback version label when request fails.
-      }
-    }
-
-    fetchLatestRelease();
-    return () => {
-      isCancelled = true;
-    };
-  }, [content.latestVersionLabel]);
 
   return (
     <Layout title={`${siteConfig.title}`} description="Open Source Oracle compatible PostgreSQL">
@@ -525,14 +433,14 @@ export default function Home() {
               <div className={styles.latestVersion}>
                 <span>{content.latestVersionPrefix}</span>
                 <a href={RELEASES_URL} target="_blank" rel="noopener noreferrer">
-                  {latestVersionLabel}
+                  {content.latestVersionLabel}
                 </a>
               </div>
-              <div className={clsx(styles.heroActions, !isZh && styles.heroActionsEn)}>
+              <div className={styles.heroActions}>
                 {content.actions.map((action) => (
                   <ActionLink
                     key={action.label}
-                    className={clsx('button button--lg', styles.actionButton, !isZh && styles.actionButtonEn)}
+                    className={clsx('button button--lg', styles.actionButton)}
                     action={action}
                   />
                 ))}
