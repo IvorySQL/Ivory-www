@@ -973,6 +973,50 @@ export default function Home() {
         </section>
 
         <section className={styles.ctaBanner} data-reveal="up">
+          {/* Tech decorative elements */}
+          <div className={styles.ctaDecor} aria-hidden="true">
+            {/* Right: concentric orbital rings with node dots */}
+            <svg className={styles.ctaDecorRings} viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="200" cy="200" r="70"  stroke="rgba(47,116,255,0.14)" strokeWidth="1"/>
+              <circle cx="200" cy="200" r="120" stroke="rgba(47,116,255,0.09)" strokeWidth="1"/>
+              <circle cx="200" cy="200" r="170" stroke="rgba(47,116,255,0.06)" strokeWidth="1"/>
+              <circle cx="200" cy="200" r="195" stroke="rgba(47,116,255,0.04)" strokeWidth="1" strokeDasharray="4 8"/>
+              {/* Node dots on rings */}
+              <circle cx="270" cy="200" r="5" fill="rgba(47,116,255,0.35)"/>
+              <circle cx="200" cy="80"  r="4" fill="rgba(47,116,255,0.25)"/>
+              <circle cx="116" cy="248" r="3.5" fill="rgba(47,116,255,0.20)"/>
+              <circle cx="320" cy="200" r="3" fill="rgba(47,116,255,0.18)"/>
+              <circle cx="200" cy="30"  r="2.5" fill="rgba(47,116,255,0.12)"/>
+              {/* Connector lines between nodes */}
+              <line x1="270" y1="200" x2="320" y2="200" stroke="rgba(47,116,255,0.18)" strokeWidth="1"/>
+              <line x1="200" y1="80"  x2="200" y2="30"  stroke="rgba(47,116,255,0.12)" strokeWidth="1"/>
+              {/* Center dot */}
+              <circle cx="200" cy="200" r="8" fill="rgba(47,116,255,0.12)"/>
+              <circle cx="200" cy="200" r="3" fill="rgba(47,116,255,0.40)"/>
+            </svg>
+            {/* Left: circuit board fragment */}
+            <svg className={styles.ctaDecorCircuit} viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Horizontal traces */}
+              <line x1="40"  y1="80"  x2="160" y2="80"  stroke="rgba(47,116,255,0.14)" strokeWidth="1.5"/>
+              <line x1="80"  y1="140" x2="220" y2="140" stroke="rgba(47,116,255,0.10)" strokeWidth="1.5"/>
+              <line x1="60"  y1="200" x2="180" y2="200" stroke="rgba(47,116,255,0.08)" strokeWidth="1.5"/>
+              {/* Vertical traces */}
+              <line x1="100" y1="40"  x2="100" y2="160" stroke="rgba(47,116,255,0.12)" strokeWidth="1.5"/>
+              <line x1="160" y1="80"  x2="160" y2="200" stroke="rgba(47,116,255,0.09)" strokeWidth="1.5"/>
+              <line x1="60"  y1="140" x2="60"  y2="220" stroke="rgba(47,116,255,0.07)" strokeWidth="1.5"/>
+              {/* Corner L-bends */}
+              <path d="M200 60 H240 V100" stroke="rgba(47,116,255,0.10)" strokeWidth="1.5"/>
+              <path d="M40 200 V240 H100" stroke="rgba(47,116,255,0.08)" strokeWidth="1.5"/>
+              {/* Node pads */}
+              <rect x="94"  y="74"  width="12" height="12" rx="3" fill="rgba(47,116,255,0.20)"/>
+              <rect x="154" y="134" width="12" height="12" rx="3" fill="rgba(47,116,255,0.16)"/>
+              <rect x="54"  y="194" width="12" height="12" rx="3" fill="rgba(47,116,255,0.13)"/>
+              <rect x="94"  y="134" width="10" height="10" rx="2" fill="rgba(47,116,255,0.12)"/>
+              <circle cx="240" cy="100" r="5" fill="rgba(47,116,255,0.22)"/>
+              <circle cx="100" cy="240" r="5" fill="rgba(47,116,255,0.18)"/>
+              <circle cx="40"  cy="80"  r="4" fill="rgba(47,116,255,0.16)"/>
+            </svg>
+          </div>
           <div className="container">
             <div className={styles.ctaBannerInner}>
               <h2 className={styles.ctaBannerTitle}>{isZh ? '准备好开始迁移了吗？' : 'Ready to Start Your Migration?'}</h2>

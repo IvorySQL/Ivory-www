@@ -1946,21 +1946,54 @@
   overflow: hidden;
 }
 
-/* No texture needed on light bg */
+/* Dot-grid texture */
 .ctaBanner::before {
-  display: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(47, 116, 255, 0.13) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
 }
 
-/* Soft centered glow */
+/* Centered soft glow */
 .ctaBanner::after {
   content: '';
   position: absolute;
-  top: -60px; left: 50%;
+  top: -80px; left: 50%;
   transform: translateX(-50%);
-  width: 560px; height: 340px;
+  width: 640px; height: 400px;
   border-radius: 50%;
-  background: radial-gradient(ellipse, rgba(47, 116, 255, 0.07) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(47, 116, 255, 0.09) 0%, transparent 68%);
   pointer-events: none;
+}
+
+/* Decorative SVG container */
+.ctaDecor {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ctaDecorRings {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 420px;
+  height: 420px;
+  opacity: 0.55;
+}
+
+.ctaDecorCircuit {
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  height: 280px;
+  opacity: 0.45;
 }
 
 .ctaBannerInner {
