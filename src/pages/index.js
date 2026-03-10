@@ -31,7 +31,7 @@ const TRUSTED_CUSTOMERS = [
   { name: 'Highgo',                         nameZh: '瀚高软件',  logo: '/img/partners/highgo.png' },
   { name: 'Data Bene',                      logo: '/img/partners/databene.png' },
   { name: 'Ongres',                         logo: '/img/partners/ongres.png' },
-  { name: 'State Grid Corporation',         nameZh: '国家电网',  logo: '/img/partners/state-grid.png',          hasBg: true },
+  { name: 'State Grid Corporation',         nameZh: '国家电网',  logo: '/img/partners/state-grid.png',          hasBg: true, logoHeight: 52 },
   { name: 'Zhongtai Securities',            nameZh: '中泰证券',  logo: '/img/partners/zhongtai-securities.png' },
   { name: 'Goldwind',                       nameZh: '金风科技',  logo: '/img/partners/goldwind.png' },
 ];
@@ -717,7 +717,7 @@ export default function Home() {
                 return (
                   <li key={c.name} className={styles.heroTrustItem}>
                     {c.logo
-                      ? <img src={c.logo} alt={displayName} className={c.hasBg ? styles.heroTrustLogoBg : styles.heroTrustLogo} />
+                      ? <img src={c.logo} alt={displayName} className={c.hasBg ? styles.heroTrustLogoBg : styles.heroTrustLogo} style={c.logoHeight ? { height: c.logoHeight } : undefined} />
                       : <span className={styles.heroTrustText}>{displayName}</span>
                     }
                   </li>
