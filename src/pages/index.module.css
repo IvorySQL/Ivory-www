@@ -997,7 +997,7 @@
 .scenariosGrid .infoCard::after  { display: none; }
 
 .scenariosGrid .infoCard:hover {
-  transform: translateY(-8px) scale(1.01);
+  transform: scale(1.02);
   filter: brightness(1.08);
 }
 
