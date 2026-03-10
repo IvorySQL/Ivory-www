@@ -925,7 +925,7 @@
   gap: 0;
 }
 
-/* Top color strip */
+/* Top color strip — default blue; overridden per card below */
 .infoCard::before {
   content: '';
   position: absolute;
@@ -952,11 +952,76 @@
   user-select: none;
 }
 
+/* ── Per-card accent colors (bento grid) ── */
+/* 1 · Blue — brand */
+.advantagesGrid > article:nth-child(1) {
+  background: linear-gradient(160deg, #ffffff 0%, #f0f5ff 100%);
+  border-color: #c5d8ff;
+}
+.advantagesGrid > article:nth-child(1)::before { background: linear-gradient(90deg, #2f74ff, #60a5fa); }
+.advantagesGrid > article:nth-child(1)::after  { color: rgba(47, 116, 255, 0.06); }
+
+/* 2 · Teal */
+.advantagesGrid > article:nth-child(2) {
+  background: linear-gradient(160deg, #ffffff 0%, #f0fdf9 100%);
+  border-color: #99e6d3;
+}
+.advantagesGrid > article:nth-child(2)::before { background: linear-gradient(90deg, #0d9488, #2dd4bf); }
+.advantagesGrid > article:nth-child(2)::after  { color: rgba(13, 148, 136, 0.06); }
+
+/* 3 · Violet */
+.advantagesGrid > article:nth-child(3) {
+  background: linear-gradient(160deg, #ffffff 0%, #f6f2ff 100%);
+  border-color: #d4bfff;
+}
+.advantagesGrid > article:nth-child(3)::before { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
+.advantagesGrid > article:nth-child(3)::after  { color: rgba(124, 58, 237, 0.06); }
+
+/* 4 · Amber */
+.advantagesGrid > article:nth-child(4) {
+  background: linear-gradient(160deg, #ffffff 0%, #fffbeb 100%);
+  border-color: #fde68a;
+}
+.advantagesGrid > article:nth-child(4)::before { background: linear-gradient(90deg, #d97706, #fbbf24); }
+.advantagesGrid > article:nth-child(4)::after  { color: rgba(217, 119, 6, 0.07); }
+
+/* 5 · Emerald */
+.advantagesGrid > article:nth-child(5) {
+  background: linear-gradient(160deg, #ffffff 0%, #f0fdf4 100%);
+  border-color: #86efac;
+}
+.advantagesGrid > article:nth-child(5)::before { background: linear-gradient(90deg, #059669, #34d399); }
+.advantagesGrid > article:nth-child(5)::after  { color: rgba(5, 150, 105, 0.06); }
+
+/* 6 · Rose */
+.advantagesGrid > article:nth-child(6) {
+  background: linear-gradient(160deg, #ffffff 0%, #fff1f2 100%);
+  border-color: #fecdd3;
+}
+.advantagesGrid > article:nth-child(6)::before { background: linear-gradient(90deg, #e11d48, #fb7185); }
+.advantagesGrid > article:nth-child(6)::after  { color: rgba(225, 29, 72, 0.06); }
+
+/* 7 · Indigo */
+.advantagesGrid > article:nth-child(7) {
+  background: linear-gradient(160deg, #ffffff 0%, #eef2ff 100%);
+  border-color: #c7d2fe;
+}
+.advantagesGrid > article:nth-child(7)::before { background: linear-gradient(90deg, #4338ca, #818cf8); }
+.advantagesGrid > article:nth-child(7)::after  { color: rgba(67, 56, 202, 0.06); }
+
+/* 8 · Cyan */
+.advantagesGrid > article:nth-child(8) {
+  background: linear-gradient(160deg, #ffffff 0%, #ecfeff 100%);
+  border-color: #a5f3fc;
+}
+.advantagesGrid > article:nth-child(8)::before { background: linear-gradient(90deg, #0891b2, #22d3ee); }
+.advantagesGrid > article:nth-child(8)::after  { color: rgba(8, 145, 178, 0.06); }
+
 .infoCard:hover {
   box-shadow:
-    0 0 0 1px rgba(17, 63, 132, 0.14),
-    0 20px 40px rgba(17, 63, 132, 0.14);
-  border-color: #b8d0ff;
+    0 0 0 1px rgba(17, 63, 132, 0.10),
+    0 16px 36px rgba(17, 63, 132, 0.12);
+  filter: brightness(1.02);
 }
 
 /* ── Scenario cards: full gradient background, centered icon+text ── */
