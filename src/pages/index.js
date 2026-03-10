@@ -28,12 +28,12 @@ const ONLINE_TRIAL_URL = 'https://trial.ivorysql.org/';
 
 /* Trusted-by customer list — logo path optional; nameZh shown in zh locale */
 const TRUSTED_CUSTOMERS = [
-  { name: 'Highgo',                         nameZh: '瀚高软件' },
+  { name: 'Highgo',                         nameZh: '瀚高软件',  logo: '/img/partners/highgo.png' },
   { name: 'Data Bene',                      logo: '/img/partners/databene.png' },
   { name: 'Ongres',                         logo: '/img/partners/ongres.png' },
-  { name: 'State Grid Corporation',         nameZh: '国家电网',  logo: '/img/partners/state-grid.png' },
-  { name: 'Zhongtai Securities',            nameZh: '中泰证券' },
-  { name: 'Goldwind',                       nameZh: '金风科技' },
+  { name: 'State Grid Corporation',         nameZh: '国家电网',  logo: '/img/partners/state-grid.png',          hasBg: true },
+  { name: 'Zhongtai Securities',            nameZh: '中泰证券',  logo: '/img/partners/zhongtai-securities.png' },
+  { name: 'Goldwind',                       nameZh: '金风科技',  logo: '/img/partners/goldwind.png' },
 ];
 const LATEST_RELEASE_API_URL = 'https://api.github.com/repos/IvorySQL/IvorySQL/releases/latest';
 const LATEST_VERSION_CACHE_KEY = 'ivorysql_latest_release_label';
@@ -717,7 +717,7 @@ export default function Home() {
                 return (
                   <li key={c.name} className={styles.heroTrustItem}>
                     {c.logo
-                      ? <img src={c.logo} alt={displayName} className={styles.heroTrustLogo} />
+                      ? <img src={c.logo} alt={displayName} className={c.hasBg ? styles.heroTrustLogoBg : styles.heroTrustLogo} />
                       : <span className={styles.heroTrustText}>{displayName}</span>
                     }
                   </li>

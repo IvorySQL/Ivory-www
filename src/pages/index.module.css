@@ -92,7 +92,7 @@
 .heroSection {
   position: relative;
   overflow: hidden;
-  padding: 108px 0 192px; /* extra bottom padding — compensates for 48px section overlap */
+  padding: 48px 0 112px; /* extra bottom padding — compensates for 48px section overlap */
   background:
     radial-gradient(circle at 76% 18%, rgba(159, 220, 255, 0.22) 0%, rgba(159, 220, 255, 0) 42%),
     radial-gradient(circle at 12% -16%, rgba(84, 143, 255, 0.3) 0%, rgba(84, 143, 255, 0) 36%),
@@ -219,9 +219,9 @@
   align-items: center;
 }
 
-/* Logo images — white-tinted, muted opacity */
+/* Logo images — transparent bg: turn white via brightness+invert */
 .heroTrustLogo {
-  height: 22px;
+  height: 28px;
   width: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
@@ -231,6 +231,21 @@
 
 .heroTrustItem:hover .heroTrustLogo {
   opacity: 0.75;
+}
+
+/* Logo images — white bg: invert black→white, screen-blend to hide white bg */
+.heroTrustLogoBg {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  filter: invert(1);
+  mix-blend-mode: screen;
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}
+
+.heroTrustItem:hover .heroTrustLogoBg {
+  opacity: 0.85;
 }
 
 /* Text fallback badge for companies without logos */
