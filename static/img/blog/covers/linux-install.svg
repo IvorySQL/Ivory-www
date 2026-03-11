@@ -1,0 +1,92 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f14"/>
+      <stop offset="100%" stop-color="#0d1a10"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Terminal window -->
+  <rect x="80" y="60" width="750" height="440" rx="12" fill="#0d1117" stroke="#1e4023" stroke-width="2"/>
+  <!-- Title bar -->
+  <rect x="80" y="60" width="750" height="40" rx="12" fill="#161b22"/>
+  <rect x="80" y="88" width="750" height="12" fill="#161b22"/>
+  <circle cx="108" cy="80" r="7" fill="#ff5f57"/>
+  <circle cx="132" cy="80" r="7" fill="#ffbd2e"/>
+  <circle cx="156" cy="80" r="7" fill="#28c840"/>
+  <text x="455" y="85" font-family="monospace" font-size="13" fill="#4b5563" text-anchor="middle">bash — IvorySQL Installation</text>
+
+  <!-- Terminal content -->
+  <text x="108" y="128" font-family="monospace" font-size="13" fill="#4ade80">user@linux:~$</text>
+  <text x="222" y="128" font-family="monospace" font-size="13" fill="#e2e8f0"> git clone https://github.com/IvorySQL/IvorySQL.git</text>
+
+  <text x="108" y="152" font-family="monospace" font-size="13" fill="#6b7280">Cloning into 'IvorySQL'...</text>
+  <text x="108" y="172" font-family="monospace" font-size="13" fill="#6b7280">remote: Enumerating objects: 89421, done.</text>
+  <text x="108" y="192" font-family="monospace" font-size="13" fill="#6b7280">remote: Counting objects: 100% (89421/89421), done.</text>
+  <text x="108" y="212" font-family="monospace" font-size="13" fill="#4ade80">✓ Receiving objects: 100%  —  done.</text>
+
+  <text x="108" y="244" font-family="monospace" font-size="13" fill="#4ade80">user@linux:~/IvorySQL$</text>
+  <text x="264" y="244" font-family="monospace" font-size="13" fill="#e2e8f0"> ./configure --prefix=/usr/local/ivorysql</text>
+
+  <text x="108" y="268" font-family="monospace" font-size="13" fill="#6b7280">checking build system type... x86_64-pc-linux-gnu</text>
+  <text x="108" y="288" font-family="monospace" font-size="13" fill="#6b7280">checking for gcc... gcc</text>
+  <text x="108" y="308" font-family="monospace" font-size="13" fill="#4ade80">configure: creating ./config.status</text>
+
+  <text x="108" y="340" font-family="monospace" font-size="13" fill="#4ade80">user@linux:~/IvorySQL$</text>
+  <text x="264" y="340" font-family="monospace" font-size="13" fill="#e2e8f0"> make -j$(nproc) &amp;&amp; sudo make install</text>
+
+  <!-- Progress bar -->
+  <rect x="108" y="356" width="680" height="16" rx="8" fill="#1a2e1a"/>
+  <rect x="108" y="356" width="544" height="16" rx="8" fill="#16a34a"/>
+  <text x="800" y="368" font-family="monospace" font-size="12" fill="#4ade80">80%</text>
+
+  <text x="108" y="396" font-family="monospace" font-size="13" fill="#6b7280">gcc -O2 -o postgres ... backend/main/main.o</text>
+  <text x="108" y="416" font-family="monospace" font-size="13" fill="#4ade80">✓ IvorySQL installed to /usr/local/ivorysql</text>
+
+  <text x="108" y="448" font-family="monospace" font-size="13" fill="#4ade80">user@linux:~$</text>
+  <text x="196" y="448" font-family="monospace" font-size="13" fill="#e2e8f0"> ivorysql --version</text>
+  <text x="108" y="472" font-family="monospace" font-size="13" fill="#60a5fa">IvorySQL 4.0 on x86_64-pc-linux-gnu</text>
+
+  <!-- Blinking cursor -->
+  <rect x="108" y="490" width="10" height="16" fill="#4ade80" fill-opacity="0.8"/>
+
+  <!-- Right panel: OS icons / Tux -->
+  <circle cx="1000" cy="220" r="100" fill="#0d1a10" stroke="#16a34a" stroke-width="1.5" stroke-opacity="0.4"/>
+  <!-- Simplified Tux (penguin) shape -->
+  <ellipse cx="1000" cy="185" rx="40" ry="48" fill="#1a1a1a"/>
+  <ellipse cx="1000" cy="200" rx="24" ry="30" fill="#f8f8f8"/>
+  <circle cx="988" cy="172" r="8" fill="#1a1a1a"/>
+  <circle cx="1012" cy="172" r="8" fill="#1a1a1a"/>
+  <circle cx="989" cy="172" r="4" fill="#f0a000"/>
+  <circle cx="1013" cy="172" r="4" fill="#f0a000"/>
+  <ellipse cx="1000" cy="167" rx="12" ry="6" fill="#f0a000"/>
+  <ellipse cx="1000" cy="228" rx="30" ry="10" fill="#1a1a1a"/>
+  <ellipse cx="982" cy="234" rx="10" ry="5" fill="#f0a000"/>
+  <ellipse cx="1018" cy="234" rx="10" ry="5" fill="#f0a000"/>
+
+  <!-- Linux distro badges -->
+  <rect x="870" y="340" width="100" height="32" rx="6" fill="#cc4911" fill-opacity="0.8"/>
+  <text x="920" y="361" font-family="monospace" font-size="13" font-weight="700" fill="white" text-anchor="middle">RHEL</text>
+  <rect x="985" y="340" width="100" height="32" rx="6" fill="#e95420" fill-opacity="0.8"/>
+  <text x="1035" y="361" font-family="monospace" font-size="13" font-weight="700" fill="white" text-anchor="middle">Ubuntu</text>
+  <rect x="1100" y="340" width="78" height="32" rx="6" fill="#1793d1" fill-opacity="0.8"/>
+  <text x="1139" y="361" font-family="monospace" font-size="13" font-weight="700" fill="white" text-anchor="middle">Arch</text>
+
+  <!-- Category chip -->
+  <rect x="44" y="44" width="110" height="32" rx="16" fill="#16a34a" fill-opacity="0.25" stroke="#16a34a" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="99" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#4ade80" text-anchor="middle" letter-spacing="1">IVORYSQL</text>
+
+  <!-- Bottom -->
+  <defs>
+    <linearGradient id="btm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1a10" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#050b06" stop-opacity="0.96"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="440" width="1200" height="190" fill="url(#btm)"/>
+
+  <text x="600" y="520" font-family="system-ui,-apple-system,sans-serif" font-size="40" font-weight="800" fill="#ffffff" text-anchor="middle">Compiling IvorySQL on Linux</text>
+  <text x="600" y="562" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#4ade80" text-anchor="middle" fill-opacity="0.8">Step-by-step build &amp; installation guide</text>
+  <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
+</svg>

@@ -4,7 +4,7 @@ title: Analysis of the Invisible Column Feature in IvorySQL 4.0
 authors: [official]
 authorTwitter: IvorySql
 category: IvorySQL
-image: img/blog/IvorySQL-Invisible-Column.png
+image: img/blog/covers/invisible-column.svg
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, Invisible Column]
 ---
 

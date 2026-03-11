@@ -4,17 +4,10 @@
   to   { opacity: 1; }
 }
 
+/* latestPulse: animate opacity on ::before ring instead of box-shadow (compositor-only) */
 @keyframes latestPulse {
-  0%, 100% {
-    box-shadow:
-      0 0 0 0 rgba(251, 175, 66, 0),
-      0 10px 22px rgba(6, 22, 70, 0.22);
-  }
-  50% {
-    box-shadow:
-      0 0 0 6px rgba(251, 175, 66, 0.16),
-      0 10px 22px rgba(6, 22, 70, 0.22);
-  }
+  0%, 100% { opacity: 0; }
+  50%       { opacity: 1; }
 }
 
 @keyframes cardIn {
@@ -121,7 +114,7 @@
   inset: 0;
   pointer-events: none;
   transform: translateZ(0);
-  will-change: auto;
+  will-change: transform;
   background:
     /* ── Stars: 1px tiny dots ── */
     radial-gradient(1px 1px at  8% 12%, rgba(255,255,255,0.85) 0%, transparent 100%),
@@ -205,6 +198,10 @@
   display: block;
   width: clamp(420px, 34vw, 620px);
   height: auto;
+  /* will-change promotes to its own compositor layer:
+     filter is rasterized once into the layer texture,
+     the infinite translate animation then only moves the layer — no repaint */
+  will-change: transform;
   filter:
     drop-shadow(0 2px 0 rgba(255, 255, 255, 0.08))
     drop-shadow(0 18px 34px rgba(3, 18, 63, 0.42));
@@ -280,14 +277,13 @@
   opacity: 0.75;
 }
 
-/* Logo images — white bg: invert black→white, screen-blend to hide white bg */
+/* Logo images — white bg: brightness+invert to white, same as regular logos */
 .heroTrustLogoBg {
   height: 28px;
   width: auto;
   object-fit: contain;
-  filter: invert(1);
-  mix-blend-mode: screen;
-  opacity: 0.55;
+  filter: brightness(0) invert(1);
+  opacity: 0.45;
   transition: opacity 0.2s;
 }
 
@@ -353,12 +349,10 @@
 .heroBadge {
   border-radius: 999px;
   border: 1px solid rgba(180, 208, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(12, 32, 100, 0.55);
   padding: 6px 13px;
   font-size: 0.82rem;
   color: #e7f0ff;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
@@ -373,13 +367,11 @@
   color: #dfebff;
   font-size: 1rem;
   line-height: 1.75;
-  background: rgba(7, 22, 68, 0.34);
+  background: rgba(7, 22, 68, 0.68);
   border: 1px solid rgba(170, 200, 255, 0.24);
   border-left: 3px solid rgba(251, 175, 66, 0.9);
   border-radius: 16px;
   padding: 20px 22px;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.04) inset,
     0 12px 28px rgba(3, 18, 63, 0.2);
@@ -387,6 +379,7 @@
 
 .latestVersion {
   margin: 0;
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -395,7 +388,17 @@
   border: 1px solid rgba(123, 171, 255, 0.58);
   background: linear-gradient(90deg, rgba(74, 143, 255, 0.3) 0%, rgba(255, 255, 255, 0.08) 100%);
   box-shadow: 0 10px 22px rgba(6, 22, 70, 0.22);
-  /* Pulse 3 times on load then stop — not a decorative infinite loop */
+}
+
+/* Glow ring — opacity animation is compositor-only (no paint) */
+.latestVersion::before {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border-radius: 999px;
+  box-shadow: 0 0 0 5px rgba(251, 175, 66, 0.22);
+  opacity: 0;
+  pointer-events: none;
   animation: latestPulse 3.6s ease-in-out 3;
 }
 
@@ -437,12 +440,10 @@
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(198, 220, 255, 0.68);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.12) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.10) 100%);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.08) inset,
     0 10px 22px rgba(6, 22, 70, 0.22);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   color: #ffffff;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -1714,8 +1715,7 @@
   padding: 10px 24px;
   border: 1px solid rgba(120, 170, 255, 0.28);
   border-radius: 30px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.08);
   transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
 }
 

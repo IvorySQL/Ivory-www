@@ -4,7 +4,7 @@ title: IvorySQL Incremental Backup and Merge Features
 authors: [official]
 authorTwitter: IvorySql
 category: IvorySQL
-image: img/blog/IvorySQL-Incremental-Backup.png
+image: img/blog/covers/incremental-backup.svg
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, Incremental Backup]
 ---
 

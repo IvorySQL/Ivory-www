@@ -1,0 +1,78 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0b1e5e"/>
+      <stop offset="100%" stop-color="#060c28"/>
+    </radialGradient>
+    <radialGradient id="burst" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#2f74ff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2f74ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#burst)"/>
+
+  <!-- Concentric burst rings -->
+  <circle cx="600" cy="280" r="320" fill="none" stroke="#2f74ff" stroke-width="1" stroke-opacity="0.12"/>
+  <circle cx="600" cy="280" r="240" fill="none" stroke="#2f74ff" stroke-width="1" stroke-opacity="0.18"/>
+  <circle cx="600" cy="280" r="160" fill="none" stroke="#2f74ff" stroke-width="1.5" stroke-opacity="0.28"/>
+  <circle cx="600" cy="280" r="90"  fill="none" stroke="#2f74ff" stroke-width="2"   stroke-opacity="0.4"/>
+
+  <!-- Radial spokes -->
+  <g stroke="#fbaf42" stroke-opacity="0.18" stroke-width="1">
+    <line x1="600" y1="280" x2="920" y2="280"/>
+    <line x1="600" y1="280" x2="280" y2="280"/>
+    <line x1="600" y1="280" x2="600" y2="560"/>
+    <line x1="600" y1="280" x2="600" y2="0"/>
+    <line x1="600" y1="280" x2="826" y2="54"/>
+    <line x1="600" y1="280" x2="374" y2="506"/>
+    <line x1="600" y1="280" x2="374" y2="54"/>
+    <line x1="600" y1="280" x2="826" y2="506"/>
+  </g>
+
+  <!-- Center "1.0" version badge -->
+  <circle cx="600" cy="265" r="72" fill="#1a3a8f" stroke="#2f74ff" stroke-width="2.5"/>
+  <text x="600" y="254" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="#93c5fd" text-anchor="middle" letter-spacing="3">VERSION</text>
+  <text x="600" y="298" font-family="system-ui,-apple-system,sans-serif" font-size="42" font-weight="800" fill="#ffffff" text-anchor="middle">1.0</text>
+
+  <!-- Star dots scattered -->
+  <circle cx="180" cy="90"  r="2" fill="#ffffff" fill-opacity="0.6"/>
+  <circle cx="340" cy="55"  r="1.5" fill="#ffffff" fill-opacity="0.5"/>
+  <circle cx="520" cy="40"  r="2" fill="#ffffff" fill-opacity="0.7"/>
+  <circle cx="760" cy="70"  r="1.5" fill="#ffffff" fill-opacity="0.4"/>
+  <circle cx="920" cy="100" r="2" fill="#ffffff" fill-opacity="0.6"/>
+  <circle cx="1050" cy="60" r="1.5" fill="#ffffff" fill-opacity="0.5"/>
+  <circle cx="120" cy="200" r="1.5" fill="#ffffff" fill-opacity="0.4"/>
+  <circle cx="1100" cy="180" r="2" fill="#ffffff" fill-opacity="0.5"/>
+  <circle cx="80" cy="420"  r="1.5" fill="#ffffff" fill-opacity="0.4"/>
+  <circle cx="1120" cy="360" r="2" fill="#ffffff" fill-opacity="0.5"/>
+
+  <!-- Accent particles -->
+  <circle cx="390" cy="140" r="4" fill="#fbaf42" fill-opacity="0.7"/>
+  <circle cx="820" cy="130" r="3" fill="#60a5fa" fill-opacity="0.8"/>
+  <circle cx="250" cy="350" r="3" fill="#fbaf42" fill-opacity="0.5"/>
+  <circle cx="950" cy="310" r="4" fill="#60a5fa" fill-opacity="0.6"/>
+  <circle cx="460" cy="420" r="3" fill="#fbaf42" fill-opacity="0.5"/>
+  <circle cx="740" cy="410" r="3" fill="#60a5fa" fill-opacity="0.5"/>
+
+  <!-- Category chip -->
+  <rect x="44" y="44" width="110" height="32" rx="16" fill="#2f74ff" fill-opacity="0.25" stroke="#2f74ff" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="99" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#93c5fd" text-anchor="middle" letter-spacing="1">IVORYSQL</text>
+
+  <!-- Bottom gradient -->
+  <defs>
+    <linearGradient id="btm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060c28" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#060c28" stop-opacity="0.92"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="380" width="1200" height="250" fill="url(#btm)"/>
+
+  <!-- Title -->
+  <text x="600" y="510" font-family="system-ui,-apple-system,sans-serif" font-size="52" font-weight="800" fill="#ffffff" text-anchor="middle">IvorySQL Has Arrived</text>
+  <text x="600" y="556" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="400" fill="#93c5fd" text-anchor="middle" fill-opacity="0.75">Open-source Oracle-compatible PostgreSQL — now available</text>
+
+  <!-- IvorySQL logo mark -->
+  <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
+</svg>

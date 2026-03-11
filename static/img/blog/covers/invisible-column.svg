@@ -1,0 +1,101 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="260" r="280" fill="#334155" fill-opacity="0.08"/>
+
+  <!-- Table visualization -->
+  <!-- Table header -->
+  <rect x="120" y="80" width="800" height="50" rx="8" fill="#1e3a8a"/>
+  <text x="190" y="112" font-family="monospace" font-size="15" font-weight="700" fill="#93c5fd" text-anchor="middle">id</text>
+  <line x1="240" y1="80" x2="240" y2="130" stroke="#334155" stroke-width="1"/>
+  <text x="370" y="112" font-family="monospace" font-size="15" font-weight="700" fill="#93c5fd" text-anchor="middle">name</text>
+  <line x1="500" y1="80" x2="500" y2="130" stroke="#334155" stroke-width="1"/>
+
+  <!-- "salary" column header — INVISIBLE, shown with strikethrough + eye-slash -->
+  <rect x="500" y="80" width="200" height="50" rx="0" fill="#7f1d1d" fill-opacity="0.4"/>
+  <text x="600" y="112" font-family="monospace" font-size="15" font-weight="700" fill="#fca5a5" text-anchor="middle" text-decoration="line-through" fill-opacity="0.7">salary</text>
+  <!-- Eye slash icon -->
+  <g transform="translate(660, 96)" stroke="#f87171" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M 0,8 Q 10,-2 20,8 Q 10,18 0,8"/>
+    <circle cx="10" cy="8" r="3"/>
+    <line x1="-2" y1="2" x2="22" y2="14"/>
+  </g>
+  <rect x="500" y="80" width="6" height="50" fill="#ef4444"/>
+  <text x="600" y="73" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" fill="#ef4444" text-anchor="middle" letter-spacing="1">INVISIBLE</text>
+
+  <line x1="700" y1="80" x2="700" y2="130" stroke="#334155" stroke-width="1"/>
+  <text x="820" y="112" font-family="monospace" font-size="15" font-weight="700" fill="#93c5fd" text-anchor="middle">dept</text>
+
+  <!-- Data rows -->
+  <g font-family="monospace" font-size="14">
+    <!-- Row 1 -->
+    <rect x="120" y="130" width="800" height="44" fill="#0f172a"/>
+    <text x="190" y="157" fill="#e2e8f0" text-anchor="middle">1001</text>
+    <text x="370" y="157" fill="#e2e8f0" text-anchor="middle">Alice</text>
+    <!-- salary cell — invisible (shown greyed out / hidden) -->
+    <rect x="500" y="130" width="200" height="44" fill="#450a0a" fill-opacity="0.3"/>
+    <text x="600" y="157" fill="#374151" text-anchor="middle">████████</text>
+    <text x="820" y="157" fill="#e2e8f0" text-anchor="middle">Engineering</text>
+
+    <!-- Row 2 -->
+    <rect x="120" y="174" width="800" height="44" fill="#1e293b"/>
+    <text x="190" y="201" fill="#e2e8f0" text-anchor="middle">1002</text>
+    <text x="370" y="201" fill="#e2e8f0" text-anchor="middle">Bob</text>
+    <rect x="500" y="174" width="200" height="44" fill="#450a0a" fill-opacity="0.3"/>
+    <text x="600" y="201" fill="#374151" text-anchor="middle">████████</text>
+    <text x="820" y="201" fill="#e2e8f0" text-anchor="middle">Marketing</text>
+
+    <!-- Row 3 -->
+    <rect x="120" y="218" width="800" height="44" fill="#0f172a"/>
+    <text x="190" y="245" fill="#e2e8f0" text-anchor="middle">1003</text>
+    <text x="370" y="245" fill="#e2e8f0" text-anchor="middle">Carol</text>
+    <rect x="500" y="218" width="200" height="44" fill="#450a0a" fill-opacity="0.3"/>
+    <text x="600" y="245" fill="#374151" text-anchor="middle">████████</text>
+    <text x="820" y="245" fill="#e2e8f0" text-anchor="middle">Finance</text>
+  </g>
+
+  <!-- Column separators for visible columns -->
+  <line x1="240" y1="130" x2="240" y2="262" stroke="#334155" stroke-width="1"/>
+  <line x1="500" y1="130" x2="500" y2="262" stroke="#334155" stroke-width="1"/>
+  <line x1="700" y1="130" x2="700" y2="262" stroke="#334155" stroke-width="1"/>
+  <rect x="120" y="262" width="800" height="2" rx="1" fill="#334155"/>
+
+  <!-- SELECT * result vs SELECT col -->
+  <rect x="120" y="290" width="370" height="120" rx="10" fill="#0d1117" stroke="#334155" stroke-width="1.5"/>
+  <text x="138" y="315" font-family="monospace" font-size="13" fill="#c792ea">SELECT</text>
+  <text x="200" y="315" font-family="monospace" font-size="13" fill="#e2e8f0"> * FROM employees;</text>
+  <line x1="138" y1="325" x2="475" y2="325" stroke="#374151" stroke-width="1"/>
+  <text x="138" y="347" font-family="monospace" font-size="12" fill="#6b7280">-- Returns: id, name, dept</text>
+  <text x="138" y="367" font-family="monospace" font-size="12" fill="#ef4444">-- salary column hidden</text>
+  <text x="138" y="387" font-family="monospace" font-size="11" fill="#4ade80">-- ✓ Oracle-compatible behavior</text>
+
+  <rect x="550" y="290" width="370" height="120" rx="10" fill="#0d1117" stroke="#1e3a8a" stroke-width="1.5"/>
+  <text x="568" y="315" font-family="monospace" font-size="13" fill="#c792ea">ALTER TABLE</text>
+  <text x="690" y="315" font-family="monospace" font-size="13" fill="#e2e8f0"> employees</text>
+  <text x="568" y="335" font-family="monospace" font-size="13">
+    <tspan fill="#c792ea">MODIFY</tspan><tspan fill="#e2e8f0"> salary </tspan><tspan fill="#93c5fd">VISIBLE</tspan><tspan fill="#e2e8f0">;</tspan>
+  </text>
+  <line x1="568" y1="345" x2="905" y2="345" stroke="#374151" stroke-width="1"/>
+  <text x="568" y="367" font-family="monospace" font-size="12" fill="#6b7280">-- Reveal at any time</text>
+  <text x="568" y="387" font-family="monospace" font-size="11" fill="#4ade80">-- ✓ toggle without schema change</text>
+
+  <!-- Category chip -->
+  <rect x="44" y="44" width="110" height="32" rx="16" fill="#2f74ff" fill-opacity="0.25" stroke="#2f74ff" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="99" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#93c5fd" text-anchor="middle" letter-spacing="1">IVORYSQL</text>
+
+  <defs>
+    <linearGradient id="btm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0f1a" stop-opacity="0.97"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="430" width="1200" height="200" fill="url(#btm)"/>
+  <text x="600" y="488" font-family="system-ui,-apple-system,sans-serif" font-size="40" font-weight="800" fill="#ffffff" text-anchor="middle">Invisible Column Feature</text>
+  <text x="600" y="532" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#93c5fd" text-anchor="middle" fill-opacity="0.8">Hide columns from SELECT * — Oracle-compatible in IvorySQL 4.0</text>
+  <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
+</svg>

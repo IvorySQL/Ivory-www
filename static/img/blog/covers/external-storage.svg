@@ -1,0 +1,87 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0720"/>
+      <stop offset="100%" stop-color="#150a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Background dots -->
+  <g fill="#7c3aed" fill-opacity="0.08">
+    <circle cx="150" cy="150" r="80"/><circle cx="1050" cy="150" r="80"/>
+    <circle cx="600" cy="320" r="120"/>
+  </g>
+
+  <!-- Storage Tier 1: HOT (SSD/Memory) -->
+  <rect x="100" y="80" width="900" height="90" rx="12" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="100" y="80" width="6" height="90" rx="3" fill="#a78bfa"/>
+  <text x="140" y="116" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#c4b5fd" letter-spacing="2">TIER 1 — HOT STORAGE</text>
+  <text x="140" y="140" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#a78bfa">In-memory / NVMe SSD  ·  &lt;1ms latency  ·  active working set</text>
+  <!-- SSD icon blocks -->
+  <rect x="780" y="96" width="40" height="58" rx="6" fill="#4c1d95"/>
+  <text x="800" y="132" font-family="monospace" font-size="11" fill="#c4b5fd" text-anchor="middle">SSD</text>
+  <rect x="830" y="96" width="40" height="58" rx="6" fill="#4c1d95"/>
+  <text x="850" y="132" font-family="monospace" font-size="11" fill="#c4b5fd" text-anchor="middle">RAM</text>
+  <rect x="880" y="96" width="40" height="58" rx="6" fill="#4c1d95"/>
+  <text x="900" y="132" font-family="monospace" font-size="11" fill="#c4b5fd" text-anchor="middle">NVM</text>
+  <!-- Speed indicator -->
+  <rect x="940" y="105" width="50" height="20" rx="10" fill="#7c3aed"/>
+  <text x="965" y="120" font-family="monospace" font-size="11" fill="white" text-anchor="middle">FAST</text>
+
+  <!-- Arrow down -->
+  <line x1="550" y1="170" x2="550" y2="215" stroke="#6d28d9" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="542,215 558,215 550,228" fill="#6d28d9"/>
+
+  <!-- Storage Tier 2: WARM (HDD) -->
+  <rect x="100" y="228" width="900" height="90" rx="12" fill="#1e1b4b" stroke="#4338ca" stroke-width="2"/>
+  <rect x="100" y="228" width="6" height="90" rx="3" fill="#818cf8"/>
+  <text x="140" y="264" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#a5b4fc" letter-spacing="2">TIER 2 — WARM STORAGE</text>
+  <text x="140" y="288" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#818cf8">HDD / Object Storage  ·  10–50ms latency  ·  infrequent access</text>
+  <rect x="780" y="244" width="40" height="58" rx="6" fill="#312e81"/>
+  <text x="800" y="280" font-family="monospace" font-size="11" fill="#a5b4fc" text-anchor="middle">HDD</text>
+  <rect x="830" y="244" width="40" height="58" rx="6" fill="#312e81"/>
+  <text x="850" y="280" font-family="monospace" font-size="11" fill="#a5b4fc" text-anchor="middle">S3</text>
+  <rect x="880" y="244" width="40" height="58" rx="6" fill="#312e81"/>
+  <text x="900" y="280" font-family="monospace" font-size="11" fill="#a5b4fc" text-anchor="middle">GCS</text>
+  <rect x="940" y="253" width="50" height="20" rx="10" fill="#4338ca"/>
+  <text x="965" y="268" font-family="monospace" font-size="11" fill="white" text-anchor="middle">MED</text>
+
+  <!-- Arrow down -->
+  <line x1="550" y1="318" x2="550" y2="363" stroke="#4338ca" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="542,363 558,363 550,376" fill="#4338ca"/>
+
+  <!-- Storage Tier 3: COLD (Archive) -->
+  <rect x="100" y="376" width="900" height="90" rx="12" fill="#0c1a3d" stroke="#1e40af" stroke-width="2"/>
+  <rect x="100" y="376" width="6" height="90" rx="3" fill="#60a5fa"/>
+  <text x="140" y="412" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#93c5fd" letter-spacing="2">TIER 3 — COLD STORAGE</text>
+  <text x="140" y="436" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#60a5fa">Tape / Glacier / Archive  ·  &gt;100ms latency  ·  long-term retention</text>
+  <rect x="780" y="392" width="40" height="58" rx="6" fill="#1e3a8a"/>
+  <text x="800" y="428" font-family="monospace" font-size="11" fill="#93c5fd" text-anchor="middle">TAPE</text>
+  <rect x="830" y="392" width="40" height="58" rx="6" fill="#1e3a8a"/>
+  <text x="850" y="428" font-family="monospace" font-size="11" fill="#93c5fd" text-anchor="middle">COLD</text>
+  <rect x="880" y="392" width="40" height="58" rx="6" fill="#1e3a8a"/>
+  <text x="900" y="428" font-family="monospace" font-size="11" fill="#93c5fd" text-anchor="middle">ARC</text>
+  <rect x="940" y="401" width="50" height="20" rx="10" fill="#1e40af"/>
+  <text x="965" y="416" font-family="monospace" font-size="11" fill="white" text-anchor="middle">SLOW</text>
+
+  <!-- ESM Label on left side -->
+  <rect x="60" y="220" width="30" height="170" rx="8" fill="#2d1b69"/>
+  <text x="75" y="310" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="800" fill="#c4b5fd" text-anchor="middle" transform="rotate(-90, 75, 310)" letter-spacing="2">EXT STORAGE MGR</text>
+
+  <!-- Category chip -->
+  <rect x="44" y="44" width="110" height="32" rx="16" fill="#7c3aed" fill-opacity="0.25" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="99" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#c4b5fd" text-anchor="middle" letter-spacing="1">IVORYSQL</text>
+
+  <!-- Bottom -->
+  <defs>
+    <linearGradient id="btm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f0720" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#060310" stop-opacity="0.97"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="460" width="1200" height="170" fill="url(#btm)"/>
+  <text x="600" y="518" font-family="system-ui,-apple-system,sans-serif" font-size="38" font-weight="800" fill="#ffffff" text-anchor="middle">External Storage Manager</text>
+  <text x="600" y="560" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#c4b5fd" text-anchor="middle" fill-opacity="0.8">Tiered storage architecture in IvorySQL</text>
+  <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
+</svg>

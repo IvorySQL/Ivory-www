@@ -4,7 +4,7 @@ title: External Storage Manager in IvorySQL Database
 authors: [official]
 authorTwitter: IvorySql
 category: IvorySQL
-image: img/blog/External-Storage-Manager.png
+image: img/blog/covers/external-storage.svg
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL]
 ---
 In general, a database storage system is divided into two parts: memory and external storage. Except for in-memory databases, data is eventually persisted, which means that it needs to be written from the memory buffer to the external storage. This article will discuss the external storage manager in IvorySQL.

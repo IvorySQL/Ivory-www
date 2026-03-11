@@ -1,0 +1,107 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060c28"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2f74ff"/>
+    </marker>
+    <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#4ade80"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Background subtle grid -->
+  <g stroke="#1e3a6e" stroke-width="0.5" stroke-opacity="0.2">
+    <line x1="0" y1="157" x2="1200" y2="157"/>
+    <line x1="0" y1="314" x2="1200" y2="314"/>
+    <line x1="0" y1="471" x2="1200" y2="471"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+
+  <!-- Primary Node -->
+  <rect x="80" y="110" width="240" height="200" rx="14" fill="#0f1f4a" stroke="#2f74ff" stroke-width="2"/>
+  <rect x="80" y="110" width="240" height="44" rx="14" fill="#1a3a8f"/>
+  <rect x="80" y="140" width="240" height="14" fill="#1a3a8f"/>
+  <text x="200" y="137" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#93c5fd" text-anchor="middle" letter-spacing="1">PRIMARY</text>
+  <!-- Server icon -->
+  <rect x="116" y="170" width="168" height="22" rx="4" fill="#1e3a6e"/>
+  <circle cx="136" cy="181" r="5" fill="#4ade80"/>
+  <text x="220" y="186" font-family="monospace" font-size="11" fill="#93c5fd" text-anchor="middle">active · write</text>
+  <rect x="116" y="200" width="168" height="22" rx="4" fill="#1e3a6e"/>
+  <circle cx="136" cy="211" r="5" fill="#4ade80"/>
+  <text x="220" y="216" font-family="monospace" font-size="11" fill="#93c5fd" text-anchor="middle">WAL streaming</text>
+  <rect x="116" y="230" width="168" height="22" rx="4" fill="#1e3a6e"/>
+  <circle cx="136" cy="241" r="5" fill="#fbaf42"/>
+  <text x="220" y="246" font-family="monospace" font-size="11" fill="#93c5fd" text-anchor="middle">slot: logical_01</text>
+  <text x="200" y="295" font-family="monospace" font-size="12" fill="#4ade80" text-anchor="middle">●  RUNNING</text>
+
+  <!-- WAL stream arrows in middle -->
+  <line x1="320" y1="200" x2="500" y2="200" stroke="#2f74ff" stroke-width="2.5" marker-end="url(#arr)" stroke-dasharray="8,4"/>
+  <text x="410" y="192" font-family="monospace" font-size="11" fill="#60a5fa" text-anchor="middle">WAL stream</text>
+  <line x1="320" y1="230" x2="500" y2="230" stroke="#2f74ff" stroke-width="2" marker-end="url(#arr)" stroke-dasharray="6,3" stroke-opacity="0.5"/>
+
+  <!-- Logical Slot box -->
+  <rect x="480" y="150" width="240" height="120" rx="12" fill="#0d1a3d" stroke="#fbaf42" stroke-width="2"/>
+  <text x="600" y="176" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#fbaf42" text-anchor="middle" letter-spacing="1">REPLICATION SLOT</text>
+  <line x1="496" y1="184" x2="704" y2="184" stroke="#fbaf42" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="510" y="204" font-family="monospace" font-size="12" fill="#e2e8f0">name: logical_slot_01</text>
+  <text x="510" y="222" font-family="monospace" font-size="12" fill="#e2e8f0">plugin: pgoutput</text>
+  <text x="510" y="240" font-family="monospace" font-size="12" fill="#4ade80">✓ zero-loss active</text>
+  <text x="510" y="258" font-family="monospace" font-size="12" fill="#e2e8f0">lsn: 0/158F1A0</text>
+
+  <!-- Arrow to replica -->
+  <line x1="720" y1="200" x2="880" y2="200" stroke="#4ade80" stroke-width="2.5" marker-end="url(#arr2)" stroke-dasharray="8,4"/>
+  <text x="800" y="192" font-family="monospace" font-size="11" fill="#4ade80" text-anchor="middle">replicated</text>
+
+  <!-- Replica Node -->
+  <rect x="880" y="110" width="240" height="200" rx="14" fill="#0f2a1a" stroke="#16a34a" stroke-width="2"/>
+  <rect x="880" y="110" width="240" height="44" rx="14" fill="#14532d"/>
+  <rect x="880" y="140" width="240" height="14" fill="#14532d"/>
+  <text x="1000" y="137" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#86efac" text-anchor="middle" letter-spacing="1">STANDBY</text>
+  <rect x="916" y="170" width="168" height="22" rx="4" fill="#166534" fill-opacity="0.7"/>
+  <circle cx="936" cy="181" r="5" fill="#4ade80"/>
+  <text x="1020" y="186" font-family="monospace" font-size="11" fill="#86efac" text-anchor="middle">hot standby · read</text>
+  <rect x="916" y="200" width="168" height="22" rx="4" fill="#166534" fill-opacity="0.7"/>
+  <circle cx="936" cy="211" r="5" fill="#4ade80"/>
+  <text x="1020" y="216" font-family="monospace" font-size="11" fill="#86efac" text-anchor="middle">WAL receiver</text>
+  <rect x="916" y="230" width="168" height="22" rx="4" fill="#166534" fill-opacity="0.7"/>
+  <circle cx="936" cy="241" r="5" fill="#4ade80"/>
+  <text x="1020" y="246" font-family="monospace" font-size="11" fill="#86efac" text-anchor="middle">slot: synced ✓</text>
+  <text x="1000" y="295" font-family="monospace" font-size="12" fill="#4ade80" text-anchor="middle">●  IN SYNC</text>
+
+  <!-- Failover arrow (down) -->
+  <line x1="200" y1="310" x2="200" y2="410" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+  <rect x="120" y="405" width="160" height="36" rx="8" fill="#450a0a"/>
+  <text x="200" y="428" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#fca5a5" text-anchor="middle">FAILOVER</text>
+
+  <line x1="1000" y1="310" x2="1000" y2="410" stroke="#4ade80" stroke-width="2" marker-end="url(#arr2)"/>
+  <rect x="920" y="405" width="160" height="36" rx="8" fill="#052e16"/>
+  <text x="1000" y="428" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#86efac" text-anchor="middle">PROMOTED</text>
+
+  <!-- Zero-loss badge -->
+  <rect x="460" y="310" width="280" height="60" rx="14" fill="#1e3a8a" fill-opacity="0.8" stroke="#2f74ff" stroke-width="1.5"/>
+  <text x="600" y="337" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#93c5fd" text-anchor="middle" letter-spacing="2">ZERO DATA LOSS</text>
+  <text x="600" y="357" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#60a5fa" text-anchor="middle">Logical slot preserved on failover</text>
+
+  <!-- Category chip -->
+  <rect x="44" y="44" width="110" height="32" rx="16" fill="#2f74ff" fill-opacity="0.25" stroke="#2f74ff" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="99" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#93c5fd" text-anchor="middle" letter-spacing="1">IVORYSQL</text>
+
+  <!-- Bottom -->
+  <defs>
+    <linearGradient id="btm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060c28" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#040818" stop-opacity="0.96"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="450" width="1200" height="180" fill="url(#btm)"/>
+
+  <text x="600" y="516" font-family="system-ui,-apple-system,sans-serif" font-size="36" font-weight="800" fill="#ffffff" text-anchor="middle">High Availability — Zero Loss</text>
+  <text x="600" y="556" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#93c5fd" text-anchor="middle" fill-opacity="0.8">Logical Replication Slot Synchronization</text>
+  <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
+</svg>

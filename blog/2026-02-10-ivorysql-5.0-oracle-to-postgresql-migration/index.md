@@ -3,7 +3,7 @@ slug: ivorysql-5.0-oracle-to-postgresql-migration
 title: IvorySQL 5.0+ - a game changer for Oracle to PostgreSQL transitions
 authors: [Yasir Hussain Shah]
 category: IvorySQL
-image: img/blog/2026-2-10-cover.png
+image: img/blog/covers/oracle-migration.svg
 tags: [IvorySQL, Database, Oracle Compatible, PostgreSQL, migration]
 ---
 
