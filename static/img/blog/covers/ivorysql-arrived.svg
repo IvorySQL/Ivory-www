@@ -1,78 +1,52 @@
 <svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#0b1e5e"/>
-      <stop offset="100%" stop-color="#060c28"/>
-    </radialGradient>
-    <radialGradient id="burst" cx="50%" cy="45%" r="50%">
-      <stop offset="0%" stop-color="#2f74ff" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#2f74ff" stop-opacity="0"/>
+    <radialGradient id="bg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
     </radialGradient>
   </defs>
-
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#burst)"/>
-
-  <!-- Concentric burst rings -->
-  <circle cx="600" cy="280" r="320" fill="none" stroke="#2f74ff" stroke-width="1" stroke-opacity="0.12"/>
-  <circle cx="600" cy="280" r="240" fill="none" stroke="#2f74ff" stroke-width="1" stroke-opacity="0.18"/>
-  <circle cx="600" cy="280" r="160" fill="none" stroke="#2f74ff" stroke-width="1.5" stroke-opacity="0.28"/>
-  <circle cx="600" cy="280" r="90"  fill="none" stroke="#2f74ff" stroke-width="2"   stroke-opacity="0.4"/>
-
-  <!-- Radial spokes -->
-  <g stroke="#fbaf42" stroke-opacity="0.18" stroke-width="1">
-    <line x1="600" y1="280" x2="920" y2="280"/>
-    <line x1="600" y1="280" x2="280" y2="280"/>
-    <line x1="600" y1="280" x2="600" y2="560"/>
-    <line x1="600" y1="280" x2="600" y2="0"/>
-    <line x1="600" y1="280" x2="826" y2="54"/>
-    <line x1="600" y1="280" x2="374" y2="506"/>
-    <line x1="600" y1="280" x2="374" y2="54"/>
-    <line x1="600" y1="280" x2="826" y2="506"/>
-  </g>
-
-  <!-- Center "1.0" version badge -->
-  <circle cx="600" cy="265" r="72" fill="#1a3a8f" stroke="#2f74ff" stroke-width="2.5"/>
-  <text x="600" y="254" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="#93c5fd" text-anchor="middle" letter-spacing="3">VERSION</text>
-  <text x="600" y="298" font-family="system-ui,-apple-system,sans-serif" font-size="42" font-weight="800" fill="#ffffff" text-anchor="middle">1.0</text>
-
-  <!-- Star dots scattered -->
-  <circle cx="180" cy="90"  r="2" fill="#ffffff" fill-opacity="0.6"/>
-  <circle cx="340" cy="55"  r="1.5" fill="#ffffff" fill-opacity="0.5"/>
-  <circle cx="520" cy="40"  r="2" fill="#ffffff" fill-opacity="0.7"/>
-  <circle cx="760" cy="70"  r="1.5" fill="#ffffff" fill-opacity="0.4"/>
-  <circle cx="920" cy="100" r="2" fill="#ffffff" fill-opacity="0.6"/>
-  <circle cx="1050" cy="60" r="1.5" fill="#ffffff" fill-opacity="0.5"/>
-  <circle cx="120" cy="200" r="1.5" fill="#ffffff" fill-opacity="0.4"/>
-  <circle cx="1100" cy="180" r="2" fill="#ffffff" fill-opacity="0.5"/>
-  <circle cx="80" cy="420"  r="1.5" fill="#ffffff" fill-opacity="0.4"/>
-  <circle cx="1120" cy="360" r="2" fill="#ffffff" fill-opacity="0.5"/>
-
-  <!-- Accent particles -->
-  <circle cx="390" cy="140" r="4" fill="#fbaf42" fill-opacity="0.7"/>
-  <circle cx="820" cy="130" r="3" fill="#60a5fa" fill-opacity="0.8"/>
-  <circle cx="250" cy="350" r="3" fill="#fbaf42" fill-opacity="0.5"/>
-  <circle cx="950" cy="310" r="4" fill="#60a5fa" fill-opacity="0.6"/>
-  <circle cx="460" cy="420" r="3" fill="#fbaf42" fill-opacity="0.5"/>
-  <circle cx="740" cy="410" r="3" fill="#60a5fa" fill-opacity="0.5"/>
-
+  <!-- Burst rings -->
+  <circle cx="600" cy="240" r="80" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-opacity="0.35" stroke-dasharray="14,8"/>
+  <circle cx="600" cy="240" r="135" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.22" stroke-dasharray="20,10"/>
+  <circle cx="600" cy="240" r="195" fill="none" stroke="#d97706" stroke-width="1" stroke-opacity="0.14" stroke-dasharray="28,14"/>
+  <circle cx="600" cy="240" r="258" fill="none" stroke="#92400e" stroke-width="0.8" stroke-opacity="0.08"/>
+  <!-- Confetti -->
+  <circle cx="100" cy="80" r="8" fill="#f59e0b" fill-opacity="0.5"/><circle cx="220" cy="45" r="5" fill="#ef4444" fill-opacity="0.4"/>
+  <circle cx="380" cy="100" r="7" fill="#10b981" fill-opacity="0.4"/><circle cx="700" cy="90" r="9" fill="#f59e0b" fill-opacity="0.5"/>
+  <circle cx="900" cy="50" r="6" fill="#ec4899" fill-opacity="0.4"/><circle cx="1050" cy="110" r="8" fill="#0ea5e9" fill-opacity="0.4"/>
+  <rect x="140" y="120" width="8" height="8" rx="2" fill="#ef4444" fill-opacity="0.4" transform="rotate(20 144 124)"/>
+  <rect x="820" y="80" width="10" height="10" rx="2" fill="#10b981" fill-opacity="0.4" transform="rotate(-15 825 85)"/>
+  <rect x="960" y="140" width="7" height="7" rx="2" fill="#6366f1" fill-opacity="0.4" transform="rotate(35 963 143)"/>
+  <!-- Star particles -->
+  <text x="475" y="158" font-size="22" fill="#f59e0b" fill-opacity="0.65">★</text>
+  <text x="718" y="142" font-size="17" fill="#fbbf24" fill-opacity="0.6">★</text>
+  <text x="438" y="318" font-size="13" fill="#d97706" fill-opacity="0.5">★</text>
+  <text x="760" y="305" font-size="18" fill="#f59e0b" fill-opacity="0.6">★</text>
+  <text x="542" y="345" font-size="11" fill="#fbbf24" fill-opacity="0.5">✦</text>
+  <text x="660" y="356" font-size="14" fill="#d97706" fill-opacity="0.5">✦</text>
+  <!-- Central badge -->
+  <circle cx="600" cy="240" r="78" fill="#ffffff" stroke="#f59e0b" stroke-width="3.5"/>
+  <circle cx="600" cy="240" r="70" fill="#fffbeb"/>
+  <text x="600" y="218" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#d97706" text-anchor="middle" letter-spacing="3">VERSION</text>
+  <text x="600" y="264" font-family="system-ui,-apple-system,sans-serif" font-size="48" font-weight="900" fill="#b45309" text-anchor="middle">1.0</text>
+  <text x="600" y="286" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#92400e" text-anchor="middle" letter-spacing="3">STABLE</text>
+  <!-- Ribbons -->
+  <polygon points="50,198 250,158 250,200 50,242" fill="#fbbf24" fill-opacity="0.22"/>
+  <text x="150" y="205" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#92400e" text-anchor="middle" letter-spacing="2">LAUNCHED!</text>
+  <polygon points="1150,198 950,158 950,200 1150,242" fill="#fbbf24" fill-opacity="0.22"/>
+  <text x="1050" y="205" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#92400e" text-anchor="middle" letter-spacing="2">JAN 2022</text>
   <!-- Category chip -->
-  <rect x="44" y="44" width="110" height="32" rx="16" fill="#2f74ff" fill-opacity="0.25" stroke="#2f74ff" stroke-opacity="0.5" stroke-width="1"/>
-  <text x="99" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#93c5fd" text-anchor="middle" letter-spacing="1">IVORYSQL</text>
-
-  <!-- Bottom gradient -->
+  <rect x="44" y="44" width="110" height="32" rx="16" fill="#d97706" fill-opacity="0.2" stroke="#d97706" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="99" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#92400e" text-anchor="middle" letter-spacing="1">IVORYSQL</text>
   <defs>
     <linearGradient id="btm" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#060c28" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#060c28" stop-opacity="0.92"/>
+      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#fef3c7" stop-opacity="0.97"/>
     </linearGradient>
   </defs>
-  <rect x="0" y="380" width="1200" height="250" fill="url(#btm)"/>
-
-  <!-- Title -->
-  <text x="600" y="510" font-family="system-ui,-apple-system,sans-serif" font-size="52" font-weight="800" fill="#ffffff" text-anchor="middle">IvorySQL Has Arrived</text>
-  <text x="600" y="556" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="400" fill="#93c5fd" text-anchor="middle" fill-opacity="0.75">Open-source Oracle-compatible PostgreSQL — now available</text>
-
-  <!-- IvorySQL logo mark -->
-  <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
+  <rect x="0" y="420" width="1200" height="210" fill="url(#btm)"/>
+  <text x="600" y="488" font-family="system-ui,-apple-system,sans-serif" font-size="42" font-weight="900" fill="#78350f" text-anchor="middle">IvorySQL Has Arrived</text>
+  <text x="600" y="534" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#b45309" text-anchor="middle">The open-source Oracle-compatible PostgreSQL is here</text>
+  <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#a16207" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
 </svg>

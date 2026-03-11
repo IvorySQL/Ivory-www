@@ -318,7 +318,7 @@
   flex: 0 0 300px;
   display: block;
   overflow: hidden;
-  background: linear-gradient(135deg, #0d1b3e 0%, #102268 100%);
+  background: #f1f5f9;
 }
 
 .blog-card-img {

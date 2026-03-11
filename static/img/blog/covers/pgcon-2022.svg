@@ -1,76 +1,72 @@
 <svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1b3e"/>
-      <stop offset="100%" stop-color="#0a1220"/>
+      <stop offset="0%" stop-color="#0f0a2e"/>
+      <stop offset="100%" stop-color="#1a0f3e"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="600" cy="240" r="340" fill="#2f74ff" fill-opacity="0.04"/>
+  <circle cx="600" cy="240" r="340" fill="#6366f1" fill-opacity="0.05"/>
 
-  <!-- PGCon badge / banner -->
-  <rect x="280" y="50" width="640" height="110" rx="20" fill="#021033" stroke="#2f74ff" stroke-width="2.5"/>
-  <text x="600" y="98" font-family="system-ui,-apple-system,sans-serif" font-size="32" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="3">PGCon 2022</text>
-  <text x="600" y="128" font-family="system-ui,-apple-system,sans-serif" font-size="15" fill="#60a5fa" text-anchor="middle" letter-spacing="1">Ottawa, Canada  ·  May 2022</text>
+  <!-- PGCon badge -->
+  <rect x="280" y="50" width="640" height="110" rx="20" fill="#1e1b4b" stroke="#6366f1" stroke-width="2"/>
+  <text x="600" y="99" font-family="system-ui,-apple-system,sans-serif" font-size="34" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="3">PGCon 2022</text>
+  <text x="600" y="130" font-family="system-ui,-apple-system,sans-serif" font-size="15" fill="#a5b4fc" text-anchor="middle" letter-spacing="1">Ottawa, Canada  ·  May 2022</text>
 
-  <!-- Conference schedule / agenda cards -->
-  <!-- Session 1 -->
-  <rect x="60" y="190" width="330" height="120" rx="12" fill="#060f2a" stroke="#2f74ff" stroke-width="1.5"/>
-  <rect x="60" y="190" width="6" height="120" rx="3" fill="#2f74ff"/>
-  <text x="84" y="220" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#93c5fd">IvorySQL Overview</text>
-  <text x="84" y="242" font-family="monospace" font-size="11" fill="#6b7280">Oracle-compatible features</text>
-  <text x="84" y="260" font-family="monospace" font-size="11" fill="#6b7280">on top of PostgreSQL</text>
-  <text x="84" y="280" font-family="monospace" font-size="11" fill="#4ade80">● Keynote session</text>
-  <text x="84" y="300" font-family="monospace" font-size="10" fill="#374151">09:00 – 09:45</text>
+  <!-- Session cards -->
+  <rect x="60" y="192" width="330" height="118" rx="12" fill="#0f0c2a" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="60" y="192" width="6" height="118" rx="3" fill="#6366f1"/>
+  <text x="84" y="222" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#a5b4fc">IvorySQL Overview</text>
+  <text x="84" y="244" font-family="monospace" font-size="11" fill="#6b7280">Oracle-compatible features</text>
+  <text x="84" y="262" font-family="monospace" font-size="11" fill="#6b7280">on top of PostgreSQL</text>
+  <text x="84" y="283" font-family="monospace" font-size="11" fill="#4ade80">● Keynote  09:00–09:45</text>
+  <text x="84" y="300" font-family="monospace" font-size="10" fill="#4f46e5">Session 1</text>
 
-  <!-- Session 2 -->
-  <rect x="435" y="190" width="330" height="120" rx="12" fill="#060f2a" stroke="#7c3aed" stroke-width="1.5"/>
-  <rect x="435" y="190" width="6" height="120" rx="3" fill="#7c3aed"/>
-  <text x="459" y="220" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#c4b5fd">PL/SQL Compatibility</text>
-  <text x="459" y="242" font-family="monospace" font-size="11" fill="#6b7280">Packages, procedures,</text>
-  <text x="459" y="260" font-family="monospace" font-size="11" fill="#6b7280">functions &amp; triggers</text>
-  <text x="459" y="280" font-family="monospace" font-size="11" fill="#4ade80">● Technical deep-dive</text>
-  <text x="459" y="300" font-family="monospace" font-size="10" fill="#374151">10:00 – 10:45</text>
+  <rect x="435" y="192" width="330" height="118" rx="12" fill="#0f0c2a" stroke="#8b5cf6" stroke-width="1.5"/>
+  <rect x="435" y="192" width="6" height="118" rx="3" fill="#8b5cf6"/>
+  <text x="459" y="222" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#c4b5fd">PL/SQL Compatibility</text>
+  <text x="459" y="244" font-family="monospace" font-size="11" fill="#6b7280">Packages, procedures,</text>
+  <text x="459" y="262" font-family="monospace" font-size="11" fill="#6b7280">functions &amp; triggers</text>
+  <text x="459" y="283" font-family="monospace" font-size="11" fill="#4ade80">● Deep-dive  10:00–10:45</text>
+  <text x="459" y="300" font-family="monospace" font-size="10" fill="#7c3aed">Session 2</text>
 
-  <!-- Session 3 -->
-  <rect x="810" y="190" width="330" height="120" rx="12" fill="#060f2a" stroke="#0891b2" stroke-width="1.5"/>
-  <rect x="810" y="190" width="6" height="120" rx="3" fill="#0891b2"/>
-  <text x="834" y="220" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#67e8f9">Community Q&amp;A</text>
-  <text x="834" y="242" font-family="monospace" font-size="11" fill="#6b7280">Roadmap discussion</text>
-  <text x="834" y="260" font-family="monospace" font-size="11" fill="#6b7280">and open questions</text>
-  <text x="834" y="280" font-family="monospace" font-size="11" fill="#4ade80">● Open panel</text>
-  <text x="834" y="300" font-family="monospace" font-size="10" fill="#374151">11:00 – 11:45</text>
+  <rect x="810" y="192" width="330" height="118" rx="12" fill="#0f0c2a" stroke="#a78bfa" stroke-width="1.5"/>
+  <rect x="810" y="192" width="6" height="118" rx="3" fill="#a78bfa"/>
+  <text x="834" y="222" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#ddd6fe">Community Q&amp;A</text>
+  <text x="834" y="244" font-family="monospace" font-size="11" fill="#6b7280">Roadmap discussion</text>
+  <text x="834" y="262" font-family="monospace" font-size="11" fill="#6b7280">and open questions</text>
+  <text x="834" y="283" font-family="monospace" font-size="11" fill="#4ade80">● Open panel  11:00–11:45</text>
+  <text x="834" y="300" font-family="monospace" font-size="10" fill="#9333ea">Session 3</text>
 
-  <!-- Highlights row -->
-  <rect x="100" y="350" width="220" height="60" rx="10" fill="#0a1628" stroke="#fbaf42" stroke-width="1.5"/>
-  <text x="210" y="376" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#fbaf42" text-anchor="middle">200+ Attendees</text>
-  <text x="210" y="396" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="middle">global PG community</text>
+  <!-- Timeline connector -->
+  <line x1="390" y1="252" x2="435" y2="252" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="765" y1="252" x2="810" y2="252" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4,3"/>
 
-  <rect x="490" y="350" width="220" height="60" rx="10" fill="#0a1628" stroke="#2f74ff" stroke-width="1.5"/>
-  <text x="600" y="376" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#93c5fd" text-anchor="middle">3 Talks by IvorySQL</text>
-  <text x="600" y="396" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="middle">team at Highgo</text>
+  <!-- Stats row -->
+  <rect x="100" y="352" width="220" height="58" rx="10" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="210" y="377" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#a5b4fc" text-anchor="middle">200+ Attendees</text>
+  <text x="210" y="398" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="middle">global PG community</text>
 
-  <rect x="880" y="350" width="220" height="60" rx="10" fill="#0a1628" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="990" y="376" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#4ade80" text-anchor="middle">Open Source Debut</text>
-  <text x="990" y="396" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="middle">on the world stage</text>
+  <rect x="490" y="352" width="220" height="58" rx="10" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="600" y="377" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#c4b5fd" text-anchor="middle">3 Sessions</text>
+  <text x="600" y="398" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="middle">by Highgo / IvorySQL team</text>
 
-  <!-- Connecting dots timeline -->
-  <line x1="210" y1="310" x2="210" y2="350" stroke="#374151" stroke-width="1" stroke-dasharray="4,3"/>
-  <line x1="600" y1="310" x2="600" y2="350" stroke="#374151" stroke-width="1" stroke-dasharray="4,3"/>
-  <line x1="990" y1="310" x2="990" y2="350" stroke="#374151" stroke-width="1" stroke-dasharray="4,3"/>
+  <rect x="880" y="352" width="220" height="58" rx="10" fill="#1e1b4b" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="990" y="377" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle">Open Source Debut</text>
+  <text x="990" y="398" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="middle">on the world stage</text>
 
   <!-- Category chip -->
-  <rect x="44" y="44" width="130" height="32" rx="16" fill="#2f74ff" fill-opacity="0.25" stroke="#2f74ff" stroke-opacity="0.5" stroke-width="1"/>
-  <text x="109" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#93c5fd" text-anchor="middle" letter-spacing="1">POSTGRESQL</text>
+  <rect x="44" y="44" width="130" height="32" rx="16" fill="#6366f1" fill-opacity="0.2" stroke="#6366f1" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="109" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#a5b4fc" text-anchor="middle" letter-spacing="1">POSTGRESQL</text>
 
   <defs>
     <linearGradient id="btm" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0a1220" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#020610" stop-opacity="0.97"/>
+      <stop offset="0%" stop-color="#1a0f3e" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#07041a" stop-opacity="0.97"/>
     </linearGradient>
   </defs>
   <rect x="0" y="440" width="1200" height="190" fill="url(#btm)"/>
   <text x="600" y="494" font-family="system-ui,-apple-system,sans-serif" font-size="38" font-weight="800" fill="#ffffff" text-anchor="middle">PGCon 2022 Conference Review</text>
-  <text x="600" y="538" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#60a5fa" text-anchor="middle" fill-opacity="0.85">IvorySQL meets the global PostgreSQL community</text>
+  <text x="600" y="538" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#a5b4fc" text-anchor="middle" fill-opacity="0.85">IvorySQL meets the global PostgreSQL community</text>
   <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
 </svg>
