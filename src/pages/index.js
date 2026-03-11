@@ -331,12 +331,12 @@ const CONTENT = {
       },
     ],
     ecosystemCategories: [
-      { title: '连接与分发层',      desc: '连接池、负载均衡与水平分片',                  featuredTools: ['pgpool-II', 'pgBouncer', 'HAProxy', 'Citus', 'ShardingSphere'], count: 11, accent: 'blue'   },
-      { title: '高可用与备份',      desc: '集群管理、自动故障转移与时间点恢复',          featuredTools: ['Patroni', 'WAL-G', 'pgBackRest', 'repmgr'],                   count: 7,  accent: 'teal'   },
-      { title: '开发者工具与驱动',  desc: '图形客户端、ORM 框架与多语言驱动',            featuredTools: ['DBeaver', 'pgAdmin', 'pgx', 'psycopg2'],                      count: 16, accent: 'indigo' },
-      { title: '监控与运维',        desc: '指标采集、可视化大屏与查询性能分析',          featuredTools: ['Prometheus', 'Grafana', 'pgMonitor', 'PoWA'],                  count: 5,  accent: 'amber'  },
-      { title: '数据集成与迁移',    desc: 'CDC 变更捕获、异构数据访问与 Oracle 迁移',    featuredTools: ['Debezium', 'Ora2Pg', 'oracle_fdw', 'mysql_fdw'],              count: 8,  accent: 'purple' },
-      { title: 'AI、地理与多模型',  desc: '向量检索、时序、地理空间与图数据库扩展',      featuredTools: ['pgvector', 'PostGIS', 'TimescaleDB', 'DocumentDB'],           count: 8,  accent: 'rose'   },
+      { title: '连接与分发层',      desc: '连接池、负载均衡与水平分片',                  accent: 'blue',   tools: ['pgpool-II', 'pgBouncer', 'odyssey', 'HAProxy', 'ShardingSphere', 'Citus', 'vip-manager'] },
+      { title: '高可用与备份',      desc: '集群管理、自动故障转移与时间点恢复',          accent: 'teal',   tools: ['Patroni', 'repmgr', 'Pacemaker Corosync', 'StackGres', 'pg_rman', 'WAL-G', 'pg_probackup', 'pgBackRest', 'Docker Compose', 'Podman', 'Docker Swarm'] },
+      { title: '开发者工具与驱动',  desc: '图形客户端、ORM 框架与多语言驱动',            accent: 'indigo', tools: ['DBeaver', 'pgAdmin', 'Navicat', 'Navicat Premium', 'MyBatis', 'Hibernate', 'libpq', 'JDBC', 'ODBC', 'psycopg2', 'pgx', 'ADO.NET', 'lib/pq', 'Ruby', 'Rust', 'Go', 'NodeJS', 'Python'] },
+      { title: '监控与运维',        desc: '指标采集、可视化大屏与查询性能分析',          accent: 'amber',  tools: ['Prometheus', 'Alertmanager', 'pgMonitor', 'Grafana', 'PoWA', 'pg_cron', 'pgAgent', 'pg_jobs'] },
+      { title: '数据集成与迁移',    desc: 'CDC 变更捕获、异构数据访问与 Oracle 迁移',    accent: 'purple', tools: ['Debezium', 'pglogical', 'mysql_fdw', 'oracle_fdw', 'Ora2Pg', 'ivyMigration', 'ivyEvaluation', 'pg_bulkload', 'ddlx', 'Yukon', 'Databene', 'WhaleOps'] },
+      { title: 'AI、地理与多模型',  desc: '向量检索、时序、地理空间与图数据库扩展',      accent: 'rose',   tools: ['pgvector', 'MADlib', 'pg_ai_query', 'PostGIS', 'pgRouting', 'TimescaleDB', 'DocumentDB', 'PostgreSQL AGE', 'FerretDB'] },
     ],
     ecosystemFooters: [
       '操作系统（windows / CentOS / Redhat / ubuntu / openEuler / 银河麒麟 / 统信 UOS 等）',
@@ -500,12 +500,12 @@ const CONTENT = {
       },
     ],
     ecosystemCategories: [
-      { title: 'Connectivity & Pooling',        desc: 'Connection pooling, load balancing & horizontal sharding',          featuredTools: ['pgpool-II', 'pgBouncer', 'HAProxy', 'Citus', 'ShardingSphere'], count: 11, accent: 'blue'   },
-      { title: 'High Availability & Backup',    desc: 'Cluster management, automatic failover & point-in-time recovery',   featuredTools: ['Patroni', 'WAL-G', 'pgBackRest', 'repmgr'],                   count: 7,  accent: 'teal'   },
-      { title: 'Developer Tools & Drivers',     desc: 'GUI clients, ORM frameworks & multi-language database drivers',     featuredTools: ['DBeaver', 'pgAdmin', 'pgx', 'psycopg2'],                      count: 16, accent: 'indigo' },
-      { title: 'Monitoring & Operations',       desc: 'Metrics collection, dashboards & query performance analysis',       featuredTools: ['Prometheus', 'Grafana', 'pgMonitor', 'PoWA'],                  count: 5,  accent: 'amber'  },
-      { title: 'Data Integration & Migration',  desc: 'CDC, heterogeneous access & Oracle-to-PostgreSQL migration',        featuredTools: ['Debezium', 'Ora2Pg', 'oracle_fdw', 'mysql_fdw'],              count: 8,  accent: 'purple' },
-      { title: 'AI, Geo & Multi-Model',         desc: 'Vector search, time-series, geospatial & graph extensions',        featuredTools: ['pgvector', 'PostGIS', 'TimescaleDB', 'DocumentDB'],           count: 8,  accent: 'rose'   },
+      { title: 'Connectivity & Pooling',        desc: 'Connection pooling, load balancing & horizontal sharding',          accent: 'blue',   tools: ['pgpool-II', 'pgBouncer', 'odyssey', 'HAProxy', 'ShardingSphere', 'Citus', 'vip-manager'] },
+      { title: 'High Availability & Backup',    desc: 'Cluster management, automatic failover & point-in-time recovery',   accent: 'teal',   tools: ['Patroni', 'repmgr', 'Pacemaker Corosync', 'StackGres', 'pg_rman', 'WAL-G', 'pg_probackup', 'pgBackRest', 'Docker Compose', 'Podman', 'Docker Swarm'] },
+      { title: 'Developer Tools & Drivers',     desc: 'GUI clients, ORM frameworks & multi-language database drivers',     accent: 'indigo', tools: ['DBeaver', 'pgAdmin', 'Navicat', 'Navicat Premium', 'MyBatis', 'Hibernate', 'libpq', 'JDBC', 'ODBC', 'psycopg2', 'pgx', 'ADO.NET', 'lib/pq', 'Ruby', 'Rust', 'Go', 'NodeJS', 'Python'] },
+      { title: 'Monitoring & Operations',       desc: 'Metrics collection, dashboards & query performance analysis',       accent: 'amber',  tools: ['Prometheus', 'Alertmanager', 'pgMonitor', 'Grafana', 'PoWA', 'pg_cron', 'pgAgent', 'pg_jobs'] },
+      { title: 'Data Integration & Migration',  desc: 'CDC, heterogeneous access & Oracle-to-PostgreSQL migration',        accent: 'purple', tools: ['Debezium', 'pglogical', 'mysql_fdw', 'oracle_fdw', 'Ora2Pg', 'ivyMigration', 'ivyEvaluation', 'pg_bulkload', 'ddlx', 'Yukon', 'Databene', 'WhaleOps'] },
+      { title: 'AI, Geo & Multi-Model',         desc: 'Vector search, time-series, geospatial & graph extensions',        accent: 'rose',   tools: ['pgvector', 'MADlib', 'pg_ai_query', 'PostGIS', 'pgRouting', 'TimescaleDB', 'DocumentDB', 'PostgreSQL AGE', 'FerretDB'] },
     ],
     ecosystemFooters: [
       'Operating System (windows / CentOS / Redhat / ubuntu / openEuler / kylin OS / UnionTech OS)',
@@ -875,7 +875,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className={styles.ecosystemItems}>
-                      {cat.featuredTools.map((item) => {
+                      {cat.tools.map((item) => {
                         const tone = getEcosystemToolTone(item);
                         const meta = TOOL_META[item];
                         const tooltipDesc = meta && (isZh ? (meta.descZh || meta.desc) : meta.desc);
@@ -908,11 +908,6 @@ export default function Home() {
                           </span>
                         );
                       })}
-                    </div>
-                    <div className={styles.ecoCatFooter}>
-                      <span className={styles.ecoCatCount}>
-                        {isZh ? `共 ${cat.count} 个工具` : `${cat.count} tools total`}
-                      </span>
                     </div>
                   </div>
                 );
