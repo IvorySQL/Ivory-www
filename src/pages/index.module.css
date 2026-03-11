@@ -1350,10 +1350,10 @@
   flex-direction: column;
   gap: 16px;
   transition: transform 0.28s cubic-bezier(0.22,1,0.36,1), background 0.2s, border-color 0.2s;
-  /* overflow must NOT be hidden — tooltips inside need to escape card boundary */
+  overflow: hidden;
 }
 
-/* Top accent bar — color per category */
+/* Top accent bar */
 .ecoCatCard::before {
   content: '';
   position: absolute;
@@ -1367,6 +1367,7 @@
   background: rgba(255, 255, 255, 0.10);
   border-color: rgba(255, 255, 255, 0.22);
   z-index: 10;
+  overflow: visible; /* allow tooltip to escape on hover */
 }
 
 /* 6 accent themes */
