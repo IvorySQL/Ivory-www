@@ -92,34 +92,81 @@
 .heroSection {
   position: relative;
   overflow: hidden;
-  padding: 48px 0 112px; /* extra bottom padding — compensates for 48px section overlap */
-  background:
-    radial-gradient(circle at 76% 18%, rgba(159, 220, 255, 0.22) 0%, rgba(159, 220, 255, 0) 42%),
-    radial-gradient(circle at 12% -16%, rgba(84, 143, 255, 0.3) 0%, rgba(84, 143, 255, 0) 36%),
-    linear-gradient(126deg, #0f1b52 0%, #1c3c93 50%, #155fbd 100%);
+  padding: 48px 0 112px;
+  /* Base deep ocean gradient only — stars live in ::after GPU layer */
+  background: linear-gradient(168deg, #060c28 0%, #0b1a50 35%, #102268 60%, #0d3070 100%);
   color: #f8faff;
 }
 
+/* Shooting star streak — top-right */
 .heroSection::before {
   content: '';
   position: absolute;
-  width: 500px;
-  height: 500px;
-  top: -210px;
-  right: -110px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(157, 215, 255, 0.2) 0%, rgba(157, 215, 255, 0) 68%);
+  top: 8%;
+  right: 12%;
+  width: 180px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(200,230,255,0.65) 60%, rgba(255,255,255,0.9) 100%);
+  transform: rotate(-28deg);
+  transform-origin: right center;
+  border-radius: 1px;
+  filter: blur(0.4px);
+  pointer-events: none;
 }
 
+/* Stars + Nebula — GPU-composited, painted once */
 .heroSection::after {
   content: '';
   position: absolute;
-  width: 420px;
-  height: 420px;
-  bottom: -220px;
-  left: -80px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(96, 139, 255, 0.2) 0%, rgba(96, 139, 255, 0) 72%);
+  inset: 0;
+  pointer-events: none;
+  transform: translateZ(0);
+  will-change: auto;
+  background:
+    /* ── Stars: 1px tiny dots ── */
+    radial-gradient(1px 1px at  8% 12%, rgba(255,255,255,0.85) 0%, transparent 100%),
+    radial-gradient(1px 1px at 22%  6%, rgba(255,255,255,0.70) 0%, transparent 100%),
+    radial-gradient(1px 1px at 37% 19%, rgba(255,255,255,0.80) 0%, transparent 100%),
+    radial-gradient(1px 1px at 53%  8%, rgba(255,255,255,0.65) 0%, transparent 100%),
+    radial-gradient(1px 1px at 68% 15%, rgba(255,255,255,0.90) 0%, transparent 100%),
+    radial-gradient(1px 1px at 81%  5%, rgba(255,255,255,0.70) 0%, transparent 100%),
+    radial-gradient(1px 1px at 92% 22%, rgba(255,255,255,0.75) 0%, transparent 100%),
+    radial-gradient(1px 1px at 14% 32%, rgba(255,255,255,0.60) 0%, transparent 100%),
+    radial-gradient(1px 1px at 46% 35%, rgba(255,255,255,0.70) 0%, transparent 100%),
+    radial-gradient(1px 1px at 61% 28%, rgba(255,255,255,0.55) 0%, transparent 100%),
+    radial-gradient(1px 1px at 75% 38%, rgba(255,255,255,0.65) 0%, transparent 100%),
+    radial-gradient(1px 1px at 18% 55%, rgba(255,255,255,0.55) 0%, transparent 100%),
+    radial-gradient(1px 1px at 57% 52%, rgba(255,255,255,0.50) 0%, transparent 100%),
+    radial-gradient(1px 1px at 41% 13%, rgba(255,255,255,0.55) 0%, transparent 100%),
+    radial-gradient(1px 1px at 83% 27%, rgba(255,255,255,0.60) 0%, transparent 100%),
+    radial-gradient(1px 1px at 97% 14%, rgba(255,255,255,0.50) 0%, transparent 100%),
+    /* ── Stars: 2px glowing blue-white ── */
+    radial-gradient(2px 2px at 16%  9%, rgba(200,230,255,0.95) 0%, transparent 100%),
+    radial-gradient(2px 2px at 44%  3%, rgba(200,230,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 78% 11%, rgba(200,230,255,0.90) 0%, transparent 100%),
+    radial-gradient(2px 2px at 91% 38%, rgba(200,230,255,0.75) 0%, transparent 100%),
+    radial-gradient(2px 2px at  6% 61%, rgba(200,230,255,0.65) 0%, transparent 100%),
+    radial-gradient(2px 2px at 55% 66%, rgba(200,230,255,0.60) 0%, transparent 100%),
+    radial-gradient(2px 2px at 29% 41%, rgba(255,255,255,0.80) 0%, transparent 100%),
+    radial-gradient(2px 2px at 64% 21%, rgba(255,255,255,0.70) 0%, transparent 100%),
+    /* ── Nebula A: Blue-cyan pillar (top-right) — 3-layer depth ── */
+    radial-gradient(ellipse 28% 18% at 78% 12%, rgba(180,230,255,0.55) 0%, rgba(100,180,255,0.25) 45%, transparent 75%),
+    radial-gradient(ellipse 45% 32% at 74% 17%, rgba( 60,140,255,0.32) 0%, rgba( 30, 90,220,0.15) 55%, transparent 80%),
+    radial-gradient(ellipse 65% 48% at 80%  8%, rgba( 40,100,220,0.14) 0%, transparent 70%),
+    /* ── Nebula B: Purple-violet cloud (left-center) — 3-layer depth ── */
+    radial-gradient(ellipse 22% 28% at 10% 38%, rgba(210,130,255,0.50) 0%, rgba(160, 70,240,0.28) 40%, transparent 72%),
+    radial-gradient(ellipse 38% 42% at  8% 42%, rgba(120, 40,210,0.28) 0%, rgba( 80, 20,180,0.12) 55%, transparent 78%),
+    radial-gradient(ellipse 55% 55% at  5% 48%, rgba( 90, 30,180,0.12) 0%, transparent 70%),
+    /* ── Nebula C: Pink-magenta wisp (center) ── */
+    radial-gradient(ellipse 32% 18% at 52% 42%, rgba(240, 90,200,0.30) 0%, rgba(180, 50,160,0.15) 50%, transparent 75%),
+    radial-gradient(ellipse 50% 28% at 55% 38%, rgba(180, 40,150,0.14) 0%, transparent 70%),
+    /* ── Nebula D: Teal-green aurora (bottom sweep) ── */
+    radial-gradient(ellipse 70% 22% at 35% 88%, rgba( 20,200,180,0.32) 0%, rgba( 10,160,140,0.16) 50%, transparent 75%),
+    radial-gradient(ellipse 90% 30% at 40% 92%, rgba( 10,140,120,0.15) 0%, transparent 68%),
+    /* ── Galaxy dust band — diagonal streak across middle ── */
+    radial-gradient(ellipse 80% 12% at 50% 52%, rgba(120,160,255,0.09) 0%, transparent 100%),
+    /* ── Sea horizon glow ── */
+    linear-gradient(180deg, transparent 52%, rgba(20,70,160,0.38) 78%, rgba(10,35,110,0.60) 100%);
 }
 
 .heroContainer {
@@ -2347,16 +2394,23 @@
   }
 
   .heroTrustBar {
-    gap: 12px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
     padding-bottom: 32px;
   }
 
   .heroTrustList {
-    gap: 4px 16px;
+    justify-content: center;
+    gap: 8px 20px;
+  }
+
+  .heroTrustItem {
+    align-items: center;
   }
 
   .heroTrustList > li + li::before {
-    margin-right: 16px;
+    margin-right: 20px;
   }
 
   .heroContainer {
