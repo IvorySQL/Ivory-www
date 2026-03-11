@@ -794,14 +794,14 @@ export default function Home() {
               {content.coreItems.map((item, index) => {
                 const CardIcon = CORE_CARD_ICONS[index % CORE_CARD_ICONS.length];
                 return (
-                  <article key={item.title} className={styles.infoCard} data-reveal="up" data-delay={String(index + 1)}>
-                    <div className={styles.cardTitleRow}>
-                      <span className={styles.cardIcon}>
+                  <article key={item.title} className={styles.advCard} data-reveal="up" data-delay={String(index + 1)}>
+                    <div className={styles.advHead}>
+                      <span className={styles.advIcon}>
                         <CardIcon />
                       </span>
-                      <h3>{item.title}</h3>
+                      <h3 className={styles.advTitle}>{item.title}</h3>
                     </div>
-                    <p>{item.description}</p>
+                    <p className={styles.advDesc}>{item.description}</p>
                   </article>
                 );
               })}
