@@ -663,11 +663,30 @@
   background-clip: text;
 }
 
-/* Core grid — uniform 4-column */
-.advantagesGrid {
+/* Core advantages: two-column editorial list */
+.advantagesList {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0;
+  row-gap: 0;
+  position: relative;
+}
+
+/* Vertical center divider */
+.advantagesList::before {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(47, 116, 255, 0.12) 10%,
+    rgba(47, 116, 255, 0.12) 90%,
+    transparent 100%
+  );
+  pointer-events: none;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -946,117 +965,96 @@
 }
 
 /* ── Compact advantage cards ── */
-.advCard {
+/* ── Feature list item ── */
+.advItem {
   position: relative;
-  overflow: hidden;
-  border-radius: 16px;
-  border: 1px solid #e4ecff;
-  background: #ffffff;
-  padding: 18px 20px 16px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  box-shadow:
-    0 0 0 1px rgba(17, 63, 132, 0.03),
-    0 2px 10px rgba(17, 63, 132, 0.06);
-  transition: box-shadow 0.22s ease, filter 0.22s ease, border-color 0.22s ease;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 24px 32px 24px 0;
+  border-bottom: 1px solid rgba(47, 116, 255, 0.08);
+  transition: background 0.2s ease;
+  cursor: default;
 }
 
-.advCard::before {
-  content: '';
-  position: absolute;
-  top: -1px; left: -1px; right: -1px;
-  height: 3px;
-  border-radius: 16px 16px 0 0;
-  background: linear-gradient(90deg, #2f74ff, #60a5fa);
+/* Right column items: add left padding, remove right */
+.advantagesList > .advItem:nth-child(odd) {
+  padding-right: 40px;
+  padding-left: 0;
+}
+.advantagesList > .advItem:nth-child(even) {
+  padding-left: 40px;
+  padding-right: 0;
 }
 
-.advCard:hover {
-  box-shadow:
-    0 0 0 1px rgba(47, 116, 255, 0.2),
-    0 8px 28px rgba(17, 63, 132, 0.12);
-  filter: brightness(1.01);
+/* Remove bottom border on last row (items 7 & 8) */
+.advantagesList > .advItem:nth-child(7),
+.advantagesList > .advItem:nth-child(8) {
+  border-bottom: none;
 }
 
-.advHead {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.advIcon {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
+.advItemIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   background: linear-gradient(135deg, #2f74ff, #60a5fa);
+  box-shadow: 0 4px 14px rgba(47, 116, 255, 0.28);
+  transition: transform 0.22s cubic-bezier(0.22,1,0.36,1), box-shadow 0.22s ease;
 }
 
-.advIcon :global(svg) {
-  width: 19px;
-  height: 19px;
+.advItemIcon :global(svg) {
+  width: 22px;
+  height: 22px;
   filter: brightness(0) invert(1);
   opacity: 0.95;
 }
 
-.advTitle {
-  margin: 0;
-  font-size: 0.93rem;
+.advItem:hover .advItemIcon {
+  transform: translateY(-3px);
+}
+
+.advItemContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.advItemTitle {
+  margin: 0 0 6px;
+  font-size: 1rem;
   font-weight: 700;
   color: #12214c;
   line-height: 1.3;
 }
 
-.advDesc {
+.advItemDesc {
   margin: 0;
-  font-size: 0.855rem;
+  font-size: 0.875rem;
   color: #5a6a8a;
-  line-height: 1.6;
+  line-height: 1.625;
 }
 
-/* ── Per-card accent themes: 8 colors ── */
-/* 1 · Blue */
-.advantagesGrid > .advCard:nth-child(1) { background: linear-gradient(160deg, #fff 0%, #f0f5ff 100%); border-color: #c5d8ff; }
-.advantagesGrid > .advCard:nth-child(1)::before { background: linear-gradient(90deg, #2f74ff, #60a5fa); }
-.advantagesGrid > .advCard:nth-child(1) .advIcon { background: linear-gradient(135deg, #2f74ff, #60a5fa); }
+/* ── Per-item accent colors (icon + hover glow) ── */
+.advantagesList > .advItem:nth-child(1) .advItemIcon { background: linear-gradient(135deg, #2f74ff, #60a5fa); box-shadow: 0 4px 14px rgba(47,116,255,0.28); }
+.advantagesList > .advItem:nth-child(2) .advItemIcon { background: linear-gradient(135deg, #0d9488, #2dd4bf); box-shadow: 0 4px 14px rgba(13,148,136,0.28); }
+.advantagesList > .advItem:nth-child(3) .advItemIcon { background: linear-gradient(135deg, #7c3aed, #a78bfa); box-shadow: 0 4px 14px rgba(124,58,237,0.28); }
+.advantagesList > .advItem:nth-child(4) .advItemIcon { background: linear-gradient(135deg, #d97706, #fbbf24); box-shadow: 0 4px 14px rgba(217,119,6,0.28); }
+.advantagesList > .advItem:nth-child(5) .advItemIcon { background: linear-gradient(135deg, #059669, #34d399); box-shadow: 0 4px 14px rgba(5,150,105,0.28); }
+.advantagesList > .advItem:nth-child(6) .advItemIcon { background: linear-gradient(135deg, #e11d48, #fb7185); box-shadow: 0 4px 14px rgba(225,29,72,0.28); }
+.advantagesList > .advItem:nth-child(7) .advItemIcon { background: linear-gradient(135deg, #4338ca, #818cf8); box-shadow: 0 4px 14px rgba(67,56,202,0.28); }
+.advantagesList > .advItem:nth-child(8) .advItemIcon { background: linear-gradient(135deg, #0891b2, #22d3ee); box-shadow: 0 4px 14px rgba(8,145,178,0.28); }
 
-/* 2 · Teal */
-.advantagesGrid > .advCard:nth-child(2) { background: linear-gradient(160deg, #fff 0%, #f0fdf9 100%); border-color: #99e6d3; }
-.advantagesGrid > .advCard:nth-child(2)::before { background: linear-gradient(90deg, #0d9488, #2dd4bf); }
-.advantagesGrid > .advCard:nth-child(2) .advIcon { background: linear-gradient(135deg, #0d9488, #2dd4bf); }
-
-/* 3 · Violet */
-.advantagesGrid > .advCard:nth-child(3) { background: linear-gradient(160deg, #fff 0%, #f6f2ff 100%); border-color: #d4bfff; }
-.advantagesGrid > .advCard:nth-child(3)::before { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
-.advantagesGrid > .advCard:nth-child(3) .advIcon { background: linear-gradient(135deg, #7c3aed, #a78bfa); }
-
-/* 4 · Amber */
-.advantagesGrid > .advCard:nth-child(4) { background: linear-gradient(160deg, #fff 0%, #fffbeb 100%); border-color: #fde68a; }
-.advantagesGrid > .advCard:nth-child(4)::before { background: linear-gradient(90deg, #d97706, #fbbf24); }
-.advantagesGrid > .advCard:nth-child(4) .advIcon { background: linear-gradient(135deg, #d97706, #fbbf24); }
-
-/* 5 · Emerald */
-.advantagesGrid > .advCard:nth-child(5) { background: linear-gradient(160deg, #fff 0%, #f0fdf4 100%); border-color: #86efac; }
-.advantagesGrid > .advCard:nth-child(5)::before { background: linear-gradient(90deg, #059669, #34d399); }
-.advantagesGrid > .advCard:nth-child(5) .advIcon { background: linear-gradient(135deg, #059669, #34d399); }
-
-/* 6 · Rose */
-.advantagesGrid > .advCard:nth-child(6) { background: linear-gradient(160deg, #fff 0%, #fff1f2 100%); border-color: #fecdd3; }
-.advantagesGrid > .advCard:nth-child(6)::before { background: linear-gradient(90deg, #e11d48, #fb7185); }
-.advantagesGrid > .advCard:nth-child(6) .advIcon { background: linear-gradient(135deg, #e11d48, #fb7185); }
-
-/* 7 · Indigo */
-.advantagesGrid > .advCard:nth-child(7) { background: linear-gradient(160deg, #fff 0%, #eef2ff 100%); border-color: #c7d2fe; }
-.advantagesGrid > .advCard:nth-child(7)::before { background: linear-gradient(90deg, #4338ca, #818cf8); }
-.advantagesGrid > .advCard:nth-child(7) .advIcon { background: linear-gradient(135deg, #4338ca, #818cf8); }
-
-/* 8 · Cyan */
-.advantagesGrid > .advCard:nth-child(8) { background: linear-gradient(160deg, #fff 0%, #ecfeff 100%); border-color: #a5f3fc; }
-.advantagesGrid > .advCard:nth-child(8)::before { background: linear-gradient(90deg, #0891b2, #22d3ee); }
-.advantagesGrid > .advCard:nth-child(8) .advIcon { background: linear-gradient(135deg, #0891b2, #22d3ee); }
+.advantagesList > .advItem:nth-child(1):hover .advItemIcon { box-shadow: 0 8px 22px rgba(47,116,255,0.42); }
+.advantagesList > .advItem:nth-child(2):hover .advItemIcon { box-shadow: 0 8px 22px rgba(13,148,136,0.42); }
+.advantagesList > .advItem:nth-child(3):hover .advItemIcon { box-shadow: 0 8px 22px rgba(124,58,237,0.42); }
+.advantagesList > .advItem:nth-child(4):hover .advItemIcon { box-shadow: 0 8px 22px rgba(217,119,6,0.42); }
+.advantagesList > .advItem:nth-child(5):hover .advItemIcon { box-shadow: 0 8px 22px rgba(5,150,105,0.42); }
+.advantagesList > .advItem:nth-child(6):hover .advItemIcon { box-shadow: 0 8px 22px rgba(225,29,72,0.42); }
+.advantagesList > .advItem:nth-child(7):hover .advItemIcon { box-shadow: 0 8px 22px rgba(67,56,202,0.42); }
+.advantagesList > .advItem:nth-child(8):hover .advItemIcon { box-shadow: 0 8px 22px rgba(8,145,178,0.42); }
 
 .infoCard:hover {
   box-shadow:
@@ -2118,7 +2116,7 @@
   }
 
   .infoCard,
-  .advCard,
+  .advItem,
   .deploymentCard {
     animation: none;
     opacity: 1;
@@ -2136,7 +2134,7 @@
   .actionButton,
   .deployAction,
   .infoCard,
-  .advCard,
+  .advItem,
   .deploymentCard,
   .ecosystemGroup,
   .certSlideLink {
@@ -2156,8 +2154,8 @@
     transform: translateX(0);
   }
 
-  .advantagesGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .advantagesList {
+    column-gap: 0;
   }
 
   .deploymentGrid {
@@ -2441,7 +2439,22 @@
     min-width: 0;
   }
 
-  .advantagesGrid,
+  .advantagesList {
+    grid-template-columns: 1fr;
+  }
+
+  .advantagesList::before { display: none; }
+
+  .advantagesList > .advItem:nth-child(odd),
+  .advantagesList > .advItem:nth-child(even) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .advantagesList > .advItem:nth-child(7) {
+    border-bottom: 1px solid rgba(47, 116, 255, 0.08);
+  }
+
   .scenariosGrid,
   .deploymentGrid {
     grid-template-columns: 1fr;

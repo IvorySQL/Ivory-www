@@ -790,19 +790,19 @@ export default function Home() {
           <div className="container">
             <SectionTitle title={content.coreTitle} Icon={CoreAdvantageIcon} />
             <p className={styles.sectionDescription} data-reveal="up" data-delay="1">{content.coreDesc}</p>
-            <div className={styles.advantagesGrid}>
+            <div className={styles.advantagesList}>
               {content.coreItems.map((item, index) => {
                 const CardIcon = CORE_CARD_ICONS[index % CORE_CARD_ICONS.length];
                 return (
-                  <article key={item.title} className={styles.advCard} data-reveal="up" data-delay={String(index + 1)}>
-                    <div className={styles.advHead}>
-                      <span className={styles.advIcon}>
-                        <CardIcon />
-                      </span>
-                      <h3 className={styles.advTitle}>{item.title}</h3>
+                  <div key={item.title} className={styles.advItem} data-reveal="up" data-delay={String(index + 1)}>
+                    <span className={styles.advItemIcon} aria-hidden="true">
+                      <CardIcon />
+                    </span>
+                    <div className={styles.advItemContent}>
+                      <h3 className={styles.advItemTitle}>{item.title}</h3>
+                      <p className={styles.advItemDesc}>{item.description}</p>
                     </div>
-                    <p className={styles.advDesc}>{item.description}</p>
-                  </article>
+                  </div>
                 );
               })}
             </div>
