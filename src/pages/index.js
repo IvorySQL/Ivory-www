@@ -28,7 +28,7 @@ const ONLINE_TRIAL_URL = 'https://trial.ivorysql.org/';
 
 /* Trusted-by customer list — logo path optional; nameZh shown in zh locale */
 const TRUSTED_CUSTOMERS = [
-  { name: 'Highgo',                         nameZh: '瀚高软件',  logo: '/img/partners/highgo.png',              logoHeight: 36 },
+  { name: 'Highgo',                         nameZh: '瀚高软件',  logo: '/img/partners/highgo.png', logoZh: 'https://2025.pgconf.dev/static/logo/highgo.png', logoHeight: 36 },
   { name: 'Data Bene',                      logo: '/img/partners/databene.png' },
   { name: 'Ongres',                         logo: '/img/partners/ongres.png',                                  logoHeight: 18 },
   { name: 'State Grid Corporation',         nameZh: '国家电网',  logo: '/img/partners/state-grid.png',          logoHeight: 28 },
@@ -717,7 +717,7 @@ export default function Home() {
                 return (
                   <li key={c.name} className={styles.heroTrustItem}>
                     {c.logo
-                      ? <img src={c.logo} alt={displayName} className={c.hasBg ? styles.heroTrustLogoBg : styles.heroTrustLogo} style={c.logoHeight ? { height: c.logoHeight } : undefined} />
+                      ? <img src={isZh && c.logoZh ? c.logoZh : c.logo} alt={displayName} className={c.hasBg ? styles.heroTrustLogoBg : styles.heroTrustLogo} style={c.logoHeight ? { height: c.logoHeight } : undefined} />
                       : <span className={styles.heroTrustText}>{displayName}</span>
                     }
                   </li>
