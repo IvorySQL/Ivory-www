@@ -1,0 +1,91 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1505"/>
+      <stop offset="100%" stop-color="#162010"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="240" r="320" fill="#16a34a" fill-opacity="0.04"/>
+
+  <!-- Terminal window -->
+  <rect x="80" y="60" width="720" height="370" rx="14" fill="#0d1117" stroke="#374151" stroke-width="1.5"/>
+  <!-- Terminal title bar -->
+  <rect x="80" y="60" width="720" height="36" rx="14" fill="#1f2937"/>
+  <rect x="80" y="80" width="720" height="16" fill="#1f2937"/>
+  <!-- Window buttons -->
+  <circle cx="110" cy="78" r="7" fill="#ef4444"/>
+  <circle cx="132" cy="78" r="7" fill="#f59e0b"/>
+  <circle cx="154" cy="78" r="7" fill="#22c55e"/>
+  <text x="400" y="83" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#9ca3af" text-anchor="middle">bash — ivorysql-install</text>
+
+  <!-- Terminal content -->
+  <text x="110" y="124" font-family="monospace" font-size="12" fill="#6b7280"># Add IvorySQL YUM repository</text>
+  <text x="110" y="144" font-family="monospace" font-size="12" fill="#4ade80">$ </text>
+  <text x="126" y="144" font-family="monospace" font-size="12" fill="#e2e8f0">sudo yum install -y ivorysql-release</text>
+
+  <text x="110" y="170" font-family="monospace" font-size="12" fill="#6b7280"># Update and install IvorySQL server</text>
+  <text x="110" y="190" font-family="monospace" font-size="12" fill="#4ade80">$ </text>
+  <text x="126" y="190" font-family="monospace" font-size="12" fill="#e2e8f0">sudo yum install -y ivorysql4-server</text>
+
+  <text x="110" y="218" font-family="monospace" font-size="12" fill="#9ca3af">Resolving Dependencies</text>
+  <text x="110" y="236" font-family="monospace" font-size="12" fill="#9ca3af">--&gt; Running transaction check</text>
+  <text x="110" y="254" font-family="monospace" font-size="12" fill="#9ca3af">---&gt; Package ivorysql4-server.x86_64 4.0-1 will be installed</text>
+  <text x="110" y="272" font-family="monospace" font-size="12" fill="#9ca3af">--&gt; Finished Dependency Resolution</text>
+  <text x="110" y="290" font-family="monospace" font-size="12" fill="#9ca3af">Total download size: 24 MB</text>
+
+  <!-- Progress bar -->
+  <text x="110" y="314" font-family="monospace" font-size="12" fill="#e2e8f0">ivorysql4-server  [===========================] 100%</text>
+  <rect x="110" y="323" width="580" height="8" rx="4" fill="#1f2937"/>
+  <rect x="110" y="323" width="580" height="8" rx="4" fill="#16a34a"/>
+
+  <text x="110" y="352" font-family="monospace" font-size="12" fill="#4ade80">Complete!</text>
+  <text x="110" y="372" font-family="monospace" font-size="12" fill="#4ade80">$ </text>
+  <text x="126" y="372" font-family="monospace" font-size="12" fill="#e2e8f0">sudo systemctl start ivorysql-4</text>
+  <text x="110" y="392" font-family="monospace" font-size="12" fill="#4ade80">● ivorysql-4.service: <tspan fill="#e2e8f0">running</tspan></text>
+
+  <!-- Right panel: supported distros -->
+  <rect x="840" y="60" width="280" height="370" rx="14" fill="#0d1a0e" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="840" y="60" width="280" height="40" rx="14" fill="#14532d"/>
+  <rect x="840" y="84" width="280" height="16" fill="#14532d"/>
+  <text x="980" y="87" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle">Supported Platforms</text>
+
+  <!-- RHEL/CentOS -->
+  <rect x="862" y="114" width="236" height="56" rx="8" fill="#0a1f0a" stroke="#374151" stroke-width="1"/>
+  <text x="876" y="136" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#f87171">RHEL / CentOS</text>
+  <text x="876" y="156" font-family="monospace" font-size="11" fill="#6b7280">7 / 8 / 9</text>
+
+  <!-- Rocky Linux -->
+  <rect x="862" y="182" width="236" height="56" rx="8" fill="#0a1f0a" stroke="#374151" stroke-width="1"/>
+  <text x="876" y="204" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#4ade80">Rocky Linux</text>
+  <text x="876" y="224" font-family="monospace" font-size="11" fill="#6b7280">8 / 9</text>
+
+  <!-- AlmaLinux -->
+  <rect x="862" y="250" width="236" height="56" rx="8" fill="#0a1f0a" stroke="#374151" stroke-width="1"/>
+  <text x="876" y="272" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#60a5fa">AlmaLinux</text>
+  <text x="876" y="292" font-family="monospace" font-size="11" fill="#6b7280">8 / 9</text>
+
+  <!-- Fedora -->
+  <rect x="862" y="318" width="236" height="56" rx="8" fill="#0a1f0a" stroke="#374151" stroke-width="1"/>
+  <text x="876" y="340" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#a78bfa">Fedora</text>
+  <text x="876" y="360" font-family="monospace" font-size="11" fill="#6b7280">37 / 38 / 39+</text>
+
+  <!-- RPM package icon -->
+  <rect x="862" y="386" width="236" height="36" rx="8" fill="#16a34a" fill-opacity="0.2"/>
+  <text x="980" y="408" font-family="monospace" font-size="12" fill="#4ade80" text-anchor="middle">ivorysql4-*.rpm</text>
+
+  <!-- Category chip -->
+  <rect x="44" y="44" width="110" height="32" rx="16" fill="#16a34a" fill-opacity="0.25" stroke="#16a34a" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="99" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#4ade80" text-anchor="middle" letter-spacing="1">IVORYSQL</text>
+
+  <defs>
+    <linearGradient id="btm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#162010" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#050a04" stop-opacity="0.97"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="455" width="1200" height="175" fill="url(#btm)"/>
+  <text x="600" y="510" font-family="system-ui,-apple-system,sans-serif" font-size="38" font-weight="800" fill="#ffffff" text-anchor="middle">YUM / RPM Installation</text>
+  <text x="600" y="552" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#4ade80" text-anchor="middle" fill-opacity="0.85">Install IvorySQL via YUM on RHEL-based Linux</text>
+  <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
+</svg>

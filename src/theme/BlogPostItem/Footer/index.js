@@ -1,30 +1,30 @@
 import React from 'react';
-import {useBlogPost} from '@docusaurus/plugin-content-blog/client';
+import Link from '@docusaurus/Link';
+import { useBlogPost } from '@docusaurus/plugin-content-blog/client';
 import EditThisPage from '@theme/EditThisPage';
 
 export default function BlogPostItemFooter() {
-  const {metadata, isBlogPostPage} = useBlogPost();
-  const {tags, editUrl} = metadata;
+  const { metadata, isBlogPostPage } = useBlogPost();
+  const { tags, editUrl } = metadata;
 
-  if (!isBlogPostPage) {
-    return null;
-  }
+  if (!isBlogPostPage) return null;
 
   return (
-    <footer className="row docusaurus-mt-lg">
+    <footer className="blog-post-footer">
       {tags.length > 0 && (
-        <div className="col">
-          <div style={{display: 'flex', flexWrap: 'wrap', gap: '8px'}}>
-            {tags.map(({label}) => (
-              <span key={label} className="tag-pill-static">
+        <div className="blog-post-footer-tags">
+          <span className="blog-post-footer-tags-label">Tags:</span>
+          <div className="blog-post-footer-tags-list">
+            {tags.map(({ label, permalink }) => (
+              <Link key={label} to={permalink} className="blog-tag-pill">
                 {label}
-              </span>
+              </Link>
             ))}
           </div>
         </div>
       )}
       {editUrl && (
-        <div className="col margin-top--sm">
+        <div className="blog-post-footer-edit">
           <EditThisPage editUrl={editUrl} />
         </div>
       )}

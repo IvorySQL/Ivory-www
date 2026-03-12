@@ -1,0 +1,85 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1b3e"/>
+      <stop offset="100%" stop-color="#1a0a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="260" r="300" fill="#7c3aed" fill-opacity="0.05"/>
+
+  <!-- Left panel: Oracle PL/SQL Package -->
+  <rect x="50" y="70" width="490" height="330" rx="14" fill="#0f0820" stroke="#7c3aed" stroke-width="2" stroke-opacity="0.7"/>
+  <rect x="50" y="70" width="490" height="46" rx="14" fill="#1e0f40"/>
+  <rect x="50" y="100" width="490" height="16" fill="#1e0f40"/>
+  <text x="295" y="102" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#c4b5fd" text-anchor="middle" letter-spacing="1">ORACLE PL/SQL PACKAGE</text>
+
+  <!-- Oracle code -->
+  <text x="75" y="142" font-family="monospace" font-size="12" fill="#7c3aed">CREATE OR REPLACE PACKAGE</text>
+  <text x="75" y="160" font-family="monospace" font-size="12" fill="#a78bfa">  emp_pkg</text>
+  <text x="75" y="178" font-family="monospace" font-size="12" fill="#7c3aed">AS</text>
+  <text x="75" y="196" font-family="monospace" font-size="12" fill="#6b7280">  -- Public declarations</text>
+  <text x="75" y="214" font-family="monospace" font-size="12" fill="#c4b5fd">  PROCEDURE</text>
+  <text x="75" y="232" font-family="monospace" font-size="12" fill="#e2e8f0">    hire_employee(p_name VARCHAR2);</text>
+  <text x="75" y="250" font-family="monospace" font-size="12" fill="#c4b5fd">  FUNCTION</text>
+  <text x="75" y="268" font-family="monospace" font-size="12" fill="#e2e8f0">    get_salary(p_id NUMBER)</text>
+  <text x="75" y="286" font-family="monospace" font-size="12" fill="#e2e8f0">    RETURN NUMBER;</text>
+  <text x="75" y="304" font-family="monospace" font-size="12" fill="#c4b5fd">  g_dept_count</text>
+  <text x="75" y="322" font-family="monospace" font-size="12" fill="#e2e8f0">    NUMBER := 0;</text>
+  <text x="75" y="340" font-family="monospace" font-size="12" fill="#7c3aed">END emp_pkg;</text>
+  <text x="75" y="370" font-family="monospace" font-size="11" fill="#ef4444">Oracle: $$$$  vendor lock-in</text>
+
+  <!-- Equals / compatibility arrow -->
+  <rect x="565" y="195" width="70" height="60" rx="10" fill="#0d1b3e"/>
+  <text x="600" y="222" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#fbaf42" text-anchor="middle">≡</text>
+  <text x="600" y="248" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">100%</text>
+
+  <!-- Right panel: IvorySQL PL/iSQL Package -->
+  <rect x="660" y="70" width="490" height="330" rx="14" fill="#061e38" stroke="#2f74ff" stroke-width="2" stroke-opacity="0.8"/>
+  <rect x="660" y="70" width="490" height="46" rx="14" fill="#0c2a5a"/>
+  <rect x="660" y="100" width="490" height="16" fill="#0c2a5a"/>
+  <text x="905" y="102" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#93c5fd" text-anchor="middle" letter-spacing="1">IVORYSQL PL/iSQL PACKAGE</text>
+
+  <!-- IvorySQL code (identical syntax) -->
+  <text x="685" y="142" font-family="monospace" font-size="12" fill="#2f74ff">CREATE OR REPLACE PACKAGE</text>
+  <text x="685" y="160" font-family="monospace" font-size="12" fill="#60a5fa">  emp_pkg</text>
+  <text x="685" y="178" font-family="monospace" font-size="12" fill="#2f74ff">AS</text>
+  <text x="685" y="196" font-family="monospace" font-size="12" fill="#6b7280">  -- Public declarations</text>
+  <text x="685" y="214" font-family="monospace" font-size="12" fill="#93c5fd">  PROCEDURE</text>
+  <text x="685" y="232" font-family="monospace" font-size="12" fill="#e2e8f0">    hire_employee(p_name VARCHAR2);</text>
+  <text x="685" y="250" font-family="monospace" font-size="12" fill="#93c5fd">  FUNCTION</text>
+  <text x="685" y="268" font-family="monospace" font-size="12" fill="#e2e8f0">    get_salary(p_id NUMBER)</text>
+  <text x="685" y="286" font-family="monospace" font-size="12" fill="#e2e8f0">    RETURN NUMBER;</text>
+  <text x="685" y="304" font-family="monospace" font-size="12" fill="#93c5fd">  g_dept_count</text>
+  <text x="685" y="322" font-family="monospace" font-size="12" fill="#e2e8f0">    NUMBER := 0;</text>
+  <text x="685" y="340" font-family="monospace" font-size="12" fill="#2f74ff">END emp_pkg;</text>
+  <text x="685" y="370" font-family="monospace" font-size="11" fill="#4ade80">✓ Free  ·  open-source  ·  zero rewrites</text>
+
+  <!-- Feature highlights bottom -->
+  <rect x="120" y="430" width="200" height="60" rx="10" fill="#0f1e3a" stroke="#2f74ff" stroke-width="1.5"/>
+  <text x="220" y="456" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#93c5fd" text-anchor="middle">Package Variables</text>
+  <text x="220" y="476" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="middle">session-level state</text>
+
+  <rect x="500" y="430" width="200" height="60" rx="10" fill="#0f1e3a" stroke="#2f74ff" stroke-width="1.5"/>
+  <text x="600" y="456" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#93c5fd" text-anchor="middle">Overloading</text>
+  <text x="600" y="476" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="middle">same name, diff params</text>
+
+  <rect x="880" y="430" width="200" height="60" rx="10" fill="#0f1e3a" stroke="#2f74ff" stroke-width="1.5"/>
+  <text x="980" y="456" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#93c5fd" text-anchor="middle">Body Encapsulation</text>
+  <text x="980" y="476" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="middle">private/public scope</text>
+
+  <!-- Category chip -->
+  <rect x="44" y="44" width="110" height="32" rx="16" fill="#7c3aed" fill-opacity="0.25" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="99" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#c4b5fd" text-anchor="middle" letter-spacing="1">IVORYSQL</text>
+
+  <defs>
+    <linearGradient id="btm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a2e" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#070312" stop-opacity="0.97"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="460" width="1200" height="170" fill="url(#btm)"/>
+  <text x="600" y="516" font-family="system-ui,-apple-system,sans-serif" font-size="38" font-weight="800" fill="#ffffff" text-anchor="middle">IvorySQL Packages</text>
+  <text x="600" y="558" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#c4b5fd" text-anchor="middle" fill-opacity="0.85">Oracle-compatible PL/SQL packages on PostgreSQL</text>
+  <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
+</svg>
