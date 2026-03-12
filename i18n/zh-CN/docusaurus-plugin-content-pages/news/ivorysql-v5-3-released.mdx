@@ -1,0 +1,182 @@
+---
+title: "IvorySQL 5.3 正式发布：基于 PG 18.3 内核，多特性升级+全场景适配"
+hide_table_of_contents: true
+---
+
+<style>{`
+  .detail-banner {
+    background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
+    padding: 40px 0;
+    color: white !important;
+    margin-bottom: 30px;
+  }
+  .detail-banner-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
+  .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
+
+  .detail-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .detail-main { flex: 1; min-width: 0; }
+  .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #7D52F4; }
+
+  .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
+  .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+
+  .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
+  .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
+  .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
+  .contributor-list { font-size: 0.95rem; color: #666; background: #f9f9f9; padding: 20px; border-radius: 8px; line-height: 1.6; }
+
+  .detail-sidebar { width: 240px; flex-shrink: 0; }
+  .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+  .sidebar-nav li { margin-bottom: 10px; }
+  .sidebar-nav a { color: #666; font-size: 0.9rem; text-decoration: none; transition: color 0.2s; }
+  .sidebar-nav a:hover { color: #7D52F4; }
+
+  @media (max-width: 996px) {
+    .detail-banner { padding: 30px 0; }
+    .detail-banner h1 { font-size: 1.5rem; }
+    .detail-wrapper { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .post-title { font-size: 1.5rem; }
+  }
+`}</style>
+
+<div className="detail-banner">
+  <div className="detail-banner-inner">
+    <h1>新闻动态</h1>
+    <div className="detail-banner-decor">● ○ ●</div>
+  </div>
+</div>
+
+<div className="detail-wrapper">
+  <div className="detail-main">
+    <div className="breadcrumb">
+      <a href="/zh-cn/news">新闻动态</a> <span>&gt;</span> <span>IvorySQL 5.3 发布</span>
+    </div>
+
+    <div className="post-header">
+      <div className="post-title">IvorySQL 5.3 正式发布：基于 PG 18.3 内核，多特性升级+全场景适配</div>
+      <div className="post-date">📅 发布时间：2026 年 3 月 12 日</div>
+    </div>
+
+    <div className="post-content">
+      <h2 id="version-overview">版本概述</h2>
+      <p>
+        2026 年 3 月 12 日，IvorySQL 社区正式发布 IvorySQL 5.3。
+      </p>
+      <p>
+        本次版本基于 PostgreSQL 18.3 构建，在同步 PostgreSQL 最新稳定能力的同时，进一步增强云原生部署能力、数据库生态扩展以及用户体验。此外，本次版本现已推出在线体验环境，用户无需安装即可在浏览器中体验 IvorySQL。
+      </p>
+      <p>
+        如需完整更新清单，可访问官方文档网站 <a href="https://docs.ivorysql.org/" target="_blank" rel="noopener noreferrer">https://docs.ivorysql.org/</a>。
+      </p>
+
+      <h2 id="pg-18-3">PostgreSQL 18.3 增强功能</h2>
+      <ul>
+        <li>修复重放旧次要版本生成的 WAL 中 multixid 截断记录后出现的失败问题。</li>
+        <li>避免对“toasted”数据应用 <code>substring()</code> 函数时出现不正确的无效编码报错。</li>
+        <li>修复 CVE-2026-2007 漏洞修复中的疏漏。</li>
+        <li>修正 <code>json_strip_nulls()</code> 和 <code>jsonb_strip_nulls()</code> 函数的易变性标记。</li>
+        <li>修复 <code>LATERAL UNION ALL</code> 子查询输出中可能产生空值的外连接集合计算问题。</li>
+      </ul>
+      <p>
+        更多详情可查看 <a href="https://www.postgresql.org/docs/release/18.3/" target="_blank" rel="noopener noreferrer">PostgreSQL 18.3 官方发布说明</a>。
+      </p>
+
+      <h2 id="pg-18-2">PostgreSQL 18.2 增强功能</h2>
+      <ul>
+        <li>防范 <code>oidvector</code>/<code>int2vector</code> 出现意外维度。</li>
+        <li>增强选择性估计器，避免其附加到接受意外数据类型的操作符上。</li>
+        <li>修复 <code>contrib/pgcrypto</code> 模块 PGP 解密函数中的缓冲区溢出问题。</li>
+        <li>修复多字节字符长度验证不足的问题。</li>
+        <li>增强 <code>contrib/pg_trgm</code> 模块，以应对字符串小写转换行为的变化。</li>
+      </ul>
+      <p>
+        更多详情可查看 <a href="https://www.postgresql.org/docs/release/18.2/" target="_blank" rel="noopener noreferrer">PostgreSQL 18.2 官方发布说明</a>。
+      </p>
+
+      <h2 id="ivory-features">IvorySQL 5.3 新增特性</h2>
+      <ul>
+        <li>升级至 PG 18.3 内核。</li>
+        <li><a href="http://trial.ivorysql.org" target="_blank" rel="noopener noreferrer">在线体验</a>：提供<a href="https://github.com/IvorySQL/ivorysql-wasm/pull/7" target="_blank" rel="noopener noreferrer">基于浏览器的交互式环境</a>，可在线探索与测试 IvorySQL 5.3，无需本地安装。</li>
+        <li>全平台安装包支持：提供适用于 X86、ARM、MIPS、龙芯架构的多平台介质包。</li>
+        <li>容器化部署支持：支持通过 Docker Compose、Podman、Swarm、Helm 及 Operator 一键部署 IvorySQL 5.3 单机或高可用集群。</li>
+        <li>IvorySQL Cloud 5.3 发布：提供全托管的图形化控制平面，实现 IvorySQL 5.3 数据库订阅管理、全生命周期运维编排以及生态服务集成。</li>
+        <li>PostgreSQL 扩展支持：新增 10 个 PostgreSQL 扩展支持，包括 <code>pg_cron</code>、<code>pgAudit</code>、<code>PostGIS</code>、<code>pgRouting</code>、<code>PGroonga</code>、<code>ddlx</code>、<code>pgsql-http</code>、<code>system_stats</code>、<code>plpgsql_check</code>、<code>pgvector</code>。</li>
+      </ul>
+
+      <h2 id="fixed-issues">问题修复</h2>
+      <ul>
+        <li>清理构建过程中的编译警告。</li>
+        <li>修复 <code>ColumnRefOrFuncCall</code> 的 <code>raw_expression_tree_walker</code> 处理问题。</li>
+        <li>修复从 PostgreSQL 升级至 IvorySQL 失败的问题。</li>
+        <li>优化 PL/iSQL 在 <code>ivorysql.compatible_mode = 'pg'</code> 场景下的错误提示信息。</li>
+        <li>修复 <code>token_is_col_id()</code> 中数组越界读取问题（<code>liboracle_parser.c</code>）。</li>
+        <li>修复 psql Tab 自动补全错误显示 <code>INVISIBLEINCREMENT</code> 的问题。</li>
+        <li>修复嵌套函数表达式中的变量重置问题。</li>
+        <li>修复包与子过程在混合使用位置参数和命名参数时的类型强制转换失败问题。</li>
+        <li>修复包过程在使用参数初始化局部变量时可能导致的段错误。</li>
+        <li>修复因跨年导致的回归测试失败问题。</li>
+      </ul>
+
+      <h2 id="source-code">源代码仓库</h2>
+      <p>IvorySQL 项目的开发维护主要分布在以下四个仓库：</p>
+      <ul>
+        <li><strong>IvorySQL 数据库源码：</strong><a href="https://github.com/IvorySQL/IvorySQL" target="_blank" rel="noopener noreferrer">https://github.com/IvorySQL/IvorySQL</a></li>
+        <li><strong>IvorySQL 官方网站：</strong><a href="https://github.com/IvorySQL/Ivory-www" target="_blank" rel="noopener noreferrer">https://github.com/IvorySQL/Ivory-www</a></li>
+        <li><strong>IvorySQL 官方文档：</strong><a href="https://github.com/IvorySQL/IvorySQL_docs" target="_blank" rel="noopener noreferrer">https://github.com/IvorySQL/IvorySQL_docs</a></li>
+        <li><strong>IvorySQL Docker：</strong><a href="https://github.com/IvorySQL/docker_library" target="_blank" rel="noopener noreferrer">https://github.com/IvorySQL/docker_library</a></li>
+      </ul>
+
+      <h2 id="contributors">贡献者</h2>
+      <p>以下人员（按字母顺序）以代码作者、提交者、评审者、测试人员或问题报告者身份参与了本次版本发布：</p>
+      <div className="contributor-list">
+        Cédric Villemain, Fawei Zhao, Ge Sui, Grant Zhou, Oreo Yang, Pierre Forstmann, Rophy Tsai, Shuntian Jiao, Steven Niu, Xiangyu Liang, Xiaohui Liu, Xinjie LYU, Xueyu Gao, Yasir Hussain Shah, Yuan Li, Zheng Tao, Zhenhao Pan, Zhe Zhang, Zhuoyan Shi.
+      </div>
+      <p style={{marginTop: '15px'}}><strong>感谢以上贡献者！</strong></p>
+
+      <h2 id="try-it">欢迎试用</h2>
+      <p>
+        完整更新日志：<a href="https://github.com/IvorySQL/IvorySQL/compare/IvorySQL_5.1...IvorySQL_5.3" target="_blank" rel="noopener noreferrer">https://github.com/IvorySQL/IvorySQL/compare/IvorySQL_5.1...IvorySQL_5.3</a>
+      </p>
+      <p>
+        欢迎各位社区小伙伴试用 IvorySQL 5.3，如发现任何问题，可提交 <a href="https://github.com/IvorySQL/IvorySQL/issues" target="_blank" rel="noopener noreferrer">issue</a> 反馈，我们将为您送上 IvorySQL 周边好礼！
+      </p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-sticky">
+      <div className="sidebar-title">▼ 文章大纲</div>
+      <ul className="sidebar-nav">
+        <li><a href="#version-overview">版本概述</a></li>
+        <li><a href="#pg-18-3">PG 18.3 增强功能</a></li>
+        <li><a href="#pg-18-2">PG 18.2 增强功能</a></li>
+        <li><a href="#ivory-features">IvorySQL 5.3 新增特性</a></li>
+        <li><a href="#fixed-issues">问题修复</a></li>
+        <li><a href="#source-code">源代码仓库</a></li>
+        <li><a href="#contributors">贡献者</a></li>
+        <li><a href="#try-it">欢迎试用</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
