@@ -440,7 +440,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(198, 220, 255, 0.68);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.10) 100%);
+  background: transparent;
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.08) inset,
     0 10px 22px rgba(6, 22, 70, 0.22);
@@ -463,16 +463,6 @@
   padding-right: 1rem;
 }
 
-.actionButton:first-child {
-  border-color: rgba(251, 175, 66, 0.96);
-  background: linear-gradient(135deg, #fbb44f 0%, #f79e1f 100%);
-  color: #ffffff;
-  box-shadow:
-    0 0 0 3px rgba(251, 175, 66, 0.22),
-    0 14px 30px rgba(245, 151, 23, 0.42),
-    0 4px 12px rgba(0, 0, 0, 0.18);
-}
-
 .actionButton:hover {
   color: #ffffff;
   border-color: rgba(251, 175, 66, 0.94);
@@ -481,17 +471,6 @@
   box-shadow:
     0 0 0 3px rgba(251, 175, 66, 0.28),
     0 18px 36px rgba(245, 151, 23, 0.36);
-}
-
-.actionButton:first-child:hover {
-  color: #ffffff;
-  border-color: rgba(252, 188, 92, 0.98);
-  background: linear-gradient(135deg, #fcbf61 0%, #faa12f 100%);
-  transform: translateY(-3px) scale(1.04);
-  box-shadow:
-    0 0 0 4px rgba(251, 175, 66, 0.32),
-    0 20px 40px rgba(245, 151, 23, 0.46),
-    0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* ── SQL Terminal in Hero ── */
