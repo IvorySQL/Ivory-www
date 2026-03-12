@@ -199,7 +199,7 @@ const CONTENT = {
       'IvorySQL 是一款先进、功能齐全的开源 Oracle 兼容 PostgreSQL，致力于保持高兼容性，并可作为最新 PostgreSQL 的完全替代品。通过 compatible_mode 开关可在 Oracle 与 PostgreSQL 兼容模式间切换，PL/iSQL 支持 Oracle PL/SQL 语法及 Oracle 风格包（Packages）。',
     heroBadges: ['Oracle 兼容', 'Apache 2.0 开源', '基于 PostgreSQL 内核'],
     latestVersionPrefix: '最新版本',
-    latestVersionLabel: 'IvorySQL 5.1',
+    latestVersionLabel: 'IvorySQL 5.3',
     actions: [
       { label: '免费下载', to: '/releases-page', ariaLabel: '免费下载 IvorySQL' },
       { label: '在线体验', href: ONLINE_TRIAL_URL, ariaLabel: '在线体验 IvorySQL' },
@@ -357,7 +357,7 @@ const CONTENT = {
       'Bridge the gap between Oracle and PostgreSQL with IvorySQL. Experience a robust, open-source database that combines the power of PostgreSQL with native Oracle syntax support, PL/SQL compatibility, and enterprise-grade performance. Migrate faster, lower costs, and scale with confidence.',
     heroBadges: ['Oracle Compatibility', 'Apache 2.0 Open-Source', 'Built on PostgreSQL'],
     latestVersionPrefix: 'Latest Version',
-    latestVersionLabel: 'IvorySQL 5.1',
+    latestVersionLabel: 'IvorySQL 5.3',
     actions: [
       { label: 'Free Download', to: '/releases-page', ariaLabel: 'Free Download IvorySQL' },
       { label: 'Online Trial', href: ONLINE_TRIAL_URL, ariaLabel: 'Try IvorySQL Online' },
