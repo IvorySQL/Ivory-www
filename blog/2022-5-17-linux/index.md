@@ -4,7 +4,7 @@ title: Compiling and Installing IvorySQL on Linux
 authors: [official]
 authorTwitter: IvorySql
 category: IvorySQL
-image: img/blog/Compiling-and-Installing-IvorySQL-on-Linux.png
+image: img/blog/covers/linux-install.svg
 tags: [IvorySQL, Welcome,Linux, PostgreSQL, Join Us]
 ---
 

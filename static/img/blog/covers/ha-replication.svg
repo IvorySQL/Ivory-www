@@ -1,0 +1,92 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c0800"/>
+      <stop offset="100%" stop-color="#2d1200"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#f97316"/>
+    </marker>
+    <marker id="arr2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#4ade80"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="240" r="320" fill="#f97316" fill-opacity="0.04"/>
+
+  <!-- Primary node -->
+  <rect x="80" y="100" width="300" height="250" rx="16" fill="#1f0a00" stroke="#f97316" stroke-width="2.5"/>
+  <rect x="80" y="100" width="300" height="46" rx="16" fill="#7c2d12"/>
+  <rect x="80" y="130" width="300" height="16" fill="#7c2d12"/>
+  <text x="230" y="130" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="800" fill="#fed7aa" text-anchor="middle" letter-spacing="2">PRIMARY</text>
+  <text x="110" y="172" font-family="monospace" font-size="12" fill="#fdba74">wal_level = logical</text>
+  <text x="110" y="194" font-family="monospace" font-size="12" fill="#fdba74">wal_sender = 5</text>
+  <text x="110" y="216" font-family="monospace" font-size="12" fill="#fdba74">hot_standby = on</text>
+  <rect x="110" y="228" width="240" height="14" rx="3" fill="#f97316" fill-opacity="0.7"/>
+  <rect x="110" y="248" width="240" height="14" rx="3" fill="#ea580c" fill-opacity="0.55"/>
+  <rect x="110" y="268" width="180" height="14" rx="3" fill="#c2410c" fill-opacity="0.4"/>
+  <text x="230" y="310" font-family="monospace" font-size="11" fill="#4ade80">● active  port:5432</text>
+
+  <!-- WAL stream arrows -->
+  <line x1="380" y1="195" x2="470" y2="195" stroke="#f97316" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="425" y="188" font-family="monospace" font-size="10" fill="#fdba74" text-anchor="middle">WAL</text>
+  <line x1="380" y1="290" x2="470" y2="290" stroke="#f97316" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="425" y="283" font-family="monospace" font-size="10" fill="#fdba74" text-anchor="middle">WAL</text>
+
+  <!-- Standby 1 -->
+  <rect x="470" y="80" width="280" height="180" rx="14" fill="#1a0e00" stroke="#fb923c" stroke-width="2"/>
+  <rect x="470" y="80" width="280" height="40" rx="14" fill="#431407"/>
+  <rect x="470" y="106" width="280" height="14" fill="#431407"/>
+  <text x="610" y="108" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#fdba74" text-anchor="middle">STANDBY-1</text>
+  <text x="494" y="140" font-family="monospace" font-size="11" fill="#fb923c">recovery_target_timeline</text>
+  <text x="494" y="158" font-family="monospace" font-size="11" fill="#fb923c">  = latest</text>
+  <text x="494" y="178" font-family="monospace" font-size="11" fill="#fb923c">hot_standby = on</text>
+  <text x="494" y="246" font-family="monospace" font-size="11" fill="#4ade80">● streaming</text>
+
+  <!-- Standby 2 -->
+  <rect x="470" y="290" width="280" height="160" rx="14" fill="#1a0e00" stroke="#fb923c" stroke-width="2"/>
+  <rect x="470" y="290" width="280" height="40" rx="14" fill="#431407"/>
+  <rect x="470" y="316" width="280" height="14" fill="#431407"/>
+  <text x="610" y="318" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#fdba74" text-anchor="middle">STANDBY-2  (async)</text>
+  <text x="494" y="350" font-family="monospace" font-size="11" fill="#fb923c">synchronous_commit</text>
+  <text x="494" y="368" font-family="monospace" font-size="11" fill="#fb923c">  = off</text>
+  <text x="494" y="430" font-family="monospace" font-size="11" fill="#fbbf24">● replicating</text>
+
+  <!-- Failover panel -->
+  <rect x="820" y="100" width="320" height="300" rx="14" fill="#0a1800" stroke="#4ade80" stroke-width="2"/>
+  <rect x="820" y="100" width="320" height="42" rx="14" fill="#14532d"/>
+  <rect x="820" y="128" width="320" height="14" fill="#14532d"/>
+  <text x="980" y="129" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle" letter-spacing="1">FAILOVER FLOW</text>
+  <text x="848" y="166" font-family="monospace" font-size="12" fill="#f97316">1.</text>
+  <text x="868" y="166" font-family="monospace" font-size="12" fill="#d1fae5">Primary goes down</text>
+  <text x="848" y="190" font-family="monospace" font-size="12" fill="#f97316">2.</text>
+  <text x="868" y="190" font-family="monospace" font-size="12" fill="#d1fae5">Monitor detects failure</text>
+  <text x="848" y="214" font-family="monospace" font-size="12" fill="#f97316">3.</text>
+  <text x="868" y="214" font-family="monospace" font-size="12" fill="#d1fae5">Standby-1 promoted</text>
+  <text x="848" y="238" font-family="monospace" font-size="12" fill="#f97316">4.</text>
+  <text x="868" y="238" font-family="monospace" font-size="12" fill="#d1fae5">VIP switches over</text>
+  <text x="848" y="262" font-family="monospace" font-size="12" fill="#f97316">5.</text>
+  <text x="868" y="262" font-family="monospace" font-size="12" fill="#d1fae5">Clients reconnect</text>
+  <line x1="848" y1="278" x2="1120" y2="278" stroke="#374151" stroke-width="1"/>
+  <text x="848" y="300" font-family="monospace" font-size="11" fill="#4ade80">RTO: &lt; 30s  |  RPO: ~0</text>
+  <text x="848" y="320" font-family="monospace" font-size="11" fill="#4ade80">● Repmgr / Patroni ready</text>
+  <text x="848" y="380" font-family="monospace" font-size="11" fill="#6b7280">sync_commit: on (Standby-1)</text>
+
+  <!-- Arrow to failover -->
+  <line x1="750" y1="200" x2="820" y2="200" stroke="#4ade80" stroke-width="1.5" marker-end="url(#arr2)" stroke-dasharray="5,3"/>
+
+  <!-- Category chip -->
+  <rect x="44" y="44" width="110" height="32" rx="16" fill="#f97316" fill-opacity="0.2" stroke="#f97316" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="99" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#fdba74" text-anchor="middle" letter-spacing="1">IVORYSQL</text>
+
+  <defs>
+    <linearGradient id="btm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d1200" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0300" stop-opacity="0.97"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="440" width="1200" height="190" fill="url(#btm)"/>
+  <text x="600" y="494" font-family="system-ui,-apple-system,sans-serif" font-size="38" font-weight="800" fill="#ffffff" text-anchor="middle">High Availability Replication</text>
+  <text x="600" y="538" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#fdba74" text-anchor="middle" fill-opacity="0.85">Primary-Standby streaming with automatic failover in IvorySQL</text>
+  <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
+</svg>

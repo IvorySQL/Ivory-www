@@ -4,7 +4,7 @@ title: Install software through the YUM source
 authors: [official]
 authorTwitter: IvorySql
 category: IvorySQL
-image: img/blog/Install-software-through-the-YUM-source.png
+image: img/blog/covers/yum-install.svg
 tags: [IvorySQL, Welcome, YUM, PostgreSQL, Join Us]
 ---
 

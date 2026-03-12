@@ -4,7 +4,7 @@ title: PGCon2022 meeting review | Technical explanation of IvorySQL project
 authors: [official]
 authorTwitter: IvorySql
 category: PostgreSQL
-image: img/blog/PGCon2022-meeting-review.png
+image: img/blog/covers/pgcon-2022.svg
 tags: [IvorySQL,PGCon2022， PostgreSQL, Join Us]
 ---
 

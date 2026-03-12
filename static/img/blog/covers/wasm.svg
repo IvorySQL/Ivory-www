@@ -1,0 +1,98 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0015"/>
+      <stop offset="100%" stop-color="#050028"/>
+    </linearGradient>
+    <linearGradient id="hex1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Glow center -->
+  <circle cx="600" cy="240" r="200" fill="#6d28d9" fill-opacity="0.08"/>
+  <circle cx="600" cy="240" r="140" fill="#6d28d9" fill-opacity="0.05"/>
+
+  <!-- WASM hexagons grid -->
+  <!-- Helper: hexagon = 6 points around center -->
+  <!-- Row 1 -->
+  <polygon points="480,140 520,118 560,140 560,183 520,205 480,183" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-opacity="0.5"/>
+  <polygon points="560,140 600,118 640,140 640,183 600,205 560,183" fill="#3b0764" stroke="#7c3aed" stroke-width="2"/>
+  <text x="600" y="167" font-family="monospace" font-size="16" font-weight="800" fill="#c4b5fd" text-anchor="middle">W</text>
+  <polygon points="640,140 680,118 720,140 720,183 680,205 640,183" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-opacity="0.5"/>
+
+  <!-- Row 2 -->
+  <polygon points="440,183 480,162 520,183 520,227 480,248 440,227" fill="none" stroke="#6d28d9" stroke-width="1.5" stroke-opacity="0.35"/>
+  <polygon points="520,183 560,162 600,183 600,227 560,248 520,227" fill="#3b0764" stroke="#7c3aed" stroke-width="2"/>
+  <text x="560" y="211" font-family="monospace" font-size="16" font-weight="800" fill="#c4b5fd" text-anchor="middle">A</text>
+  <polygon points="600,183 640,162 680,183 680,227 640,248 600,227" fill="#3b0764" stroke="#7c3aed" stroke-width="2"/>
+  <text x="640" y="211" font-family="monospace" font-size="16" font-weight="800" fill="#c4b5fd" text-anchor="middle">S</text>
+  <polygon points="680,183 720,162 760,183 760,227 720,248 680,227" fill="none" stroke="#6d28d9" stroke-width="1.5" stroke-opacity="0.35"/>
+
+  <!-- Row 3 -->
+  <polygon points="480,227 520,205 560,227 560,270 520,292 480,270" fill="none" stroke="#6d28d9" stroke-width="1.5" stroke-opacity="0.35"/>
+  <polygon points="560,227 600,205 640,227 640,270 600,292 560,270" fill="#3b0764" stroke="#7c3aed" stroke-width="2"/>
+  <text x="600" y="255" font-family="monospace" font-size="16" font-weight="800" fill="#c4b5fd" text-anchor="middle">M</text>
+  <polygon points="640,227 680,205 720,227 720,270 680,292 640,270" fill="none" stroke="#6d28d9" stroke-width="1.5" stroke-opacity="0.35"/>
+
+  <!-- Outer ring hexagons (smaller, decorative) -->
+  <g stroke="#4c1d95" stroke-width="1" stroke-opacity="0.4" fill="none">
+    <polygon points="360,100 388,84 416,100 416,133 388,148 360,133"/>
+    <polygon points="784,100 812,84 840,100 840,133 812,148 784,133"/>
+    <polygon points="320,230 348,214 376,230 376,263 348,278 320,263"/>
+    <polygon points="824,230 852,214 880,230 880,263 852,278 824,263"/>
+    <polygon points="420,330 448,314 476,330 476,363 448,378 420,363"/>
+    <polygon points="724,330 752,314 780,330 780,363 752,378 724,363"/>
+  </g>
+
+  <!-- Browser window frame (right side) -->
+  <rect x="820" y="80" width="320" height="240" rx="10" fill="#0d1117" stroke="#374151" stroke-width="1.5"/>
+  <rect x="820" y="80" width="320" height="36" rx="10" fill="#161b22"/>
+  <rect x="820" y="104" width="320" height="12" fill="#161b22"/>
+  <circle cx="843" cy="98" r="6" fill="#ff5f57"/>
+  <circle cx="864" cy="98" r="6" fill="#ffbd2e"/>
+  <circle cx="885" cy="98" r="6" fill="#28c840"/>
+  <rect x="905" y="88" width="210" height="20" rx="10" fill="#21262d"/>
+  <text x="1010" y="102" font-family="monospace" font-size="10" fill="#6b7280" text-anchor="middle">localhost:3000/ivorysql</text>
+
+  <!-- Browser content: IvorySQL running -->
+  <rect x="835" y="126" width="290" height="24" rx="4" fill="#0d1117"/>
+  <text x="845" y="143" font-family="monospace" font-size="11" fill="#4ade80">▶ IvorySQL WASM loaded</text>
+  <text x="845" y="165" font-family="monospace" font-size="11" fill="#6b7280">-- No install required!</text>
+  <text x="845" y="185" font-family="monospace" font-size="11">
+    <tspan fill="#c792ea">SELECT</tspan><tspan fill="#e2e8f0"> version();</tspan>
+  </text>
+  <text x="845" y="205" font-family="monospace" font-size="10" fill="#c3e88d">IvorySQL 4.0 (WASM build)</text>
+  <text x="845" y="225" font-family="monospace" font-size="11">
+    <tspan fill="#c792ea">SELECT</tspan><tspan fill="#e2e8f0"> SYSDATE </tspan><tspan fill="#c792ea">FROM</tspan><tspan fill="#e2e8f0"> dual;</tspan>
+  </text>
+  <text x="845" y="245" font-family="monospace" font-size="10" fill="#c3e88d">2025-01-15 14:32:10</text>
+  <text x="845" y="268" font-family="monospace" font-size="10" fill="#6b7280">Runs entirely in your browser ↑</text>
+  <rect x="835" y="278" width="100" height="4" rx="2" fill="#7c3aed"/>
+
+  <!-- Connection lines from hexagons to browser -->
+  <line x1="720" y1="183" x2="820" y2="165" stroke="#7c3aed" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="5,3"/>
+  <line x1="720" y1="227" x2="820" y2="200" stroke="#7c3aed" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="5,3"/>
+
+  <!-- WasmEdge badge -->
+  <rect x="820" y="340" width="320" height="50" rx="10" fill="#1e1040" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="980" y="360" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#a78bfa" text-anchor="middle" letter-spacing="2">POWERED BY</text>
+  <text x="980" y="380" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="800" fill="#c4b5fd" text-anchor="middle">WasmEdge Runtime</text>
+
+  <!-- Category chip -->
+  <rect x="44" y="44" width="110" height="32" rx="16" fill="#7c3aed" fill-opacity="0.25" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="99" y="65" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#c4b5fd" text-anchor="middle" letter-spacing="1">IVORYSQL</text>
+
+  <defs>
+    <linearGradient id="btm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050028" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#020010" stop-opacity="0.97"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="410" width="1200" height="220" fill="url(#btm)"/>
+  <text x="600" y="475" font-family="system-ui,-apple-system,sans-serif" font-size="40" font-weight="800" fill="#ffffff" text-anchor="middle">IvorySQL — WASM</text>
+  <text x="600" y="520" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#c4b5fd" text-anchor="middle" fill-opacity="0.8">Installation-free database exploration in the browser</text>
+  <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
+</svg>
