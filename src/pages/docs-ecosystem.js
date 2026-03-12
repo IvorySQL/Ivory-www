@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 const DOCS_BASE = 'https://docs.ivorysql.org';
-const DOCS_VERSION = 'v5.1/v5.1';
+const DOCS_VERSION = 'v5.3/v5.3';
 
 function buildTarget(locale) {
   const normalizedLocale = (locale || 'en').toLowerCase();
