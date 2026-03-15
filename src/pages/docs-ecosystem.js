@@ -2,13 +2,14 @@ import React, { useEffect } from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-const DOCS_BASE = 'https://docs.ivorysql.org';
-const DOCS_VERSION = 'v5.3/v5.3';
+const ECOSYSTEM_URLS = {
+  en: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.3/5.0',
+  zh: 'https://docs.ivorysql.org/cn/ivorysql-doc/v5.3/5.0',
+};
 
 function buildTarget(locale) {
   const normalizedLocale = (locale || 'en').toLowerCase();
-  const docsLocaleSegment = normalizedLocale.startsWith('zh') ? 'cn' : 'en';
-  return `${DOCS_BASE}/${docsLocaleSegment}/ivorysql-doc/${DOCS_VERSION}/5.0`;
+  return normalizedLocale.startsWith('zh') ? ECOSYSTEM_URLS.zh : ECOSYSTEM_URLS.en;
 }
 
 export default function DocsEcosystemRedirect() {
