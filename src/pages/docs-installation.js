@@ -2,13 +2,14 @@ import React, { useEffect } from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-const DOCS_BASE = 'https://docs.ivorysql.org';
-const DOCS_VERSION = 'v5.1/v5.1';
+const INSTALLATION_TARGETS = {
+  en: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.3/3.1#quick-installation',
+  zh: 'https://docs.ivorysql.org/cn/ivorysql-doc/v5.3/3.1#%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85',
+};
 
 function buildTarget(locale) {
   const normalizedLocale = (locale || 'en').toLowerCase();
-  const docsLocaleSegment = normalizedLocale.startsWith('zh') ? 'cn' : 'en';
-  return `${DOCS_BASE}/${docsLocaleSegment}/ivorysql-doc/${DOCS_VERSION}/3.1#quick-installation`;
+  return normalizedLocale.startsWith('zh') ? INSTALLATION_TARGETS.zh : INSTALLATION_TARGETS.en;
 }
 
 export default function DocsInstallationRedirect() {
