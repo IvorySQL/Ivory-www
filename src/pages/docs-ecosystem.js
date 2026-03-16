@@ -3,8 +3,8 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 const ECOSYSTEM_URLS = {
-  en: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.3/5.0',
-  zh: 'https://docs.ivorysql.org/cn/ivorysql-doc/v5.3/5.0',
+  en: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.3/cpu_arch_adp',
+  zh: 'https://docs.ivorysql.org/cn/ivorysql-doc/v5.3/cpu_arch_adp',
 };
 
 function buildTarget(locale) {
