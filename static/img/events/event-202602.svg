@@ -1,0 +1,35 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="36" fill="#F3F2EF"/>
+  <rect x="1006" y="-82" width="690" height="1068" rx="180" fill="url(#paint0_linear_353_18)"/>
+  <circle cx="1248" cy="288" r="178" stroke="rgba(255,255,255,0.28)" stroke-width="10"/>
+  <path d="M1118 456C1184 396 1294 368 1401 406C1460 426 1510 462 1546 512" stroke="rgba(255,255,255,0.75)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1088 232C1166 170 1306 154 1430 214" stroke="rgba(255,255,255,0.55)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1186 652L1210 628L1234 652L1210 676L1186 652Z" fill="#D9E4FF"/>
+  <path d="M1468 176L1492 152L1516 176L1492 200L1468 176Z" fill="#D9E4FF"/>
+  <path d="M1348 730L1366 712L1384 730L1366 748L1348 730Z" fill="#D9E4FF"/>
+
+  <rect x="132" y="94" width="182" height="42" rx="21" fill="#111111"/>
+  <text x="166" y="122" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="1.2">IVORYSQL</text>
+
+  <text x="134" y="228" fill="#2F66FF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="4">LIVESTREAM</text>
+  <text x="132" y="336" fill="#111111" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="112" font-weight="700">直播预告</text>
+  <text x="138" y="442" fill="#2F66FF" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">PostgreSQL 18.3 x IvorySQL 5.3</text>
+  <text x="134" y="520" fill="#2F66FF" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="64" font-weight="700">开启 AI 数据库新纪元</text>
+
+  <rect x="136" y="600" width="298" height="88" rx="26" fill="#FFFFFF"/>
+  <text x="168" y="635" fill="#7A7A7A" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">直播时间</text>
+  <text x="168" y="673" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">2026.03.25 19:30</text>
+
+  <rect x="460" y="600" width="236" height="88" rx="26" fill="#FFFFFF"/>
+  <text x="492" y="635" fill="#7A7A7A" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">观看平台</text>
+  <text x="492" y="673" fill="#111111" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="700">IvorySQL 视频号</text>
+
+  <text x="136" y="788" fill="#4F4F4F" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="28">AI 数据库专题直播</text>
+
+  <defs>
+    <linearGradient id="paint0_linear_353_18" x1="1006" y1="-82" x2="1696" y2="986" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F66FF"/>
+      <stop offset="1" stop-color="#1742C8"/>
+    </linearGradient>
+  </defs>
+</svg>
