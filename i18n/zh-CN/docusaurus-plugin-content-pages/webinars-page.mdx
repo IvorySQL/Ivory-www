@@ -8,6 +8,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export const EventsData = [
   {
+    title: "直播预告｜PostgreSQL 18.3 x IvorySQL 5.3：开启 AI 数据库新纪元",
+    desc: "AI 时代数据库如何从存储走向智能？本场直播将从 PostgreSQL 18.3 内核优化、pgvector 实战与 IvorySQL 5.3 升级出发，拆解 AI 数据库选型与落地路径。",
+    startTime: "2026-03-25",
+    endTime: "2026-03-25",
+    location: "线上活动",
+    link: "/zh-cn/webinars/event-202602",
+    img: "/img/events/event-202602.svg",
+    imagePosition: "left center"
+  },
+  {
     title: "直播活动｜IvorySQL v5 兼容功能使用指南",
     desc: "IvorySQL v5重磅发布！12月25日线上直播深度解析21项Oracle兼容新功能，助您无缝迁移与高效开发。",
     startTime: "2025-12-25",
@@ -163,7 +173,7 @@ export const EventsData = [
 ];
 
 export const EventCard = ({ event }) => {
-  const { title, desc, startTime, endTime, location, link, img } = event;
+  const { title, desc, startTime, endTime, location, link, img, imagePosition } = event;
   const now = new Date();
   const start = new Date(startTime);
   const end = new Date(endTime);
@@ -183,7 +193,12 @@ export const EventCard = ({ event }) => {
       rel="noopener noreferrer"
     >
       <div className="card-img-wrapper">
-        <img src={useBaseUrl(img)} alt={title} loading="lazy" />
+        <img
+          src={useBaseUrl(img)}
+          alt={title}
+          loading="lazy"
+          style={imagePosition ? { objectPosition: imagePosition } : undefined}
+        />
       </div>
       <div className="card-content">
         <div className="card-header">
