@@ -25,6 +25,10 @@ const INSTALL_CARD_ICONS = [Icon04, Icon01, Icon06];
 
 const RELEASES_URL = 'https://github.com/IvorySQL/IvorySQL/releases';
 const ONLINE_TRIAL_URL = 'https://trial.ivorysql.org/';
+const ECOSYSTEM_DOCS_URLS = {
+  en: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.3/5.0',
+  zh: 'https://docs.ivorysql.org/cn/ivorysql-doc/v5.3/5.0',
+};
 
 /* Trusted-by customer list — logo path optional; nameZh shown in zh locale */
 const TRUSTED_CUSTOMERS = [
@@ -598,6 +602,7 @@ export default function Home() {
   const { siteConfig, i18n } = useDocusaurusContext();
   const isZh = i18n.currentLocale.toLowerCase().startsWith('zh');
   const content = isZh ? CONTENT.zh : CONTENT.en;
+  const ecosystemDocsUrl = isZh ? ECOSYSTEM_DOCS_URLS.zh : ECOSYSTEM_DOCS_URLS.en;
   const [latestVersionLabel, setLatestVersionLabel] = useState(content.latestVersionLabel);
   const certImages = [
     '/img/partners/cert1.jpg',
@@ -934,7 +939,7 @@ export default function Home() {
             {/* View all tools link */}
             <div className={styles.ecosystemViewAll} data-reveal="up">
               <a
-                href="https://docs.ivorysql.org/en/ivorysql-doc/v5.3/5.0"
+                href={ecosystemDocsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.ecosystemViewAllLink}

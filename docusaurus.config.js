@@ -164,7 +164,7 @@ const config = {
           },
           {
             label: 'Online Trial',
-            href: 'http://trial.ivorysql.org:8080/',
+            href: 'https://trial.ivorysql.org/',
             position: 'left'
           },
           {
