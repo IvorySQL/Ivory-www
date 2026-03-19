@@ -198,6 +198,10 @@ const config = {
                 href: 'https://atomgit.com/IvorySQL/IvorySQL',
                 label: 'GitCode',
               },
+              {
+                label: 'Contributors',
+                to: '/contributors',
+              },
             ]
           },
           {
