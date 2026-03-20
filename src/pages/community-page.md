@@ -19,6 +19,9 @@ Read our [**contribution guidelines**](https://github.com/IvorySQL/IvorySQL/blob
 - [Report a Bug](https://github.com/IvorySQL/IvorySQL/issues/new/choose)
 - [Submit a pull request](https://github.com/IvorySQL/IvorySQL/pulls)
 
+## Contributors Wall
+Meet the people helping IvorySQL grow on our [Contributors Wall](/contributors).
+
 ## Conversations
 Participate in IvorySQL community discussions through the following channels:
 
