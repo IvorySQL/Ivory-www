@@ -207,7 +207,7 @@ const CONTENT = {
     actions: [
       { label: '免费下载', to: '/releases-page', ariaLabel: '免费下载 IvorySQL' },
       { label: '在线体验', href: ONLINE_TRIAL_URL, ariaLabel: '在线体验 IvorySQL' },
-      { label: '最新活动', to: '/webinars-page', ariaLabel: '查看 IvorySQL 最新活动' },
+      { label: '社区活动', to: '/events', ariaLabel: '查看 IvorySQL 社区活动' },
     ],
     heroTrustLabel: '受到众多企业信赖',
     statsItems: [
@@ -365,7 +365,7 @@ const CONTENT = {
     actions: [
       { label: 'Free Download', to: '/releases-page', ariaLabel: 'Free Download IvorySQL' },
       { label: 'Online Trial', href: ONLINE_TRIAL_URL, ariaLabel: 'Try IvorySQL Online' },
-      { label: 'Latest Webinars', to: '/webinars-page', ariaLabel: 'View Latest IvorySQL Webinars' },
+      { label: 'Events', to: '/events', ariaLabel: 'View IvorySQL Events' },
     ],
     heroTrustLabel: 'Trusted by enterprises worldwide',
     statsItems: [

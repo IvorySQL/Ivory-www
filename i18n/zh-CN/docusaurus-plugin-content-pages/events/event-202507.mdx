@@ -1,0 +1,104 @@
+---
+title: PostgreSQL 数据库技术峰会重庆站回顾｜IvorySQL 开源实践与社区生态
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  .highlight-box { background: #F9F7FF; padding: 25px; border-radius: 8px; margin: 25px 0; border-left: 4px solid #7D52F4; }
+  .tech-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .tech-card h4 { margin-top: 0; color: #333; border-bottom: 1px solid #f5f5f5; padding-bottom: 10px; margin-bottom: 15px; }
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      PostgreSQL 数据库技术峰会重庆站回顾｜IvorySQL 开源实践与社区生态
+    </h1>
+    
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', color: '#888', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 活动日期：2025-06-07</span>
+      <span>📍 活动地点：重庆</span>
+      <span>🌍 线下活动</span>
+    </div>
+
+    <div className="content-text">
+      2025 年 6 月 7 日，由中国开源软件推进联盟 PostgreSQL 分会联合重庆思庄科技有限公司共同举办的 PostgreSQL 数据库技术峰会重庆站圆满落幕。本次活动以“PostgreSQL 与国产生态”为主题，推动 PostgreSQL 在中国的发展。IvorySQL 受邀参与本次活动，技术工程师梁翔宇带来了《IvorySQL 开源实践与社区生态》的主题演讲。
+    </div>
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202507-1.jpg')} alt="活动现场" />
+    <h2 className="section-title">分享内容回顾</h2>
+    
+    <div className="tech-card">
+      <h4>1. 概述与版本发布</h4>
+      * **项目定位**：基于 PostgreSQL，深度兼容 Oracle 的开源数据库。
+      * **发布进展**：自 2021 年发布以来已推出 17 个版本，最新版本为基于 PostgreSQL 17.5 的 IvorySQL 4.5（2025/06/04）。
+    </div>
+
+    <div className="tech-card">
+      <h4>2. 核心特点</h4>
+      * **开源核心**：完全开源，支持原生 PG 模式与 Oracle 语法兼容模式。
+      * **便捷易用**：支持全平台安装介质、容器化部署及[在线试用平台](trial.ivorysql.org)。
+      * **社区活跃**：拥有国内外众多贡献者参与，并获得中国 PostgreSQL 协会支持。
+    </div>
+
+    <div className="tech-card">
+      <h4>3. 技术亮点</h4>
+      * **双端口设计**：5432 端口兼容 PostgreSQL，1521 端口默认 Oracle 兼容模式。
+      * **双 Parser**：新增 Parser 模块处理 Oracle 语法，最大限度降低两种语法间的干扰。
+      * **云平台支持**：支持基于 Kubernetes 的高可用集群部署，提供监控与备份工具。
+    </div>
+
+    <div className="tech-card">
+      <h4>4. 生态与合作</h4>
+      * **Pigsty**：v3.4 版本更新了对 IvorySQL 的支持。
+      * **国际合作**：与西班牙 OnGres 合作集成至 StackGres 项目；与法国 Data Bene 合作推广“去 O”项目。
+    </div>
+
+    <div className="tech-card">
+      <h4>5. 社区与活动</h4>
+      * 介绍 PGConf.dev 2025 和 HOW 2025 技术大会，聚焦 PostgreSQL 生态和开源创新。
+      * 提供中国区贡献者激励计划，包括活动支持、定制周边等。
+      * 鼓励加入 IvorySQL 社区，通过公众号获取更多技术内容。
+    </div>
+
+    <div className="highlight-box">
+      **PPT 下载**：关注公众号【IvorySQL开源数据库社区】回复关键词 **“20250607”** 获取。
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/zh-cn/events/event-202506" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202506-1.jpg')} />
+        <div className="side-item-title">PGConf.dev 2025 大会总结</div>
+      </a>
+      <a href="/zh-cn/events/event-202505" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202505.png')} />
+        <div className="side-item-title">开源之夏 2025 结项圆满收官</div>
+      </a>
+      <a href="/zh-cn/events/event-202504" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202504.png')} />
+        <div className="side-item-title">从Oracle 到 PostgreSQL：迁移更丝滑</div>
+      </a>
+    </div>
+  </div>
+</div>

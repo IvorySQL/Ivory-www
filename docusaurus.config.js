@@ -35,7 +35,7 @@ const config = {
         indexBlog: true,
         indexDocs: false,
         ignoreFiles: ["partners-page","customer-stories-page",
-          "webinars-page","slider","slider-bug","slider-bug-phone","slider-phone","slider-phone-content"],
+          "events/index","slider","slider-bug","slider-bug-phone","slider-phone","slider-phone-content"],
         ignoreCssSelectors:['*.css'],
       }),
     ],
@@ -140,8 +140,8 @@ const config = {
                 to: '/contribution-guidelines',
               },
               {
-                label: 'Webinars',
-                to: '/webinars-page',
+                label: 'Events',
+                to: '/events',
               },
               {
                 label: 'Partners',

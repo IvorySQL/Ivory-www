@@ -79,9 +79,9 @@
     "message": "Gitee",
     "description": "Navbar item with label Gitee"
   },
-  "item.label.Webinars": {
+  "item.label.Events": {
     "message": "社区活动",
-    "description": "Navbar item with label Webinars"
+    "description": "Navbar item with label Events"
   },
   "item.label.Partners": {
     "message": "合作伙伴",

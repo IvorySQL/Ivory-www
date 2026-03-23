@@ -48,7 +48,7 @@ Or, you can [try out the hosted WASM](https://trial.ivorysql.org/) on the IvoryS
 
 ## What’s next
 
-Hoping to learn more about how to use IvorySQL yourself? Keep an eye out for recorded webinars on their website ([coming soon!](https://www.ivorysql.org/webinars-page)), or [check out recordings](https://www.youtube.com/@ivorysql) from the HOW2025 conference in Jinan, China in the meantime.
+Hoping to learn more about how to use IvorySQL yourself? Keep an eye on the events page on their website ([latest updates](https://www.ivorysql.org/events)), or [check out recordings](https://www.youtube.com/@ivorysql) from the HOW2025 conference in Jinan, China in the meantime.
 
 [The next conference in Jinan](https://ivorysql.io/) is already scheduled, from April 26th to the 28th! (By the way, the [Call for Proposals is open](https://sessionize.com/how2026) until February 27th, 2026.)
 

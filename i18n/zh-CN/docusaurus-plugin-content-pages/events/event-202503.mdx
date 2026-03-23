@@ -1,0 +1,105 @@
+---
+title: PostgreSQL数据库技术峰会北京站活动回顾｜IvorySQL 双解析器架构下的兼容性创新实践
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  .event-main-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .section-title { color: #7D52F4; border-left: 4px solid #7D52F4; padding-left: 15px; margin: 40px 0 20px; font-weight: bold; }
+  .content-text { line-height: 1.8; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  .highlight-box { background: #F9F7FF; padding: 25px; border-radius: 8px; margin: 25px 0; border-left: 4px solid #7D52F4; }
+  .tech-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .tech-card h4 { margin-top: 0; color: #333; border-bottom: 1px solid #f5f5f5; padding-bottom: 10px; margin-bottom: 15px; }
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 12px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: bold; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.3' }}>
+      PostgreSQL数据库技术峰会北京站活动回顾｜IvorySQL 双解析器架构下的兼容性创新实践
+    </h1>
+    
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', color: '#888', marginBottom: '30px', fontSize: '0.95rem' }}>
+      <span>📅 活动日期：2025-04-22</span>
+      <span>📍 活动地点：北京</span>
+      <span>🌍 线下活动</span>
+    </div>
+
+    <div className="content-text">
+      2025年4月22日，由中国开源软件推进联盟PG分会主办，PostgreSQL ACE/PG分会北京&天津用户组负责人刘华阳联合发起的“PostgreSQL数据库技术峰会北京站”圆满落幕。
+    </div>
+
+    <div className="content-text">
+      本次活动以“PG与AI融合”为主题，IvorySQL 研发工程师矫顺田受邀带来了主题分享——《IvorySQL V4：双解析器架构下的兼容性创新实践》。
+    </div>
+
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202503-1.jpg')} alt="矫顺田现场分享" />
+
+    <h2 className="section-title">一、兼容性全景</h2>
+    
+    <div className="tech-card">
+      <h4>1. 核心兼容特性</h4>
+      * **Oracle 兼容框架**：支持 PL/iSQL、Oracle Package（包管理）、不可见列、XML 函数（新增 11 个函数）、序列等。
+      * **异构数据交互**：提供 Oracle_fdw、Postgres_fdw 等外部数据包装器。
+      * **关键创新**：
+        * **不可见列**：通过 ALTER TABLE 控制列可见性。
+        * **Oracle Package**：支持包级别权限控制与缓存机制。
+    </div>
+
+    <div className="tech-card">
+      <h4>2. 实际项目案例（国内某金融系统）</h4>
+      * **目标**：替换 Oracle 存储过程，解决总账等核心系统需求。
+      * **成果**：性能与稳定性达标，攻克海量数据读取内存溢出问题，深度支持 Oracle Package 功能。
+    </div>
+
+    <h2 className="section-title">二、双解析器架构设计</h2>
+    <div className="content-text">
+      IvorySQL 基于 **PostgreSQL 17**，扩展了双解析器（PG/Oracle解析器）及双端口设计（5432/1521）。
+    </div>
+
+    <div className="tech-card">
+      <h4>关键技术实现</h4>
+      * **解析器钩子机制**：通过 sql_raw_parser 动态绑定解析器。
+      * **插件化设计**：内置 IvorySQL_ORA 插件，实现数据类型、系统视图、MERGE 命令等。
+    </div>
+
+    <h2 className="section-title">三、社区发展与未来展望</h2>
+    * **技术方向**：基于 PostgreSQL 18 开发 IvorySQL V5，优化云原生支持。
+    * **全球化合作**：与西班牙 OnGres 及法国 Data Bene 推动项目共建。
+    * **参与激励**：提供荣誉证书及限量周边（卫衣、背包、马克杯等）奖励。
+
+    <div className="highlight-box" style={{ textAlign: 'center' }}>
+      关注公众号【IvorySQL开源数据库社区】回顾关键词 **“20250419”** 获取完整 PPT 下载链接。
+    </div>
+
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/zh-cn/events/event-202502" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202502.png')} />
+        <div className="side-item-title">IvorySQL 用户案例有奖征集！</div>
+      </a>
+      <a href="/zh-cn/events/event-202501" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202501.png')} />
+        <div className="side-item-title">第七届中国 PostgreSQL 数据库生态大会回顾</div>
+      </a>
+    </div>
+  </div>
+</div>
