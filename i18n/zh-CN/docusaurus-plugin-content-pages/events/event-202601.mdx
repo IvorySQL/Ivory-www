@@ -1,0 +1,167 @@
+---
+title: 用户调研｜IvorySQL v5 发布后，我们想听听大家的使用体验
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+
+  .survey-shell { max-width: 920px; margin: 0 auto 72px; padding: 0 20px; }
+  .survey-meta { display: flex; flex-wrap: wrap; gap: 18px; color: #5f6158; margin: 18px 0 28px; font-size: 0.97rem; }
+  .survey-lead { font-size: 1.05rem; line-height: 1.95; color: #444; margin-bottom: 26px; }
+
+  .info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 0 0 34px; }
+  .info-card { border-radius: 18px; border: 1px solid #eadfc7; background: linear-gradient(180deg, #fffdf7 0%, #fbf6ea 100%); padding: 22px; box-shadow: 0 10px 24px rgba(14,73,60,0.05); }
+  .info-label { color: #0E493C; font-size: 0.9rem; font-weight: 700; margin-bottom: 10px; letter-spacing: 0.04em; }
+  .info-value { color: #30342f; line-height: 1.85; }
+
+  .section-title { font-size: 1.45rem; font-weight: 700; margin: 40px 0 18px; color: #202621; }
+  .focus-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 14px; }
+  .focus-card { border: 1px solid #e7dcc2; border-radius: 18px; padding: 22px; background: #fffef9; box-shadow: 0 10px 26px rgba(14,73,60,0.04); }
+  .focus-tag { display: inline-block; padding: 5px 12px; border-radius: 999px; background: rgba(14,73,60,0.08); color: #0E493C; font-size: 0.84rem; font-weight: 700; margin-bottom: 12px; }
+  .focus-title { font-size: 1.06rem; font-weight: 700; color: #202621; margin-bottom: 12px; }
+  .focus-card ul { margin: 0; padding-left: 1.1rem; color: #545a53; line-height: 1.9; }
+
+  .reward-block { margin-top: 12px; }
+  .reward-text { line-height: 1.9; color: #4a5049; margin-bottom: 18px; }
+  .reward-image { width: 100%; border-radius: 18px; border: 1px solid #e7dcc2; background: #fff; box-shadow: 0 12px 28px rgba(14,73,60,0.08); }
+
+  .cta-box { margin-top: 34px; padding: 28px; border-radius: 22px; border: 1px solid #d5d8cf; background: linear-gradient(180deg, #0E493C 0%, #125747 100%); color: #fff7eb; box-shadow: 0 18px 36px rgba(14,73,60,0.18); }
+  .cta-box p { margin: 0 0 12px; line-height: 1.9; }
+  .cta-box p:last-child { margin-bottom: 0; }
+  .cta-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 22px; }
+  .survey-link-btn { display: inline-flex; align-items: center; justify-content: center; min-width: 220px; min-height: 56px; padding: 0 24px; border-radius: 999px; border: 1px solid transparent; font-weight: 700; font-size: 1rem; line-height: 1; text-decoration: none !important; transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease; }
+  .survey-link-btn:hover { transform: translateY(-1px); text-decoration: none !important; }
+  .survey-link-btn.primary { background: #F6E3B3; color: #0E493C !important; box-shadow: 0 14px 28px rgba(0,0,0,0.16); }
+  .survey-link-btn.secondary { background: transparent; color: #fff7eb !important; border-color: rgba(255,247,235,0.35); }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 16px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #0E493C; }
+  .side-item:last-child { margin-bottom: 0; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.92rem; font-weight: 700; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .info-grid, .focus-grid { grid-template-columns: 1fr; }
+    .survey-link-btn { width: 100%; min-width: 0; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <div className="survey-shell">
+      <h1 style={{ fontSize: '2.3rem', lineHeight: '1.35', marginBottom: '0' }}>
+        用户调研｜IvorySQL v5 发布后，我们想听听大家的使用体验
+      </h1>
+
+      <div className="survey-meta">
+        <span>📅 调研时间：2026 年 3 月 20 日至 4 月 20 日</span>
+        <span>🌍 线上调研</span>
+        <span>⏱ 预计填写时长：约 3 分钟</span>
+      </div>
+
+      <div className="survey-lead">
+        IvorySQL v5（5.0、5.1、5.3）发布后，社区希望进一步了解大家的真实使用体验、版本反馈以及对未来功能方向的期待。无论你已经在生产环境使用、正在测试评估，还是持续关注 PostgreSQL 与 IvorySQL 生态，都欢迎参与这次用户调研。
+      </div>
+
+      <div className="info-grid">
+        <div className="info-card">
+          <div className="info-label">调研时间</div>
+          <div className="info-value">2026 年 3 月 20 日至 2026 年 4 月 20 日</div>
+        </div>
+        <div className="info-card">
+          <div className="info-label">参与方式</div>
+          <div className="info-value">在线填写问卷，约 3 分钟即可完成。</div>
+        </div>
+        <div className="info-card">
+          <div className="info-label">适合人群</div>
+          <div className="info-value">正在使用 IvorySQL、评估测试中，或关注 PostgreSQL 生态与 Oracle 兼容能力的开发者与用户。</div>
+        </div>
+        <div className="info-card">
+          <div className="info-label">参与福利</div>
+          <div className="info-value">社区将从参与者中抽取周边与技术书籍，并重点奖励高质量反馈与实践经验分享。</div>
+        </div>
+      </div>
+
+      <h2 className="section-title">我们想了解什么</h2>
+      <div className="focus-grid">
+        <div className="focus-card">
+          <div className="focus-tag">01</div>
+          <div className="focus-title">IvorySQL 的使用情况</div>
+          <ul>
+            <li>是否已经在使用 IvorySQL</li>
+            <li>当前使用的数据库版本</li>
+            <li>主要应用场景，例如 OLTP、数据分析、AI 等</li>
+          </ul>
+        </div>
+        <div className="focus-card">
+          <div className="focus-tag">02</div>
+          <div className="focus-title">IvorySQL v5 的使用反馈</div>
+          <ul>
+            <li>AI SQL 能力，如 NL2SQL、pg_ai_query</li>
+            <li>与 PostgreSQL 能力同步情况</li>
+            <li>性能、稳定性与向量数据库能力体验</li>
+          </ul>
+        </div>
+        <div className="focus-card">
+          <div className="focus-tag">03</div>
+          <div className="focus-title">对未来版本的期待</div>
+          <ul>
+            <li>AI 原生数据库与向量检索能力</li>
+            <li>Oracle 兼容能力</li>
+            <li>高可用、云原生部署、运维监控工具</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 className="section-title">参与调研福利</h2>
+      <div className="reward-block">
+        <div className="reward-text">
+          为感谢社区用户的支持，调研结束后将从参与者中随机抽取若干名送出 IvorySQL 周边与技术书籍。对于提出有价值建议、真实使用问题或实践经验的用户，社区还将重点筛选并送出《大师之路：PostgreSQL 瀚海拾贝》以及 IvorySQL 定制礼包。
+        </div>
+        <img className="reward-image" src={useBaseUrl('/img/events/event-202601-prizes.png')} alt="IvorySQL 用户调研福利" />
+      </div>
+
+      <div className="cta-box">
+        <p><b>参与方式</b>：点击下方链接即可填写问卷，欢迎分享你的真实使用体验与建议。</p>
+        <p><b>调研用途</b>：社区会将收集到的反馈作为 IvorySQL 持续迭代和未来版本规划的重要参考。</p>
+        <div className="cta-actions">
+          <a
+            className="survey-link-btn primary"
+            href="https://jsj.top/f/udyNRS"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            参与调研问卷
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/zh-cn/events/event-202603" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202603-zh.jpg')} alt="开源生态大会暨 PostgreSQL 高峰论坛（HOW 2026）" />
+        <div className="side-item-title">活动预告｜开源生态大会暨 PostgreSQL 高峰论坛（HOW 2026）</div>
+      </a>
+      <a href="/zh-cn/events/event-202602" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202602.svg')} alt="PostgreSQL 18.3 x IvorySQL 5.3" />
+        <div className="side-item-title">直播预告｜PostgreSQL 18.3 x IvorySQL 5.3：开启 AI 数据库新纪元</div>
+      </a>
+      <a href="/zh-cn/events/event-202517" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202517.jpg')} alt="IvorySQL v5 兼容功能使用指南" />
+        <div className="side-item-title">直播回顾｜IvorySQL v5 兼容功能使用指南</div>
+      </a>
+    </div>
+  </div>
+</div>
