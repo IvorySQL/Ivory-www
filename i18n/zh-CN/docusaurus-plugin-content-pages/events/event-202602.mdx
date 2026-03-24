@@ -1,0 +1,172 @@
+---
+title: 直播预告｜PostgreSQL 18.3 x IvorySQL 5.3：开启 AI 数据库新纪元
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+
+  .event-main-img { width: 100%; border-radius: 18px; margin: 24px 0; box-shadow: 0 14px 40px rgba(0,0,0,0.08); background: #f6f6f6; }
+  .section-title { color: #2f66ff; border-left: 5px solid #2f66ff; padding-left: 16px; margin: 42px 0 20px; font-weight: 700; }
+  .content-text { line-height: 1.9; color: #444; font-size: 1.05rem; margin-bottom: 18px; text-align: justify; }
+
+  .info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 26px 0; }
+  .info-card { background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%); border: 1px solid #e7efff; border-radius: 16px; padding: 22px; box-shadow: 0 10px 24px rgba(47,102,255,0.06); }
+  .info-label { font-size: 0.92rem; color: #2f66ff; margin-bottom: 10px; font-weight: 700; letter-spacing: 0.04em; }
+  .info-value { font-size: 1.05rem; color: #222; line-height: 1.7; }
+
+  .speaker-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 16px; }
+  .speaker-card { border: 1px solid #eef1f5; border-radius: 18px; padding: 22px; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.04); }
+  .speaker-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+  .speaker-avatar { width: 54px; height: 54px; border-radius: 50%; background: linear-gradient(135deg, #2f66ff 0%, #6a8dff 100%); color: #fff; font-size: 1.4rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px rgba(47,102,255,0.18); }
+  .speaker-name { font-size: 1.1rem; font-weight: 700; color: #222; }
+  .speaker-role { font-size: 0.92rem; color: #2f66ff; margin-top: 4px; }
+  .speaker-desc { color: #555; line-height: 1.85; font-size: 0.97rem; }
+
+  .outline-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 16px; }
+  .outline-card { border-radius: 18px; border: 1px solid #edf1f7; background: #fff; padding: 22px; box-shadow: 0 10px 28px rgba(0,0,0,0.04); }
+  .outline-tag { display: inline-block; padding: 4px 10px; border-radius: 999px; background: rgba(47,102,255,0.1); color: #2f66ff; font-size: 0.84rem; font-weight: 700; margin-bottom: 12px; }
+  .outline-title { font-size: 1.08rem; font-weight: 700; color: #222; margin-bottom: 12px; }
+  .outline-card ul { margin: 0; padding-left: 1.1rem; color: #555; line-height: 1.9; }
+
+  .cta-box { background: linear-gradient(135deg, #2f66ff 0%, #5f84ff 100%); color: #fff; border-radius: 22px; padding: 26px; margin-top: 28px; box-shadow: 0 14px 34px rgba(47,102,255,0.22); }
+  .cta-box p { margin: 0 0 10px; line-height: 1.85; }
+  .cta-box p:last-child { margin-bottom: 0; }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 16px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #2f66ff; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.92rem; font-weight: 700; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .info-grid, .speaker-grid, .outline-grid { grid-template-columns: 1fr; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.35' }}>
+      直播预告｜PostgreSQL 18.3 x IvorySQL 5.3：开启 AI 数据库新纪元
+    </h1>
+
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', color: '#666', marginBottom: '26px', fontSize: '0.95rem' }}>
+      <span>📅 活动时间：2026-03-25 19:30</span>
+      <span>🌍 线上直播</span>
+      <span>🎥 平台：IvorySQL 视频号</span>
+    </div>
+
+    <div className="content-text">
+      观看直播即有机会获取 IvorySQL 周边礼品。欢迎大家预约，和社区嘉宾一起聊一聊 PostgreSQL 与 IvorySQL 在 AI 场景下的新能力、新实践与新机会。
+    </div>
+
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202602-poster-original.jpg')} alt="直播预告海报" />
+
+    <h2 className="section-title">直播时间和平台</h2>
+    <div className="info-grid">
+      <div className="info-card">
+        <div className="info-label">直播时间</div>
+        <div className="info-value">2026 年 3 月 25 日（周三）19:30 准时开启</div>
+      </div>
+      <div className="info-card">
+        <div className="info-label">观看平台</div>
+        <div className="info-value">【IvorySQL】视频号<br />建议提前进入视频号主页预约，开播时更方便收到提醒。</div>
+      </div>
+    </div>
+
+    <h2 className="section-title">讲师简介</h2>
+    <div className="speaker-grid">
+      <div className="speaker-card">
+        <div className="speaker-head">
+          <span className="speaker-avatar">崔</span>
+          <div>
+            <div className="speaker-name">崔鹏</div>
+            <div className="speaker-role">特邀分享嘉宾</div>
+          </div>
+        </div>
+        <div className="speaker-desc">
+          计算机学博士，专注 AI 与大数据管理领域研究，拥有十五年数据库、操作系统及存储领域实战经验，兼具 ORACLE OCM、MySQL OCP 等国际权威认证，PostgreSQL ACE。运营技术公众号“CP 的 PostgreSQL 厨房”，已在 AI 方向发表 2 篇 SCI 论文，长期推动理论研究与工程实践结合。
+        </div>
+      </div>
+
+      <div className="speaker-card">
+        <div className="speaker-head">
+          <span className="speaker-avatar">杨</span>
+          <div>
+            <div className="speaker-name">杨世华</div>
+            <div className="speaker-role">IvorySQL 贡献者</div>
+          </div>
+        </div>
+        <div className="speaker-desc">
+          瀚高股份软件开发工程师，IvorySQL 核心贡献者之一，持续参与 IvorySQL 版本演进与功能实现，对 Oracle 兼容能力、AI 场景探索及社区版本实践有丰富经验。
+        </div>
+      </div>
+    </div>
+
+    <h2 className="section-title">分享内容简介</h2>
+    <div className="content-text">
+      AI 时代，数据库已从“存数据”升级为“懂语义、高并发、易落地”。本次线上直播特邀 KOL 与研发专家双视角联动，拆解 PostgreSQL 为什么正在成为 AI 场景的重要基础设施，分享 PG 18.3 内核优化细节及 pgvector 实战技巧，并同步介绍 IvorySQL 5.3 的核心更新、NL2SQL 方案探索与现场演示，从内核到实战，帮助技术团队更快解锁 AI 数据库选型与智能应用开发路径。
+    </div>
+
+    <h2 className="section-title">分享大纲</h2>
+    <div className="outline-grid">
+      <div className="outline-card">
+        <div className="outline-tag">第一部分</div>
+        <div className="outline-title">趋势与内核</div>
+        <ul>
+          <li>为何选择 PG：为什么 PostgreSQL 正在取代专用向量数据库，成为 AI 场景的重要选择。</li>
+          <li>内核原力：解读 PG 18.3 针对 AI 高并发检索、异步 I/O 的底层优化。</li>
+          <li>进阶实战：pgvector 在生产环境中的索引选型（HNSW）与内存压缩技巧。</li>
+          <li>未来趋势：PostgreSQL 在 AI 原生数据库方向的演进。</li>
+        </ul>
+      </div>
+
+      <div className="outline-card">
+        <div className="outline-tag">第二部分</div>
+        <div className="outline-title">产品与落地</div>
+        <ul>
+          <li>同步升级：IvorySQL 5.3 的主要变化。</li>
+          <li>NL2SQL：pg_ai_query 插件与 n8n + LLM 的自然语言查询方案探索。</li>
+          <li>实战演示：NL2SQL 现场 Demo。</li>
+          <li>第三部分：在线答疑与互动交流。</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 className="section-title">直播福利</h2>
+    <div className="content-text">
+      本次直播准备了 IvorySQL 周边礼品，观看直播并参与互动即有机会获得。欢迎 PostgreSQL 爱好者、IvorySQL 关注者和使用者一起预约围观。
+    </div>
+
+    <div className="cta-box">
+      <p><b>预约提醒</b>：建议提前进入【IvorySQL】视频号预约直播，避免错过开播提醒。</p>
+      <p><b>开播时间</b>：3 月 25 日晚 7 点半。</p>
+      <p><b>互动方式</b>：欢迎把你对 AI 数据库、pgvector、IvorySQL 5.3 与 NL2SQL 的问题带到直播间，我们会在在线答疑环节集中交流。</p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/zh-cn/events/event-202517" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202517.jpg')} alt="IvorySQL v5 兼容功能使用指南" />
+        <div className="side-item-title">直播回顾｜IvorySQL v5 兼容功能使用指南</div>
+      </a>
+      <a href="/zh-cn/events/event-202516" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202516.png')} alt="Oracle 到 PostgreSQL 迁移技术网络研讨会" />
+        <div className="side-item-title">活动回顾｜Oracle 到 PostgreSQL 迁移技术网络研讨会</div>
+      </a>
+      <a href="/zh-cn/events/event-202514" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202514.png')} alt="PostgreSQL 18 六大新特性深度解析" />
+        <div className="side-item-title">直播回顾｜PostgreSQL 18 六大新特性深度解析</div>
+      </a>
+    </div>
+  </div>
+</div>

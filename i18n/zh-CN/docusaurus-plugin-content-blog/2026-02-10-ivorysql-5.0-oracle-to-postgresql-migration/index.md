@@ -60,7 +60,7 @@ IvorySQL v5 带来了一系列关键能力，包括：
 您还可以通过以下渠道深入了解 IvorySQL：
 
 - 官网 blog：https://www.ivorysql.org/zh-CN/blog
-- 社区活动：https://www.ivorysql.org/zh-CN/webinars-page
+- 社区活动：https://www.ivorysql.org/zh-cn/events
 - HOW 2025 相关会议录像：https://www.youtube.com/@ivorysql
 
 值得一提的是，2026 年的 HOW 大会已确定于 4 月 26 日至 28 日举行，[议题征集](https://jsj.top/f/uebqBc)截止日期为 2026 年 2 月 27 日。
