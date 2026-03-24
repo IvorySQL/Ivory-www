@@ -1,55 +1,82 @@
-# Project Contribution Process
+# IvorySQL Contribution Guidelines
+
+IvorySQL grows through contributions from **developers, testers, documentation writers, translators, community advocates, and users around the world**. This page first summarizes the main ways to participate in the community and the current incentive policy, then explains the practical workflow for code contributions.
+
+## Ways to Contribute
+The IvorySQL community believes that **open source should be approachable and that no contribution is too small**. You can participate in a way that matches your background and interests:
+
+- **Code contributions**: kernel development, feature iteration, bug fixes, plugin development, ecosystem tool adaptation, regression tests, and code review.
+- **Non-code contributions**: issue reports, documentation improvements, technical translation, community Q&A, online or offline talks, case studies, migration experience sharing, and community promotion.
+
+If you are not ready to submit code yet, you can still make a meaningful contribution by **reproducing issues, clarifying requirements, improving docs, or helping other users in community discussions**.
+
+## Incentive Policy
+To encourage long-term participation, the IvorySQL community continues to improve how contributors are recognized and supported:
+
+- **Recognition**: contributors may receive **community digital certificates** and be featured on the official <a href="https://www.ivorysql.org/contributors" target="_blank" rel="noopener noreferrer">contributor wall</a> to record their open-source footprint.
+- **Mentorship**: the **"Lighthouse" mentoring model** helps contributors grow with technical guidance, one-on-one support, and code review feedback from experienced community members.
+- **Community opportunities**: active contributors may receive speaking, sharing, or participation opportunities at community events such as **HOW** and other technical activities.
+- **Annual incentives**: the community may select outstanding contributors for merchandise, public recognition, ecosystem exposure, and other collaboration opportunities.
+
+Specific arrangements may evolve with community programs, but **sustained and valuable contributions are always taken seriously and recognized**.
+
+If you are interested in code contributions but are not sure where to start, or if this is your first time contributing to IvorySQL, the guide below is meant to help you find a clear entry point and lower the barrier to participation.
+
+## Code Contribution Guide
 ![process](/img/process_en.png)
 
-# Contributing
-IvorySQL is maintained by a core team of developers with commit rights to the main IvorySQL repository on GitHub. At the same time, we are very eager to receive contributions from anybody in the wider IvorySQL community. This section covers all you need to know if you want to see your code or documentation changes be added to IvorySQL and appear in future releases.
+### Getting Started
+IvorySQL development and collaboration happen on **GitHub**. Before contributing, it is recommended that you:
 
-# Getting started
-IvorySQL is developed on GitHub, and anybody wishing to contribute to it will have to have a GitHub account and be familiar with Git tools and workflow. It is also recommended that you follow the developer's mailing list since some of the contributions may generate more detailed discussions there.
+- Have a GitHub account and be familiar with basic Git workflows.
+- Fork the official repository and work on a dedicated branch in your own fork.
+- Follow community discussions or mailing lists when relevant, especially for larger proposals.
 
-Once you have your GitHub account, fork this repository so that you can have your private copy to start hacking on and to use as a source of pull requests.
+Before submitting any code or documentation contributions, individual or corporate contributors are required to sign the **Contributor License Agreement (CLA)**. Please download, sign, and send the CLA to `cla@ivorysql.org`:
 
-Before submitting any code or documentation contributions, individual or corporate contributors are required to sign the Contributor License Agreement (CLA). Signing the CLA is a mandatory requirement for the IvorySQL community to accept contributions, ensuring your work can be legally distributed. Please download the CLA from the following link, sign it, and email the signed copy to cla@ivorysql.org.
+- [Individual contributor](/pdf/individual_cla.pdf)
+- [Corporate contributor](/pdf/corporate_cla.pdf)
 
-- [individual contributor](/pdf/individual_cla.pdf)
-- [corporate contributor](/pdf/corporate_cla.pdf)
+**Pull requests from contributors who have not signed the CLA cannot proceed to formal review.**
 
-Pull Requests from contributors who have not signed the CLA will not proceed to the review stage. 
+### Patch Submission
+We recommend the following contribution flow:
 
-# Licensing of IvorySQL contributions
-If the contribution you're submitting is original work, you can assume that IvorySQL will release it as part of an overall IvorySQL release available to the downstream consumers under the Apache License, Version 2.0.
+1. Choose an entry point from GitHub issues, documentation gaps, community activities, or ecosystem needs.
+2. For larger changes, discuss the proposal first in an issue, pull request thread, or mailing list to reduce rework.
+3. Fork the repository and create a focused branch for one self-contained change.
+4. Complete the implementation, tests, or documentation updates and review your own changes locally.
+5. Submit a pull request to the official repository, or use issues and discussions for non-code contributions.
+6. Respond to review feedback, push follow-up commits when needed, and iterate until the change is ready to merge.
 
-If the contribution you're submitting is NOT original work you have to indicate the name of the license and also make sure that it is similar in terms to the Apache License 2.0. Apache Software Foundation maintains a list of these licenses under Category A. In addition to that, you may be required to make proper attributions.
+### Coding and Testing Guidelines
+To improve review quality and merge efficiency, we recommend the following:
 
-Finally, keep in mind that it is NEVER a good idea to remove licensing headers from the work that is not your original one. Even if you are using parts of the file that originally had a licensing header at the top you should err on the side of preserving it. As always, if you are not quite sure about the licensing implications of your contributions, feel free to reach out to us on the developer mailing list.
+- Split larger ideas into a series of small, self-contained commits whenever possible.
+- Follow PostgreSQL coding conventions for C and C++ related changes.
+- Run `pgindent` for C and Perl code when needed.
+- Use `git diff --color` before submission to catch accidental whitespace-only changes.
+- Add regression tests for new functionality whenever possible.
+- At minimum, run **`make installcheck-world`** to ensure your changes do not introduce obvious regressions.
 
-Coding guidelines
-Your chances of getting feedback and seeing your code merged into the project greatly depend on how granular your changes are. If you happen to have a bigger change in mind, we highly recommend engaging on the developer's mailing list first and sharing your proposal with us before you spend a lot of time writing code. Even when your proposal gets validated by the community, we still recommend doing the actual work as a series of small, self-contained commits. This makes the reviewer's job much easier and increases the timeliness of feedback.
+If you are unsure how to test or document a change, ask on the `ivorysql-hackers` mailing list and the community will do its best to help.
 
-When it comes to C and C++ parts of IvorySQL, we try to follow PostgreSQL Coding Conventions. In addition to that:
+### Licensing of Contributions
+If the contribution you are submitting is original work, you can assume it will be released as part of IvorySQL under the Apache License, Version 2.0.
 
-For **C** and **Perl** code, please run pgindent if necessary. We recommend using **git diff --color** when reviewing your changes so that you don't have any spurious whitespace issues in the code that you submit.
+If the contribution is not original work, you must clearly indicate the original license and ensure it is compatible with Apache License 2.0 terms. Proper attribution may also be required. In general, never remove an existing license header from third-party or previously licensed work unless you are absolutely certain it is appropriate to do so.
 
-All new functionality that is contributed to IvorySQL should be covered by regression tests that are contributed alongside it. If you are uncertain about how to test or document your work, please raise the question on the ivorysql-hackers mailing list and the developer community will do its best to help you.
+If you are unsure about the licensing implications of your contribution, please contact the community before submitting it.
 
-At the very minimum, you should always be running make installcheck-world to make sure that you're not breaking anything.
+### Changes Applicable to PostgreSQL Upstream
+If your change touches functionality shared by PostgreSQL and IvorySQL, the community may ask you to forward-port or propose the change upstream. This helps reduce long-term divergence between the two projects and gives broadly useful changes access to wider review in the PostgreSQL ecosystem.
 
-# Changes applicable to upstream PostgreSQL
-If the change you're working on touches functionality that is common between PostgreSQL and IvorySQL, you may be asked to forward-port it to PostgreSQL. This is not only so that we keep reducing the delta between the two projects, but also so that any change that is relevant to PostgreSQL can benefit from a much broader review of the upstream PostgreSQL community. In general, it is a good idea to keep both codebases handy so you can be sure whether your changes may need to be forward-ported.
+### Patch Review
+A submitted **pull request with passing checks** is considered available for peer review. Review feedback helps ensure that changes are aligned with project quality standards, roadmap direction, and community expectations.
 
+Possible review outcomes include requests for additional commits, changes in scope, testing improvements, or documentation updates. Please do not be discouraged by iteration; it is a normal part of open-source collaboration.
 
-# Patch submission
-Once you are ready to share your work with the IvorySQL core team and the rest of the IvorySQL community, you should push all the commits to a branch in your own repository forked from the official IvorySQL and send us a pull request.
+When feedback is delayed, it is fine to leave a polite comment on the pull request or ask for an update through the community channels.
 
-# Patch review
-A submitted pull request with passing validation checks is assumed to be available for peer review. Peer review is the process that ensures that contributions to IvorySQL are of high quality and align well with the road map and community expectations. Every member of the IvorySQL community is encouraged to review pull requests and provide feedback. Since you don't have to be a core team member to be able to do that, we recommend following a stream of pull reviews to anybody who's interested in becoming a long-term contributor to IvorySQL.
-
-One outcome of the peer review could be a consensus that you need to modify your pull request in certain ways. GitHub allows you to push additional commits into a branch from which a pull request was sent. Those additional commits will be then visible to all of the reviewers.
-
-A peer review converges when it receives at least one +1 and no -1s votes from the participants. At that point, you should expect one of the core team members to pull your changes into the project.
-
-At any time during the patch review, you may experience delays based on the availability of reviewers and core team members. Please be patient. That being said, don't get discouraged either. If you're not getting expected feedback for a few days add a comment asking for updates on the pull request itself or send an email to the mailing list.
-
-# Direct commits to the repository
-On occasion, you will see core team members committing directly to the repository without going through the pull request workflow. This is reserved for small changes only and the rule of thumb we use is this: if the change touches any functionality that may result in a test failure, then it has to go through a pull request workflow. If, on the other hand, the change is in the non-functional part of the codebase (such as fixing a typo inside of a comment block) core team members can decide to just commit to the repository directly.
-
+### Direct Commits
+Small non-functional fixes may occasionally be committed directly by core team members. Changes that affect behavior, testing, or product functionality should go through the pull request workflow.
