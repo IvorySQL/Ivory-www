@@ -28,7 +28,6 @@ const COPY = {
     },
     sectionTitle: 'Community Contributors',
     resultLabel: 'contributors shown',
-    noGithub: 'Community contributor',
     empty: 'No contributors matched the current filter.',
     ctaText:
       'Want to appear here? Start by joining the IvorySQL contribution flow.',
@@ -54,7 +53,6 @@ const COPY = {
     },
     sectionTitle: '社区贡献者',
     resultLabel: '位贡献者',
-    noGithub: '社区贡献者',
     empty: '当前筛选条件下没有匹配的贡献者。',
     ctaText:
       '也想出现在这里？从参与 IvorySQL 社区贡献开始。',
@@ -87,7 +85,7 @@ function ContributorCard({ contributor, copy }) {
   const avatarSrc = localAvatarUrl || (showGithubAvatar
     ? `https://github.com/${contributor.github}.png?size=240`
     : null);
-  const handleText = githubUrl ? `@${contributor.github}` : '';
+  const handleText = githubUrl ? `@${contributor.github}` : null;
   const yearsLabel = contributor.years.join(' · ');
 
   return (
@@ -117,7 +115,9 @@ function ContributorCard({ contributor, copy }) {
           ) : (
             <h3 className={styles.cardTitle}>{contributor.name}</h3>
           )}
-          <p className={styles.cardHandle}>{handleText}</p>
+          {handleText ? (
+            <p className={styles.cardHandle}>{handleText}</p>
+          ) : null}
         </div>
       </div>
 

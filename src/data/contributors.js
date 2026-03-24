@@ -123,7 +123,7 @@ const CONTRIBUTOR_OVERRIDES = {
   stevenniu: { name: 'Steven Niu', github: 'bigplaice' },
   xiaohuiliu: { name: 'Xiaohui Liu', github: 'hs-liuxh' },
   xiangyuliang: { name: 'Xiangyu Liang', github: 'balinorLiang' },
-  xinjielyu: { name: 'Xinjie Lyu' },
+  xinjielyu: { name: 'Xinjie Lyu', github: null },
   xueyugao: { name: 'Xueyu Gao', github: 'gaoxueyu' },
   yanlianglei: { name: 'Yanliang Lei', github: 'msdnchina' },
   yasirhussainshah: { name: 'Yasir Hussain Shah', github: 'yasir-hussain-shah' },
@@ -221,11 +221,14 @@ export const contributors = Array.from(contributorMap.values())
   .map((item) => {
     const override = CONTRIBUTOR_OVERRIDES[item.id] || {};
     const years = Array.from(item.years).sort((a, b) => b - a);
+    const github = Object.prototype.hasOwnProperty.call(override, 'github')
+      ? override.github
+      : (item.github || null);
 
     return {
       id: item.id,
       name: override.name || humanizeContributorName(item.displaySlug),
-      github: override.github || item.github || null,
+      github,
       avatarSrc: override.avatarSrc || null,
       avatarMode: override.avatarMode || null,
       years,
