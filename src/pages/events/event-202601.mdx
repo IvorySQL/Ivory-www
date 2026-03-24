@@ -1,0 +1,164 @@
+---
+title: User Survey | Tell Us About Your IvorySQL v5 Experience
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+
+  .survey-shell { max-width: 880px; margin: 0 auto 72px; padding: 0 20px; }
+  .survey-meta { display: flex; flex-wrap: wrap; gap: 18px; color: #5f6158; margin: 18px 0 28px; font-size: 0.97rem; }
+  .survey-lead { font-size: 1.04rem; line-height: 1.92; color: #444; margin-bottom: 26px; }
+
+  .info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 0 0 34px; }
+  .info-card { border-radius: 18px; border: 1px solid #eadfc7; background: linear-gradient(180deg, #fffdf7 0%, #fbf6ea 100%); padding: 22px; box-shadow: 0 10px 24px rgba(14,73,60,0.05); }
+  .info-label { color: #0E493C; font-size: 0.84rem; font-weight: 700; margin-bottom: 10px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .info-value { color: #30342f; line-height: 1.82; }
+
+  .section-title { font-size: 1.42rem; font-weight: 700; margin: 38px 0 18px; color: #202621; }
+  .focus-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 14px; }
+  .focus-card { border: 1px solid #e7dcc2; border-radius: 18px; padding: 22px; background: #fffef9; box-shadow: 0 10px 26px rgba(14,73,60,0.04); }
+  .focus-tag { display: inline-block; padding: 5px 12px; border-radius: 999px; background: rgba(14,73,60,0.08); color: #0E493C; font-size: 0.84rem; font-weight: 700; margin-bottom: 12px; }
+  .focus-title { font-size: 1.04rem; font-weight: 700; color: #202621; margin-bottom: 12px; }
+  .focus-card ul { margin: 0; padding-left: 1.1rem; color: #545a53; line-height: 1.9; }
+
+  .reward-text { line-height: 1.88; color: #4a5049; margin-bottom: 18px; }
+  .reward-image { width: 100%; border-radius: 18px; border: 1px solid #e7dcc2; background: #fff; box-shadow: 0 12px 28px rgba(14,73,60,0.08); }
+
+  .cta-box { margin-top: 34px; padding: 28px; border-radius: 22px; border: 1px solid #d5d8cf; background: linear-gradient(180deg, #0E493C 0%, #125747 100%); color: #fff7eb; box-shadow: 0 18px 36px rgba(14,73,60,0.18); }
+  .cta-box p { margin: 0 0 12px; line-height: 1.88; }
+  .cta-box p:last-child { margin-bottom: 0; }
+  .cta-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 22px; }
+  .survey-link-btn { display: inline-flex; align-items: center; justify-content: center; min-width: 220px; min-height: 56px; padding: 0 24px; border-radius: 999px; border: 1px solid transparent; font-weight: 700; font-size: 1rem; line-height: 1; text-decoration: none !important; transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease; }
+  .survey-link-btn:hover { transform: translateY(-1px); text-decoration: none !important; }
+  .survey-link-btn.primary { background: #F6E3B3; color: #0E493C !important; box-shadow: 0 14px 28px rgba(0,0,0,0.16); }
+  .survey-link-btn.secondary { background: transparent; color: #fff7eb !important; border-color: rgba(255,247,235,0.35); }
+
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 16px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #0E493C; }
+  .side-item:last-child { margin-bottom: 0; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.92rem; font-weight: 700; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .info-grid, .focus-grid { grid-template-columns: 1fr; }
+    .survey-link-btn { width: 100%; min-width: 0; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <div className="survey-shell">
+      <h1 style={{ fontSize: '2.2rem', lineHeight: '1.35', marginBottom: '0' }}>
+        User Survey | Tell Us About Your IvorySQL v5 Experience
+      </h1>
+
+      <div className="survey-meta">
+        <span>📅 March 20-April 20, 2026</span>
+        <span>🌍 Online Survey</span>
+        <span>⏱ About 3 minutes</span>
+      </div>
+
+      <div className="survey-lead">
+        IvorySQL v5, including versions 5.0, 5.1, and 5.3, has been available for some time. The community would now like to understand real-world usage, product feedback, and future expectations from users who are already using IvorySQL, evaluating it, or closely following the PostgreSQL ecosystem.
+      </div>
+
+      <div className="info-grid">
+        <div className="info-card">
+          <div className="info-label">Survey Period</div>
+          <div className="info-value">March 20, 2026 to April 20, 2026</div>
+        </div>
+        <div className="info-card">
+          <div className="info-label">Format</div>
+          <div className="info-value">Online survey, with an estimated completion time of around 3 minutes.</div>
+        </div>
+        <div className="info-card">
+          <div className="info-label">Participants</div>
+          <div className="info-value">IvorySQL users, evaluators, and developers interested in PostgreSQL, Oracle compatibility, and open-source database ecosystems.</div>
+        </div>
+        <div className="info-card">
+          <div className="info-label">Benefits</div>
+          <div className="info-value">Selected participants will receive IvorySQL gifts and technical books, with extra focus on high-quality feedback and practical suggestions.</div>
+        </div>
+      </div>
+
+      <h2 className="section-title">What We'd Like to Learn</h2>
+      <div className="focus-grid">
+        <div className="focus-card">
+          <div className="focus-tag">01</div>
+          <div className="focus-title">Current Usage</div>
+          <ul>
+            <li>Whether you are already using IvorySQL</li>
+            <li>Which database version you are using now</li>
+            <li>Your main scenarios, such as OLTP, analytics, or AI workloads</li>
+          </ul>
+        </div>
+        <div className="focus-card">
+          <div className="focus-tag">02</div>
+          <div className="focus-title">Feedback on IvorySQL v5</div>
+          <ul>
+            <li>AI SQL features such as NL2SQL and pg_ai_query</li>
+            <li>PostgreSQL capability alignment</li>
+            <li>Performance, stability, and vector database experience</li>
+          </ul>
+        </div>
+        <div className="focus-card">
+          <div className="focus-tag">03</div>
+          <div className="focus-title">Future Expectations</div>
+          <ul>
+            <li>AI-native database capabilities and vector retrieval</li>
+            <li>Oracle compatibility improvements</li>
+            <li>High availability, cloud-native deployment, and ops tooling</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 className="section-title">Survey Rewards</h2>
+      <div className="reward-text">
+        To thank the community for participating, IvorySQL will randomly select participants to receive branded gifts and technical books after the survey closes. High-quality feedback, real-world issues, and practical experience sharing may also receive additional recognition and prizes.
+      </div>
+      <img className="reward-image" src={useBaseUrl('/img/events/event-202601-prizes.png')} alt="IvorySQL survey rewards" />
+
+      <div className="cta-box">
+        <p><b>How to join</b>: Use the survey link below to share your experience and suggestions.</p>
+        <p><b>Why it matters</b>: The community will use these responses as direct input for product iteration and future roadmap planning.</p>
+        <div className="cta-actions">
+          <a
+            className="survey-link-btn primary"
+            href="https://jsj.top/f/wyDAgF"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Take the Survey
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">Recent Events</div>
+      <a href="/events/event-202603" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202603-en.jpg')} alt="Open Source Ecosystem Conference and PostgreSQL Summit (HOW 2026)" />
+        <div className="side-item-title">Event Preview | Open Source Ecosystem Conference and PostgreSQL Summit (HOW 2026)</div>
+      </a>
+      <a href="/events/event-202516" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202516.png')} alt="Oracle to PostgreSQL Migration Technology Webinar" />
+        <div className="side-item-title">Event Recap | Oracle to PostgreSQL Migration Technology Webinar</div>
+      </a>
+      <a href="/events/event-202515" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202515-en.png')} alt="8th China PostgreSQL Database Eco-Conference" />
+        <div className="side-item-title">8th China PostgreSQL Database Eco-Conference - See you in Hangzhou on 11/29!</div>
+      </a>
+    </div>
+  </div>
+</div>
