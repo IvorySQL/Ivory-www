@@ -8,6 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <style>{`
   .detail-container { display: flex; gap: 40px; margin-top: 40px; }
   .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
 
   .event-main-img { width: 100%; border-radius: 18px; margin: 24px 0; box-shadow: 0 14px 40px rgba(0,0,0,0.08); background: #f6f6f6; }
   .section-title { color: #2f66ff; border-left: 5px solid #2f66ff; padding-left: 16px; margin: 42px 0 20px; font-weight: 700; }
@@ -37,8 +38,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   .cta-box p:last-child { margin-bottom: 0; }
   .cta-box a { color: #fff; font-weight: 700; text-decoration: underline; }
 
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 16px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #2f66ff; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.92rem; font-weight: 700; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
   @media (max-width: 996px) {
     .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
     .info-grid, .speaker-grid, .outline-grid { grid-template-columns: 1fr; }
   }
 `}</style>
@@ -136,6 +145,24 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
     <div className="cta-box">
       <p><b>PPT 下载</b>：关注公众号【IvorySQL开源数据库社区】，后台回复关键词 <b>20260325</b> 即可获取 PPT。</p>
       <p><b>直播回放</b>：<a href="https://bilibili.com/video/BV1EKX8BLEsv/" target="_blank" rel="noopener noreferrer">bilibili.com/video/BV1EKX8BLEsv/</a></p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/zh-cn/events/event-202517" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202517.jpg')} alt="IvorySQL v5 兼容功能使用指南" />
+        <div className="side-item-title">直播回顾｜IvorySQL v5 兼容功能使用指南</div>
+      </a>
+      <a href="/zh-cn/events/event-202516" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202516.png')} alt="Oracle 到 PostgreSQL 迁移技术网络研讨会" />
+        <div className="side-item-title">活动回顾｜Oracle 到 PostgreSQL 迁移技术网络研讨会</div>
+      </a>
+      <a href="/zh-cn/events/event-202514" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202514.png')} alt="PostgreSQL 18 六大新特性深度解析" />
+        <div className="side-item-title">直播回顾｜PostgreSQL 18 六大新特性深度解析</div>
+      </a>
     </div>
   </div>
 </div>
