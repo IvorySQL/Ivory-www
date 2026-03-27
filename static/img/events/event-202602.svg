@@ -1,35 +1,44 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1600" height="900" rx="36" fill="#F3F2EF"/>
-  <rect x="1006" y="-82" width="690" height="1068" rx="180" fill="url(#paint0_linear_353_18)"/>
-  <circle cx="1248" cy="288" r="178" stroke="rgba(255,255,255,0.28)" stroke-width="10"/>
-  <path d="M1118 456C1184 396 1294 368 1401 406C1460 426 1510 462 1546 512" stroke="rgba(255,255,255,0.75)" stroke-width="10" stroke-linecap="round"/>
-  <path d="M1088 232C1166 170 1306 154 1430 214" stroke="rgba(255,255,255,0.55)" stroke-width="10" stroke-linecap="round"/>
-  <path d="M1186 652L1210 628L1234 652L1210 676L1186 652Z" fill="#D9E4FF"/>
-  <path d="M1468 176L1492 152L1516 176L1492 200L1468 176Z" fill="#D9E4FF"/>
-  <path d="M1348 730L1366 712L1384 730L1366 748L1348 730Z" fill="#D9E4FF"/>
+  <rect width="1600" height="900" rx="36" fill="url(#paint0_linear_601_1)"/>
+  <rect x="58" y="58" width="1484" height="784" rx="30" fill="url(#paint1_linear_601_1)" fill-opacity="0.96"/>
+  <circle cx="1274" cy="258" r="198" stroke="#88AFFF" stroke-opacity="0.36" stroke-width="12"/>
+  <circle cx="1350" cy="706" r="122" stroke="#88AFFF" stroke-opacity="0.24" stroke-width="10"/>
+  <path d="M1048 214C1138 142 1288 120 1418 170" stroke="#CFE0FF" stroke-opacity="0.72" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1014 430C1126 356 1288 340 1416 404C1472 432 1512 466 1542 512" stroke="#DCE7FF" stroke-opacity="0.9" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1108 688C1204 626 1346 616 1458 654" stroke="#DCE7FF" stroke-opacity="0.56" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1180 554L1208 526L1236 554L1208 582L1180 554Z" fill="#C7D8FF"/>
+  <path d="M1452 210L1476 186L1500 210L1476 234L1452 210Z" fill="#C7D8FF"/>
+  <path d="M1360 786L1382 764L1404 786L1382 808L1360 786Z" fill="#C7D8FF"/>
 
-  <rect x="132" y="94" width="182" height="42" rx="21" fill="#111111"/>
-  <text x="166" y="122" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="1.2">IVORYSQL</text>
+  <rect x="132" y="104" width="196" height="46" rx="23" fill="#08162E"/>
+  <text x="168" y="134" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="1.4">IVORYSQL</text>
 
-  <text x="134" y="228" fill="#2F66FF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="4">LIVESTREAM</text>
-  <text x="132" y="336" fill="#111111" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="112" font-weight="700">直播预告</text>
-  <text x="138" y="442" fill="#2F66FF" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">PostgreSQL 18.3 x IvorySQL 5.3</text>
-  <text x="134" y="520" fill="#2F66FF" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="64" font-weight="700">开启 AI 数据库新纪元</text>
+  <text x="136" y="238" fill="#94B8FF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="4">LIVESTREAM RECAP</text>
+  <text x="132" y="344" fill="#FFFFFF" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="112" font-weight="700">直播回顾</text>
+  <text x="138" y="450" fill="#BBD0FF" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">PostgreSQL 18.3 x IvorySQL 5.3</text>
+  <text x="134" y="528" fill="#FFFFFF" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="64" font-weight="700">开启 AI 数据库新纪元</text>
 
-  <rect x="136" y="600" width="298" height="88" rx="26" fill="#FFFFFF"/>
-  <text x="168" y="635" fill="#7A7A7A" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">直播时间</text>
-  <text x="168" y="673" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">2026.03.25 19:30</text>
+  <rect x="136" y="612" width="288" height="94" rx="28" fill="#FFFFFF" fill-opacity="0.96"/>
+  <text x="168" y="648" fill="#5F6B85" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">活动时间</text>
+  <text x="168" y="688" fill="#0C1A31" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">2026.03.25</text>
 
-  <rect x="460" y="600" width="236" height="88" rx="26" fill="#FFFFFF"/>
-  <text x="492" y="635" fill="#7A7A7A" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">观看平台</text>
-  <text x="492" y="673" fill="#111111" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="700">IvorySQL 视频号</text>
+  <rect x="448" y="612" width="280" height="94" rx="28" fill="#FFFFFF" fill-opacity="0.96"/>
+  <text x="480" y="648" fill="#5F6B85" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">回放平台</text>
+  <text x="480" y="688" fill="#0C1A31" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Bilibili</text>
 
-  <text x="136" y="788" fill="#4F4F4F" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="28">AI 数据库专题直播</text>
+  <rect x="136" y="752" width="460" height="64" rx="22" fill="#14315F" fill-opacity="0.9"/>
+  <text x="166" y="794" fill="#FFFFFF" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="28" font-weight="700">PPT 关键词：20260327</text>
 
   <defs>
-    <linearGradient id="paint0_linear_353_18" x1="1006" y1="-82" x2="1696" y2="986" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2F66FF"/>
-      <stop offset="1" stop-color="#1742C8"/>
+    <linearGradient id="paint0_linear_601_1" x1="120" y1="64" x2="1514" y2="888" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081224"/>
+      <stop offset="0.5" stop-color="#11306B"/>
+      <stop offset="1" stop-color="#2F66FF"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_601_1" x1="104" y1="92" x2="1320" y2="804" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1C37"/>
+      <stop offset="0.58" stop-color="#143C86"/>
+      <stop offset="1" stop-color="#1C57C9"/>
     </linearGradient>
   </defs>
 </svg>
