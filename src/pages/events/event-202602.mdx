@@ -1,25 +1,45 @@
 ---
-title: Livestream Preview | PostgreSQL 18.3 x IvorySQL 5.3
+title: Livestream Recap | PostgreSQL 18.3 x IvorySQL 5.3
 hide_table_of_contents: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <style>{`
-  .event-shell { max-width: 900px; margin: 48px auto; padding: 0 20px; }
-  .event-cover { width: 100%; border-radius: 18px; box-shadow: 0 14px 40px rgba(0,0,0,0.08); }
-  .event-note { margin-top: 28px; padding: 24px; border-radius: 18px; border: 1px solid #e9eefc; background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%); line-height: 1.8; color: #444; }
-  .event-note a { color: #2f66ff; font-weight: 700; }
+  .event-shell { max-width: 960px; margin: 48px auto; padding: 0 20px; }
+  .event-kicker { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 999px; background: rgba(47,102,255,0.08); color: #2f66ff; font-size: 0.88rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+  .event-shell h1 { margin: 20px 0 14px; font-size: clamp(2.2rem, 4vw, 3.2rem); line-height: 1.15; }
+  .event-summary { max-width: 760px; color: #4f5d73; font-size: 1.05rem; line-height: 1.9; margin-bottom: 28px; }
+  .event-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+  .event-pill { display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; background: #f3f7ff; color: #365899; font-size: 0.94rem; font-weight: 700; }
+  .event-cover { width: 100%; border-radius: 20px; box-shadow: 0 18px 48px rgba(18,42,96,0.14); }
+  .event-note { margin-top: 30px; padding: 28px; border-radius: 20px; border: 1px solid #e7efff; background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%); color: #3f4d63; }
+  .event-note h2 { margin: 0 0 12px; font-size: 1.3rem; color: #1c2740; }
+  .event-note p { margin: 0 0 12px; line-height: 1.8; }
+  .event-note p:last-child { margin-bottom: 0; }
+  .event-links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 18px; }
+  .event-link-primary, .event-link-secondary { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 18px; border-radius: 999px; text-decoration: none !important; font-weight: 700; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .event-link-primary { background: #2f66ff; color: #fff !important; box-shadow: 0 10px 24px rgba(47,102,255,0.2); }
+  .event-link-secondary { border: 1px solid #d7e4ff; color: #2f66ff !important; background: #fff; }
+  .event-link-primary:hover, .event-link-secondary:hover { transform: translateY(-1px); }
 `}</style>
 
 <div className="event-shell">
-  <h1>Livestream Preview | PostgreSQL 18.3 x IvorySQL 5.3</h1>
-  <img className="event-cover" src={useBaseUrl('/img/events/event-202602.svg')} alt="PostgreSQL 18.3 x IvorySQL 5.3 cover" />
+  <div className="event-kicker">Livestream Recap</div>
+  <h1>Livestream Recap | PostgreSQL 18.3 x IvorySQL 5.3</h1>
+  <div className="event-summary">This English page is a lightweight recap bridge. The full write-up, downloadable PPT instructions, and replay details are maintained on the Chinese event page.</div>
+  <div className="event-meta">
+    <span className="event-pill">Replay Date: March 25, 2026</span>
+    <span className="event-pill">PPT Keyword: 20260325</span>
+  </div>
+  <img className="event-cover" src={useBaseUrl('/img/events/event-202602.svg')} alt="PostgreSQL 18.3 x IvorySQL 5.3 recap cover" />
   <div className="event-note">
-    This event page is currently maintained in Chinese only.
-    <br />
-    For the full event details, please visit the Chinese page:
-    {' '}
-    <a href="/zh-cn/events/event-202602">/zh-cn/events/event-202602</a>
+    <h2>Recap Details</h2>
+    <p>The complete recap for this event is currently maintained in Chinese.</p>
+    <p>Visit the Chinese page for the full event summary, PPT keyword, and replay information.</p>
+    <div className="event-links">
+      <a className="event-link-primary" href="/zh-cn/events/event-202602">Open Chinese Recap</a>
+      <a className="event-link-secondary" href="https://bilibili.com/video/BV1EKX8BLEsv/" target="_blank" rel="noopener noreferrer">Watch Replay on Bilibili</a>
+    </div>
   </div>
 </div>
