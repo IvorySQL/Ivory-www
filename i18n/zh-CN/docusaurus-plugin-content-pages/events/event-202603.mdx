@@ -1,0 +1,164 @@
+---
+title: 技术交流｜PostgreSQL & IvorySQL Meetup・郑州站
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  .event-cover { width: 100%; border-radius: 16px; margin: 24px 0; box-shadow: 0 12px 32px rgba(0,0,0,0.1); }
+  .event-main-img { width: 100%; border-radius: 18px; margin: 24px 0; box-shadow: 0 14px 40px rgba(0,0,0,0.08); background: #f6f6f6; }
+  .section-title { color: #7D52F4; border-left: 5px solid #7D52F4; padding-left: 16px; margin: 42px 0 20px; font-weight: 700; font-size: 1.4rem; }
+  .content-text { line-height: 1.9; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  .highlight-box { background: linear-gradient(135deg, #f8f6ff 0%, #f0eeff 100%); padding: 28px; border-radius: 16px; margin: 28px 0; border-left: 5px solid #7D52F4; }
+  .highlight-box p { margin: 0 0 12px; line-height: 1.85; color: #555; }
+  .highlight-box p:last-child { margin-bottom: 0; }
+  .info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 26px 0; }
+  .info-card { background: linear-gradient(180deg, #fcfdff 0%, #f8f6ff 100%); border: 1px solid #e8e4f8; border-radius: 16px; padding: 22px; box-shadow: 0 8px 24px rgba(125,82,244,0.06); }
+  .info-label { color: #7D52F4; font-size: 0.88rem; font-weight: 700; margin-bottom: 10px; letter-spacing: 0.04em; text-transform: uppercase; }
+  .info-value { color: #333; line-height: 1.7; font-size: 1rem; }
+  .topic-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 16px; }
+  .topic-card { border: 1px solid #eee4fc; border-radius: 16px; padding: 22px; background: linear-gradient(180deg, #fff 0%, #faf8ff 100%); box-shadow: 0 8px 24px rgba(125,82,244,0.04); }
+  .topic-tag { display: inline-block; padding: 4px 12px; border-radius: 999px; background: rgba(125,82,244,0.1); color: #7D52F4; font-size: 0.8rem; font-weight: 700; margin-bottom: 12px; }
+  .topic-title { font-size: 1.08rem; font-weight: 700; color: #222; margin-bottom: 12px; }
+  .topic-card ul { margin: 0; padding-left: 1.1rem; color: #555; line-height: 1.85; }
+  .scene-list { margin: 0; padding-left: 1.2rem; line-height: 2; color: #555; }
+  .cta-box { background: linear-gradient(135deg, #7D52F4 0%, #9b7df5 100%); color: #fff; border-radius: 20px; padding: 28px; margin-top: 30px; box-shadow: 0 14px 32px rgba(125,82,244,0.25); }
+  .cta-box p { margin: 0 0 12px; line-height: 1.85; }
+  .cta-box p:last-child { margin-bottom: 0; }
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 16px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item:last-child { margin-bottom: 0; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: 700; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  @media (max-width: 996px) {
+    .detail-container { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .info-grid, .topic-grid { grid-template-columns: 1fr; }
+  }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.35' }}>
+      PostgreSQL & IvorySQL 技术交流 Meetup・郑州站
+    </h1>
+
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', color: '#666', marginBottom: '26px', fontSize: '0.97rem' }}>
+      <span>📅 2026年4月18日（周六）13:30–18:00</span>
+      <span>📍 郑州高铁东站万象城悦几酒店</span>
+      <span>🌍 线下活动</span>
+    </div>
+
+    <div className="content-text">
+      深耕 PG 生态，聚焦内核与实践，一场属于数据库技术人的技术交流。在国产化与开源数据库加速落地的当下，PostgreSQL 凭借稳定、开放、extensible 的生态优势，已成为企业级数据库的重要选择。而基于 PostgreSQL 深度演进的 IvorySQL，也在 Oracle 兼容、内核优化、企业级特性上持续突破，越来越多开发者、DBA、架构师开始关注并投入其中。
+    </div>
+
+    <div className="content-text">
+      为搭建中原地区 PostgreSQL & IvorySQL 技术人面对面交流平台，聚焦技术本质，PostgreSQL & IvorySQL 技术交流 Meetup 郑州站正式来袭。本次活动全程以技术分享、实战经验、问题探讨、生态共建为核心，邀请行业实践者、PG 生态资深玩家、内核研发专家到场，从真实场景出发，聊痛点、讲方案、做碰撞，同时作为 HOW 2026 全球开源技术大会预热活动，提前汇聚技术力量，为年度盛会蓄力。
+    </div>
+
+    <h2 className="section-title">活动信息</h2>
+    <div className="info-grid">
+      <div className="info-card">
+        <div className="info-label">活动时间</div>
+        <div className="info-value">2026 年 4 月 18 日（周六）13:30–18:00</div>
+      </div>
+      <div className="info-card">
+        <div className="info-label">活动地点</div>
+        <div className="info-value">郑州高铁东站万象城悦几酒店（金水东路）<br />一楼会议室 锦悦厅</div>
+      </div>
+      <div className="info-card">
+        <div className="info-label">主办单位</div>
+        <div className="info-value">IvorySQL 社区</div>
+      </div>
+      <div className="info-card">
+        <div className="info-label">协办单位</div>
+        <div className="info-value">开源软件联盟 PostgreSQL 分会</div>
+      </div>
+    </div>
+
+    <h2 className="section-title">四大技术主题</h2>
+    <div className="topic-grid">
+      <div className="topic-card">
+        <div className="topic-tag">01</div>
+        <div className="topic-title">行业客户数据库需求解析与落地方案</div>
+        <ul>
+          <li>从业务场景出发，梳理企业在数据库选型、迁移、运维中的真实需求</li>
+          <li>分享可复用的解决方案与实施经验</li>
+        </ul>
+      </div>
+      <div className="topic-card">
+        <div className="topic-tag">02</div>
+        <div className="topic-title">PG 用户 & 合作伙伴实战经验分享</div>
+        <ul>
+          <li>一线使用者视角，详解 PostgreSQL 在生产环境中的部署、调优、故障处理与最佳实践</li>
+          <li>干货直接可用</li>
+        </ul>
+      </div>
+      <div className="topic-card">
+        <div className="topic-tag">03</div>
+        <div className="topic-title">PG 生态前沿技术与发展趋势</div>
+        <ul>
+          <li>PG 生态资深 KOL 带来生态动态、版本特性、社区方向与技术趋势</li>
+          <li>帮助开发者把握技术脉搏</li>
+        </ul>
+      </div>
+      <div className="topic-card">
+        <div className="topic-tag">04</div>
+        <div className="topic-title">IvorySQL 版本亮点与研发技术解读</div>
+        <ul>
+          <li>围绕 IvorySQL 内核优化、Oracle 兼容能力、新版本特性展开</li>
+          <li>分享开源研发思路与社区共建路径</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 className="section-title">纯粹技术氛围，深度面对面交流</h2>
+    <ul className="scene-list">
+      <li>小范围精品场，嘉宾与听众充分互动，深入探讨技术细节</li>
+      <li>现场自由提问、技术切磋、问题互助，碰撞技术火花</li>
+      <li>汇聚本地 DBA、开发者、架构师、开源爱好者，搭建同频交流圈</li>
+      <li>共同交流 PostgreSQL 运维、性能调优、迁移改造、生态工具、国产化落地等核心技术话题</li>
+    </ul>
+
+    <h2 className="section-title">参与人群</h2>
+    <ul className="scene-list">
+      <li>PostgreSQL / IvorySQL 使用者、开发者、运维人员</li>
+      <li>企业 DBA、数据库架构师、技术负责人</li>
+      <li>关注国产化数据库、Oracle 迁移的技术团队</li>
+      <li>开源社区爱好者与高校计算机相关师生</li>
+    </ul>
+
+    <div className="cta-box">
+      <p><b>席位有限，优先面向技术人员开放。</b></p>
+      <p>4 月 18 日，郑州相聚，与同频技术人一起聊 PG 生态，探 IvorySQL 实践，共筑中原地区开源数据库技术交流圈，提前解锁 HOW 2026 大会技术氛围。</p>
+    </div>
+
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202603-poster.jpg')} alt="郑州站海报" />
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/zh-cn/events/event-202604" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202603-zh.jpg')} alt="HOW 2026" />
+        <div className="side-item-title">活动预告｜开源生态大会暨 PostgreSQL 高峰论坛（HOW 2026）</div>
+      </a>
+      <a href="/zh-cn/events/event-202602" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202602.jpg')} alt="PostgreSQL 18.3 x IvorySQL 5.3 直播回顾" />
+        <div className="side-item-title">直播回顾｜PostgreSQL 18.3 x IvorySQL 5.3：开启 AI 数据库新纪元</div>
+      </a>
+      <a href="/zh-cn/events/event-202601" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202601-zh.jpg')} alt="IvorySQL v5 用户调研" />
+        <div className="side-item-title">用户调研｜IvorySQL v5 发布后，我们想听听大家的使用体验</div>
+      </a>
+    </div>
+  </div>
+</div>
