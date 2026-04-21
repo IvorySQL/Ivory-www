@@ -129,7 +129,7 @@ const config = {
             items: [
               {
                 label: 'Downloads',
-                href: 'https://github.com/IvorySQL/IvorySQL/releases',
+                to: '/download-page',
               },
               {
                 label: 'Installation',
