@@ -22,12 +22,12 @@ export const DownloadPage = () => {
     {
       key: 'jdbc',
       name: 'JDBC 驱动',
-      version: '42.7.10',
+      version: '9.0',
       platform: '全平台',
-      size: '1.1 MB',
-      // 替换为实际值: sha256sum postgresql-42.7.10.jar
-      sha256: null,
-      url: '/download/postgresql-42.7.10.jar',
+      size: '—',
+      checksumAlgo: 'MD5',
+      sha256: 'e3dd1552586cf392cfd8135a7c1fde9e',
+      url: '/download/hgdb-jdbc-v9.0.jar',
     },
   ];
 
@@ -127,7 +127,7 @@ export const DownloadPage = () => {
             <div style={{ padding: '14px 16px' }}>
               {item.sha256 ? (
                 <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <span style={{ fontSize: '0.72rem', fontWeight: 700, color: accentColor, background: `${accentColor}12`, padding: '1px 6px', borderRadius: '3px', flexShrink: 0 }}>SHA256</span>
+                  <span style={{ fontSize: '0.72rem', fontWeight: 700, color: accentColor, background: `${accentColor}12`, padding: '1px 6px', borderRadius: '3px', flexShrink: 0 }}>{item.checksumAlgo || 'SHA256'}</span>
                   <span style={{ fontFamily: 'monospace', fontSize: '0.78rem', color: '#475569', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '100px' }}>
                     {item.sha256.slice(0, 12)}…
                   </span>
