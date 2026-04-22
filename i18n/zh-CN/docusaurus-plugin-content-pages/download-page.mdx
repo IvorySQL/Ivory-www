@@ -34,13 +34,14 @@ export const DownloadPage = () => {
   const toolItems = [
     {
       key: 'assess-x86',
-      name: 'Assess 迁移工具',
+      name: '评估工具',
       version: '1.0.0',
       platform: 'Linux x86_64',
       size: '—',
       checksumAlgo: 'MD5',
       sha256: '8a75568de634f5f6ace18797d0d217d8',
       url: 'https://yum.highgo.com/dists/IvorySQL/download/assess-1.0.0-linux.gtk.x86_64.tar.gz',
+      disabled: true,
     },
   ];
 
@@ -145,13 +146,20 @@ export const DownloadPage = () => {
             </div>
 
             <div style={{ padding: '14px 16px', textAlign: 'center' }}>
-              <a href={item.url}
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '0.82rem', fontWeight: 600, color: accentColor, textDecoration: 'none', padding: '6px 12px', borderRadius: '6px', border: `1px solid ${accentColor}40`, background: `${accentColor}08`, transition: 'background 0.15s', whiteSpace: 'nowrap' }}
-                onMouseEnter={e => { e.currentTarget.style.background = `${accentColor}18`; }}
-                onMouseLeave={e => { e.currentTarget.style.background = `${accentColor}08`; }}>
-                <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2"><path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
-                下载
-              </a>
+              {item.disabled ? (
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '0.82rem', fontWeight: 600, color: '#cbd5e1', padding: '6px 12px', borderRadius: '6px', border: '1px solid #e2e8f0', background: '#f8fafc', whiteSpace: 'nowrap', cursor: 'not-allowed' }}>
+                  <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2"><path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+                  下载
+                </span>
+              ) : (
+                <a href={item.url}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '0.82rem', fontWeight: 600, color: accentColor, textDecoration: 'none', padding: '6px 12px', borderRadius: '6px', border: `1px solid ${accentColor}40`, background: `${accentColor}08`, transition: 'background 0.15s', whiteSpace: 'nowrap' }}
+                  onMouseEnter={e => { e.currentTarget.style.background = `${accentColor}18`; }}
+                  onMouseLeave={e => { e.currentTarget.style.background = `${accentColor}08`; }}>
+                  <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2"><path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+                  下载
+                </a>
+              )}
             </div>
           </div>
         ))}
