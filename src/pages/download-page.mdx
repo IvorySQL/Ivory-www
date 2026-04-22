@@ -6,83 +6,146 @@ title: Downloads
 import React from 'react';
 
 export const DownloadPage = () => {
-  const navy  = '#0d1b3e';
   const blue  = '#2f74ff';
   const card  = { background: '#fff', borderRadius: '12px', border: '1px solid #e5e9f2', boxShadow: '0 2px 12px rgba(15,35,100,0.07)' };
 
-  const downloads = [
+  const sections = [
     {
-      title: 'IvorySQL Package',
-      description: 'Download the latest IvorySQL server packages, source tarballs, and release assets from GitHub.',
-      url: 'https://github.com/IvorySQL/IvorySQL/releases',
+      id: 'database',
+      title: 'IvorySQL Database',
+      subtitle: 'Server packages and release assets',
+      accentColor: '#2f74ff',
       icon: (
-        <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="#fff" strokeWidth="1.8">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 7c0 1.657 3.582 3 8 3s8-1.343 8-3M4 7c0-1.657 3.582-3 8-3s8 1.343 8 3M4 7v5m16-5v5M4 12c0 1.657 3.582 3 8 3s8-1.343 8-3M4 12v5m16-5v5M4 17c0 1.657 3.582 3 8 3s8-1.343 8-3" />
         </svg>
       ),
-      highlight: true,
+      items: [
+        {
+          title: 'IvorySQL Package',
+          description: 'Latest server packages, source tarballs, and release assets on GitHub.',
+          url: 'https://github.com/IvorySQL/IvorySQL/releases',
+          external: true,
+          badge: 'Latest Stable',
+        },
+      ],
     },
     {
-      title: 'JDBC Driver',
-      description: 'Download the IvorySQL JDBC driver to connect Java applications to IvorySQL databases.',
-      url: '/download/postgresql-42.7.10.jar',
+      id: 'drivers',
+      title: 'IvorySQL Drivers',
+      subtitle: 'Client drivers for application connectivity',
+      accentColor: '#7D52F4',
       icon: (
-        <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="#fff" strokeWidth="1.8">
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      highlight: false,
+      items: [
+        {
+          title: 'JDBC Driver',
+          description: 'Java Database Connectivity driver for IvorySQL. Compatible with standard JDBC applications.',
+          url: '/download/postgresql-42.7.10.jar',
+          external: false,
+          badge: null,
+        },
+      ],
+    },
+    {
+      id: 'tools',
+      title: 'Support Tools',
+      subtitle: 'Migration and management utilities',
+      accentColor: '#0891b2',
+      icon: (
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+      ),
+      items: [
+        {
+          title: 'Assess Migration Tool',
+          description: 'Analyze your Oracle schemas and SQL code for IvorySQL migration compatibility. Linux x86_64.',
+          url: '/download/assess-1.0.0-linux.gtk.x86_64.tar.gz',
+          external: false,
+          badge: 'v1.0.0',
+        },
+      ],
     },
   ];
 
-  const DownloadCard = ({ item }) => (
-    <a href={item.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'block' }}>
+  const DownloadCard = ({ item, accentColor }) => (
+    <a
+      href={item.url}
+      target={item.external ? '_blank' : '_self'}
+      rel={item.external ? 'noopener noreferrer' : undefined}
+      style={{ textDecoration: 'none', display: 'block' }}
+    >
       <div
         style={{
           ...card,
-          padding: '28px 32px',
+          padding: '22px 28px',
           display: 'flex',
           alignItems: 'center',
-          gap: '24px',
-          borderLeft: item.highlight ? `4px solid ${blue}` : '4px solid #e5e9f2',
+          gap: '20px',
+          borderLeft: `4px solid ${accentColor}`,
           transition: 'box-shadow 0.2s, transform 0.2s',
-          marginBottom: '16px',
+          marginBottom: '12px',
         }}
-        onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 6px 24px rgba(47,116,255,0.15)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+        onMouseEnter={e => { e.currentTarget.style.boxShadow = `0 6px 24px ${accentColor}26`; e.currentTarget.style.transform = 'translateY(-2px)'; }}
         onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 2px 12px rgba(15,35,100,0.07)'; e.currentTarget.style.transform = 'translateY(0)'; }}
       >
-        {/* icon badge */}
         <div style={{
-          minWidth: '56px', height: '56px',
-          borderRadius: '14px',
-          background: item.highlight
-            ? `linear-gradient(135deg, ${blue} 0%, #60a5fa 100%)`
-            : 'linear-gradient(135deg, #475569 0%, #64748b 100%)',
+          minWidth: '44px', height: '44px', borderRadius: '10px', flexShrink: 0,
+          background: `linear-gradient(135deg, ${accentColor} 0%, ${accentColor}99 100%)`,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          boxShadow: item.highlight ? '0 4px 14px rgba(47,116,255,0.35)' : 'none',
-          flexShrink: 0,
+          boxShadow: `0 3px 10px ${accentColor}4d`,
         }}>
-          {item.icon}
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#fff" strokeWidth="1.8">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
         </div>
 
-        {/* text */}
-        <div style={{ flex: 1 }}>
+        <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
-            <span style={{ fontSize: '1.2rem', fontWeight: 700, color: '#1e293b' }}>
-              {item.title}
-            </span>
+            <span style={{ fontSize: '1.05rem', fontWeight: 700, color: '#1e293b' }}>{item.title}</span>
+            {item.badge && (
+              <span style={{
+                background: `${accentColor}18`, color: accentColor,
+                fontSize: '0.72rem', fontWeight: 700,
+                padding: '2px 10px', borderRadius: '20px', letterSpacing: '0.04em',
+              }}>{item.badge}</span>
+            )}
           </div>
-          <div style={{ marginTop: '6px' }}>
-            <span style={{ fontSize: '0.88rem', color: '#64748b' }}>{item.description}</span>
+          <div style={{ marginTop: '4px' }}>
+            <span style={{ fontSize: '0.875rem', color: '#64748b', lineHeight: 1.5 }}>{item.description}</span>
           </div>
         </div>
 
-        {/* arrow */}
-        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke={blue} strokeWidth="2" style={{ flexShrink: 0, opacity: 0.7 }}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke={accentColor} strokeWidth="2" style={{ flexShrink: 0, opacity: 0.7 }}>
+          {item.external
+            ? <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            : <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          }
         </svg>
       </div>
     </a>
+  );
+
+  const SectionHeader = ({ section }) => (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+      <div style={{
+        width: '36px', height: '36px', borderRadius: '9px', flexShrink: 0,
+        background: `${section.accentColor}15`,
+        color: section.accentColor,
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+      }}>
+        {section.icon}
+      </div>
+      <div>
+        <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1e293b', lineHeight: 1.2 }}>{section.title}</div>
+        <div style={{ fontSize: '0.82rem', color: '#94a3b8', marginTop: '2px' }}>{section.subtitle}</div>
+      </div>
+    </div>
   );
 
   return (
@@ -90,10 +153,10 @@ export const DownloadPage = () => {
 
       {/* ── Hero banner ── */}
       <div style={{
-        background: `linear-gradient(135deg, #7D52F4 0%, #5a35c4 60%, #4a28b0 100%)`,
+        background: 'linear-gradient(135deg, #7D52F4 0%, #5a35c4 60%, #4a28b0 100%)',
         borderRadius: '16px',
         padding: '40px 40px 36px',
-        marginBottom: '36px',
+        marginBottom: '40px',
         position: 'relative',
         overflow: 'hidden',
       }}>
@@ -117,33 +180,40 @@ export const DownloadPage = () => {
           <h1 style={{ color: '#fff', margin: '0 0 10px', fontSize: '2rem', fontWeight: 800, lineHeight: 1.25 }}>
             IvorySQL Downloads
           </h1>
-          <p style={{ color: 'rgba(180,210,255,0.75)', margin: 0, fontSize: '1rem', lineHeight: 1.6 }}>
-            Download IvorySQL packages and drivers to get started with Oracle-compatible PostgreSQL.
+          <p style={{ color: 'rgba(220,210,255,0.8)', margin: 0, fontSize: '1rem', lineHeight: 1.6 }}>
+            Download IvorySQL packages, drivers, and tools to get started with Oracle-compatible PostgreSQL.
           </p>
         </div>
       </div>
 
-      {/* ── Download cards ── */}
-      <div>
-        {downloads.map((item, i) => <DownloadCard key={i} item={item} />)}
-      </div>
+      {/* ── Sections ── */}
+      {sections.map((section, si) => (
+        <div key={section.id} style={{ marginBottom: si < sections.length - 1 ? '36px' : '0' }}>
+          <SectionHeader section={section} />
+          <div style={{ paddingLeft: '4px' }}>
+            {section.items.map((item, i) => (
+              <DownloadCard key={i} item={item} accentColor={section.accentColor} />
+            ))}
+          </div>
+        </div>
+      ))}
 
       {/* ── Contact banner ── */}
       <div style={{
-        marginTop: '28px',
-        background: 'linear-gradient(90deg, rgba(47,116,255,0.08) 0%, rgba(96,165,250,0.06) 100%)',
-        border: '1px solid rgba(47,116,255,0.18)',
+        marginTop: '36px',
+        background: 'linear-gradient(90deg, rgba(125,82,244,0.06) 0%, rgba(125,82,244,0.03) 100%)',
+        border: '1px solid rgba(125,82,244,0.18)',
         borderRadius: '10px',
         padding: '16px 24px',
         display: 'flex', alignItems: 'center', gap: '12px',
         flexWrap: 'wrap',
       }}>
-        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke={blue} strokeWidth="2" style={{ flexShrink: 0 }}>
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#7D52F4" strokeWidth="2" style={{ flexShrink: 0 }}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
         <span style={{ fontSize: '0.9rem', color: '#334155' }}>
           Need help or have questions?{' '}
-          <a href="mailto:support@ivorysql.org" style={{ color: blue, fontWeight: 600 }}>
+          <a href="mailto:support@ivorysql.org" style={{ color: '#7D52F4', fontWeight: 600 }}>
             Contact support@ivorysql.org
           </a>
         </span>
