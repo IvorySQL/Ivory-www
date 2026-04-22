@@ -1,0 +1,241 @@
+---
+id: download-page
+title: Downloads
+---
+
+import React, { useState } from 'react';
+
+export const DownloadPage = () => {
+  const [copiedKey, setCopiedKey] = useState(null);
+
+  const copyToClipboard = (text, key) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopiedKey(key);
+      setTimeout(() => setCopiedKey(null), 2000);
+    });
+  };
+
+  const card = { background: '#fff', borderRadius: '12px', border: '1px solid #e5e9f2', boxShadow: '0 2px 12px rgba(15,35,100,0.07)' };
+
+  /* ── Data ── */
+  const driverItems = [
+    {
+      key: 'jdbc',
+      name: 'JDBC Driver',
+      version: '9.0',
+      platform: 'All Platforms',
+      size: '—',
+      checksumAlgo: 'MD5',
+      sha256: 'e3dd1552586cf392cfd8135a7c1fde9e',
+      url: '/download/hgdb-jdbc-v9.0.jar',
+    },
+  ];
+
+  const toolItems = [
+    {
+      key: 'assess-x86',
+      name: 'Assess Migration Tool',
+      version: '1.0.0',
+      platform: 'Linux x86_64',
+      size: '—',
+      checksumAlgo: 'MD5',
+      sha256: '8a75568de634f5f6ace18797d0d217d8',
+      url: 'https://yum.highgo.com/dists/IvorySQL/download/assess-1.0.0-linux.gtk.x86_64.tar.gz',
+    },
+  ];
+
+  /* ── Section headers ── */
+  const sectionMeta = {
+    database: { title: 'IvorySQL Database', subtitle: 'Server packages and release assets', accentColor: '#2f74ff',
+      icon: <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M4 7c0 1.657 3.582 3 8 3s8-1.343 8-3M4 7c0-1.657 3.582-3 8-3s8 1.343 8 3M4 7v5m16-5v5M4 12c0 1.657 3.582 3 8 3s8-1.343 8-3M4 12v5m16-5v5M4 17c0 1.657 3.582 3 8 3s8-1.343 8-3" /></svg> },
+    drivers: { title: 'IvorySQL Drivers', subtitle: 'Client drivers for application connectivity', accentColor: '#7D52F4',
+      icon: <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg> },
+    tools: { title: 'Related Tools', subtitle: 'Migration and management utilities', accentColor: '#0891b2',
+      icon: <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg> },
+  };
+
+  const SectionHeader = ({ id }) => {
+    const m = sectionMeta[id];
+    return (
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+        <div style={{ width: '36px', height: '36px', borderRadius: '9px', flexShrink: 0, background: `${m.accentColor}15`, color: m.accentColor, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          {m.icon}
+        </div>
+        <div>
+          <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1e293b', lineHeight: 1.2 }}>{m.title}</div>
+          <div style={{ fontSize: '0.82rem', color: '#94a3b8', marginTop: '2px' }}>{m.subtitle}</div>
+        </div>
+      </div>
+    );
+  };
+
+  /* ── Database card (unchanged) ── */
+  const DatabaseCard = () => {
+    const ac = sectionMeta.database.accentColor;
+    return (
+      <a href="https://github.com/IvorySQL/IvorySQL/releases" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'block' }}>
+        <div style={{ ...card, padding: '22px 28px', display: 'flex', alignItems: 'center', gap: '20px', borderLeft: `4px solid ${ac}`, transition: 'box-shadow 0.2s, transform 0.2s', marginBottom: '12px' }}
+          onMouseEnter={e => { e.currentTarget.style.boxShadow = `0 6px 24px ${ac}26`; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+          onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 2px 12px rgba(15,35,100,0.07)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+          <div style={{ minWidth: '44px', height: '44px', borderRadius: '10px', flexShrink: 0, background: `linear-gradient(135deg, ${ac} 0%, ${ac}99 100%)`, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: `0 3px 10px ${ac}4d` }}>
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#fff" strokeWidth="1.8"><path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+          </div>
+          <div style={{ flex: 1 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+              <span style={{ fontSize: '1.05rem', fontWeight: 700, color: '#1e293b' }}>IvorySQL Package</span>
+              <span style={{ background: `${ac}18`, color: ac, fontSize: '0.72rem', fontWeight: 700, padding: '2px 10px', borderRadius: '20px' }}>Latest Stable</span>
+            </div>
+            <div style={{ marginTop: '4px' }}>
+              <span style={{ fontSize: '0.875rem', color: '#64748b' }}>Latest server packages, source tarballs, and release assets on GitHub.</span>
+            </div>
+          </div>
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke={ac} strokeWidth="2" style={{ flexShrink: 0, opacity: 0.7 }}><path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+        </div>
+      </a>
+    );
+  };
+
+  /* ── Download table (Drivers / Tools) ── */
+  const DownloadTable = ({ items, accentColor }) => {
+    const thStyle = {
+      padding: '10px 16px',
+      fontSize: '0.78rem', fontWeight: 700, color: '#64748b',
+      textTransform: 'uppercase', letterSpacing: '0.05em',
+      textAlign: 'left', whiteSpace: 'nowrap',
+    };
+
+    return (
+      <div style={{ ...card, overflow: 'hidden' }}>
+        {/* Header */}
+        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 2.5fr 1fr', background: `${accentColor}0d`, borderBottom: '1px solid #e5e9f2' }}>
+          <div style={thStyle}>软件包类型</div>
+          <div style={thStyle}>软件包大小</div>
+          <div style={thStyle}>完整性校验</div>
+          <div style={{ ...thStyle, textAlign: 'center' }}>软件包下载</div>
+        </div>
+
+        {/* Rows */}
+        {items.map((item, idx) => (
+          <div
+            key={item.key}
+            style={{
+              display: 'grid', gridTemplateColumns: '2fr 1fr 2.5fr 1fr',
+              alignItems: 'center',
+              borderBottom: idx < items.length - 1 ? '1px solid #f1f5f9' : 'none',
+              background: idx % 2 === 0 ? '#fff' : '#fafbff',
+            }}
+          >
+            {/* Package type */}
+            <div style={{ padding: '14px 16px' }}>
+              <div style={{ fontWeight: 600, fontSize: '0.9rem', color: '#1e293b' }}>{item.name}</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '4px', flexWrap: 'wrap' }}>
+                <span style={{ fontSize: '0.75rem', color: '#fff', background: accentColor, padding: '1px 8px', borderRadius: '4px', fontWeight: 600 }}>
+                  {item.platform}
+                </span>
+                <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>v{item.version}</span>
+              </div>
+            </div>
+
+            {/* Size */}
+            <div style={{ padding: '14px 16px', fontSize: '0.875rem', color: '#475569', fontVariantNumeric: 'tabular-nums' }}>
+              {item.size}
+            </div>
+
+            {/* Integrity */}
+            <div style={{ padding: '14px 16px' }}>
+              {item.sha256 ? (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <span style={{ fontSize: '0.72rem', fontWeight: 700, color: accentColor, background: `${accentColor}12`, padding: '1px 6px', borderRadius: '3px', flexShrink: 0 }}>{item.checksumAlgo || 'SHA256'}</span>
+                  <span style={{ fontFamily: 'monospace', fontSize: '0.78rem', color: '#475569', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '100px' }}>
+                    {item.sha256.slice(0, 12)}…
+                  </span>
+                  <button
+                    onClick={() => copyToClipboard(item.sha256, item.key)}
+                    title="Copy SHA256"
+                    style={{ flexShrink: 0, background: 'none', border: 'none', cursor: 'pointer', padding: '2px', color: copiedKey === item.key ? '#22c55e' : '#94a3b8', display: 'flex', alignItems: 'center' }}
+                  >
+                    {copiedKey === item.key
+                      ? <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                      : <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+                    }
+                  </button>
+                </div>
+              ) : (
+                <span style={{ fontSize: '0.82rem', color: '#cbd5e1', fontStyle: 'italic' }}>pending</span>
+              )}
+            </div>
+
+            {/* Download */}
+            <div style={{ padding: '14px 16px', textAlign: 'center' }}>
+              <a
+                href={item.url}
+                style={{
+                  display: 'inline-flex', alignItems: 'center', gap: '5px',
+                  fontSize: '0.82rem', fontWeight: 600,
+                  color: accentColor, textDecoration: 'none',
+                  padding: '6px 12px', borderRadius: '6px',
+                  border: `1px solid ${accentColor}40`,
+                  background: `${accentColor}08`,
+                  transition: 'background 0.15s',
+                  whiteSpace: 'nowrap',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = `${accentColor}18`; }}
+                onMouseLeave={e => { e.currentTarget.style.background = `${accentColor}08`; }}
+              >
+                <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                下载
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  return (
+    <div style={{ maxWidth: '860px', margin: '0 auto', paddingBottom: '48px' }}>
+
+      {/* ── Hero banner ── */}
+      <div style={{ background: 'linear-gradient(135deg, #7D52F4 0%, #5a35c4 60%, #4a28b0 100%)', borderRadius: '16px', padding: '40px 40px 36px', marginBottom: '40px', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: '-30px', right: '-30px', width: '200px', height: '200px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(125,82,244,0.35) 0%, transparent 70%)', pointerEvents: 'none' }} />
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          <h1 style={{ color: '#fff', margin: '0 0 10px', fontSize: '2rem', fontWeight: 800, lineHeight: 1.25 }}>IvorySQL Downloads</h1>
+          <p style={{ color: 'rgba(220,210,255,0.8)', margin: 0, fontSize: '1rem', lineHeight: 1.6 }}>
+            Download IvorySQL packages, drivers, and tools to get started with Oracle-compatible PostgreSQL.
+          </p>
+        </div>
+      </div>
+
+      {/* ── Database ── */}
+      <div style={{ marginBottom: '36px' }}>
+        <SectionHeader id="database" />
+        <DatabaseCard />
+      </div>
+
+      {/* ── Drivers ── */}
+      <div style={{ marginBottom: '36px' }}>
+        <SectionHeader id="drivers" />
+        <DownloadTable items={driverItems} accentColor={sectionMeta.drivers.accentColor} />
+      </div>
+
+      {/* ── Tools ── */}
+      <div>
+        <SectionHeader id="tools" />
+        <DownloadTable items={toolItems} accentColor={sectionMeta.tools.accentColor} />
+      </div>
+
+      {/* ── Contact banner ── */}
+      <div style={{ marginTop: '36px', background: 'linear-gradient(90deg, rgba(125,82,244,0.06) 0%, rgba(125,82,244,0.03) 100%)', border: '1px solid rgba(125,82,244,0.18)', borderRadius: '10px', padding: '16px 24px', display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#7D52F4" strokeWidth="2" style={{ flexShrink: 0 }}><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+        <span style={{ fontSize: '0.9rem', color: '#334155' }}>
+          Need help or have questions?{' '}
+          <a href="mailto:support@ivorysql.org" style={{ color: '#7D52F4', fontWeight: 600 }}>Contact support@ivorysql.org</a>
+        </span>
+      </div>
+    </div>
+  );
+};
+
+<DownloadPage />
