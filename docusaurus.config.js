@@ -155,12 +155,11 @@ const config = {
                 label: 'Customer Stories',
                 href: 'customer-stories-page',
               },
+              {
+                label: 'Ecological Cooperation',
+                to: '/docs-ecosystem',
+            },
             ]
-          },
-          {
-            label: 'Ecological Cooperation',
-            to: '/docs-ecosystem',
-            position: 'left'
           },
           {
             label: 'Online Trial',
