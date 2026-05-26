@@ -1,0 +1,83 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="50%" stop-color="#0d1528"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7D52F4"/>
+      <stop offset="100%" stop-color="#5b8def"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Circuit background -->
+  <g opacity="0.06" stroke="#7D52F4" stroke-width="1.5" fill="none">
+    <rect x="60" y="60" width="200" height="120" rx="8"/>
+    <rect x="60" y="220" width="200" height="120" rx="8"/>
+    <rect x="360" y="140" width="200" height="120" rx="8"/>
+    <rect x="800" y="100" width="200" height="120" rx="8"/>
+    <rect x="940" y="240" width="200" height="120" rx="8"/>
+    <path d="M 260 90 H 340 V 170 H 360"/>
+    <path d="M 260 220 H 340 V 200 H 360"/>
+    <path d="M 260 310 H 340 V 170"/>
+    <path d="M 560 170 H 780 V 130 H 800"/>
+    <path d="M 560 230 H 780 V 270 H 940"/>
+    <path d="M 800 250 V 210 H 560"/>
+    <circle cx="560" cy="200" r="3" fill="#7D52F4"/>
+    <circle cx="340" cy="200" r="3" fill="#7D52F4"/>
+  </g>
+
+  <!-- Left: Skills icon -->
+  <rect x="80" y="180" width="100" height="140" rx="12" fill="#1a1040" stroke="#7D52F4" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="130" y="220" font-family="monospace" font-size="28" fill="#7D52F4" text-anchor="middle">⚙</text>
+  <text x="130" y="252" font-family="monospace" font-size="11" fill="#a78bfa" text-anchor="middle">SKILL</text>
+  <text x="130" y="270" font-family="monospace" font-size="11" fill="#a78bfa" text-anchor="middle">PACK</text>
+  <line x1="100" y1="288" x2="160" y2="288" stroke="#7D52F4" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="130" y="305" font-family="monospace" font-size="9" fill="#6b7280" text-anchor="middle">22 skills</text>
+
+  <!-- Center: AI Agent -->
+  <circle cx="500" cy="240" r="70" fill="none" stroke="#7D52F4" stroke-width="2" stroke-opacity="0.4" stroke-dasharray="8 4"/>
+  <circle cx="500" cy="240" r="50" fill="#1a1040" stroke="#7D52F4" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="500" y="232" font-family="system-ui,-apple-system,sans-serif" font-size="24" font-weight="800" fill="#c4b5fd" text-anchor="middle">AI</text>
+  <text x="500" y="258" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#7D52F4" text-anchor="middle">AGENT</text>
+
+  <!-- Right: Output items -->
+  <rect x="820" y="155" width="160" height="36" rx="8" fill="#0f1f4a" stroke="#2f74ff" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="900" y="178" font-family="monospace" font-size="12" fill="#60a5fa" text-anchor="middle">deployment</text>
+
+  <rect x="950" y="205" width="160" height="36" rx="8" fill="#0f1f4a" stroke="#2f74ff" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1030" y="228" font-family="monospace" font-size="12" fill="#60a5fa" text-anchor="middle">migration</text>
+
+  <rect x="920" y="255" width="160" height="36" rx="8" fill="#0f1f4a" stroke="#2f74ff" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1000" y="278" font-family="monospace" font-size="12" fill="#60a5fa" text-anchor="middle">Oracle compat</text>
+
+  <!-- Arrows from agent to output -->
+  <line x1="550" y1="200" x2="810" y2="170" stroke="#7D52F4" stroke-width="1" stroke-opacity="0.5"/>
+  <line x1="555" y1="230" x2="940" y2="220" stroke="#7D52F4" stroke-width="1" stroke-opacity="0.5"/>
+  <line x1="550" y1="260" x2="910" y2="270" stroke="#7D52F4" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Arrow from skills to agent -->
+  <line x1="185" y1="230" x2="425" y2="220" stroke="#7D52F4" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arr)"/>
+
+  <!-- Bottom area -->
+  <defs>
+    <linearGradient id="btm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a1a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#040810" stop-opacity="0.97"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#7D52F4"/>
+    </marker>
+  </defs>
+  <rect x="0" y="440" width="1200" height="190" fill="url(#btm)"/>
+  <text x="600" y="485" font-family="system-ui,-apple-system,sans-serif" font-size="36" font-weight="800" fill="#ffffff" text-anchor="middle">IvorySQL Skills for AI Agents</text>
+  <text x="600" y="527" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#93c5fd" text-anchor="middle" fill-opacity="0.8">Open-sourcing a practical Skills toolkit for IvorySQL</text>
+
+  <!-- Category chip -->
+  <rect x="44" y="515" width="110" height="32" rx="16" fill="url(#chip)" fill-opacity="0.25" stroke="#7D52F4" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="99" y="536" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#c4b5fd" text-anchor="middle" letter-spacing="1">IVORYSQL</text>
+
+  <text x="600" y="605" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#374151" text-anchor="middle" letter-spacing="2">IVORYSQL.ORG</text>
+</svg>
