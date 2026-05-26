@@ -1,0 +1,159 @@
+---
+title: IvorySQL & PostgreSQL 国内镜像服务上线——更快拉取，更稳体验
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-banner {
+    background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
+    padding: 40px 0;
+    color: white !important;
+    margin-bottom: 30px;
+  }
+  .detail-banner-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
+  .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
+
+  .detail-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .detail-main { flex: 1; min-width: 0; }
+  .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #7D52F4; }
+  
+  .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
+  .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+
+  .post-cover { width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+  
+  .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
+  .post-content h3 { font-size: 1.25rem; color: #444; margin-top: 25px; margin-bottom: 15px; font-weight: bold; }
+  .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
+  .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
+  .post-content strong { color: #333; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
+  .post-content blockquote { background: #fff4e5; border-left: 5px solid #ffa94d; padding: 15px 20px; margin: 20px 0; color: #666; font-size: 0.95rem; }
+  .post-content pre { background: #f5f7fa; border: 1px solid #e2e6ed; border-radius: 10px; padding: 16px 20px; margin: 16px 0 24px; font-size: 0.88rem; overflow-x: auto; }
+  .post-content code { background: #f5f7fa; border: 1px solid #e2e6ed; border-radius: 6px; padding: 2px 8px; font-size: 0.9rem; }
+
+  .detail-sidebar { width: 260px; flex-shrink: 0; }
+  .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+  .sidebar-nav li { margin-bottom: 10px; }
+  .sidebar-nav a { color: #666; font-size: 0.85rem; text-decoration: none; transition: color 0.2s; line-height: 1.4; display: block; }
+  .sidebar-nav a:hover { color: #7D52F4; }
+
+  @media (max-width: 996px) {
+    .detail-banner { padding: 30px 0; }
+    .detail-banner h1 { font-size: 1.5rem; }
+    .detail-wrapper { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .post-title { font-size: 1.5rem; }
+  }
+`}</style>
+
+<div className="detail-banner">
+  <div className="detail-banner-inner">
+    <h1>新闻动态</h1>
+    <div className="detail-banner-decor">● ○ ●</div>
+  </div>
+</div>
+
+<div className="detail-wrapper">
+  <div className="detail-main">
+    <div className="breadcrumb">
+      <a href="/zh-cn/news">新闻动态</a> <span>&gt;</span> <span>正文内容</span>
+    </div>
+
+    <div className="post-header">
+      <div className="post-title">IvorySQL & PostgreSQL 国内镜像服务上线——更快拉取，更稳体验</div>
+      <div className="post-date">📅 发布时间：2026 年 05 月 19 日</div>
+    </div>
+
+    <div className="post-content">
+      <p>
+        对很多国内用户来说，数据库容器镜像的拉取速度和稳定性，常常会影响试用、测试、部署和日常运维体验。为了让大家更顺畅地获取 IvorySQL 相关镜像，IvorySQL 社区现已在 <code>registry.highgo.com</code> 推出国内镜像源，旨在解决国内用户访问官方镜像受限的问题。该镜像源同步了社区长期支持的 V1、最新 V5 版本及配套 PostgreSQL 镜像，大幅提升拉取效率与部署体验。
+      </p>
+
+      <p>国内仓库的 IvorySQL 镜像支持多种部署方式，可满足不同用户的使用需求：</p>
+      <ul>
+        <li><strong>Docker & Podman 部署</strong></li>
+        <ul><li>ivorysql/ivorysql</li></ul>
+        <li><strong>Docker Swarm & Docker Compose 部署</strong></li>
+        <ul>
+          <li>ivorysql/docker-compose-ha-cluster</li>
+          <li>ivorysql/docker-swarm-ha-cluster</li>
+        </ul>
+        <li><strong>Kubernetes 部署</strong></li>
+        <ul><li>ivorysql/k8s-ha-cluster</li></ul>
+        <li><strong>Operator 部署及配套镜像</strong></li>
+        <ul>
+          <li>ivorysql/ivory-operator</li>
+          <li>ivorysql/postgis</li>
+          <li>ivorysql/pgadmin</li>
+          <li>ivorysql/pgbackrest</li>
+          <li>ivorysql/pgbouncer</li>
+          <li>ivorysql/postgres-exporter</li>
+        </ul>
+      </ul>
+
+      <h2 id="registry">镜像仓库地址</h2>
+      <p>本次上线的<a href="https://registry.highgo.com/" target="_blank" rel="noopener noreferrer">镜像仓库地址</a>为：<code>https://registry.highgo.com/</code></p>
+      <p>该镜像服务面向国内网络环境优化，适合开发测试、演示验证、CI 构建以及容器化部署场景中快速拉取数据库相关镜像。</p>
+
+      <h2 id="quickstart">快速体验 IvorySQL 镜像</h2>
+      <p>如果你已经熟悉 IvorySQL 文档中的 Docker 安装方式，只需要将原有 Docker Hub 镜像地址替换为国内仓库地址即可。以 IvorySQL 5.3 的 UBI8 镜像为例：</p>
+      <pre>docker pull registry.highgo.com/ivorysql/ivorysql:5.3-ubi8</pre>
+      <p>拉取完成后，可以使用下面的命令启动 IvorySQL 容器，并同时映射 5432 和 1521 两个端口：</p>
+      <pre>docker run --name ivorysql -p 5432:5432 -p 1521:1521 -e IVORYSQL_PASSWORD=your_password -d registry.highgo.com/ivorysql/ivorysql:5.3-ubi8</pre>
+      <p>其中，<strong>IVORYSQL_PASSWORD</strong> 用于设置数据库用户密码。容器启动后，可以通过本机 1521 端口连接 IvorySQL：</p>
+      <pre>psql -d ivorysql -U ivorysql -h 127.0.0.1 -p 1521</pre>
+      <p>如果你在本地开发、教学演示或测试环境中频繁创建容器，使用国内镜像仓库可以减少等待时间，让体验更连贯。</p>
+
+      <h2 id="postgres">PostgreSQL 镜像便捷通道</h2>
+      <p>除了 IvorySQL 镜像，本次上线的镜像仓库中也提供了 PostgreSQL 镜像，方便国内用户在原生 PostgreSQL 与 IvorySQL 之间进行对比测试、兼容性验证和迁移评估。</p>
+      <p>目前可用的 PostgreSQL 镜像版本包括 18.3-bookworm、18.3-trixie 等：</p>
+      <pre>docker pull registry.highgo.com/postgres/postgres:18.3-bookworm</pre>
+      <pre>docker pull registry.highgo.com/postgres/postgres:18.3-trixie</pre>
+      <p>对于需要同时维护 PostgreSQL 与 IvorySQL 环境的用户来说，统一从国内镜像仓库获取镜像，可以让环境搭建更加稳定。</p>
+
+      <h2 id="ecosystem">从单数据库到全生态</h2>
+      <p>围绕 IvorySQL 的容器化使用场景，社区也在持续完善更多生态镜像，包括插件、连接池、备份恢复、监控、Kubernetes/Operator、高可用部署等方向。</p>
+      <p>如果你在实际使用中有其他镜像需求，也<strong>欢迎反馈给 IvorySQL 社区</strong>。无论是常用数据库组件、运维工具、备份工具、监控组件，还是特定版本的 PostgreSQL/IvorySQL 生态镜像，都可以告诉我们。</p>
+
+      <blockquote>
+        欢迎访问 <a href="https://registry.highgo.com/" target="_blank" rel="noopener noreferrer">registry.highgo.com</a> 体验新的镜像服务，也欢迎将使用过程中的问题、建议和镜像需求反馈给社区。<strong>你的反馈，将帮助 IvorySQL 镜像生态更贴近真实业务场景。</strong>
+      </blockquote>
+
+      <p>更快拉取，更稳体验。让 IvorySQL 的上手和部署，从第一步开始就更顺畅。</p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-sticky">
+      <div className="sidebar-title">▼ 文章大纲</div>
+      <ul className="sidebar-nav">
+        <li><a href="#registry">镜像仓库地址</a></li>
+        <li><a href="#quickstart">快速体验</a></li>
+        <li><a href="#postgres">PG 镜像通道</a></li>
+        <li><a href="#ecosystem">从数据库到全生态</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
