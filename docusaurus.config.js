@@ -282,4 +282,12 @@ const config = {
     }),
 };
 
+  scripts: [
+    {
+      src: 'https://cloud.umami.is/script.js',
+      defer: true,
+      'data-website-id': 'd0465d4e-0252-45bf-a99b-b12fe2ae0732',
+    },
+  ],
+
 module.exports = config;
