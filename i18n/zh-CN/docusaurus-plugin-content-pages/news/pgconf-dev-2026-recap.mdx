@@ -1,0 +1,199 @@
+---
+title: PGConf.dev 2026 现场直击：吐槽、加密难产、中国声音
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-banner {
+    background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
+    padding: 40px 0;
+    color: white !important;
+    margin-bottom: 30px;
+  }
+  .detail-banner-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
+  .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
+
+  .detail-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .detail-main { flex: 1; min-width: 0; }
+  .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #7D52F4; }
+  
+  .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
+  .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+
+  .post-cover { width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+  
+  .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
+  .post-content h3 { font-size: 1.25rem; color: #444; margin-top: 25px; margin-bottom: 15px; font-weight: bold; }
+  .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
+  .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
+  .post-content strong { color: #333; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
+  .post-content blockquote { background: #fff4e5; border-left: 5px solid #ffa94d; padding: 15px 20px; margin: 20px 0; color: #666; font-size: 0.95rem; }
+
+  .detail-sidebar { width: 260px; flex-shrink: 0; }
+  .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+  .sidebar-nav li { margin-bottom: 10px; }
+  .sidebar-nav a { color: #666; font-size: 0.85rem; text-decoration: none; transition: color 0.2s; line-height: 1.4; display: block; }
+  .sidebar-nav a:hover { color: #7D52F4; }
+
+  @media (max-width: 996px) {
+    .detail-banner { padding: 30px 0; }
+    .detail-banner h1 { font-size: 1.5rem; }
+    .detail-wrapper { flex-direction: column; }
+    .detail-sidebar { display: none; }
+    .post-title { font-size: 1.5rem; }
+  }
+`}</style>
+
+<div className="detail-banner">
+  <div className="detail-banner-inner">
+    <h1>新闻动态</h1>
+    <div className="detail-banner-decor">● ○ ●</div>
+  </div>
+</div>
+
+<div className="detail-wrapper">
+  <div className="detail-main">
+    <div className="breadcrumb">
+      <a href="/zh-cn/news">新闻动态</a> <span>&gt;</span> <span>正文内容</span>
+    </div>
+
+    <div className="post-header">
+      <div className="post-title">"PostgreSQL 真烂"？PGConf.dev 2026 现场直击：吐槽、加密难产、中国声音</div>
+      <div className="post-date">📅 发布时间：2026 年 05 月 28 日</div>
+    </div>
+
+    <div className="post-content">
+      <p>
+        5 月 19 日至 22 日，2026 年 PostgreSQL 全球开发者大会 <strong>PGConf.dev</strong> 在加拿大温哥华市中心西蒙弗雷泽大学港中心落下帷幕。这是 PGConf.dev 自 2024 年接棒 PGCon 以来的第三届，也是 PostgreSQL <strong>开源 30 周年</strong>的纪念场。
+      </p>
+
+      <p>
+        作为全球 PostgreSQL 核心开发者、贡献者、生态厂商与社区组织者的年度顶级技术盛会，本届大会创下 <strong>259 人现场参会</strong>的历史新高，共呈现 <strong>89 场技术议题</strong>，由 <strong>82 位全球顶尖演讲者</strong>共同呈现。四天议程紧凑高效：周二至周四为正式会议，周五为自由讨论的 Unconference 日。
+      </p>
+
+      <p>我们全程深度参与其中，第一时间带来这份新鲜出炉的现场总结。</p>
+
+      <h2 id="overview">一、从渥太华到温哥华：一场持续 20 年的开发者盛会</h2>
+      <p>
+        想要读懂 PGConf.dev，必须得先了解它的前身 <strong>PGCon.org</strong>。2007 年起，PGCon 每年固定在渥太华大学举办，坚持"<strong>By Developers, For Developers</strong>"的纯粹技术定位。核心环节是几十位拥有代码合并权限的 Committer 闭门讨论内核走向——从 MVCC 优化到并行查询等关键内核特性，很多 PG 的标志性特性都在"白板+代码"的激烈碰撞中诞生。
+      </p>
+      <p>2024 年，大会正式更名为 <strong>PGConf.dev</strong>，走出渥太华开始巡回举办（温哥华、蒙特利尔…），同时还扩大了社区包容性。2026 年这场盛会，既是更名后的第三届，也是 PostgreSQL 30 周年的重要主场。</p>
+
+      <h2 id="highlights">二、技术看点：哪些议题最值得回看？</h2>
+
+      <h3>🔹 扩展生态：从"动态安装"到"不可变镜像"</h3>
+      <p>扩展峰会上，"不可变基础设施"成为一个反复出现的关键词。越来越多大规模 PG 部署选择把扩展直接固化到容器镜像里。未来扩展将更多以<strong>镜像重建</strong>方式进行交付，成为大规模 PG 集群运维的主流方向。</p>
+
+      <h3>🔹 TDE 加密：为什么这么多年还是难产？</h3>
+      <p>Transparent Data Encryption 的专场标题很有意思："Stop Debating, Start Implementing"。但现场的讨论反而说明，TDE 不是单点功能——它牵扯存储加密、WAL 加密、密钥管理、合规认证，还要考虑扩展与内核的边界。牵一发而动全身，社区短期内仍然很难形成统一方案。</p>
+
+      <h3>🔹 运维痛点：一个老 PG 人的"吐槽式"提醒</h3>
+      <p>Christopher Pettus 的演讲《Why is PostgreSQL Terrible?》用幽默的方式罗列了 autovacuum 难调优、逻辑复制稳定性不足、缺少原生 query hint、大版本升级受格式限制、HA 方案碎片化等老问题。表面是吐槽，实际是在提醒社区：<strong>运维复杂度本身必须成为核心改进方向</strong>。</p>
+
+      <h3>🔹 执行器优化：索引预取的"冰山之下"</h3>
+      <p>Tomas Vondra 与 Peter Geoghegan 分享的索引预取（<code>Index Prefetching</code>），看似简单，实际落地要动 index access method、executor、visibility map、buffer 管理等一系列组件。这很典型地说明：PG 的性能优化早已不是"加一个参数"的事，而是对 CPU 和内存行为的优化。</p>
+
+      <h3>🔹 全局索引：Oracle 迁移用户的长期期待</h3>
+      <p>Dilip Kumar 的分享以及后续 Unconference 讨论都印证了：跨分区的唯一性支持非常有价值，但实现上要解决 VACUUM 扩展性、DDL 重写、分区附加/分离、跨分区死锁等复杂问题。短期内不会有简单答案，但它确实是企业级迁移场景中必须补齐的一环。</p>
+
+      <h3>🔹 REPACK CONCURRENTLY：在线清理终于要进内核了</h3>
+      <p>Álvaro Herrera 介绍了计划进入 PostgreSQL 19 的 <strong>REPACK CONCURRENTLY</strong>，它能在大部分操作期间允许业务继续访问表，减少 VACUUM FULL 带来的长时间独占锁。这对大型生产系统 DBA 来说是一个实实在在的福音。</p>
+
+      <h3>🔹 逻辑复制：DDL 复制成为焦点</h3>
+      <p>Amit Kapila 和 Dilip Kumar 主导的逻辑复制 roadmap 讨论中，DDL 复制是被提及最多的话题。现场讨论了 schema diff、基于 WAL 的 DDL 同步、事件触发器等多种可能路径。侯志杰也参与了相关分享。这说明 PG 的逻辑复制距离"真正企业级"还有不少路要走，但方向已经明确。</p>
+
+      <h3>🔹 Unconference：自由讨论碰撞核心难题</h3>
+      <p>作为 PGConf.dev 延续多年的社区传统，本届 <strong>Unconference</strong> 由 Nathan Bossart 与 Andres Freund 主持，以开放提案、自由投票、深度互动的形式围绕 PostgreSQL 内核、未来规划、工具生态与社区治理展开头脑风暴。其中三场讨论备受关注：全局索引的技术瓶颈、AI 对 PG 开发与社区协作的影响，以及逻辑复制现存短板与企业级场景优化方向。</p>
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-unconference.png')} alt="Unconference" />
+
+      <h3>🔹 闪电演讲：5 分钟浓缩 PG 前沿干货</h3>
+      <p>大会特别设置了闪电演讲环节，每位讲者以 5 分钟的精简时长，快速分享前沿思路与实践亮点，内容紧凑、现场氛围热烈。</p>
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-lightning.png')} alt="闪电演讲" />
+
+      <h3>🔹 海报展示：PG 项目与社区成果集中呈现</h3>
+      <p>本届大会特别设置了 <a href="https://2026.pgconf.dev/posters" target="_blank" rel="noopener noreferrer">Poster Session</a>（海报展示），现场展出多项 PostgreSQL 相关研究、项目实践与社区成果。</p>
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-poster.png')} alt="海报展示" />
+
+      <h3>🔹 社区 30 周年：元老们齐聚</h3>
+      <p>
+        周三下午的 <strong>PostgreSQL 30 周年圆桌</strong> 由 Melanie Plagemann 和 Jonathan Katz 主持，Bruce Momjian、Tom Lane、Thomas Lockhart、Jan Wieck、Vadim Mikheev 以及 <strong>Jolly Chen</strong>——1994 年在伯克利把 SQL 加入 Postgres 的那位——都来到了现场。Jolly 回顾了当年从 Postgres 到 PostgreSQL 的命名故事，并鼓励大家持续参与开源。
+      </p>
+      <p>现场特别设置了 30 周年主题海报展示区，庆典环节还准备了 30 周年纪念蛋糕，全体参会者共同为 PostgreSQL 庆生，现场氛围热烈而温馨，成为本届大会极具纪念意义的高光时刻。</p>
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-roundtable.png')} alt="30周年圆桌" />
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-cake.png')} alt="30周年蛋糕" />
+
+      <h2 id="highgo">三、瀚高 & IvorySQL 在温哥华：不只是一次亮相</h2>
+      <p>本届大会，瀚高以<strong>银级赞助商</strong>身份支持了 PGConf.dev 2026，深度参与会议组织、社区服务与技术分享。</p>
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-sponsor.png')} alt="瀚高赞助" />
+
+      <blockquote>
+        注：PGConf.dev 为纯技术社区会议，赞助不附带演讲权益，所有演讲均经组委会严格评审选出。本次瀚高 IvorySQL 共有两个议题入选，因嘉宾签证原因，其中一场未能成行。
+      </blockquote>
+
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-sponsor2.png')} alt="瀚高赞助2" />
+
+      <p>IvorySQL 特邀核心贡献者 GrantZhou 与 CaryHuang 深度支持该大会。其中 GrantZhou 代表 IvorySQL 社区在大会中进行演讲。</p>
+
+      <h3>🎤 核心演讲：《缺失的关键纽带：连接数万中国用户与 PostgreSQL 核心生态》</h3>
+      <p>Grant Zhou 用 25 分钟系统地讨论了如何把中国庞大但"沉默"的 PostgreSQL 用户群体——在金融、政府、制造业中真实运行着海量数据的系统——所遇到的需求、痛点和下游实践经验，转化为上游社区能够理解、讨论和采纳的贡献内容。</p>
+      <p>演讲后，Jolly Chen 特意提到他听了这场分享，并高度肯定中国 PG 的应用规模与实践价值。</p>
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-speech.png')} alt="Grant 演讲" />
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-img1.png')} alt="Grant 演讲2" />
+
+      <h3>🤝 志愿者工作 & 社区活动</h3>
+      <p>Grant 和 Cary 全程参与前台注册、会议主持、演讲时间提示等志愿者工作。我们还注册并主持了两个 <a href="https://2026.pgconf.dev/schedule/community-office-hours" target="_blank" rel="noopener noreferrer">Community Office Hours</a>（社区办公时间），借此与美国 PostgreSQL 协会主席 Stacey Haysler 进行了长时间的深入沟通，讨论了中外社区信息同步与合作的可行方式。</p>
+      <p>在展位上，我们向来自世界各地的参会者介绍了 PGNEXUS.AI 和 IvorySQL 社区，并收获了许多有趣的建议、想法和反馈。</p>
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-pgnuex.png')} alt="IvorySQL 展位" />
+
+      <h3>🍽️ 社交晚宴 & 社区聚餐</h3>
+      <p>5 月 20 日由微软赞助的 PGConf.dev 2026 社交晚宴于温哥华会议场地对面的 Rogue Kitchen & Wetbar - Gastown 举办。在 Paul Ramsey 组织的社区聚餐中，Grant 与 Cary 分别带队陪同社区成员用餐交流。</p>
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-social.png')} alt="社交晚宴" />
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-dinner.png')} alt="社区聚餐" />
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-cary.jpg')} alt="Cary 带队聚餐" />
+
+      <h2 id="closing">四、最后说几句</h2>
+      <p>259 人，89 场议题，82 位演讲者，30 年 PostgreSQL。这些数字背后，是几千次 commit、无数次邮件列表讨论、和一场持续二十年的开源接力。</p>
+      <p>从济南 HOW 2026 到温哥华 PGConf.dev，从银牌赞助到站上演讲台，瀚高 & IvorySQL 正在用一次次的行动，兑现"源于 PG，回馈 PG"的承诺。</p>
+
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-2027.png')} alt="PGConf.dev 2027 蒙特利尔" />
+
+      <blockquote>
+        明年，PGConf.dev 2027 将落地蒙特利尔（5 月 11 日-14 日）。到时候，希望有更多来自中国的面孔站上 PostgreSQL 全球舞台的中央。
+      </blockquote>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-sticky">
+      <div className="sidebar-title">▼ 文章大纲</div>
+      <ul className="sidebar-nav">
+        <li><a href="#overview">从渥太华到温哥华</a></li>
+        <li><a href="#highlights">技术看点</a></li>
+        <li><a href="#highgo">瀚高 & IvorySQL</a></li>
+        <li><a href="#closing">最后说几句</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
