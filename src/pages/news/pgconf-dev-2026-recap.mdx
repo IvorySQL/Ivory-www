@@ -6,40 +6,19 @@ hide_table_of_contents: true
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <style>{`
-  .detail-banner {
-    background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%);
-    padding: 40px 0;
-    color: white !important;
-    margin-bottom: 30px;
-  }
-  .detail-banner-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
-  }
+  .detail-banner { background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%); padding: 40px 0; color: white !important; margin-bottom: 30px; }
+  .detail-banner-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; position: relative; }
   .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
   .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
-
-  .detail-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 80px;
-    display: flex;
-    gap: 40px;
-  }
-
+  .detail-wrapper { max-width: 1200px; margin: 0 auto; padding: 0 20px 80px; display: flex; gap: 40px; }
   .detail-main { flex: 1; min-width: 0; }
   .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
   .breadcrumb a { color: #888; text-decoration: none; }
   .breadcrumb a:hover { color: #7D52F4; }
-  
   .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
   .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
   .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
-
   .post-cover { width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
-  
   .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
   .post-content h3 { font-size: 1.25rem; color: #444; margin-top: 25px; margin-bottom: 15px; font-weight: bold; }
   .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
@@ -48,7 +27,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
   .post-content a:hover { text-decoration: underline; }
   .post-content blockquote { background: #fff4e5; border-left: 5px solid #ffa94d; padding: 15px 20px; margin: 20px 0; color: #666; font-size: 0.95rem; }
-
   .detail-sidebar { width: 260px; flex-shrink: 0; }
   .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
   .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
@@ -56,14 +34,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   .sidebar-nav li { margin-bottom: 10px; }
   .sidebar-nav a { color: #666; font-size: 0.85rem; text-decoration: none; transition: color 0.2s; line-height: 1.4; display: block; }
   .sidebar-nav a:hover { color: #7D52F4; }
-
-  @media (max-width: 996px) {
-    .detail-banner { padding: 30px 0; }
-    .detail-banner h1 { font-size: 1.5rem; }
-    .detail-wrapper { flex-direction: column; }
-    .detail-sidebar { display: none; }
-    .post-title { font-size: 1.5rem; }
-  }
+  @media (max-width: 996px) { .detail-banner { padding: 30px 0; } .detail-banner h1 { font-size: 1.5rem; } .detail-wrapper { flex-direction: column; } .detail-sidebar { display: none; } .post-title { font-size: 1.5rem; } }
 `}</style>
 
 <div className="detail-banner">
@@ -86,42 +57,61 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
     <div className="post-content">
       <p>
-        From May 19-22, 2026, <strong>PGConf.dev</strong>—the premier global PostgreSQL developer conference—took place at Simon Fraser University Harbour Centre in downtown Vancouver. This was the third edition since PGConf.dev succeeded PGCon in 2024, and it marked <strong>PostgreSQL's 30th anniversary</strong>.
+        From May 19-22, 2026, <strong>PGConf.dev</strong>—the premier global PostgreSQL developer conference—took place at Simon Fraser University Harbour Centre in downtown Vancouver, Canada. This was the third edition since PGConf.dev succeeded PGCon in 2024, and it marked <strong>PostgreSQL's 30th anniversary</strong>.
       </p>
 
       <p>
-        The event set a new attendance record with <strong>259 on-site participants</strong>, featuring <strong>89 technical sessions</strong> presented by <strong>82 global speakers</strong> over four packed days.
+        The event set a new attendance record with <strong>259 on-site participants</strong>, featuring <strong>89 technical sessions</strong> presented by <strong>82 global speakers</strong> over four packed days. Tuesday through Thursday were formal sessions, with Friday dedicated to Unconference discussions.
       </p>
 
-      <h2 id="overview">From Ottawa to Vancouver: A 20-Year Developer Gathering</h2>
-      <p>Since 2007, PGCon anchored the community in Ottawa under the <strong>"By Developers, For Developers"</strong> ethos. The core sessions involved committers hashing out kernel direction. In 2024, it rebranded to PGConf.dev and went on tour. The 2026 Vancouver edition marks the third under the new name and PostgreSQL's 30th anniversary.</p>
+      <p>We were deeply involved throughout and are bringing you this fresh on-site recap.</p>
 
-      <h2 id="highlights">Technical Highlights</h2>
+      <h2 id="overview">1. From Ottawa to Vancouver: A 20-Year Developer Gathering</h2>
+      <p>To understand PGConf.dev, you must first know its predecessor: <strong>PGCon.org</strong>. Since 2007, PGCon anchored the community annually at the University of Ottawa under the <strong>"By Developers, For Developers"</strong> ethos. The core sessions involved committers hashing out kernel direction behind closed doors—many of PostgreSQL's signature features were born from intense whiteboard-and-code debates.</p>
+      <p>In 2024, the conference rebranded to <strong>PGConf.dev</strong> and went on tour (Vancouver, Montreal…), while also broadening community inclusiveness—no longer just for senior committers, but open to community organizers, extension developers, and even "newbie hackers." The 2026 Vancouver edition marks the third under the new name and PostgreSQL's 30th anniversary.</p>
+
+      <h2 id="highlights">2. Technical Highlights: Which Sessions Are Worth Revisiting?</h2>
 
       <h3>🔹 Extensions: From Dynamic Install to Immutable Images</h3>
-      <p>"Immutable infrastructure" became a recurring theme. More large-scale PG deployments now bake extensions into container images, shifting extension delivery toward <strong>image rebuilds</strong> as the mainstream approach.</p>
+      <p>At the Extension Summit, "immutable infrastructure" became a recurring theme. More and more large-scale PG deployments now bake extensions directly into container images rather than dynamically installing them in running databases. Going forward, extensions will increasingly be delivered through <strong>image rebuilds</strong>, becoming the mainstream approach for large PG cluster operations.</p>
 
       <h3>🔹 TDE: Why Is It Still So Hard?</h3>
-      <p>The TDE session was provocatively titled "Stop Debating, Start Implementing." But discussions revealed TDE touches storage encryption, WAL encryption, key management, compliance, and extension-kernel boundaries—making a unified solution elusive in the near term.</p>
+      <p>The Transparent Data Encryption session was provocatively titled "Stop Debating, Start Implementing." But the discussions revealed that TDE is no single-point feature—it touches storage encryption, WAL encryption, key management, compliance certification, and extension-kernel boundaries. A unified solution remains elusive in the near term.</p>
 
-      <h3>🔹 "Why Is PostgreSQL Terrible?"</h3>
-      <p>Christopher Pettus humorously listed long-standing pain points: autovacuum tuning, logical replication instability, lack of native query hints, major version upgrade constraints, and HA fragmentation. Beneath the humor: <strong>operational complexity itself must become a core area of improvement</strong>.</p>
+      <h3>🔹 Operational Pain Points: A Veteran PG User's "Roast"</h3>
+      <p>Christopher Pettus's talk <i>Why is PostgreSQL Terrible?</i> humorously listed long-standing issues: autovacuum tuning difficulty, logical replication instability, lack of native query hints, major version upgrade format constraints, and HA fragmentation. Beneath the humor was a serious call: <strong>operational complexity itself must become a core area of improvement</strong> as PG expands its enterprise footprint.</p>
 
-      <h3>🔹 Executor, Global Indexes, REPACK CONCURRENTLY</h3>
-      <p>Index prefetching touches multiple subsystems. Global indexes remain critical for Oracle migrations but face complex implementation. Álvaro Herrera introduced REPACK CONCURRENTLY targeted for PostgreSQL 19—a welcome relief for production DBAs. Logical replication's DDL replication was the most discussed topic in the roadmap.</p>
+      <h3>🔹 Executor Optimization: The "Tip of the Iceberg" of Index Prefetching</h3>
+      <p>Tomas Vondra and Peter Geoghegan's index prefetching (<code>Index Prefetching</code>), while seemingly simple on the surface, actually touches the index access method, executor, visibility map, and buffer management—a whole chain of components. This is a classic illustration: PG performance optimization is no longer about "adding a parameter"—it's about optimizing CPU and memory behavior.</p>
 
-      <h3>🔹 Unconference, Lightning Talks & Posters</h3>
-      <p>Open discussions tackled global indexes, AI's impact on PG, and logical replication gaps. Lightning talks delivered 5-minute bursts of cutting-edge ideas. The <a href="https://2026.pgconf.dev/posters" target="_blank" rel="noopener noreferrer">Poster Session</a> showcased research and community achievements.</p>
+      <h3>🔹 Global Indexes: A Long-Awaited Need for Oracle Migration Users</h3>
+      <p>Dilip Kumar's presentation and subsequent Unconference discussions confirmed: cross-partition uniqueness support is highly valuable, but implementation requires solving VACUUM scalability, DDL rewriting, partition attach/detach, and cross-partition deadlock complexities. No simple answers in the short term, but it's an essential piece for enterprise migration scenarios.</p>
+
+      <h3>🔹 REPACK CONCURRENTLY: Online Cleanup Finally Coming to Core</h3>
+      <p>Álvaro Herrera introduced <strong>REPACK CONCURRENTLY</strong> targeting PostgreSQL 19, which allows business to continue accessing tables during most operations, reducing the long exclusive locks caused by VACUUM FULL. A real win for large production system DBAs.</p>
+
+      <h3>🔹 Logical Replication: DDL Replication Takes Center Stage</h3>
+      <p>In the logical replication roadmap discussion led by Amit Kapila and Dilip Kumar, DDL replication was the most discussed topic. Approaches ranging from schema diff to WAL-based DDL sync to event triggers were discussed. Hou Zhijie also contributed to the related sharing. PG's logical replication still has ground to cover before reaching "truly enterprise-grade," but the direction is clear.</p>
+
+      <h3>🔹 Unconference: Open Discussions Tackling Core Challenges</h3>
+      <p>A long-standing PGConf.dev tradition, this year's <strong>Unconference</strong> was hosted by Nathan Bossart and Andres Freund, featuring open proposals, free voting, and deep interaction around PostgreSQL kernel, future planning, tool ecosystem, and community governance. Three discussions drew particular attention: global index technical bottlenecks, AI's impact on PG development and community collaboration, and logical replication gaps with enterprise optimization directions.</p>
       <img className="post-cover" src={useBaseUrl('/img/news/pgconf-unconference.png')} alt="Unconference" />
+
+      <h3>🔹 Lightning Talks: 5 Minutes of PG's Cutting Edge</h3>
+      <p>The conference featured a lightning talk session where each speaker had 5 minutes to rapidly share frontier ideas and practical highlights—compact, intense, and electrically charged.</p>
       <img className="post-cover" src={useBaseUrl('/img/news/pgconf-lightning.png')} alt="Lightning Talks" />
+
+      <h3>🔹 Poster Session: PG Projects and Community Achievements on Display</h3>
+      <p>This year's conference hosted a <a href="https://2026.pgconf.dev/posters" target="_blank" rel="noopener noreferrer">Poster Session</a> showcasing multiple PostgreSQL research projects, practical implementations, and community achievements.</p>
       <img className="post-cover" src={useBaseUrl('/img/news/pgconf-poster.png')} alt="Poster Session" />
 
       <h3>🔹 30th Anniversary: The OGs Reunited</h3>
-      <p>The PostgreSQL 30th anniversary roundtable featured Bruce Momjian, Tom Lane, Thomas Lockhart, Jan Wieck, Vadim Mikheev, and <strong>Jolly Chen</strong>—who added SQL to Postgres at Berkeley in 1994. The celebration included a 30th anniversary cake, a deeply memorable highlight of the conference.</p>
+      <p>The Wednesday afternoon <strong>PostgreSQL 30th Anniversary Roundtable</strong>, hosted by Melanie Plagemann and Jonathan Katz, brought together Bruce Momjian, Tom Lane, Thomas Lockhart, Jan Wieck, Vadim Mikheev, and <strong>Jolly Chen</strong>—who added SQL to Postgres at Berkeley in 1994. Jolly recounted the naming story from Postgres to PostgreSQL and encouraged continued open-source participation. Hearing him say "today's PostgreSQL has far exceeded what anyone imagined in the 90s" was deeply moving.</p>
+      <p>A 30th anniversary poster showcase displayed global community research and projects; the celebration featured a 30th anniversary cake, with all attendees joining to celebrate PostgreSQL's birthday—a warm and memorable highlight of the conference.</p>
       <img className="post-cover" src={useBaseUrl('/img/news/pgconf-roundtable.png')} alt="30th Anniversary Roundtable" />
       <img className="post-cover" src={useBaseUrl('/img/news/pgconf-cake.png')} alt="30th Anniversary Cake" />
 
-      <h2 id="highgo">HighGo & IvorySQL in Vancouver</h2>
+      <h2 id="highgo">3. HighGo & IvorySQL in Vancouver: Beyond a Presence</h2>
       <p>HighGo sponsored PGConf.dev 2026 as a <strong>Silver Sponsor</strong>, deeply participating in conference organization, community service, and technical sharing.</p>
       <img className="post-cover" src={useBaseUrl('/img/news/pgconf-sponsor.png')} alt="HighGo Sponsorship" />
 
@@ -134,28 +124,30 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
       <p>IvorySQL core contributors Grant Zhou and Cary Huang provided deep support for the conference. Grant Zhou delivered a keynote on behalf of the IvorySQL community.</p>
 
       <h3>🎤 Keynote: "The Missing Link: Connecting China's PostgreSQL Users to the Global Core Ecosystem"</h3>
-      <p>Grant Zhou spent 25 minutes systematically discussing how to transform the needs, pain points, and real-world experience of China's massive but "quiet" PostgreSQL user base—spanning finance, government, and manufacturing—into contributions the upstream community can understand and adopt. Jolly Chen later praised the talk, recognizing China's PG scale and practical value.</p>
-      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-speech.png')} alt="Grant Zhou Talk" />
-      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-img1.png')} alt="Grant Zhou Talk 2" />
+      <p>Grant Zhou spent 25 minutes systematically discussing how to transform the needs, pain points, and real-world experience of China's massive but "quiet" PostgreSQL user base—spanning finance, government, and manufacturing—into contributions the upstream community can understand and adopt.</p>
+      <p>Jolly Chen later praised the talk, recognizing China's PG application scale and practical value.</p>
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-speech.png')} alt="Grant Zhou Keynote" />
+      <img className="post-cover" src={useBaseUrl('/img/news/pgconf-img1.png')} alt="Grant Zhou Keynote 2" />
 
       <h3>🤝 Volunteering & Community Office Hours</h3>
-      <p>Grant and Cary volunteered throughout the conference. We hosted two <a href="https://2026.pgconf.dev/schedule/community-office-hours" target="_blank" rel="noopener noreferrer">Community Office Hours</a>, during which we had extended discussions with United States PostgreSQL Association President Stacey Haysler about cross-community collaboration. At our booth, we introduced PGNEXUS.AI and the IvorySQL community to global attendees.</p>
+      <p>Grant and Cary volunteered throughout the conference at registration, session moderation, and speech timing. We also registered and hosted two <a href="https://2026.pgconf.dev/schedule/community-office-hours" target="_blank" rel="noopener noreferrer">Community Office Hours</a>, during which we had extended discussions with United States PostgreSQL Association President Stacey Haysler about cross-community information synchronization and collaboration.</p>
+      <p>At our exhibition booth, we introduced PGNEXUS.AI and the IvorySQL community to attendees from around the world, collecting many interesting suggestions, ideas, and feedback.</p>
       <img className="post-cover" src={useBaseUrl('/img/news/pgconf-pgnuex.png')} alt="IvorySQL Booth" />
 
       <h3>🍽️ Social Events & Community Dinners</h3>
-      <p>The Microsoft-sponsored social dinner was held at Rogue Kitchen & Wetbar on May 20. At Paul Ramsey's community dinner, Grant and Cary each led groups for meaningful conversations.</p>
+      <p>The May 20 PGConf.dev 2026 social dinner, sponsored by Microsoft, was held at Rogue Kitchen & Wetbar - Gastown, across from the conference venue. At Paul Ramsey's community dinner, Grant and Cary each led groups accompanying community members for meals and conversation.</p>
       <img className="post-cover" src={useBaseUrl('/img/news/pgconf-social.png')} alt="Social Dinner" />
       <img className="post-cover" src={useBaseUrl('/img/news/pgconf-dinner.png')} alt="Community Dinner" />
       <img className="post-cover" src={useBaseUrl('/img/news/pgconf-cary.jpg')} alt="Cary at Dinner" />
 
-      <h2 id="closing">Closing Thoughts</h2>
-      <p>259 attendees | 89 sessions | 82 speakers | 30 years of PostgreSQL. Thousands of commits, countless mailing list discussions, and a two-decade open-source relay.</p>
-      <p>From HOW 2026 in Jinan to PGConf.dev in Vancouver, from silver sponsorship to the speaker podium, HighGo & IvorySQL are steadily delivering on their commitment: "From PG, for PG."</p>
+      <h2 id="closing">4. Closing Thoughts</h2>
+      <p>259 attendees. 89 sessions. 82 speakers. 30 years of PostgreSQL. Behind these numbers are thousands of commits, countless mailing list discussions, and a two-decade open-source relay.</p>
+      <p>From HOW 2026 in Jinan to PGConf.dev in Vancouver, from silver sponsorship to the speaker podium, HighGo & IvorySQL are steadily delivering on their commitment: <strong>"From PG, for PG."</strong></p>
 
       <img className="post-cover" src={useBaseUrl('/img/news/pgconf-2027.png')} alt="PGConf.dev 2027 Montreal" />
 
       <blockquote>
-        Next year, PGConf.dev 2027 heads to Montreal (May 11-14). We hope to see even more faces from China at the center of the global PostgreSQL stage.
+        Next year, PGConf.dev 2027 heads to Montreal (May 11-14). Here's hoping to see even more faces from China at the center of the global PostgreSQL stage.
       </blockquote>
     </div>
   </div>
