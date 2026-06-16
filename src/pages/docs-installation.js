@@ -3,8 +3,8 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 const INSTALLATION_URLS = {
-  en: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.3/3.1#quick-installation',
-  zh: 'https://docs.ivorysql.org/cn/ivorysql-doc/v5.3/3.1#%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85',
+  en: 'https://docs.ivorysql.org/en/ivorysql-doc/v5.4/3.1#quick-installation',
+  zh: 'https://docs.ivorysql.org/cn/ivorysql-doc/v5.4/3.1#%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85',
 };
 
 function buildTarget(locale) {
