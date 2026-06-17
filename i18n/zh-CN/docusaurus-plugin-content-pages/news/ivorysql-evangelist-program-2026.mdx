@@ -96,30 +96,34 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
       <h2 id="points">积分怎么获得？</h2>
       <table>
-        <tr><th>类别</th><th>布道方式</th><th>积分</th></tr>
-        <tr><td rowspan="5"><strong>内容创作</strong></td><td>官方首发深度文章（IvorySQL相关，≥1500字）</td><td>30/篇</td></tr>
-        <tr><td>官方首发深度文章（纯PostgreSQL，≥1500字）</td><td>15/篇</td></tr>
-        <tr><td>官方发布技术视频（≥10分钟）</td><td>20/期</td></tr>
-        <tr><td>IvorySQL 视频课程（完整课程，≥5 期）</td><td>≥100/套</td></tr>
-        <tr><td>内容被IvorySQL公众号转载</td><td>10/篇</td></tr>
-        <tr><td rowspan="5"><strong>活动参与</strong></td><td>IvorySQL 直播演讲</td><td>40/次</td></tr>
-        <tr><td>IvorySQL 主办线下演讲/Workshop</td><td>60/次</td></tr>
-        <tr><td>高校活动分享 IvorySQL 主题</td><td>40/次</td></tr>
-        <tr><td>外部活动分享 IvorySQL 主题</td><td>30/次</td></tr>
-        <tr><td>组织线下 Meetup（≥20人）</td><td>30/场</td></tr>
-        <tr><td rowspan="3"><strong>社区贡献</strong></td><td>提交 issue / 改进建议（被采纳）</td><td>5/个</td></tr>
-        <tr><td>贡献代码/文档 PR 被合并</td><td>25/PR</td></tr>
-        <tr><td>贡献迁移案例/用户故事（客户授权）</td><td>40/篇</td></tr>
-        <tr><td rowspan="3"><strong>其他</strong></td><td>宣传社区活动（自媒体/社媒/社群）</td><td>5/次</td></tr>
-        <tr><td>转载 IvorySQL 发版公告</td><td>10/篇</td></tr>
-        <tr><td>转发 IvorySQL 发版公告</td><td>5/篇</td></tr>
+        <tr><th>类别</th><th>布道方式</th><th>要求</th><th>积分</th></tr>
+        <tr><td rowspan="4"><strong>内容创作</strong></td><td>在 IvorySQL 官方渠道首发深度文章（IvorySQL 相关）</td><td>≥1500 字，审核通过</td><td>30/篇</td></tr>
+        <tr><td>在 IvorySQL 官方渠道首发深度文章（纯 PostgreSQL）</td><td>≥1500 字，审核通过</td><td>15/篇</td></tr>
+        <tr><td>在官方渠道发布技术视频</td><td>≥10 分钟</td><td>25/期</td></tr>
+        <tr><td>内容被 IvorySQL 公众号转载</td><td>—</td><td>10/篇</td></tr>
+        <tr><td rowspan="5"><strong>活动参与</strong></td><td>在 IvorySQL 直播活动中演讲</td><td>有活动记录</td><td>40/次</td></tr>
+        <tr><td>在 IvorySQL 主办线下活动演讲/Workshop</td><td>有议程记录</td><td>40/次</td></tr>
+        <tr><td>在高校活动分享 IvorySQL 主题</td><td>有公开记录</td><td>40/次</td></tr>
+        <tr><td>在外部活动分享 IvorySQL 主题</td><td>有公开记录</td><td>30/次</td></tr>
+        <tr><td>组织线下 Meetup（≥20 人，IvorySQL/PostgreSQL 主题）</td><td>官方确认</td><td>40/场</td></tr>
+        <tr><td rowspan="4"><strong>社区贡献</strong></td><td>提交功能介绍 / 改进建议（被采纳）</td><td>IvorySQL GitHub 仓库</td><td>5/个</td></tr>
+        <tr><td>提交 Bug 报告（被确认，含复现步骤、环境信息等）</td><td>IvorySQL GitHub 仓库</td><td>15/个</td></tr>
+        <tr><td>贡献代码 / 文档 PR 被合并</td><td>IvorySQL GitHub 仓库</td><td>30/PR</td></tr>
+        <tr><td>贡献迁移案例 / 用户故事（客户授权）</td><td>官方首发</td><td>40/篇</td></tr>
+        <tr><td rowspan="4"><strong>其他</strong></td><td>宣传 IvorySQL 社区活动（自媒体/社媒/社群等）</td><td>有宣传记录</td><td>5/次</td></tr>
+        <tr><td>转载 IvorySQL 社区官方动态（发版公告、活动招募、布道者文章、用户案例、技术博客等）</td><td>经官方确认</td><td>10/篇（年度上限 30 分）</td></tr>
+        <tr><td>转发 IvorySQL 社区官方动态</td><td>经官方确认</td><td>3/次（年度上限 21 分）</td></tr>
+        <tr><td>其他传播行为（如设计宣传物料、制作社区宣传视频等）</td><td>由运营评估价值</td><td>视价值而定</td></tr>
       </table>
 
-      <p>上述转载与转发项，总计积分获得上限为 <strong>50 分</strong>，超出部分不再计分，但欢迎持续传播。</p>
-
-      <blockquote>
-        参加过 HOW 2026 演讲的朋友，系统已赠送 30 分基础分。
-      </blockquote>
+      <p><strong>说明</strong>：</p>
+      <ul>
+        <li>参加过 HOW 2026 演讲的，系统已赠送 30 积分基础分</li>
+        <li>同一 Bug 重复提交，只给第一个提交者计分</li>
+        <li>自己发现 Bug 并提交了修复 PR，Bug 报告分（15 分）与 PR 分（30 分）可叠加</li>
+        <li>官方渠道：官网博客、官方公众号、官方技术社区、经认可的第三方媒体（需报备）</li>
+        <li>其他布道形式可联系运营申请认定</li>
+      </ul>
 
       <h2 id="timeline">2026 年时间线</h2>
       <ul>
@@ -134,6 +138,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
       <p>提交后，运营同学会邀请你加入布道者专属微信群。</p>
 
       <h2 id="faq">几个常见问题</h2>
+      <p><strong>怎么参与？</strong><br/>请先填写表单，一切布道行为可先与社区的运营人员联系，然后再进行。</p>
       <p><strong>100 分难吗？</strong><br/>不难。100 分大约相当于 3-4 篇深度文章，或 2 篇文章加 1 次演讲。</p>
       <p><strong>纯 PostgreSQL 文章算吗？</strong><br/>算，但只有 IvorySQL 相关文章的一半积分（15 分）。我们更鼓励写 IvorySQL 相关内容。</p>
       <p><strong>积分可以跨年吗？</strong><br/>本计划仅针对 2026 年度，积分不跨年。明年会有新的计划。</p>
