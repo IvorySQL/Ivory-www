@@ -1,0 +1,144 @@
+---
+title: "IvorySQL 5.4 Released: Based on PostgreSQL 18.4 with Enhanced AI and Ecosystem"
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-banner { background: linear-gradient(135deg, #532abd 0%, #7D52F4 100%); padding: 40px 0; color: white !important; margin-bottom: 30px; }
+  .detail-banner-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; position: relative; }
+  .detail-banner h1 { font-size: 2.2rem; margin: 0; color: white !important; }
+  .detail-banner-decor { position: absolute; right: 10%; top: 50%; transform: translateY(-50%); opacity: 0.2; pointer-events: none; }
+  .detail-wrapper { max-width: 1200px; margin: 0 auto; padding: 0 20px 80px; display: flex; gap: 40px; }
+  .detail-main { flex: 1; min-width: 0; }
+  .breadcrumb { font-size: 0.9rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #888; text-decoration: none; }
+  .breadcrumb a:hover { color: #7D52F4; }
+  .post-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .post-title { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; line-height: 1.3; }
+  .post-date { color: #999; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+  .post-content h2 { font-size: 1.5rem; color: #333; margin-top: 40px; margin-bottom: 20px; border-left: 4px solid #7D52F4; padding-left: 15px; }
+  .post-content h3 { font-size: 1.25rem; color: #444; margin-top: 25px; margin-bottom: 15px; font-weight: bold; }
+  .post-content p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px; }
+  .post-content li { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 10px; }
+  .post-content strong { color: #333; }
+  .post-content a { color: #7D52F4; text-decoration: none; font-weight: 500; }
+  .post-content a:hover { text-decoration: underline; }
+  .detail-sidebar { width: 260px; flex-shrink: 0; }
+  .sidebar-sticky { position: sticky; top: 100px; border-left: 2px solid #f0f0f0; padding-left: 20px; }
+  .sidebar-title { font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+  .sidebar-nav li { margin-bottom: 10px; }
+  .sidebar-nav a { color: #666; font-size: 0.85rem; text-decoration: none; transition: color 0.2s; line-height: 1.4; display: block; }
+  .sidebar-nav a:hover { color: #7D52F4; }
+  @media (max-width: 996px) { .detail-banner { padding: 30px 0; } .detail-banner h1 { font-size: 1.5rem; } .detail-wrapper { flex-direction: column; } .detail-sidebar { display: none; } .post-title { font-size: 1.5rem; } }
+`}</style>
+
+<div className="detail-banner">
+  <div className="detail-banner-inner">
+    <h1>News & Updates</h1>
+    <div className="detail-banner-decor">● ○ ●</div>
+  </div>
+</div>
+
+<div className="detail-wrapper">
+  <div className="detail-main">
+    <div className="breadcrumb">
+      <a href="/news">News & Updates</a> <span>&gt;</span> <span>Article Content</span>
+    </div>
+
+    <div className="post-header">
+      <div className="post-title">IvorySQL 5.4 Released: Based on PostgreSQL 18.4 with Enhanced AI and Ecosystem</div>
+      <div className="post-date">📅 Published on: June 17, 2026</div>
+    </div>
+
+    <div className="post-content">
+      <p>
+        On June 17, 2026, the IvorySQL community officially released <strong>IvorySQL 5.4</strong>. As an Oracle-compatible open-source PostgreSQL database, IvorySQL 5.4 is built on <strong>PostgreSQL 18.4</strong> and includes kernel updates, feature enhancements, and ecosystem expansion, further advancing AI, cloud-native deployment, and database management capabilities.
+      </p>
+      <p>Full release notes: <a href="https://docs.ivorysql.org/" target="_blank" rel="noopener noreferrer">docs.ivorysql.org</a></p>
+
+      <h2 id="kernel">PostgreSQL 18.4 Kernel Update</h2>
+      <ol>
+        <li>Prevent unbounded recursion while processing startup packets</li>
+        <li>Fix assorted integer overflows in memory-allocation calculations</li>
+        <li>Properly quote subscription names in <code>pg_createsubscriber</code></li>
+        <li>Properly quote object names in logical replication origin checks</li>
+        <li>Reject over-length options in <code>ts_headline()</code></li>
+        <li>Detect faulty input when restoring attribute MCV statistics</li>
+      </ol>
+
+      <h2 id="features">Key Enhancements</h2>
+
+      <h3>Upgrade to PG 18.4 kernel</h3>
+      <p>PostgreSQL kernel upgraded to version 18.4 for improved stability, security and compatibility.</p>
+
+      <h3>IvorySQL Skills</h3>
+      <p><a href="https://github.com/IvorySQL/skills" target="_blank" rel="noopener noreferrer">github.com/IvorySQL/skills</a></p>
+      <p>Empowering AI assistants to become IvorySQL database experts.</p>
+
+      <h3>Online Experience</h3>
+      <p><a href="http://trial.ivorysql.org/" target="_blank" rel="noopener noreferrer">trial.ivorysql.org</a></p>
+      <p>An interactive, browser-based environment is now available, allowing users to explore and evaluate IvorySQL 5.4 in real time — no installation required.</p>
+
+      <h3>Packaging for All Platforms</h3>
+      <p>Provides multi-platform media packages for <strong>X86, ARM, MIPS, and LoongArch</strong> architectures.</p>
+
+      <h3>Containerized Deployment Support</h3>
+      <p>Supports one-click deployment of standalone or highly available IvorySQL 5.4 clusters via <strong>Docker Compose, Podman, Swarm, Helm</strong>, and the <strong>IvorySQL 5.4 Operator</strong>.</p>
+
+      <h3>IvorySQL Cloud 5.4</h3>
+      <p>A fully managed, graphical control plane that handles IvorySQL 5.4 database subscriptions, orchestrates end-to-end lifecycle operations, and integrates surrounding ecosystem services.</p>
+
+      <h3>PostgreSQL Extensions</h3>
+      <p>Added support for additional PostgreSQL extensions and tools:</p>
+      <ul>
+        <li><strong>AI & Vector</strong>: pg_ai_query, pgvector</li>
+        <li><strong>Graph</strong>: AGE</li>
+        <li><strong>GIS & Routing</strong>: PostGIS, pgRouting</li>
+        <li><strong>Chinese text search</strong>: pg_jieba, Zhparser, pg_bigm</li>
+        <li><strong>Full-text search</strong>: PGroonga, pg_textsearch</li>
+        <li><strong>Scheduling</strong>: pg_cron, pgagent</li>
+        <li><strong>Monitoring</strong>: system_stats, pg_stat_monitor, pg_show_plans</li>
+        <li><strong>SQL tools</strong>: ddlx, plpgsql_check, pg_hint_plan</li>
+        <li><strong>HTTP</strong>: pgsql-http, pg_curl</li>
+        <li><strong>Connection pool</strong>: PgBouncer</li>
+        <li><strong>Partitioning</strong>: pg_partman</li>
+        <li><strong>WAL</strong>: wal2json</li>
+        <li><strong>Foreign data</strong>: redis_fdw</li>
+      </ul>
+
+      <h3>SQL Compatibility</h3>
+      <p>Enhanced the EXTRACT function support to accept additional syntax variations in SQL queries.</p>
+
+      <h2 id="repos">Source Code</h2>
+      <ul>
+        <li>Database source: <a href="https://github.com/IvorySQL/IvorySQL" target="_blank" rel="noopener noreferrer">github.com/IvorySQL/IvorySQL</a></li>
+        <li>Website: <a href="https://github.com/IvorySQL/Ivory-www" target="_blank" rel="noopener noreferrer">github.com/IvorySQL/Ivory-www</a></li>
+        <li>Documentation: <a href="https://github.com/IvorySQL/IvorySQL_docs" target="_blank" rel="noopener noreferrer">github.com/IvorySQL/IvorySQL_docs</a></li>
+        <li>Docker: <a href="https://github.com/IvorySQL/docker_library" target="_blank" rel="noopener noreferrer">github.com/IvorySQL/docker_library</a></li>
+      </ul>
+
+      <h2 id="contributors">Contributors</h2>
+      <p>The following individuals (in alphabetical order) have contributed to this release as patch authors, committers, reviewers, testers, or reporters of issues:</p>
+      <p>3296442201 · Adria0615 · anapplebeee · Cédric Villemain · Fawei Zhao · Ge Sui · Grant Zhou · hanjianqiao · jerome-peng · liketoochao · movead123 · msdnchina · Pierre Forstmann · Rophy Tsai · Shawn Yan · Shuntian Jiao · Steven Niu · tian1220A · xiaoyu509 · Xiaohui Liu · Xiangyu Liang · Xinjie LYU · Xueyu Gao · yes7rose · Yasir Hussain Shah · z20081120087 · Zhe Zhang · Zhenhao Pan · Zheng Tao · Zhuoyan Shi · zuinuan123</p>
+
+      <h2 id="welcome">Try It Out</h2>
+      <p><a href="https://github.com/IvorySQL/IvorySQL/compare/IvorySQL_5.3...IvorySQL_5.4" target="_blank" rel="noopener noreferrer">Complete Changelog</a></p>
+      <p>We welcome the community to download and try IvorySQL 5.4. If you encounter any issues, please <a href="https://github.com/IvorySQL/IvorySQL/issues" target="_blank" rel="noopener noreferrer">submit an issue</a>. Every reporter has a chance to receive exclusive IvorySQL community merchandise.</p>
+    </div>
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-sticky">
+      <div className="sidebar-title">▼ CONTENTS</div>
+      <ul className="sidebar-nav">
+        <li><a href="#kernel">Kernel Update</a></li>
+        <li><a href="#features">Key Features</a></li>
+        <li><a href="#repos">Source Code</a></li>
+        <li><a href="#contributors">Contributors</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
