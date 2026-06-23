@@ -9,6 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   .detail-container { display: flex; gap: 40px; margin-top: 40px; }
   .detail-content { flex: 8; min-width: 0; }
   .detail-sidebar { flex: 3.5; }
+  .event-main-img { width: 100%; border-radius: 18px; margin: 24px 0; box-shadow: 0 14px 40px rgba(0,0,0,0.08); background: #f6f6f6; }
   .section-title { color: #7D52F4; border-left: 5px solid #7D52F4; padding-left: 16px; margin: 42px 0 20px; font-weight: 700; font-size: 1.4rem; }
   .content-text { line-height: 1.9; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
   .highlight-box { background: linear-gradient(135deg, #f8f6ff 0%, #f0eeff 100%); padding: 28px; border-radius: 16px; margin: 28px 0; border-left: 5px solid #7D52F4; }
@@ -139,6 +140,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
     <div className="content-text">
       PG 三十年，中国走了十五年。这场直播没有给出一个冰冷的数字排名，但每一位嘉宾的视角和判断，共同描绘出一幅中国 PG 生态的立体画像——我们不在顶端，但我们正在加速攀登。
     </div>
+
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202606-poster.jpg')} alt="第一期海报" />
   </div>
 
   <div className="detail-sidebar">
