@@ -22,6 +22,50 @@ IvorySQL 社区始终坚持<strong>"开源无门槛，贡献无大小"</strong>�
 
 具体激励安排会根据社区计划持续迭代，但<strong>每一类持续、真实且有价值的贡献，都会被社区认真记录与认可</strong>。
 
+## 社区协作流程
+
+IvorySQL 社区采用一套闭环式开源协作流程，确保从问题提出到版本发布，每一个环节都能闭合反馈、持续改进。这一流程鼓励用户与开发者形成良性互动，让社区开发始终围绕实际需求持续演进。
+
+整个协作闭环流程如下：
+
+🐛 <strong>提问题（Issue）</strong>
+
+用户或开发者在 GitHub 的 Issues 页面提交 Bug、功能建议或使用反馈。
+
+💬 <strong>问题讨论（Discussion）</strong>
+
+维护者与社区成员就问题展开讨论，确认问题性质与优先级，加入 ToDo List。
+
+🛠️ <strong>开发分支（Fork & Dev）</strong>
+
+开发者认领 Issue，Fork 仓库并在本地开发测试，准备提交代码。
+
+🚀 <strong>提交 Pull Request（PR）</strong>
+
+将开发分支 Push 到 Fork 仓库后，向上游仓库发起合并请求。
+
+🧐 <strong>代码评审（Review）</strong>
+
+维护者或核心开发者对 PR 进行评审，提出修改建议并确保质量。
+
+🔀 <strong>合并主分支（Merge）</strong>
+
+审核通过后，PR 被合并至主分支，对应的 Issue 被关闭。
+
+📦 <strong>版本发布（Release）</strong>
+
+项目定期发布新版本（每季度小版本，每年大版本），包含最新的修复与功能。
+
+🧪 <strong>用户测试（Test）</strong>
+
+用户升级使用新版，反馈新问题，新的 Issue 随之产生，形成完整的反馈循环。
+
+![process](/img/process_cn.png)
+
+通过这套完整的闭环协作机制，IvorySQL 实现了问题响应 → 开发贡献 → 质量保障 → 发布反馈的全流程闭合，推动项目持续健康演进。
+
+📢 请务必阅读并遵守我们的 <a href="https://github.com/IvorySQL/IvorySQL/blob/master/CODE_OF_CONDUCT_CN.md" target="_blank" rel="noopener noreferrer">IvorySQL社区行为准则</a>。
+
 ## 快速开始
 
 准备好参与贡献了吗？以下是开始的方式：

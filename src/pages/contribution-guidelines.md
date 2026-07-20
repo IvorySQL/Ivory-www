@@ -22,6 +22,50 @@ To encourage long-term participation, the IvorySQL community continues to improv
 
 Specific arrangements may evolve with community programs, but **sustained and valuable contributions are always taken seriously and recognized**.
 
+## Community Collaboration Process
+
+The IvorySQL community employs a closed-loop open-source collaboration process, ensuring that every step—from issue submission to version release—receives closed feedback and continuous improvement. This process encourages positive interaction between users and developers, allowing community development to evolve around actual needs.
+
+The entire closed-loop collaboration process is as follows:
+
+🐛 **Submit Issue**
+
+Users or developers submit bugs, feature suggestions, or usage feedback on the GitHub Issues page.
+
+💬 **Discussion**
+
+Maintainers and community members discuss the issue, confirm its nature and priority, and add it to the ToDo List.
+
+🛠️ **Development Branch (Fork & Dev)**
+
+Developers claim the Issue, fork the repository, develop and test locally, and prepare to submit code.
+
+🚀 **Submit Pull Request (PR)**
+
+Push the development branch to the forked repository and initiate a merge request to the upstream repository.
+
+🧐 **Code Review**
+
+Maintainers or core developers review the PR, provide modification suggestions, and ensure quality.
+
+🔀 **Merge to Main Branch**
+
+After approval, the PR is merged into the main branch, and the corresponding Issue is closed.
+
+📦 **Release**
+
+The project regularly releases new versions (minor versions quarterly, major versions annually), including the latest fixes and features.
+
+🧪 **User Testing**
+
+Users upgrade to the new version, provide feedback on new issues, and new Issues are generated, forming a complete feedback loop.
+
+![process](/img/process_en.png)
+
+Through this complete closed-loop collaboration mechanism, IvorySQL achieves full-process closure of issue response → development contribution → quality assurance → release feedback, promoting the continuous healthy evolution of the project.
+
+📢 Please read and abide by our [IvorySQL Community Code of Conduct](https://github.com/IvorySQL/IvorySQL/blob/master/CODE_OF_CONDUCT_CN.md).
+
 ## Getting Started
 
 Ready to start contributing? Here's how to begin:
