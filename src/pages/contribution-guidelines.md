@@ -74,6 +74,7 @@ Ready to start contributing? Here's how to begin:
 2. **Sign the Contributor License Agreement (CLA)**:
    - [Individual contributor](/pdf/individual_cla.pdf)
    - [Corporate contributor](/pdf/corporate_cla.pdf)
+   - **Note**: If you contribute via AtomGit, the CLA signing can be completed automatically.
 3. **Read the detailed contribution guide** at [docs.ivorysql.org](https://docs.ivorysql.org) to understand:
    - Community collaboration process
    - Code contribution guidelines
