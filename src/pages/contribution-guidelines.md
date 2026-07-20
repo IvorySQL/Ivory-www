@@ -60,7 +60,7 @@ The project regularly releases new versions (minor versions quarterly, major ver
 
 Users upgrade to the new version, provide feedback on new issues, and new Issues are generated, forming a complete feedback loop.
 
-![process](/img/process_en.png)
+![process](/img/p23.jpg)
 
 Through this complete closed-loop collaboration mechanism, IvorySQL achieves full-process closure of issue response → development contribution → quality assurance → release feedback, promoting the continuous healthy evolution of the project.
 
