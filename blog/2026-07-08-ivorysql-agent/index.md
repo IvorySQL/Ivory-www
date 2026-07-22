@@ -3,7 +3,7 @@ slug: ivorysql-agent
 title: "IvorySQL Agent: AI-Powered Database Management"
 authors: [Oreo Yang]
 category: IvorySQL
-image: img/blog/covers/ivorysql-agent-en.svg
+image: img/blog/covers/ivorysql-agent-en.png
 tags: [IvorySQL, AI, Agent, RAG, NL2SQL, PostgreSQL]
 ---
 

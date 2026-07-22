@@ -4,7 +4,7 @@ title: In-Depth Analysis of PostgreSQL 18 Key New Features
 authors: [official]
 authorTwitter: IvorySql
 category: PostgreSQL
-image: img/blog/covers/pg18-features.svg
+image: img/blog/covers/pg18-features-en.png
 tags: [IvorySQL, Database, UUIDv7, PostgreSQL, I/O, OAuth]
 ---
 

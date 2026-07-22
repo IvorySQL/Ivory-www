@@ -3,7 +3,7 @@ slug: oracle-compat-kernel
 title: "Why Can Oracle Run on PostgreSQL? The Answer Lies in the Kernel"
 authors: [ZhangChen]
 category: IvorySQL
-image: img/blog/covers/oracle-compat-kernel-en.svg
+image: img/blog/covers/oracle-compat-kernel-en.png
 tags: [IvorySQL, Oracle, PostgreSQL, Kernel, PL/iSQL, Migration]
 ---
 
