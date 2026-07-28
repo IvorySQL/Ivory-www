@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" font-family="Arial, Helvetica, sans-serif">
+  <!-- Background -->
+  <rect width="960" height="540" fill="#ffffff"/>
+
+  <!-- Outer circle background -->
+  <circle cx="480" cy="270" r="160" fill="#e8e0f0" stroke="none"/>
+
+  <!-- Center circle -->
+  <circle cx="480" cy="270" r="90" fill="#5b2d8e" stroke="none"/>
+
+  <!-- Center icon: folder -->
+  <g transform="translate(450,220)">
+    <rect x="10" y="10" width="40" height="8" rx="2" fill="#fff"/>
+    <rect x="5" y="18" width="50" height="35" rx="3" fill="#fff"/>
+  </g>
+
+  <!-- Center text -->
+  <text x="480" y="310" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">Open Source</text>
+  <text x="480" y="338" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">Collaboration</text>
+
+  <!-- Step circles and arcs on the ring (radius ~130 from center) -->
+  <!-- Step 1: Top (12 o'clock) -->
+  <circle cx="480" cy="140" r="22" fill="#5b2d8e"/>
+  <text x="480" y="147" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">1</text>
+
+  <!-- Step 2: ~1:30 (upper right) -->
+  <circle cx="602" cy="178" r="22" fill="#5b2d8e"/>
+  <text x="602" y="185" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">2</text>
+
+  <!-- Step 3: ~3 o'clock (right) -->
+  <circle cx="630" cy="270" r="22" fill="#5b2d8e"/>
+  <text x="630" y="277" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">3</text>
+
+  <!-- Step 4: ~4:30 (lower right) -->
+  <circle cx="602" cy="362" r="22" fill="#5b2d8e"/>
+  <text x="602" y="369" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">4</text>
+
+  <!-- Step 5: Bottom (6 o'clock) -->
+  <circle cx="480" cy="400" r="22" fill="#5b2d8e"/>
+  <text x="480" y="407" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">5</text>
+
+  <!-- Step 6: ~7:30 (lower left) -->
+  <circle cx="358" cy="362" r="22" fill="#5b2d8e"/>
+  <text x="358" y="369" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">6</text>
+
+  <!-- Step 7: ~9 o'clock (left) -->
+  <circle cx="330" cy="270" r="22" fill="#5b2d8e"/>
+  <text x="330" y="277" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">7</text>
+
+  <!-- Step 8: ~10:30 (upper left) -->
+  <circle cx="358" cy="178" r="22" fill="#5b2d8e"/>
+  <text x="358" y="185" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">8</text>
+
+  <!-- Dashed clockwise arrows between steps -->
+  <g fill="none" stroke="#8b5fbf" stroke-width="1.5" stroke-dasharray="6,4">
+    <path d="M500,143 A130,130 0 0,1 585,165"/>
+    <path d="M610,195 A130,130 0 0,1 625,250"/>
+    <path d="M625,290 A130,130 0 0,1 610,345"/>
+    <path d="M585,378 A130,130 0 0,1 500,397"/>
+    <path d="M460,397 A130,130 0 0,1 375,378"/>
+    <path d="M340,345 A130,130 0 0,1 325,290"/>
+    <path d="M325,250 A130,130 0 0,1 340,195"/>
+    <path d="M375,165 A130,130 0 0,1 460,143"/>
+  </g>
+  <!-- Arrowheads on dashed paths -->
+  <g fill="#8b5fbf">
+    <polygon points="585,158 590,168 580,168"/>
+    <polygon points="622,250 630,248 624,255"/>
+    <polygon points="615,345 618,355 608,352"/>
+    <polygon points="500,394 502,402 494,398"/>
+    <polygon points="375,382 373,390 380,386"/>
+    <polygon points="328,290 322,288 328,295"/>
+    <polygon points="335,195 328,197 334,188"/>
+    <polygon points="460,147 456,140 464,140"/>
+  </g>
+
+  <!-- ====== Labels (right side) ====== -->
+
+  <!-- Step 1: Submit Issue -->
+  <text x="700" y="118" font-size="18" font-weight="bold" fill="#5b2d8e">Submit Issue</text>
+  <text x="700" y="140" font-size="11" fill="#444">Users or developers submit issues on the</text>
+  <text x="700" y="155" font-size="11" fill="#444">project's GitHub Issues page</text>
+
+  <!-- Step 2: Discussion -->
+  <text x="700" y="195" font-size="18" font-weight="bold" fill="#5b2d8e">Discussion</text>
+  <text x="700" y="217" font-size="11" fill="#444">Maintainers or community members discuss</text>
+  <text x="700" y="232" font-size="11" fill="#444">the Issue, confirm bugs, set priorities, and</text>
+  <text x="700" y="247" font-size="11" fill="#444">add to the To-Do List</text>
+
+  <!-- Step 3: Fork &amp; Dev -->
+  <text x="700" y="270" font-size="18" font-weight="bold" fill="#5b2d8e">Fork &amp; Dev</text>
+  <text x="700" y="292" font-size="11" fill="#444">Developers claim the Issue, fork the repo,</text>
+  <text x="700" y="307" font-size="11" fill="#444">clone locally, write code and run tests</text>
+
+  <!-- Step 4: Submit PR -->
+  <text x="700" y="345" font-size="18" font-weight="bold" fill="#5b2d8e">Submit PR</text>
+  <text x="700" y="367" font-size="11" fill="#444">Push the local branch to your Fork, then</text>
+  <text x="700" y="382" font-size="11" fill="#444">open a PR to the upstream repo</text>
+
+  <!-- ====== Labels (left side) ====== -->
+
+  <!-- Step 5: Code Review -->
+  <text x="50" y="395" font-size="18" font-weight="bold" fill="#5b2d8e">Code Review</text>
+  <text x="50" y="417" font-size="11" fill="#444">Project maintainers or core members review</text>
+  <text x="50" y="432" font-size="11" fill="#444">the PR</text>
+
+  <!-- Step 6: Merge -->
+  <text x="50" y="345" font-size="18" font-weight="bold" fill="#5b2d8e">Merge</text>
+  <text x="50" y="367" font-size="11" fill="#444">After approval, Maintainer merges PR into</text>
+  <text x="50" y="382" font-size="11" fill="#444">the main branch and closes the Issue</text>
+
+  <!-- Step 7: Release -->
+  <text x="50" y="270" font-size="18" font-weight="bold" fill="#5b2d8e">Release</text>
+  <text x="50" y="292" font-size="11" fill="#444">Project releases new versions regularly or</text>
+  <text x="50" y="307" font-size="11" fill="#444">as needed — quarterly minor, yearly major</text>
+
+  <!-- Step 8: User Testing -->
+  <text x="50" y="195" font-size="18" font-weight="bold" fill="#5b2d8e">User Testing</text>
+  <text x="50" y="217" font-size="11" fill="#444">Users download and use the new version,</text>
+  <text x="50" y="232" font-size="11" fill="#444">may discover new issues or requirements</text>
+
+  <!-- Title -->
+  <text x="480" y="42" text-anchor="middle" font-size="26" font-weight="bold" fill="#5b2d8e">Open Source Collaboration Workflow</text>
+</svg>
