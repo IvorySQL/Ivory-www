@@ -75,7 +75,7 @@ IvorySQL 社区采用一套闭环式开源协作流程，确保从问题提出�
    - [个人贡献者](/pdf/individual_cla.pdf)
    - [企业贡献者](/pdf/corporate_cla.pdf)
    - <strong>提示</strong>：如果在 AtomGit 上进行贡献，可以自动完成 CLA 签署。
-3. <strong>阅读详细贡献指南</strong>：<a href="https://docs.ivorysql.org/cn/ivorysql-doc/master/contribution/contribution_guide" target="_blank" rel="noopener noreferrer">docs.ivorysql.org 贡献指南</a>，了解：
+3. <strong>阅读详细<a href="https://docs.ivorysql.org/cn/ivorysql-doc/master/contribution/contribution_guide" target="_blank" rel="noopener noreferrer">贡献指南</a></strong>，了解：
    - 社区协作流程
    - 代码贡献指南
    - 生态组件适配流程
