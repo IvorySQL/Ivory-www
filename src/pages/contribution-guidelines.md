@@ -1,6 +1,6 @@
 # IvorySQL Contribution Guidelines
 
-IvorySQL grows through contributions from **developers, testers, documentation writers, translators, community advocates, and users around the world**. This page summarizes the main ways to participate in the community and the current incentive policy. For detailed technical guides, please refer to our [Contribution Guide](https://docs.ivorysql.org).
+IvorySQL grows through contributions from **developers, testers, documentation writers, translators, community advocates, and users around the world**. This page summarizes the main ways to participate in the community and the current incentive policy. For step-by-step contribution instructions, please refer to the [Contribution Guide on the IvorySQL documentation site](https://docs.ivorysql.org/en/ivorysql-doc/master/contribution/contribution_guide).
 
 ## Ways to Contribute
 
@@ -60,7 +60,7 @@ The project regularly releases new versions (minor versions quarterly, major ver
 
 Users upgrade to the new version, provide feedback on new issues, and new Issues are generated, forming a complete feedback loop.
 
-![process](/img/contribution-process.svg)
+![process](/img/p23.jpg)
 
 Through this complete closed-loop collaboration mechanism, IvorySQL achieves full-process closure of issue response → development contribution → quality assurance → release feedback, promoting the continuous healthy evolution of the project.
 
@@ -75,7 +75,7 @@ Ready to start contributing? Here's how to begin:
    - [Individual contributor](/pdf/individual_cla.pdf)
    - [Corporate contributor](/pdf/corporate_cla.pdf)
    - **Note**: If you contribute via AtomGit, the CLA signing can be completed automatically.
-3. **Read the detailed contribution guide** at [docs.ivorysql.org](https://docs.ivorysql.org) to understand:
+3. **Read the detailed [Contribution Guide](https://docs.ivorysql.org/en/ivorysql-doc/master/contribution/contribution_guide)** to understand:
    - Community collaboration process
    - Code contribution guidelines
    - Ecosystem component adaptation workflow
@@ -89,4 +89,4 @@ Ready to start contributing? Here's how to begin:
 - **GitHub Discussions**: https://github.com/IvorySQL/IvorySQL/discussions
 - **Community groups**: WeChat, Discord, and other chat groups
 
-If you are interested in code contributions but are not sure where to start, or if this is your first time contributing to IvorySQL, the [detailed contribution guide](https://docs.ivorysql.org) will help you find a clear entry point and lower the barrier to participation.
+If you are interested in code contributions but are not sure where to start, or if this is your first time contributing to IvorySQL, the [detailed Contribution Guide](https://docs.ivorysql.org/en/ivorysql-doc/master/contribution/contribution_guide) will help you find a clear entry point and lower the barrier to participation.

@@ -1,6 +1,6 @@
 # IvorySQL 贡献指南
 
-IvorySQL 的成长离不开<strong>全球开发者、测试人员、文档作者、翻译者、社区布道者和使用者的持续参与</strong>。本页面概述社区当前的主要贡献方式与激励政策，详细的操作指南请参阅 <a href="https://docs.ivorysql.org" target="_blank" rel="noopener noreferrer">IvorySQL 文档站</a>。
+IvorySQL 的成长离不开<strong>全球开发者、测试人员、文档作者、翻译者、社区布道者和使用者的持续参与</strong>。本页面概述社区当前的主要贡献方式与激励政策，详细的操作指南请参阅 <a href="https://docs.ivorysql.org/cn/ivorysql-doc/master/contribution/contribution_guide" target="_blank" rel="noopener noreferrer">IvorySQL 文档站贡献指南</a>。
 
 ## 贡献方式
 
@@ -75,7 +75,7 @@ IvorySQL 社区采用一套闭环式开源协作流程，确保从问题提出�
    - [个人贡献者](/pdf/individual_cla.pdf)
    - [企业贡献者](/pdf/corporate_cla.pdf)
    - <strong>提示</strong>：如果在 AtomGit 上进行贡献，可以自动完成 CLA 签署。
-3. <strong>阅读详细贡献指南</strong>：<a href="https://docs.ivorysql.org" target="_blank" rel="noopener noreferrer">docs.ivorysql.org</a>，了解：
+3. <strong>阅读详细贡献指南</strong>：<a href="https://docs.ivorysql.org/cn/ivorysql-doc/master/contribution/contribution_guide" target="_blank" rel="noopener noreferrer">docs.ivorysql.org 贡献指南</a>，了解：
    - 社区协作流程
    - 代码贡献指南
    - 生态组件适配流程
@@ -89,4 +89,4 @@ IvorySQL 社区采用一套闭环式开源协作流程，确保从问题提出�
 - <strong>GitHub Discussions</strong>：https://github.com/IvorySQL/IvorySQL/discussions
 - <strong>社区群组</strong>：微信、Discord 等聊天群
 
-如果你对代码贡献感兴趣，但暂时还没有明确的切入点，或者这是你第一次参与 IvorySQL，<a href="https://docs.ivorysql.org" target="_blank" rel="noopener noreferrer">详细贡献指南</a>将帮助你找到清晰的起点，降低参与门槛。
+如果你对代码贡献感兴趣，但暂时还没有明确的切入点，或者这是你第一次参与 IvorySQL，<a href="https://docs.ivorysql.org/cn/ivorysql-doc/master/contribution/contribution_guide" target="_blank" rel="noopener noreferrer">详细贡献指南</a>将帮助你找到清晰的起点，降低参与门槛。
