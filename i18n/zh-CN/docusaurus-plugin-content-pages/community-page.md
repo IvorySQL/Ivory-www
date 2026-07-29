@@ -11,7 +11,7 @@ IvorySQL社区包括来自世界各地的开发和使用开源数据库的人员
 
 ---
 
-阅读 [**贡献指南**](/zh-CN/contribution-guidelines)
+阅读 [**贡献指南**](/contribution-guidelines)
 
 ---
 
