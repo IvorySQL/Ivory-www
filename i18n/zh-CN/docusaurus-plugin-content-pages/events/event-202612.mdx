@@ -1,0 +1,129 @@
+---
+title: 直播回顾｜PG 30 周年系列直播第五期：PG 架构的「永恒智慧」与「历史包袱」
+hide_table_of_contents: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<style>{`
+  .detail-container { display: flex; gap: 40px; margin-top: 40px; }
+  .detail-content { flex: 8; min-width: 0; }
+  .detail-sidebar { flex: 3.5; }
+  .section-title { color: #7D52F4; border-left: 5px solid #7D52F4; padding-left: 16px; margin: 42px 0 20px; font-weight: 700; font-size: 1.4rem; }
+  .content-text { line-height: 1.9; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  .info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 26px 0; }
+  .info-card { background: linear-gradient(180deg, #fcfdff 0%, #f8f6ff 100%); border: 1px solid #e8e4f8; border-radius: 16px; padding: 22px; box-shadow: 0 8px 24px rgba(125,82,244,0.06); }
+  .info-label { color: #7D52F4; font-size: 0.88rem; font-weight: 700; margin-bottom: 10px; letter-spacing: 0.04em; text-transform: uppercase; }
+  .info-value { color: #333; line-height: 1.7; font-size: 1rem; }
+  .speaker-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 16px; }
+  .speaker-card { border: 1px solid #e6ebf2; border-radius: 18px; padding: 22px; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); box-shadow: 0 10px 26px rgba(66,75,93,0.06); }
+  .speaker-name { font-size: 1.05rem; font-weight: 700; color: #1f2937; margin-bottom: 8px; }
+  .speaker-role { color: #424B5D; line-height: 1.8; font-size: 0.96rem; }
+  .scene-list { margin: 0; padding-left: 1.2rem; line-height: 2; color: #555; }
+  .event-main-img { width: 100%; border-radius: 18px; margin: 24px 0; box-shadow: 0 14px 40px rgba(0,0,0,0.08); }
+  .sidebar-box { border: 1px solid #f0f0f0; border-radius: 16px; padding: 24px; background: #fff; position: sticky; top: 100px; }
+  .sidebar-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .side-item { display: flex; gap: 12px; margin-bottom: 20px; text-decoration: none !important; color: inherit; transition: all 0.3s; }
+  .side-item:hover { transform: translateX(5px); color: #7D52F4; }
+  .side-item:last-child { margin-bottom: 0; }
+  .side-item-img { width: 100px; height: 60px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+  .side-item-title { font-size: 0.9rem; font-weight: 700; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  @media (max-width: 996px) { .detail-container { flex-direction: column; } .detail-sidebar { display: none; } .info-grid, .speaker-grid { grid-template-columns: 1fr; } }
+`}</style>
+
+<div className="container detail-container">
+  <div className="detail-content">
+    <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.35' }}>
+      直播回顾｜PG 30 周年系列直播第五期：PG 架构的「永恒智慧」与「历史包袱」
+    </h1>
+
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', color: '#666', marginBottom: '26px', fontSize: '0.97rem' }}>
+      <span>📅 2026年7月29日（周三）19:00–20:30</span>
+      <span>🌍 线上直播 · 视频号</span>
+      <span>🎥 <a href="https://www.bilibili.com/video/BV1dd3p6pExa/" target="_blank" rel="noopener noreferrer">观看回放</a></span>
+    </div>
+
+    <div className="content-text">
+      为致敬 PG 三十周年，中国 PG 分会、TechTalk 技术交流社区、IvorySQL 社区联合发起「三十而立・全球时刻——PG 30 周年系列直播」。第五期直播于 7 月 29 日圆满举行。原定嘉宾熊灿灿因事未能参加，由冯若航和付超补位。
+    </div>
+
+    <h2 className="section-title">活动信息</h2>
+    <div className="info-grid">
+      <div className="info-card">
+        <div className="info-label">直播时间</div>
+        <div className="info-value">2026 年 7 月 29 日（周三）19:00–20:30</div>
+      </div>
+      <div className="info-card">
+        <div className="info-label">直播平台</div>
+        <div className="info-value">视频号</div>
+      </div>
+      <div className="info-card">
+        <div className="info-label">主办方</div>
+        <div className="info-value">PG 分会、IvorySQL 社区、TechTalk 技术交流社区</div>
+      </div>
+      <div className="info-card">
+        <div className="info-label">主持人</div>
+        <div className="info-value">尚雷（TechTalk 主理人）</div>
+      </div>
+    </div>
+
+    <h2 className="section-title">嘉宾阵容</h2>
+    <div className="speaker-grid">
+      <div className="speaker-card">
+        <div className="speaker-name">德哥（周正中）</div>
+        <div className="speaker-role">PostgreSQL ACED、IvorySQL 专家顾问委员（公众号：digoal德哥）</div>
+      </div>
+      <div className="speaker-card">
+        <div className="speaker-name">吕海波</div>
+        <div className="speaker-role">北京大学企业导师，易景科技首席研究员，PostgreSQL ACED。从事 IT 技术工作 30 年，曾就职于阿里巴巴、京东、ebay/paypal 等知名科技企业。连续 5 年为北大硕士研究生讲授数据库内核架构与开发（公众号：IT 知识刺客）</div>
+      </div>
+      <div className="speaker-card">
+        <div className="speaker-name">冯若航</div>
+        <div className="speaker-role">独立开源贡献者，Pigsty 作者，IvorySQL 专家顾问委员（公众号：老冯云数）</div>
+      </div>
+      <div className="speaker-card">
+        <div className="speaker-name">付超</div>
+        <div className="speaker-role">Oracle ACE 与 PostgreSQL ACE 双认证专家，PG 分会西安用户组核心成员。长期从事数据库运维与技术布道工作，具备 Oracle OCM、Kubernetes CKS 等多项认证（公众号：ByteHouse）</div>
+      </div>
+    </div>
+
+    <h2 className="section-title">PG 的架构——哪些是穿越 30 年的智慧，哪些是早该退休的包袱？</h2>
+    <div className="content-text">
+      PostgreSQL 的源头可以追溯到 1986 年的 UC Berkeley。那一年，Windows 1.0 刚发布，C 语言标准刚刚确立，互联网还在 ARPANET 时代。30 年过去，PG 的代码从几万行膨胀到近 150 万行。第一批代码里那些核心设计决策——进程模型、MVCC、基于规则的查询重写、扩展机制——到今天依然在支撑着全世界最复杂的数据库应用。但 PG 不是完美的。
+    </div>
+    <div className="content-text">
+      进程模型——每开一个连接就 fork 一个进程——在 2026 年还合理吗？为什么 MySQL 用线程，Oracle 用进程+线程混合，只有 PG 坚持纯进程模型？MVCC 是 PG 最伟大的设计，但 autovacuum 是不是"伟大但痛苦"的代名词？扩展机制让 Citus 能做分布式、TimescaleDB 能做时序——但它是不是反而让 PG 内核的演进变慢了？
+    </div>
+    <div className="content-text">
+      这一期直播，我们<b>四位真正懂 PG 架构、看过内核源码、经历过大规模生产的老师</b>，把 PG 的架构拆开来看：哪些设计值得再学 30 年，哪些已经该被替代了。
+    </div>
+
+    <h3>本期内容</h3>
+    <ul className="scene-list">
+      <li><b>板块一</b>：30 年前的代码，为什么还在跑？——PG 架构的历史渊源。Stonebraker 留给世界的遗产到底是什么？PG 哪个内核模块"写得最漂亮"？</li>
+      <li><b>板块二</b>：进程模型——是 Unix 哲学还是历史包袱？在 2026 年、在容器化时代，这个设计还合理吗？</li>
+      <li><b>板块三</b>：MVCC 与扩展机制——最伟大的设计还是最深的坑？autovacuum 是不是它的原罪？</li>
+      <li><b>板块四</b>：哪些设计该退休了？——每人说一个 PG 架构里最应该被重构、但一直没动的历史包袱。</li>
+    </ul>
+
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202612-poster.jpg')} alt="第五期直播海报" />
+  </div>
+
+  <div className="detail-sidebar">
+    <div className="sidebar-box">
+      <div className="sidebar-title">近期活动</div>
+      <a href="/zh-cn/events/event-202611" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202611.jpg')} alt="南京站" />
+        <div className="side-item-title">活动回顾｜PostgreSQL & IvorySQL Meetup 南京站</div>
+      </a>
+      <a href="/zh-cn/events/event-202610" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202610.jpg')} alt="第四期" />
+        <div className="side-item-title">直播回顾｜PG 30周年系列直播第四期</div>
+      </a>
+      <a href="/zh-cn/events/event-202609" className="side-item">
+        <img className="side-item-img" src={useBaseUrl('/img/events/event-202609.jpg')} alt="第三期" />
+        <div className="side-item-title">直播回顾｜PG 30周年系列直播第三期</div>
+      </a>
+    </div>
+  </div>
+</div>
