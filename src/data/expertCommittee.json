@@ -7,7 +7,7 @@
       "en": "A database specialist with 36 years of industry experience. He led database delivery and performance optimization for major national projects and has published several books on Oracle technology.",
       "zh": "拥有 36 年数据库行业经验，曾主导多个国家级关键项目的数据库实施与性能优化，并出版多部 Oracle 技术与性能优化专著。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/luo-min.webp"
   },
   {
     "id": "xu-ji",
@@ -17,7 +17,7 @@
       "en": "A noted systems optimization expert with more than 20 years in IT. He has led large information-system projects and provides senior technical consulting for finance, telecom, energy, and public-sector organizations.",
       "zh": "国内知名系统优化专家，拥有 20 余年 IT 行业经验，长期参与大型信息系统建设，并为金融、运营商、能源及政企客户提供高级技术咨询。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/xu-ji.webp"
   },
   {
     "id": "technical-expert",
@@ -37,7 +37,7 @@
       "en": "A database professional with 20 years of experience in internet and financial organizations. He specializes in heterogeneous migration and the operation of large PostgreSQL estates.",
       "zh": "拥有 20 年数据库从业经验，曾任职于大型互联网和金融企业，擅长异构数据库迁移及超大规模 PostgreSQL 数据库管理。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/liu-huayang.webp"
   },
   {
     "id": "xue-xiaogang",
@@ -47,7 +47,7 @@
       "en": "Chair of the PostgreSQL China Shanghai User Group and a long-time database community contributor. He holds Oracle OCP, MySQL OCP, PGCP, and PCP certifications.",
       "zh": "中国 PG 分会上海用户组主席，长期参与数据库社区建设，持有 Oracle OCP、MySQL OCP、PGCP 和 PCP 等认证。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/xue-xiaogang.webp"
   },
   {
     "id": "zhou-zhengzhong",
@@ -57,7 +57,7 @@
       "en": "One of the founders of the PostgreSQL China community and a prolific technical author. He has long advanced open-source database technology, ecosystems, and talent development in China.",
       "zh": "PostgreSQL 中国社区发起人之一，长期推动国内开源数据库技术、生态发展与人才培养，发表了大量覆盖数据库全生命周期的技术文章。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/zhou-zhengzhong.webp"
   },
   {
     "id": "yin-haiwen",
@@ -67,7 +67,7 @@
       "en": "A database services specialist familiar with Oracle, PostgreSQL, and MySQL. He is a PolarDB open-source community technical advisor and an active promoter of the PostgreSQL ecosystem.",
       "zh": "熟悉 Oracle、PostgreSQL、MySQL 等数据库，主要从事数据库服务工作，并担任 PolarDB 开源社区技术顾问，积极推广 PG 生态。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/yin-haiwen.webp"
   },
   {
     "id": "wu-yang",
@@ -77,7 +77,7 @@
       "en": "A database technology practitioner in healthcare IT with certifications including 12c OCM, PGCE, OBCP, and KCP. He focuses on database optimization and incident handling.",
       "zh": "医疗信息化行业数据库技术从业者，持有 12c OCM、PGCE、OBCP、KCP 等认证，专注数据库优化与故障处理。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/wu-yang.webp"
   },
   {
     "id": "xiong-cancan",
@@ -87,7 +87,7 @@
       "en": "A PostgreSQL architecture, tuning, and troubleshooting specialist with substantial production experience. He writes the PostgreSQL Apprentice WeChat account and helps organize regional PostgreSQL events.",
       "zh": "深入理解 PostgreSQL 体系架构与运行原理，拥有重大项目保障、调优和排障经验，主理公众号“PostgreSQL 学徒”并积极组织社区活动。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/xiong-cancan.webp"
   },
   {
     "id": "peng-chong",
@@ -97,7 +97,7 @@
       "en": "Chief editor of Mastering New Features of PostgreSQL Versions Quickly. He focuses on practical research into PostgreSQL releases, open-source databases, and domestic database technologies.",
       "zh": "《快速掌握 PostgreSQL 版本新特性》主编，长期从事 PostgreSQL 版本新特性、开源数据库及国产数据库的实践研究。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/peng-chong.webp"
   },
   {
     "id": "leng-bo",
@@ -117,7 +117,7 @@
       "en": "Founder of the DESKUI community and creator of DBCS, DESK, and XGuard. His tools support database administration and operations across multiple architectures and database products.",
       "zh": "DESKUI 社区创始人，自主研发 DBCS、DESK、XGuard 等软件，覆盖多架构、多数据库的管理、运维与安全管控场景。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/zhang-dagang.webp"
   },
   {
     "id": "li-chuancheng",
@@ -127,7 +127,7 @@
       "en": "A senior kernel engineer focused on database backup and recovery. He created the WAL parsing tool WALMiner and the PostgreSQL block recovery tool pg_lightool.",
       "zh": "资深数据库内核研发工程师，主要研究数据库备份与恢复，自研 WAL 日志解析工具 WALMiner 和 PG 块恢复工具 pg_lightool。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/li-chuancheng.webp"
   },
   {
     "id": "xu-xiaoqiang",
@@ -147,7 +147,7 @@
       "en": "Creator of Pigsty, PostgreSQL specialist, and full-stack developer. He has worked at Alibaba, Apple, and Tantan and has translated major database engineering books into Chinese.",
       "zh": "Pigsty 作者、PostgreSQL 专家与全栈开发者，曾任职于阿里巴巴、苹果和探探，并译有多部数据库工程著作。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/feng-ruohang.webp"
   },
   {
     "id": "xiao-shaocong",
@@ -157,7 +157,7 @@
       "en": "An independent technical consultant and co-founder of the PostgreSQL Chinese community. He has long participated in PostgreSQL technology and community ecosystem development.",
       "zh": "独立技术顾问、PG 中文社区联合发起人，长期参与 PostgreSQL 技术与社区生态建设。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/xiao-shaocong.webp"
   },
   {
     "id": "shang-lei",
@@ -167,7 +167,7 @@
       "en": "Founder of the TechTalk technical exchange community and a senior database engineer. He actively supports database knowledge sharing and community collaboration.",
       "zh": "TechTalk 技术交流社区创始人、高级数据库工程师，长期推动数据库技术交流与社区协作。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/shang-lei.webp"
   },
   {
     "id": "zhang-chen",
@@ -177,7 +177,7 @@
       "en": "Creator of PostgreSQL Data Unloader, a widely known PostgreSQL data rescue tool designed to recover data from damaged systems.",
       "zh": "PostgreSQL Data Unloader（PDU）作者，该工具用于 PostgreSQL 数据抢救与恢复。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/zhang-chen.webp"
   },
   {
     "id": "tang-cheng",
@@ -187,7 +187,7 @@
       "en": "A database architect with more than 20 years across operating systems, storage, high availability, performance, and cloud databases. He authored PostgreSQL Practicing Road and created ZQPool.",
       "zh": "拥有 20 余年数据库、操作系统与存储经验，长期研究高可用、高性能与数据库云化，著有《PostgreSQL 修炼之道：从小工到专家》并开发 ZQPool。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/tang-cheng.webp"
   },
   {
     "id": "denis-lussier",
@@ -207,7 +207,7 @@
       "en": "An open-source developer, entrepreneur, and advocate active since 1993. He founded credativ and brings deep experience in open-source commercialization, technology, and community building.",
       "zh": "自 1993 年起活跃于开源领域，曾创办 credativ，在开源商业化、技术发展与社区建设方面拥有丰富经验。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/michael-meskes.webp"
   },
   {
     "id": "cedric-villemain",
@@ -217,7 +217,7 @@
       "en": "Founder and CEO of Data Bene, formerly 2ndQuadrant France. He has worked with PostgreSQL since 2004 and provides open-source PostgreSQL services and solutions to global customers.",
       "zh": "Data Bene（前 2ndQuadrant France）创始人兼首席执行官，自 2004 年起深耕 PostgreSQL，为全球客户提供开源数据库服务与解决方案。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/cedric-villemain.webp"
   },
   {
     "id": "alvaro-hernandez",
@@ -227,7 +227,7 @@
       "en": "Founder of OnGres and a database developer with more than 20 years of PostgreSQL experience. He created projects including StackGres and ToroDB and is a frequent international speaker.",
       "zh": "OnGres 创始人，拥有 20 余年 PostgreSQL 与数据库研发经验，创建 StackGres、ToroDB 等项目，并长期参与国际技术交流。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/alvaro-hernandez.webp"
   },
   {
     "id": "cui-peng",
@@ -237,7 +237,7 @@
       "en": "Computer science PhD with more than 10 years of database experience. Oracle OCM and PostgreSQL ACE certified, and editor of the WeChat account CP's PostgreSQL Kitchen.",
       "zh": "计算机博士，拥有 10 年以上数据库经验，获得 Oracle OCM 与 PostgreSQL ACE 双认证，现任海能达通信 DBA 总监，主理公众号“CP 的 PostgreSQL 厨房”。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/cui-peng.webp"
   },
   {
     "id": "lei-yanliang",
@@ -247,7 +247,7 @@
       "en": "A PostgreSQL database technology enthusiast, Oracle Database 10g and 11g OCM, and Oracle GoldenGate certified specialist.",
       "zh": "PostgreSQL 数据库技术爱好者，持有 Oracle Database 10g 与 11g OCM，并通过 OGG 专家认证。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/lei-yanliang.webp"
   },
   {
     "id": "shi-jiawei",
@@ -267,7 +267,7 @@
       "en": "Technical advisor at Beijing Shengshu Technology and deputy secretary-general of the PostgreSQL China branch. He actively supports PostgreSQL technology exchange and community development.",
       "zh": "北京晟数科技技术顾问、PG 分会副秘书长，长期参与 PostgreSQL 技术交流与社区建设。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/wei-bo.webp"
   },
   {
     "id": "fu-chao",
@@ -277,7 +277,7 @@
       "en": "A dual-certified Oracle ACE and PostgreSQL ACE and a core member of the PG Xi'an User Group. He focuses on database operations and technology advocacy and holds Oracle OCM and Kubernetes CKS certifications.",
       "zh": "Oracle ACE 与 PostgreSQL ACE 双认证专家、PG 分会西安用户组核心成员，长期从事数据库运维与技术布道，持有 Oracle OCM、Kubernetes CKS 等认证。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/fu-chao.webp"
   },
   {
     "id": "yu-zixuan",
