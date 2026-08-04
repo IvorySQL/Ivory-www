@@ -145,7 +145,6 @@
 
 .card {
   position: relative;
-  z-index: 0;
   display: flex;
   min-width: 0;
   min-height: 208px;
@@ -163,8 +162,9 @@
     transform 0.18s ease;
 }
 
+.card:hover,
 .card:focus-within {
-  z-index: 20;
+  z-index: 100;
 }
 
 .profileTrigger {
@@ -278,11 +278,9 @@
 }
 
 .bioPopover {
-  position: absolute;
-  z-index: 40;
-  top: 34px;
-  left: calc(100% - 6px);
-  width: 292px;
+  position: fixed;
+  z-index: 1000;
+  width: min(292px, calc(100vw - 24px));
   padding: 20px;
   border: 1px solid rgba(122, 166, 246, 0.2);
   border-radius: 18px;
@@ -343,15 +341,7 @@
   line-height: 1.72;
 }
 
-.card:nth-child(5n) .bioPopover,
-.card:nth-child(5n - 1) .bioPopover {
-  right: calc(100% - 6px);
-  left: auto;
-  transform-origin: right center;
-}
-
-.card:nth-child(5n) .bioPopover::before,
-.card:nth-child(5n - 1) .bioPopover::before {
+.bioPopover[data-side='left']::before {
   right: -7px;
   left: auto;
 }
@@ -430,27 +420,6 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .card .bioPopover {
-    right: auto;
-    left: calc(100% - 6px);
-    transform-origin: left center;
-  }
-
-  .card .bioPopover::before {
-    right: auto;
-    left: -7px;
-  }
-
-  .card:nth-child(3n) .bioPopover {
-    right: calc(100% - 6px);
-    left: auto;
-    transform-origin: right center;
-  }
-
-  .card:nth-child(3n) .bioPopover::before {
-    right: -7px;
-    left: auto;
-  }
 }
 
 @media (max-width: 699px) {

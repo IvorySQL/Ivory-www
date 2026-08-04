@@ -1,8 +1,9 @@
 import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import experts from '../data/expertCommittee.json';
+import getExpertPopoverPosition from '../utils/getExpertPopoverPosition.cjs';
 import styles from './expert-advisory-committee.module.css';
 
 const COPY = {
@@ -54,6 +55,8 @@ function EmptyAvatar() {
 }
 
 function ExpertCard({ expert, locale, copy, onOpen }) {
+  const popoverRef = useRef(null);
+  const [popoverPosition, setPopoverPosition] = useState(null);
   const resolvedAvatar = useBaseUrl(expert.avatar || '/');
   const name = expert.name[locale];
   const title = expert.title[locale];
@@ -69,6 +72,19 @@ function ExpertCard({ expert, locale, copy, onOpen }) {
     }
   };
 
+  const positionPopover = (event) => {
+    if (!popoverRef.current) return;
+
+    const trigger = event.currentTarget.getBoundingClientRect();
+    const popover = popoverRef.current.getBoundingClientRect();
+    setPopoverPosition(
+      getExpertPopoverPosition(trigger, popover, {
+        width: window.innerWidth,
+        height: window.innerHeight,
+      }),
+    );
+  };
+
   return (
     <article className={styles.card} data-expert-card="true">
       <button
@@ -76,6 +92,8 @@ function ExpertCard({ expert, locale, copy, onOpen }) {
         className={styles.profileTrigger}
         aria-describedby={popoverId}
         onClick={openOnTouch}
+        onFocus={positionPopover}
+        onMouseEnter={positionPopover}
       >
         <span
           className={styles.avatarFrame}
@@ -98,7 +116,18 @@ function ExpertCard({ expert, locale, copy, onOpen }) {
 
       <span className={styles.title}>{title}</span>
 
-      <aside id={popoverId} role="tooltip" className={styles.bioPopover}>
+      <aside
+        ref={popoverRef}
+        id={popoverId}
+        role="tooltip"
+        className={styles.bioPopover}
+        data-side={popoverPosition?.side}
+        style={
+          popoverPosition
+            ? { left: popoverPosition.left, top: popoverPosition.top }
+            : undefined
+        }
+      >
         <span className={styles.profileLabel}>{copy.profileLabel}</span>
         <strong>{name}</strong>
         <span className={styles.popoverTitle}>{title}</span>
