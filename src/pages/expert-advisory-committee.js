@@ -19,6 +19,11 @@ const COPY = {
     unordered: 'Listed in no particular order',
     sectionTitle: 'Committee Members',
     sectionDescription: 'Hover over a portrait or name to read a short biography.',
+    orderNote: 'Experts are listed alphabetically by English name, with no ranking implied.',
+    joinTitle: 'Join the IvorySQL Expert Advisory Committee',
+    joinDescription:
+      'We welcome more database experts to help advance the open-source database ecosystem with us.',
+    joinAction: 'Contact us by email',
     hoverHint: 'Hover to view profile',
     profileLabel: 'Expert profile',
     close: 'Close expert profile',
@@ -36,6 +41,10 @@ const COPY = {
     unordered: '排名不分先后',
     sectionTitle: '委员会成员',
     sectionDescription: '将鼠标移至头像或姓名，即可查看专家简介。',
+    orderNote: '专家按英文姓名首字母顺序排列，排名不分先后。',
+    joinTitle: '欢迎加入 IvorySQL 专家顾问委员会',
+    joinDescription: '欢迎更多数据库专家加入 IvorySQL 专家顾问委员会，与我们共同推动开源数据库生态发展。',
+    joinAction: '发送邮件联系我们',
     hoverHint: '悬停查看简介',
     profileLabel: '专家简介',
     close: '关闭专家简介',
@@ -206,7 +215,9 @@ export default function ExpertAdvisoryCommitteePage() {
             <div className={styles.sectionHeader}>
               <div>
                 <h2>{copy.sectionTitle}</h2>
-                <p>{copy.sectionDescription}</p>
+                <p>
+                  {copy.orderNote} {copy.sectionDescription}
+                </p>
               </div>
               <span className={styles.hoverHint}>{copy.hoverHint}</span>
             </div>
@@ -222,6 +233,17 @@ export default function ExpertAdvisoryCommitteePage() {
                 />
               ))}
             </div>
+
+            <aside className={styles.joinCommittee}>
+              <div>
+                <h2>{copy.joinTitle}</h2>
+                <p>{copy.joinDescription}</p>
+              </div>
+              <a className={styles.joinAction} href="mailto:ivorysql1213@gmail.com">
+                {copy.joinAction}
+                <span aria-hidden="true">→</span>
+              </a>
+            </aside>
           </div>
         </section>
       </main>

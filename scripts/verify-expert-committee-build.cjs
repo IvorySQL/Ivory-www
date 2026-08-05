@@ -20,11 +20,18 @@ const chinese = readBuiltPage('zh-cn');
 assert.ok(english.includes('Expert Advisory Committee'));
 assert.ok(english.includes('Cui Peng'));
 assert.equal(count(english, 'data-expert-card="true"'), 29);
-assert.equal(count(english, 'data-avatar-empty="true"'), 6);
+assert.equal(count(english, 'data-avatar-empty="true"'), 2);
+assert.ok(english.includes('Experts are listed alphabetically by English name'));
+assert.ok(english.includes('mailto:ivorysql1213@gmail.com'));
+assert.ok(english.indexOf('Álvaro Hernández') < english.indexOf('Cédric Villemain'));
+assert.ok(english.indexOf('Michael Meskes') < english.indexOf('NkYoung'));
 
 assert.ok(chinese.includes('专家顾问委员会'));
 assert.ok(chinese.includes('崔鹏'));
 assert.equal(count(chinese, 'data-expert-card="true"'), 29);
-assert.equal(count(chinese, 'data-avatar-empty="true"'), 6);
+assert.equal(count(chinese, 'data-avatar-empty="true"'), 2);
+assert.ok(chinese.includes('专家按英文姓名首字母顺序排列'));
+assert.ok(chinese.includes('欢迎更多数据库专家加入'));
+assert.ok(chinese.includes('mailto:ivorysql1213@gmail.com'));
 
-console.log('Verified bilingual committee pages with 29 unique experts and 6 empty avatars.');
+console.log('Verified bilingual committee pages with ordered experts, a join CTA, and 2 empty avatars.');

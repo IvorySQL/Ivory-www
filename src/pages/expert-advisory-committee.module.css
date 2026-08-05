@@ -143,6 +143,47 @@
   gap: 18px;
 }
 
+.joinCommittee {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 34px;
+  padding: 28px 30px;
+  border: 1px solid rgba(47, 116, 255, 0.18);
+  border-radius: 20px;
+  background: linear-gradient(135deg, #eef4ff 0%, #f8fbff 100%);
+}
+
+.joinCommittee h2 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+}
+
+.joinCommittee p {
+  margin: 0;
+  color: var(--committee-muted);
+}
+
+.joinAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  padding: 11px 16px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--committee-accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.joinAction:hover {
+  color: #fff;
+  background: #1f63eb;
+  text-decoration: none;
+}
+
 .card {
   position: relative;
   display: flex;
@@ -453,6 +494,12 @@
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
+  }
+
+  .joinCommittee {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 24px 20px;
   }
 
   .card {
