@@ -4,12 +4,12 @@ const path = require('node:path');
 const dataPath = path.join(__dirname, '..', 'src', 'data', 'expertCommittee.json');
 const experts = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 const expectedIds = [
-  'luo-min', 'xu-ji', 'technical-expert', 'liu-huayang', 'xue-xiaogang',
-  'zhou-zhengzhong', 'yin-haiwen', 'wu-yang', 'xiong-cancan', 'peng-chong',
-  'leng-bo', 'zhang-dagang', 'li-chuancheng', 'xu-xiaoqiang', 'feng-ruohang',
-  'xiao-shaocong', 'shang-lei', 'zhang-chen', 'tang-cheng', 'denis-lussier',
-  'michael-meskes', 'cedric-villemain', 'alvaro-hernandez', 'cui-peng',
-  'lei-yanliang', 'shi-jiawei', 'wei-bo', 'fu-chao', 'yu-zixuan',
+  'alvaro-hernandez', 'cedric-villemain', 'cui-peng', 'denis-lussier',
+  'feng-ruohang', 'fu-chao', 'lei-yanliang', 'leng-bo', 'li-chuancheng',
+  'liu-huayang', 'luo-min', 'michael-meskes', 'technical-expert', 'peng-chong',
+  'shang-lei', 'shi-jiawei', 'tang-cheng', 'wei-bo', 'wu-yang',
+  'xiao-shaocong', 'xiong-cancan', 'xu-ji', 'xu-xiaoqiang', 'xue-xiaogang',
+  'yin-haiwen', 'yu-zixuan', 'zhang-chen', 'zhang-dagang', 'zhou-zhengzhong',
 ];
 
 function normalize(value) {
@@ -66,4 +66,22 @@ experts.forEach((expert) => {
 assertUnique('id', experts.map(({ id }) => id));
 assertUnique('Chinese name', experts.map(({ name }) => name.zh));
 assertUnique('English name', experts.map(({ name }) => name.en));
+
+const englishNames = experts.map(({ name }) => name.en);
+const sortedEnglishNames = [...englishNames].sort((left, right) =>
+  left.localeCompare(right, 'en', { sensitivity: 'base' }),
+);
+if (JSON.stringify(englishNames) !== JSON.stringify(sortedEnglishNames)) {
+  throw new Error('Experts must be sorted by English name A-Z');
+}
+
+const nkYoung = experts.find(({ id }) => id === 'technical-expert');
+if (
+  nkYoung.name.en !== 'NkYoung' ||
+  nkYoung.name.zh !== 'NkYoung' ||
+  nkYoung.avatar !== null ||
+  !nkYoung.bio.zh.includes('PostgreSQL 运维之道')
+) {
+  throw new Error('NkYoung profile is incomplete');
+}
 console.log(`Validated ${experts.length} unique expert profiles.`);
