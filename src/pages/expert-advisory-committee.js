@@ -101,6 +101,7 @@ function ExpertCard({ expert, locale, copy, onOpen }) {
       <button
         type="button"
         className={styles.profileTrigger}
+        aria-label={name}
         aria-describedby={popoverId}
         onClick={openInDialogMode}
         onFocus={positionPopover}

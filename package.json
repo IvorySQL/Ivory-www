@@ -10,6 +10,7 @@
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
+    "verify:expert-committee": "node scripts/validate-expert-committee-data.cjs && node scripts/test-expert-committee-interaction.cjs && node scripts/test-expert-popover-position.cjs && npm run build && node scripts/verify-expert-committee-build.cjs",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids"
   },

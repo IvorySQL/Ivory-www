@@ -46,6 +46,10 @@ const cssSource = fs.readFileSync(
   path.join(__dirname, '..', 'src', 'pages', 'expert-advisory-committee.module.css'),
   'utf8',
 );
+const pageSource = fs.readFileSync(
+  path.join(__dirname, '..', 'src', 'pages', 'expert-advisory-committee.js'),
+  'utf8',
+);
 assert.deepEqual(
   getAvatarFramingStyle({
     avatarFraming: { scale: 1.8, position: '50% 32%' },
@@ -68,5 +72,20 @@ assert.match(cssSource, /visibility 0s linear 0\.15s;/);
 assert.match(cssSource, /object-position:\s*var\(--avatar-position, center\)/);
 assert.match(cssSource, /transform:\s*scale\(var\(--avatar-scale, 1\)\)/);
 assert.match(cssSource, /transform-origin:\s*var\(--avatar-position, center\)/);
+assert.match(
+  cssSource,
+  /\.avatarFrame::after\s*\{[^}]*border:\s*3px solid #fff;[^}]*pointer-events:\s*none;/s,
+  'draws the portrait ring in an untransformed frame overlay',
+);
+assert.match(
+  cssSource,
+  /\.bioPopover\s*\{[^}]*max-height:\s*calc\(100vh - 24px\);[^}]*overflow-y:\s*auto;/s,
+  'constrains long biographies to the viewport and makes them scrollable',
+);
+assert.match(
+  pageSource,
+  /<button[\s\S]*?className=\{styles\.profileTrigger\}[\s\S]*?aria-label=\{name\}/,
+  'gives each portrait trigger one explicit localized expert name',
+);
 
 console.log('Expert committee interaction helper tests passed.');

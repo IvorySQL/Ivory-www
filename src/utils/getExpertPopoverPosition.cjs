@@ -6,16 +6,28 @@ function clamp(value, minimum, maximum) {
 }
 
 function getExpertPopoverPosition(trigger, popover, viewport) {
-  const fitsRight = trigger.right + GAP + popover.width <= viewport.width - VIEWPORT_MARGIN;
-  const side = fitsRight ? 'right' : 'left';
-  const left = fitsRight
+  const availableWidth = Math.max(0, viewport.width - (VIEWPORT_MARGIN * 2));
+  const popoverWidth = Math.min(popover.width, availableWidth);
+  const rightSpace = viewport.width - VIEWPORT_MARGIN - trigger.right - GAP;
+  const leftSpace = trigger.left - GAP - VIEWPORT_MARGIN;
+  const fitsRight = rightSpace >= popoverWidth;
+  const fitsLeft = leftSpace >= popoverWidth;
+  const side = fitsRight || (!fitsLeft && rightSpace >= leftSpace) ? 'right' : 'left';
+  const requestedLeft = side === 'right'
     ? trigger.right + GAP
-    : trigger.left - GAP - popover.width;
-  const centeredTop = trigger.top + (trigger.height - popover.height) / 2;
+    : trigger.left - GAP - popoverWidth;
+  const left = clamp(
+    requestedLeft,
+    VIEWPORT_MARGIN,
+    Math.max(VIEWPORT_MARGIN, viewport.width - popoverWidth - VIEWPORT_MARGIN),
+  );
+  const availableHeight = Math.max(0, viewport.height - (VIEWPORT_MARGIN * 2));
+  const popoverHeight = Math.min(popover.height, availableHeight);
+  const centeredTop = trigger.top + (trigger.height - popoverHeight) / 2;
   const top = clamp(
     centeredTop,
     VIEWPORT_MARGIN,
-    viewport.height - popover.height - VIEWPORT_MARGIN,
+    Math.max(VIEWPORT_MARGIN, viewport.height - popoverHeight - VIEWPORT_MARGIN),
   );
 
   return { left: Math.round(left), top: Math.round(top), side };
