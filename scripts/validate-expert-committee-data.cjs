@@ -34,11 +34,14 @@ if (!Array.isArray(experts) || experts.length !== expectedIds.length) {
   throw new Error(`Expected ${expectedIds.length} experts, received ${experts.length}`);
 }
 
-const actualIds = experts.map(({ id }) => id).sort();
+const actualIds = experts.map(({ id }) => id);
 const missingIds = expectedIds.filter((id) => !actualIds.includes(id));
 const extraIds = actualIds.filter((id) => !expectedIds.includes(id));
 if (missingIds.length || extraIds.length) {
   throw new Error(`ID mismatch. Missing: ${missingIds.join(', ')}; extra: ${extraIds.join(', ')}`);
+}
+if (JSON.stringify(actualIds) !== JSON.stringify(expectedIds)) {
+  throw new Error('Experts must match the specified roster order');
 }
 
 experts.forEach((expert) => {
