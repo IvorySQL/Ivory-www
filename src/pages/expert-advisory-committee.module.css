@@ -329,7 +329,7 @@
   background: linear-gradient(145deg, #081535 0%, #10295f 100%);
   box-shadow: 0 24px 54px rgba(7, 19, 53, 0.3);
   opacity: 0;
-  pointer-events: none;
+  pointer-events: auto;
   text-align: left;
   transform: translateX(-5px) scale(0.98);
   transform-origin: left center;
@@ -337,7 +337,16 @@
   transition:
     opacity 0.15s ease,
     transform 0.15s ease,
-    visibility 0.15s ease;
+    visibility 0s linear 0.15s;
+}
+
+.bioPopover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -16px;
+  width: 16px;
 }
 
 .bioPopover::before {
@@ -384,6 +393,11 @@
 
 .bioPopover[data-side='left']::before {
   right: -7px;
+  left: auto;
+}
+
+.bioPopover[data-side='left']::after {
+  right: -16px;
   left: auto;
 }
 
@@ -449,10 +463,12 @@
 
 @media (hover: hover) and (pointer: fine) {
   .profileTrigger:hover ~ .bioPopover,
-  .profileTrigger:focus-visible ~ .bioPopover {
+  .profileTrigger:focus-visible ~ .bioPopover,
+  .bioPopover:hover {
     opacity: 1;
     transform: none;
     visibility: visible;
+    transition-delay: 0s;
   }
 }
 

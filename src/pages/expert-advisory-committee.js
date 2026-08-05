@@ -1,8 +1,12 @@
 import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import experts from '../data/expertCommittee.json';
+import {
+  getFocusTrapTarget,
+  isDialogMode,
+} from '../utils/expertCommitteeInteraction.cjs';
 import getExpertPopoverPosition from '../utils/getExpertPopoverPosition.cjs';
 import styles from './expert-advisory-committee.module.css';
 
@@ -16,15 +20,15 @@ const COPY = {
       'Bringing together experienced database specialists and open-source leaders from around the world to provide long-term guidance for IvorySQL technology, ecosystem, and community development.',
     expertCount: 'experts',
     globalPerspective: 'Global perspective',
-    unordered: 'Listed in no particular order',
+    unordered: 'No ranking implied',
     sectionTitle: 'Committee Members',
-    sectionDescription: 'Hover over a portrait or name to read a short biography.',
+    sectionDescription: 'Hover over or select a portrait or name to read a short biography.',
     orderNote: 'Experts are listed alphabetically by English name, with no ranking implied.',
     joinTitle: 'Join the IvorySQL Expert Advisory Committee',
     joinDescription:
       'We welcome more database experts to help advance the open-source database ecosystem with us.',
     joinAction: 'Contact us by email',
-    hoverHint: 'Hover to view profile',
+    hoverHint: 'Hover or select to view profile',
     profileLabel: 'Expert profile',
     close: 'Close expert profile',
     emptyAvatar: 'Portrait coming soon',
@@ -40,12 +44,12 @@ const COPY = {
     globalPerspective: '全球技术视野',
     unordered: '排名不分先后',
     sectionTitle: '委员会成员',
-    sectionDescription: '将鼠标移至头像或姓名，即可查看专家简介。',
+    sectionDescription: '将鼠标移至或选择头像、姓名，即可查看专家简介。',
     orderNote: '专家按英文姓名首字母顺序排列，排名不分先后。',
     joinTitle: '欢迎加入 IvorySQL 专家顾问委员会',
     joinDescription: '欢迎更多数据库专家加入 IvorySQL 专家顾问委员会，与我们共同推动开源数据库生态发展。',
     joinAction: '发送邮件联系我们',
-    hoverHint: '悬停查看简介',
+    hoverHint: '悬停或选择查看简介',
     profileLabel: '专家简介',
     close: '关闭专家简介',
     emptyAvatar: '头像待补充',
@@ -72,12 +76,9 @@ function ExpertCard({ expert, locale, copy, onOpen }) {
   const biography = expert.bio[locale];
   const popoverId = `${expert.id}-bio`;
 
-  const openOnTouch = () => {
-    if (
-      typeof window !== 'undefined' &&
-      window.matchMedia('(hover: none), (pointer: coarse)').matches
-    ) {
-      onOpen(expert);
+  const openInDialogMode = (event) => {
+    if (typeof window !== 'undefined' && isDialogMode(window.matchMedia.bind(window))) {
+      onOpen(expert, event.currentTarget);
     }
   };
 
@@ -100,7 +101,7 @@ function ExpertCard({ expert, locale, copy, onOpen }) {
         type="button"
         className={styles.profileTrigger}
         aria-describedby={popoverId}
-        onClick={openOnTouch}
+        onClick={openInDialogMode}
         onFocus={positionPopover}
         onMouseEnter={positionPopover}
       >
@@ -146,12 +147,79 @@ function ExpertCard({ expert, locale, copy, onOpen }) {
   );
 }
 
-function MobileBioDialog({ expert, locale, copy, onClose }) {
+function MobileBioDialog({ expert, locale, copy, onClose, returnFocus }) {
+  const dialogRef = useRef(null);
+  const closeButtonRef = useRef(null);
+
+  useEffect(() => {
+    if (!expert || !dialogRef.current) return undefined;
+
+    const dialog = dialogRef.current;
+    const previousFocus = returnFocus.current || document.activeElement;
+    const backgroundElements = [...document.querySelectorAll('main, nav, footer')]
+      .filter((element) => !element.contains(dialog));
+    const backgroundState = backgroundElements.map((element) => ({
+      element,
+      inert: element.getAttribute('inert'),
+      ariaHidden: element.getAttribute('aria-hidden'),
+    }));
+    const previousOverflow = document.body.style.overflow;
+
+    backgroundElements.forEach((element) => {
+      element.setAttribute('inert', '');
+      element.setAttribute('aria-hidden', 'true');
+    });
+    document.body.style.overflow = 'hidden';
+
+    const closeOnEscapeOrTrapFocus = (event) => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        onClose();
+        return;
+      }
+      if (event.key !== 'Tab') return;
+
+      const focusableElements = [...dialog.querySelectorAll(
+        'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      )];
+      const targetIndex = getFocusTrapTarget(
+        focusableElements.indexOf(document.activeElement),
+        focusableElements.length,
+        event.shiftKey,
+      );
+      if (targetIndex === null) return;
+
+      event.preventDefault();
+      focusableElements[targetIndex].focus();
+    };
+    const containFocus = (event) => {
+      if (!dialog.contains(event.target)) closeButtonRef.current?.focus();
+    };
+
+    document.addEventListener('keydown', closeOnEscapeOrTrapFocus);
+    document.addEventListener('focusin', containFocus);
+    closeButtonRef.current?.focus();
+
+    return () => {
+      document.removeEventListener('keydown', closeOnEscapeOrTrapFocus);
+      document.removeEventListener('focusin', containFocus);
+      backgroundState.forEach(({ element, inert, ariaHidden }) => {
+        if (inert === null) element.removeAttribute('inert');
+        else element.setAttribute('inert', inert);
+        if (ariaHidden === null) element.removeAttribute('aria-hidden');
+        else element.setAttribute('aria-hidden', ariaHidden);
+      });
+      document.body.style.overflow = previousOverflow;
+      if (previousFocus && document.contains(previousFocus)) previousFocus.focus();
+    };
+  }, [expert, onClose, returnFocus]);
+
   if (!expert) return null;
 
   return (
     <div className={styles.dialogBackdrop} role="presentation" onClick={onClose}>
       <section
+        ref={dialogRef}
         className={styles.mobileDialog}
         role="dialog"
         aria-modal="true"
@@ -159,6 +227,7 @@ function MobileBioDialog({ expert, locale, copy, onClose }) {
         onClick={(event) => event.stopPropagation()}
       >
         <button
+          ref={closeButtonRef}
           type="button"
           className={styles.dialogClose}
           onClick={onClose}
@@ -180,17 +249,12 @@ export default function ExpertAdvisoryCommitteePage() {
   const locale = i18n.currentLocale.toLowerCase().startsWith('zh') ? 'zh' : 'en';
   const copy = COPY[locale];
   const [selectedExpert, setSelectedExpert] = useState(null);
-
-  useEffect(() => {
-    if (!selectedExpert) return undefined;
-
-    const closeOnEscape = (event) => {
-      if (event.key === 'Escape') setSelectedExpert(null);
-    };
-
-    document.addEventListener('keydown', closeOnEscape);
-    return () => document.removeEventListener('keydown', closeOnEscape);
-  }, [selectedExpert]);
+  const returnFocusRef = useRef(null);
+  const openExpert = useCallback((expert, trigger) => {
+    returnFocusRef.current = trigger;
+    setSelectedExpert(expert);
+  }, []);
+  const closeExpert = useCallback(() => setSelectedExpert(null), []);
 
   return (
     <Layout title={copy.pageTitle} description={copy.pageDescription}>
@@ -229,7 +293,7 @@ export default function ExpertAdvisoryCommitteePage() {
                   expert={expert}
                   locale={locale}
                   copy={copy}
-                  onOpen={setSelectedExpert}
+                  onOpen={openExpert}
                 />
               ))}
             </div>
@@ -252,7 +316,8 @@ export default function ExpertAdvisoryCommitteePage() {
         expert={selectedExpert}
         locale={locale}
         copy={copy}
-        onClose={() => setSelectedExpert(null)}
+        onClose={closeExpert}
+        returnFocus={returnFocusRef}
       />
     </Layout>
   );
