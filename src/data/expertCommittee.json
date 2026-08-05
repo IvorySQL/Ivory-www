@@ -61,7 +61,7 @@
       "en": "A software developer, architect, and serial entrepreneur with decades of PostgreSQL experience. He co-founded EDB, later founded OpenSCG, and has helped advance enterprise PostgreSQL products and communities.",
       "zh": "拥有数十年 PostgreSQL 经验的软件开发者、架构师和连续创业者，曾联合创立 EDB、创办 OpenSCG，长期推动企业级 PostgreSQL 产品与社区发展。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/denis-lussier.webp"
   },
   {
     "id": "feng-ruohang",
@@ -125,7 +125,7 @@
       "en": "A senior DBA and database architect with more than 10 years of experience. He works on open-source database adoption, architecture design, performance tuning, and domestic-platform migration.",
       "zh": "拥有 10 年以上 DBA 与数据库架构经验，专注开源数据库推广、信创适配、架构设计、性能调优与架构重构。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/leng-bo.webp"
   },
   {
     "id": "li-chuancheng",
@@ -253,7 +253,7 @@
       "en": "A database professional with 12 years of experience and OCM, PGCM, and KCM certifications. He advises multiple database communities, serves as a TiDB technology evangelist, and writes the WeChat account Digital Observer.",
       "zh": "拥有 12 年数据库从业经验，持有 OCM、PGCM、KCM 认证；担任多个数据库社区技术顾问、TiDB 社区技术布道师，并主理微信公众号《Digital Observer》。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/shi-jiawei.webp"
   },
   {
     "id": "tang-cheng",
@@ -365,7 +365,7 @@
       "en": "A full-time database administrator with Oracle 11g OCP and OCM certifications. He writes the JiekeXu DBA Journey WeChat account.",
       "zh": "专职 DBA，持有 Oracle 11g OCP 与 OCM 认证，主理公众号“JiekeXu DBA 之路”。"
     },
-    "avatar": null
+    "avatar": "/img/expert-committee/xu-xiaoqiang.webp"
   },
   {
     "id": "xue-xiaogang",

@@ -70,6 +70,13 @@ assertUnique('id', experts.map(({ id }) => id));
 assertUnique('Chinese name', experts.map(({ name }) => name.zh));
 assertUnique('English name', experts.map(({ name }) => name.en));
 
+const emptyAvatarIds = experts
+  .filter(({ avatar }) => avatar === null)
+  .map(({ id }) => id);
+if (JSON.stringify(emptyAvatarIds) !== JSON.stringify(['technical-expert', 'yu-zixuan'])) {
+  throw new Error(`Unexpected empty avatars: ${emptyAvatarIds.join(', ')}`);
+}
+
 const englishNames = experts.map(({ name }) => name.en);
 const sortedEnglishNames = [...englishNames].sort((left, right) =>
   left.localeCompare(right, 'en', { sensitivity: 'base' }),
