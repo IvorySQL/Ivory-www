@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import experts from '../data/expertCommittee.json';
 import {
+  getAvatarFramingStyle,
   getFocusTrapTarget,
   isDialogMode,
 } from '../utils/expertCommitteeInteraction.cjs';
@@ -116,14 +117,7 @@ function ExpertCard({ expert, locale, copy, onOpen }) {
               width="188"
               height="188"
               loading="lazy"
-              style={
-                expert.avatarFraming
-                  ? {
-                      '--avatar-scale': expert.avatarFraming.scale,
-                      '--avatar-position': expert.avatarFraming.position,
-                    }
-                  : undefined
-              }
+              style={getAvatarFramingStyle(expert)}
             />
           ) : (
             <EmptyAvatar />

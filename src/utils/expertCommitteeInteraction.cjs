@@ -4,6 +4,14 @@ function isDialogMode(matchMedia) {
   return matchMedia(DIALOG_MODE_QUERY).matches;
 }
 
+function getAvatarFramingStyle(expert) {
+  if (!expert.avatarFraming) return undefined;
+  return {
+    '--avatar-scale': expert.avatarFraming.scale,
+    '--avatar-position': expert.avatarFraming.position,
+  };
+}
+
 function getFocusTrapTarget(activeIndex, focusableCount, shiftKey) {
   if (focusableCount === 0) return null;
   if (activeIndex === -1) return shiftKey ? focusableCount - 1 : 0;
@@ -14,6 +22,7 @@ function getFocusTrapTarget(activeIndex, focusableCount, shiftKey) {
 
 module.exports = {
   DIALOG_MODE_QUERY,
+  getAvatarFramingStyle,
   getFocusTrapTarget,
   isDialogMode,
 };

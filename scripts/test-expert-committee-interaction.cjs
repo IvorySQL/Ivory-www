@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const {
   DIALOG_MODE_QUERY,
+  getAvatarFramingStyle,
   getFocusTrapTarget,
   isDialogMode,
 } = require('../src/utils/expertCommitteeInteraction.cjs');
@@ -41,21 +42,30 @@ assert.equal(isDialogMode(() => ({ matches: false })), false);
   );
 });
 
-const committeeCss = fs.readFileSync(
+const cssSource = fs.readFileSync(
   path.join(__dirname, '..', 'src', 'pages', 'expert-advisory-committee.module.css'),
   'utf8',
 );
-const cssSource = committeeCss;
-const pageSource = fs.readFileSync(
-  path.join(__dirname, '..', 'src', 'pages', 'expert-advisory-committee.js'),
-  'utf8',
+assert.deepEqual(
+  getAvatarFramingStyle({
+    avatarFraming: { scale: 1.8, position: '50% 32%' },
+  }),
+  {
+    '--avatar-scale': 1.8,
+    '--avatar-position': '50% 32%',
+  },
+  'maps framing metadata to the image CSS variables',
 );
-assert.match(committeeCss, /\.bioPopover:hover\s*\{/);
-assert.match(committeeCss, /\.bioPopover::after\s*\{[^}]*left: -16px;[^}]*width: 16px;/s);
-assert.match(committeeCss, /\.bioPopover\s*\{[^}]*pointer-events: auto;/s);
-assert.match(committeeCss, /visibility 0s linear 0\.15s;/);
-assert.match(pageSource, /--avatar-scale/);
-assert.match(pageSource, /--avatar-position/);
+assert.equal(
+  getAvatarFramingStyle({}),
+  undefined,
+  'leaves unframed portraits on the CSS defaults',
+);
+assert.match(cssSource, /\.bioPopover:hover\s*\{/);
+assert.match(cssSource, /\.bioPopover::after\s*\{[^}]*left: -16px;[^}]*width: 16px;/s);
+assert.match(cssSource, /\.bioPopover\s*\{[^}]*pointer-events: auto;/s);
+assert.match(cssSource, /visibility 0s linear 0\.15s;/);
+assert.match(cssSource, /object-position:\s*var\(--avatar-position, center\)/);
 assert.match(cssSource, /transform:\s*scale\(var\(--avatar-scale, 1\)\)/);
 assert.match(cssSource, /transform-origin:\s*var\(--avatar-position, center\)/);
 
