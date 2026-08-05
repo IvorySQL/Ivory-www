@@ -13,7 +13,8 @@
       "en": "Founder of OnGres and a database developer with more than 20 years of PostgreSQL experience. He created projects including StackGres and ToroDB and is a frequent international speaker.",
       "zh": "OnGres 创始人，拥有 20 余年 PostgreSQL 与数据库研发经验，创建 StackGres、ToroDB 等项目，并长期参与国际技术交流。"
     },
-    "avatar": "/img/expert-committee/alvaro-hernandez.webp"
+    "avatar": "/img/expert-committee/alvaro-hernandez.webp",
+    "avatarFraming": { "scale": 1.5, "position": "50% 30%" }
   },
   {
     "id": "cedric-villemain",
@@ -157,7 +158,8 @@
       "en": "A database professional with 20 years of experience in internet and financial organizations. He specializes in heterogeneous migration and the operation of large PostgreSQL estates.",
       "zh": "拥有 20 年数据库从业经验，曾任职于大型互联网和金融企业，擅长异构数据库迁移及超大规模 PostgreSQL 数据库管理。"
     },
-    "avatar": "/img/expert-committee/liu-huayang.webp"
+    "avatar": "/img/expert-committee/liu-huayang.webp",
+    "avatarFraming": { "scale": 1.8, "position": "66% 0%" }
   },
   {
     "id": "luo-min",
@@ -221,7 +223,8 @@
       "en": "Chief editor of Mastering New Features of PostgreSQL Versions Quickly. He focuses on practical research into PostgreSQL releases, open-source databases, and domestic database technologies.",
       "zh": "《快速掌握 PostgreSQL 版本新特性》主编，长期从事 PostgreSQL 版本新特性、开源数据库及国产数据库的实践研究。"
     },
-    "avatar": "/img/expert-committee/peng-chong.webp"
+    "avatar": "/img/expert-committee/peng-chong.webp",
+    "avatarFraming": { "scale": 2.4, "position": "19% 15%" }
   },
   {
     "id": "shang-lei",
@@ -333,7 +336,8 @@
       "en": "A PostgreSQL architecture, tuning, and troubleshooting specialist with substantial production experience. He writes the PostgreSQL Apprentice WeChat account and helps organize regional PostgreSQL events.",
       "zh": "深入理解 PostgreSQL 体系架构与运行原理，拥有重大项目保障、调优和排障经验，主理公众号“PostgreSQL 学徒”并积极组织社区活动。"
     },
-    "avatar": "/img/expert-committee/xiong-cancan.webp"
+    "avatar": "/img/expert-committee/xiong-cancan.webp",
+    "avatarFraming": { "scale": 2.2, "position": "50% 32%" }
   },
   {
     "id": "xu-ji",
@@ -349,7 +353,8 @@
       "en": "A noted systems optimization expert with more than 20 years in IT. He has led large information-system projects and provides senior technical consulting for finance, telecom, energy, and public-sector organizations.",
       "zh": "国内知名系统优化专家，拥有 20 余年 IT 行业经验，长期参与大型信息系统建设，并为金融、运营商、能源及政企客户提供高级技术咨询。"
     },
-    "avatar": "/img/expert-committee/xu-ji.webp"
+    "avatar": "/img/expert-committee/xu-ji.webp",
+    "avatarFraming": { "scale": 2.2, "position": "50% 32%" }
   },
   {
     "id": "xu-xiaoqiang",
@@ -365,7 +370,8 @@
       "en": "A full-time database administrator with Oracle 11g OCP and OCM certifications. He writes the JiekeXu DBA Journey WeChat account.",
       "zh": "专职 DBA，持有 Oracle 11g OCP 与 OCM 认证，主理公众号“JiekeXu DBA 之路”。"
     },
-    "avatar": "/img/expert-committee/xu-xiaoqiang.webp"
+    "avatar": "/img/expert-committee/xu-xiaoqiang.webp",
+    "avatarFraming": { "scale": 3, "position": "50% 50%" }
   },
   {
     "id": "xue-xiaogang",
@@ -397,7 +403,8 @@
       "en": "A database services specialist familiar with Oracle, PostgreSQL, and MySQL. He is a PolarDB open-source community technical advisor and an active promoter of the PostgreSQL ecosystem.",
       "zh": "熟悉 Oracle、PostgreSQL、MySQL 等数据库，主要从事数据库服务工作，并担任 PolarDB 开源社区技术顾问，积极推广 PG 生态。"
     },
-    "avatar": "/img/expert-committee/yin-haiwen.webp"
+    "avatar": "/img/expert-committee/yin-haiwen.webp",
+    "avatarFraming": { "scale": 1.9, "position": "50% 0%" }
   },
   {
     "id": "yu-zixuan",

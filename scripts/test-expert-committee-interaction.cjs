@@ -45,9 +45,18 @@ const committeeCss = fs.readFileSync(
   path.join(__dirname, '..', 'src', 'pages', 'expert-advisory-committee.module.css'),
   'utf8',
 );
+const cssSource = committeeCss;
+const pageSource = fs.readFileSync(
+  path.join(__dirname, '..', 'src', 'pages', 'expert-advisory-committee.js'),
+  'utf8',
+);
 assert.match(committeeCss, /\.bioPopover:hover\s*\{/);
 assert.match(committeeCss, /\.bioPopover::after\s*\{[^}]*left: -16px;[^}]*width: 16px;/s);
 assert.match(committeeCss, /\.bioPopover\s*\{[^}]*pointer-events: auto;/s);
 assert.match(committeeCss, /visibility 0s linear 0\.15s;/);
+assert.match(pageSource, /--avatar-scale/);
+assert.match(pageSource, /--avatar-position/);
+assert.match(cssSource, /transform:\s*scale\(var\(--avatar-scale, 1\)\)/);
+assert.match(cssSource, /transform-origin:\s*var\(--avatar-position, center\)/);
 
 console.log('Expert committee interaction helper tests passed.');

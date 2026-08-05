@@ -1,3 +1,4 @@
+const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -10,6 +11,15 @@ const expectedIds = [
   'shang-lei', 'shi-jiawei', 'tang-cheng', 'wei-bo', 'wu-yang',
   'xiao-shaocong', 'xiong-cancan', 'xu-ji', 'xu-xiaoqiang', 'xue-xiaogang',
   'yin-haiwen', 'yu-zixuan', 'zhang-chen', 'zhang-dagang', 'zhou-zhengzhong',
+];
+const expectedFramedIds = [
+  'alvaro-hernandez',
+  'liu-huayang',
+  'peng-chong',
+  'xiong-cancan',
+  'xu-ji',
+  'xu-xiaoqiang',
+  'yin-haiwen',
 ];
 
 function normalize(value) {
@@ -64,7 +74,27 @@ experts.forEach((expert) => {
       throw new Error(`${expert.id} avatar does not exist: ${expert.avatar}`);
     }
   }
+  if (expert.avatarFraming) {
+    assert.ok(expert.avatar, `${expert.id} cannot frame a missing avatar`);
+    assert.ok(
+      Number.isFinite(expert.avatarFraming.scale) &&
+        expert.avatarFraming.scale >= 1 &&
+        expert.avatarFraming.scale <= 3,
+      `${expert.id} has an invalid avatar scale`,
+    );
+    assert.match(
+      expert.avatarFraming.position,
+      /^(?:100|\d{1,2})% (?:100|\d{1,2})%$/,
+      `${expert.id} has an invalid avatar position`,
+    );
+  }
 });
+
+assert.deepEqual(
+  experts.filter(({ avatarFraming }) => avatarFraming).map(({ id }) => id),
+  expectedFramedIds,
+  'Unexpected framed portrait IDs',
+);
 
 assertUnique('id', experts.map(({ id }) => id));
 assertUnique('Chinese name', experts.map(({ name }) => name.zh));

@@ -252,7 +252,9 @@
 
 .avatarFrame img {
   object-fit: cover;
-  object-position: center;
+  object-position: var(--avatar-position, center);
+  transform: scale(var(--avatar-scale, 1));
+  transform-origin: var(--avatar-position, center);
 }
 
 .emptyAvatar {

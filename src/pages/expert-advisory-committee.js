@@ -116,6 +116,14 @@ function ExpertCard({ expert, locale, copy, onOpen }) {
               width="188"
               height="188"
               loading="lazy"
+              style={
+                expert.avatarFraming
+                  ? {
+                      '--avatar-scale': expert.avatarFraming.scale,
+                      '--avatar-position': expert.avatarFraming.position,
+                    }
+                  : undefined
+              }
             />
           ) : (
             <EmptyAvatar />
