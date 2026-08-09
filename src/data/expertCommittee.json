@@ -13,7 +13,7 @@
       "en": "Founder of OnGres and a database developer with more than 20 years of PostgreSQL experience. He created projects including StackGres and ToroDB and is a frequent international speaker.",
       "zh": "OnGres 创始人，拥有 20 余年 PostgreSQL 与数据库研发经验，创建 StackGres、ToroDB 等项目，并长期参与国际技术交流。"
     },
-    "avatar": "/img/expert-committee/alvaro-hernandez.webp",
+    "avatar": "/img/expert-committee/alvaro-hernandez.webp?v=20260809",
     "avatarFraming": { "scale": 1.5, "position": "50% 30%" }
   },
   {
@@ -158,8 +158,8 @@
       "en": "A database professional with 20 years of experience in internet and financial organizations. He specializes in heterogeneous migration and the operation of large PostgreSQL estates.",
       "zh": "拥有 20 年数据库从业经验，曾任职于大型互联网和金融企业，擅长异构数据库迁移及超大规模 PostgreSQL 数据库管理。"
     },
-    "avatar": "/img/expert-committee/liu-huayang.webp",
-    "avatarFraming": { "scale": 1.8, "position": "66% 0%" }
+    "avatar": "/img/expert-committee/liu-huayang.webp?v=20260809",
+    "avatarFraming": { "scale": 1.8, "position": "55% 27%" }
   },
   {
     "id": "luo-min",
@@ -337,7 +337,7 @@
       "zh": "深入理解 PostgreSQL 体系架构与运行原理，拥有重大项目保障、调优和排障经验，主理公众号“PostgreSQL 学徒”并积极组织社区活动。"
     },
     "avatar": "/img/expert-committee/xiong-cancan.webp",
-    "avatarFraming": { "scale": 2.2, "position": "50% 32%" }
+    "avatarFraming": { "scale": 2.2, "position": "70% 32%" }
   },
   {
     "id": "xu-ji",
@@ -353,8 +353,8 @@
       "en": "A noted systems optimization expert with more than 20 years in IT. He has led large information-system projects and provides senior technical consulting for finance, telecom, energy, and public-sector organizations.",
       "zh": "国内知名系统优化专家，拥有 20 余年 IT 行业经验，长期参与大型信息系统建设，并为金融、运营商、能源及政企客户提供高级技术咨询。"
     },
-    "avatar": "/img/expert-committee/xu-ji.webp",
-    "avatarFraming": { "scale": 2.2, "position": "50% 32%" }
+    "avatar": "/img/expert-committee/xu-ji.webp?v=20260809",
+    "avatarFraming": { "scale": 1.6, "position": "56% 31%" }
   },
   {
     "id": "xu-xiaoqiang",

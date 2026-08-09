@@ -69,7 +69,8 @@ experts.forEach((expert) => {
     throw new Error(`${expert.id} avatar must be a string or null`);
   }
   if (typeof expert.avatar === 'string') {
-    const assetPath = path.join(__dirname, '..', 'static', expert.avatar.replace(/^\//, ''));
+    const avatarPath = expert.avatar.split('?')[0];
+    const assetPath = path.join(__dirname, '..', 'static', avatarPath.replace(/^\//, ''));
     if (!fs.existsSync(assetPath)) {
       throw new Error(`${expert.id} avatar does not exist: ${expert.avatar}`);
     }

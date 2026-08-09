@@ -1,4 +1,5 @@
 const assert = require('node:assert/strict');
+const crypto = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -16,16 +17,45 @@ function count(haystack, needle) {
 
 const expectedFramedAvatars = [
   { file: 'alvaro-hernandez.webp', scale: '1.5', position: '50% 30%' },
-  { file: 'liu-huayang.webp', scale: '1.8', position: '66% 0%' },
+  { file: 'liu-huayang.webp', scale: '1.8', position: '55% 27%' },
   { file: 'peng-chong.webp', scale: '2.4', position: '19% 15%' },
-  { file: 'xiong-cancan.webp', scale: '2.2', position: '50% 32%' },
-  { file: 'xu-ji.webp', scale: '2.2', position: '50% 32%' },
+  { file: 'xiong-cancan.webp', scale: '2.2', position: '70% 32%' },
+  { file: 'xu-ji.webp', scale: '1.6', position: '56% 31%' },
   { file: 'xu-xiaoqiang.webp', scale: '3', position: '50% 50%' },
   { file: 'yin-haiwen.webp', scale: '1.9', position: '50% 0%' },
 ];
 
+const expectedPortraitHashes = {
+  'alvaro-hernandez.webp': '2188e12afb8e32a705c13ab3806ac8080a82862037860fbec1f2a762609cd7d1',
+  'liu-huayang.webp': 'f109c6494273487431df780e6f58654437737545c4161ee032aead62bb4469b6',
+  'xu-ji.webp': '9df0468c75f03c6f5fad680e794de72644a0e7745ad1421dcaae439a0b2f74f6',
+};
+
+const expectedPortraitVersions = {
+  'alvaro-hernandez.webp': '20260809',
+  'liu-huayang.webp': '20260809',
+  'xu-ji.webp': '20260809',
+};
+
+Object.entries(expectedPortraitHashes).forEach(([filename, expectedHash]) => {
+  const portraitPath = path.join(root, 'img', 'expert-committee', filename);
+  assert.ok(fs.existsSync(portraitPath), `Missing built portrait: ${portraitPath}`);
+  const actualHash = crypto.createHash('sha256').update(fs.readFileSync(portraitPath)).digest('hex');
+  assert.equal(actualHash, expectedHash, `Unexpected portrait content for ${filename}`);
+});
+
+function assertPortraitVersions(html, locale) {
+  Object.entries(expectedPortraitVersions).forEach(([filename, version]) => {
+    assert.match(
+      getImageTag(html, filename),
+      new RegExp(`${filename}\\?v=${version}`),
+      `${locale} cache-busts ${filename}`,
+    );
+  });
+}
+
 function getImageTag(html, filename) {
-  const match = html.match(new RegExp(`<img\\b[^>]*src="[^"]*${filename}"[^>]*>`));
+  const match = html.match(new RegExp(`<img\\b[^>]*src="[^"]*${filename}(?:\\?[^\"]*)?"[^>]*>`));
   assert.ok(match, `Missing built portrait image: ${filename}`);
   return match[0];
 }
@@ -87,6 +117,7 @@ assert.ok(english.includes('mailto:ivorysql1213@gmail.com'));
 assert.ok(english.indexOf('Álvaro Hernández') < english.indexOf('Cédric Villemain'));
 assert.ok(english.indexOf('Michael Meskes') < english.indexOf('NkYoung'));
 assertPortraitFraming(english, 'English');
+assertPortraitVersions(english, 'English');
 
 assert.ok(chinese.includes('专家顾问委员会'));
 assert.ok(chinese.includes('崔鹏'));
@@ -97,5 +128,6 @@ assert.ok(chinese.includes('将鼠标移至或选择头像、姓名'));
 assert.ok(chinese.includes('欢迎更多数据库专家加入'));
 assert.ok(chinese.includes('mailto:ivorysql1213@gmail.com'));
 assertPortraitFraming(chinese, 'Chinese');
+assertPortraitVersions(chinese, 'Chinese');
 
 console.log('Verified bilingual committee pages with ordered experts, a join CTA, and 2 empty avatars.');
