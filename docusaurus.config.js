@@ -144,6 +144,10 @@ const config = {
                 to: '/events',
               },
               {
+                label: 'Expert Advisory Committee',
+                to: '/expert-advisory-committee',
+              },
+              {
                 label: 'Partners',
                 to: '/partners-page',
               },
