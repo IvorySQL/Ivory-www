@@ -1,5 +1,5 @@
 ---
-title: 活动预告｜PostgreSQL & IvorySQL 技术交流 Meetup 南京站 7.25 与您相约
+title: 活动回顾｜PostgreSQL & IvorySQL 技术交流 Meetup 南京站圆满落幕
 hide_table_of_contents: true
 ---
 
@@ -11,6 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   .detail-sidebar { flex: 3.5; }
   .section-title { color: #7D52F4; border-left: 5px solid #7D52F4; padding-left: 16px; margin: 42px 0 20px; font-weight: 700; font-size: 1.4rem; }
   .content-text { line-height: 1.9; color: #444; font-size: 1.05rem; margin-bottom: 20px; text-align: justify; }
+  .event-main-img { width: 100%; border-radius: 18px; margin: 24px 0; box-shadow: 0 14px 40px rgba(0,0,0,0.08); }
   .info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 26px 0; }
   .info-card { background: linear-gradient(180deg, #fcfdff 0%, #f8f6ff 100%); border: 1px solid #e8e4f8; border-radius: 16px; padding: 22px; box-shadow: 0 8px 24px rgba(125,82,244,0.06); }
   .info-label { color: #7D52F4; font-size: 0.88rem; font-weight: 700; margin-bottom: 10px; letter-spacing: 0.04em; text-transform: uppercase; }
@@ -40,7 +41,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <div className="container detail-container">
   <div className="detail-content">
     <h1 style={{ fontSize: '2.2rem', marginBottom: '20px', lineHeight: '1.35' }}>
-      PostgreSQL & IvorySQL 技术交流 Meetup 南京站 7.25 与您相约
+      PostgreSQL & IvorySQL 技术交流 Meetup 南京站圆满落幕
     </h1>
 
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', color: '#666', marginBottom: '26px', fontSize: '0.97rem' }}>
@@ -50,7 +51,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
     </div>
 
     <div className="content-text">
-      深耕 PG 生态，聚焦内核与实践。为搭建南京及周边地区 PostgreSQL & IvorySQL 技术人面对面交流平台，<b>PostgreSQL & IvorySQL 技术交流 Meetup 南京站正式启动</b>。
+      2026年7月25日（周六）下午，PostgreSQL & IvorySQL 技术交流 Meetup 南京站在南京市雨花台区网新数智中心南塔一楼紫金港厅成功举办。本次活动由 IvorySQL 社区、PG 分会、TechTalk 社区联合主办，南京橙时数据科技有限公司提供支持。来自南京及周边地区的 DBA、运维工程师、应用开发者、架构师、AI 工程师以及开源社区爱好者等近百位技术同仁齐聚一堂，围绕"深耕 PG 生态，聚焦内核与实践"的主题，展开了一场干货满满的技术交流。
     </div>
 
     <h2 className="section-title">活动信息</h2>
@@ -73,75 +74,61 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
       </div>
     </div>
 
-    <h2 className="section-title">谁适合来？</h2>
-    <ul className="scene-list">
-      <li><b>DBA / 运维工程师</b>：获取数据库克隆、PITR 恢复、异常恢复 AI 实践等日常运维硬核技能</li>
-      <li><b>应用开发者</b>：了解 IvorySQL 兼容能力、AI Agent 构建与 PG 生态工具链</li>
-      <li><b>架构师 / 技术决策者</b>：评估 PG/IvorySQL 在企业级场景的落地可行性与选型价值</li>
-      <li><b>AI 应用工程师</b>：探索 PG 作为 AI Agent 开发平台的能力边界与最佳实践</li>
-      <li><b>开源社区爱好者</b>：近距离接触社区核心贡献者，参与开源生态共建</li>
-    </ul>
+    <img className="event-main-img" src={useBaseUrl('/img/events/event-202611-photo.jpg')} alt="南京站大合影" />
 
-    <h2 className="section-title">活动亮点</h2>
-    <ul className="scene-list">
-      <li>🤖 <b>AI 浓度拉满</b>：从 AI Agent 准确度优化、AI 辅助异常恢复到 PG 成为 AI Agent 开发热门平台</li>
-      <li>🔥 <b>全明星嘉宾阵容</b>：PG ACE Director、Pigsty 作者、IvorySQL 贡献者齐聚南京</li>
-      <li>⚡ <b>硬核技术内容密度拉满</b>：内核兼容、克隆/PITR、AI Agent 构建与异常恢复</li>
-      <li>🤝 <b>小而精的深度交流</b>：50-100 人精品规模，现场提问有礼</li>
-      <li>🌱 <b>共建南京 PG 技术圈</b>：建立南京 PG/IvorySQL 用户组</li>
-    </ul>
-
-    <h2 className="section-title">六大议题</h2>
+    <h2 className="section-title">演讲回顾</h2>
     <div className="topic-grid">
       <div className="topic-card">
         <div className="topic-tag">01</div>
-        <div className="topic-title">PG 与 Agent 的双向奔赴</div>
-        <div className="topic-speaker">分享嘉宾：白鳝（佰晟智算 CEO/研发）</div>
-        <div className="topic-desc">AI 时代，新一代以渐进式披露为核心的 AI Agent 为 PG 数据库的完全自主运维提供了有力支撑，而 PG 也成为 AI Agent 开发的热门平台。本次分享将探讨 AI Agent 构建技巧，并披露 PG 在其中发挥的巨大作用。</div>
+        <div className="topic-title">PostgreSQL 克隆，分支，与 PITR 黑魔法</div>
+        <div className="topic-speaker">分享人：冯若航（Pigsty 作者、PG 扩展生态专家）</div>
+        <div className="topic-desc">介绍了如何利用 Pigsty / pig 命令行工具，对 PostgreSQL 进行数据库级、实例级、集群级的低成本快速克隆，以及时间点恢复（PITR）的实现方法，并通过文件系统挂载技术赋予工作区同样的"黑魔法"能力。</div>
       </div>
       <div className="topic-card">
         <div className="topic-tag">02</div>
-        <div className="topic-title">PostgreSQL 克隆，分支，与 PITR 黑魔法</div>
-        <div className="topic-speaker">分享嘉宾：冯若航（Pigsty 作者，PG 扩展生态专家）</div>
-        <div className="topic-desc">成本低廉、瞬间完成的数据库克隆能力对于 AI Agent 至关重要。本次分享将介绍如何用 Pigsty / pig 命令行工具对 PostgreSQL 进行数据库级、实例级、集群级的克隆，以及时间点恢复（PITR），并通过文件系统挂载技术赋予工作区同样的黑魔法能力。</div>
+        <div className="topic-title">PG 与 Agent 的双向奔赴</div>
+        <div className="topic-speaker">分享人：白鳝（佰晟智算 CEO）</div>
+        <div className="topic-desc">深入探讨了 AI 时代下，以渐进式披露为核心的 AI Agent 如何为 PostgreSQL 的完全自主运维提供有力支撑，同时揭示了 PG 本身作为 AI Agent 开发热门平台的巨大潜力。</div>
       </div>
       <div className="topic-card">
         <div className="topic-tag">03</div>
         <div className="topic-title">以开源之力延展数据库边界：IvorySQL 的兼容与共建</div>
-        <div className="topic-speaker">分享嘉宾：杨超超（IvorySQL 贡献者）</div>
-        <div className="topic-desc">围绕"兼容"与"共建"两条主线，介绍 IvorySQL 在数据类型、语法、PL/SQL 等层面的 Oracle 兼容能力，以及如何借助开源社区的力量持续延展数据库的能力与价值边界。</div>
+        <div className="topic-speaker">分享人：杨超超（IvorySQL 贡献者）</div>
+        <div className="topic-desc">围绕"兼容"与"共建"两条主线，详细介绍了 IvorySQL 在数据类型、语法、PL/SQL 等层面的 Oracle 兼容能力，并分享了如何借助开源社区的力量持续延展数据库的能力与价值边界。</div>
       </div>
       <div className="topic-card">
         <div className="topic-tag">04</div>
         <div className="topic-title">拒绝 AI 帮倒忙——数据库异常恢复 AI 最佳实践</div>
-        <div className="topic-speaker">分享嘉宾：张晨（PostgreSQL ACE Partner，PDU 项目作者）</div>
-        <div className="topic-desc">AI 参与数据库异常恢复存在真实风险。本演讲将结合真实案例，展示如何在几小时内快速理解陌生运行环境，完成工具适配，定位异常根因，并实现精准数据恢复。</div>
+        <div className="topic-speaker">分享人：张晨（PostgreSQL ACE Partner、PDU 项目作者）</div>
+        <div className="topic-desc">结合真实案例，直面 AI 参与数据库异常恢复存在的真实风险，展示了如何在几小时内快速理解陌生运行环境、完成工具适配、定位异常根因并实现精准数据恢复的全过程。</div>
       </div>
       <div className="topic-card">
         <div className="topic-tag">05</div>
         <div className="topic-title">基于 repmgr 的 PostgreSQL 三节点高可用方案实战</div>
-        <div className="topic-speaker">分享嘉宾：韩通（安徽云信达公司数智业务平台架构师）</div>
-        <div className="topic-desc">手把手带你搭建基于 repmgr 的 PostgreSQL 三节点高可用集群，从环境准备、配置文件编写到自动故障转移验证，全流程实战演示。</div>
+        <div className="topic-speaker">分享人：韩通（安徽云信达公司数智业务平台架构师）</div>
+        <div className="topic-desc">从环境准备、配置文件编写到自动故障转移验证，手把手带领大家完成了基于 repmgr 的 PostgreSQL 三节点高可用集群搭建的全流程实战演示。</div>
       </div>
       <div className="topic-card">
         <div className="topic-tag">06</div>
         <div className="topic-title">Workshop：Higobase + PGNexus 实战工作坊</div>
         <div className="topic-speaker">带领嘉宾：杨超超、尚雷</div>
-        <div className="topic-desc">动手实操环节，手把手带您体验 Higobase 与 PGNexus 的联合实战，从工具安装到场景演练，快速上手企业级数据库运维与开发工具链。</div>
+        <div className="topic-desc">从工具安装到场景演练，快速上手了 Higobase 与 PGNexus 的联合实战，体验了企业级数据库运维与开发工具链的实际应用。Higobase：<a href="https://higobase.highgo.com/" target="_blank" rel="noopener noreferrer">higobase.highgo.com</a> | PGNexus：<a href="https://pgnexus.ai/home" target="_blank" rel="noopener noreferrer">pgnexus.ai</a></div>
       </div>
     </div>
 
-    <h2 className="section-title">互动与奖励</h2>
-    <ul className="scene-list">
-      <li>到场参与者即有机会获取周边礼品</li>
-      <li>每个演讲环节结束后开放现场提问，成功提问者当场赠送社区周边礼品</li>
-      <li>workshop 环节开放现场提问</li>
-    </ul>
+    <h2 className="section-title">现场精彩</h2>
+    <div className="content-text">
+      本次活动采用 50–100 人的精品规模，确保了每一位参会者都能与嘉宾进行充分互动。现场气氛热烈，每个议题结束后都引发了踊跃的提问与讨论。从 AI Agent 的准确度优化、AI 辅助异常恢复，到 PG 成为 AI Agent 开发热门平台的技术趋势，思想的碰撞贯穿全场。活动特别设置了提问有礼环节，到场参与者还有机会获得社区精心准备的周边礼品。更重要的是，本次活动为南京及周边地区的 PostgreSQL 与 IvorySQL 技术人搭建了一个面对面交流的平台，为建立南京 PG/IvorySQL 用户组迈出了坚实的一步。
+    </div>
 
-    <div className="highlight-box">
-      <p>到场即送伴手礼，席位有限，即刻扫码报名！</p>
-      <p>📎 <a href="https://hdxu.cn/1KGIO" target="_blank" rel="noopener noreferrer">点击报名</a></p>
-      <p>7 月 25 日，南京相聚，与同频技术人一起聊 PG 生态，探 IvorySQL 实践，共筑南京地区开源数据库技术交流圈。</p>
+    <h2 className="section-title">PPT 下载</h2>
+    <div className="content-text">
+      关注公众号【IvorySQL开源数据库社区】，回复关键词 <b>20260725</b> 获取 PPT 下载链接。
+    </div>
+
+    <h2 className="section-title">总结致谢</h2>
+    <div className="content-text">
+      本次 PostgreSQL & IvorySQL 技术交流 Meetup 南京站的成功举办，离不开每一位分享嘉宾的精心准备和倾囊相授，也离不开所有参会者的热情参与和积极互动。感谢白鳝、冯若航、杨超超、张晨、韩通、尚雷六位嘉宾带来的精彩分享；感谢 IvorySQL 社区、PG 分会、TechTalk 社区的精心组织，以及南京橙时数据科技有限公司的大力支持。未来，IvorySQL 社区将继续深耕 PostgreSQL 生态，在全国各地举办更多高质量的技术交流活动。期待与更多技术同路人相遇！
     </div>
 
     <img className="event-main-img" src={useBaseUrl('/img/events/event-202611-poster.jpg')} alt="南京站海报" />
