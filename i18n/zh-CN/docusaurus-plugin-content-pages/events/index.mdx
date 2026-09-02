@@ -8,6 +8,28 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export const EventsData = [
   {
+    title: "活动预告｜PostgreSQL & IvorySQL 技术交流 Meetup 杭州站",
+    desc: "德哥、唐成、付超、杨向博、吴建波、马顺华齐聚杭州，围绕数据库内核、高可用架构、内存排障与 AI 工程化展开实战交流。",
+    startTime: "2026-09-12",
+    endTime: "2026-09-12",
+    startDateTime: "2026-09-12T14:00:00+08:00",
+    endDateTime: "2026-09-12T17:10:00+08:00",
+    location: "线下活动（杭州）",
+    link: "/zh-cn/events/event-202615",
+    img: "/img/events/event-202615.png"
+  },
+  {
+    title: "直播预告｜PG 30 周年系列直播第七期：PG + AI——向量检索、RAG、智能运维是风口还是未来？",
+    desc: "萧少聪、白鳝、冯若航、尹海文齐聚，深入探讨 PG 向量检索、RAG、AI Agent 与智能运维的落地边界和未来趋势。",
+    startTime: "2026-09-02",
+    endTime: "2026-09-02",
+    startDateTime: "2026-09-02T19:00:00+08:00",
+    endDateTime: "2026-09-02T20:30:00+08:00",
+    location: "线上直播",
+    link: "/zh-cn/events/event-202614",
+    img: "/img/events/event-202614.png"
+  },
+  {
     title: "直播回顾｜PG 30 周年系列直播第六期：中国开发者与PG内核——我们改得动吗？我们贡献了什么？",
     desc: "尚雷、萧少聪、崔鹏、吕海波、杨向博、周煦能齐聚，共谈中国开发者对 PG 社区的贡献现状与内核修改之道。",
     startTime: "2026-08-12",
@@ -271,10 +293,10 @@ export const EventsData = [
 ];
 
 export const EventCard = ({ event }) => {
-  const { title, desc, startTime, endTime, location, link, img, imagePosition } = event;
+  const { title, desc, startTime, endTime, startDateTime, endDateTime, location, link, img, imagePosition } = event;
   const now = new Date();
-  const start = new Date(startTime);
-  const end = new Date(endTime);
+  const start = new Date(startDateTime || startTime);
+  const end = new Date(endDateTime || endTime);
   
   let status = { label: '已结束', class: 'status-ended' };
   if (now < start) {
@@ -321,8 +343,8 @@ export const WebinarList = () => {
   const filteredData = useMemo(() => {
     const now = new Date();
     return EventsData.filter(event => {
-      const start = new Date(event.startTime);
-      const end = new Date(event.endTime);
+      const start = new Date(event.startDateTime || event.startTime);
+      const end = new Date(event.endDateTime || event.endTime);
       if (filter === 'ongoing') return now >= start && now <= end;
       if (filter === 'upcoming') return now < start;
       return true;
@@ -491,17 +513,13 @@ export const WebinarList = () => {
     flex-shrink: 0; 
     aspect-ratio: 16 / 9; 
     overflow: hidden;
-    background-color: #f5f5f5;
+    background-color: #020b20;
   }
   .card-img-wrapper img { 
     width: 100%; 
     height: 100%; 
-    object-fit: cover; 
+    object-fit: contain;
     display: block;
-    transition: transform 0.5s ease;
-  }
-  .event-card:hover .card-img-wrapper img {
-    transform: scale(1.05);
   }
   
   .card-content { padding: 25px 30px; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; }
